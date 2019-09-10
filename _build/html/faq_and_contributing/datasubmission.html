@@ -1,0 +1,681 @@
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    
+        <title>Data Submission &mdash; CMAP</title>
+    
+
+
+  
+  
+    <link rel="shortcut icon" href="../_static/CMAP_logo.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/style.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="FAQ" href="FAQ.html" />
+    <link rel="prev" title="cmap4r API" href="../user_guide/API_ref/cmap4r_api/cmap4r_api.html" />
+    <!-- Google Analytics tracking code -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+            Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-38125837-1', 'auto', {'storage': 'none'});
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/CMAP_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+    
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/installation/installation.html">Installation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../catalog/catalog.html">Data Catalog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/tutorials/tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/API_ref/api_ref.html">API Reference</a></li>
+</ul>
+<p class="caption"><span class="caption-text">FAQ and Contributing</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data Submission</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#dataset-requirements">Dataset Requirements</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#data-must-be-in-the-format">1. Data must be in the format:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-must-have-supporting-meta-data-ie-data-about-your-data">2. Data must have supporting meta-data, ie. data about your data.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-should-have-a-doi-digital-object-identifier-or-a-reference">3. Data should have a DOI (Digital Object Identifier) or a reference.</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#data-template-and-file-structure">Data Template and File Structure</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#dataset-filename-convention">Dataset Filename Convention</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#first-sheet-data">First Sheet: “data”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#second-sheet-dataset-meta-data">Second Sheet: “dataset_meta_data”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#third-sheet-vars-meta-data">Third Sheet: “vars_meta_data”</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Contact and Contribute</a></li>
+</ul>
+
+            
+          
+
+    
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CMAP</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Data Submission</li>
+    
+    
+    <li class="source-link">
+        
+            
+                <a href="https://github.com//edit///faq_and_contributing/datasubmission.rst"
+                   class="fa fa-github"> Improve this page</a>
+            
+        
+        
+    </li>
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="data-submission">
+<h1>Data Submission<a class="headerlink" href="#data-submission" title="Permalink to this headline">¶</a></h1>
+<p>If you wish to suggest a dataset be added to the database or have some data that you would like added, please email Raphael (<a class="reference external" href="mailto:nrhagen&#37;&#52;&#48;uw&#46;edu">nrhagen<span>&#64;</span>uw<span>&#46;</span>edu</a>).</p>
+<div class="section" id="dataset-requirements">
+<h2>Dataset Requirements<a class="headerlink" href="#dataset-requirements" title="Permalink to this headline">¶</a></h2>
+<p>To add your dataset to CMAP and make it usable we have a few data and metadata conventions.</p>
+<div class="section" id="data-must-be-in-the-format">
+<h3>1. Data must be in the format:<a class="headerlink" href="#data-must-be-in-the-format" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 26%" />
+<col style="width: 23%" />
+<col style="width: 7%" />
+<col style="width: 23%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>time</p></td>
+<td><p>lat</p></td>
+<td><p>lon</p></td>
+<td><p>depth {if exists}</p></td>
+<td><p>&lt;<span class="math notranslate nohighlight">\(var_1\)</span>&gt;</p></td>
+<td><p>…</p></td>
+<td><p>&lt;<span class="math notranslate nohighlight">\(var_n\)</span>&gt;</p></td>
+</tr>
+</tbody>
+</table>
+<p>Data in CMAP is indexed on space and time. For data to be able to be co-localized, it must be in this format.</p>
+</div>
+<div class="section" id="data-must-have-supporting-meta-data-ie-data-about-your-data">
+<h3>2. Data must have supporting meta-data, ie. data about your data.<a class="headerlink" href="#data-must-have-supporting-meta-data-ie-data-about-your-data" title="Permalink to this headline">¶</a></h3>
+<p>For other scientist to find and use your data, we need metadata on the dataset and the variables within the dataset.</p>
+</div>
+<div class="section" id="data-should-have-a-doi-digital-object-identifier-or-a-reference">
+<h3>3. Data should have a DOI (Digital Object Identifier) or a reference.<a class="headerlink" href="#data-should-have-a-doi-digital-object-identifier-or-a-reference" title="Permalink to this headline">¶</a></h3>
+<p>CMAP is not a data repository and we do not archive and version control datasets. There are multiple free DOI registers: <a class="reference external" href="https://zenodo.org/">Zenodo</a>, <a class="reference external" href="https://datadryad.org/">Dryad</a>, <a class="reference external" href="https://figshare.com/">Figshare</a>, <a class="reference external" href="https://www.pangaea.de/">PANGAEA</a>…</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="data-template-and-file-structure">
+<h2>Data Template and File Structure<a class="headerlink" href="#data-template-and-file-structure" title="Permalink to this headline">¶</a></h2>
+<p>The preferred file format is excel spreadsheet. Data is stored in the first sheet and the sheet title is “data”. The second sheet stores the dataset meta-data and is called “dataset_meta_data”. Meta-data associated with the variables in the dataset are kept in the third sheet, “vars_meta_data”. An example template can be found <a class="reference external" href="https://github.com/mdashkezari/opedia/tree/master/template">here</a>.</p>
+<p>A <a class="reference external" href="https://github.com/mdashkezari/opedia/tree/master/template">template</a> is available.</p>
+<div class="section" id="dataset-filename-convention">
+<h3>Dataset Filename Convention<a class="headerlink" href="#dataset-filename-convention" title="Permalink to this headline">¶</a></h3>
+<p>Dataset filename: &lt;dataset_short_name&gt;_&lt;dataset_release_data&gt;_v&lt;dataset_version&gt;.xlxs
+Example: seaflow_2018-05-25_v1.0.xlxs</p>
+<p><strong>&lt;dataset_short_name&gt;: short name of the dataset</strong>
+- length: less than 50 characters</p>
+<p><strong>&lt;dataset_release_data&gt;: date of dataset release</strong>
+- format: %Y-%m-%d
+- note: zero padding required</p>
+<p><strong>&lt;dataset_version&gt;: associated dataset version</strong>
+- length: less than 50 characters</p>
+</div>
+<div class="section" id="first-sheet-data">
+<h3>First Sheet: “data”<a class="headerlink" href="#first-sheet-data" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 24%" />
+<col style="width: 25%" />
+<col style="width: 14%" />
+<col style="width: 5%" />
+<col style="width: 2%" />
+<col style="width: 5%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>time</p></td>
+<td><p>lat</p></td>
+<td><p>lon</p></td>
+<td><p>depth {if exists}</p></td>
+<td><p>&lt;<span class="math notranslate nohighlight">\(var_1\)</span>&gt;</p></td>
+<td><p>…</p></td>
+<td><p>&lt;<span class="math notranslate nohighlight">\(var_n\)</span>&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>&lt; Format  %Y-%m-%dT%H:%M:%S,  Time-Zone:  UTC,  example: 2014-02-28T14:25:55 &gt;</p></td>
+<td><p>&lt; Format: Decimal (not military grid system), Unit: degree, Range: [-90, 90] &gt;</p></td>
+<td><p>&lt; Format: Decimal (not military grid system), Unit: degree, Range: [-180, 180] &gt;</p></td>
+<td><p>&lt; Positive value, Unit: [m], example: 10.25 &gt;</p></td>
+<td><p>&lt; variable 1 &gt;</p></td>
+<td><p>…</p></td>
+<td><p>&lt; variable n &gt;</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Columns by order</strong>:</p>
+<ol class="arabic simple">
+<li><dl class="simple">
+<dt><strong>time</strong>: corresponding datetime</dt><dd><ul class="simple">
+<li><p>type: datetime</p></li>
+<li><p>format: %Y-%m-%dT%H:%M:%S [example: 2018-03-29T18:05:55]</p></li>
+<li><p>time zone: UTC</p></li>
+<li><p>note: there is a blank space between date and time</p></li>
+<li><p>note: zero padding required</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>lat</strong>: latitude</dt><dd><ul class="simple">
+<li><p>type: float</p></li>
+<li><p>format: Decimal (not military grid system)</p></li>
+<li><p>unit: degree north</p></li>
+<li><p>range: [-90, 90]</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>lon</strong>: longitude</dt><dd><ul class="simple">
+<li><p>type: float</p></li>
+<li><p>format: Decimal (not military grid system)</p></li>
+<li><p>unit: degree east</p></li>
+<li><p>range: [-180, 180]</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>depth</strong>: depth</dt><dd><ul class="simple">
+<li><p>type: float</p></li>
+<li><p>unit: meters</p></li>
+<li><p>range: [0, ∞]</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>&lt;v_1&gt;</strong>: first variable (short name)</dt><dd><ul class="simple">
+<li><p>Add more columns similar to the last column, if dataset has more than one variable.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+</div>
+<div class="section" id="second-sheet-dataset-meta-data">
+<h3>Second Sheet: “dataset_meta_data”<a class="headerlink" href="#second-sheet-dataset-meta-data" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 6%" />
+<col style="width: 9%" />
+<col style="width: 18%" />
+<col style="width: 9%" />
+<col style="width: 13%" />
+<col style="width: 8%" />
+<col style="width: 7%" />
+<col style="width: 11%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>dataset_short_name</p></td>
+<td><p>dataset_long_name</p></td>
+<td><p>dataset_version</p></td>
+<td><p>dataset_release_date</p></td>
+<td><p>dataset_make</p></td>
+<td><p>dataset_source</p></td>
+<td><p>dataset_doi</p></td>
+<td><p>dataset_history</p></td>
+<td><p>dataset_description</p></td>
+<td><p>dataset_references</p></td>
+</tr>
+<tr class="row-even"><td><p>&lt;short name of your dataset (&lt;50 chars)&gt;</p></td>
+<td><p>&lt;long name of your dataset (&lt;500 chars)&gt;</p></td>
+<td><p>&lt;dataset version (&lt;50 chars)&gt;</p></td>
+<td><p>&lt;Format  %Y-%m-%d,  example: 2018-06-20&gt;</p></td>
+<td><p>&lt;how dataset is made (fixed options= [assimilation, model, observation]) (&lt;50 chars)&gt;</p></td>
+<td><p>&lt;name of your lab/institution (&lt;100 chars)&gt;</p></td>
+<td><p>&lt;digital object identifier (doi) associated with the dataset&gt;</p></td>
+<td><p>&lt;any note about the dataset evolution&gt;</p></td>
+<td><p>&lt;a descrption of your dataset&gt;</p></td>
+<td><p>&lt;list of associated docs/publications (&lt;500chars) &gt;</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Columns by order</strong>:</p>
+<ol class="arabic">
+<li><dl class="simple">
+<dt><strong>dataset_short_name</strong>: dataset short name</dt><dd><ul class="simple">
+<li><p>type: string</p></li>
+<li><p>length: &lt;50 chars</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p><strong>dataset_long_name</strong>: descriptive dataset name</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>type: string</p></li>
+<li><p>length: &lt;500 chars</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>dataset_version</strong>: dataset version</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>type: string</p></li>
+<li><p>length: &lt;50 chars</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>dataset_release_date</strong>: dataset release date</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>type: date</p></li>
+<li><p>format: %Y-%m-%d (zero padding required)</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>dataset_make</strong>: how dataset is made (fixed options= [assimilation, model, observation])</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>type: string</p></li>
+<li><p>length: &lt;50 chars</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>dataset_source</strong>: name of your lab and/or institution</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>type: string</p></li>
+<li><p>length: &lt;100 chars</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>dataset_doi</strong>:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>type: string</p></li>
+<li><p>length</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>dataset_history</strong>: notes regarding the evolution of the dataset with respect to the previous versions, if applicable</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>type: string</p></li>
+<li><p>length: &lt;100 chars</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>dataset_description</strong>: any additional descriptions</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>type: string</p></li>
+<li><p>length: no limit</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>dataset_references</strong>: links/citations associated with the dataset documentations/publications (enter each ref. in a separate row)</p>
+<ul class="simple">
+<li><p>type: string</p></li>
+<li><p>length: &lt;500 chars per item</p></li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="third-sheet-vars-meta-data">
+<h3>Third Sheet: “vars_meta_data”<a class="headerlink" href="#third-sheet-vars-meta-data" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 16%" />
+<col style="width: 5%" />
+<col style="width: 13%" />
+<col style="width: 11%" />
+<col style="width: 13%" />
+<col style="width: 17%" />
+<col style="width: 6%" />
+<col style="width: 5%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>var_short_name</p></td>
+<td><p>var_long_name</p></td>
+<td><p>var_standard_name</p></td>
+<td><p>var_sensor</p></td>
+<td><p>var_unit</p></td>
+<td><p>var_spatial_res</p></td>
+<td><p>var_temporal_res</p></td>
+<td><p>var_missing_value</p></td>
+<td><p>var_discipline</p></td>
+<td><p>var_keywords</p></td>
+<td><p>var_comment</p></td>
+</tr>
+<tr class="row-even"><td><p>&lt;variable short name (&lt;50 chars)&gt;</p></td>
+<td><p>&lt;variable long name (&lt;500 chars)&gt;</p></td>
+<td><p>&lt;variable standard name&gt;</p></td>
+<td><p>&lt;device by which variable is measured (&lt;50 chars) examples: [satellite, cruise_name, simulation, …]&gt;</p></td>
+<td><p>&lt;variable unit (&lt;50 chars)&gt;</p></td>
+<td><p>&lt;variable spatial resolution (examples: [1/25° X 1/25° , 50km X 50km, Irregular] )&gt;</p></td>
+<td><p>&lt;variable temporal resolution (examples: [Hourly, Daily, Irregular] )&gt;</p></td>
+<td><p>&lt;placeholder for missing values (examples: empty cell, “nan”, “unknown”, #FFFF)&gt;</p></td>
+<td><p>&lt;associated discipline(s) (&lt;100 chars) (examples: [Physics, Chemistry, Biology, BioGeoChemistry, etc..])&gt;</p></td>
+<td><p>&lt;associated keywords (&lt;500 chars)&gt;</p></td>
+<td><p>&lt;variable comment/description&gt;</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Columns by order</strong>:</p>
+<ol class="arabic">
+<li><p><strong>var_short_name</strong>: variable short name</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>type: string</p></li>
+<li><p>length: &lt;50 chars</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>var_long_name</strong>: descriptive variable name</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>type: string</p></li>
+<li><p>length: &lt;500 chars</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>var_standard_name</strong>: standard variable name (more details in CF Conventions and COARDS Conventions)</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>type: string</p></li>
+<li><p>length: &lt;500 chars</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>var_unit</strong>: variable unit</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>type: string</p></li>
+<li><p>length: &lt;50 chars</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>var_sensor</strong>: device by which variable is measured</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>type: string</p></li>
+<li><p>length: &lt;50 chars</p></li>
+<li><p>examples: [satellite, cruise_name, simulation, …]</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>var_spatial_res</strong>: variable spatial resolution</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>type: string</p></li>
+<li><p>length: &lt;50 chars</p></li>
+<li><p>examples: [1/25° X 1/25° , 50km X 50km, Irregular, …]</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>var_temporal_res</strong>: variable temporal resolution</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>type: string</p></li>
+<li><p>length: &lt;50 chars</p></li>
+<li><p>examples: [Hourly, Daily, Irregular, …]</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>var_missing_value</strong>: placeholder for missing values</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>type: string</p></li>
+<li><p>length: &lt;50 chars</p></li>
+<li><p>examples: [empty cell, “nan”, “unknown”, #FFFF, -999, …]</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>var_discipline</strong>: the closest discipline(s) associated with the variable</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>type: string</p></li>
+<li><p>length: &lt;100 chars</p></li>
+<li><p>examples: [Physics, Chemistry, Biology, BioGeoChemistry, …]</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>var_keywords</strong>: keywords pertinent to the variable (separated by comma)</p>
+<ul class="simple">
+<li><p>type: string</p></li>
+<li><p>length: &lt;500 chars</p></li>
+<li><p>delimiter = ‘,’</p></li>
+<li><p>examples: [field sample, Biology, abundance, synechococcus, …]</p></li>
+</ul>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Keywords are variable-specific and case-insensitive. Please separate each keyword by comma. The suggested format for each variable keyword list is:</strong></p>
+<ul class="simple">
+<li><p>var_short_name</p></li>
+<li><p>var_long_name</p></li>
+<li><p>Example keywords related to any official or unofficial variable names:   pro / prochloro / …</p></li>
+<li><p>Example keywords related to sensor/apparatus:  cruise / satellite / computer (in case of mode) / SeaFlow / ….</p></li>
+<li><p>Example keywords related to official or unofficial cruise names (if applicable): KM1427 / Gradients 2.0 / ….</p></li>
+<li><p>Example keywords related to data owners institution:  UW / University of Washington / …</p></li>
+<li><p>Example keywords related to data production techniques: cytometry / flow cytometry / …</p></li>
+<li><p>Example keywords related to the research context: omics / 16s / …</p></li>
+<li><p>Example keywords related to the associated discipline(s): chemistry / biology / physics / biogeochemical / biogeography …</p></li>
+<li><p>Any other keywords you think are relevant</p></li>
+</ul>
+<p><strong>Keyword Example for &lt;proprochloro_abundance&gt; variable in the SeaFlow Dataset:</strong></p>
+<ul class="simple">
+<li><p>prochloro_abundance, Prochlorococcus Abundance , seaflow, pro, prochloro, prochlorococcus, flow, cytometry, flow-cytometry, insitu, in-situ, cruise,  observation, rep, reprocessed, bio, biology, armbrust, UW, abundance,cell abundance</p></li>
+</ul>
+</div>
+<ol class="arabic simple" start="11">
+<li><p><strong>var_comment</strong>: any other comment about the variable</p>
+<ul class="simple">
+<li><p>type: string</p></li>
+<li><p>length: no limit</p></li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Raphael Hagen
+      <span class="lastupdated">
+        Last updated on Sep 10, 2019.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

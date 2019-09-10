@@ -1,0 +1,406 @@
+
+<html>
+<head>
+<style>
+
+    h2 {
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 5px;
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 90%;
+    }
+    table tbody tr:hover {
+        background-color: #dddddd;
+    }
+    .wide {
+        width: 90%;
+    }
+
+</style>
+</head>
+<body>
+    <h2> HOT_Bottle_ALOHA </h2>
+<table border="1" class="dataframe wide">
+  <tbody>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>pressure_ctd_bottle_hot</td>
+      <td>Bottle CTD Pressure</td>
+      <td>decibar</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>potential_temperature_ctd_bottle_hot</td>
+      <td>Bottle CTD Potential Temperature</td>
+      <td>ITS-90</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>potential_density_ctd_bottle_hot</td>
+      <td>Bottle CTD Potential Density</td>
+      <td>kg/m^3</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>temperature_ctd_bottle_hot</td>
+      <td>Bottle CTD Temperature</td>
+      <td>ITS-90</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>salinity_ctd_bottle_hot</td>
+      <td>Bottle CTD Salinity</td>
+      <td>PSS-78</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>oxygen_ctd_bottle_hot</td>
+      <td>Bottle CTD Oxygen</td>
+      <td>µmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>salinity_bottle_hot</td>
+      <td>Bottle Salinity</td>
+      <td>PSS-78</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>oxygen_bottle_hot</td>
+      <td>Bottle Dissolved Oxygen</td>
+      <td>µmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>dic_bottle_hot</td>
+      <td>Bottle Dissolved Inorganic Carbon</td>
+      <td>µmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>ph_bottle_hot</td>
+      <td>Bottle pH</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>alk_bottle_hot</td>
+      <td>Alkalinity</td>
+      <td>µeq/kg</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>PO4_bottle_hot</td>
+      <td>Phosphate (PO4)</td>
+      <td>µmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>NO2_NO3_bottle_hot</td>
+      <td>Nitrate (NO2 + NO3)</td>
+      <td>µmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>SiO4_bottle_hot</td>
+      <td>Silicate (SiO4)</td>
+      <td>nmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>dop_bottle_hot</td>
+      <td>Dissolved Organic Phosphorus</td>
+      <td>µmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>don_bottle_hot</td>
+      <td>Dissolved Organic Nitrogen</td>
+      <td>µmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>doc_bottle_hot</td>
+      <td>Dissolved Organic Carbon</td>
+      <td>µmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>tdp_bottle_hot</td>
+      <td>Total Dissolved Phosphorus</td>
+      <td>µmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>tdn_bottle_hot</td>
+      <td>Total Dissolved Nitrogen</td>
+      <td>µmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>pc_bottle_hot</td>
+      <td>Particulate Carbon</td>
+      <td>µmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>pn_bottle_hot</td>
+      <td>Particulate Nitrogen</td>
+      <td>µmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>pp_bottle_hot</td>
+      <td>Particulate Phosphorus</td>
+      <td>nmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>lln_bottle_hot</td>
+      <td>Low-Level Nitrogen</td>
+      <td>nmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>llp_bottle_hot</td>
+      <td>Low-Level Phosphorus</td>
+      <td>nmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>chl_bottle_hot</td>
+      <td>Fluorometric Chlorophyll a</td>
+      <td>µg/l</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>phaeo_bottle_hot</td>
+      <td>Pheopigments</td>
+      <td>µg/l</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>HPLC_chl3_bottle_hot</td>
+      <td>HPLC Chlorophyll c3</td>
+      <td>ng/l</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>HPLC_chl12_bottle_hot</td>
+      <td>HPLC Chlorophyll c1+c2</td>
+      <td>ng/l</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>HPLC_chlplus_bottle_hot</td>
+      <td>HPLC Chlorophyll c1+c2+c3</td>
+      <td>ng/l</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>HPLC_peridinin_bottle_hot</td>
+      <td>HPLC Peridinin</td>
+      <td>ng/l</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>HPLC_but19_bottle_hot</td>
+      <td>HPLC 19'-Butanoyloxyfucoxanthin</td>
+      <td>ng/l</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>HPLC_fuco_bottle_hot</td>
+      <td>HPLC Fucoxanthin</td>
+      <td>ng/l</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>HPLC_hex19_bottle_hot</td>
+      <td>HPLC 19'-Hexanoyloxyfucoxanthin</td>
+      <td>ng/l</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>HPLC_prasino_bottle_hot</td>
+      <td>HPLC Prasinoxanthin</td>
+      <td>ng/l</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>HPLC_diadino_bottle_hot</td>
+      <td>HPLC Diadinoxanthin</td>
+      <td>ng/l</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>HPLC_zeaxan_bottle_hot</td>
+      <td>HPLC Zeaxanthin</td>
+      <td>ng/l</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>HPLC_chlb_bottle_hot</td>
+      <td>HPLC Chlorophyll_b</td>
+      <td>ng/l</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>HPLC_chla_bottle_hot</td>
+      <td>HPLC Chlorophyll_a</td>
+      <td>ng/l</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>HPLC_chlc4_bottle_hot</td>
+      <td>HPLC Chlorophyll_c4</td>
+      <td>ng/l</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>HPLC_acar_bottle_hot</td>
+      <td>HPLC α-Carotene</td>
+      <td>ng/l</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>HPLC_bcar_bottle_hot</td>
+      <td>HPLC β-Carotene</td>
+      <td>ng/l</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>HPLC_carotenes_bottle_hot</td>
+      <td>HPLC Carotenes (α+β)</td>
+      <td>ng/l</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>HPLC_chlda_bottle_hot</td>
+      <td>HPLC Chlorophyllide_a</td>
+      <td>ng/l</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>HPLC_viol_bottle_hot</td>
+      <td>HPLC Violaxanthin</td>
+      <td>ng/l</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>HPLC_lutein_bottle_hot</td>
+      <td>HPLC Lutein</td>
+      <td>ng/l</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>HPLC_mvchla_bottle_hot</td>
+      <td>HPLC Monovinyl Chlorophyll_a</td>
+      <td>ng/l</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>HPLC_dvchla_bottle_hot</td>
+      <td>HPLC Divinyl Chlorophyll_a</td>
+      <td>ng/l</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>hetero_bact_bottle_hot</td>
+      <td>Heterotrophic Bacteria</td>
+      <td># x 105/ml</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>prochlorococcus_bottle_hot</td>
+      <td>Prochlorococcus</td>
+      <td># x 105/ml</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>synechococcus_bottle_hot</td>
+      <td>Synechococcus</td>
+      <td># x 105/ml</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>eukaryotes_bottle_hot</td>
+      <td>Eukaryotes</td>
+      <td># x 105/ml</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>atp_bottle_hot</td>
+      <td>Adenosine 5'-Triphosphate</td>
+      <td>ng/kg</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>N2O_bottle_hot</td>
+      <td>Nitrous Oxide</td>
+      <td>nmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>psi_bottle_hot</td>
+      <td>Particulate Silica</td>
+      <td>nmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>pe4_bottle_hot</td>
+      <td>Phycoerythrin 0.4µ fraction</td>
+      <td>nmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>pe5_bottle_hot</td>
+      <td>Phycoerythrin 5µ fraction</td>
+      <td>nmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>pe10_bottle_hot</td>
+      <td>Phycoerythrin 10µ fraction</td>
+      <td>nmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>p15n_bottle_hot</td>
+      <td>δ15N of PN</td>
+      <td>‰ vs. air-N</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>PP_l12_bottle_hot</td>
+      <td>Primary Production: Light 12</td>
+      <td>mg C/m3</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>PP_d12_bottle_hot</td>
+      <td>Primary Production: Dark 12</td>
+      <td>mg C/m3</td>
+    </tr>
+    <tr>
+      <td>tblHOT_Bottle</td>
+      <td>NO2_bottle_hot</td>
+      <td>Nitrite (NO2)\t</td>
+      <td>nmol/kg</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

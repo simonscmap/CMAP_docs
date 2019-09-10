@@ -1,0 +1,562 @@
+
+<html>
+<head>
+<style>
+
+    h2 {
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 5px;
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 90%;
+    }
+    table tbody tr:hover {
+        background-color: #dddddd;
+    }
+    .wide {
+        width: 90%;
+    }
+
+</style>
+</head>
+<body>
+    <h2> Argo_BGC_REP </h2>
+<table border="1" class="dataframe wide">
+  <tbody>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_cdnc</td>
+      <td>Electrical Conductivity</td>
+      <td>mhos/m</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_cdnc_adj</td>
+      <td>Ajusted Electrical Conductivity</td>
+      <td>mhos/m</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_cdnc_adj_err</td>
+      <td>Ajusted Electrical Conductivity Error</td>
+      <td>mhos/m</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_pressure</td>
+      <td>Sea Water Pressure (equals 0 at sea-level)</td>
+      <td>decibar</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_pressure_adj</td>
+      <td>Adjusted Sea Water Pressure (equals 0 at sea-l...</td>
+      <td>decibar</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_pressure_adj_err</td>
+      <td>Adjusted Sea Water Pressure Error</td>
+      <td>decibar</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_salinity</td>
+      <td>Practical Salinity</td>
+      <td>psu</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_salinity_adj</td>
+      <td>Adjusted Practical Salinity</td>
+      <td>psu</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_salinity_adj_err</td>
+      <td>Adjusted Practical Salinity Error</td>
+      <td>psu</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_temperature</td>
+      <td>Sea Temperature in-situ ITS-90 Scale</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_temperature_adj</td>
+      <td>Adjusted Sea Temperature in-situ ITS-90 Scale</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_temperature_adj_err</td>
+      <td>Adjusted Sea Temperature Error in-situ ITS-90 ...</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_O2</td>
+      <td>Dissolved Oxygen (O2)</td>
+      <td>mumol/Kg</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_O2_adj</td>
+      <td>Adjusted Dissolved Oxygen (O2)</td>
+      <td>mumol/Kg</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_O2_adj_err</td>
+      <td>Adjusted Dissolved Oxygen Error (O2)</td>
+      <td>mumol/Kg</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_bbp</td>
+      <td>Particle Backscattering at x nanometers</td>
+      <td>1/m</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_bbp_adj</td>
+      <td>Adjusted Particle Backscattering at x nanometers</td>
+      <td>1/m</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_bbp_adj_err</td>
+      <td>Adjusted Particle Backscattering Error at x na...</td>
+      <td>1/m</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_bbp470</td>
+      <td>Particle Backscattering at 470 nanometers</td>
+      <td>1/m</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_bbp470_adj</td>
+      <td>Adjusted Particle Backscattering at 470 nanome...</td>
+      <td>1/m</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_bbp470_adj_err</td>
+      <td>Adjusted Particle Backscattering Error at 470 ...</td>
+      <td>1/m</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_bbp532</td>
+      <td>Particle Backscattering at 532 nanometers</td>
+      <td>1/m</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_bbp532_adj</td>
+      <td>Adjusted Particle Backscattering at 532 nanome...</td>
+      <td>1/m</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_bbp532_adj_err</td>
+      <td>Adjusted Particle Backscattering Error at 532 ...</td>
+      <td>1/m</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_bbp700</td>
+      <td>Particle Backscattering at 700 nanometers</td>
+      <td>1/m</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_bbp700_adj</td>
+      <td>Adjusted Particle Backscattering at 700 nanome...</td>
+      <td>1/m</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_bbp700_adj_err</td>
+      <td>Adjusted Particle Backscattering Error at 700 ...</td>
+      <td>1/m</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_turbidity</td>
+      <td>Sea Water Turbidity</td>
+      <td>ntu</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_turbidity_adj</td>
+      <td>Adjusted Sea Water Turbidity</td>
+      <td>ntu</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_turbidity_adj_err</td>
+      <td>Adjusted Sea Water Turbidity Error</td>
+      <td>ntu</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_cp</td>
+      <td>Particle Beam Attenuation at x nanometers</td>
+      <td>1/m</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_cp_adj</td>
+      <td>Adjusted Particle Beam Attenuation at x nanome...</td>
+      <td>1/m</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_cp_adj_err</td>
+      <td>Adjusted Particle Beam Attenuation Error at x ...</td>
+      <td>1/m</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_cp660</td>
+      <td>Particle Beam Attenuation at 660 nanometers</td>
+      <td>1/m</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_cp660_adj</td>
+      <td>Adjusted Particle Beam Attenuation at 660 nano...</td>
+      <td>1/m</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_cp660_adj_err</td>
+      <td>Adjusted Particle Beam Attenuation Error at 66...</td>
+      <td>1/m</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_chl</td>
+      <td>Chlorophyll-A</td>
+      <td>mg/m^3</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_chl_adj</td>
+      <td>Adjusted Chlorophyll-A</td>
+      <td>mg/m^3</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_chl_adj_err</td>
+      <td>Adjusted Chlorophyll-A Error</td>
+      <td>mg/m^3</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_cdom</td>
+      <td>Concentration of Colored Dissolved Organic Matter</td>
+      <td>ppb</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_cdom_adj</td>
+      <td>Adjusted Concentration of Colored Dissolved Or...</td>
+      <td>ppb</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_cdom_adj_err</td>
+      <td>Adjusted Concentration of Colored Dissolved Or...</td>
+      <td>ppb</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_NO3</td>
+      <td>Nitrate (NO3)</td>
+      <td>mumol/Kg</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_NO3_adj</td>
+      <td>Adjusted Nitrate (NO3)</td>
+      <td>mumol/Kg</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_NO3_adj_err</td>
+      <td>Adjusted Nitrate Error (NO3)</td>
+      <td>mumol/Kg</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_bisulfide</td>
+      <td>Bisulfide</td>
+      <td>mumol/Kg</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_bisulfide_adj</td>
+      <td>Adjusted Bisulfide</td>
+      <td>mumol/Kg</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_bisulfide_adj_err</td>
+      <td>Adjusted Bisulfide Error</td>
+      <td>mumol/Kg</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_ph</td>
+      <td>pH</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_ph_adj</td>
+      <td>Adjusted pH</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_ph_adj_err</td>
+      <td>Adjusted pH Error</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_down_irr</td>
+      <td>Downwelling Irradiance at x nanometers</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_down_irr_adj</td>
+      <td>Adjusted Downwelling Irradiance at x nanometers</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_down_irr_adj_err</td>
+      <td>Adjusted Downwelling Irradiance Error at x nan...</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_down_irr380</td>
+      <td>Downwelling Irradiance at 380 nanometers</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_down_irr380_adj</td>
+      <td>Adjusted Downwelling Irradiance at 380 nanometers</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_down_irr380_adj_err</td>
+      <td>Adjusted Downwelling Irradiance Error at 380 n...</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_down_irr412</td>
+      <td>Downwelling Irradiance at 412 nanometers</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_down_irr412_adj</td>
+      <td>Adjusted Downwelling Irradiance at 412 nanometers</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_down_irr412_adj_err</td>
+      <td>Adjusted Downwelling Irradiance Error at 412 n...</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_down_irr443</td>
+      <td>Downwelling Irradiance at 443 nanometers</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_down_irr443_adj</td>
+      <td>Adjusted Downwelling Irradiance at 443 nanometers</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_down_irr443_adj_err</td>
+      <td>Adjusted Downwelling Irradiance Error at 443 n...</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_down_irr490</td>
+      <td>Downwelling Irradiance at 490 nanometers</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_down_irr490_adj</td>
+      <td>Adjusted Downwelling Irradiance at 490 nanometers</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_down_irr490_adj_err</td>
+      <td>Adjusted Downwelling Irradiance Error at 490 n...</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_down_irr555</td>
+      <td>Downwelling Irradiance at 555 nanometers</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_down_irr555_adj</td>
+      <td>Adjusted Downwelling Irradiance at 555 nanometers</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_down_irr555_adj_err</td>
+      <td>Adjusted Downwelling Irradiance Error at 555 n...</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_up_irr</td>
+      <td>Upwelling Irradiance at x nanometers</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_up_irr_adj</td>
+      <td>Adjusted Upwelling Irradiance at x nanometers</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_up_irr_adj_err</td>
+      <td>Adjusted Upwelling Irradiance Error at x nanom...</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_up_irr412</td>
+      <td>Upwelling Irradiance at 412 nanometers</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_up_irr412_adj</td>
+      <td>Adjusted Upwelling Irradiance at 412 nanometers</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_up_irr412_adj_err</td>
+      <td>Adjusted Upwelling Irradiance Error at 412 nan...</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_up_irr443</td>
+      <td>Upwelling Irradiance at 443 nanometers</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_up_irr443_adj</td>
+      <td>Adjusted Upwelling Irradiance at 443 nanometers</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_up_irr443_adj_err</td>
+      <td>Adjusted Upwelling Irradiance Error at 443 nan...</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_up_irr490</td>
+      <td>Upwelling Irradiance at 490 nanometers</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_up_irr490_adj</td>
+      <td>Adjusted Upwelling Irradiance at 490 nanometers</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_up_irr490_adj_err</td>
+      <td>Adjusted Upwelling Irradiance Error at 490 nan...</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_up_irr555</td>
+      <td>Upwelling Irradiance at 555 nanometers</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_up_irr555_adj</td>
+      <td>Adjusted Upwelling Irradiance at 555 nanometers</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_up_irr555_adj_err</td>
+      <td>Adjusted Upwelling Irradiance Error at 555 nan...</td>
+      <td>W/m^2/nm</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_down_par</td>
+      <td>Downwelling Photosynthetic Available Radiation</td>
+      <td>muMoleQuanta/m^2/sec</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_down_par_adj</td>
+      <td>Adjusted Downwelling Photosynthetic Available ...</td>
+      <td>muMoleQuanta/m^2/sec</td>
+    </tr>
+    <tr>
+      <td>tblArgoMerge_REP</td>
+      <td>argo_merge_down_par_adj_err</td>
+      <td>Adjusted Downwelling Photosynthetic Available ...</td>
+      <td>muMoleQuanta/m^2/sec</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

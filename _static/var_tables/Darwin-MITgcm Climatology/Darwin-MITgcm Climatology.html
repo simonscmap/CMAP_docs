@@ -1,0 +1,670 @@
+
+<html>
+<head>
+<style>
+
+    h2 {
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 5px;
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 90%;
+    }
+    table tbody tr:hover {
+        background-color: #dddddd;
+    }
+    .wide {
+        width: 90%;
+    }
+
+</style>
+</head>
+<body>
+    <h2> Darwin-MITgcm Climatology </h2>
+<table border="1" class="dataframe wide">
+  <tbody>
+    <tr>
+      <td>tblDarwin_Nutrient_Climatology</td>
+      <td>DIC_darwin_clim</td>
+      <td>DIC concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Nutrient_Climatology</td>
+      <td>NH4_darwin_clim</td>
+      <td>NH4 concentration (climatology)</td>
+      <td>mmol N/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Nutrient_Climatology</td>
+      <td>NO2_darwin_clim</td>
+      <td>NO2 concentration (climatology)</td>
+      <td>mmol N/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Nutrient_Climatology</td>
+      <td>NO3_darwin_clim</td>
+      <td>NO3 concentration (climatology)</td>
+      <td>mmol N/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Nutrient_Climatology</td>
+      <td>PO4_darwin_clim</td>
+      <td>PO4 concentration (climatology)</td>
+      <td>mmol P/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Nutrient_Climatology</td>
+      <td>SiO2_darwin_clim</td>
+      <td>SiO2 concentration (climatology)</td>
+      <td>mmol Si</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Nutrient_Climatology</td>
+      <td>FeT_darwin_clim</td>
+      <td>FeT concentration (climatology)</td>
+      <td>mmol Fe</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Nutrient_Climatology</td>
+      <td>DOC_darwin_clim</td>
+      <td>DOC concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Nutrient_Climatology</td>
+      <td>DON_darwin_clim</td>
+      <td>DON concentration (climatology)</td>
+      <td>mmol N/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Nutrient_Climatology</td>
+      <td>DOP_darwin_clim</td>
+      <td>DOP concentration (climatology)</td>
+      <td>mmol P/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Nutrient_Climatology</td>
+      <td>DOFe_darwin_clim</td>
+      <td>DOfe concentration (climatology)</td>
+      <td>mmol Fe</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Nutrient_Climatology</td>
+      <td>POC_darwin_clim</td>
+      <td>POC concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Nutrient_Climatology</td>
+      <td>PON_darwin_clim</td>
+      <td>PON concentration (climatology)</td>
+      <td>mmol N/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Nutrient_Climatology</td>
+      <td>POSi_darwin_clim</td>
+      <td>POSi concentration (climatology)</td>
+      <td>mmol Si</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Nutrient_Climatology</td>
+      <td>POFe_darwin_clim</td>
+      <td>POFe concentration (climatology)</td>
+      <td>mmol Fe</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Nutrient_Climatology</td>
+      <td>PIC_darwin_clim</td>
+      <td>PIC concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Nutrient_Climatology</td>
+      <td>ALK_darwin_clim</td>
+      <td>ALK concentration (climatology)</td>
+      <td>mmol eq</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Nutrient_Climatology</td>
+      <td>O2_darwin_clim</td>
+      <td>O2 concentration (climatology)</td>
+      <td>mmol O/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Nutrient_Climatology</td>
+      <td>CDOM_darwin_clim</td>
+      <td>CDOM concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>prokaryote_c01_darwin_clim</td>
+      <td>c01 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>prokaryote_c02_darwin_clim</td>
+      <td>c02 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>picoeukaryote_c03_darwin_clim</td>
+      <td>c03 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>picoeukaryote_c04_darwin_clim</td>
+      <td>c04 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>cocco_c05_darwin_clim</td>
+      <td>c05 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>cocco_c06_darwin_clim</td>
+      <td>c06 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>cocco_c07_darwin_clim</td>
+      <td>c07 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>cocco_c08_darwin_clim</td>
+      <td>c08 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>cocco_c09_darwin_clim</td>
+      <td>c09 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>diazotroph_c10_darwin_clim</td>
+      <td>c10 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>diazotroph_c11_darwin_clim</td>
+      <td>c11 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>diazotroph_c12_darwin_clim</td>
+      <td>c12 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>diazotroph_c13_darwin_clim</td>
+      <td>c13 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>diazotroph_c14_darwin_clim</td>
+      <td>c14 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>diatom_c15_darwin_clim</td>
+      <td>c15 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>diatom_c16_darwin_clim</td>
+      <td>c16 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>diatom_c17_darwin_clim</td>
+      <td>c17 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>diatom_c18_darwin_clim</td>
+      <td>c18 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>diatom_c19_darwin_clim</td>
+      <td>c19 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>diatom_c20_darwin_clim</td>
+      <td>c20 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>diatom_c21_darwin_clim</td>
+      <td>c21 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>diatom_c22_darwin_clim</td>
+      <td>c22 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>diatom_c23_darwin_clim</td>
+      <td>c23 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>diatom_c24_darwin_clim</td>
+      <td>c24 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>diatom_c25_darwin_clim</td>
+      <td>c25 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>dinoflagellate_c26_darwin_clim</td>
+      <td>c26 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>dinoflagellate_c27_darwin_clim</td>
+      <td>c27 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>dinoflagellate_c28_darwin_clim</td>
+      <td>c28 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>dinoflagellate_c29_darwin_clim</td>
+      <td>c29 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>dinoflagellate_c30_darwin_clim</td>
+      <td>c30 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>dinoflagellate_c31_darwin_clim</td>
+      <td>c31 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>dinoflagellate_c32_darwin_clim</td>
+      <td>c32 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>dinoflagellate_c33_darwin_clim</td>
+      <td>c33 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>dinoflagellate_c34_darwin_clim</td>
+      <td>c34 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>dinoflagellate_c35_darwin_clim</td>
+      <td>c35 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>zooplankton_c36_darwin_clim</td>
+      <td>c36 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>zooplankton_c37_darwin_clim</td>
+      <td>c37 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>zooplankton_c38_darwin_clim</td>
+      <td>c38 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>zooplankton_c39_darwin_clim</td>
+      <td>c39 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>zooplankton_c40_darwin_clim</td>
+      <td>c40 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>zooplankton_c41_darwin_clim</td>
+      <td>c41 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>zooplankton_c42_darwin_clim</td>
+      <td>c42 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>zooplankton_c43_darwin_clim</td>
+      <td>c43 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>zooplankton_c44_darwin_clim</td>
+      <td>c44 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>zooplankton_c45_darwin_clim</td>
+      <td>c45 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>zooplankton_c46_darwin_clim</td>
+      <td>c46 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>zooplankton_c47_darwin_clim</td>
+      <td>c47 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>zooplankton_c48_darwin_clim</td>
+      <td>c48 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>zooplankton_c49_darwin_clim</td>
+      <td>c49 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>zooplankton_c50_darwin_clim</td>
+      <td>c50 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Plankton_Climatology</td>
+      <td>zooplankton_c51_darwin_clim</td>
+      <td>c51 concentration (climatology)</td>
+      <td>mmol C/</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl01_darwin_clim</td>
+      <td>Chl01 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl02_darwin_clim</td>
+      <td>Chl02 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl03_darwin_clim</td>
+      <td>Chl03 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl04_darwin_clim</td>
+      <td>Chl04 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl05_darwin_clim</td>
+      <td>Chl05 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl06_darwin_clim</td>
+      <td>Chl06 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl07_darwin_clim</td>
+      <td>Chl07 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl08_darwin_clim</td>
+      <td>Chl08 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl09_darwin_clim</td>
+      <td>Chl09 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl10_darwin_clim</td>
+      <td>Chl10 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl11_darwin_clim</td>
+      <td>Chl11 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl12_darwin_clim</td>
+      <td>Chl12 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl13_darwin_clim</td>
+      <td>Chl13 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl14_darwin_clim</td>
+      <td>Chl14 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl15_darwin_clim</td>
+      <td>Chl15 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl16_darwin_clim</td>
+      <td>Chl16 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl17_darwin_clim</td>
+      <td>Chl17 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl18_darwin_clim</td>
+      <td>Chl18 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl19_darwin_clim</td>
+      <td>Chl19 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl20_darwin_clim</td>
+      <td>Chl20 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl21_darwin_clim</td>
+      <td>Chl21 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl22_darwin_clim</td>
+      <td>Chl22 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl23_darwin_clim</td>
+      <td>Chl23 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl24_darwin_clim</td>
+      <td>Chl24 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl25_darwin_clim</td>
+      <td>Chl25 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl26_darwin_clim</td>
+      <td>Chl26 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl27_darwin_clim</td>
+      <td>Chl27 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl28_darwin_clim</td>
+      <td>Chl28 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl29_darwin_clim</td>
+      <td>Chl29 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl30_darwin_clim</td>
+      <td>Chl30 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl31_darwin_clim</td>
+      <td>Chl31 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl32_darwin_clim</td>
+      <td>Chl32 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl33_darwin_clim</td>
+      <td>Chl33 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl34_darwin_clim</td>
+      <td>Chl34 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+    <tr>
+      <td>tblDarwin_Chl_Climatology</td>
+      <td>chl35_darwin_clim</td>
+      <td>Chl35 concentration (climatology)</td>
+      <td>mg Chl</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
