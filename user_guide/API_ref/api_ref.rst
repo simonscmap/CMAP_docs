@@ -6,7 +6,7 @@
 .. |pycmap API| image:: /_static/installation_icons/python_logo.png
    :align: middle
    :scale: 30%
-   :target: pycmap_api/pycmap_api.html
+   :target: pycmap_api/pycmap_api_ref.html
 
 .. |cmap4r API| image:: /_static/installation_icons/Rlogo.png
    :align: middle

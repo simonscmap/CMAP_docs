@@ -60,9 +60,18 @@ Dataset Description
 *******************
 
 
-
-Marine phytoplankton are responsible for about half of the global net primary production and they play a key role in regulating global biogeochemical cycles. SeaFlow is an underway flow cytometer that provides continuous shipboard observations of the abundance and optical properties of the smallest phytoplankton. Here we present data sets consisting of SeaFlow-based cell abundance, forward light scatter, and pigment fluorescence of individual cells, as well as derived estimates of cell diameter and carbon biomass for the picophytoplankton, which includes the cyanobacteria Prochlorococcus, Synechococcus and small-sized Crocosphaera (< 5 µm), and eukaryotic phytoplankton less than 5 µm in diameter. Data were collected in surface waters (~ 5 m depth) from 25 oceanographic cruises carried out in the Northeast Pacific Ocean between 2010 and 2018. Thirteen cruises provide high spatial resolution (~ 1 km) measurements across 32,500 km of the northeast Pacific Ocean and 14 near-monthly cruises beginning in 2015 provide seasonal distributions at the long-term sampling site of the Hawaii Ocean Time-Series. These data sets, available at the Zenodo open access research data repository (doi.org/10.5281/zenodo.3240587), expand our knowledge of the current spatial and temporal distributions of picophytoplankton in the surface ocean, and provide the quantitative information necessary to test theories.
-
+The data sets consist of SeaFlow-based cell abundance, forward light scatter,
+and pigment fluorescence of individual cells, as well as derived estimates of
+equivalent spherical diameter (ESD) and cellular carbon content of
+picophytoplankton, which includes the cyanobacteria Prochlorococcus,
+Synechococcus and small-sized Crocosphaera (< 5 μm ESD), and picophytoplankton
+and nanophytoplankton (2-5 μm ESD). SeaFlow data were collected in surface
+waters (≈5 m depth) from oceanographic cruises carried out across the Northeast
+Pacific Ocean since 2010. Data provides high spatial
+resolution (≈1 km) measurements across ocean basin, along with near-monthly data
+at the long-term sampling site (Station ALOHA) of the Hawaii Ocean Time-Series
+since 2015. Further information can be found here:
+https://github.com/armbrustlab/popcycle
 
 |
 
@@ -92,7 +101,7 @@ Table of Variables
 Data Source
 ***********
 
-Armbrust Lab, UW
+François Ribalet, Annette Hynes and Chris Berthiaume, Armbrust lab, University of Washington
 
 How to Acknowledge
 ******************

@@ -24,8 +24,8 @@ sys.path.insert(0, os.path.abspath('..'))
 # -- Project information -----------------------------------------------------
 
 project = 'CMAP'
-copyright = '2019, Raphael Hagen'
-author = 'Raphael Hagen'
+copyright = '2019, Mohammad Dehghani Ashkezari & Norland Raphael Hagen'
+author = 'Mohammad Dehghani Ashkezari & Norland Raphael Hagen'
 
 # The short X.Y version
 version = '0.0.1'
@@ -104,7 +104,7 @@ pygments_style = None
 html_last_updated_fmt = '%b %d, %Y'
 html_title = 'CMAP'
 html_short_title = 'CMAP'
-html_logo = '_static/CMAP_logos/CMAP_logo.png'
+html_logo = '_static/CMAP_logos/CMAP_logo_300px.png'
 html_favicon = '_static/CMAP_logos/CMAP_logo.png'
 html_static_path = ['_static']
 html_extra_path = []
@@ -118,7 +118,7 @@ html_show_copyright = True
 html_theme = "sphinx_rtd_theme"
 html_theme_options = {
     'logo_only': True,
-    'display_version': True,
+    'display_version': False,
     'prev_next_buttons_location': None,
     'navigation_depth': 4,
     'collapse_navigation': True
