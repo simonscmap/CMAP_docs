@@ -1,6 +1,6 @@
 
 
-.. _pycmap API ref: pycmap_api/pycmap_api.html
+.. _pycmap API ref: pycmap_api/pycmap_api_ref.html
 .. _cmap4r API: cmap4r_api/cmap4r_api.html
 
 .. |pycmap API| image:: /_static/installation_icons/python_logo.png

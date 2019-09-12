@@ -42,7 +42,7 @@
   <link rel="stylesheet" href="../../../_static/style.css" type="text/css" />
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="API" href="pycmap_api.html" />
+    <link rel="next" title="Installation" href="pycmap_install.html" />
     <link rel="prev" title="API Reference" href="../api_ref.html" />
     <!-- Google Analytics tracking code -->
     <script>
@@ -75,7 +75,7 @@
 
           
             
-            <img src="../../../_static/CMAP_logo_300px.png" class="logo" alt="Logo"/>
+            <img src="../../../_static/CMAP_logo_resize.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -109,40 +109,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/tutorials.html">Tutorials</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../api_ref.html">API Reference</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">pycmap API</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#data-retrieval-api">Data Retrieval (API)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_api.html">API</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_query.html">Query</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_catalog.html">Catalog</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_metadata.html">Metadata</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_dataset_columns.html">Dataset Columns</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_dataset_head.html">Dataset Head</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_variable_long_name.html">Variable Long Name</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_variable_unit.html">Variable Unit</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_has_field.html">If Column Exists</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_is_gridded.html">Is Gridded Product</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_is_climatology.html">Is Climatology Product</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_list_cruises.html">List of Cruises</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_details.html">Cruise Details by Name</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_ST_bounds.html">Cruise Spatio-Tempoal Bounds</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_trajectory.html">Cruise Trajectory</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_subset_ST.html">Data Subset: Generic Space-Time Cut</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_subset_TS.html">Data Subset: Time Series</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_subset_DP.html">Data Subset: Depth Profile</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_match_datasets.html">Match (colocalize) Datasets</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_match_cruise_track_datasets.html">Match (colocalize) Cruise Track with Datasets</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#data-visualization">Data Visualization</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_histogram.html">Histogram Plot</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_time_series.html">Time Series Plot</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_rm_cp_3d.html">Regional Map, Contour Plot, 3D Surface Plot</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_section_map_contour.html">Section Map, Section Contour</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_depth_profile.html">Depth Profile</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_track.html">Cruise Track Plot</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_correlation_matrix.html">Correlation Matrix</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_correlation_matrix_cruise_track.html">Correlation Matrix Along Cruise Track</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="pycmap_install.html">Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pycmap_data_retrieval.html">Data Retrieval</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pycmap_data_vizualization.html">Data Visualization</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../cmap4r_api/cmap4r_api.html">cmap4r API</a></li>
@@ -227,123 +196,26 @@
             
   <div class="section" id="pycmap-api">
 <h1>pycmap API<a class="headerlink" href="#pycmap-api" title="Permalink to this headline">¶</a></h1>
+<p>Pycmap is the python package of Simons CMAP project providing a simple and unified interface to the hosted datasets at Simons CMAP database.</p>
+<p>The pycmap package requires an API key. To obtain an API key please visit <a class="reference external" href="https://simonscmap.com/register">https://simonscmap.com/register</a></p>
+<p>The docs are written in jupyter notebook format and avaiable on <a class="reference external" href="https://github.com/simonscmap/pycmap/tree/master/">github</a>. Each notebook contains one or
+more example codes. Please download the <a class="reference external" href="https://github.com/simonscmap/pycmap/tree/master/docs">docs</a> directory and run the
+example codes locally. Alternatively, you may run the examples on google
+cloud using the  <img alt="colab" src="https://colab.research.google.com/assets/colab-badge.svg" />  badge which appears at the top of each page:</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 33%" />
-<col style="width: 67%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_api.html#pycmap-api"><span class="std std-ref">API</span></a></p></td>
-<td><p>Create Instance of API</p></td>
-</tr>
-</tbody>
-</table>
-<div class="section" id="data-retrieval-api">
-<h2>Data Retrieval (API)<a class="headerlink" href="#data-retrieval-api" title="Permalink to this headline">¶</a></h2>
-<table class="docutils align-default">
-<colgroup>
 <col style="width: 33%" />
-<col style="width: 67%" />
+<col style="width: 33%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_query.html#query"><span class="std std-ref">Query</span></a></p></td>
-<td><p>SQL Query</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_catalog.html#getcatalog"><span class="std std-ref">Catalog</span></a></p></td>
-<td><p>Retrieve Catalog</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_metadata.html#metadata"><span class="std std-ref">Metadata</span></a></p></td>
-<td><p>Retrieve Metadata</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_dataset_columns.html#columns"><span class="std std-ref">Dataset Columns</span></a></p></td>
-<td><p>Retrieve Column Names</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_dataset_head.html#dataset-head"><span class="std std-ref">Dataset Head</span></a></p></td>
-<td><p>Retrieve Top Rows of Given Dataset</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_variable_long_name.html#var-long-name"><span class="std std-ref">Variable Long Name</span></a></p></td>
-<td><p>Returns Long Name of Given Variable</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_variable_unit.html#var-unit"><span class="std std-ref">Variable Unit</span></a></p></td>
-<td><p>Returns Unit for Given Variable, if applicable</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_has_field.html#hasfield"><span class="std std-ref">If Column Exists</span></a></p></td>
-<td><p>Returns True if Column Exists</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_is_gridded.html#gridded"><span class="std std-ref">Is Gridded Product</span></a></p></td>
-<td><p>Returns True if Variable is Gridded Product</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_is_climatology.html#clim"><span class="std std-ref">Is Climatology Product</span></a></p></td>
-<td><p>Returns True if Dataset is Climatology Product</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_list_cruises.html#list-cruises"><span class="std std-ref">List of Cruises</span></a></p></td>
-<td><p>Returns Cruise Expedition Details</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_cruise_details.html#cruise-details"><span class="std std-ref">Cruise Details by Name</span></a></p></td>
-<td><p>Returns Cruise Specific Details by Name</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_cruise_ST_bounds.html#cruise-st"><span class="std std-ref">Cruise Spatio-Tempoal Bounds</span></a></p></td>
-<td><p>Returns Cruise Spatio-Temporal Bounds</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_cruise_trajectory.html#cruise-traj"><span class="std std-ref">Cruise Trajectory</span></a></p></td>
-<td><p>Returns Trajectory for Specific Cruise</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_subset_ST.html#subset-st"><span class="std std-ref">Data Subset: Generic Space-Time Cut</span></a></p></td>
-<td><p>Returns a Subset of Data Defined by Space and Time</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_subset_TS.html#subset-ts"><span class="std std-ref">Data Subset: Time Series</span></a></p></td>
-<td><p>Returns a Subset of Data Aggregated by Time</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_subset_DP.html#subset-dp"><span class="std std-ref">Data Subset: Depth Profile</span></a></p></td>
-<td><p>Returns a Subset of Data Aggregated by Depth</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_match_datasets.html#match"><span class="std std-ref">Match (colocalize) Datasets</span></a></p></td>
-<td><p>Colocalizes Variables between Datasets</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_match_cruise_track_datasets.html#matchcruise"><span class="std std-ref">Match (colocalize) Cruise Track with Datasets</span></a></p></td>
-<td><p>Colocalizes Variables along Cruise Trajectory</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_install.html#pycmapinstall"><span class="std std-ref">Installation</span></a></p></td>
+<td><p><a class="reference internal" href="pycmap_data_retrieval.html#dataret"><span class="std std-ref">Data Retrieval</span></a></p></td>
+<td><p><a class="reference internal" href="pycmap_data_vizualization.html#dataviz"><span class="std std-ref">Data Visualization</span></a></p></td>
 </tr>
 </tbody>
 </table>
 <div class="toctree-wrapper compound">
-</div>
-</div>
-<div class="section" id="data-visualization">
-<h2>Data Visualization<a class="headerlink" href="#data-visualization" title="Permalink to this headline">¶</a></h2>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 67%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_histogram.html#histogram"><span class="std std-ref">Histogram Plot</span></a></p></td>
-<td><p>Histogram Plot</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_time_series.html#timeseries"><span class="std std-ref">Time Series Plot</span></a></p></td>
-<td><p>Time Series Plot</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_rm_cp_3d.html#rmcp3d"><span class="std std-ref">Regional Map, Contour Plot, 3D Surface Plot</span></a></p></td>
-<td><p>Regional Map, Contour Plot, 3D Surface Plot</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_section_map_contour.html#sectionmapcontour"><span class="std std-ref">Section Map, Section Contour</span></a></p></td>
-<td><p>Section Map, Section Contour</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_depth_profile.html#depthprofile"><span class="std std-ref">Depth Profile</span></a></p></td>
-<td><p>Depth Profile</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_cruise_track.html#cruisetrackplot"><span class="std std-ref">Cruise Track Plot</span></a></p></td>
-<td><p>Cruise Track Plot</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_correlation_matrix.html#corrmatrix"><span class="std std-ref">Correlation Matrix</span></a></p></td>
-<td><p>Correlation Matrix</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_correlation_matrix_cruise_track.html#corrmatrixcruise"><span class="std std-ref">Correlation Matrix Along Cruise Track</span></a></p></td>
-<td><p>Correlation Matrix Along Cruise Track</p></td>
-</tr>
-</tbody>
-</table>
-<div class="toctree-wrapper compound">
-</div>
 </div>
 </div>
 

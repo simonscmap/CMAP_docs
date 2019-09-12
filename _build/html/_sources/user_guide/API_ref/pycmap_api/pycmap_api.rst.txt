@@ -17,6 +17,7 @@ API
     To retrieve data, we need to create an instance of the system's API and pass the API key. It is no necessary to pass the API key every time you run a code locally, because it will be stored locally. The API class has other optional parameters to adjust its behavior. All parameters can be updated persistently at any point in the code.
 
     ``class pycmap.API(token=<API KEY>, baseURL='https://simonscmap.com', headers=None, vizEngine='plotly', exportDir='./export/', > exportFormat='.csv', figureDir='./figure/')``
+
     |
 
     :Parameters:

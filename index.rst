@@ -1,5 +1,5 @@
 
-.. _Simons: https://www.simonsfoundation.org/
+.. _Simons Foundation: https://www.simonsfoundation.org/
 
 .. _github: https://github.com/simonscmap/pycmap
 
@@ -22,30 +22,39 @@
 .. raw:: html
 
     <div class="banner">
-        <img src="_static/CMAP_logos/cmap_main_logo.png" alt="logo">
+        <img src="_static/CMAP_logos/CMAPtext_logo.png" alt="CMAP logo" width=1000px">
     </div>
 
 
-Pycmap
-======
+
+| Mohammad Dehghani Ashkezari mdehghan@uw.edu
+| Ginger Armbrust armbrust@u.washington.edu
+| Mike Denholtz denholtz@uw.edu
+| Norland Raphael Hagen nrhagen@uw.edu
 
 
 
 
 
-Simons CMAP is an open source data service to retrieve, visualize, and analyze oceanic datasets such as in-situ observations, multi-decade global satellite remote sensing, and model outputs. Pycmap is the python package of Simons CMAP project providing a simple and unified interface to the hosted datasets at Simons CMAP database. It enables the scientists and general public to dive into the vast, and often under underutilized ocean datasets and retrieve customized subsets of these massive datasets without going through the time-consuming process of data collection and preparation.
+
+Simons CMAP is an open source data service to retrieve, visualize, and analyze oceanic datasets such as in-situ observations,
+multi-decade global satellite remote sensing, and model outputs. It enables the scientists and general public to dive into the vast,
+and often under underutilized ocean datasets and retrieve customized subsets of these massive datasets without going through the
+time-consuming process of data collection and preparation.
 
 
 
-Documentation
-^^^^^^^^^^^^^
 
 
 
-The docs are written in jupyter notebook format and avaiable on github_. Each notebook contains one or
-more example codes. Please download the docs_ directory and run the
-example codes locally. Alternatively, you may run the examples on google
-cloud using the  |colab|  badge which appears at the top of each page:
+
+
+Website
+^^^^^^^
+
+Simons CMAP website is under active development at the moment: https://simonscmap.com
+
+**This project is supported by the** `Simons Foundation`_
 
 
 .. toctree::
