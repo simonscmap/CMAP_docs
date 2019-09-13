@@ -22,7 +22,7 @@
 .. raw:: html
 
     <div class="banner">
-        <img src="_static/CMAP_logos/CMAPtext_logo.png" alt="CMAP logo" width=1000px">
+        <img src="_static/CMAP_logos/CMAPtext_logo.png" alt="CMAP logo" width="800px">
     </div>
 
 
@@ -48,7 +48,7 @@ time-consuming process of data collection and preparation.
 
 
 
-Simons CMAP website is under active development at the moment: https://simonscmap.com
+Simons CMAP website is under active development: https://simonscmap.com
 
 **This project is supported by the** `Simons Foundation`_
 
