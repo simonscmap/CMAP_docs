@@ -12,7 +12,7 @@ Data Visualization
 
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target:https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/Viz.ipynb
+   :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/Viz.ipynb
 
 
 
