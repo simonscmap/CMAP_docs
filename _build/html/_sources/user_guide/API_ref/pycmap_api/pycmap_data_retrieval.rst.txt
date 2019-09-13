@@ -6,7 +6,7 @@ Data Retrieval
 ==============
 
 
-The methods below can be used to retrieve metadata and to query, subset and colocalize datasets. To begin, you must create an instance of the pycmap API. This tutorial can be found below. 
+The methods below can be used to retrieve metadata and to query, subset and colocalize datasets. To begin, you must create an instance of the pycmap API. This tutorial can be found below.
 
 
 +-------------------------------+--------------------------------------------------------------+
@@ -25,6 +25,12 @@ The methods below can be used to retrieve metadata and to query, subset and colo
 | :ref:`var_long_name`          | Returns Long Name of Given Variable                          |
 +-------------------------------+--------------------------------------------------------------+
 | :ref:`var_unit`               | Returns Unit for Given Variable, if applicable               |
++-------------------------------+--------------------------------------------------------------+
+| :ref:`varRes`                 | Returns Spatial and Temporal Resolution of Given Variable    |
++-------------------------------+--------------------------------------------------------------+
+| :ref:`varCover`               | Returns Spatial and Temporal Coverage of Given Variable      |
++-------------------------------+--------------------------------------------------------------+
+| :ref:`varStat`                | Returns Summary Statistics for Given Variable                |
 +-------------------------------+--------------------------------------------------------------+
 | :ref:`hasfield`               | Returns True if Column Exists                                |
 +-------------------------------+--------------------------------------------------------------+
@@ -64,6 +70,9 @@ The methods below can be used to retrieve metadata and to query, subset and colo
   pycmap_dataset_head
   pycmap_variable_long_name
   pycmap_variable_unit
+  pycmap_variable_resolution
+  pycmap_var_coverage
+  pycmap_var_stat
   pycmap_has_field
   pycmap_is_gridded
   pycmap_is_climatology

@@ -30,19 +30,19 @@ pycmap API
 
 
 
-Pycmap is the python package of Simons CMAP project providing a simple and unified interface to the hosted datasets at Simons CMAP database.
+Pycmap is the python package of Simons CMAP project that provides a simple and unified interface to the hosted datasets at Simons CMAP database.
 
-The pycmap package requires an API key. To obtain an API key please register for a key here: https://simonscmap.com/register
+The pycmap package requires an API key. To obtain an API key please first register for at: https://simonscmap.com/register and then click on the API link at the op of the page to get the API key. You will need to keep this key for future use. 
 
 
 
-The pycmap documentation is written in the Jupyter Notebook format and avaiable on github_. Each notebook contains one or
+The pycmap documentation is written in the Jupyter Notebook format and available on github_. Each notebook contains one or
 more example codes. Please click here_ to download the pymap project and associated documentation.
 The documentation can be run locally using a Jupyter Notebook or alternatively, you may run the examples on google
 cloud using the  |colab|  badge which appears at the top of each tutorial page.
 
 
-Once receiving an API key you can install pycmap locally and then retrieve and visualize data. Below are links providing details and tutorials on how to install, retrieve and visualize data with pycmap.
+Once you receive an API key you can install pycmap locally and then retrieve and visualize data. Below are links providing details and tutorials on how to install, retrieve and visualize data with pycmap.
 
 +------------------------+------------------------+------------------------+
 |      |install_icon|    |    |data_retrieval|    | |data_vizualization|   |
