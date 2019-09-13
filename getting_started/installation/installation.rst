@@ -1,14 +1,14 @@
 .. _installation:
 
 
-.. _pycmap: pycmap/pycmap_install.html
+.. _pycmap: ../../user_guide/API_ref/pycmap_api/pycmap_install.html
 .. _opedia (depreciated): opedia/opedia_install.html
 .. _cmap4r: cmap4r/cmap4r_install.html
 
 .. |pycmap| image:: /_static/installation_icons/python_logo.png
    :align: middle
    :scale: 30%
-   :target: pycmap/pycmap_install.html
+   :target: ../../user_guide/API_ref/pycmap_api/pycmap_install.html
 
 .. |opedia (depreciated)| image:: /_static/installation_icons/python_logo.png
    :align: middle

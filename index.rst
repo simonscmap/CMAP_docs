@@ -28,12 +28,9 @@
 
 
 | Mohammad Dehghani Ashkezari mdehghan@uw.edu
-| Ginger Armbrust armbrust@u.washington.edu
-| Mike Denholtz denholtz@uw.edu
 | Norland Raphael Hagen nrhagen@uw.edu
-
-
-
+| Mike Denholtz denholtz@uw.edu, and
+| Ginger Armbrust armbrust@uw.edu
 
 
 
@@ -49,8 +46,7 @@ time-consuming process of data collection and preparation.
 
 
 
-Website
-^^^^^^^
+
 
 Simons CMAP website is under active development at the moment: https://simonscmap.com
 

@@ -1,10 +1,4 @@
-.wy-nav-side p.caption {
-  color: #F5F5F5;
-}
 
-div.wy-side-nav-search {
-  background: #000000;
-}
 /* div.wy-side-nav-search {
   background: #757575;
 } */
@@ -13,31 +7,79 @@ div.wy-side-nav-search {
     max-width: none;
 }
 
-div.wy-side-nay {
-  background: #212121;
+/* To stick the footer to the bottom of the page */
+html {
 }
 
-table.field-list td li {
-  line-height: 18px;
+body {
+    font-family: 'Open Sans', sans-serif;
 }
 
-table.docutils td p {
-  font-size: 14px !important;
-  margin-bottom: 6px;
-
+h1, h2, h3, h4 {
+    font-weight: 200;
+    font-family: "Open Sans",sans-serif;
 }
 
-table.docutils td li {
-  line-height: 18px;
+h1 {
+    font-size: 100%;
+}
 
-/* @media (min-width 980px) {.wy-nav-content {
-    max-width: none;}} */
+.sidebar-title {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
 
-/* .no-max-width {max-width: none;} */
-/* }
-.wy-nav-content {
-    max-width: none;
+.banner {
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.banner img {
+    margin-bottom: 40px;
+}
+
+.api-module {
+	margin-bottom: 80px;
+}
+
+
+
+
+
+.wy-nav-top {
+    background-color: #555555;
+}
+
+.wy-side-nav-search {
+    background-color: #555555;
+}
+
+.wy-side-nav-search > a img.logo {
+    width: 50%;
+}
+
+.wy-side-nav-search input[type="text"] {
+    border-color: #555555;
+}
+
+/* Remove the padding from the Parameters table */
+.rst-content table.field-list .field-name {
+    padding-left: 0px;
+}
+
+/* Lign up the Parameters section with the descriptions */
+.rst-content table.field-list td {
+    padding-top: 8px;
+}
+
+.rst-content .highlight > pre {
+    font-size: 14px;
+}
+
+/* .rst-content img {
+    max-width: 100%;
 } */
 
-
-img.align-center {float: center;}
+.source-link {
+    float: right;
+}

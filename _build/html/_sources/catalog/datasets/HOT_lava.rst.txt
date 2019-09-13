@@ -3,8 +3,8 @@
 .. _HOT_LAVA:
 
 
-HOT - Life Aquatic in the Volcanic Aftermath - Cruise
-*****************************************************
+HOT LAVA - Cruise
+*****************
 
 
 .. |globe| image:: /_static/catalog_thumbnails/globe.png
@@ -48,6 +48,11 @@ HOT - Life Aquatic in the Volcanic Aftermath - Cruise
   :align: middle
   :scale: 10%
   :target: ../../tutorials/regional_map_sparse.html
+
+
+
+Life Aquatic in the Volcanic Aftermath
+--------------------------------------
 
 
 +-------------------------------+----------+----------+-------------+------------------------+----------------------+---------------------+---------------------+

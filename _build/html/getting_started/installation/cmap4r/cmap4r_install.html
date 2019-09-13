@@ -70,12 +70,12 @@
           
 
           
-            <a href="../../../index.html">
+            <a href="../../../index.html" class="icon icon-home"> CMAP
           
 
           
             
-            <img src="../../../_static/CMAP_logo_resize.png" class="logo" alt="Logo"/>
+            <img src="../../../_static/CMAP_logo.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -105,7 +105,14 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../installation.html">Installation</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../pycmap/pycmap_install.html">pycmap</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../opedia/opedia_install.html">opedia</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">cmap4r</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">cmap4r</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#r-user">R user</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#package-for-visualization">Package for visualization:</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -192,8 +199,56 @@
             
   <div class="section" id="cmap4r">
 <h1>cmap4r<a class="headerlink" href="#cmap4r" title="Permalink to this headline">¶</a></h1>
-<p>“<em>cmap4r</em>” is the R package developed for the CMAP project.
+<p><em>cmap4r</em> is the R package developed for the CMAP project.
 The github page can be found here: <a class="reference external" href="https://github.com/simonscmap/cmap4r">https://github.com/simonscmap/cmap4r</a></p>
+<div class="section" id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<p>For Mac operating system, a user needs to install the unixODBC library
+and database drivers. We suggest using SQL Server ODBC drivers (Free
+TDS). Using Homebrew, run the following commands to install the
+suggested module.</p>
+<ul class="simple">
+<li><p>brew install unixodbc</p></li>
+<li><p>brew install freetds</p></li>
+</ul>
+<p>In case of Linux operating system, first, install <a class="reference external" href="https://www.anaconda.com/distribution/#linux">Anaconda
+distribition</a>, and then run the following commands to install suggested
+module.</p>
+<ul class="simple">
+<li><p>conda install -c anaconda unixodbc</p></li>
+<li><p>conda install -c anaconda freetds</p></li>
+</ul>
+<p>Please follow the <a class="reference external" href="https://db.rstudio.com/best-practices/drivers/">link</a> to see other drivers available for
+installation.</p>
+</div>
+<div class="section" id="r-user">
+<h2>R user<a class="headerlink" href="#r-user" title="Permalink to this headline">¶</a></h2>
+<p>An R user will need the following package to connect to the database: a)
+“DBI”, for database interface; b) “odbc” for connecting to the database
+using <strong>DBI</strong> interface.</p>
+<p>In addition, user may require some additional R package for downloading,
+processing and visualizing the data. Run the following commands to
+install some of the essential packages.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1">## Package &quot;DBI&quot; provide interface to the database</span>
+install.packages<span class="o">(</span><span class="s2">&quot;DBI&quot;</span><span class="o">)</span>
+
+<span class="c1">## Driver for the database</span>
+install.packages<span class="o">(</span><span class="s2">&quot;odbc&quot;</span><span class="o">)</span>
+
+<span class="c1">## Package for data processing:</span>
+install.packages<span class="o">(</span><span class="s2">&quot;dbplyr&quot;</span><span class="o">)</span>
+install.packages<span class="o">(</span><span class="s2">&quot;plyr&quot;</span><span class="o">)</span>
+
+<span class="c1">## Package for visualization:</span>
+install.packages<span class="o">(</span><span class="s2">&quot;ggplot2&quot;</span><span class="o">)</span>
+install.packages<span class="o">(</span><span class="s2">&quot;plotly&quot;</span><span class="o">)</span>
+</pre></div>
+</div>
+<div class="section" id="package-for-visualization">
+<h3>Package for visualization:<a class="headerlink" href="#package-for-visualization" title="Permalink to this headline">¶</a></h3>
+<p>install.packages(“ggplot2”) install.packages(“plotly”)</p>
+</div>
+</div>
 </div>
 
 
@@ -209,7 +264,7 @@ The github page can be found here: <a class="reference external" href="https://g
     <p>
         &copy; Copyright 2019, Mohammad Dehghani Ashkezari &amp; Norland Raphael Hagen
       <span class="lastupdated">
-        Last updated on Sep 11, 2019.
+        Last updated on Sep 12, 2019.
       </span>
 
     </p>

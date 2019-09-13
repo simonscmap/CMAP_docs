@@ -104,7 +104,7 @@ pygments_style = None
 html_last_updated_fmt = '%b %d, %Y'
 html_title = 'CMAP'
 html_short_title = 'CMAP'
-html_logo = '_static/CMAP_logos/CMAP_logo_resize.png'
+html_logo = '_static/CMAP_logos/CMAP_logo.png'
 html_favicon = '_static/CMAP_logos/CMAP_logo.png'
 html_static_path = ['_static']
 html_extra_path = []
@@ -117,7 +117,7 @@ html_show_copyright = True
 # Theme config
 html_theme = "sphinx_rtd_theme"
 html_theme_options = {
-    'logo_only': True,
+    'logo_only': False,
     'display_version': False,
     'prev_next_buttons_location': None,
     'navigation_depth': 4,

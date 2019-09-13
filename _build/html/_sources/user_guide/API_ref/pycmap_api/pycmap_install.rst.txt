@@ -19,7 +19,11 @@ Installation
 
 pycmap can be installed using pip:
 
-``pip install pycmap``
+.. code-block:: shell
+
+  pip install pycmap
+
+
 
 In order to use pycmap, you will need to obtain an API key from
 SimonsCMAP website: https://simonscmap.com.
@@ -32,7 +36,9 @@ SimonsCMAP website: https://simonscmap.com.
 
 
 
-  ``!pip install pycmap``
+  .. code-block:: shell
+
+    !pip install pycmap
 
 
 
