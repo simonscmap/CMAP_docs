@@ -2,6 +2,7 @@
 
 
 
+
 Installation
 ============
 
@@ -11,10 +12,13 @@ Installation
 .. _API key: API.ipynb
 .. _Binder: https://mybinder.org/
 .. _Colab: https://colab.research.google.com/
+.. _Anaconda Distribution: https://www.anaconda.com/download/
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/mdashkezari/pycmapDoc/blob/master/notebooks/Installation.ipynb
+   :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/Installation.ipynb
 
+
+To use pycmap locally, you will need Python installed on your computer. We recommend the `Anaconda Distribution`_
 
 
 pycmap can be installed using pip:

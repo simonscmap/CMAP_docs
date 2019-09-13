@@ -7,7 +7,7 @@ Is Gridded Product
 
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/mdashkezari/pycmapDoc/blob/master/notebooks/Grid.ipynb
+   :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/Grid.ipynb
 
 
 .. method:: is_grid(tableName, varName)

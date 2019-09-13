@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     
-        <title>Metadata &mdash; CMAP</title>
+        <title>API &mdash; CMAP</title>
     
 
 
@@ -42,8 +42,8 @@
   <link rel="stylesheet" href="../../../_static/style.css" type="text/css" />
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Dataset Columns" href="pycmap_dataset_columns.html" />
-    <link rel="prev" title="Catalog" href="pycmap_catalog.html" />
+    <link rel="next" title="Query" href="pycmap_query.html" />
+    <link rel="prev" title="Data Retrieval" href="pycmap_data_retrieval.html" />
     <!-- Google Analytics tracking code -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -111,10 +111,10 @@
 <li class="toctree-l2 current"><a class="reference internal" href="pycmap_api_ref.html">pycmap API</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="pycmap_install.html">Installation</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="pycmap_data_retrieval.html">Data Retrieval</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="pycmap_api.html">API</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">API</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_query.html">Query</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_catalog.html">Catalog</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">Metadata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_metadata.html">Metadata</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_dataset_columns.html">Dataset Columns</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_dataset_head.html">Dataset Head</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_variable_long_name.html">Variable Long Name</a></li>
@@ -199,13 +199,13 @@
         
           <li><a href="pycmap_data_retrieval.html">Data Retrieval</a> &raquo;</li>
         
-      <li>Metadata</li>
+      <li>API</li>
     
     
     <li class="source-link">
         
             
-                <a href="https://github.com//edit///user_guide/API_ref/pycmap_api/pycmap_metadata.rst"
+                <a href="https://github.com//edit///user_guide/API_ref/pycmap_api/pycmap_api.rst"
                    class="fa fa-github"> Improve this page</a>
             
         
@@ -220,42 +220,44 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="metadata">
-<span id="id1"></span><h1>Metadata<a class="headerlink" href="#metadata" title="Permalink to this headline">¶</a></h1>
-<a class="reference external image-reference" href="https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/MetaData.ipynb"><img alt="https://colab.research.google.com/assets/colab-badge.svg" src="https://colab.research.google.com/assets/colab-badge.svg" /></a>
-<dl class="method">
-<dt id="get_metadata">
-<code class="sig-name descname">get_metadata</code><span class="sig-paren">(</span><em class="sig-param">table</em>, <em class="sig-param">variable</em><span class="sig-paren">)</span><a class="headerlink" href="#get_metadata" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns a dataframe containing the associated metadata of a variable (such as data source, distributor, references, and etc..).
-The inputs can be string literals (if only one table, and variable is passed) or a list of string literals.</p>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
+  <div class="section" id="api">
+<span id="pycmapapi"></span><h1>API<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h1>
+<a class="reference external image-reference" href="https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/API.ipynb"><img alt="https://colab.research.google.com/assets/colab-badge.svg" src="https://colab.research.google.com/assets/colab-badge.svg" /></a>
+<dl class="class">
+<dt id="API">
+<em class="property">class </em><code class="sig-name descname">API</code><a class="headerlink" href="#API" title="Permalink to this definition">¶</a></dt>
+<dd><p>To retrieve data, create an instance of the system’s API and pass the API key. It is no necessary to pass the API key every time you run a code locally, because it will be stored locally. The API class has other optional parameters to adjust its behavior. All parameters can be updated persistently at any point in the code.</p>
+<p><code class="docutils literal notranslate"><span class="pre">class</span> <span class="pre">pycmap.API(token=&lt;API</span> <span class="pre">KEY&gt;,</span> <span class="pre">baseURL='https://simonscmap.com',</span> <span class="pre">headers=None,</span> <span class="pre">vizEngine='plotly',</span> <span class="pre">exportDir='./export/',</span> <span class="pre">&gt;</span> <span class="pre">exportFormat='.csv',</span> <span class="pre">figureDir='./figure/')</span></code>
+|</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>table: string or list of string</strong></dt><dd><p>The name of table where the variable is stored. A full list of table names can be found in the <a class="reference internal" href="../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
+<dt><strong>token: string, required</strong></dt><dd><p>Access token (API Key) required to make client requests. You may get an API key here: <a class="reference external" href="https://simonscmap.com">https://simonscmap.com</a></p>
 </dd>
-<dt><strong>variable: string or list of string:</strong></dt><dd><p>Variable short name. A full list of variable short names can be found in the <a class="reference internal" href="../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
+<dt><strong>baseURL: string, optional, default: https://simonscmap.com</strong></dt><dd><p>Root endpoint of Simons CMAP API.</p>
+</dd>
+<dt><strong>headers: dict, optional, default: None</strong></dt><dd><p>Additional headers to add to the client requests.</p>
+</dd>
+<dt><strong>vizEngine: string, optional, default: ‘plotly’</strong></dt><dd><p>Data visualization library used to render the graphs. The other option for visualization library is ‘bokeh’. Notice some of the graphs (such as correlation matrix) are only suported by plotly.</p>
+</dd>
+<dt><strong>exportDir: string, optional, default: ‘./export/’</strong></dt><dd><p>Path to local directory where the exported data are stored.</p>
+</dd>
+<dt><strong>exportFormat: string, optional, default: ‘.csv’</strong></dt><dd><p>File format of the exported files. Currently, only csv format is supported.</p>
+</dd>
+<dt><strong>figureDir: string, optional, default: ‘./figure/’</strong></dt><dd><p>Path to local directory where the figures are stored. The interactive figure objects are stored in form of html files.
+Note: inline graphs (e.g. on jupyter notebook) are not saved.</p>
 </dd>
 </dl>
-</dd>
-<dt class="field-even">Returns:</dt>
-<dd class="field-even"><p>Pandas dataframe.</p>
 </dd>
 </dl>
 </dd></dl>
 
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
 <p><strong>Example</strong></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!pip install pycmap -q     #uncomment to install pycmap, if necessary</span>
 
 <span class="kn">import</span> <span class="nn">pycmap</span>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">pycmap</span><span class="o">.</span><span class="n">API</span><span class="p">(</span><span class="n">token</span><span class="o">=</span><span class="s1">&#39;&lt;YOUR_API_KEY&gt;&#39;</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">get_metadata</span><span class="p">([</span><span class="s1">&#39;tblsst_AVHRR_OI_NRT&#39;</span><span class="p">,</span> <span class="s1">&#39;tblArgoMerge_REP&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;sst&#39;</span><span class="p">,</span> <span class="s1">&#39;argo_merge_salinity_adj&#39;</span><span class="p">])</span>
+<span class="n">api</span> <span class="o">=</span> <span class="n">pycmap</span><span class="o">.</span><span class="n">API</span><span class="p">(</span><span class="n">token</span><span class="o">=</span><span class="s1">&#39;&lt;YOUR_API_KEY&gt;&#39;</span><span class="p">,</span> <span class="n">vizEngine</span><span class="o">=</span><span class="s1">&#39;plotly&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>

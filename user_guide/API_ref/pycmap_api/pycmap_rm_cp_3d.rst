@@ -8,7 +8,7 @@ Regional Map, Contour Plot, 3D Surface Plot
 
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/mdashkezari/pycmapDoc/blob/master/notebooks/Viz_RegionalMap.ipynb
+   :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/Viz_RegionalMap.ipynb
 
 
 

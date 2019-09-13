@@ -3,7 +3,6 @@
 
 
 
-
 Correlation Matrix Along Cruise Track
 =====================================
 
@@ -11,9 +10,11 @@ Correlation Matrix Along Cruise Track
 .. _cruise: Cruises.ipynb
 .. _Match (colocalize) Cruise Track with Datasets: MatchCruise.ipynb
 .. _Match (colocalize) Datasets: Match.ipynb
+.. _API key: pycmap_api.html
+.. _APIs parameters: pycmap_api.html
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/mdashkezari/pycmapDoc/blob/master/notebooks/Viz_CruiseCorrelationMatrix.ipynb
+   :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/Viz_CruiseCorrelationMatrix.ipynb
 
 .. _SeaFlow dataset: https://cmap.readthedocs.io/en/latest/catalog/datasets/SeaFlow.html#seaflow
 .. _catalog: Catalog.ipynb
@@ -44,7 +45,7 @@ Correlation Matrix Along Cruise Track
 
     :Parameters:
         **cruise: string**
-        The official cruise name. If applicable, you may also use cruise "nickname" ('Diel', 'Gradients_1' ...). A full list of cruise names can be retrieved using `cruise`_ method.
+            The official cruise name. If applicable, you may also use cruise "nickname" ('Diel', 'Gradients_1' ...). A full list of cruise names can be retrieved using `cruise`_ method.
         **targetTables: list of string**
             Table names of the target datasets to be matched with the source data. Notice source dataset can be matched with multiple target datasets. A full list of table names can be found in :ref:`Catalog`.
         **targetVars: list of string**
@@ -69,7 +70,7 @@ Correlation Matrix Along Cruise Track
             coefficient, more favorable for linear correlations. *'kendall'* evaluates Kendall Tau correlation coefficient.
 
         **exportDataFlag: boolean, default: False**
-          If True, the graph data points are stored on the local machine. The export path and file format are set by the `API's parameters`_.
+          If True, the graph data points are stored on the local machine. The export path and file format are set by the `APIs parameters`_.
         **show: boolean, default: True**
           If True, the graph object is returned and is displayed. The graph file is saved on the local machine at the figureDir directory.
           If False, the graph object is returned but not displayed.

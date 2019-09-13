@@ -9,7 +9,7 @@ Histogram Plot
 
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/mdashkezari/pycmapDoc/blob/master/notebooks/Viz_Histogram.ipynb
+   :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/Viz_Histogram.ipynb
 
 
 
@@ -26,7 +26,7 @@ Histogram Plot
       being called the first time.
 
     |
-    
+
     :Parameters:
         **tables: list of string**
             Table names (each dataset is stored in a table). A full list of table names can be found in :ref:`Catalog`.

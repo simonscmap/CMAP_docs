@@ -19,7 +19,7 @@ Correlation Matrix
 .. _APIs parameters: pycmap_api.html
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/mdashkezari/pycmapDoc/blob/master/notebooks/Viz_CorrelationMatrix.ipynb
+   :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/Viz_CorrelationMatrix.ipynb
 
 .. _Match (colocalize) Datasets: Match.ipynb
 .. _catalog: Catalog.ipynb

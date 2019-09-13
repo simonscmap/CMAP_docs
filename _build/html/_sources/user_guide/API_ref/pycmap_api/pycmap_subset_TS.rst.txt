@@ -7,7 +7,7 @@ Data Subset: Time Series
 
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/mdashkezari/pycmapDoc/blob/master/notebooks/TimeSeries.ipynb
+   :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/TimeSeries.ipynb
 
 
 .. method:: time_series(table, variable, dt1, dt2, lat1, lat2, lon1, lon2, depth1, depth2, interval=None)
@@ -16,7 +16,7 @@ Data Subset: Time Series
     Returns a subset of data according to the specified space-time constraints (dt1, dt2, lat1, lat2, lon1, lon2, depth1, depth2). The returned data subset is aggregated by time: at each time interval the mean and standard deviation of the variable values within the space-time constraints are computed. The sequence of these values construct the timeseries. The timeseries data can be binned weekly, monthly, quarterly, or annually, if the interval parameter is set (this feature is not applicable to climatological datasets). The resulted timeseries is returned in form of a Pandas datframe ordered by time.
 
     |
-    
+
     :Parameters:
 
         **table: string**

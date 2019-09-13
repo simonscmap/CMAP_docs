@@ -7,7 +7,7 @@ Cruise Trajectory
 
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/mdashkezari/pycmapDoc/blob/master/notebooks/CruiseTrajectory.ipynb
+   :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/CruiseTrajectory.ipynb
 
 
 .. method:: cruise_trajectory(cruiseName)
@@ -16,7 +16,7 @@ Cruise Trajectory
     Returns a dataframe containing the trajectory of the specified cruise.
 
     |
-    
+
     :Parameters:
         **cruiseName: string**
           The official cruise name. If applicable, you may also use cruise "nickname" ('Diel', 'Gradients_1' ...).

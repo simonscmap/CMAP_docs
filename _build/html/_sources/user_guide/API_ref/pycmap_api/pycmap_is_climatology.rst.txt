@@ -7,7 +7,7 @@ Is Climatology Product
 
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/mdashkezari/pycmapDoc/blob/master/notebooks/Climatology.ipynb
+   :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/Climatology.ipynb
 
 
 .. method:: is_climatology(tableName)
@@ -16,7 +16,7 @@ Is Climatology Product
     Returns True if the specified dataset represents a climatological product; otherwise returns False.
 
     |
-    
+
     :Parameters:
         **tableName: string**
             The name of table associated with the dataset. A full list of table names can be found in the :ref:`Catalog`.

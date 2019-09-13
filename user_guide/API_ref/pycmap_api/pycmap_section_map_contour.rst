@@ -8,7 +8,7 @@ Section Map, Section Contour
 
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/mdashkezari/pycmapDoc/blob/master/notebooks/Viz_Section.ipynb
+   :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/Viz_Section.ipynb
 
 
 

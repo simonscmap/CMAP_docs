@@ -7,7 +7,7 @@ Query
 
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/mdashkezari/pycmapDoc/blob/master/notebooks/Query.ipynb
+   :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/Query.ipynb
 
 
 
@@ -73,7 +73,7 @@ Query
         * udfMetaData_NoRef
 
     |
-    
+
     :Parameters:
       **query: string**
         Generic scan SQL statement. A full list of tables can be found in the :ref:`Catalog`.

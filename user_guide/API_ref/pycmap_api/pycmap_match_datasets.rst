@@ -7,7 +7,7 @@ Match (colocalize) Datasets
 
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/mdashkezari/pycmapDoc/blob/master/notebooks/Match.ipynb
+   :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/Match.ipynb
 
 
 .. method:: match(sourceTable, sourceVar, targetTables, targetVars, dt1, dt2, lat1, lat2, lon1, lon2, depth1, depth2, temporalTolerance, latTolerance, lonTolerance, depthTolerance)
@@ -23,7 +23,7 @@ Match (colocalize) Datasets
 
 
     |
-    
+
     :Parameters:
 
         **sourceTable: string**

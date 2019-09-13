@@ -7,7 +7,7 @@ Data Subset: Generic Space-Time Cut
 
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/mdashkezari/pycmapDoc/blob/master/notebooks/SpaceTime.ipynb
+   :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/SpaceTime.ipynb
 
 
 .. method:: space_time(table, variable, dt1, dt2, lat1, lat2, lon1, lon2, depth1, depth2)
@@ -17,7 +17,7 @@ Data Subset: Generic Space-Time Cut
     The results are ordered by time, lat, lon, and depth (if exists), respectively.
 
     |
-    
+
     :Parameters:
 
         **table: string**

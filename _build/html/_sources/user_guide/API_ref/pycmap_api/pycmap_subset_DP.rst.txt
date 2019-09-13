@@ -7,7 +7,7 @@ Data Subset: Depth Profile
 
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/mdashkezari/pycmapDoc/blob/master/notebooks/DepthProfile.ipynb
+   :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/DepthProfile.ipynb
 
 
 .. method:: depth_profile(table, variable, dt1, dt2, lat1, lat2, lon1, lon2, depth1, depth2)
@@ -16,7 +16,7 @@ Data Subset: Depth Profile
     Returns a subset of data according to the specified space-time constraints (dt1, dt2, lat1, lat2, lon1, lon2, depth1, depth2). The returned data subset is aggregated by depth: at each depth level the mean and standard deviation of the variable values within the space-time constraints are computed. The sequence of these values construct the depth profile. The resulted depth profile is returned in form of a Pandas dataframe ordered by depth.
 
     |
-    
+
     :Parameters:
 
         **table: string**

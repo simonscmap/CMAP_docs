@@ -8,7 +8,7 @@ Metadata
 
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/mdashkezari/pycmapDoc/blob/master/notebooks/MetaData.ipynb
+   :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/MetaData.ipynb
 
 
 .. method:: get_metadata(table, variable)
@@ -19,7 +19,7 @@ Metadata
     The inputs can be string literals (if only one table, and variable is passed) or a list of string literals.
 
     |
-    
+
     :Parameters:
         **table: string or list of string**
             The name of table where the variable is stored. A full list of table names can be found in the :ref:`Catalog`.

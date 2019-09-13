@@ -203,7 +203,7 @@
             
   <div class="section" id="correlation-matrix-along-cruise-track">
 <span id="corrmatrixcruise"></span><h1>Correlation Matrix Along Cruise Track<a class="headerlink" href="#correlation-matrix-along-cruise-track" title="Permalink to this headline">¶</a></h1>
-<a class="reference external image-reference" href="https://colab.research.google.com/github/mdashkezari/pycmapDoc/blob/master/notebooks/Viz_CruiseCorrelationMatrix.ipynb"><img alt="https://colab.research.google.com/assets/colab-badge.svg" src="https://colab.research.google.com/assets/colab-badge.svg" /></a>
+<a class="reference external image-reference" href="https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/Viz_CruiseCorrelationMatrix.ipynb"><img alt="https://colab.research.google.com/assets/colab-badge.svg" src="https://colab.research.google.com/assets/colab-badge.svg" /></a>
 <dl class="method">
 <dt id="plot_cruise_corr_map">
 <code class="sig-name descname">plot_cruise_corr_map</code><span class="sig-paren">(</span><em class="sig-param">cruise</em>, <em class="sig-param">targetTables</em>, <em class="sig-param">targetVars</em>, <em class="sig-param">depth1</em>, <em class="sig-param">depth2</em>, <em class="sig-param">temporalTolerance</em>, <em class="sig-param">latTolerance</em>, <em class="sig-param">lonTolerance</em>, <em class="sig-param">depthTolerance</em>, <em class="sig-param">method='spearman'</em>, <em class="sig-param">exportDataFlag=False</em>, <em class="sig-param">show=True</em><span class="sig-paren">)</span><a class="headerlink" href="#plot_cruise_corr_map" title="Permalink to this definition">¶</a></dt>
@@ -217,22 +217,20 @@ that, currently, this graph is only supported by plotly library.</p>
 <p>Returns the generated correlation graph object using which one may modify the graph properties (see example below).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This method requires a valid <a href="#id2"><span class="problematic" id="id3">`API key`_</span></a>. It is not necessary to set the
+<p>This method requires a valid <a class="reference external" href="pycmap_api.html">API key</a>. It is not necessary to set the
 API key every time because the API properties are stored locally after
 being called the first time.</p>
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<dl class="field-list">
+<dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>cruise: string</strong>
-The official cruise name. If applicable, you may also use cruise “nickname” (‘Diel’, ‘Gradients_1’ …). A full list of cruise names can be retrieved using <a class="reference external" href="Cruises.ipynb">cruise</a> method.
-<strong>targetTables: list of string</strong></p>
-<blockquote>
-<div><p>Table names of the target datasets to be matched with the source data. Notice source dataset can be matched with multiple target datasets. A full list of table names can be found in <a class="reference internal" href="../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
-</div></blockquote>
-<dl class="simple">
+<dd class="field-odd"><dl class="simple">
+<dt><strong>cruise: string</strong></dt><dd><p>The official cruise name. If applicable, you may also use cruise “nickname” (‘Diel’, ‘Gradients_1’ …). A full list of cruise names can be retrieved using <a class="reference external" href="Cruises.ipynb">cruise</a> method.</p>
+</dd>
+<dt><strong>targetTables: list of string</strong></dt><dd><p>Table names of the target datasets to be matched with the source data. Notice source dataset can be matched with multiple target datasets. A full list of table names can be found in <a class="reference internal" href="../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
+</dd>
 <dt><strong>targetVars: list of string</strong></dt><dd><p>Variable short names to be matched with the source variable. A full list of variable short names can be found in <a class="reference internal" href="../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
 </dd>
 <dt><strong>depth1: float</strong></dt><dd><p>Start depth [m]. This parameter sets the lower bound of the depth cut on the traget datasets. ‘depth1’ and ‘depth2’ allow matching a cruise trajectory (which is at the surface, hopefully!) with traget varaiables at lower depth. Note depth is a positive number (depth is 0 at surface and grows towards ocean floor).</p>
@@ -252,7 +250,7 @@ a metric for monotonic relationships. Other options involve
 <strong>‘pearson’</strong> and <strong>‘kendall’</strong>. <em>‘pearson’</em> is the standard correlation
 coefficient, more favorable for linear correlations. <em>‘kendall’</em> evaluates Kendall Tau correlation coefficient.</p>
 </dd>
-<dt><strong>exportDataFlag: boolean, default: False</strong></dt><dd><p>If True, the graph data points are stored on the local machine. The export path and file format are set by the <a href="#id4"><span class="problematic" id="id5">`API's parameters`_</span></a>.</p>
+<dt><strong>exportDataFlag: boolean, default: False</strong></dt><dd><p>If True, the graph data points are stored on the local machine. The export path and file format are set by the <a class="reference external" href="pycmap_api.html">APIs parameters</a>.</p>
 </dd>
 <dt><strong>show: boolean, default: True</strong></dt><dd><p>If True, the graph object is returned and is displayed. The graph file is saved on the local machine at the figureDir directory.
 If False, the graph object is returned but not displayed.</p>
@@ -315,7 +313,7 @@ modify the graph properties (see example below).</p>
 (colocalize) Datasets</a> pages for more details and tips!</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This method requires a valid <a href="#id6"><span class="problematic" id="id7">`API key`_</span></a>. It is not necessary to set the
+<p>This method requires a valid <a class="reference external" href="pycmap_api.html">API key</a>. It is not necessary to set the
 API key every time because the API properties are stored locally after
 being called the first time.</p>
 </div>

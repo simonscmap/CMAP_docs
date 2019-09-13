@@ -7,7 +7,7 @@ Cruise Details by Name
 
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/mdashkezari/pycmapDoc/blob/master/notebooks/CruiseByName.ipynb
+   :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/CruiseByName.ipynb
 
 
 .. method:: cruise_by_name(cruiseName)
@@ -17,7 +17,7 @@ Cruise Details by Name
     The details include cruise official name, nickname, ship name, start/end time/location, etc ...
 
     |
-    
+
     :Parameters:
         **cruiseName: string**
           The official cruise name. If applicable, you may also use cruise "nickname" ('Diel', 'Gradients_1' ...). A full list of cruise names can be retrieved using cruise method.

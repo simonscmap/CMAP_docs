@@ -27,10 +27,10 @@
 
 
 
-| Mohammad Dehghani Ashkezari mdehghan@uw.edu
-| Norland Raphael Hagen nrhagen@uw.edu
-| Mike Denholtz denholtz@uw.edu, and
-| Ginger Armbrust armbrust@uw.edu
+| *Mohammad Dehghani Ashkezari*
+| *Norland Raphael Hagen*
+| *Mike Denholtz, and*
+| *Ginger Armbrust*
 
 
 

@@ -8,14 +8,14 @@ Dataset Head
 
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/mdashkezari/pycmapDoc/blob/master/notebooks/Head.ipynb
+   :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/Head.ipynb
 
 
 .. method:: head(tableName, rows=5)
 
 
     Returns top rows of a given dataset.
-    
+
     |
 
     :Parameters:
