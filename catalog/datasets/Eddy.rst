@@ -49,7 +49,7 @@ Eddy
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 | Dataset Name                  | Sensor   |  Make       |  Spatial Resolution    |Temporal Resolution|  Start Date         |  End Date           |
 +===============================+==========+=============+========================+===================+=====================+=====================+
-| :ref:`Eddy`                   | |sat|    | Observation |       Irregular        |         Daily     |  2003-01-01         | 2015-04-23          |
+| :ref:`Eddy`                   | |sat|    | Observation |       Irregular        |         Daily     |  1993-01-01         | 2018-01-18          |
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 
 
@@ -69,7 +69,7 @@ Table of Variables
 Dataset Description
 *******************
 
-Simons CMAP contains **Eddy** records from 2013-01-01 through 2017-05-15 collected from AVISO+. The dataset was developed and validated in between collaboration between Aviso+ and with D.Chelton  and M. Schlax at the Oregon State University.
+Simons CMAP contains **Eddy** records from  1993-01-01 through 2018-01-18  collected from AVISO+. The dataset was developed and validated in between collaboration between Aviso+ and with D.Chelton  and M. Schlax at the Oregon State University.
 This dataset has a spatial resolution of 1/4° X 1/4° and a daily temporal resolution. Each Eddy has associated (cyclonic/anticyclonic), speed, radius metadata.
 
 
