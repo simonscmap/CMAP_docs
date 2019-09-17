@@ -234,6 +234,41 @@
 <span class="n">api</span><span class="o">.</span><span class="n">get_unit</span><span class="p">(</span><span class="s1">&#39;tblHOT_ParticleFlux&#39;</span><span class="p">,</span> <span class="s1">&#39;silica_hot&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
+<dl>
+<dt>def astype(self, dtype, copy=True, errors=”raise”, <a href="#id1"><span class="problematic" id="id2">**</span></a>kwargs):</dt><dd><p>“””
+Cast a pandas object to a specified dtype <code class="docutils literal notranslate"><span class="pre">dtype</span></code>.
+Parameters
+———-
+dtype : data type, or dict of column name -&gt; data type</p>
+<blockquote>
+<div><p>Use a numpy.dtype or Python type to cast entire pandas object to
+the same type. Alternatively, use {col: dtype, …}, where col is a
+column label and dtype is a numpy.dtype or Python type to cast one
+or more of the DataFrame’s columns to column-specific types.</p>
+</div></blockquote>
+<dl class="simple">
+<dt>copy<span class="classifier">bool, default True</span></dt><dd><p>Return a copy when <code class="docutils literal notranslate"><span class="pre">copy=True</span></code> (be very careful setting
+<code class="docutils literal notranslate"><span class="pre">copy=False</span></code> as changes to values then may propagate to other
+pandas objects).</p>
+</dd>
+<dt>errors<span class="classifier">{‘raise’, ‘ignore’}, default ‘raise’</span></dt><dd><p>Control raising of exceptions on invalid data for provided dtype.
+- <code class="docutils literal notranslate"><span class="pre">raise</span></code> : allow exceptions to be raised
+- <code class="docutils literal notranslate"><span class="pre">ignore</span></code> : suppress exceptions. On error return original object
+.. versionadded:: 0.20.0</p>
+</dd>
+</dl>
+<p>kwargs : keyword arguments to pass on to the constructor
+Returns
+——-
+casted : same type as caller
+See Also
+——–
+to_datetime : Convert argument to datetime.
+to_timedelta : Convert argument to timedelta.
+to_numeric : Convert argument to a numeric type.
+numpy.ndarray.astype : Cast a numpy array to a specified type.</p>
+</dd>
+</dl>
 </div>
 
 
