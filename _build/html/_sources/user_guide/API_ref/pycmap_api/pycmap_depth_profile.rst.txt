@@ -11,7 +11,9 @@ Depth Profile
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
    :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/Viz_DepthProfile.ipynb
 
-
+.. _API key: pycmap_api.html
+.. _APIs parameters: pycmap_api.html
+.. _APIs vizEngine: pycmap_api.html
 
 
 .. method:: plot_depth_profile(tables, variables, dt1, dt2, lat1, lat2, lon1, lon2, depth1, depth2, exportDataFlag=False, show=True)
@@ -63,7 +65,7 @@ Depth Profile
         **depth2: float**
             End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at surface and grows towards ocean floor).
         **exportDataFlag: boolean, default: False**
-          If True, the graph data points are stored on the local machine. The export path and file format are set by the `API's parameters`_.
+          If True, the graph data points are stored on the local machine. The export path and file format are set by the `APIs parameters`_.
         **show: boolean, default: True**
           If True, the graph object is returned and is displayed. The graph file is saved on the local machine at the figureDir directory.
           If False, the graph object is returned but not displayed.

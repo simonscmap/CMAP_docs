@@ -89,7 +89,7 @@
 </ul>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../../catalog/catalog.html">Data Catalog</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../api_ref.html">API Reference</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../api_ref.html">Software Packages</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="pycmap_api_ref.html">pycmap API</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="pycmap_install.html">Installation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pycmap_data_retrieval.html">Data Retrieval</a></li>
@@ -152,7 +152,7 @@
     
       <li><a href="../../../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../api_ref.html">API Reference</a> &raquo;</li>
+          <li><a href="../api_ref.html">Software Packages</a> &raquo;</li>
         
           <li><a href="pycmap_api_ref.html">pycmap API</a> &raquo;</li>
         
@@ -182,13 +182,13 @@
 <dt id="plot_map">
 <code class="sig-name descname">plot_map</code><span class="sig-paren">(</span><em class="sig-param">tables</em>, <em class="sig-param">variables</em>, <em class="sig-param">dt1</em>, <em class="sig-param">dt2</em>, <em class="sig-param">lat1</em>, <em class="sig-param">lat2</em>, <em class="sig-param">lon1</em>, <em class="sig-param">lon2</em>, <em class="sig-param">depth1</em>, <em class="sig-param">depth2</em>, <em class="sig-param">exportDataFlag=False</em>, <em class="sig-param">show=True</em>, <em class="sig-param">levels=0</em>, <em class="sig-param">surface3D=False</em><span class="sig-paren">)</span><a class="headerlink" href="#plot_map" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creates map graphs for each variable according to the specified space-time constraints (dt1, dt2, lat1, lat2, lon1, lon2, depth1, depth2). If the specified space-time domain involves multiple dates and/or depth levels, individual maps are made per date and depth level. To create contour plots, set the contour <strong>levels</strong> parameter to a positive integer number. Also, setting the <strong>surface3D</strong> parameter to True will generate maps in 3D mode. Note that contour and 3D sufrace maps are only supported by plotly visualization library. In the case of sparse dataset, the retrieved data is superimposed on a geospatial map.</p>
-<p>Change the <a href="#id1"><span class="problematic" id="id2">`APIs vizEngine`_</span></a> parameter if you wish to use a different
+<p>Change the <a class="reference external" href="pycmap_api.html">APIs vizEngine</a> parameter if you wish to use a different
 visualization library. Returns the generated graph objects in form of a
 python list. One may use the returned objects to modify the graph
 properties.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This method requires a valid <a href="#id3"><span class="problematic" id="id4">`API key`_</span></a>. It is not necessary to set the
+<p>This method requires a valid <a class="reference external" href="pycmap_api.html">API key</a>. It is not necessary to set the
 API key every time because the API properties are stored locally after
 being called the first time.</p>
 </div>
@@ -219,7 +219,7 @@ Example values: ‘2016-05-25’ or ‘2017-12-10 17:25:00’</p>
 </dd>
 <dt><strong>depth2: float</strong></dt><dd><p>End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at surface and grows towards ocean floor).</p>
 </dd>
-<dt><strong>exportDataFlag: boolean, default: False</strong></dt><dd><p>If True, the graph data points are stored on the local machine. The export path and file format are set by the <a href="#id5"><span class="problematic" id="id6">`API's parameters`_</span></a>.</p>
+<dt><strong>exportDataFlag: boolean, default: False</strong></dt><dd><p>If True, the graph data points are stored on the local machine. The export path and file format are set by the <a class="reference external" href="pycmap_api.html">APIs parameters</a>.</p>
 </dd>
 <dt><strong>levels: int, default: 0</strong></dt><dd><p>Number of contour levels. If 0, regional maps are generated (no contour lines). Currently, contour plots are only supported by plotly visualization library.</p>
 </dd>
@@ -419,7 +419,7 @@ Currently, 3D map plots are only supported by the plotly library.</p>
     <p>
         &copy; Copyright 2019, Mohammad Dehghani Ashkezari &amp; Norland Raphael Hagen
       <span class="lastupdated">
-        Last updated on Sep 13, 2019.
+        Last updated on Sep 17, 2019.
       </span>
 
     </p>

@@ -54,18 +54,6 @@ Exact Amplicon Sequence Variant Abundances from the ANT28-5 Latitudinal Transect
 |:ref:`ESV`                     ||cruise|  | Observation |     Irregular          |        Irregular  |  2012-04-11         | 2012-05-11          |
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 
-
-Table of Variables
-******************
-
-.. raw:: html
-
-    <iframe src="../../_static/var_tables/tblESV/tblESV.html"  frameborder = 0 height = '300px' width="100%">></iframe>
-
-
-
-|
-
 Dataset Description
 *******************
 
@@ -76,6 +64,18 @@ This dataset consists of relative microbial abundances (primarily Bacteria/Archa
   3. Large particle associated (> 8 μm; LPA)
 
 Detailed methods are available in three previously-published papers that discuss large-scale patterns in microbial diversity, co-occurrence, and biogeography across this transect (Milici et al., 2016a, b, c).
+
+
+
+Table of Variables
+******************
+
+.. raw:: html
+
+    <iframe src="../../_static/var_tables/tblESV/tblESV.html"  frameborder = 0 height = '300px' width="100%">></iframe>
+
+
+
 
 Dataset reprocessing for CMAP:
 ##############################

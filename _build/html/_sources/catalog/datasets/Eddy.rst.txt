@@ -54,23 +54,21 @@ Eddy
 
 
 
-Table of Variables
-******************
-
-.. raw:: html
-
-    <iframe src="../../_static/var_tables/Eddy%20(Chelton)/Eddy%20(Chelton).html"  frameborder = 0 height = '300px' width="100%">></iframe>
-
-|
-
-
-
 
 Dataset Description
 *******************
 
 Simons CMAP contains **Eddy** records from  1993-01-01 through 2018-01-18  collected from AVISO+. The dataset was developed and validated in between collaboration between Aviso+ and with D.Chelton  and M. Schlax at the Oregon State University.
 This dataset has a spatial resolution of 1/4° X 1/4° and a daily temporal resolution. Each Eddy has associated (cyclonic/anticyclonic), speed, radius metadata.
+
+
+
+Table of Variables
+******************
+
+.. raw:: html
+
+    <iframe src="../../_static/var_tables/Eddy%20(Chelton)/Eddy%20(Chelton).html"  frameborder = 0 height = '300px' width="100%">></iframe>
 
 
 

@@ -55,21 +55,21 @@ KM1906 Gradients 3 Cruise
 |:ref:`KM1906_gradients3`       ||cruise|  | Observation |     Irregular          |        Irregular  | 2019-04-10 06:56:11 |2019-04-28 16:04:34  |
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 
+
+Dataset Description
+*******************
+
+2019 SCOPE Gradients, Water Column Data
+
+
+
+
 Table of Variables
 ******************
 
 .. raw:: html
 
     <iframe src="../../_static/var_tables/tblKM1906_Gradients3/tblKM1906_Gradients3.html"  frameborder = 0 height = '300px' width="100%">></iframe>
-
-|
-
-
-
-Dataset Description
-*******************
-
-2019 SCOPE Gradients, Water Column Data
 
 
 Data Source

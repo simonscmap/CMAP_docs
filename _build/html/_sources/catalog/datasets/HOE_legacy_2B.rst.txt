@@ -57,6 +57,10 @@ HOE Legacy 2B Cruise
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 
 
+Dataset Description
+*******************
+
+The objective of the cruise was to deploy and follow free-drifting surface drifters in the vicinity of the Hawaii Ocean Time-series (HOT) station (Station ALOHA; defined as a circle with a 6 nautical mile radius centered at 22° 45N, 158°W). The overall goal was to conduct a comprehensive analysis of the diel patterns in phytoplankton physiology and biogeochemical cycling in near-surface waters of the oligotrophic North Pacific Ocean.  Such diel patterns in ecology are particularly relevant in biological oceanographic research where the planktonic biomass turns over on timescales of days.
 
 
 Table of Variables
@@ -66,13 +70,6 @@ Table of Variables
 
     <iframe src="../../_static/var_tables/tblHOE_legacy_2B/tblHOE_legacy_2B.html"  frameborder = 0 height = '300px' width="100%">></iframe>
 
-|
-
-
-Dataset Description
-*******************
-
-The objective of the cruise was to deploy and follow free-drifting surface drifters in the vicinity of the Hawaii Ocean Time-series (HOT) station (Station ALOHA; defined as a circle with a 6 nautical mile radius centered at 22° 45N, 158°W). The overall goal was to conduct a comprehensive analysis of the diel patterns in phytoplankton physiology and biogeochemical cycling in near-surface waters of the oligotrophic North Pacific Ocean.  Such diel patterns in ecology are particularly relevant in biological oceanographic research where the planktonic biomass turns over on timescales of days.
 
 Data Source
 ***********

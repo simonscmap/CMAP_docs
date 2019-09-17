@@ -46,6 +46,14 @@ Altimetry Near-Real-Time
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 
 
+Dataset Description
+*******************
+
+
+Simons CMAP contains **Near-Real-Time Satellite Altimetry** records from 2019-01-01 through 2019-03-19 collected from the Copernicus Marine Environment Monitoring Service. The dataset is generated from remotely sensed satellite data and contains multiple ocean altimetry products.
+The dataset has a spatial resolution of 1/4° X 1/4° and a daily temporal resolution.
+
+
 
 Table of Variables
 ******************
@@ -55,16 +63,7 @@ Table of Variables
 
     <iframe src="../../_static/var_tables/Near-Real-Time%20Altimetry/Near-Real-Time%20Altimetry.html"  frameborder = 0 height = '250px' width="100%">></iframe>
 
-|
 
-
-
-Dataset Description
-*******************
-
-
-Simons CMAP contains **Near-Real-Time Satellite Altimetry** records from 2019-01-01 through 2019-03-19 collected from the Copernicus Marine Environment Monitoring Service. The dataset is generated from remotely sensed satellite data and contains multiple ocean altimetry products.
-The dataset has a spatial resolution of 1/4° X 1/4° and a daily temporal resolution.
 
 
 

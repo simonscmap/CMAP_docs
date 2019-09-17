@@ -53,18 +53,6 @@ Particulate Cobalamins for the KM1314 Cruise
 |:ref:`cobalamins`              | |cruise| | Observation |     Irregular          |        Irregular  | 2013-08-11 10:35:58 | 2013-09-04 17:05:20 |
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 
-
-Table of Variables
-******************
-
-.. raw:: html
-
-    <iframe src="../../_static/var_tables/KM1314_ParticulateCobalamins/KM1314_ParticulateCobalamins.html"  frameborder = 0 height = '150px' width="100%">></iframe>
-
-|
-
-
-
 Dataset Description
 *******************
 
@@ -73,7 +61,15 @@ Sampled particulate material (> 0.2µm) were analyzed for cobalmins using an org
 The KM1314 cruise abroad the R/V Kilo Moana traveled from Seattle to the North Pacific and then South to Honolulu.
 
 
-|
+
+
+Table of Variables
+******************
+
+.. raw:: html
+
+    <iframe src="../../_static/var_tables/KM1314_ParticulateCobalamins/KM1314_ParticulateCobalamins.html"  frameborder = 0 height = '150px' width="100%">></iframe>
+
 
 
 

@@ -73,8 +73,7 @@ Example 1:
 In this example the abundance of a prochlorococcus strain (MIT9313PCR, see lines 5-6) measured by Chisholm lab during the AMT13 cruise (Atlantic Meridional Transect Cruise 13) is colocalized with 3 target variables (lines 7-8):
 
 -  'MIT9312PCR_Chisholm' from the same source dataset
--  'phosphate*WOA*\ clim' from World Ocean Atlas monthly climatology
-   dataset
+-  'phosphate*WOA*\ clim' from World Ocean Atlas monthly climatology dataset
 -  'chl' (chlorophyll) from weekly averaged satellite dataset
 
 |
@@ -91,31 +90,22 @@ api.cruise_bounds('AMT13')
 **Tip3:**
 
 The temporalTolerance parameter is set to [0, 0, 1] (line 17). This means:
--  ±0 day temporal tolerance when matching with 'MIT9312PCR_Chisholm'
-   (exact date-time matching)
--  ±0 month temporal tolerance when matching with 'phosphate*WOA*\ clim'
-   (this is a monthly climatology dataset)
--  ±4 day temporal tolerance when matching with 'chl' (this is a weekly
-   averaged dataset)
+-  ±0 day temporal tolerance when matching with 'MIT9312PCR_Chisholm' (exact date-time matching)
+-  ±0 month temporal tolerance when matching with 'phosphate*WOA*\ clim' (this is a monthly climatology dataset)
+-  ±4 day temporal tolerance when matching with 'chl' (this is a weekly averaged dataset)
 
 **Tip4:**
 
 The latTolerance and lonTolerance parameters are set to [0, 0.5, 0.25] (lines 18-19). This means:
--  ±0 day temporal tolerance when matching with 'MIT9312PCR_Chisholm'
-   (exact date-time matching)
--  ±0 month temporal tolerance when matching with 'phosphate*WOA*\ clim'
-   (this is a monthly climatology dataset)
--  ±4 day temporal tolerance when matching with 'chl' (this is a weekly
-   averaged dataset)
+-  ±0 day temporal tolerance when matching with 'MIT9312PCR_Chisholm' (exact date-time matching)
+-  ±0 month temporal tolerance when matching with 'phosphate*WOA*\ clim' (this is a monthly climatology dataset)
+-  ±4 day temporal tolerance when matching with 'chl' (this is a weekly averaged dataset)
 
 **Tip5:**
 
 The depthTolerance parameter is set to [0, 5, 0] (line 20). This means:
--  ±0 meters vertical tolerances when matching with
-   'MIT9312PCR_Chisholm' (exact depth matching)
--  ±5 meters vertical tolerances when matching with
-   'phosphate*WOA*\ clim' (note that this dataset, similar to model
-   outputs, does not have uniform depth levels)
+-  ±0 meters vertical tolerances when matching with 'MIT9312PCR_Chisholm' (exact depth matching)
+-  ±5 meters vertical tolerances when matching with 'phosphate*WOA*\ clim' (note that this dataset, similar to model outputs, does not have uniform depth levels)
 
 
 

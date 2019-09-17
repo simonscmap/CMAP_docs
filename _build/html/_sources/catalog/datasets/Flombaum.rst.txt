@@ -53,18 +53,6 @@ Global Cyanobacteria (Flombaum)
 |:ref:`Flombaum`                ||cruise|  | Observation |     Irregular          |        Irregular  |  1987-09-17         | 2008-11-10          |
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 
-
-Table of Variables
-******************
-
-.. raw:: html
-
-    <iframe src="../../_static/var_tables/tblFlombaum/tblFlombaum.html"  frameborder = 0 height = '150px' width="100%">></iframe>
-
-
-
-
-
 Dataset Description
 *******************
 
@@ -78,7 +66,16 @@ The specific cruises used to compile the datasets are listed by the authors in t
 (https://www.pnas.org/content/pnas/suppl/2013/05/23/1307701110.DCSupplemental/pnas.201307701SI.pdf?targetid=nameddest%3DST1)
 
 
-|
+
+Table of Variables
+******************
+
+.. raw:: html
+
+    <iframe src="../../_static/var_tables/tblFlombaum/tblFlombaum.html"  frameborder = 0 height = '150px' width="100%">></iframe>
+
+
+
 
 Global Prochlorococcus Distribution (0-5 m)
 ###########################################

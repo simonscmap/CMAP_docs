@@ -181,7 +181,7 @@
 </thead>
 <tbody>
 <tr class="row-even"><td><p><a class="reference internal" href="#chisholm-bigrapa1"><span class="std std-ref">BiGRAPA1 Cruise</span></a></p></td>
-<td><p>cruise|</p></td>
+<td><p><a class="reference internal" href="../../_images/sailboat.png"><img alt="cruise" class="align-middle" src="../../_images/sailboat.png" style="width: 51.2px; height: 51.2px;" /></a></p></td>
 <td><p>Observation</p></td>
 <td><p>Irregular</p></td>
 <td><p>Irregular</p></td>
@@ -191,6 +191,14 @@
 </tbody>
 </table>
 </div>
+</div>
+<div class="section" id="dataset-description">
+<h1>Dataset Description<a class="headerlink" href="#dataset-description" title="Permalink to this headline">¶</a></h1>
+<p>This dataset contains Prochlorococcus cell concentration measurements from the BiGRAPA1 cruise. For each of the 7 stations along the transect we took a depth profile of 9 samples across the euphotic zone; from these water samples we also preserved samples for other analyses (e.g. ecotype qPCR). In most cases these water samples are not from the same bottles or depths as cruise core measurement casts.  Depths at each station were chosen based on the location of the deep chlorophyll maximum, the mixed layer depth and light attenuation profiles. At station 7 we also participated in two high-resolution deep-chlorophyll maximum casts (63 and 69), and counts for these are included.</p>
+<p>Fixed samples for flow cytometry were collected by adding 5 ul of 25% glutaraldehyde to 1 ml whole seawater, mixing, and allowing sample to fix in the dark 10 minutes, followed by flash freezing in liquid nitrogen. The samples were stored in liquid nitrogen or at -80C for 2-4 months before running flow cytometry. Two or three flow cytometry samples were preserved from each Niskin sampled, but only one of these sampling replicates was run.</p>
+<p>For each site and depth collected, a sample was run on a BD/Cytopeia Influx flow cytometer with 488 and 457 lasers both illuminating the sample and 2um fluorescent bead standards mixed in. No stains were used. Detector sensitivity ranges were optimized for Prochlorococcus and held constant throughout all runs. Each sample was thawed in the dark and run twice (flow cytometry technical duplicates). Replicates were run back to back, flushing the lines in between, so that samples weren’t left thawed for longer than ~ 1hr or put through extra freeze thaw cycles. Values in table are averages of the pair of technical duplicates.  As measurements, these values are good to ~2-3 significant digits (depending on the length of time a sample was run and the number of Prochlorococcus cells actually detected).</p>
+<p>Prochlorococcus counts were obtained by gating across chlorophyll fluorescence (680/40) vs. forward scatter using FlowJo software.  Gates were adjusted by hand separately for each sample, since the cell properties change dramatically across this dataset. Concentrations were calculated using sample run times, sample counts and measured flow rates. For surface/mixed layer samples with higher light exposure and smaller cells, many Prochlorococcus populations in this data set were just above or only partly above the fluorescence noise - these counts represent estimates likely on the low side (gating to avoid noise, faintly fluorescing cells undetectable), and they are not as accurate as estimates for the well-separated deeper populations.</p>
+<p>At station 1, the mixed layer samples do not have technical replicates. In the first few attempted flow cytometry runs Prochlorococcus cells were not visible - not because their fluorescence was low (these waters are relatively turbid), but because the cells were scarce. Later, the remainders of these samples were used for single, long slow runs, and we were able to detect a small Prochlorococcus population - these counts are not robust, representing small numbers with background noise, but they round out the depth profile for a rough idea.</p>
 </div>
 <div class="section" id="table-of-variables">
 <h1>Table of Variables<a class="headerlink" href="#table-of-variables" title="Permalink to this headline">¶</a></h1>
@@ -202,24 +210,7 @@
 </div>
 <div class="section" id="bottle-data">
 <h2>Bottle Data<a class="headerlink" href="#bottle-data" title="Permalink to this headline">¶</a></h2>
-<iframe src="../../_static/var_tables/tblBottle_Chisholm/tblBottle_Chisholm.html"  frameborder = 0 height = '250px' width="100%">></iframe><div class="line-block">
-<div class="line"><br /></div>
-</div>
-</div>
-</div>
-<div class="section" id="dataset-description">
-<h1>Dataset Description<a class="headerlink" href="#dataset-description" title="Permalink to this headline">¶</a></h1>
-<p>This dataset contains Prochlorococcus cell concentration measurements from the BiGRAPA1 cruise. For each of the 7 stations along the transect we took a depth profile of 9 samples across the euphotic zone; from these water samples we also preserved samples for other analyses (e.g. ecotype qPCR). In most cases these water samples are not from the same bottles or depths as cruise core measurement casts.  Depths at each station were chosen based on the location of the deep chlorophyll maximum, the mixed layer depth and light attenuation profiles. At station 7 we also participated in two high-resolution deep-chlorophyll maximum casts (63 and 69), and counts for these are included.</p>
-<p>Fixed samples for flow cytometry were collected by adding 5 ul of 25% glutaraldehyde to 1 ml whole seawater, mixing, and allowing sample to fix in the dark 10 minutes, followed by flash freezing in liquid nitrogen. The samples were stored in liquid nitrogen or at -80C for 2-4 months before running flow cytometry. Two or three flow cytometry samples were preserved from each Niskin sampled, but only one of these sampling replicates was run.</p>
-<p>For each site and depth collected, a sample was run on a BD/Cytopeia Influx flow cytometer with 488 and 457 lasers both illuminating the sample and 2um fluorescent bead standards mixed in. No stains were used. Detector sensitivity ranges were optimized for Prochlorococcus and held constant throughout all runs. Each sample was thawed in the dark and run twice (flow cytometry technical duplicates). Replicates were run back to back, flushing the lines in between, so that samples weren’t left thawed for longer than ~ 1hr or put through extra freeze thaw cycles. Values in table are averages of the pair of technical duplicates.  As measurements, these values are good to ~2-3 significant digits (depending on the length of time a sample was run and the number of Prochlorococcus cells actually detected).</p>
-<p>Prochlorococcus counts were obtained by gating across chlorophyll fluorescence (680/40) vs. forward scatter using FlowJo software.  Gates were adjusted by hand separately for each sample, since the cell properties change dramatically across this dataset. Concentrations were calculated using sample run times, sample counts and measured flow rates. For surface/mixed layer samples with higher light exposure and smaller cells, many Prochlorococcus populations in this data set were just above or only partly above the fluorescence noise - these counts represent estimates likely on the low side (gating to avoid noise, faintly fluorescing cells undetectable), and they are not as accurate as estimates for the well-separated deeper populations.</p>
-<p>At station 1, the mixed layer samples do not have technical replicates. In the first few attempted flow cytometry runs Prochlorococcus cells were not visible - not because their fluorescence was low (these waters are relatively turbid), but because the cells were scarce. Later, the remainders of these samples were used for single, long slow runs, and we were able to detect a small Prochlorococcus population - these counts are not robust, representing small numbers with background noise, but they round out the depth profile for a rough idea.</p>
-<div class="section" id="enumerated-flow-cytometry-abundance-of-prochlorococcus">
-<h2>Enumerated flow cytometry abundance of Prochlorococcus<a class="headerlink" href="#enumerated-flow-cytometry-abundance-of-prochlorococcus" title="Permalink to this headline">¶</a></h2>
-<iframe src="../../_static/var_plots/bigrapa_vis.html"  frameborder = 0  height="700px" width="100%">></iframe><div class="line-block">
-<div class="line"><br /></div>
-</div>
-</div>
+<iframe src="../../_static/var_tables/tblBottle_Chisholm/tblBottle_Chisholm.html"  frameborder = 0 height = '250px' width="100%">></iframe></div>
 <div class="section" id="prochlorococcus-ecotype-qpcr-counts-for-the-big-rapa-cruise">
 <h2>Prochlorococcus ecotype qPCR counts for the BiG RAPA cruise<a class="headerlink" href="#prochlorococcus-ecotype-qpcr-counts-for-the-big-rapa-cruise" title="Permalink to this headline">¶</a></h2>
 <p>Paul Berube collected and extracted samples,  Allison Coe performed qPCR assay.
@@ -258,7 +249,7 @@ PI: Sallie W. Chisholm, MIT Department of Civil and Environmental Engineering</p
     <p>
         &copy; Copyright 2019, Mohammad Dehghani Ashkezari &amp; Norland Raphael Hagen
       <span class="lastupdated">
-        Last updated on Sep 16, 2019.
+        Last updated on Sep 17, 2019.
       </span>
 
     </p>

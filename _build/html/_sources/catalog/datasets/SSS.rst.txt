@@ -46,15 +46,6 @@ Sea Surface Salinity
 | :ref:`SSS`                    | |sat|    | Observation |     1/4° X 1/4°        |         Daily     |  2015-03-31         | 2019-04-21          |
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 
-Table of Variables
-******************
-
-.. raw:: html
-
-    <iframe src="../../_static/var_tables/SMAP%20ocean%20surface%20salinity/SMAP%20ocean%20surface%20salinity.html"  frameborder = 0 height = '100px' width="100%">></iframe>
-
-|
-
 
 
 Dataset Description
@@ -64,6 +55,16 @@ The Sea Surface Salinity dataset in CMAP is the the **SMAP_RSS_L3_SSS_SMI_8DAY-R
 This sea surface salinity product has a near-global spatial coverage gridded at 1/4° X 1/4°, giving a spatial resolution of approximately 70km.
 Temporal resolution is daily and optimal interpolation is not used.
 The SSS data is derived from an L-band radiometer atop of the *Soil Moisture Active Pass* (SMAP) satellite mission. SMAP operates in a near-polar orbit with a beam swath of 1000km. Exact repeat overpasses happen every eight days.
+
+
+
+
+Table of Variables
+******************
+
+.. raw:: html
+
+    <iframe src="../../_static/var_tables/SMAP%20ocean%20surface%20salinity/SMAP%20ocean%20surface%20salinity.html"  frameborder = 0 height = '100px' width="100%">></iframe>
 
 
 

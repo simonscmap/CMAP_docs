@@ -56,6 +56,10 @@ HOE Legacy 3 Cruise
 |:ref:`HOE_legacy_3`            ||cruise|  | Observation |     Irregular          |        Irregular  | 2016-03-23 22:06:33 |2016-03-28 15:48:40  |
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 
+Dataset Description
+*******************
+
+The objective of the cruise was to conduct water-column observations and sampling within an anticyclonic eddy to the north of the Hawaiian Islands. Surface drifters were deployed to track the eddy, and water- column sampling was conducted using the CTD-rosettes alongside the drifters for the duration of the cruise. The SVP drifter locations were transmitted every 30 mins.
 
 
 Table of Variables
@@ -65,13 +69,6 @@ Table of Variables
 
     <iframe src="../../_static/var_tables/tblHOE_legacy_3/tblHOE_legacy_3.html"  frameborder = 0 height = '300px' width="100%">></iframe>
 
-|
-
-
-Dataset Description
-*******************
-
-The objective of the cruise was to conduct water-column observations and sampling within an anticyclonic eddy to the north of the Hawaiian Islands. Surface drifters were deployed to track the eddy, and water- column sampling was conducted using the CTD-rosettes alongside the drifters for the duration of the cruise. The SVP drifter locations were transmitted every 30 mins.
 
 Data Source
 ***********

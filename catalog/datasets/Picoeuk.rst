@@ -56,15 +56,6 @@ Global Distributions of Picophytoplankton Abundance and Biomass
 |:ref:`pikophytoplankton`       ||cruise|  | Observation |     Irregular          |        Irregular  |  1987-06-27         | 2011-08-03          |
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 
-Table of Variables
-******************
-
-.. raw:: html
-
-    <iframe src="../../_static/var_tables/tblGlobal_PicoPhytoPlankton/tblGlobal_PicoPhytoPlankton.html"  frameborder = 0 height = '150px' width="100%">></iframe>
-
-
-|
 
 Dataset Description
 *******************
@@ -75,12 +66,23 @@ The specific cruise names used to compile the dataset are listed in Table 1. of 
 
 
 
- .. warning::
+ .. note::
    20229 of the total 40946 data points were excluded from the original dataset due to invalid dates. The raw dataset can be found at https://doi.org/10.1594/PANGAEA.777385
 
 
 
-|
+
+Table of Variables
+******************
+
+.. raw:: html
+
+    <iframe src="../../_static/var_tables/tblGlobal_PicoPhytoPlankton/tblGlobal_PicoPhytoPlankton.html"  frameborder = 0 height = '150px' width="100%">></iframe>
+
+
+
+
+
 
 Global Picoeukaryote Abundance Distribution (0-5 m)
 ###################################################

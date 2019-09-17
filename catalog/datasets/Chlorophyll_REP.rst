@@ -55,15 +55,6 @@ Chlorophyll Reprocessed
 Table of Variables
 ******************
 
-
-
-.. raw:: html
-
-    <iframe src="../../_static/var_tables/Reprocessed_CHL_8day/Reprocessed_CHL_8day.html"  frameborder = 0 height = '100px' width="100%">></iframe>
-
-|
-
-
 Dataset Description
 *******************
 
@@ -74,6 +65,12 @@ The dataset is generated from ESA and NASA satellite missions, specifically from
 
 
 More information can be found Here_
+
+
+.. raw:: html
+
+    <iframe src="../../_static/var_tables/Reprocessed_CHL_8day/Reprocessed_CHL_8day.html"  frameborder = 0 height = '100px' width="100%">></iframe>
+
 
 
 

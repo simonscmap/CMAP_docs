@@ -57,6 +57,12 @@ SCOPE HOT Metagenomics
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 
 
+Dataset Description
+*******************
+
+These are time-resolved depth  profiles of bacterioplankton  metagenomic datasets  collected during the Hawaii Ocean Time-series Station ALOHA cruises in the North Pacific Subtropical Gyre collected from August 2010 through December 2011.  For further information see: http://hahana.soest.hawaii.edu/hot/   and http://datacommons.cyverse.org/browse/iplant/home/shared/imicrobe/projects/263
+
+
 Table of Variables
 ******************
 
@@ -64,14 +70,6 @@ Table of Variables
 
     <iframe src="../../_static/var_tables/tblSCOPE_HOT_metagenomics/tblSCOPE_HOT_metagenomics.html"  frameborder = 0 height = '300px' width="100%">></iframe>
 
-|
-
-
-
-Dataset Description
-*******************
-
-These are time-resolved depth  profiles of bacterioplankton  metagenomic datasets  collected during the Hawaii Ocean Time-series Station ALOHA cruises in the North Pacific Subtropical Gyre collected from August 2010 through December 2011.  For further information see: http://hahana.soest.hawaii.edu/hot/   and http://datacommons.cyverse.org/browse/iplant/home/shared/imicrobe/projects/263
 
 Data Source
 ***********

@@ -20,6 +20,15 @@ Atlantic Meridional Transect Cruise 13: Prochlorococcus Abundance, Synechococcus
 |   :ref:`Chisholm_AMT13`       ||cruise|  | Observation |     Irregular          |        Irregular  | 2003-09-14 09:55:00 | 2003-10-12 12:44:00 |
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 
+Dataset Description
+*******************
+
+
+This dataset contains Prochlorococcus and Synechococcus abundance measurements from the AMT13 cruise. Quantitative polymerase chain reaction (qPCR) was used to measure the abundance of cells belonging to six Prochlorococcus ecotypes as a function of depth along a meridional transect in the Atlantic Ocean (AMT13: Sept. to Oct. 2003). This transect included a wide range of biogeochemical provinces; sampling sites had varied temperatures and concentrations of phytoplankton nutrients. The distribution and abundance of the ecotypes were analyzed in the context of environmental variables (the ones included in this dataset) as well as the physiological properties of type strains. Ecotype abundances were found to shift along both local and basin-wide environmental gradients. These shifts in ecotype abundances were correlated with temperature; in line with this, cultured strains showed different temperature optima and tolerance ranges in laboratory experiments. The distribution of ecotypes also appeared to be affected by light, nutrients, and competitor abundances.
+
+
+
+
 
 
 Table of Variables
@@ -29,13 +38,6 @@ Table of Variables
 
     <iframe src="../../_static/var_tables/tblAMT13_Chisholm/tblAMT13_Chisholm.html"  frameborder = 0 height = '200px' width="100%">></iframe>
 
-|
-
-Dataset Description
-*******************
-
-
-This dataset contains Prochlorococcus and Synechococcus abundance measurements from the AMT13 cruise. Quantitative polymerase chain reaction (qPCR) was used to measure the abundance of cells belonging to six Prochlorococcus ecotypes as a function of depth along a meridional transect in the Atlantic Ocean (AMT13: Sept. to Oct. 2003). This transect included a wide range of biogeochemical provinces; sampling sites had varied temperatures and concentrations of phytoplankton nutrients. The distribution and abundance of the ecotypes were analyzed in the context of environmental variables (the ones included in this dataset) as well as the physiological properties of type strains. Ecotype abundances were found to shift along both local and basin-wide environmental gradients. These shifts in ecotype abundances were correlated with temperature; in line with this, cultured strains showed different temperature optima and tolerance ranges in laboratory experiments. The distribution of ecotypes also appeared to be affected by light, nutrients, and competitor abundances.
 
 
 

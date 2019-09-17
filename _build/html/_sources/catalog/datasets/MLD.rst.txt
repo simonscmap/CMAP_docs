@@ -46,13 +46,6 @@ Mixed-Layer-Depth NRT
 | :ref:`MLD`                    | |comp|   |   Model     |     1/12° X 1/12°      |         Daily     | 2019-01-01          | 2019-04-28          |
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 
-Table of Variables
-******************
-
-.. raw:: html
-
-    <iframe src="../../_static/var_tables/Mercator-MLD/Mercator-MLD.html"  frameborder = 0 height = '100px' width="100%">></iframe>
-
 
 
 Dataset Description
@@ -60,6 +53,14 @@ Dataset Description
 
 **Mixed-Layer-Depth** is a model derived ocean surface product collected from the Operational Mercator Global Ocean Analysis and Forecast System.
 The data has 1/12° degree horizontal resolution with regular longitude/latitude intervals and an equirectangular projection.
+
+
+Table of Variables
+******************
+
+.. raw:: html
+
+    <iframe src="../../_static/var_tables/Mercator-MLD/Mercator-MLD.html"  frameborder = 0 height = '100px' width="100%">></iframe>
 
 
 Data Source

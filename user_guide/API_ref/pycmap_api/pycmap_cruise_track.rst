@@ -8,6 +8,8 @@ Cruise Track Plot
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
    :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/Viz_CruiseTrack.ipynb
 
+.. _API key: pycmap_api.html
+.. _APIs parameters: pycmap_api.html
 
 
 .. _cruise: Cruises.ipynb

@@ -192,12 +192,6 @@
 </table>
 </div>
 </div>
-<div class="section" id="table-of-variables">
-<h1>Table of Variables<a class="headerlink" href="#table-of-variables" title="Permalink to this headline">¶</a></h1>
-<iframe src="../../_static/var_tables/tblESV/tblESV.html"  frameborder = 0 height = '300px' width="100%">></iframe><div class="line-block">
-<div class="line"><br /></div>
-</div>
-</div>
 <div class="section" id="dataset-description">
 <h1>Dataset Description<a class="headerlink" href="#dataset-description" title="Permalink to this headline">¶</a></h1>
 <p>This dataset consists of relative microbial abundances (primarily Bacteria/Archaea) sampled across a latitudinal transect of the Atlantic ocean. Samples were collected between April - May 2012 on the cruise ANT28-5 (R/V Polarstern) by the research groups of Irene Wagner-Döbler (Technische Universität Braunschweig) and Meinhard Simon (Carl von Ossietzky University of Oldenburg). At each oceanographic station, multiple depths were sampled primarily in the photic zone (≤ 200 m), and each sample was sequentially filtered to obtain three size fractions:</p>
@@ -209,7 +203,10 @@
 </ol>
 </div></blockquote>
 <p>Detailed methods are available in three previously-published papers that discuss large-scale patterns in microbial diversity, co-occurrence, and biogeography across this transect (Milici et al., 2016a, b, c).</p>
-<div class="section" id="dataset-reprocessing-for-cmap">
+</div>
+<div class="section" id="table-of-variables">
+<h1>Table of Variables<a class="headerlink" href="#table-of-variables" title="Permalink to this headline">¶</a></h1>
+<iframe src="../../_static/var_tables/tblESV/tblESV.html"  frameborder = 0 height = '300px' width="100%">></iframe><div class="section" id="dataset-reprocessing-for-cmap">
 <h2>Dataset reprocessing for CMAP:<a class="headerlink" href="#dataset-reprocessing-for-cmap" title="Permalink to this headline">¶</a></h2>
 <p>In order to generate exact amplicon sequence variants (eASVs), publicly accessible amplicon data from Milici et al. (2016) was reanalyzed with qiime2 (2018.8). In brief, primers were trimmed with cutadapt, amplicons were merged with VSEARCH, and subsequently quality-filtered. eASVs were generated with deblur denoise-16s with a trim length of 231 base pairs. Taxonomic classification was carried out with the “qiime feature-classifier classify-sklearn” against the SILVA 132 database (NR99) subsetted to the amplicon region (807F = GGATTAGATACCCBRGTAGTC ; 1064R = AGYTGDCGACRRCCRTGCA). eASVs were also clustered into operational taxonomic units (OTUs) with VSEARCH at different percent sequence similarity thresholds approximately corresponding to existing taxonomic ranks (99, 98, 97, 96, 92, 89). Scripts and ancillary data are available at : <a class="reference external" href="https://osf.io/g7xsj/">https://osf.io/g7xsj/</a>.</p>
 <p>Data were then transformed into relative abundances and collated with metadata provided in Milici et al (2016a, b, c) prior to ingestion into CMAP (as long as depths recorded for metadata and sequence data differed by ≤ 10 m; <a class="reference external" href="https://github.com/jcmcnch/OTUandMetadata2CMAP">https://github.com/jcmcnch/OTUandMetadata2CMAP</a>). The resulting dataset allows the user to retrieve relative abundances and environmental covariates for both individual eASVs and OTU clusters. As with all other data in CMAP, each relative abundance measurement is associated with unique time/space coordinates. Whether a given abundance is from an eASV or OTU is clearly denoted in the columns “ESV_ID_or_Cluster_Centroid”, “Clustering_Level” and “Cluster_Type”. Raw sequences of eASVs and tab-separated files are also available as part of the ancillary data allow the user to manually connect individual eASVs with OTU clusters.</p>
@@ -249,7 +246,7 @@
     <p>
         &copy; Copyright 2019, Mohammad Dehghani Ashkezari &amp; Norland Raphael Hagen
       <span class="lastupdated">
-        Last updated on Sep 16, 2019.
+        Last updated on Sep 17, 2019.
       </span>
 
     </p>

@@ -40,8 +40,6 @@ Wind
   :target: ../../tutorials/depth_profile.html
 
 
-.. note::
-  Near-real-time wind data products from IFREMER CERSAT have been suspended as of 2019-03-06. When data operations resume, near-real-time wind data will be provided.
 
 
 
@@ -53,6 +51,13 @@ Wind
 
 
 
+Dataset Description
+*******************
+
+The IFREMER CERSAT Global Blended Mean Wind Fields include wind components (meridional and zonal), wind module, wind stress.
+The associated error estimates are also provided. They are estimated from scatterometers ASCAT and OSCAT retrievals and from ECMWF operational wind analysis with a horizontal resolution of 0.25x0.25 degrees and 6 hours in time, and available at synoptic time 00h:00; 06h:00; 12h:00; 18h:00.
+
+
 
 Table of Variables
 ******************
@@ -60,18 +65,6 @@ Table of Variables
 .. raw:: html
 
     <iframe src="../../_static/var_tables/Near-Real-Time%20Wind/Near-Real-Time%20Wind.html"  frameborder = 0 height = '300px' width="100%">></iframe>
-
-|
-
-
-
-
-
-Dataset Description
-*******************
-
-The IFREMER CERSAT Global Blended Mean Wind Fields include wind components (meridional and zonal), wind module, wind stress.
-The associated error estimates are also provided. They are estimated from scatterometers ASCAT and OSCAT retrievals and from ECMWF operational wind analysis with a horizontal resolution of 0.25x0.25 degrees and 6 hours in time, and available at synoptic time 00h:00; 06h:00; 12h:00; 18h:00.
 
 
 Data Source

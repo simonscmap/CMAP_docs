@@ -89,7 +89,7 @@
 </ul>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../../catalog/catalog.html">Data Catalog</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../api_ref.html">API Reference</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../api_ref.html">Software Packages</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="pycmap_api_ref.html">pycmap API</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="pycmap_install.html">Installation</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="pycmap_data_retrieval.html">Data Retrieval</a><ul class="current">
@@ -174,7 +174,7 @@
     
       <li><a href="../../../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../api_ref.html">API Reference</a> &raquo;</li>
+          <li><a href="../api_ref.html">Software Packages</a> &raquo;</li>
         
           <li><a href="pycmap_api_ref.html">pycmap API</a> &raquo;</li>
         
@@ -209,15 +209,13 @@ This method returns a dataframe containing the cruise trajectory joined with the
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<dl class="field-list">
+<dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>cruise: string</strong>
-The official cruise name. If applicable, you may also use cruise “nickname” (‘Diel’, ‘Gradients_1’ …). A full list of cruise names can be retrieved using cruise method.
-<strong>targetTables: list of string</strong></p>
-<blockquote>
-<div><p>Table names of the target datasets to be matched with the source data. Notice source dataset can be matched with multiple target datasets. A full list of table names can be found in the <a class="reference internal" href="../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
-</div></blockquote>
-<dl class="simple">
+<dd class="field-odd"><dl class="simple">
+<dt><strong>cruise: string</strong></dt><dd><p>The official cruise name. If applicable, you may also use cruise “nickname” (‘Diel’, ‘Gradients_1’ …). A full list of cruise names can be retrieved using cruise method.</p>
+</dd>
+<dt><strong>targetTables: list of string</strong></dt><dd><p>Table names of the target datasets to be matched with the source data. Notice source dataset can be matched with multiple target datasets. A full list of table names can be found in the <a class="reference internal" href="../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
+</dd>
 <dt><strong>targetVars: list of string</strong></dt><dd><p>Variable short names to be matched with the source variable. A full list of variable short names can be found in the <a class="reference internal" href="../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
 </dd>
 <dt><strong>depth1: float</strong></dt><dd><p>Start depth [m]. This parameter sets the lower bound of the depth cut on the target datasets. ‘depth1’ and ‘depth2’ allow matching a cruise trajectory (which is at the surface, hopefully!) with target variables at lower depth. Note depth is a positive number (depth is 0 at surface and grows towards ocean floor).</p>
@@ -260,26 +258,12 @@ The official cruise name. If applicable, you may also use cruise “nickname” 
 <p>A full list of hosted cruise expeditions can be retrieved using the cruises method.</p>
 <p><strong>Tip3:</strong></p>
 <p>The temporalTolerance parameter is set to [0, 4] (line 12). This means:
--  ±0 day temporal tolerance when matching with ‘synecho_abundance’</p>
-<blockquote>
-<div><p>(exact date-time matching)</p>
-</div></blockquote>
-<ul class="simple">
-<li><p>±4 day temporal tolerance when matching with ‘NO3’ (Pisces is a
-weekly averaged dataset)</p></li>
-</ul>
+-  ±0 day temporal tolerance when matching with ‘synecho_abundance’ (exact date-time matching)
+-  ±4 day temporal tolerance when matching with ‘NO3’ (Pisces is a weekly averaged dataset)</p>
 <p><strong>Tip4:</strong></p>
 <p>The latTolerance and lonTolerance parameters are set to [0, 0.25] (lines 13-14). This means:
--  ±0 degree spatial tolerances (in meridional and zonal directions)</p>
-<blockquote>
-<div><p>when matching with ‘synecho_abundance’ (exact lat/lon matching)</p>
-</div></blockquote>
-<ul class="simple">
-<li><p>±0.25 degrees spatial tolerances (in meridional and zonal directions)
-when matching with ‘NO3’. This dataset has 0.25 degree spatial
-resolution which means one may reduce the spatial tolerance for this
-target dataset down to 0.25/2 = 0.125 degrees.</p></li>
-</ul>
+-  ±0 degree spatial tolerances (in meridional and zonal directions) when matching with ‘synecho_abundance’ (exact lat/lon matching)
+-  ±0.25 degrees spatial tolerances (in meridional and zonal directions) when matching with ‘NO3’. This dataset has 0.25 degree spatial resolution which means one may reduce the spatial tolerance for this target dataset down to 0.25/2 = 0.125 degrees.</p>
 <p><strong>Tip5:</strong></p>
 <p>The depthTolerance parameter is set to [5, 5] (line 20). This means:
 The depthTolerance parameter is set to [5, 5] (line 20). This means: *
@@ -441,7 +425,7 @@ columns to the final dataframe:
     <p>
         &copy; Copyright 2019, Mohammad Dehghani Ashkezari &amp; Norland Raphael Hagen
       <span class="lastupdated">
-        Last updated on Sep 13, 2019.
+        Last updated on Sep 17, 2019.
       </span>
 
     </p>

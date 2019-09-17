@@ -56,6 +56,11 @@ HL2A Cruise Metagenomics
 |:ref:`HL2A_metageneomics`      ||cruise|  | Observation |     Irregular          |        Irregular  | 2015-07-26 16:00:00 |2015-08-04 04:00:00  |
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 
+Dataset Description
+*******************
+
+These datasets are from the SCOPE diel cruise conducted in July/August 2015.  The goal was to observe diel patterns in transcript abundance in planktonic bacteria, archaea and phage.  Cell fractions and phage fractions were collected every four hours over the course of 8 days,while tracking a Langrangian drifting float to consistently sample the same water mass.  Metagenomes and metatranscriptomes of the cell fraction (>0.2um),  and metagenomes of the phage fraction (0.2-0.03 um) were sequenced, and used to determine diel patters in transcript abundance in plantonic bacteria, archaea and phage. See dataset references for more details.
+
 
 Table of Variables
 ******************
@@ -64,13 +69,6 @@ Table of Variables
 
     <iframe src="../../_static/var_tables/tblHL2A_diel_metagenomics/tblHL2A_diel_metagenomics.html"  frameborder = 0 height = '300px' width="100%">></iframe>
 
-|
-
-
-Dataset Description
-*******************
-
-These datasets are from the SCOPE diel cruise conducted in July/August 2015.  The goal was to observe diel patterns in transcript abundance in planktonic bacteria, archaea and phage.  Cell fractions and phage fractions were collected every four hours over the course of 8 days,while tracking a Langrangian drifting float to consistently sample the same water mass.  Metagenomes and metatranscriptomes of the cell fraction (>0.2um),  and metagenomes of the phage fraction (0.2-0.03 um) were sequenced, and used to determine diel patters in transcript abundance in plantonic bacteria, archaea and phage. See dataset references for more details.
 
 Data Source
 ***********

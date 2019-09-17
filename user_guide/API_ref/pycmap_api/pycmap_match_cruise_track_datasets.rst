@@ -26,7 +26,7 @@ Match (colocalize) Cruise Track with Datasets
     :Parameters:
 
         **cruise: string**
-        The official cruise name. If applicable, you may also use cruise "nickname" ('Diel', 'Gradients_1' ...). A full list of cruise names can be retrieved using cruise method.
+            The official cruise name. If applicable, you may also use cruise "nickname" ('Diel', 'Gradients_1' ...). A full list of cruise names can be retrieved using cruise method.
         **targetTables: list of string**
             Table names of the target datasets to be matched with the source data. Notice source dataset can be matched with multiple target datasets. A full list of table names can be found in the :ref:`Catalog`.
         **targetVars: list of string**
@@ -74,20 +74,14 @@ A full list of hosted cruise expeditions can be retrieved using the cruises meth
 **Tip3:**
 
 The temporalTolerance parameter is set to [0, 4] (line 12). This means:
--  ±0 day temporal tolerance when matching with 'synecho_abundance'
-   (exact date-time matching)
--  ±4 day temporal tolerance when matching with 'NO3' (Pisces is a
-   weekly averaged dataset)
+-  ±0 day temporal tolerance when matching with 'synecho_abundance' (exact date-time matching)
+-  ±4 day temporal tolerance when matching with 'NO3' (Pisces is a weekly averaged dataset)
 
 **Tip4:**
 
 The latTolerance and lonTolerance parameters are set to [0, 0.25] (lines 13-14). This means:
--  ±0 degree spatial tolerances (in meridional and zonal directions)
-   when matching with 'synecho_abundance' (exact lat/lon matching)
--  ±0.25 degrees spatial tolerances (in meridional and zonal directions)
-   when matching with 'NO3'. This dataset has 0.25 degree spatial
-   resolution which means one may reduce the spatial tolerance for this
-   target dataset down to 0.25/2 = 0.125 degrees.
+-  ±0 degree spatial tolerances (in meridional and zonal directions) when matching with 'synecho_abundance' (exact lat/lon matching)
+-  ±0.25 degrees spatial tolerances (in meridional and zonal directions) when matching with 'NO3'. This dataset has 0.25 degree spatial resolution which means one may reduce the spatial tolerance for this target dataset down to 0.25/2 = 0.125 degrees.
 
 **Tip5:**
 
