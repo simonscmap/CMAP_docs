@@ -39,13 +39,11 @@ Pisces
   :scale: 25%
   :target: ../../tutorials/depth_profile.html
 
-+-------------------------------+----------+----------+-------------+------------------------+----------------------+--------------+------------+
-| Dataset Name                  | Coverage | Sensor   |  Make       |     Spatial Resolution | Temporal Resolution  |  Start Date  |  End Date  |
-+===============================+==========+==========+=============+========================+======================+==============+============+
-| :ref:`Pisces`                 |  |globe| | |comp|   |   Model     |     1/2° X 1/2°        |         Weekly       | 2011-12-31   | 2019-03-16 |
-+-------------------------------+----------+----------+-------------+------------------------+----------------------+--------------+------------+
-
-
++-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
+| Dataset Name                  | Sensor   |  Make       |  Spatial Resolution    |Temporal Resolution|  Start Date         |  End Date           |
++===============================+==========+=============+========================+===================+=====================+=====================+
+| :ref:`Pisces`                 | |comp|   |   Model     |     1/2° X 1/2°        |         Weekly    | 2011-12-31          | 2019-03-16          |
++-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 
 Table of Variables
 ******************
@@ -91,7 +89,7 @@ http://cmems-resources.cls.fr/documents/PUM/CMEMS-GLO-PUM-001-014.pdf
 How to Acknowledge
 ******************
 
-Aumont O. : PISCES. In prep (For Geoscientific Model Development
+Aumont O. : PISCES. In prep (For Geoscientific Model Development)
 
 Aumont, O. and Bopp, L. “Globalizing results from ocean in situ iron fertilization studies”. GlobalBiogeochem. Cycles. 20 (2):10–1029 (2006)
 

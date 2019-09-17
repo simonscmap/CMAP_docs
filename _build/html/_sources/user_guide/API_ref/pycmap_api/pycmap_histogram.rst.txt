@@ -12,12 +12,15 @@ Histogram Plot
    :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/Viz_Histogram.ipynb
 
 
+.. _API key: pycmap_api.html
+.. _APIs vizEngine: pycmap_api.html
+.. _APIs parameters: pycmap_api.html
 
 
 .. method:: plot_hist(tables, variables, dt1, dt2, lat1, lat2, lon1, lon2, depth1, depth2, exportDataFlag=False, show=True)
 
 
-    Creates a histogram graph for each variable according to the specified space-time constraints (dt1, dt2, lat1, lat2, lon1, lon2, depth1, depth2). Change the `API's vizEngine`_ parameter if you wish to use a different visualization library.
+    Creates a histogram graph for each variable according to the specified space-time constraints (dt1, dt2, lat1, lat2, lon1, lon2, depth1, depth2). Change the `APIs vizEngine`_ parameter if you wish to use a different visualization library.
     Returns the generated graph objects in form of a python list. One may use the returned objects to modify the graph properties.
 
     .. note::
@@ -50,7 +53,7 @@ Histogram Plot
         **depth2: float**
             End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at surface and grows towards ocean floor).
         **exportDataFlag: boolean, default: False**
-          If True, the graph data points are stored on the local machine. The export path and file format are set by the `API's parameters`_.
+          If True, the graph data points are stored on the local machine. The export path and file format are set by the `APIs parameters`_.
         **show: boolean, default: True**
           If True, the graph object is returned and is displayed. The graph file is saved on the local machine at the figureDir directory.
           If False, the graph object is returned but not displayed.

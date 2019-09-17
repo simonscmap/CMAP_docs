@@ -7,6 +7,13 @@ Section Map, Section Contour
 ============================
 
 
+.. _API key: pycmap_api.html
+.. _APIs parameters: pycmap_api.html
+.. _APIs vizEngine: pycmap_api.html
+
+
+
+
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
    :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/Viz_Section.ipynb
 
@@ -67,7 +74,7 @@ Section Map, Section Contour
         **depth2: float**
             End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at surface and grows towards ocean floor).
         **exportDataFlag: boolean, default: False**
-          If True, the graph data points are stored on the local machine. The export path and file format are set by the `API's parameters`_.
+          If True, the graph data points are stored on the local machine. The export path and file format are set by the `APIs parameters`_.
         **show: boolean, default: True**
           If True, the graph object is returned and is displayed. The graph file is saved on the local machine at the figureDir directory.
           If False, the graph object is returned but not displayed.
@@ -159,12 +166,14 @@ visualization library (plotly) which may be changed by:
 
   # here is how to modify a graph:
 
-  go[1].cmap = 'PRGn'
-  go[1].vmin = 0
-  go[1].vmax = 5e-5
-  go[1].width = 900
-  go[1].height = 700
-  go[1].render()
+  import cmocean
+
+  go[0].cmap = cmocean.cm.balance
+  go[0].vmin = 0
+  go[0].vmax = 60
+  go[0].width = 700
+  go[0].height = 800
+  go[0].render()
 
 .. raw:: html
 

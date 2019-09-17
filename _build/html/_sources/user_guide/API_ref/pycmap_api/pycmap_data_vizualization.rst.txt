@@ -7,8 +7,8 @@ Data Visualization
 
 .. _plotly: https://plot.ly/
 .. _bokeh: https://bokeh.pydata.org/en/latest/index.html
-.. _API: API.ipynb
-.. _API key: API.ipynb
+.. _API: pycmap_api.html
+.. _API key: pycmap_api.html
 
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg

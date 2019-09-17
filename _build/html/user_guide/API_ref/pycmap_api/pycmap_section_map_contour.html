@@ -89,7 +89,7 @@
 </ul>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../../catalog/catalog.html">Data Catalog</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../api_ref.html">API Reference</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../api_ref.html">Software Packages</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="pycmap_api_ref.html">pycmap API</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="pycmap_install.html">Installation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pycmap_data_retrieval.html">Data Retrieval</a></li>
@@ -152,7 +152,7 @@
     
       <li><a href="../../../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../api_ref.html">API Reference</a> &raquo;</li>
+          <li><a href="../api_ref.html">Software Packages</a> &raquo;</li>
         
           <li><a href="pycmap_api_ref.html">pycmap API</a> &raquo;</li>
         
@@ -193,13 +193,13 @@ integer number. Note that contour plot is only supported by plotly
 visualization library. Also, <code class="docutils literal notranslate"><span class="pre">plot_section()</span></code> function only applies to
 gridded datasets with depth component (e.g. model outputs) and does not
 apply to sparse datasets.</p>
-<p>Change the <a href="#id1"><span class="problematic" id="id2">`APIs vizEngine`_</span></a> parameter if you wish to use a different
+<p>Change the <a class="reference external" href="pycmap_api.html">APIs vizEngine</a> parameter if you wish to use a different
 visualization library. Returns the generated graph objects in form of a
 python list. One may use the returned objects to modify the graph
 properties.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This method requires a valid <a href="#id3"><span class="problematic" id="id4">`API key`_</span></a>. It is not necessary to set the
+<p>This method requires a valid <a class="reference external" href="pycmap_api.html">API key</a>. It is not necessary to set the
 API key every time because the API properties are stored locally after
 being called the first time.</p>
 </div>
@@ -230,7 +230,7 @@ Example values: ‘2016-05-25’ or ‘2017-12-10 17:25:00’</p>
 </dd>
 <dt><strong>depth2: float</strong></dt><dd><p>End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at surface and grows towards ocean floor).</p>
 </dd>
-<dt><strong>exportDataFlag: boolean, default: False</strong></dt><dd><p>If True, the graph data points are stored on the local machine. The export path and file format are set by the <a href="#id5"><span class="problematic" id="id6">`API's parameters`_</span></a>.</p>
+<dt><strong>exportDataFlag: boolean, default: False</strong></dt><dd><p>If True, the graph data points are stored on the local machine. The export path and file format are set by the <a class="reference external" href="pycmap_api.html">APIs parameters</a>.</p>
 </dd>
 <dt><strong>show: boolean, default: True</strong></dt><dd><p>If True, the graph object is returned and is displayed. The graph file is saved on the local machine at the figureDir directory.
 If False, the graph object is returned but not displayed.</p>
@@ -316,12 +316,14 @@ visualization library (plotly) which may be changed by:
 </div>
 <iframe src="../../../_static/pycmap_tutorial_viz/html/section_map_NO3.html"  frameborder = 0  height="550px" width="100%">></iframe><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># here is how to modify a graph:</span>
 
-<span class="n">go</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">cmap</span> <span class="o">=</span> <span class="s1">&#39;PRGn&#39;</span>
-<span class="n">go</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">vmin</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">go</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">vmax</span> <span class="o">=</span> <span class="mf">5e-5</span>
-<span class="n">go</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="mi">900</span>
-<span class="n">go</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="mi">700</span>
-<span class="n">go</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
+<span class="kn">import</span> <span class="nn">cmocean</span>
+
+<span class="n">go</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">cmap</span> <span class="o">=</span> <span class="n">cmocean</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">balance</span>
+<span class="n">go</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">vmin</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">go</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">vmax</span> <span class="o">=</span> <span class="mi">60</span>
+<span class="n">go</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="mi">700</span>
+<span class="n">go</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="mi">800</span>
+<span class="n">go</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
 </pre></div>
 </div>
 <iframe src="../../../_static/pycmap_tutorial_viz/html/section_map_modified_NO3.html"  frameborder = 0  height="850px" width="100%">></iframe></div>
@@ -369,7 +371,7 @@ concentration</a> calculated by Darwin model.</p>
     <p>
         &copy; Copyright 2019, Mohammad Dehghani Ashkezari &amp; Norland Raphael Hagen
       <span class="lastupdated">
-        Last updated on Sep 13, 2019.
+        Last updated on Sep 16, 2019.
       </span>
 
     </p>

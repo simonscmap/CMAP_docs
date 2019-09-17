@@ -149,16 +149,16 @@ variables (lines 7-8):
    this variable will take longer time than others as the 3-day averaged
    Darwin dataset is massive (multi-decades global 3D dataset)!
 
+.. tip::
+  The space-time cut parameters (lines 41-48) have been set in such a way
+  to encompass the entire source dataset 'tblAMT13_Chisholm' (see the
+  `dataset page`_ for more details). Notice that the last data point at
+  the source dataset has been measured at '2003-10-12 12:44:00'. For
+  simplicity dt2 has been set to '2003-10-13', but you could also use the
+  exact date-time '2003-10-12 12:44:00'.
 
-The space-time cut parameters (lines 41-48) have been set in such a way
-to encompass the entire source dataset 'tblAMT13_Chisholm' (see the
-`dataset page`_ for more details). Notice that the last data point at
-the source dataset has been measured at '2003-10-12 12:44:00'. For
-simplicity dt2 has been set to '2003-10-13', but you could also use the
-exact date-time '2003-10-12 12:44:00'.
-
-Please review the **Example 1** at `Match (colocalize) Datasets`_ page
-since all of the mentioned tips directly apply to this example too.
+  Please review the **Example 1** at `Match (colocalize) Datasets`_ page
+  since all of the mentioned tips directly apply to this example too.
 
 
 
