@@ -13,7 +13,7 @@ SeaFlow
 
 .. raw:: html
 
-   <iframe src="../../_static/var_tables/tblSeaFlow/tblSeaFlow_header_table.html"  frameborder = 0 height = '300px' width="100%">></iframe>
+   <iframe src="../../_static/var_tables/tblSeaFlow/tblSeaFlow_header_table.html"  frameborder = 0 height = '350px' width="100%">></iframe>
 
 
 
