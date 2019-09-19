@@ -46,6 +46,8 @@ The methods below can be used to retrieve metadata and to query, subset and colo
 +-------------------------------+--------------------------------------------------------------+
 | :ref:`cruise_traj`            | Returns Trajectory for Specific Cruise                       |
 +-------------------------------+--------------------------------------------------------------+
+| :ref:`cruiseVars`             | Returns Variables Associated with Specific Cruise            |
++-------------------------------+--------------------------------------------------------------+
 | :ref:`subset_ST`              | Returns a Subset of Data Defined by Space and Time           |
 +-------------------------------+--------------------------------------------------------------+
 | :ref:`subset_TS`              | Returns a Subset of Data Aggregated by Time                  |
@@ -80,6 +82,7 @@ The methods below can be used to retrieve metadata and to query, subset and colo
   pycmap_cruise_details
   pycmap_cruise_ST_bounds
   pycmap_cruise_trajectory
+  pycmap_cruise_variables
   pycmap_subset_ST
   pycmap_subset_TS
   pycmap_subset_DP
