@@ -11,47 +11,17 @@ SeaFlow
    :scale: 10%
    :align: middle
 
-.. |globe| image:: /_static/catalog_thumbnails/globe.png
-  :scale: 10%
-  :align: middle
+.. raw:: html
 
-.. |sm| image:: /_static/tutorial_pics/sparse_mapping.png
-  :align: middle
-  :scale: 10%
-  :target: ../../tutorials/regional_map_sparse.html
+   <iframe src="../../_static/var_tables/tblSeaFlow/tblSeaFlow_header_table.html"  frameborder = 0 height = '300px' width="100%">></iframe>
 
 
-.. |ts| image:: /_static/tutorial_pics/TS.png
-  :align: middle
-  :scale: 25%
-  :target: ../../tutorials/time_series.html
 
-.. |hst| image:: /_static/tutorial_pics/hist.png
-  :align: middle
-  :scale: 25%
-  :target: ../../tutorials/histogram.html
-
-.. |sec| image:: /_static/tutorial_pics/section.png
-  :align: middle
-  :scale: 20%
-  :target: ../../tutorials/section.html
-
-.. |dep| image:: /_static/tutorial_pics/depth_profile.png
-  :align: middle
-  :scale: 25%
-  :target: ../../tutorials/depth_profile.html
-
-.. |edy| image:: /_static/tutorial_pics/eddy_sampling.png
-  :align: middle
-  :scale: 25%
-  :target: ../../tutorials/eddy.html
-
-
-+-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
-| Dataset Name                  | Sensor   |  Make       |  Spatial Resolution    |Temporal Resolution|  Start Date         |  End Date           |
-+===============================+==========+=============+========================+===================+=====================+=====================+
-| :ref:`SeaFlow`                ||cruise|  | Observation |     Irregular          |    Three Minutes  | 2010-05-04 23:13:08 |2018-07-17 07:42:39  |
-+-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
+.. +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
+.. | Dataset Name                  | Sensor   |  Make       |  Spatial Resolution    |Temporal Resolution|  Start Date         |  End Date           |
+.. +===============================+==========+=============+========================+===================+=====================+=====================+
+.. | :ref:`SeaFlow`                ||cruise|  | Observation |     Irregular          |    Three Minutes  | 2010-05-04 23:13:08 |2018-07-17 07:42:39  |
+.. +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 
 Dataset Description
 *******************

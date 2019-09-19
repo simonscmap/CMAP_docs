@@ -18,7 +18,7 @@ Installation
    :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/Installation.ipynb
 
 
-To use pycmap locally, you will need Python installed on your computer. We recommend the `Anaconda Distribution`_
+To use pycmap locally, you will need Python 3+ installed on your computer. We recommend the `Anaconda Distribution`_
 
 
 pycmap can be installed using pip:
@@ -35,9 +35,7 @@ SimonsCMAP website: https://simonscmap.com.
 .. note::
 
   You may install pycmap on cloud-based jupyter notebooks (such as
-  `Binder`_, or `Colab`_) by running the following command in a
-  code-block:
-
+  `Binder`_, or `Colab`_) by running the following command.
 
 
   .. code-block:: shell

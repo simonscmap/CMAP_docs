@@ -69,4 +69,5 @@ Below is an example list of entities that may issue and link your dataset to a u
 How do I cite data found in CMAP?
 ---------------------------------
 
-DOI or relevant citations for specific datatsets can be found in the Data :ref:`Catalog` or in the retrieved metadata.
+
+DOI or relevant citations for specific datatsets can be found in the :ref:`Catalog` or in the retrieved metadata.

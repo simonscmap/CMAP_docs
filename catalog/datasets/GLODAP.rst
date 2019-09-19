@@ -19,36 +19,6 @@ Global Ocean Data Analysis Project
    :scale: 10%
    :align: middle
 
-.. |rm| image:: /_static/tutorial_pics/regional_map.png
- :align: middle
- :scale: 20%
- :target: ../../tutorials/regional_map_gridded.html
-
-.. |ts| image:: /_static/tutorial_pics/TS.png
- :align: middle
- :scale: 25%
- :target: ../../tutorials/time_series.html
-
-.. |hst| image:: /_static/tutorial_pics/hist.png
- :align: middle
- :scale: 25%
- :target: ../../tutorials/histogram.html
-
-.. |sec| image:: /_static/tutorial_pics/section.png
-  :align: middle
-  :scale: 20%
-  :target: ../../tutorials/section.html
-
-.. |dep| image:: /_static/tutorial_pics/depth_profile.png
-  :align: middle
-  :scale: 25%
-  :target: ../../tutorials/depth_profile.html
-
-.. |sm| image:: /_static/tutorial_pics/sparse_mapping.png
-  :align: middle
-  :scale: 10%
-  :target: ../../tutorials/regional_map_sparse.html
-
 
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 | Dataset Name                  | Sensor   |  Make       |  Spatial Resolution    |Temporal Resolution|  Start Date         |  End Date           |

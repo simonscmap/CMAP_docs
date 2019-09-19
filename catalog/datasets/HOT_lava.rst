@@ -63,10 +63,7 @@ Life Aquatic in the Volcanic Aftermath
 Dataset Description
 *******************
 
-The Sea Surface Temperature dataset in CMAP is the **GHRSST Level 4 AVHRR_OI Global Blended Sea Surface Temperature Analysis (GDS version 2) from NCEI**.
-This data product has a 1/4° X 1/4° degree gridded spatial resolution with global ocean coverage at a 1 day temporal interval.
-The dataset is derived from a combination of multiple AVHRR (Advanced Very High Resolution Radiometer) satellites along with in-situ sst measurements from ship and buoy measurements. These data sources are optimally interpolated to produce a complete smoothed grid.
-
+Kilauea volcano on the island of Hawaii was in a violent eruptive phase in the summer of 2018, with significant activities both at the summit caldera and at several points along the East Rift Zone. This rare event provided a unique opportunity to investigate hydrothermal processes at the lava-seawater contact zone (Kapoho Bay region) and the impacts of volcanic aerosol and ash deposition on surrounding marine ecosystems.   The objective of the HOT LAVA cruise was to sample the ocean surrounding the lava entry point and then to track the satellite-derived chlorophyll plume that extended to the south. Operationally, a SeaGlider was deployed to conduct profiling transects and  CTD stations were occupied to sample microbes and biogeochemistry associated with blue water, green water, and geothermal grey waterreflecting waters differentially impact by lava influx into coastal waters.   A towfish was also deployed to sample for trace metal analyses.
 
 Table of Variables
 ******************
