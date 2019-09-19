@@ -11,17 +11,17 @@ SeaFlow
    :scale: 10%
    :align: middle
 
-.. raw:: html
+.. .. raw:: html
+..
+..    <iframe src="../../_static/var_tables/tblSeaFlow/tblSeaFlow_header_table.html"  frameborder = 0 height = '350px' width="100%">></iframe>
+..
 
-   <iframe src="../../_static/var_tables/tblSeaFlow/tblSeaFlow_header_table.html"  frameborder = 0 height = '350px' width="100%">></iframe>
 
-
-
-.. +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
-.. | Dataset Name                  | Sensor   |  Make       |  Spatial Resolution    |Temporal Resolution|  Start Date         |  End Date           |
-.. +===============================+==========+=============+========================+===================+=====================+=====================+
-.. | :ref:`SeaFlow`                ||cruise|  | Observation |     Irregular          |    Three Minutes  | 2010-05-04 23:13:08 |2018-07-17 07:42:39  |
-.. +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
++-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
+| Dataset Name                  | Sensor   |  Make       |  Spatial Resolution    |Temporal Resolution|  Start Date         |  End Date           |
++===============================+==========+=============+========================+===================+=====================+=====================+
+| :ref:`SeaFlow`                ||cruise|  | Observation |     Irregular          |    Three Minutes  | 2010-05-04 23:13:08 |2018-07-17 07:42:39  |
++-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 
 Dataset Description
 *******************
@@ -77,6 +77,13 @@ François Ribalet, Chris Bertiaume, Annette Hynes, Jarred Swalwell, Michael Carl
 
 Version History
 ***************
+
+**V1.2** - Sep 16, 2019
+
+.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.3445407.svg
+   :target: http://doi.org/10.5281/zenodo.3445407
+
+
 
 
 **V1.1** - Jun 11, 2019
