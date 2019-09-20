@@ -1,0 +1,276 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Eddy Sampling &mdash; CMAP</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../../_static/CMAP_logo.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/style.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Front Sampling" href="opedia_front.html" />
+    <link rel="prev" title="Lagrangian Sampling" href="opedia_lagrangian.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> CMAP
+          
+
+          
+            
+            <img src="../../../_static/CMAP_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/installation/installation.html">Installation</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../catalog/catalog.html">Data Catalog</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_ref.html">Software Packages</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../pycmap_api/pycmap_api_ref.html">pycmap API</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="opedia_tutorials.html">Opedia (Depreciated)</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="opedia_get_catalog.html">Retrieve Data Catalog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_regional_map_gridded.html">Map Gridded Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_regional_map_sparse.html">Map Sparse Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_section.html">Section Plot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_time_series.html">Plot Time Series</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_depth_profile.html">Plot Depth Profile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_XY.html">Plot XY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_histogram.html">Plot Histogram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_ESV.html">Exact Amplicon Sequence Variants</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_section.html">Section Plot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_cruise_track.html">Colocalize Cruise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_lagrangian.html">Lagrangian Sampling</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Eddy Sampling</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#code-tutorial">Code Tutorial</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_front.html">Front Sampling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_custom_data.html">Colocalize Custom Dataset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_retrieve_data.html">Retrieve Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_sql.html">SQL Queries</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../cmap4r_api/cmap4r_api.html">cmap4r API</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq_and_contributing/datasubmission.html">Data Submission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq_and_contributing/FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq_and_contributing/contact.html">Contact and Contribute</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">CMAP</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../api_ref.html">Software Packages</a> &raquo;</li>
+        
+          <li><a href="opedia_tutorials.html">Opedia (Depreciated)</a> &raquo;</li>
+        
+      <li>Eddy Sampling</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="eddy-sampling">
+<h1>Eddy Sampling<a class="headerlink" href="#eddy-sampling" title="Permalink to this headline">¶</a></h1>
+<p><strong>Colocalize an Eddy path with model and satellite data</strong></p>
+<p>As far as oceanic observation methodology is concerned, one can consider two major class of observations:</p>
+<ul class="simple">
+<li><p>Eulerian</p></li>
+<li><p>Lagrangian</p></li>
+</ul>
+<p>Eulerian measurements are made at a fixed frame of reference which means the sensor is fixed at a given location and fluid is passing by. Lagrangian measurements are made from the perspective of water parcels which means the sensor propagates with the flow. This example demonstrates how to advect a passive tracer (massless particle) with the flow and construct a Lagrangian path. We then colocalize the Lagrangian path with other data sets (SST satellite and model-generated diazotroph concentration) to simulate a Lagrangian measurement.</p>
+<p>Notes:</p>
+<ul class="simple">
+<li><p>Darwin_Climatology is a monthly climatology version of the Darwin model with spatial resolution 1/2° X 1/2°</p></li>
+<li><p>Satellite SST data set is a daily-global product with spatial resolution  1/4° X 1/4° .</p></li>
+</ul>
+<div class="section" id="code-tutorial">
+<h2>Code Tutorial<a class="headerlink" href="#code-tutorial" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://github.com/mdashkezari/opedia/blob/master/notebooks/Colocalize_Eddy.ipynb">Jupyter</a></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">opedia</span> <span class="kn">import</span> <span class="n">eddy</span> <span class="k">as</span> <span class="n">EDD</span>
+
+<span class="n">eddyTable</span> <span class="o">=</span> <span class="s1">&#39;tblChelton&#39;</span>                                              <span class="c1"># eddy table name</span>
+<span class="n">startDate</span> <span class="o">=</span> <span class="s1">&#39;2014-04-01&#39;</span>                                              <span class="c1"># eddy cores within the delimited space-time (start date)</span>
+<span class="n">endDate</span> <span class="o">=</span> <span class="s1">&#39;2014-05-01&#39;</span>                                                <span class="c1"># eddy cores within the delimited space-time (end date)</span>
+<span class="n">lat1</span> <span class="o">=</span> <span class="mi">23</span>                                                             <span class="c1"># eddy cores within the delimited space-time (start lat)</span>
+<span class="n">lat2</span> <span class="o">=</span> <span class="mi">29</span>                                                             <span class="c1"># eddy cores within the delimited space-time (end lat)</span>
+<span class="n">lon1</span> <span class="o">=</span> <span class="o">-</span><span class="mi">161</span>                                                           <span class="c1"># eddy cores within the delimited space-time (start lon)</span>
+<span class="n">lon2</span> <span class="o">=</span> <span class="o">-</span><span class="mi">151</span>                                                           <span class="c1"># eddy cores within the delimited space-time (end lon)</span>
+<span class="n">fname</span> <span class="o">=</span> <span class="s1">&#39;eddy&#39;</span>                                                        <span class="c1"># figure filename (and/or shape filename)</span>
+<span class="n">tables</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;tblSST_AVHRR_OI_NRT&#39;</span><span class="p">,</span> <span class="s1">&#39;tblDarwin_Nutrient_Climatology&#39;</span><span class="p">]</span>    <span class="c1"># list of varaible table names</span>
+<span class="n">variables</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sst&#39;</span><span class="p">,</span> <span class="s1">&#39;DON_darwin_clim&#39;</span><span class="p">]</span>                         <span class="c1"># list of variable names</span>
+<span class="n">spatialTolerance</span> <span class="o">=</span> <span class="mf">0.3</span>                                                <span class="c1"># colocalizer spatial tolerance (+/- degrees)</span>
+<span class="n">exportDataFlag</span> <span class="o">=</span> <span class="bp">False</span>                                                <span class="c1"># export the cruise trajectory and colocalized data on disk</span>
+<span class="n">depth1</span> <span class="o">=</span> <span class="mi">0</span>                                                            <span class="c1"># depth range start (m)</span>
+<span class="n">depth2</span> <span class="o">=</span> <span class="mi">5</span>                                                            <span class="c1"># depth range end (m)</span>
+
+
+<span class="n">cores</span> <span class="o">=</span> <span class="n">EDD</span><span class="o">.</span><span class="n">getEddies</span><span class="p">(</span><span class="n">eddyTable</span><span class="p">,</span> <span class="n">startDate</span><span class="p">,</span> <span class="n">endDate</span><span class="p">,</span> <span class="n">lat1</span><span class="p">,</span> <span class="n">lat2</span><span class="p">,</span> <span class="n">lon1</span><span class="p">,</span> <span class="n">lon2</span><span class="p">)</span>
+<span class="n">EDD</span><span class="o">.</span><span class="n">colocalize</span><span class="p">(</span><span class="n">tables</span><span class="p">,</span> <span class="n">variables</span><span class="p">,</span> <span class="n">cores</span><span class="p">,</span> <span class="n">spatialTolerance</span><span class="p">,</span> <span class="n">depth1</span><span class="p">,</span> <span class="n">depth2</span><span class="p">,</span> <span class="n">exportDataFlag</span><span class="p">,</span> <span class="n">fname</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<iframe src="../../../_static/tutorial_plots/eddy.html"  frameborder = 0  height="1000px" width="100%">></iframe></div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Mohammad Dehghani Ashkezari &amp; Norland Raphael Hagen
+      <span class="lastupdated">
+        Last updated on Sep 20, 2019.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

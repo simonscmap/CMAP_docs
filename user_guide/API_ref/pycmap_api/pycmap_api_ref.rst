@@ -1,8 +1,11 @@
+
+
+
+
 pycmap API
 ==========
 
-.. _pycmap_api:
-.. _API key:
+
 .. _here: https://github.com/simonscmap/pycmap/archive/master.zip
 .. _github: https://github.com/simonscmap/pycmap/tree/master/
 .. |colab| image:: https://colab.research.google.com/assets/colab-badge.svg

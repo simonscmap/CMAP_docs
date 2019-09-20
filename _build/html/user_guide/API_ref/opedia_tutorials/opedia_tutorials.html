@@ -1,0 +1,297 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>opedia (depreciated) &mdash; CMAP</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../../_static/CMAP_logo.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/style.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Retrieve Data Catalog" href="opedia_get_catalog.html" />
+    <link rel="prev" title="Correlation Matrix Along Cruise Track" href="../pycmap_api/pycmap_correlation_matrix_cruise_track.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> CMAP
+          
+
+          
+            
+            <img src="../../../_static/CMAP_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/installation/installation.html">Installation</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../catalog/catalog.html">Data Catalog</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_ref.html">Software Packages</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../pycmap_api/pycmap_api_ref.html">pycmap API</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">opedia (depreciated)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="opedia_get_catalog.html">Retrieve Data Catalog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_regional_map_gridded.html">Map Gridded Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_regional_map_sparse.html">Map Sparse Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_section.html">Section Plot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_time_series.html">Plot Time Series</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_depth_profile.html">Plot Depth Profile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_XY.html">Plot XY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_histogram.html">Plot Histogram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_ESV.html">Exact Amplicon Sequence Variants</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_section.html">Section Plot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_cruise_track.html">Colocalize Cruise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_lagrangian.html">Lagrangian Sampling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_eddy.html">Eddy Sampling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_front.html">Front Sampling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_custom_data.html">Colocalize Custom Dataset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_retrieve_data.html">Retrieve Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_sql.html">SQL Queries</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../cmap4r_api/cmap4r_api.html">cmap4r API</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq_and_contributing/datasubmission.html">Data Submission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq_and_contributing/FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq_and_contributing/contact.html">Contact and Contribute</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">CMAP</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../api_ref.html">Software Packages</a> &raquo;</li>
+        
+      <li>opedia (depreciated)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="opedia-depreciated">
+<h1>opedia (depreciated)<a class="headerlink" href="#opedia-depreciated" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Opedia is the now depreciated python package for the Simons CMAP project. It has since been replaced by <a class="reference external" href="../pycmap_api/pycmap_api_ref.html">pycmap</a>.</p>
+</div>
+<p>The tutorials include both GUI and script approaches. The GUI tutorials may include a video demonstration and the script approach include example code.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="opedia_get_catalog.html"><img alt="cat" class="align-middle" src="../../../_images/catalog.png" /></a></p></td>
+<td><p><a class="reference external" href="opedia_regional_map_gridded.html"><img alt="rm" class="align-middle" src="../../../_images/regional_map.png" /></a></p></td>
+<td><p><a class="reference external" href="opedia_regional_map_sparse.html"><img alt="sm" class="align-middle" src="../../../_images/sparse_mapping.png" /></a></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Get Catalog</strong></p></td>
+<td><p><strong>Regional Gridded Map</strong></p></td>
+<td><p><strong>Regional Sparse Map</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="opedia_section.html"><img alt="sp" class="align-middle" src="../../../_images/section.png" /></a></p></td>
+<td><p><a class="reference external" href="opedia_time_series.html"><img alt="ts" class="align-middle" src="../../../_images/TS.png" /></a></p></td>
+<td><p><a class="reference external" href="opedia_depth_profile.html"><img alt="dep" class="align-middle" src="../../../_images/depth_profile.png" /></a></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Section Plot</strong></p></td>
+<td><p><strong>Time Series</strong></p></td>
+<td><p><strong>Depth Profile</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="opedia_XY.html"><img alt="xy" class="align-middle" src="../../../_images/xy.png" /></a></p></td>
+<td><p><a class="reference external" href="opedia_histogram.html"><img alt="hst" class="align-middle" src="../../../_images/hist.png" /></a></p></td>
+<td><p><a class="reference external" href="opedia_ESV.html"><img alt="esv" class="align-middle" src="../../../_images/esv.png" /></a></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Plot XY</strong></p></td>
+<td><p><strong>Histogram</strong></p></td>
+<td><p><strong>ESV Track</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="opedia_cruise_track.html"><img alt="ct" class="align-center" src="../../../_images/sailboat1.png" style="width: 153.6px; height: 153.6px;" /></a></p></td>
+<td><p><a class="reference external" href="opedia_lagrangian.html"><img alt="lag" class="align-middle" src="../../../_images/lagrangian.png" /></a></p></td>
+<td><p><a class="reference external" href="opedia_eddy.html"><img alt="ed" class="align-middle" src="../../../_images/eddy.png" /></a></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Cruise Track</strong></p></td>
+<td><p><strong>Lagrangian Sampling</strong></p></td>
+<td><p><strong>Eddy Sampling</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="opedia_front.html"><img alt="fr" class="align-middle" src="../../../_images/front.png" /></a></p></td>
+<td><p><a class="reference external" href="opedia_custom_data.html"><img alt="cd" class="align-middle" src="../../../_images/colocalize.png" /></a></p></td>
+<td><p><a class="reference external" href="opedia_retrieve_data.html"><img alt="rd" class="align-middle" src="../../../_images/subset.png" /></a></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Front Sampling</strong></p></td>
+<td><p><strong>Custom Data</strong></p></td>
+<td><p><strong>Retrieve Dataset Subset</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="opedia_sql.html"><img alt="sql" class="align-middle" src="../../../_images/sql_2.png" /></a></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>SQL Queries</strong></p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Mohammad Dehghani Ashkezari &amp; Norland Raphael Hagen
+      <span class="lastupdated">
+        Last updated on Sep 20, 2019.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

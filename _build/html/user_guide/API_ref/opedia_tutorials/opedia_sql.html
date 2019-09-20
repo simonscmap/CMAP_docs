@@ -1,0 +1,379 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>SQL Queries &mdash; CMAP</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../../_static/CMAP_logo.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/style.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="cmap4r API" href="../cmap4r_api/cmap4r_api.html" />
+    <link rel="prev" title="Retrieve Data" href="opedia_retrieve_data.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> CMAP
+          
+
+          
+            
+            <img src="../../../_static/CMAP_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/installation/installation.html">Installation</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../catalog/catalog.html">Data Catalog</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_ref.html">Software Packages</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../pycmap_api/pycmap_api_ref.html">pycmap API</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="opedia_tutorials.html">Opedia Tutorials</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="opedia_get_catalog.html">Retrieve Data Catalog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_regional_map_gridded.html">Map Gridded Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_regional_map_sparse.html">Map Sparse Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_section.html">Section Plot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_time_series.html">Plot Time Series</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_depth_profile.html">Plot Depth Profile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_XY.html">Plot XY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_histogram.html">Plot Histogram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_ESV.html">Exact Amplicon Sequence Variants</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_section.html">Section Plot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_cruise_track.html">Colocalize Cruise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_lagrangian.html">Lagrangian Sampling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_eddy.html">Eddy Sampling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_front.html">Front Sampling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_custom_data.html">Colocalize Custom Dataset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_retrieve_data.html">Retrieve Data</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">SQL Queries</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#regional-map-sql">Regional Map SQL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#time-series-sql">Time Series SQL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#depth-profile-sql">Depth Profile SQL</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../cmap4r_api/cmap4r_api.html">cmap4r API</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq_and_contributing/datasubmission.html">Data Submission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq_and_contributing/FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq_and_contributing/contact.html">Contact and Contribute</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">CMAP</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../api_ref.html">Software Packages</a> &raquo;</li>
+        
+          <li><a href="opedia_tutorials.html">Opedia Tutorials</a> &raquo;</li>
+        
+      <li>SQL Queries</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sql-queries">
+<h1>SQL Queries<a class="headerlink" href="#sql-queries" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="regional-map-sql">
+<h2>Regional Map SQL<a class="headerlink" href="#regional-map-sql" title="Permalink to this headline">¶</a></h2>
+<p>If you are familiar with SQL or T-SQL language, you can use “dbFetch()” function to execute any generic query and retrieve data. Below is a simple example showing how to retrieve a snapshot and plot a basic map.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;Import the Libraries&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">opedia</span> <span class="kn">import</span> <span class="n">db</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+
+<span class="sd">&quot;&quot;&quot;Define the plot&quot;&quot;&quot;</span>
+<span class="k">def</span> <span class="nf">plot</span><span class="p">(</span><span class="n">dt</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">extent</span><span class="o">=</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">lon</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">lon</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">lat</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">lat</span><span class="p">)],</span> <span class="n">origin</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mf">1e-4</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">field</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> &#39;</span> <span class="o">+</span> <span class="n">dt1</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="sd">&quot;&quot;&quot;Construct the query statement&quot;&quot;&quot;</span>
+<span class="k">def</span> <span class="nf">prepareQuery</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;SELECT [time], lat, lon, depth, </span><span class="si">%s</span><span class="s2"> FROM </span><span class="si">%s</span><span class="s2"> WHERE &quot;</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">query</span> <span class="o">+</span> <span class="s2">&quot;[time] BETWEEN&#39;</span><span class="si">%s</span><span class="s2">&#39; AND &#39;</span><span class="si">%s</span><span class="s2">&#39; AND &quot;</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">query</span> <span class="o">+</span> <span class="s2">&quot;lat BETWEEN </span><span class="si">%f</span><span class="s2"> AND </span><span class="si">%f</span><span class="s2"> AND &quot;</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">query</span> <span class="o">+</span> <span class="s2">&quot;lon BETWEEN </span><span class="si">%f</span><span class="s2"> AND </span><span class="si">%f</span><span class="s2"> AND &quot;</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">query</span> <span class="o">+</span> <span class="s2">&quot;depth BETWEEN </span><span class="si">%f</span><span class="s2"> AND </span><span class="si">%f</span><span class="s2"> &quot;</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">query</span> <span class="o">+</span> <span class="s2">&quot;ORDER BY [time], lat, lon, depth &quot;</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">query</span> <span class="o">%</span> <span class="n">args</span>
+    <span class="k">return</span> <span class="n">query</span>
+
+<span class="sd">&quot;&quot;&quot;Retrieve regional data and plot&quot;&quot;&quot;</span>
+<span class="c1">############## set parameters ################</span>
+<span class="n">table</span> <span class="o">=</span> <span class="s1">&#39;tblPisces_NRT&#39;</span>
+<span class="n">field</span> <span class="o">=</span> <span class="s1">&#39;Fe&#39;</span>        <span class="c1"># Mole concentration of dissolved Iron</span>
+<span class="n">dt1</span> <span class="o">=</span> <span class="s1">&#39;2017-06-03&#39;</span>
+<span class="n">dt2</span> <span class="o">=</span> <span class="s1">&#39;2017-06-03&#39;</span>
+<span class="n">lat1</span><span class="p">,</span> <span class="n">lat2</span><span class="p">,</span> <span class="n">lon1</span><span class="p">,</span> <span class="n">lon2</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="o">-</span><span class="mi">180</span><span class="p">,</span> <span class="o">-</span><span class="mi">100</span>
+<span class="n">depth1</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">depth2</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="c1">##############################################</span>
+<span class="n">args</span> <span class="o">=</span> <span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">table</span><span class="p">,</span> <span class="n">dt1</span><span class="p">,</span> <span class="n">dt2</span><span class="p">,</span> <span class="n">lat1</span><span class="p">,</span> <span class="n">lat2</span><span class="p">,</span> <span class="n">lon1</span><span class="p">,</span> <span class="n">lon2</span><span class="p">,</span> <span class="n">depth1</span><span class="p">,</span> <span class="n">depth2</span><span class="p">)</span>
+<span class="n">query</span> <span class="o">=</span> <span class="n">prepareQuery</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">dbFetch</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+<span class="n">lat</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">lat</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+<span class="n">lon</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">lon</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+<span class="n">shape</span> <span class="o">=</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lat</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">lon</span><span class="p">))</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">field</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">shape</span><span class="p">)</span>
+<span class="c1">#df.to_csv(field+&#39;.csv&#39;, index=False)    # export data</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">dt1</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Output</strong></p>
+<img alt="../../../_images/sql_reg_map.png" src="../../../_images/sql_reg_map.png" />
+</div>
+<div class="section" id="time-series-sql">
+<h2>Time Series SQL<a class="headerlink" href="#time-series-sql" title="Permalink to this headline">¶</a></h2>
+<p>If you are familiar with SQL or T-SQL language, you can use “dbFetch()” function to execute any generic query and retrieve data. Below is a simple example showing how retrieve time series and plot.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;Import the libraries&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">opedia</span> <span class="kn">import</span> <span class="n">db</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+
+<span class="sd">&quot;&quot;&quot;Define the plot&quot;&quot;&quot;</span>
+<span class="k">def</span> <span class="nf">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;time&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="sd">&quot;&quot;&quot;Construct the query statement&quot;&quot;&quot;</span>
+<span class="k">def</span> <span class="nf">prepareQuery</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;SELECT [time], AVG(lat) AS lat, AVG(lon) AS lon, AVG(</span><span class="si">%s</span><span class="s2">) AS </span><span class="si">%s</span><span class="s2"> FROM </span><span class="si">%s</span><span class="s2"> WHERE &quot;</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">query</span> <span class="o">+</span> <span class="s2">&quot;[time] BETWEEN&#39;</span><span class="si">%s</span><span class="s2">&#39; AND &#39;</span><span class="si">%s</span><span class="s2">&#39; AND &quot;</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">query</span> <span class="o">+</span> <span class="s2">&quot;lat BETWEEN </span><span class="si">%f</span><span class="s2"> AND </span><span class="si">%f</span><span class="s2"> AND &quot;</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">query</span> <span class="o">+</span> <span class="s2">&quot;lon BETWEEN </span><span class="si">%f</span><span class="s2"> AND </span><span class="si">%f</span><span class="s2"> &quot;</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">query</span> <span class="o">+</span> <span class="s2">&quot;GROUP BY [time] &quot;</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">query</span> <span class="o">+</span> <span class="s2">&quot;ORDER BY [time] &quot;</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">query</span> <span class="o">%</span> <span class="n">args</span>
+    <span class="k">return</span> <span class="n">query</span>
+
+<span class="sd">&quot;&quot;&quot;Retrieve time-series datcd a and plot&quot;&quot;&quot;</span>
+<span class="c1">############## set parameters ################</span>
+<span class="n">table</span> <span class="o">=</span> <span class="s1">&#39;tblsst_AVHRR_OI_NRT&#39;</span>
+<span class="n">variable</span> <span class="o">=</span> <span class="s1">&#39;sst&#39;</span>
+<span class="n">dt1</span> <span class="o">=</span> <span class="s1">&#39;2016-06-01&#39;</span>
+<span class="n">dt2</span> <span class="o">=</span> <span class="s1">&#39;2016-10-01&#39;</span>
+<span class="n">lat1</span><span class="p">,</span> <span class="n">lat2</span><span class="p">,</span> <span class="n">lon1</span><span class="p">,</span> <span class="n">lon2</span> <span class="o">=</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="o">-</span><span class="mi">160</span><span class="p">,</span> <span class="o">-</span><span class="mi">158</span>
+<span class="c1">##############################################</span>
+<span class="n">args</span> <span class="o">=</span> <span class="p">(</span><span class="n">variable</span><span class="p">,</span> <span class="n">variable</span><span class="p">,</span> <span class="n">table</span><span class="p">,</span> <span class="n">dt1</span><span class="p">,</span> <span class="n">dt2</span><span class="p">,</span> <span class="n">lat1</span><span class="p">,</span> <span class="n">lat2</span><span class="p">,</span> <span class="n">lon1</span><span class="p">,</span> <span class="n">lon2</span><span class="p">)</span>
+<span class="n">query</span> <span class="o">=</span> <span class="n">prepareQuery</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">dbFetch</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+<span class="c1">#df.to_csv(variable+&#39;.csv&#39;, index=False)    # export data</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="n">variable</span><span class="p">])</span>
+</pre></div>
+</div>
+<p><strong>Output</strong></p>
+<img alt="../../../_images/sql_ts.png" src="../../../_images/sql_ts.png" />
+</div>
+<div class="section" id="depth-profile-sql">
+<h2>Depth Profile SQL<a class="headerlink" href="#depth-profile-sql" title="Permalink to this headline">¶</a></h2>
+<p>If you are familiar with SQL or T-SQL language, you can use “dbFetch()” function to execute any generic query and retrieve data. Below is a simple example showing how to retrieve a depth profile and plot.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;Import the libraries&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">opedia</span> <span class="kn">import</span> <span class="n">db</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+
+<span class="sd">&quot;&quot;&quot;Define the plot&quot;&quot;&quot;</span>
+<span class="k">def</span> <span class="nf">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;depth (m)&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="sd">&quot;&quot;&quot;Construct the query statement&quot;&quot;&quot;</span>
+<span class="k">def</span> <span class="nf">prepareQuery</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;SELECT AVG(lat) AS lat, AVG(lon) AS lon, depth, AVG(</span><span class="si">%s</span><span class="s2">) AS </span><span class="si">%s</span><span class="s2"> FROM </span><span class="si">%s</span><span class="s2"> WHERE &quot;</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">query</span> <span class="o">+</span> <span class="s2">&quot;[time] BETWEEN &#39;</span><span class="si">%s</span><span class="s2">&#39; AND &#39;</span><span class="si">%s</span><span class="s2">&#39; AND &quot;</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">query</span> <span class="o">+</span> <span class="s2">&quot;lat BETWEEN </span><span class="si">%f</span><span class="s2"> AND </span><span class="si">%f</span><span class="s2"> AND &quot;</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">query</span> <span class="o">+</span> <span class="s2">&quot;lon BETWEEN </span><span class="si">%f</span><span class="s2"> AND </span><span class="si">%f</span><span class="s2"> AND &quot;</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">query</span> <span class="o">+</span> <span class="s2">&quot;depth BETWEEN </span><span class="si">%f</span><span class="s2"> AND </span><span class="si">%f</span><span class="s2"> &quot;</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">query</span> <span class="o">+</span> <span class="s2">&quot;GROUP BY depth &quot;</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">query</span> <span class="o">+</span> <span class="s2">&quot;ORDER BY depth &quot;</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">query</span> <span class="o">%</span> <span class="n">args</span>
+    <span class="k">return</span> <span class="n">query</span>
+
+<span class="sd">&quot;&quot;&quot;Retrieve regional data and plot&quot;&quot;&quot;</span>
+<span class="c1">############## set parameters ################</span>
+<span class="n">table</span> <span class="o">=</span> <span class="s1">&#39;tblPisces_NRT&#39;</span>
+<span class="n">field</span> <span class="o">=</span> <span class="s1">&#39;CHL&#39;</span>
+<span class="n">dt1</span> <span class="o">=</span> <span class="s1">&#39;2016-06-01&#39;</span>
+<span class="n">dt2</span> <span class="o">=</span> <span class="s1">&#39;2016-10-01&#39;</span>
+<span class="n">lat1</span><span class="p">,</span> <span class="n">lat2</span><span class="p">,</span> <span class="n">lon1</span><span class="p">,</span> <span class="n">lon2</span> <span class="o">=</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="o">-</span><span class="mi">160</span><span class="p">,</span> <span class="o">-</span><span class="mi">158</span>
+<span class="n">depth1</span><span class="p">,</span> <span class="n">depth2</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5000</span>
+<span class="c1">##############################################</span>
+<span class="n">args</span> <span class="o">=</span> <span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field</span><span class="p">,</span> <span class="n">table</span><span class="p">,</span> <span class="n">dt1</span><span class="p">,</span> <span class="n">dt2</span><span class="p">,</span> <span class="n">lat1</span><span class="p">,</span> <span class="n">lat2</span><span class="p">,</span> <span class="n">lon1</span><span class="p">,</span> <span class="n">lon2</span><span class="p">,</span> <span class="n">depth1</span><span class="p">,</span> <span class="n">depth2</span><span class="p">)</span>
+<span class="n">query</span> <span class="o">=</span> <span class="n">prepareQuery</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">dbFetch</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+<span class="c1">#df.to_csv(field+&#39;.csv&#39;, index=False)    # export data</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;depth&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="n">field</span><span class="p">])</span>
+</pre></div>
+</div>
+<p><strong>Output</strong></p>
+<img alt="../../../_images/sql_dep.png" src="../../../_images/sql_dep.png" />
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Mohammad Dehghani Ashkezari &amp; Norland Raphael Hagen
+      <span class="lastupdated">
+        Last updated on Sep 20, 2019.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

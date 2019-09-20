@@ -1,0 +1,262 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Colocalize Custom Dataset &mdash; CMAP</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../../_static/CMAP_logo.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/style.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Retrieve Data" href="opedia_retrieve_data.html" />
+    <link rel="prev" title="Front Sampling" href="opedia_front.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> CMAP
+          
+
+          
+            
+            <img src="../../../_static/CMAP_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/installation/installation.html">Installation</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../catalog/catalog.html">Data Catalog</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_ref.html">Software Packages</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../pycmap_api/pycmap_api_ref.html">pycmap API</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="opedia_tutorials.html">Opedia Tutorials</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="opedia_get_catalog.html">Retrieve Data Catalog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_regional_map_gridded.html">Map Gridded Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_regional_map_sparse.html">Map Sparse Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_section.html">Section Plot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_time_series.html">Plot Time Series</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_depth_profile.html">Plot Depth Profile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_XY.html">Plot XY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_histogram.html">Plot Histogram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_ESV.html">Exact Amplicon Sequence Variants</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_section.html">Section Plot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_cruise_track.html">Colocalize Cruise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_lagrangian.html">Lagrangian Sampling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_eddy.html">Eddy Sampling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_front.html">Front Sampling</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Colocalize Custom Dataset</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#code-tutorial">Code Tutorial</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_retrieve_data.html">Retrieve Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_sql.html">SQL Queries</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../cmap4r_api/cmap4r_api.html">cmap4r API</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq_and_contributing/datasubmission.html">Data Submission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq_and_contributing/FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq_and_contributing/contact.html">Contact and Contribute</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">CMAP</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../api_ref.html">Software Packages</a> &raquo;</li>
+        
+          <li><a href="opedia_tutorials.html">Opedia Tutorials</a> &raquo;</li>
+        
+      <li>Colocalize Custom Dataset</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="colocalize-custom-dataset">
+<h1>Colocalize Custom Dataset<a class="headerlink" href="#colocalize-custom-dataset" title="Permalink to this headline">¶</a></h1>
+<p>Colocalize a virtual cruise with satellite chlorophyll data and picoeukaryote climatological estimates provided by Darwin model. The trajectory of the virtual cruise is stored in a .csv file.</p>
+<p>Notes:</p>
+<p>Satellite sea surface temperatue data used in this example is a daily-global near-real-time and optimally interpolated data set with 4km × 4km spatial resolution  1/4° X 1/4° .</p>
+<p>Satellite Chlorophyll data used in this example is a daily-global reprocessed and optimally interpolated data set with  4km × 4km  spatial resolution.</p>
+<p>Darwin_Climatology is a monthly climatology version of the Darwin model with spatial resolution  1/2° ×1 /2° .</p>
+<div class="section" id="code-tutorial">
+<h2>Code Tutorial<a class="headerlink" href="#code-tutorial" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://github.com/mdashkezari/opedia/blob/master/notebooks/Colocalize_Custom_Dataset.ipynb">Jupyter_Notebook</a></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">opedia</span> <span class="kn">import</span> <span class="n">colocalize</span> <span class="k">as</span> <span class="n">COL</span>
+
+<span class="n">DB</span> <span class="o">=</span> <span class="bp">False</span>                            <span class="c1"># &lt; True &gt; if source data exists in the database. &lt; 0 &gt; if the source data set is a spreadsheet file on disk.</span>
+<span class="n">source</span> <span class="o">=</span> <span class="s1">&#39;./KM1314_ParticulateCobalamins_2018_06_12_vPublished.xlsx&#39;</span>            <span class="c1"># the source table name (or full filename)</span>
+<span class="n">temporalTolerance</span> <span class="o">=</span> <span class="mi">1</span>                <span class="c1"># colocalizer temporal tolerance (+/- days)</span>
+<span class="n">latTolerance</span> <span class="o">=</span> <span class="mf">0.3</span>                   <span class="c1"># colocalizer meridional tolerance (+/- degrees)</span>
+<span class="n">lonTolerance</span> <span class="o">=</span> <span class="mf">0.3</span>                   <span class="c1"># colocalizer zonal tolerance (+/- degrees)</span>
+<span class="n">depthTolerance</span> <span class="o">=</span> <span class="mi">5</span>                   <span class="c1"># colocalizer depth tolerance (+/- meters)</span>
+<span class="n">tables</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;tblSST_AVHRR_OI_NRT&#39;</span><span class="p">,</span> <span class="s1">&#39;tblPisces_NRT&#39;</span><span class="p">,</span> <span class="s1">&#39;tblDarwin_Plankton_Climatology&#39;</span><span class="p">]</span>    <span class="c1"># list of varaible table names</span>
+<span class="n">variables</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sst&#39;</span><span class="p">,</span> <span class="s1">&#39;Fe&#39;</span><span class="p">,</span> <span class="s1">&#39;picoeukaryote_c03_darwin_clim&#39;</span><span class="p">]</span>                            <span class="c1"># list of variable names</span>
+<span class="n">exportPath</span> <span class="o">=</span> <span class="s1">&#39;./loaded.csv&#39;</span>         <span class="c1"># path to save the colocalized data set</span>
+
+<span class="n">COL</span><span class="o">.</span><span class="n">matchSource</span><span class="p">(</span><span class="n">DB</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="n">temporalTolerance</span><span class="p">,</span> <span class="n">latTolerance</span><span class="p">,</span> <span class="n">lonTolerance</span><span class="p">,</span> <span class="n">depthTolerance</span><span class="p">,</span> <span class="n">tables</span><span class="p">,</span> <span class="n">variables</span><span class="p">,</span> <span class="n">exportPath</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Mohammad Dehghani Ashkezari &amp; Norland Raphael Hagen
+      <span class="lastupdated">
+        Last updated on Sep 20, 2019.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -35,4 +35,6 @@ Software Packages
   :hidden:
 
   pycmap_api/pycmap_api_ref.rst
+  opedia_tutorials/opedia_tutorials.rst
+
   cmap4r_api/cmap4r_api.rst

@@ -1,0 +1,293 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Map Sparse Data &mdash; CMAP</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../../_static/CMAP_logo.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/style.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Section Plot" href="opedia_section.html" />
+    <link rel="prev" title="Map Gridded Data" href="opedia_regional_map_gridded.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> CMAP
+          
+
+          
+            
+            <img src="../../../_static/CMAP_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/installation/installation.html">Installation</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../catalog/catalog.html">Data Catalog</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_ref.html">Software Packages</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../pycmap_api/pycmap_api_ref.html">pycmap API</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="opedia_tutorials.html">Opedia (Depreciated)</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="opedia_get_catalog.html">Retrieve Data Catalog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_regional_map_gridded.html">Map Gridded Data</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Map Sparse Data</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#recommended-data-sets-for-sparse-regional-mapping">Recommended Data Sets for Sparse Regional Mapping:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#code-tutorial">Code Tutorial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sparse-regional-map-dashboard">Sparse Regional Map Dashboard</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_section.html">Section Plot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_time_series.html">Plot Time Series</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_depth_profile.html">Plot Depth Profile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_XY.html">Plot XY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_histogram.html">Plot Histogram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_ESV.html">Exact Amplicon Sequence Variants</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_section.html">Section Plot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_cruise_track.html">Colocalize Cruise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_lagrangian.html">Lagrangian Sampling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_eddy.html">Eddy Sampling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_front.html">Front Sampling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_custom_data.html">Colocalize Custom Dataset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_retrieve_data.html">Retrieve Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_sql.html">SQL Queries</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../cmap4r_api/cmap4r_api.html">cmap4r API</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq_and_contributing/datasubmission.html">Data Submission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq_and_contributing/FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq_and_contributing/contact.html">Contact and Contribute</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">CMAP</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../api_ref.html">Software Packages</a> &raquo;</li>
+        
+          <li><a href="opedia_tutorials.html">Opedia (Depreciated)</a> &raquo;</li>
+        
+      <li>Map Sparse Data</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="map-sparse-data">
+<h1>Map Sparse Data<a class="headerlink" href="#map-sparse-data" title="Permalink to this headline">¶</a></h1>
+<p>Non gridded data from CMAP can now be mapped mapped using <strong>plotRegional</strong> function. This functionally is best for exploring cruise and float data.
+CMAP will visualize sparse data values as circular markers with the circle size corresponding to the variables value. A data density heatmap will also be overlaid on the map.
+In addition to this web map, CMAP will also create a ‘dashboard’ of the selected sparse data over time, latitude, longitude and depth.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The mapping library used has limitations on the number of points it can render. If your query is greater than ~10k points, you may consider using the <a class="reference internal" href="opedia_retrieve_data.html#subset"><span class="std std-ref">Retrieve Data</span></a> functionality of CMAP and plotting locally.</p>
+</div>
+<div class="section" id="recommended-data-sets-for-sparse-regional-mapping">
+<h2>Recommended Data Sets for Sparse Regional Mapping:<a class="headerlink" href="#recommended-data-sets-for-sparse-regional-mapping" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 19%" />
+<col style="width: 33%" />
+<col style="width: 23%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../catalog/datasets/Flombaum.html#flombaum"><span class="std std-ref">Global Cyanobacteria (Flombaum)</span></a></p></td>
+<td><p><a class="reference internal" href="../../../catalog/datasets/Argo.html#argo"><span class="std std-ref">Argo</span></a></p></td>
+<td><p><a class="reference internal" href="../../../catalog/datasets/Chisholm_AMT13.html#chisholm-amt13"><span class="std std-ref">AMT 13 Cruise</span></a></p></td>
+<td><p><a class="reference internal" href="../../../catalog/datasets/SeaFlow.html#seaflow"><span class="std std-ref">SeaFlow</span></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="code-tutorial">
+<h2>Code Tutorial<a class="headerlink" href="#code-tutorial" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">opedia</span> <span class="kn">import</span> <span class="n">plotRegional</span> <span class="k">as</span> <span class="n">REG</span>
+
+
+<span class="n">tables</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;tblFlombaum&#39;</span><span class="p">]</span>    <span class="c1"># see catalog.csv  for the complete list of tables and variable names</span>
+<span class="n">variables</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;prochlorococcus_abundance_flombaum&#39;</span><span class="p">]</span>                            <span class="c1"># see catalog.csv  for the complete list of tables and variable names</span>
+<span class="n">startDate</span> <span class="o">=</span> <span class="s1">&#39;1987-09-17&#39;</span>
+<span class="n">endDate</span> <span class="o">=</span> <span class="s1">&#39;2008-11-10&#39;</span>
+<span class="n">lat1</span><span class="p">,</span> <span class="n">lat2</span> <span class="o">=</span> <span class="o">-</span><span class="mi">90</span><span class="p">,</span> <span class="mi">90</span>
+<span class="n">lon1</span><span class="p">,</span> <span class="n">lon2</span> <span class="o">=</span> <span class="o">-</span><span class="mi">180</span><span class="p">,</span> <span class="mi">180</span>
+<span class="n">depth1</span><span class="p">,</span> <span class="n">depth2</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5</span>
+<span class="n">fname</span> <span class="o">=</span> <span class="s1">&#39;regional&#39;</span>
+<span class="n">exportDataFlag</span> <span class="o">=</span> <span class="bp">False</span>       <span class="c1"># True if you you want to download data</span>
+
+<span class="n">REG</span><span class="o">.</span><span class="n">regionalMap</span><span class="p">(</span><span class="n">tables</span><span class="p">,</span> <span class="n">variables</span><span class="p">,</span> <span class="n">startDate</span><span class="p">,</span> <span class="n">endDate</span><span class="p">,</span> <span class="n">lat1</span><span class="p">,</span> <span class="n">lat2</span><span class="p">,</span> <span class="n">lon1</span><span class="p">,</span> <span class="n">lon2</span><span class="p">,</span> <span class="n">depth1</span><span class="p">,</span> <span class="n">depth2</span><span class="p">,</span> <span class="n">fname</span><span class="p">,</span> <span class="n">exportDataFlag</span><span class="p">)</span>
+</pre></div>
+</div>
+<iframe src="../../../_static/tutorial_plots/sparse_map_heatmap_vis.html"  frameborder = 0  height="1000px" width="100%">></iframe><div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="sparse-regional-map-dashboard">
+<h2>Sparse Regional Map Dashboard<a class="headerlink" href="#sparse-regional-map-dashboard" title="Permalink to this headline">¶</a></h2>
+<iframe src="../../../_static/tutorial_plots/sparse_map_dashboard_vis.html"  frameborder = 0  height="1000px" width="100%">></iframe><div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Mohammad Dehghani Ashkezari &amp; Norland Raphael Hagen
+      <span class="lastupdated">
+        Last updated on Sep 20, 2019.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

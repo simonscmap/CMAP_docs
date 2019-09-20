@@ -63,6 +63,7 @@ The methods below can be used to retrieve metadata and to query, subset and colo
 .. toctree::
   :maxdepth: 1
   :hidden:
+  :titlesonly:
 
   pycmap_api
   pycmap_query

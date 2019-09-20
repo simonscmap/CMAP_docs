@@ -1,0 +1,317 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Colocalize Cruise &mdash; CMAP</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../../_static/CMAP_logo.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/style.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Lagrangian Sampling" href="opedia_lagrangian.html" />
+    <link rel="prev" title="Exact Amplicon Sequence Variants" href="opedia_ESV.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> CMAP
+          
+
+          
+            
+            <img src="../../../_static/CMAP_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/installation/installation.html">Installation</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../catalog/catalog.html">Data Catalog</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_ref.html">Software Packages</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../pycmap_api/pycmap_api_ref.html">pycmap API</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="opedia_tutorials.html">Opedia (Depreciated)</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="opedia_get_catalog.html">Retrieve Data Catalog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_regional_map_gridded.html">Map Gridded Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_regional_map_sparse.html">Map Sparse Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_section.html">Section Plot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_time_series.html">Plot Time Series</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_depth_profile.html">Plot Depth Profile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_XY.html">Plot XY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_histogram.html">Plot Histogram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_ESV.html">Exact Amplicon Sequence Variants</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_section.html">Section Plot</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Colocalize Cruise</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#example-1-field-expedition">Example 1: Field Expedition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#example-2-virtual-cruise">Example 2: Virtual Cruise</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_lagrangian.html">Lagrangian Sampling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_eddy.html">Eddy Sampling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_front.html">Front Sampling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_custom_data.html">Colocalize Custom Dataset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_retrieve_data.html">Retrieve Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opedia_sql.html">SQL Queries</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../cmap4r_api/cmap4r_api.html">cmap4r API</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq_and_contributing/datasubmission.html">Data Submission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq_and_contributing/FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq_and_contributing/contact.html">Contact and Contribute</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">CMAP</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../api_ref.html">Software Packages</a> &raquo;</li>
+        
+          <li><a href="opedia_tutorials.html">Opedia (Depreciated)</a> &raquo;</li>
+        
+      <li>Colocalize Cruise</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="colocalize-cruise">
+<h1>Colocalize Cruise<a class="headerlink" href="#colocalize-cruise" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="example-1-field-expedition">
+<h2>Example 1: Field Expedition<a class="headerlink" href="#example-1-field-expedition" title="Permalink to this headline">¶</a></h2>
+<p>Colocalize Darwin model and satellite data with cruise.
+Compare the underway (in-situ) picoeukaryote abundance measurements performed during the “Gradient1.0” (aka SCOPE_16) with satellite chlorophyll data and picoeukaryote climatological estimates provided by Darwin model.</p>
+<p>Notes:</p>
+<ul class="simple">
+<li><p>In-Situ picoeukaryote abundance measurements are results of the SeaFlow data set with 3-minute temporal resolution and irregular spatial resolution</p></li>
+<li><p>Satellite Chlorophyll data used in this example is a daily-global reprocessed and optimally interpolated data set with  4 km×4 km  spatial resolution.</p></li>
+<li><p>Darwin_Climatology is a monthly climatology version of the Darwin model with spatial resolution  12∘×12∘ .</p></li>
+</ul>
+<div class="section" id="code-tutorial">
+<h3>Code Tutorial<a class="headerlink" href="#code-tutorial" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://github.com/mdashkezari/opedia/blob/master/notebooks/Colocalize_Cruise.ipynb">Jupyter Notebook 1</a></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">opedia</span> <span class="kn">import</span> <span class="n">plotCruise</span> <span class="k">as</span> <span class="n">CRS</span>
+
+<span class="n">DB_Cruise</span> <span class="o">=</span> <span class="bp">True</span>                 <span class="c1"># &lt; True &gt; if cruise trajectory already exists in DB. &lt; False &gt; if arbiturary cruise file (e.g. virtual)</span>
+<span class="n">source</span> <span class="o">=</span> <span class="s1">&#39;tblSeaFlow&#39;</span>            <span class="c1"># cruise table name or path to csv trajectory file</span>
+<span class="n">cruise</span> <span class="o">=</span> <span class="s1">&#39;TN292&#39;</span>          <span class="c1"># cruise name, or file name of the csv trajectory file</span>
+<span class="n">resampTau</span> <span class="o">=</span> <span class="s1">&#39;6H&#39;</span>                 <span class="c1"># resample the cruise trajectory making trajectory time-space resolution coarser: e.g. &#39;6H&#39; (6 hourly), &#39;3T&#39; (3 minutes), ... &#39;0&#39; (ignore)</span>
+<span class="n">fname</span> <span class="o">=</span> <span class="s1">&#39;alongTrack&#39;</span>             <span class="c1"># figure filename</span>
+<span class="n">tables</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;tblSeaFlow&#39;</span><span class="p">,</span> <span class="s1">&#39;tblDarwin_Plankton_Climatology&#39;</span><span class="p">,</span> <span class="s1">&#39;tblCHL_OI_REP&#39;</span><span class="p">]</span>    <span class="c1"># list of varaible table names</span>
+<span class="n">variables</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;picoeuk_abundance&#39;</span><span class="p">,</span> <span class="s1">&#39;picoeukaryote_c03_darwin_clim&#39;</span><span class="p">,</span> <span class="s1">&#39;chl&#39;</span><span class="p">]</span>               <span class="c1"># list of variable names</span>
+<span class="n">spatialTolerance</span> <span class="o">=</span> <span class="mf">0.3</span>           <span class="c1"># colocalizer spatial tolerance (+/- degrees)</span>
+<span class="n">exportDataFlag</span> <span class="o">=</span> <span class="bp">False</span>           <span class="c1"># export the cruise trajectory and colocalized data on disk</span>
+<span class="n">depth1</span> <span class="o">=</span> <span class="mi">0</span>                       <span class="c1"># depth range start (m)</span>
+<span class="n">depth2</span> <span class="o">=</span> <span class="mi">5</span>                       <span class="c1"># depth range end (m)</span>
+
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">CRS</span><span class="o">.</span><span class="n">getCruiseTrack</span><span class="p">(</span><span class="n">DB_Cruise</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="n">cruise</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">CRS</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">resampTau</span><span class="p">)</span>
+<span class="n">loadedTrack</span> <span class="o">=</span> <span class="n">CRS</span><span class="o">.</span><span class="n">plotAlongTrack</span><span class="p">(</span><span class="n">tables</span><span class="p">,</span> <span class="n">variables</span><span class="p">,</span> <span class="n">cruise</span><span class="p">,</span> <span class="n">resampTau</span><span class="p">,</span> <span class="n">df</span><span class="p">,</span> <span class="n">spatialTolerance</span><span class="p">,</span> <span class="n">depth1</span><span class="p">,</span> <span class="n">depth2</span><span class="p">,</span> <span class="n">fname</span><span class="p">,</span> <span class="n">exportDataFlag</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">msize</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">clr</span><span class="o">=</span><span class="s1">&#39;darkturquoise&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<iframe src="../../../_static/tutorial_plots/alongTrack.html"  frameborder = 0  height="1000px" width="100%">></iframe><div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="example-2-virtual-cruise">
+<h2>Example 2: Virtual Cruise<a class="headerlink" href="#example-2-virtual-cruise" title="Permalink to this headline">¶</a></h2>
+<p>Colocalize Darwin model, satellite data with a virtual cruise.
+Colocalize a virtual cruise with satellite chlorophyll data and picoeukaryote climatological estimates provided by Darwin model. The trajectory of the virtual cruise is stored in a .csv file.</p>
+<p>Notes:</p>
+<ul class="simple">
+<li><p>Satellite sea surface temperatue data used in this example is a daily-global near-real-time and optimally interpolated data set with 4km × 4km spatial resolution  14∘×14∘ .</p></li>
+<li><p>Satellite Chlorophyll data used in this example is a daily-global reprocessed and optimally interpolated data set with  4 km×4 km  spatial resolution.</p></li>
+<li><p>Darwin_Climatology is a monthly climatology version of the Darwin model with spatial resolution  1/2° X 1/2° .</p></li>
+</ul>
+<div class="section" id="id1">
+<h3>Code Tutorial<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://github.com/mdashkezari/opedia/blob/master/notebooks/Colocalize_Virtual_Cruise.ipynb">Jupyter Notebook 2</a></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">opedia</span> <span class="kn">import</span> <span class="n">plotCruise</span> <span class="k">as</span> <span class="n">CRS</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="n">DB_Cruise</span> <span class="o">=</span> <span class="bp">False</span>                                  <span class="c1"># &lt; True &gt; if cruise trajectory already exists in DB. &lt; False &gt; if arbiturary cruise file (e.g. virtual)</span>
+<span class="n">source</span> <span class="o">=</span> <span class="s1">&#39;./virtual_parity_scope_2.csv&#39;</span>            <span class="c1"># cruise table name or path to csv trajectory file</span>
+<span class="n">cruise</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">source</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>               <span class="c1"># cruise name, or file name of the csv trajectory file</span>
+<span class="n">resampTau</span> <span class="o">=</span> <span class="s1">&#39;6H&#39;</span>                                   <span class="c1"># resample the cruise trajectory making trajectory time-space resolution coarser: e.g. &#39;6H&#39; (6 hourly), &#39;3T&#39; (3 minutes), ... &#39;0&#39; (ignore)</span>
+<span class="n">fname</span> <span class="o">=</span> <span class="s1">&#39;alongTrack&#39;</span>                               <span class="c1"># figure filename</span>
+<span class="n">tables</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;tblSST_AVHRR_OI_NRT&#39;</span><span class="p">,</span> <span class="s1">&#39;tblCHL_OI_REP&#39;</span><span class="p">,</span> <span class="s1">&#39;tblDarwin_Plankton_Climatology&#39;</span><span class="p">]</span>    <span class="c1"># list of varaible table names</span>
+<span class="n">variables</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sst&#39;</span><span class="p">,</span> <span class="s1">&#39;chl&#39;</span><span class="p">,</span> <span class="s1">&#39;picoeukaryote_c03_darwin_clim&#39;</span><span class="p">]</span>                            <span class="c1"># list of variable names</span>
+<span class="n">spatialTolerance</span> <span class="o">=</span> <span class="mf">0.3</span>                             <span class="c1"># colocalizer spatial tolerance (+/- degrees)</span>
+<span class="n">depth1</span> <span class="o">=</span> <span class="mf">0.3</span>                                       <span class="c1"># depth range start (m)</span>
+<span class="n">depth2</span> <span class="o">=</span> <span class="mi">5</span>                                         <span class="c1"># depth range end (m)</span>
+<span class="n">exportDataFlag</span> <span class="o">=</span> <span class="bp">False</span>                             <span class="c1"># export the cruise trajectory and colocalized data on disk</span>
+
+
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">CRS</span><span class="o">.</span><span class="n">getCruiseTrack</span><span class="p">(</span><span class="n">DB_Cruise</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="n">cruise</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">CRS</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">resampTau</span><span class="p">)</span>
+<span class="n">loadedTrack</span> <span class="o">=</span> <span class="n">CRS</span><span class="o">.</span><span class="n">plotAlongTrack</span><span class="p">(</span><span class="n">tables</span><span class="p">,</span> <span class="n">variables</span><span class="p">,</span> <span class="n">cruise</span><span class="p">,</span> <span class="n">resampTau</span><span class="p">,</span> <span class="n">df</span><span class="p">,</span> <span class="n">spatialTolerance</span><span class="p">,</span> <span class="n">depth1</span><span class="p">,</span> <span class="n">depth2</span><span class="p">,</span> <span class="n">fname</span><span class="p">,</span> <span class="n">exportDataFlag</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">msize</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">clr</span><span class="o">=</span><span class="s1">&#39;darkturquoise&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Mohammad Dehghani Ashkezari &amp; Norland Raphael Hagen
+      <span class="lastupdated">
+        Last updated on Sep 20, 2019.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
