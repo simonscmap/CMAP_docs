@@ -68,15 +68,14 @@ Table of Variables
 
 .. raw:: html
 
-    <iframe src="../../_static/var_tables/KM1314_ParticulateCobalamins/KM1314_ParticulateCobalamins.html"  frameborder = 0 height = '150px' width="100%">></iframe>
-
+    <iframe src="../../_static/var_tables/tblKM1314_Cobalmins/tblKM1314_Cobalmins.html"  frameborder = 0 height = '150px' width="100%">></iframe>
 
 
 
 Data Source
 ***********
 
-Data provided by the University of Washington
+Data provided by the Ingalls Lab - University of Washington
 
 How to Acknowledge
 ******************

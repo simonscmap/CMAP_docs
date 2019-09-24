@@ -169,7 +169,7 @@ Darwin model first depth level is at 5 m (not 0), and so ±5 meter vertical tole
 
   api = pycmap.API(token='<YOUR_API_KEY>')
   df = api.match(
-                sourceTable='tblCobalamin',
+                sourceTable='tblKM1314_Cobalmins',
                 sourceVar='Me_PseudoCobalamin_Particulate_pM',
                 targetTables=['tblDarwin_Phytoplankton'],
                 targetVars=['picoprokaryote'],
@@ -190,5 +190,5 @@ Darwin model first depth level is at 5 m (not 0), and so ±5 meter vertical tole
 
   plt.plot(df['picoprokaryote'], df['Me_PseudoCobalamin_Particulate_pM'], '.')
   plt.xlabel('picoprokaryote' + api.get_unit('tblDarwin_Phytoplankton', 'picoprokaryote'))
-  plt.ylabel('Me_PseudoCobalamin_Particulate_pM' + api.get_unit('tblCobalamin', 'Me_PseudoCobalamin_Particulate_pM'))
+  plt.ylabel('Me_PseudoCobalamin_Particulate_pM' + api.get_unit('tblKM1314_Cobalmins', 'Me_PseudoCobalamin_Particulate_pM'))
   plt.show()
