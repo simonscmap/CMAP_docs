@@ -19,9 +19,7 @@
   :target: https://zenodo.org/badge/latestdoi/199070692
 
 
-.. image:: https://readthedocs.org/projects/cmap/badge/?version=latest
-  :target: https://cmap.readthedocs.io/en/latest/?badge=latest
-  :alt: Documentation Status
+
 
 .. raw:: html
 
