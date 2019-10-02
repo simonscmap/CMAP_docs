@@ -80,7 +80,20 @@ https://www.aviso.altimetry.fr/en/data/products/value-added-products/global-meso
 How to Acknowledge
 ******************
 
-https://doi.org/10.1016/j.pocean.2011.01.002
+
+The altimeter the Mesoscale Eddy Trajectory Atlas products were produced by SSALTO/DUACS and distributed by AVISO+ (https://www.aviso.altimetry.fr/ ) with support from CNES, in collaboration with Oregon State University with support from NASA
+
+
+Dudley B. Chelton, Michael G. Schlax, Roger M. Samelson,
+Global observations of nonlinear mesoscale eddies,
+Progress in Oceanography,
+Volume 91, Issue 2,
+2011,
+Pages 167-216,
+ISSN 0079-6611,
+https://doi.org/10.1016/j.pocean.2011.01.002.
+(http://www.sciencedirect.com/science/article/pii/S0079661111000036)
+
 
 Version History
 ***************

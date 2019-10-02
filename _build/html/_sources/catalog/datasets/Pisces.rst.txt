@@ -78,10 +78,9 @@ Data Source
 
 http://marine.copernicus.eu
 
-http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com_csw&view=details&product_id=GLOBAL_ANALYSIS_FORECAST_BIO_001_014
+http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com_csw&view=details&product_id=GLOBAL_ANALYSIS_FORECAST_BIO_001_028
 
 http://cmems-resources.cls.fr/documents/PUM/CMEMS-GLO-PUM-001-014.pdf
-
 
 
 How to Acknowledge

@@ -75,6 +75,8 @@ Data Source
 
 http://marine.copernicus.eu/
 
+http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com_csw&view=details&product_id=SEALEVEL_GLO_PHY_L4_REP_OBSERVATIONS_008_047
+
 http://cmems-resources.cls.fr/documents/PUM/CMEMS-SL-PUM-008-032-051.pdf
 
 How to Acknowledge

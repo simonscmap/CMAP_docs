@@ -85,8 +85,12 @@ https://podaac-tools.jpl.nasa.gov/drive/files/OceanTemperature/ghrsst/docs/GDS20
 
 How to Acknowledge
 ******************
+
 http://dx.doi.org/10.5067/GHAAO-4BC02
 
+National Centers for Environmental Information. 2016. GHRSST Level 4 AVHRR_OI Global Blended Sea Surface Temperature Analysis (GDS version 2) from NCEI. Ver. 2.0. PO.DAAC, CA, USA.  https://doi.org/10.5067/GHAAO-4BC02.
+
+Reynolds, R. W., T. M. Smith, C. Liu, D. B. Chelton, K. S. Casey and M. G. Schlax, 2007: Daily High-resolution Blended Analyses for sea surface temperature. J. Climate, 20, 5473-5496
 
 Version History
 ***************

@@ -77,8 +77,7 @@ Remote Sensing Systems, Santa Rosa, CA, USA
 
 http://www.remss.com/missions/smap/
 
-https://podaac-opendap.jpl.nasa.gov/opendap/allData/smap/L3/RSS/V3/8day_running/SCI/70KM
-
+https://podaac.jpl.nasa.gov/dataset/SMAP_RSS_L3_SSS_SMI_8DAY-RUNNINGMEAN_V4
 
 How to Acknowledge
 ******************
@@ -87,6 +86,7 @@ Meissner, T., F. Wentz, A. Manaster, 2018.Remote Sensing Systems SMAP L2C Sea Su
 
 Fore,A.G, S.H. Yueh, W. Tang, B.W. Stiles, and A.K. Hayashi (2016). Combined Active/Passive Retrievals of Ocean Vector Wind and Sea Surface Salinity With SMAP. IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING, VOL. 54, NO. 12. p.7396-7404. DOI: 10.1109/TGRS.2016.2601486
 
+SMAP salinity are produced by Remote Sensing Systems and sponsored by NASA. Data are available at www.remss.com
 
 Version History
 ***************
