@@ -37,7 +37,7 @@ Table of Variables
     <iframe src="../../_static/var_tables/tblKOK1606_Gradients1_Cobalamins/tblKOK1606_Gradients1_Cobalamins.html"  frameborder = 0 height = '150px' width="100%">></iframe>
 
 
-
+|
 
 Data Source
 ***********

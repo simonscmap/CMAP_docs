@@ -70,7 +70,7 @@ Table of Variables
 
     <iframe src="../../_static/var_tables/tblKM1314_Cobalmins/tblKM1314_Cobalmins.html"  frameborder = 0 height = '150px' width="100%">></iframe>
 
-
+|
 
 Data Source
 ***********

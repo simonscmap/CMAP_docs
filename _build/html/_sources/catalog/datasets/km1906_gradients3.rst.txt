@@ -71,6 +71,7 @@ Table of Variables
 
     <iframe src="../../_static/var_tables/tblKM1906_Gradients3/tblKM1906_Gradients3.html"  frameborder = 0 height = '300px' width="100%">></iframe>
 
+|
 
 Data Source
 ***********

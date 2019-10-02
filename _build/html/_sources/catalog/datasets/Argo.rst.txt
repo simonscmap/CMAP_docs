@@ -69,7 +69,7 @@ Table of Variables
     <iframe src="../../_static/var_tables/Argo_BGC_REP/Argo_BGC_REP.html"  frameborder = 0 height = '300px' width="100%">></iframe>
 
 
-
+|
 
 
 
@@ -90,8 +90,8 @@ The Argo Program is part of the Global Ocean Observing System.
 How to Acknowledge
 ******************
 
+Argo (2019). Argo float data and metadata from the Global Data Assembly Center (Argo GDAC) . SEANOE. https://doi.org/10.17882/42182
 
-http://doi.org/10.17882/42182
 
 Version History
 ***************

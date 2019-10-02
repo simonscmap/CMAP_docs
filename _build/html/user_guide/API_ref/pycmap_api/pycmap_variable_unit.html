@@ -234,43 +234,40 @@
 
 <span class="n">api</span> <span class="o">=</span> <span class="n">pycmap</span><span class="o">.</span><span class="n">API</span><span class="p">(</span><span class="n">token</span><span class="o">=</span><span class="s1">&#39;&lt;YOUR_API_KEY&gt;&#39;</span><span class="p">)</span>
 <span class="n">api</span><span class="o">.</span><span class="n">get_unit</span><span class="p">(</span><span class="s1">&#39;tblHOT_ParticleFlux&#39;</span><span class="p">,</span> <span class="s1">&#39;silica_hot&#39;</span><span class="p">)</span>
+
+
+
+<span class="k">def</span> <span class="nf">astype</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s2">&quot;raise&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+      <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">      Cast a pandas object to a specified dtype ``dtype``.</span>
+<span class="s2">      Parameters</span>
+<span class="s2">      ----------</span>
+<span class="s2">      dtype : data type, or dict of column name -&gt; data type</span>
+<span class="s2">          Use a numpy.dtype or Python type to cast entire pandas object to</span>
+<span class="s2">          the same type. Alternatively, use {col: dtype, ...}, where col is a</span>
+<span class="s2">          column label and dtype is a numpy.dtype or Python type to cast one</span>
+<span class="s2">          or more of the DataFrame&#39;s columns to column-specific types.</span>
+<span class="s2">      copy : bool, default True</span>
+<span class="s2">          Return a copy when ``copy=True`` (be very careful setting</span>
+<span class="s2">          ``copy=False`` as changes to values then may propagate to other</span>
+<span class="s2">          pandas objects).</span>
+<span class="s2">      errors : {&#39;raise&#39;, &#39;ignore&#39;}, default &#39;raise&#39;</span>
+<span class="s2">          Control raising of exceptions on invalid data for provided dtype.</span>
+<span class="s2">          - ``raise`` : allow exceptions to be raised</span>
+<span class="s2">          - ``ignore`` : suppress exceptions. On error return original object</span>
+<span class="s2">          .. versionadded:: 0.20.0</span>
+<span class="s2">      kwargs : keyword arguments to pass on to the constructor</span>
+<span class="s2">      Returns</span>
+<span class="s2">      -------</span>
+<span class="s2">      casted : same type as caller</span>
+<span class="s2">      See Also</span>
+<span class="s2">      --------</span>
+<span class="s2">      to_datetime : Convert argument to datetime.</span>
+<span class="s2">      to_timedelta : Convert argument to timedelta.</span>
+<span class="s2">      to_numeric : Convert argument to a numeric type.</span>
+<span class="s2">      numpy.ndarray.astype : Cast a numpy array to a specified type.</span>
 </pre></div>
 </div>
-<dl>
-<dt>def astype(self, dtype, copy=True, errors=”raise”, <a href="#id1"><span class="problematic" id="id2">**</span></a>kwargs):</dt><dd><p>“””
-Cast a pandas object to a specified dtype <code class="docutils literal notranslate"><span class="pre">dtype</span></code>.
-Parameters
-———-
-dtype : data type, or dict of column name -&gt; data type</p>
-<blockquote>
-<div><p>Use a numpy.dtype or Python type to cast entire pandas object to
-the same type. Alternatively, use {col: dtype, …}, where col is a
-column label and dtype is a numpy.dtype or Python type to cast one
-or more of the DataFrame’s columns to column-specific types.</p>
-</div></blockquote>
-<dl class="simple">
-<dt>copy<span class="classifier">bool, default True</span></dt><dd><p>Return a copy when <code class="docutils literal notranslate"><span class="pre">copy=True</span></code> (be very careful setting
-<code class="docutils literal notranslate"><span class="pre">copy=False</span></code> as changes to values then may propagate to other
-pandas objects).</p>
-</dd>
-<dt>errors<span class="classifier">{‘raise’, ‘ignore’}, default ‘raise’</span></dt><dd><p>Control raising of exceptions on invalid data for provided dtype.
-- <code class="docutils literal notranslate"><span class="pre">raise</span></code> : allow exceptions to be raised
-- <code class="docutils literal notranslate"><span class="pre">ignore</span></code> : suppress exceptions. On error return original object
-.. versionadded:: 0.20.0</p>
-</dd>
-</dl>
-<p>kwargs : keyword arguments to pass on to the constructor
-Returns
-——-
-casted : same type as caller
-See Also
-——–
-to_datetime : Convert argument to datetime.
-to_timedelta : Convert argument to timedelta.
-to_numeric : Convert argument to a numeric type.
-numpy.ndarray.astype : Cast a numpy array to a specified type.</p>
-</dd>
-</dl>
 </div>
 
 
@@ -286,7 +283,7 @@ numpy.ndarray.astype : Cast a numpy array to a specified type.</p>
     <p>
         &copy; Copyright 2019, Mohammad Dehghani Ashkezari &amp; Norland Raphael Hagen
       <span class="lastupdated">
-        Last updated on Sep 30, 2019.
+        Last updated on Oct 02, 2019.
       </span>
 
     </p>

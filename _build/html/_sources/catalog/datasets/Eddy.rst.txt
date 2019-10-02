@@ -70,7 +70,7 @@ Table of Variables
 
     <iframe src="../../_static/var_tables/Eddy%20(Chelton)/Eddy%20(Chelton).html"  frameborder = 0 height = '300px' width="100%">></iframe>
 
-
+|
 
 Data Source
 ***********

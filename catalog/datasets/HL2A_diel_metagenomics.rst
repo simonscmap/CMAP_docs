@@ -69,6 +69,7 @@ Table of Variables
 
     <iframe src="../../_static/var_tables/tblHL2A_diel_metagenomics/tblHL2A_diel_metagenomics.html"  frameborder = 0 height = '300px' width="100%">></iframe>
 
+|
 
 Data Source
 ***********

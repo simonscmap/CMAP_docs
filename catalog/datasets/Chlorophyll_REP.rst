@@ -58,7 +58,7 @@ Table of Variables
 Dataset Description
 *******************
 
-The **Chlorophyll_REP** dataset in CMAP is a global 25km X 25km 8 day averaged product, with a temporal coverage from 1998-01-01 through 2018-06-26. This product is a satellite derived chl_a estimate for the global ocean. Data is provided by the Ocean Colour Thematic Center at the Copernicus Marine environment monitoring service (CMEMS_)]
+The **Chlorophyll_REP** dataset in CMAP is a global 25km X 25km 8 day averaged product, with a temporal coverage from 1998-01-01 through 2018-06-26. This product is a satellite derived chl_a estimate for the global ocean. Data is provided by the Ocean Colour Thematic Center at the Copernicus Marine environment monitoring service (CMEMS_)
 The dataset is generated from ESA and NASA satellite missions, specifically from SeaWiFS, MODIS-Squa, MERIS, VIIRSN and OLCI-S3A.
 
 
@@ -72,7 +72,7 @@ More information can be found Here_
     <iframe src="../../_static/var_tables/Reprocessed_CHL_8day/Reprocessed_CHL_8day.html"  frameborder = 0 height = '100px' width="100%">></iframe>
 
 
-
+|
 
 Data Source
 ***********

@@ -42,6 +42,7 @@ Table of Variables
 
     <iframe src="../../_static/var_tables/tblDeLong_HOT_metagenomics/tblDeLong_HOT_metagenomics.html"  frameborder = 0 height = '300px' width="100%">></iframe>
 
+|
 
 Data Source
 ***********

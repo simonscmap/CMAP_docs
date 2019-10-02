@@ -72,6 +72,7 @@ Table of Variables
 
     <iframe src="../../_static/var_tables/tblHOT_LAVA/tblHOT_LAVA.html"  frameborder = 0 height = '300px' width="100%">></iframe>
 
+|
 
 Data Source
 ***********

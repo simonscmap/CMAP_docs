@@ -71,6 +71,8 @@ Table of Variables
     <iframe src="../../_static/var_tables/tblSCOPE_HOT_metagenomics/tblSCOPE_HOT_metagenomics.html"  frameborder = 0 height = '300px' width="100%">></iframe>
 
 
+|
+
 Data Source
 ***********
 
