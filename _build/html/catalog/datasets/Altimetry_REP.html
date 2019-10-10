@@ -191,8 +191,10 @@
 </div>
 <div class="section" id="dataset-description">
 <h1>Dataset Description<a class="headerlink" href="#dataset-description" title="Permalink to this headline">¶</a></h1>
-<p>Simons CMAP contains <strong>Reprocessed Satellite Altimetry</strong> records from 2013-01-01 through 2018-06-10 collected from the Copernicus Marine Environment Monitoring Service. The dataset is generated from remotely sensed satellite data and contains multiple ocean altimetry products.
-The dataset has a spatial resolution of 1/4° X 1/4° and a daily temporal resolution.</p>
+<p>The reprocessed altimetry dataset in CMAP was provided by CMEMS. It is a 1/4° daily global gridded satellite product of sea level altimetry and derived variables (sla,adt,vgos,vgosa,ugos,ugosa). The creation of this dataset was possible by taking data from multiple altimetry missions and homogenizing them with the same processing techniques, models and geophysical corrections.
+The OSTM/Jason-2 mission was used as a reference dataset, with accompanying data from Jason-3, Sentinel-3A, HY-2A, Saral/AltiKa, Cryosat-2, Jason-2, Jason-1, T/P, ENVISAT, GFO and ERS1/2.</p>
+<p>A more detailed description of the processing techniques can be found <a class="reference external" href="http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com_csw&amp;view=details&amp;product_id=SEALEVEL_GLO_PHY_L4_REP_OBSERVATIONS_008_047">here</a>. Quality control and sources of error are described in detail in the CMEMS <a class="reference external" href="http://resources.marine.copernicus.eu/documents/QUID/CMEMS-SL-QUID-008-032-062.pdf">Sea Level Quality Information Document</a>. In summary, the source of error partially depends on the number of satellites per observation. QA checks of the gridded product are done by comparing measurements against in-situ tide gauge readings. With only two altimeters overhead, SLA errors in the low variability areas such as the open ocean can reach 1.4 cm², while the error in high variability areas reaching up to 37.7 cm². Errors within coastal areas (defined as within 200 km of land), are typically 8.2 cm².</p>
+<p>The CMEMS internal name for this dataset is: <strong>SEALEVEL_GLO_PHY_L4_REP_OBSERVATIONS_008_047</strong>.</p>
 </div>
 <div class="section" id="table-of-variables">
 <h1>Table of Variables<a class="headerlink" href="#table-of-variables" title="Permalink to this headline">¶</a></h1>
@@ -227,7 +229,7 @@ The dataset has a spatial resolution of 1/4° X 1/4° and a daily temporal resol
     <p>
         &copy; Copyright 2019, Mohammad Dehghani Ashkezari &amp; Norland Raphael Hagen
       <span class="lastupdated">
-        Last updated on Oct 02, 2019.
+        Last updated on Oct 10, 2019.
       </span>
 
     </p>
