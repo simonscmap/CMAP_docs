@@ -14,30 +14,9 @@ Altimetry Near-Real-Time
    :scale: 10%
    :align: middle
 
-.. |rm| image:: /_static/tutorial_pics/regional_map.png
-  :align: middle
-  :scale: 20%
-  :target: ../../tutorials/regional_map_gridded.html
+.. _here: http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com_csw&view=details&product_id=SEALEVEL_GLO_PHY_L4_NRT_OBSERVATIONS_008_046
 
-.. |ts| image:: /_static/tutorial_pics/TS.png
-  :align: middle
-  :scale: 25%
-  :target: ../../tutorials/time_series.html
-
-.. |hst| image:: /_static/tutorial_pics/hist.png
-  :align: middle
-  :scale: 25%
-  :target: ../../tutorials/histogram.html
-
-.. |sec| image:: /_static/tutorial_pics/section.png
-  :align: middle
-  :scale: 20%
-  :target: ../../tutorials/section.html
-.. |dep| image:: /_static/tutorial_pics/depth_profile.png
-  :align: middle
-  :scale: 25%
-  :target: ../../tutorials/depth_profile.html
-
+.. _`Sea Level Quality Information Document`: http://resources.marine.copernicus.eu/documents/QUID/CMEMS-SL-QUID-008-032-062.pdf
 
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 | Dataset Name                  |  Sensor  |  Make       | Spatial Resolution     |Temporal Resolution|  Start Date         |  End Date           |
@@ -50,8 +29,13 @@ Dataset Description
 *******************
 
 
-Simons CMAP contains **Near-Real-Time Satellite Altimetry** records from 2019-01-01 through 2019-03-19 collected from the Copernicus Marine Environment Monitoring Service. The dataset is generated from remotely sensed satellite data and contains multiple ocean altimetry products.
-The dataset has a spatial resolution of 1/4° X 1/4° and a daily temporal resolution.
+The near-real-time altimetry dataset in CMAP was provided by CMEMS. It is a 1/4° daily global gridded satellite product of sea level altimetry and derived variables (sla,adt,vgos,vgosa,ugos,ugosa). Sea Level Anomaly (SLA) measurements were calculated with respect to a twenty year average from 2012.
+Altimeter satellite gridded Sea Level Anomalies (SLA) computed with respect to a twenty-year 2012 mean. The SLA is estimated by from the along-track Level 3 altimetry product and then Optimal Interpolated to produce a near-real-time altimetry products
+
+A more detailed description of the processing techniques can be found here_. Quality control and sources of error are described in detail in the CMEMS `Sea Level Quality Information Document`_. In summary, the source of error partially depends on the number of satellites per observation. QA checks of the gridded product are done by comparing measurements against in-situ tide gauge readings. With only two altimeters overhead, SLA errors in the low variability areas such as the open ocean can reach 1.4 cm², while the error in high variability areas reaching up to 37.7 cm². Errors within coastal areas (defined as within 200 km of land), are typically 8.2 cm².
+
+The CMEMS internal name for this dataset is: **SEALEVEL_GLO_PHY_L4_NRT_OBSERVATIONS_008_046**.
+
 
 
 
