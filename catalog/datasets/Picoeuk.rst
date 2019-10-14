@@ -1,8 +1,8 @@
 :orphan:
 
-.. _pikophytoplankton:
+.. _picophytoplankton:
 
-Global Pikophytoplankton (Buitenhuis)
+Global Picophytoplankton (Buitenhuis)
 *************************************
 
 Global Distributions of Picophytoplankton Abundance and Biomass
@@ -53,14 +53,14 @@ Global Distributions of Picophytoplankton Abundance and Biomass
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 | Dataset Name                  | Sensor   |  Make       |  Spatial Resolution    |Temporal Resolution|  Start Date         |  End Date           |
 +===============================+==========+=============+========================+===================+=====================+=====================+
-|:ref:`pikophytoplankton`       ||cruise|  | Observation |     Irregular          |        Irregular  |  1987-06-27         | 2011-08-03          |
+|:ref:`picophytoplankton`       ||cruise|  | Observation |     Irregular          |        Irregular  |  1987-06-27         | 2011-08-03          |
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 
 
 Dataset Description
 *******************
 
-This dataset is a collection of Picophytoplankton abundances and biomass measurements from 75 cruises and stations around the global ocean. It contains flow cytometry derived abundance measurements for prochlorococcus, synenchoccous and picoeukaryotes as as well as total pikophytoplankton abundance and biomass.
+This dataset is a collection of Picophytoplankton abundances and biomass measurements from 75 cruises and stations around the global ocean. It contains flow cytometry derived abundance measurements for prochlorococcus, synenchoccous and picoeukaryotes as as well as total picophytoplankton abundance and biomass.
 The specific cruise names used to compile the dataset are listed in Table 1. of the authors paper. Conversion factors from cell abundance to carbon biomass are listed in Table 2.
 (https://doi.org/10.1594/PANGAEA.777385)
 
