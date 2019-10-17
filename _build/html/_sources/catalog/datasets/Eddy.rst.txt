@@ -45,6 +45,11 @@ Eddy
   :scale: 25%
   :target: ../../tutorials/eddy.html
 
+.. _`[Schlax & Chelton, 2016]`: http://wombat.coas.oregonstate.edu/eddies/Growing_Method_of_Eddy_Identification_and_Tracking.pdf
+
+.. _`Eddy Trajectory Atlas Product Handbook`: https://www.aviso.altimetry.fr/fileadmin/documents/data/tools/hdbk_eddytrajectory_META2018.pdf
+
+
 
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 | Dataset Name                  | Sensor   |  Make       |  Spatial Resolution    |Temporal Resolution|  Start Date         |  End Date           |
@@ -58,17 +63,20 @@ Eddy
 Dataset Description
 *******************
 
-Simons CMAP contains **Eddy** records from  1993-01-01 through 2018-01-18  collected from AVISO+. The dataset was developed and validated in between collaboration between Aviso+ and with D.Chelton  and M. Schlax at the Oregon State University.
-This dataset has a spatial resolution of 1/4° X 1/4° and a daily temporal resolution. Each Eddy has associated (cyclonic/anticyclonic), speed, radius metadata.
+Simons CMAP contains **Eddy** records from  1993-01-01 through 2018-01-18  collected from AVISO+. The dataset was developed and validated in collaboration between Aviso+ and with D.Chelton  and M. Schlax at Oregon State University.
+This dataset has a spatial resolution of 1/4° X 1/4° and a daily temporal resolution. Each eddy has associated (cyclonic/anticyclonic), speed, radius metadata.
 
+To detect eddies, this datasets uses ADT and SLA measurements from multiple altimetry satellite missions. Eddy's that may come within proximity to land are filtered out. Details on the detection algorithm can be found in `[Schlax & Chelton, 2016]`_.
+More details on detection, filtering and processing can be found in the `Eddy Trajectory Atlas Product Handbook`_.
 
+The AVISO+ product name is: Merged delayed-time version 2.0exp
 
 Table of Variables
 ******************
 
 .. raw:: html
 
-    <iframe src="../../_static/var_tables/Eddy%20(Chelton)/Eddy%20(Chelton).html"  frameborder = 0 height = '300px' width="100%">></iframe>
+    <iframe src="../../_static/var_tables/tblMesoscale_Eddy/tblMesoscale_Eddy.html"  frameborder = 0 height = '200px' width="100%">></iframe>
 
 |
 
@@ -97,3 +105,5 @@ https://doi.org/10.1016/j.pocean.2011.01.002.
 
 Version History
 ***************
+
+Merged delayed-time version 2.0exp
