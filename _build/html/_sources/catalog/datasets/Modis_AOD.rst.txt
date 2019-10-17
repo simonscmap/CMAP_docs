@@ -56,6 +56,7 @@ Dataset Description
 The MODIS AOD dataset in CMAP is a monthly averaged 1x1 degree gridded surface level dataset. Aerosol Optical Depth is a measurement of the optical scattering caused by airborne atmospheric particles. Sources of these particles include: volcanic ash, wildfire smoke, windblown sand and dust.
 The **MODIS MYD08_M3** dataset is a satellite derived level-3 gridded product. Monthly AOD values are averaged over 1x1 degree pixels.
 
+
 |
 
 
@@ -74,14 +75,13 @@ Table of Variables
 Data Source
 ***********
 
-https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/l3-atmosphere/MYD08_M3/
+https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/MYD08_M3/
 
 How to Acknowledge
 ******************
 
-https://modaps.modaps.eosdis.nasa.gov/services/about/products/c61/MYD08_M3.html
+Platnick, S., et al., 2015. MODIS Atmosphere L3 Monthly Product. NASA MODIS Adaptive Processing System, Goddard Space Flight Center, USA: http://dx.doi.org/10.5067/MODIS/MYD08_M3.061
 
-http://dx.doi.org/10.5067/MODIS/MYD08_M3.061
 
 Version History
 ***************
