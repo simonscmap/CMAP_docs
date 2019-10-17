@@ -1,9 +1,5 @@
 :orphan:
 
-.. _Here: http://cmems-resources.cls.fr/documents/QUID/CMEMS-OC-QUID-009-030-032-033-081-082-083-085-086.pdf
-
-.. _CMEMS: http://marine.copernicus.eu/
-
 .. _Chlorophyll_REP:
 
 
@@ -45,6 +41,16 @@ Chlorophyll Reprocessed
   :target: ../../tutorials/depth_profile.html
 
 
+
+
+.. _here: https://oceancolor.gsfc.nasa.gov/atbd/chlor_a/
+
+.. _CMEMS: http://marine.copernicus.eu/
+
+.. _`Quality Information Document`: http://resources.marine.copernicus.eu/documents/QUID/CMEMS-OC-QUID-009-030-032-033-037-081-082-083-085-086-098.pdf
+
+
+
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 | Dataset Name                  | Sensor   |  Make       |  Spatial Resolution    |Temporal Resolution|  Start Date         |  End Date           |
 +===============================+==========+=============+========================+===================+=====================+=====================+
@@ -52,20 +58,25 @@ Chlorophyll Reprocessed
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 
 
-Table of Variables
-******************
 
 Dataset Description
 *******************
 
-The **Chlorophyll_REP** dataset in CMAP is a global 25km X 25km 8 day averaged product, with a temporal coverage from 1998-01-01 through 2018-06-26. This product is a satellite derived chl_a estimate for the global ocean. Data is provided by the Ocean Colour Thematic Center at the Copernicus Marine environment monitoring service (CMEMS_)
+The **Chlorophyll_REP** dataset in CMAP is a global 25km X 25km 8 day averaged product, with a temporal coverage from 1998-01-01 through 2018-06-26. This product is a satellite derived chl_a estimate for the global ocean, provided by the Ocean Colour Thematic Center at the Copernicus Marine environment monitoring service (CMEMS_)
 The dataset is generated from ESA and NASA satellite missions, specifically from SeaWiFS, MODIS-Squa, MERIS, VIIRSN and OLCI-S3A.
+This level 4 dataset was created by linking multiple satellite ocean color observations into a gridded space-time interpolated cloud free dataset.
+In-situ and multi-mission validation and QA details can be found on page 15 of the Ocean Colour Production Center `Quality Information Document`_.
+
+In 2018, CMEMES adopted a re-processing of SeaWifs, MODIS-Aqua, VIIRS-N data. In addition to this, the chlorophyll retrieval algorithm was switched to the Hu/CI algorithm for oligotrophic waters and the OC5 algorithm for coastal areas. These algorithmic changes not only improve chlorophyll detection rates, but also bring CMEMS inline with other NASA Ocean Color product processing techniques.
+Details on the ocean color algorithms can be found here_.
+
+The CMEMS internal name for this dataset is: OCEANCOLOUR_GLO_CHL_L4_REP_OBSERVATIONS_009_082.
 
 
 
 
-More information can be found Here_
-
+Table of Variables
+******************
 
 .. raw:: html
 
@@ -76,6 +87,7 @@ More information can be found Here_
 
 Data Source
 ***********
+
 http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com_csw&view=details&product_id=OCEANCOLOUR_GLO_CHL_L4_REP_OBSERVATIONS_009_082
 
 http://resources.marine.copernicus.eu/documents/PUM/CMEMS-OC-PUM-009-ALL.pdf
