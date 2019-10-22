@@ -1,9 +1,9 @@
 :orphan:
 
-
-.. _Here: https://podaac.jpl.nasa.gov/dataset/AVHRR_OI-NCEI-L4-GLOB-v2.0
-
 .. _SST:
+
+
+
 
 Sea Surface Temperature
 ***********************
@@ -15,31 +15,7 @@ Sea Surface Temperature
    :scale: 10%
    :align: middle
 
-.. |rm| image:: /_static/tutorial_pics/regional_map.png
-  :align: middle
-  :scale: 20%
-  :target: ../../tutorials/regional_map_gridded.html
-
-.. |ts| image:: /_static/tutorial_pics/TS.png
-  :align: middle
-  :scale: 25%
-  :target: ../../tutorials/time_series.html
-
-.. |hst| image:: /_static/tutorial_pics/hist.png
-  :align: middle
-  :scale: 25%
-  :target: ../../tutorials/histogram.html
-
-.. |sec| image:: /_static/tutorial_pics/section.png
- :align: middle
- :scale: 20%
- :target: ../../tutorials/section.html
-
-.. |dep| image:: /_static/tutorial_pics/depth_profile.png
- :align: middle
- :scale: 25%
- :target: ../../tutorials/depth_profile.html
-
+.. _Here: https://podaac.jpl.nasa.gov/dataset/AVHRR_OI-NCEI-L4-GLOB-v2.0
 
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 | Dataset Name                  | Sensor   |  Make       |  Spatial Resolution    |Temporal Resolution|  Start Date         |  End Date           |

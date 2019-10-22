@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Sea Surface Temperature &mdash; CMAP</title>
+  <title>Global Ocean Drifter Program &mdash; CMAP</title>
   
 
   
@@ -138,7 +138,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>Sea Surface Temperature</li>
+      <li>Global Ocean Drifter Program</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -155,8 +155,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="sea-surface-temperature">
-<span id="sst"></span><h1>Sea Surface Temperature<a class="headerlink" href="#sea-surface-temperature" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="global-ocean-drifter-program">
+<span id="global-ocean-drifter"></span><h1>Global Ocean Drifter Program<a class="headerlink" href="#global-ocean-drifter-program" title="Permalink to this headline">¶</a></h1>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 22%" />
@@ -178,47 +178,43 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="#sst"><span class="std std-ref">Sea Surface Temperature</span></a></p></td>
-<td><p><a class="reference internal" href="../../_images/satellite.png"><img alt="sat" class="align-middle" src="../../_images/satellite.png" style="width: 51.2px; height: 51.2px;" /></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#global-ocean-drifter"><span class="std std-ref">Global Ocean Drifter Program</span></a></p></td>
+<td><p><a class="reference internal" href="../../_images/float_simple.png"><img alt="argo" src="../../_images/float_simple.png" style="width: 51.2px; height: 51.2px;" /></a></p></td>
 <td><p>Observation</p></td>
-<td><p>1/4° X 1/4°</p></td>
-<td><p>Daily</p></td>
-<td><p>1981-09-01</p></td>
-<td><p>2019-04-27</p></td>
+<td><p>Irregular</p></td>
+<td><p>Six Hours</p></td>
+<td><p>1979-02-15 06:00:00</p></td>
+<td><p>2019-08-07 06:00:00</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="section" id="dataset-description">
 <h1>Dataset Description<a class="headerlink" href="#dataset-description" title="Permalink to this headline">¶</a></h1>
-<p>The Sea Surface Temperature dataset in CMAP is the <strong>GHRSST Level 4 AVHRR_OI Global Blended Sea Surface Temperature Analysis (GDS version 2) from NCEI</strong>.
-This data product has a 1/4° X 1/4° degree gridded spatial resolution with global ocean coverage at a 1 day temporal interval.
-The dataset is derived from a combination of multiple AVHRR (Advanced Very High Resolution Radiometer) satellites along with in-situ sst measurements from ship and buoy measurements. These data sources are optimally interpolated to produce a complete smoothed grid.</p>
+<p>The Global Drifter Program is a multi-decadal oceanography survey of sea surface temperature and ocean current data taken from a network of autonomous drifting floats. The dataset spans a 40-year time range with coverage of the global ocean. Each drifter records SST and speed along with zonal and meridional components of velocity. Uncertainty values in sst and velocity components are also included. Each drifter is comprised of a surface buoy attached to a sub-surface float or ‘drogue’. The drogue ensures that surface currents, rather than wind drive the buoy’s direction.</p>
+<p>CMAP contains over 37 million records and 24,000 unique drifter ID’s from this project. Each drifter relays data every six hours via satellite. Data was acquired via the National Oceanic and Atmospheric Administration Atlantic Oceanography and Meteorological Laboratory’s FTP site. The specific datasets ingested into CMAP are: buoydata_1_5000.dat.gz, buoydata_5001_10000.dat.gz, buoydata_10001_15000.dat.gz,buoydata_15001_jun19.dat.gz</p>
 </div>
 <div class="section" id="table-of-variables">
 <h1>Table of Variables<a class="headerlink" href="#table-of-variables" title="Permalink to this headline">¶</a></h1>
-<iframe src="../../_static/var_tables/Near-Real-Time%20SST%20AVHRR_OI/Near-Real-Time%20SST%20AVHRR_OI.html"  frameborder = 0 height = '100px' width="100%">></iframe><div class="line-block">
+<iframe src="../../_static/var_tables/tblGlobalDrifterProgram/tblGlobalDrifterProgram.html"  frameborder = 0 height = '300px' width="100%">></iframe><div class="line-block">
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="data-source">
 <h1>Data Source<a class="headerlink" href="#data-source" title="Permalink to this headline">¶</a></h1>
-<p>Creator:        National Centers for Environmental Information</p>
-<p>Release Place:  National Centers for Environmental Information, Asheville, NC, USA</p>
-<p>Release Date:   2016-Apr-20</p>
-<p>Resource:       none</p>
-<p><a class="reference external" href="https://podaac.jpl.nasa.gov/dataset/AVHRR_OI-NCEI-L4-GLOB-v2.0">https://podaac.jpl.nasa.gov/dataset/AVHRR_OI-NCEI-L4-GLOB-v2.0</a></p>
-<p><a class="reference external" href="https://podaac-tools.jpl.nasa.gov/drive/files/OceanTemperature/ghrsst/docs/GDS20r5.pdf">https://podaac-tools.jpl.nasa.gov/drive/files/OceanTemperature/ghrsst/docs/GDS20r5.pdf</a></p>
+<p>National Oceanic and Atmospheric Administration Atlantic Oceanography and Meteorological Laboratory</p>
+<p><a class="reference external" href="https://www.aoml.noaa.gov/phod/gdp/index.php">https://www.aoml.noaa.gov/phod/gdp/index.php</a></p>
 </div>
 <div class="section" id="how-to-acknowledge">
 <h1>How to Acknowledge<a class="headerlink" href="#how-to-acknowledge" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="http://dx.doi.org/10.5067/GHAAO-4BC02">http://dx.doi.org/10.5067/GHAAO-4BC02</a></p>
-<p>National Centers for Environmental Information. 2016. GHRSST Level 4 AVHRR_OI Global Blended Sea Surface Temperature Analysis (GDS version 2) from NCEI. Ver. 2.0. PO.DAAC, CA, USA.  <a class="reference external" href="https://doi.org/10.5067/GHAAO-4BC02">https://doi.org/10.5067/GHAAO-4BC02</a>.</p>
-<p>Reynolds, R. W., T. M. Smith, C. Liu, D. B. Chelton, K. S. Casey and M. G. Schlax, 2007: Daily High-resolution Blended Analyses for sea surface temperature. J. Climate, 20, 5473-5496</p>
+<p>Lumpkin, Rick; Centurioni, Luca (2019). Global Drifter Program quality-controlled 6-hour interpolated data from ocean surface drifting buoys.
+[buoydata_1_5000,buoydata_5001_10000,buoydata_10001_15000,buoydata_15001_jun19].
+NOAA National Centers for Environmental Information. Dataset.</p>
+<p><a class="reference external" href="https://doi.org/10.25921/7ntx-z961">https://doi.org/10.25921/7ntx-z961</a>. Accessed [10-25-2019].</p>
 </div>
 <div class="section" id="version-history">
 <h1>Version History<a class="headerlink" href="#version-history" title="Permalink to this headline">¶</a></h1>
-<p><strong>2.0</strong></p>
+<p>Data accessed on: 10-25-2019</p>
 </div>
 
 
