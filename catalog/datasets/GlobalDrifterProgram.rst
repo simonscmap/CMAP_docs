@@ -5,8 +5,8 @@
 
 
 
-Global Ocean Drifter Program
-****************************
+Global Drifter Program
+**********************
 
 .. |globe| image:: /_static/catalog_thumbnails/globe.png
    :scale: 10%
