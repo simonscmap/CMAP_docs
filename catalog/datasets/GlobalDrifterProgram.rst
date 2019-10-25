@@ -19,12 +19,14 @@ Global Drifter Program
  :scale: 10%
  :target: ../../tutorials/regional_map_sparse.html
 
-
+.. |float| image:: /_static/catalog_thumbnails/buoy.png
+ :scale: 10%
+ :align: middle
 
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 | Dataset Name                  | Sensor   |  Make       |  Spatial Resolution    |Temporal Resolution|  Start Date         |  End Date           |
 +===============================+==========+=============+========================+===================+=====================+=====================+
-| :ref:`global_ocean_drifter`   | |argo|   | Observation |      Irregular         |  Six Hours        |1979-02-15 06:00:00  | 2019-08-07 06:00:00 |
+| :ref:`global_ocean_drifter`   | |float|  | Observation |      Irregular         |  Six Hours        |1979-02-15 06:00:00  | 2019-08-07 06:00:00 |
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 
 Dataset Description
