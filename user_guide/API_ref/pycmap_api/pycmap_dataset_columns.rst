@@ -17,11 +17,11 @@ Dataset Columns
     |
 
     :Parameters:
-      **table: string:**
-        The name of table associated with the dataset. A full list of table names can be found in the :ref:`Catalog`.
+      **tableName: string**
+        The name of table associated with the dataset. A full list of table names can be found in the :ref:`Catalog` or :ref:`Dataset_list` method.
 
 
-    :returns\:: Pandas dataframe.
+
 
 |
 

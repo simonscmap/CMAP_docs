@@ -16,6 +16,8 @@ The methods below can be used to retrieve metadata and to query, subset and colo
 +-------------------------------+--------------------------------------------------------------+
 | :ref:`getcatalog`             |       Retrieve Catalog                                       |
 +-------------------------------+--------------------------------------------------------------+
+| :ref:`Dataset_list`           |       Retrieve List of Datasets                              |
++-------------------------------+--------------------------------------------------------------+
 | :ref:`metadata`               |       Retrieve Metadata                                      |
 +-------------------------------+--------------------------------------------------------------+
 | :ref:`columns`                |       Retrieve Column Names                                  |
@@ -48,6 +50,8 @@ The methods below can be used to retrieve metadata and to query, subset and colo
 +-------------------------------+--------------------------------------------------------------+
 | :ref:`cruiseVars`             | Returns Variables Associated with Specific Cruise            |
 +-------------------------------+--------------------------------------------------------------+
+| :ref:`Retrieve_Dataset`       | Returns the Entire Dataset                                   |
++-------------------------------+--------------------------------------------------------------+
 | :ref:`subset_ST`              | Returns a Subset of Data Defined by Space and Time           |
 +-------------------------------+--------------------------------------------------------------+
 | :ref:`subset_TS`              | Returns a Subset of Data Aggregated by Time                  |
@@ -68,6 +72,7 @@ The methods below can be used to retrieve metadata and to query, subset and colo
   pycmap_api
   pycmap_query
   pycmap_catalog
+  pycmap_dataset
   pycmap_metadata
   pycmap_dataset_columns
   pycmap_dataset_head
@@ -84,6 +89,7 @@ The methods below can be used to retrieve metadata and to query, subset and colo
   pycmap_cruise_ST_bounds
   pycmap_cruise_trajectory
   pycmap_cruise_variables
+  pycmap_retrieve_dataset
   pycmap_subset_ST
   pycmap_subset_TS
   pycmap_subset_DP

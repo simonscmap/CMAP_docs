@@ -197,7 +197,7 @@ being called the first time.</p>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>cruiseName: string</strong></dt><dd><p>The official cruise name. If applicable, you may also use cruise
 “nickname” (‘Diel’, ‘Gradients_1’ …). A full list of cruise names can
-be retrieved using <a class="reference external" href="Cruises.ipynb">cruise</a> method.</p>
+be retrieved using <a class="reference external" href="pycmap_list_cruises.html">cruises()</a> method.</p>
 </dd>
 </dl>
 </dd>
@@ -216,11 +216,11 @@ This method has no returns.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!pip install pycmap -q     #uncomment to install pycmap, if necessary</span>
 <span class="c1"># uncomment the lines below if the API key has not been registered on your machine, previously.</span>
 <span class="c1"># import pycmap</span>
-<span class="c1"># pycmap.API(token=&#39;YOUR_API_KEY&gt;&#39;)</span>
+<span class="c1"># pycmap.API(token=&#39;&lt;YOUR_API_KEY&gt;&#39;)</span>
 
 
 <span class="kn">from</span> <span class="nn">pycmap.viz</span> <span class="kn">import</span> <span class="n">plot_cruise_track</span>
-<span class="n">plot_cruise_track</span><span class="p">(</span><span class="s1">&#39;KM1712&#39;</span><span class="p">)</span>
+<span class="n">plot_cruise_track</span><span class="p">([</span><span class="s1">&#39;KM1712&#39;</span><span class="p">,</span> <span class="s1">&#39;gradients_1&#39;</span><span class="p">])</span>
 </pre></div>
 </div>
 <iframe src="../../../_static/pycmap_tutorial_viz/html/cruise_track_cruiseTrack.html"  frameborder = 0  height="550px" width="100%">></iframe></div>
@@ -239,7 +239,7 @@ This method has no returns.</p>
     <p>
         &copy; Copyright 2019, Mohammad Dehghani Ashkezari &amp; Norland Raphael Hagen
       <span class="lastupdated">
-        Last updated on Oct 25, 2019.
+        Last updated on Oct 29, 2019.
       </span>
 
     </p>

@@ -10,7 +10,7 @@ Cruise Track Plot
 
 .. _API key: pycmap_api.html
 .. _APIs parameters: pycmap_api.html
-
+.. _cruises(): pycmap_list_cruises.html
 
 .. _cruise: Cruises.ipynb
 
@@ -33,7 +33,7 @@ Cruise Track Plot
         **cruiseName: string**
             The official cruise name. If applicable, you may also use cruise
             "nickname" ('Diel', 'Gradients_1' ...). A full list of cruise names can
-            be retrieved using `cruise`_ method.
+            be retrieved using `cruises()`_ method.
 
 
     :returns\:: list of graph objects
@@ -49,11 +49,11 @@ Example:
   #!pip install pycmap -q     #uncomment to install pycmap, if necessary
   # uncomment the lines below if the API key has not been registered on your machine, previously.
   # import pycmap
-  # pycmap.API(token='YOUR_API_KEY>')
+  # pycmap.API(token='<YOUR_API_KEY>')
 
 
   from pycmap.viz import plot_cruise_track
-  plot_cruise_track('KM1712')
+  plot_cruise_track(['KM1712', 'gradients_1'])
 
 
 .. raw:: html
