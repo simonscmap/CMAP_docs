@@ -16,31 +16,6 @@ MODIS Aerosol Optical Depth
    :scale: 10%
    :align: middle
 
-.. |rm| image:: /_static/tutorial_pics/regional_map.png
- :align: middle
- :scale: 20%
- :target: ../../tutorials/regional_map_gridded.html
-
-.. |ts| image:: /_static/tutorial_pics/TS.png
- :align: middle
- :scale: 25%
- :target: ../../tutorials/time_series.html
-
-.. |hst| image:: /_static/tutorial_pics/hist.png
- :align: middle
- :scale: 25%
- :target: ../../tutorials/histogram.html
-
-.. |sec| image:: /_static/tutorial_pics/section.png
- :align: middle
- :scale: 20%
- :target: ../../tutorials/section.html
-
-.. |dep| image:: /_static/tutorial_pics/depth_profile.png
- :align: middle
- :scale: 25%
- :target: ../../tutorials/depth_profile.html
-
 
 
 
@@ -53,11 +28,8 @@ MODIS Aerosol Optical Depth
 Dataset Description
 *******************
 
-The MODIS AOD dataset in CMAP is a monthly averaged 1x1 degree gridded surface level dataset. Aerosol Optical Depth is a measurement of the optical scattering caused by airborne atmospheric particles. Sources of these particles include: volcanic ash, wildfire smoke, windblown sand and dust.
-The **MODIS MYD08_M3** dataset is a satellite derived level-3 gridded product. Monthly AOD values are averaged over 1x1 degree pixels.
-
-
-|
+.. mdinclude:: ../dataset_descriptions/Modis_AOD_desc.md
+    :start-line: 0
 
 
 Table of Variables

@@ -14,32 +14,6 @@ Wind
    :scale: 10%
    :align: middle
 
-.. |rm| image:: /_static/tutorial_pics/regional_map.png
- :align: middle
- :scale: 20%
- :target: ../../tutorials/regional_map_gridded.html
-
-.. |ts| image:: /_static/tutorial_pics/TS.png
- :align: middle
- :scale: 25%
- :target: ../../tutorials/time_series.html
-
-.. |hst| image:: /_static/tutorial_pics/hist.png
- :align: middle
- :scale: 25%
- :target: ../../tutorials/histogram.html
-
-.. |sec| image:: /_static/tutorial_pics/section.png
-  :align: middle
-  :scale: 20%
-  :target: ../../tutorials/section.html
-
-.. |dep| image:: /_static/tutorial_pics/depth_profile.png
-  :align: middle
-  :scale: 25%
-  :target: ../../tutorials/depth_profile.html
-
-
 
 
 
@@ -54,8 +28,10 @@ Wind
 Dataset Description
 *******************
 
-The IFREMER CERSAT Global Blended Mean Wind Fields include wind components (meridional and zonal), wind module, wind stress.
-The associated error estimates are also provided. They are estimated from scatterometers ASCAT and OSCAT retrievals and from ECMWF operational wind analysis with a horizontal resolution of 0.25x0.25 degrees and 6 hours in time, and available at synoptic time 00h:00; 06h:00; 12h:00; 18h:00.
+.. mdinclude:: ../dataset_descriptions/Wind_desc.md
+    :start-line: 0
+
+
 
 
 

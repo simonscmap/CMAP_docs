@@ -191,25 +191,36 @@
 </div>
 <div class="section" id="dataset-description">
 <h1>Dataset Description<a class="headerlink" href="#dataset-description" title="Permalink to this headline">¶</a></h1>
-<p><strong>Reprocessed LCS (Lagrangian Coherent Structures)</strong> are a daily-global altimetry-derived and gridded product calculating Finite-Time Lyapunov Exponents (FTLE). It characterizes the transport properties of the ocean surface currents from a Lagrangian frame of reference.</p>
-<p>A grid of passive tracers (hypothetical massless particles) is initialized over the global domain with an initial uniform spacing of 4 km x 4 km. A flow map is then approximated by integrating particle trajectories for a fix period of time, <span class="math notranslate nohighlight">\(\tau=15\)</span> days. At its fundamental levels, local Lyapunov exponents provide a metric for exponential rate of divergence for a pair of adjacent tracers:</p>
+<p><strong>Reprocessed LCS (Lagrangian Coherent Structures)</strong> are a daily-global
+altimetry-derived and gridded product calculating Finite-Time Lyapunov
+Exponents (FTLE). It characterizes the transport properties of the ocean
+surface currents from a Lagrangian frame of reference.</p>
+<p>A grid of passive tracers (hypothetical massless particles) is
+initialized over the global domain with an initial uniform spacing of 4
+km x 4 km. A flow map is then approximated by integrating particle
+trajectories for a fix period of time, (tau=15) days. At its
+fundamental levels, local Lyapunov exponents provide a metric for
+exponential rate of divergence for a pair of adjacent tracers:</p>
 <div class="math notranslate nohighlight">
 \[\begin{equation} \label{Eq:Lyapunov}
 \Lambda = \lim_{|\delta x(t_0)| \to 0}  \lim_{t \to \infty} \frac{1}{t} \log \frac{\delta x(t)}{\delta x(t_0)}
 \end{equation}\]</div>
 <p>such that <span class="math notranslate nohighlight">\(\Lambda\)</span> is the Lyapunov exponent, and <span class="math notranslate nohighlight">\(\delta x(t)\)</span>, <span class="math notranslate nohighlight">\(\delta x(0)\)</span> represent the separation between the tracers at times <span class="math notranslate nohighlight">\(t\)</span> and <span class="math notranslate nohighlight">\(t_0\)</span>, receptively.</p>
-<div class="figure align-default">
-<a class="reference internal image-reference" href="../../_images/grid_crop.png"><img alt="../../_images/grid_crop.png" src="../../_images/grid_crop.png" style="width: 75%;" /></a>
-</div>
-<p>After integrating the particles for the fixed period of time, <span class="math notranslate nohighlight">\(\tau=15\)</span>, FTLE fields are computed to demonstrate the local dispersion as well as local displacements (see example figures below). The particles can be integrated either forward or backward in time. The local maxima of the FTLE scalar field (ridges) can be interpreted as stable and unstable manifolds of the flow field in the case of forward and backward integration, respectively.</p>
-<div class="figure align-default">
-<a class="reference internal image-reference" href="../../_images/displacement_dispersion.png"><img alt="../../_images/displacement_dispersion.png" src="../../_images/displacement_dispersion.png" style="width: 100%;" /></a>
-</div>
-<p>Please refer to the documentation below for more detailed information regarding FTLE mathematical framework.</p>
+<a class="reference external image-reference" href="https://raw.githubusercontent.com/simonscmap/CMAP_docs/master/catalog/figures/LCS/Grid.png"><img alt="grid" src="https://raw.githubusercontent.com/simonscmap/CMAP_docs/master/catalog/figures/LCS/Grid.png" /></a>
+<p>After integrating the particles for the fixed period of time,
+(tau=15), FTLE fields are computed to demonstrate the local
+dispersion as well as local displacements (see example figures below).
+The particles can be integrated either forward or backward in time. The
+local maxima of the FTLE scalar field (ridges) can be interpreted as
+stable and unstable manifolds of the flow field in the case of forward
+and backward integration, respectively.</p>
+<a class="reference external image-reference" href="https://raw.githubusercontent.com/simonscmap/CMAP_docs/master/catalog/figures/LCS/displacement_dispersion.png"><img alt="" src="https://raw.githubusercontent.com/simonscmap/CMAP_docs/master/catalog/figures/LCS/displacement_dispersion.png" /></a>
+<p>Please refer to the documentation below for more detailed information
+regarding FTLE mathematical framework.</p>
 </div>
 <div class="section" id="table-of-variables">
 <h1>Table of Variables<a class="headerlink" href="#table-of-variables" title="Permalink to this headline">¶</a></h1>
-<iframe src="../../_static/var_tables/LCS_REP/LCS_REP.html"  frameborder = 0 height = '300px' width="100%">></iframe><div class="line-block">
+<iframe src="../../_static/var_tables/LCS_REP/LCS_REP.html"  frameborder = 0 height = '200px' width="100%">></iframe><div class="line-block">
 <div class="line"><br /></div>
 </div>
 </div>

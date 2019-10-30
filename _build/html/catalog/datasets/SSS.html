@@ -191,18 +191,29 @@
 </div>
 <div class="section" id="dataset-description">
 <h1>Dataset Description<a class="headerlink" href="#dataset-description" title="Permalink to this headline">¶</a></h1>
-<p>The Sea Surface Salinity dataset in CMAP is the the <strong>SMAP_RSS_L3_SSS_SMI_8DAY-RUNNINGMEAN_V3_70KM_1</strong> NASA dataset.
-This 8-day running mean sea surface salinity product has near-global spatial coverage gridded to ~ 70km x 70km grid cells. While a 40km x 40km product exists, the 70km product has a much higher SNR.
-The SSS data is derived from an L-band radiometer atop of the <em>Soil Moisture Active Pass</em> (SMAP) satellite mission. SMAP operates in a near-polar orbit with a beam swath of 1000km. Exact repeat overpasses happen every eight days, with near global coverage every three days.</p>
-<p>SSS data was referenced against the HYCOM reference salinity field. Multiple QA flags are described on page 38 of the <a class="reference external" href="https://podaac-tools.jpl.nasa.gov/drive/files/allData/smap/docs/V4/RSS_SMAP-SSS_V4.0_TechnicalDocumentation.pdf">Technical Documentaion</a>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Two known issues identified by that dataset distributor are:</p>
-<div class="line-block">
-<div class="line">-Satellite retrieval performance was degraded between Apr. 2015 - Aug. 2015, possibly due to instrument calibration issues.</div>
-<div class="line">-Eight of the total observations days were missing a sea-ice mask. To minimize contamination of salinity samples, these data were excluded from the Level-2 product, therefore some of the level-3 gridded products around these dates may have less total observations. The dates are: 12-03-2015, 12-03-2015, 04-15-2016, 04-16-2016, 09-27-2017, 09-28-2017, 11-25-2017 and 12-16-2018</div>
-</div>
-</div>
+<p>The Sea Surface Salinity dataset in CMAP is the
+<strong>SMAP_RSS_L3_SSS_SMI_8DAY-RUNNINGMEAN_V3_70KM_1</strong> NASA dataset.
+This 8-day running mean sea surface salinity product has near-global
+spatial coverage gridded to ~ 70km x 70km grid cells. While a 40km x
+40km product exists, the 70km product has a much higher SNR. The SSS
+data is derived from an L-band radiometer atop of the <em>Soil Moisture
+Active Pass</em> (SMAP) satellite mission. SMAP operates in a near-polar
+orbit with a beam swath of 1000km. Exact repeat overpasses happen every
+eight days, with near-global coverage every three days.</p>
+<p>SSS data was referenced against the HYCOM reference salinity field.
+Multiple QA flags are described on page 38 of the <a class="reference external" href="https://podaac-tools.jpl.nasa.gov/drive/files/allData/smap/docs/V4/RSS_SMAP-SSS_V4.0_TechnicalDocumentation.pdf">Technical
+Documentation</a>.</p>
+<p><strong>NOTE</strong> Two known issues identified by that dataset distributor are:</p>
+<ul class="simple">
+<li><p>Satellite retrieval performance was degraded between Apr. 2015 -
+Aug. 2015, possibly due to instrument calibration issues.</p></li>
+<li><p>Eight of the total observations days were missing a sea-ice mask. To
+minimize contamination of salinity samples, these data were excluded
+from the Level-2 product, therefore some of the level-3 gridded
+products around these dates may have less total observations. The
+dates are: 12-03-2015, 12-03-2015, 04-15-2016, 04-16-2016,
+09-27-2017, 09-28-2017, 11-25-2017 and 12-16-2018.</p></li>
+</ul>
 </div>
 <div class="section" id="table-of-variables">
 <h1>Table of Variables<a class="headerlink" href="#table-of-variables" title="Permalink to this headline">¶</a></h1>

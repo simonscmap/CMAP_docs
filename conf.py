@@ -43,6 +43,7 @@ release = '0.0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'm2r',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.coverage',
@@ -63,7 +64,7 @@ plot_formats = ['png']
 # Sphinx project configuration
 templates_path = ['_templates']
 exclude_patterns = ['_build', '**.ipynb_checkpoints']
-source_suffix = '.rst'
+source_suffix = ['.rst','.md']
 # The encoding of source files.
 source_encoding = 'utf-8-sig'
 master_doc = 'index'
