@@ -24,7 +24,7 @@ HOT 224 Cruise
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/HOT_224_desc.md
+.. mdinclude:: ../dataset_descriptions/HOT224_desc.md
     :start-line: 0
 
 

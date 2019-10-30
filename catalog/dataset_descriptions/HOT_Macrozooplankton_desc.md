@@ -1,0 +1,1 @@
+Mesozooplankton (weak swimmers 0.2-20 mm size) are collected using oblique tows of a 1-m2 net (202-µm mesh netting) from the surface to approximately 175 m depth. The catch is size fractionated by washing through a nested set of net filters and each fraction analyzed for dry weight, C and N.

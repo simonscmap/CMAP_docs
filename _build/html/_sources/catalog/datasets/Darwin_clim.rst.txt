@@ -26,7 +26,7 @@ Darwin Climatology
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/CDarwin_clim_desc.md
+.. mdinclude:: ../dataset_descriptions/Darwin_clim_desc.md
     :start-line: 0
 
 

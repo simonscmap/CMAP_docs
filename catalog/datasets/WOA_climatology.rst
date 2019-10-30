@@ -25,7 +25,8 @@ Dataset Description
 *******************
 
 
-
+.. mdinclude:: ../dataset_descriptions/WOA_climatology_desc.md
+    :start-line: 0
 
 Table of Variables
 ******************

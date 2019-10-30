@@ -1,10 +1,10 @@
 :orphan:
 
-.. _HOT:
+.. _HOT_PP:
 
 
-HOT
-***
+HOT PP
+******
 
 .. |buoy| image:: /_static/catalog_thumbnails/buoy_2.png
   :scale: 10%
@@ -16,7 +16,7 @@ HOT
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 | Dataset Name                  | Sensor   |  Make       |  Spatial Resolution    |Temporal Resolution|  Start Date         |  End Date           |
 +===============================+==========+=============+========================+===================+=====================+=====================+
-| :ref:`HOT`                    | |buoy|   | Observation |      Irregular         |        Irregular  |  1988-10-31         | 2017-11-09          |
+| :ref:`HOT_PP`                 | |buoy|   | Observation |      Irregular         |        Irregular  |  1988-10-31         | 2016-10-15          |
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 
 
@@ -25,8 +25,9 @@ Dataset Description
 *******************
 
 
-.. mdinclude:: ../dataset_descriptions/HOT_desc.md
+.. mdinclude:: ../dataset_descriptions/HOT_PP_desc.md
     :start-line: 0
+
 
 
 
@@ -41,53 +42,16 @@ Table of Variables
 
 
 
-.. raw:: html
-
-    <iframe src="../../_static/var_tables/HOT_ParticleFlux/HOT_ParticleFlux.html"  frameborder = 0 height = '300px' width="100%">></iframe>
-
-
-
-.. raw:: html
-
-    <iframe src="../../_static/var_tables/HOT_Macrozooplankton/HOT_Macrozooplankton.html"  frameborder = 0 height = '300px' width="100%">></iframe>
-
-
-
-.. raw:: html
-
-    <iframe src="../../_static/var_tables/HOT_EpiMicroscopy/HOT_EpiMicroscopy.html"  frameborder = 0 height = '300px' width="100%">></iframe>
-
-
-
-.. raw:: html
-
-    <iframe src="../../_static/var_tables/HOT_CTD/HOT_CTD.html"  frameborder = 0 height = '300px' width="100%">></iframe>
-
-
-
-.. raw:: html
-
-    <iframe src="../../_static/var_tables/HOT_Bottle_ALOHA/HOT_Bottle_ALOHA.html"  frameborder = 0 height = '300px' width="100%">></iframe>
 
 |
-
 
 Data Source
 ***********
 
-http://hahana.soest.hawaii.edu/hot/hot-dogs/
 
 http://hahana.soest.hawaii.edu/hot/methods/pprod.html
 
-http://hahana.soest.hawaii.edu/hot/methods/pflux.html
 
-http://hahana.soest.hawaii.edu/hot/methods/plankton.html
-
-
-http://hahana.soest.hawaii.edu/hot/methods/epimicros.html
-
-
-http://hahana.soest.hawaii.edu/hot/methods/ctd.html
 
 
 How to Acknowledge
