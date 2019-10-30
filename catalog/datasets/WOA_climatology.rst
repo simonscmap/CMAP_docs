@@ -8,42 +8,11 @@ World Ocean Atlas Climatology
 *****************************
 
 
-.. |globe| image:: /_static/catalog_thumbnails/globe.png
-   :scale: 10%
-   :align: middle
 
-.. |comp| image:: /_static/catalog_thumbnails/comp_2.png
-   :scale: 10%
-   :align: middle
 
 .. |cruise| image:: /_static/catalog_thumbnails/sailboat.png
    :scale: 10%
    :align: middle
-
-.. |rm| image:: /_static/tutorial_pics/regional_map.png
- :align: middle
- :scale: 20%
- :target: ../../tutorials/regional_map_gridded.html
-
-.. |ts| image:: /_static/tutorial_pics/TS.png
- :align: middle
- :scale: 25%
- :target: ../../tutorials/time_series.html
-
-.. |hst| image:: /_static/tutorial_pics/hist.png
- :align: middle
- :scale: 25%
- :target: ../../tutorials/histogram.html
-
-.. |sec| image:: /_static/tutorial_pics/section.png
-  :align: middle
-  :scale: 20%
-  :target: ../../tutorials/section.html
-
-.. |dep| image:: /_static/tutorial_pics/depth_profile.png
-  :align: middle
-  :scale: 25%
-  :target: ../../tutorials/depth_profile.html
 
 
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
@@ -54,11 +23,7 @@ World Ocean Atlas Climatology
 
 Dataset Description
 *******************
-CMAP contains 2013 V2 World Ocean Atlas 1° Monthly Climatology data.
 
-The World Ocean Atlas is a data product compiled by the National Oceanic Data Center and the Ocean Climate Laboratory.
-It is a global climatological 1° X 1° gridded dataset with physical and nutrient data available at depth levels ranging from 0-1500m.
-Each variable has fields for Objectively Analyzed Climatology, Statistical Mean, Number of Apparent Observations,  Standard Deviation and Standard Error.
 
 
 
