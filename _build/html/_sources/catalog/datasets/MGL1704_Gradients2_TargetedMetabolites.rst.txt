@@ -11,11 +11,6 @@ Targeted Metabolites for the MGL1704 Cruise
    :scale: 10%
    :align: middle
 
-.. |globe| image:: /_static/catalog_thumbnails/globe.png
-  :scale: 10%
-  :align: middle
-
-
 
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 | Dataset Name                  | Sensor   |  Make       |  Spatial Resolution    |Temporal Resolution|  Start Date         |  End Date           |
@@ -26,7 +21,8 @@ Targeted Metabolites for the MGL1704 Cruise
 Dataset Description
 *******************
 
-These are particulate metabolite concentrations in pmol/L.  The samples were collected on cruise MGL1704 from underway seawater intake and CTD rosette.  Samples were extracted using Boysen et al 2018 and run on the Q-Exactive mass spectrometer in full scan mode as in Boysen et al 2018.
+.. mdinclude:: ../dataset_descriptions/MGL1704_Gradients2_TargetedMetabolites_desc.md
+    :start-line: 0
 
 Table of Variables
 ******************

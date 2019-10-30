@@ -26,12 +26,8 @@ Single Cell Genomes
 Dataset Description
 *******************
 
-This dataset contains single cell genomes of Prochlorococcus, Synechococcus, extracellular virus particles, and additional microorganisms from a diverse range of bacterial, archaeal, and viral groups, coming from a diverse set of marine environments: Isolation information and where to access 16S rRNA, genome sequencing, and genome annotation files
-Single cells were isolated from CMORE, HOT, BATS, GEOTRACES, and SCOPE cruises.
-If the same "sample" was assayed multiple times (ie. technical replicates), then each replicate gets a separate row with a unique Assay Name, and the same Sample Name.
-16S rRNA and 16S-23S Intergenic Transcribed Spacer (ITS) sequences: 16S ITS sequences were prepared using polymerase chain reaction (PCR) amplification of target ribosomal RNA genomic regions using group specific primers (bacterial 16S or cyanobacterial ITS) followed by sequencing using the Sanger method.
-Genome sequencing and genome annotation: Libraries were prepared using Illumina Nextera XT followed by size selection (500 +/- 50 bp). Sequencing was paired-end 150+150 nt on Illumina NextSeq 500. Whole genome assembly was done using SPAdes 3.0.0. Genomes were annotated using IMG Annotation Pipeline version 4.
-
+.. mdinclude:: ../dataset_descriptions/Chisholm_SingleCell_desc.md
+    :start-line: 0
 
 
 Table of Variables

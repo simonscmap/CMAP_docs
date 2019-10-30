@@ -20,30 +20,6 @@ Argo
  :target: ../../tutorials/regional_map_sparse.html
 
 
-.. |ts| image:: /_static/tutorial_pics/TS.png
- :align: middle
- :scale: 25%
- :target: ../../tutorials/time_series.html
-
-.. |hst| image:: /_static/tutorial_pics/hist.png
- :align: middle
- :scale: 25%
- :target: ../../tutorials/histogram.html
-
-.. |sec| image:: /_static/tutorial_pics/section.png
- :align: middle
- :scale: 20%
- :target: ../../tutorials/section.html
-
-.. |dep| image:: /_static/tutorial_pics/depth_profile.png
- :align: middle
- :scale: 25%
- :target: ../../tutorials/depth_profile.html
-
-.. |edy| image:: /_static/tutorial_pics/eddy_sampling.png
- :align: middle
- :scale: 25%
- :target: ../../tutorials/eddy.html
 
 
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
@@ -55,10 +31,10 @@ Argo
 Dataset Description
 *******************
 
-Argo, the broad-scale global array of temperature/salinity profiling floats, is a major component of the ocean observing system. Deployment of floats began in 2000. Conceptually, Argo builds on the existing upper-ocean thermal networks, extending their spatial and temporal coverage, depth range and accuracy, and enhancing them through addition of salinity and velocity measurements. The name Argo is chosen to emphasize the strong complementary relationship of the global float array with the Jason altimeter mission. For the first time, the physical state of the upper ocean is systematically measured and assimilated in near real-time.
 
-Argo consists of nearly 3800 floats and has a rough spatial resolution of ~ 3° X 3°
 
+.. mdinclude:: ../dataset_descriptions/Argo_desc.md
+    :start-line: 0
 
 
 Table of Variables
@@ -70,8 +46,6 @@ Table of Variables
 
 
 |
-
-
 
 
 

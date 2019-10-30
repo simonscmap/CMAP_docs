@@ -26,7 +26,10 @@ Dataset Description
 
 *******************
 
-This dataset is from the HOTLAVA cruise, in response to an eruption of the Kilauea volcano.  The goal of this cruise was to investigate hydrothermal processes at the lava-seawater contact zone (Kapoho Bay region) and the impacts of volcanic aerosol and ash deposition on surrounding marine ecosystems.   Samples were collected along a coastal to open-ocean transect .  Metatranscriptomes of large eukaryotes (>5µm) were sequenced, and used to determine patterns in transcript abundance.  See dataset_references for additional details.
+.. mdinclude:: ../dataset_descriptions/KOK1806_HOT_LAVA_Dyhrman_Omics_desc.md
+    :start-line: 0
+
+
 
 Table of Variables
 ******************

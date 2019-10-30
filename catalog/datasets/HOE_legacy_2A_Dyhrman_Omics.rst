@@ -11,9 +11,6 @@ Hoe Legacy 2A 'Omics - Dyhrman Lab
    :scale: 10%
    :align: middle
 
-.. |globe| image:: /_static/catalog_thumbnails/globe.png
-  :scale: 10%
-  :align: middle
 
 
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
@@ -25,7 +22,8 @@ Hoe Legacy 2A 'Omics - Dyhrman Lab
 Dataset Description
 *******************
 
-These datasets are from the SCOPE diel cruise conducted in July/August 2015.  The goal was to observe diel patterns in transcript abundance in large eukaryotes (>5 µm) and in Trichodesmium.  Samples were collected every four hours over the course of 8 days,while tracking a Langrangian drifting float to consistently sample the same water mass.  Metatranscriptomes of large eukaryotes (>5µm) and Trichodesmium were sequenced, and used to determine diel patterns in transcript abundance. See dataset references for more details.
+.. mdinclude:: ../dataset_descriptions/HOE_legacy_2A_Dyhrman_Omics_desc.md
+    :start-line: 0
 
 Table of Variables
 ******************

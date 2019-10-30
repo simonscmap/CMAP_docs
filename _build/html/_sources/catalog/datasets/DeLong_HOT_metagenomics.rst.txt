@@ -11,9 +11,7 @@ DeLong HOT Metagenomics
    :scale: 10%
    :align: middle
 
-.. |comp| image:: /_static/catalog_thumbnails/comp_2.png
-   :scale: 10%
-   :align: middle
+
 
 .. |cruise| image:: /_static/catalog_thumbnails/sailboat.png
    :scale: 10%
@@ -31,8 +29,8 @@ DeLong HOT Metagenomics
 Dataset Description
 *******************
 
-These are time-resolved deep profile metagenomic datasets of bacterioplankton and virioplankton collected during the Hawaii Ocean Time-series Station ALOHA cruises in the North Pacific Subtropical Gyre collected from November 2014 through April 2016.  For further information see: http://hahana.soest.hawaii.edu/hot/   and http://datacommons.cyverse.org/browse/iplant/home/shared/imicrobe/projects/263
-
+.. mdinclude:: ../dataset_descriptions/DeLong_HOT_metagenomics_desc.md
+    :start-line: 0
 
 
 Table of Variables

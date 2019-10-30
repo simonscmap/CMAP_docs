@@ -11,9 +11,6 @@ KM1709 Mesoscope 'Omics - Dyhrman Lab
    :scale: 10%
    :align: middle
 
-.. |globe| image:: /_static/catalog_thumbnails/globe.png
-  :scale: 10%
-  :align: middle
 
 
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
@@ -25,8 +22,8 @@ KM1709 Mesoscope 'Omics - Dyhrman Lab
 Dataset Description
 *******************
 
-These datasets are from the MESO-SCOPE cruise conducted in July/August 2017.   The aim was to dentify the impact of mesoscale eddies on the ecosystem of the North Pacific Subtropical Gyre. Samples were collected daily and from two large-volume deckboard incubation experiments.  Metatranscriptomes of large eukaryotes (>5µm) were sequenced, and used to determine patterns in transcript abundance.
-
+.. mdinclude:: ../dataset_descriptions/KM1709_mesoscope_Dyhrman_Omics_desc.md
+    :start-line: 0
 
 Table of Variables
 ******************

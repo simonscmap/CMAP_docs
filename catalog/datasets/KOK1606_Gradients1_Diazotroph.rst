@@ -26,7 +26,9 @@ Marine Diazotrophs for the KOK1606 Cruise
 Dataset Description
 *******************
 
-This study investigates the diversity, abundance, and activity of marine diazotrophs in the North Pacific. Samples were collected during two springtime cruises spanning the North Pacific Subtropical Gyre and the North Pacific subtropical-subpolar transition zone. Details of sampling, qPCR assays, and 15N2 and 13C fixation rate measurements are provided in Gradoville et al. (under review, Limnology and Oceanography).
+.. mdinclude:: ../dataset_descriptions/KOK1606_Gradients1_Diazotroph_desc.md
+    :start-line: 0
+
 
 Table of Variables
 ******************

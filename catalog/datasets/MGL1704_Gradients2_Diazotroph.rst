@@ -26,8 +26,8 @@ Marine Diazotrophs for the MGL1704 Cruise
 Dataset Description
 *******************
 
-This study investigates the diversity, abundance, and activity of marine diazotrophs in the North Pacific. Samples were collected on the MGL1704 cruise ("Gradients 2"), May-June 2017 from North Pacific Subtropical Gyre and the North Pacific subtropical-subpolar transition zone. Details of sampling, qPCR assays, and 15N2 and 13C fixation rate measurements are provided in Gradoville et al. (under review, Limnology and Oceanography).
-
+.. mdinclude:: ../dataset_descriptions/MGL1704_Gradients2_Diazotroph_desc.md
+    :start-line: 0
 
 Table of Variables
 ******************

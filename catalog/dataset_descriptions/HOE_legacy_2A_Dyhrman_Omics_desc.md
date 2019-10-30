@@ -1,0 +1,2 @@
+
+These datasets are from the SCOPE diel cruise conducted in July/August 2015.  The goal was to observe diel patterns in transcript abundance in large eukaryotes (>5 µm) and in Trichodesmium.  Samples were collected every four hours over the course of 8 days,while tracking a Langrangian drifting float to consistently sample the same water mass.  Metatranscriptomes of large eukaryotes (>5µm) and Trichodesmium were sequenced, and used to determine diel patterns in transcript abundance. See dataset references for more details.

@@ -1,0 +1,1 @@
+These are particulate metabolite concentrations in pmol/L.  The samples were collected on cruise MGL1704 from underway seawater intake and CTD rosette.  Samples were extracted using Boysen et al 2018 and run on the Q-Exactive mass spectrometer in full scan mode as in Boysen et al 2018.

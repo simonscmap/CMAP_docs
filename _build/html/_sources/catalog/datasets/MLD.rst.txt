@@ -6,38 +6,11 @@
 Mixed-Layer-Depth NRT
 **********************
 
-.. |globe| image:: /_static/catalog_thumbnails/globe.png
-   :scale: 10%
-   :align: middle
+
 
 .. |comp| image:: /_static/catalog_thumbnails/comp_2.png
    :scale: 10%
    :align: middle
-
-.. |rm| image:: /_static/tutorial_pics/regional_map.png
- :align: middle
- :scale: 20%
- :target: ../../tutorials/regional_map_gridded.html
-
-.. |ts| image:: /_static/tutorial_pics/TS.png
- :align: middle
- :scale: 25%
- :target: ../../tutorials/time_series.html
-
-.. |hst| image:: /_static/tutorial_pics/hist.png
- :align: middle
- :scale: 25%
- :target: ../../tutorials/histogram.html
-
-.. |sec| image:: /_static/tutorial_pics/section.png
-  :align: middle
-  :scale: 20%
-  :target: ../../tutorials/section.html
-
-.. |dep| image:: /_static/tutorial_pics/depth_profile.png
-  :align: middle
-  :scale: 25%
-  :target: ../../tutorials/depth_profile.html
 
 
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
@@ -51,9 +24,8 @@ Mixed-Layer-Depth NRT
 Dataset Description
 *******************
 
-**Mixed-Layer-Depth** is a model derived ocean surface product collected from the Operational Mercator Global Ocean Analysis and Forecast System.
-The data has 1/12° degree horizontal resolution with regular longitude/latitude intervals and an equirectangular projection.
-
+.. mdinclude:: ../dataset_descriptions/MLD_desc.md
+    :start-line: 0
 
 Table of Variables
 ******************

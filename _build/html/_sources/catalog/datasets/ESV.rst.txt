@@ -12,41 +12,6 @@ Exact Amplicon Sequence Variant Abundances from the ANT28-5 Latitudinal Transect
    :scale: 10%
    :align: middle
 
-.. |globe| image:: /_static/catalog_thumbnails/globe.png
-  :scale: 10%
-  :align: middle
-
-.. |sm| image:: /_static/tutorial_pics/sparse_mapping.png
-  :align: middle
-  :scale: 10%
-  :target: ../../tutorials/regional_map_sparse.html
-
-
-.. |ts| image:: /_static/tutorial_pics/TS.png
-  :align: middle
-  :scale: 25%
-  :target: ../../tutorials/time_series.html
-
-.. |hst| image:: /_static/tutorial_pics/hist.png
-  :align: middle
-  :scale: 25%
-  :target: ../../tutorials/histogram.html
-
-.. |sec| image:: /_static/tutorial_pics/section.png
-  :align: middle
-  :scale: 20%
-  :target: ../../tutorials/section.html
-
-.. |dep| image:: /_static/tutorial_pics/depth_profile.png
-  :align: middle
-  :scale: 25%
-  :target: ../../tutorials/depth_profile.html
-
-.. |esv| image:: /_static/tutorial_pics/esv.png
-  :align: middle
-  :scale: 25%
-  :target: ../../tutorials/ESV.html
-
 
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 | Dataset Name                  | Sensor   |  Make       |  Spatial Resolution    |Temporal Resolution|  Start Date         |  End Date           |
@@ -57,13 +22,8 @@ Exact Amplicon Sequence Variant Abundances from the ANT28-5 Latitudinal Transect
 Dataset Description
 *******************
 
-This dataset consists of relative microbial abundances (primarily Bacteria/Archaea) sampled across a latitudinal transect of the Atlantic ocean. Samples were collected between April - May 2012 on the cruise ANT28-5 (R/V Polarstern) by the research groups of Irene Wagner-Döbler (Technische Universität Braunschweig) and Meinhard Simon (Carl von Ossietzky University of Oldenburg). At each oceanographic station, multiple depths were sampled primarily in the photic zone (≤ 200 m), and each sample was sequentially filtered to obtain three size fractions:
-
-  1. Free-living (0.2 - 3 μm; FL)
-  2. Small particle associated (3 - 8 μm; SPA)
-  3. Large particle associated (> 8 μm; LPA)
-
-Detailed methods are available in three previously-published papers that discuss large-scale patterns in microbial diversity, co-occurrence, and biogeography across this transect (Milici et al., 2016a, b, c).
+.. mdinclude:: ../dataset_descriptions/ESV_desc.md
+    :start-line: 0
 
 
 

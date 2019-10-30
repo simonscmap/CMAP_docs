@@ -12,9 +12,6 @@ HOT 273 Metagenoimics - Caron Lab
    :scale: 10%
    :align: middle
 
-.. |globe| image:: /_static/catalog_thumbnails/globe.png
-  :scale: 10%
-  :align: middle
 
 
 
@@ -27,7 +24,8 @@ HOT 273 Metagenoimics - Caron Lab
 Dataset Description
 *******************
 
-This dataset was collected aboard Hawaii Ocean Time-series cruise 273 in June 2015. Samples contain a collection of size fractions including whole seawater, 200µm, 80µm, 5µm, & 0.7µm. Total RNA extracted from filter. RNA was reverse transcribed to cDNA. cDNA product was PCR amplified using 18S-V4 primers.
+.. mdinclude:: ../dataset_descriptions/HOT273_Caron_Omics_desc.md
+    :start-line: 0
 
 Table of Variables
 ******************

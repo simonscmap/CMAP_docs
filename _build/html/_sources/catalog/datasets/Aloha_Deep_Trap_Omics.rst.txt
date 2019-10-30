@@ -25,8 +25,10 @@ Station Aloha Deep Sediment Trap 'Omics
 Dataset Description
 *******************
 
-These datasets are from the Station ALOHA Deep Sediment trap metagenomics,  metatranscripoimics and amplicon time series, conducted in 2014, 2015 and 2016.  The goal was to observe  patterns in metagenome and transcript abundance of eukaryotes, bacteria, archaea and phage attached to sinking particles that reach the deep-sea to depths of 4000 m.  See dataset references for more details.  http://hahana.soest.hawaii.edu/hot/methods/traps.html
 
+.. mdinclude:: ../dataset_descriptions/Aloha_Deep_Trap_Omics_desc.md
+    :start-line: 0
+    
 Table of Variables
 ******************
 

@@ -11,9 +11,6 @@ HOE Legacy 4 'Omics - Dyhrman Lab
    :scale: 10%
    :align: middle
 
-.. |globe| image:: /_static/catalog_thumbnails/globe.png
-  :scale: 10%
-  :align: middle
 
 
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
@@ -25,7 +22,9 @@ HOE Legacy 4 'Omics - Dyhrman Lab
 Dataset Description
 *******************
 
-Samples represent marine microbial metatranscriptomes of >5 µm microeukaryotes and particle-attached prokaryotes collected from the center of anticyclonic and cyclonic eddies in 2016 Dipole cruise as well as a time series incubation exploring community response to deep seawater additions. Objectives of the study were to investigate the spatial and temporal variability of surface microbial assemblage diversity and function in response to mesoscale eddies north of the Hawaiian Islands.
+
+.. mdinclude:: ../dataset_descriptions/KOK1607_HOE_legacy_4_Dyhrman_Omics_desc.md
+    :start-line: 0
 
 
 Table of Variables

@@ -11,40 +11,6 @@ Particulate Cobalamins for the KM1314 Cruise
    :scale: 10%
    :align: middle
 
-.. |globe| image:: /_static/catalog_thumbnails/globe.png
-  :scale: 10%
-  :align: middle
-
-.. |sm| image:: /_static/tutorial_pics/sparse_mapping.png
-  :align: middle
-  :scale: 10%
-  :target: ../../tutorials/regional_map_sparse.html
-
-
-.. |ts| image:: /_static/tutorial_pics/TS.png
-  :align: middle
-  :scale: 25%
-  :target: ../../tutorials/time_series.html
-
-.. |hst| image:: /_static/tutorial_pics/hist.png
-  :align: middle
-  :scale: 25%
-  :target: ../../tutorials/histogram.html
-
-.. |sec| image:: /_static/tutorial_pics/section.png
-  :align: middle
-  :scale: 20%
-  :target: ../../tutorials/section.html
-
-.. |dep| image:: /_static/tutorial_pics/depth_profile.png
-  :align: middle
-  :scale: 25%
-  :target: ../../tutorials/depth_profile.html
-
-.. |edy| image:: /_static/tutorial_pics/eddy_sampling.png
-  :align: middle
-  :scale: 25%
-  :target: ../../tutorials/eddy.html
 
 
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
@@ -56,11 +22,8 @@ Particulate Cobalamins for the KM1314 Cruise
 Dataset Description
 *******************
 
-This dataset contains cobalamin and pseudocobalamin concentrations sampled from the KM1314 Cruise.
-Sampled particulate material (> 0.2µm) were analyzed for cobalmins using an organic solvent extraction paired with LC-MS. Details of this process can be found in Heal et al. 2014.
-The KM1314 cruise abroad the R/V Kilo Moana traveled from Seattle to the North Pacific and then South to Honolulu.
-
-
+.. mdinclude:: ../dataset_descriptions/km1314_cobalamines_desc.md
+    :start-line: 0
 
 
 Table of Variables

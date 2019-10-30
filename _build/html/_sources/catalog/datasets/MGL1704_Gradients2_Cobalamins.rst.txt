@@ -11,9 +11,6 @@ Particulate Cobalamins for the MGL1704 Cruise
    :scale: 10%
    :align: middle
 
-.. |globe| image:: /_static/catalog_thumbnails/globe.png
-  :scale: 10%
-  :align: middle
 
 
 
@@ -26,7 +23,9 @@ Particulate Cobalamins for the MGL1704 Cruise
 Dataset Description
 *******************
 
-This dataset contains particulate cobalamin and pseudocobalamin concentrations collected from the MGL1704/Gradients 2 cruise.
+.. mdinclude:: ../dataset_descriptions/MGL1704_Gradients2_Cobalamins_desc.md
+    :start-line: 0
+
 
 Table of Variables
 ******************

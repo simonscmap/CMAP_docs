@@ -11,9 +11,6 @@ Particulate Cobalamins for the KOK1606 Cruise
    :scale: 10%
    :align: middle
 
-.. |globe| image:: /_static/catalog_thumbnails/globe.png
-  :scale: 10%
-  :align: middle
 
 
 
@@ -26,8 +23,8 @@ Particulate Cobalamins for the KOK1606 Cruise
 Dataset Description
 *******************
 
-This dataset contains particulate cobalamin and pseudocobalamin concentrations collected from the KM1314/Gradients 1 Scope cruise.
-
+.. mdinclude:: ../dataset_descriptions/KOK1606_Gradients1_Cobalamine_desc.md
+    :start-line: 0
 
 Table of Variables
 ******************

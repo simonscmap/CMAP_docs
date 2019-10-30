@@ -11,9 +11,6 @@ KM1709 Mesoscope Cruise CTD
    :scale: 10%
    :align: middle
 
-.. |globe| image:: /_static/catalog_thumbnails/globe.png
-  :scale: 10%
-  :align: middle
 
 
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
@@ -25,7 +22,8 @@ KM1709 Mesoscope Cruise CTD
 Dataset Description
 *******************
 
-2017 Microbial Ecology of the Surface Ocean - SCOPE, Downcast CTD Data
+.. mdinclude:: ../dataset_descriptions/KM1709_mesoscope_ctd_desc.md
+    :start-line: 0
 
 Table of Variables
 ******************

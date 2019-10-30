@@ -1,0 +1,1 @@
+This dataset was collected aboard Hawaii Ocean Time-series cruise 273 in June 2015. Samples contain a collection of size fractions including whole seawater, 200µm, 80µm, 5µm, & 0.7µm. Total RNA extracted from filter. RNA was reverse transcribed to cDNA. cDNA product was PCR amplified using 18S-V4 primers.

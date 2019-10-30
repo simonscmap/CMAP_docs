@@ -26,7 +26,9 @@ Targeted Metabolites for the KOK1606 Cruise
 Dataset Description
 *******************
 
-These are particulate metabolite concentrations in pmol/L.  The samples were collected on cruise KOK1606 from underway seawater intake and CTD rosette.  Samples were extracted using Boysen et al 2018 and run on the Q-Exactive mass spectrometer in full scan mode as in Boysen et al 2018.
+.. mdinclude:: ../dataset_descriptions/KOK1606_Gradients1_TargetedMetabolites_desc.md
+    :start-line: 0
+
 
 
 Table of Variables

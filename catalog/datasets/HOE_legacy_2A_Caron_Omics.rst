@@ -27,7 +27,8 @@ Hoe Legacy 2A Metagenoimics - Caron Lab
 Dataset Description
 *******************
 
-These datasets are from the SCOPE diel cruise Hoe Legacy 2A conducted in July 2015. The goal was to reveal diel rhythmicity in the metabolic activity of single-celled microbial eukaryotes (protists) within an eddy in the North Pacific Subtropical Gyre by environmental collection, PCR amplification and sequencing of the 18S V4 region. As well as four metatranscriptomes targeting eukaryotic gene expression from different depths aimed at understanding important metabolic processes in different pelagic zones.
+.. mdinclude:: ../dataset_descriptions/HOE_legacy_2A_Caron_Omics_desc.md
+    :start-line: 0
 
 Table of Variables
 ******************

@@ -1,0 +1,1 @@
+The objective of the cruise was to conduct water-column observations and sampling within an anticyclonic eddy to the north of the Hawaiian Islands. Surface drifters were deployed to track the eddy, and water- column sampling was conducted using the CTD-rosettes alongside the drifters for the duration of the cruise. The SVP drifter locations were transmitted every 30 mins.

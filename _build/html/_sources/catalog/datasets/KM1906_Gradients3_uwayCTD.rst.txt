@@ -12,9 +12,6 @@ KM1906 Gradients 3 Underway CTD
    :scale: 10%
    :align: middle
 
-.. |globe| image:: /_static/catalog_thumbnails/globe.png
-  :scale: 10%
-  :align: middle
 
 
 
@@ -27,7 +24,8 @@ KM1906 Gradients 3 Underway CTD
 Dataset Description
 *******************
 
-This dataset is a compilation of underway CTD casts from the KM1906 Gradients 3 SCOPE cruise. Variables include temperature, salinity, adjusted salinity, density, fluorescense, turbidity, oxygen, oxygen saturation and CTD cast number. The KM1906/Gradients 3 cruise traveled from Hawaii to the north Pacific and back in April of 2019.
+.. mdinclude:: ../dataset_descriptions/KM1906_Gradients3_uwayCTD_desc.md
+    :start-line: 0
 
 Table of Variables
 ******************
