@@ -1,10 +1,10 @@
 :orphan:
 
-.. _hoe_legacy2a_caron:
+.. _HOT224:
 
-HOE Legacy 2A Metagenoimics - Caron Lab
-***************************************
 
+HOT 224 Cruise
+**************
 
 
 
@@ -12,45 +12,43 @@ HOE Legacy 2A Metagenoimics - Caron Lab
    :scale: 10%
    :align: middle
 
-.. |globe| image:: /_static/catalog_thumbnails/globe.png
-  :scale: 10%
-  :align: middle
 
 
 
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 | Dataset Name                  | Sensor   |  Make       |  Spatial Resolution    |Temporal Resolution|  Start Date         |  End Date           |
 +===============================+==========+=============+========================+===================+=====================+=====================+
-|:ref:`hoe_legacy2a_caron`      | |cruise| | Observation |     Irregular          |        Irregular  | 2015-07-30 18:00:00 | 2015-08-03 18:00:00 |
+|:ref:`HOT224`                  ||cruise|  | Observation |     Irregular          |        Irregular  | 2010-08-07          |   2010-08-08        |
 +-------------------------------+----------+-------------+------------------------+-------------------+---------------------+---------------------+
 
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/HOE_legacy_2A_Caron_Omics_desc.md
+.. mdinclude:: ../dataset_descriptions/HOT_224_desc.md
     :start-line: 0
+
 
 Table of Variables
 ******************
 
 .. raw:: html
 
-    <iframe src="../../_static/var_tables/tblHOE_legacy_2A_Caron_Omics/tblHOE_legacy_2A_Caron_Omics.html"  frameborder = 0 height = '150px' width="100%">></iframe>
+    <iframe src="../../_static/var_tables/tblHOT224/tblHOT224.html"  frameborder = 0 height = '300px' width="100%">></iframe>
 
 |
 
 Data Source
 ***********
 
-Caron lab, University of Southern California
+University of Hawaii, Manoa
+
 
 How to Acknowledge
 ******************
 
-https://www.ncbi.nlm.nih.gov/sra/?term=SRP111188, https://www.ncbi.nlm.nih.gov/sra/?term=SRP117938
-
+http://scope.soest.hawaii.edu/data/hot/
 
 Version History
 ***************
 
-SRP111188, SRP117938
+Initial Version

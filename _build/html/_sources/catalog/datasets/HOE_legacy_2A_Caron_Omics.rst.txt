@@ -2,7 +2,7 @@
 
 .. _hoe_legacy2a_caron:
 
-Hoe Legacy 2A Metagenoimics - Caron Lab
+HOE Legacy 2A Metagenoimics - Caron Lab
 ***************************************
 
 

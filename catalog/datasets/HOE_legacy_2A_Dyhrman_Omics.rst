@@ -2,7 +2,7 @@
 
 .. _hoe_legacy_2A_dyhrman:
 
-Hoe Legacy 2A 'Omics - Dyhrman Lab
+HOE Legacy 2A 'Omics - Dyhrman Lab
 **********************************
 
 
