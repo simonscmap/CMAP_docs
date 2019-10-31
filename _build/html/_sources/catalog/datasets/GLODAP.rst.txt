@@ -41,7 +41,7 @@ Table of Variables
 Data Source
 ***********
 
-https://doi.org/10.7289/v5kw5d97  - Date Accessed: July 18, 2019
+Data provided by: National Oceanic and Atmospheric Administration - https://doi.org/10.7289/v5kw5d97  - Date Accessed: July 18, 2019
 
 How to Acknowledge
 ******************
@@ -54,4 +54,4 @@ Version History
 ***************
 
 
-**V1.1**
+**V2**

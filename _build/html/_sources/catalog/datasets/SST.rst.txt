@@ -61,6 +61,10 @@ https://podaac-tools.jpl.nasa.gov/drive/files/OceanTemperature/ghrsst/docs/GDS20
 How to Acknowledge
 ******************
 
+
+JPL OurOcean Project. 2010. GHRSST Level 4 G1SST Global Foundation Sea Surface Temperature Analysis. Ver. 1. PO.DAAC, CA, USA.  https://doi.org/10.5067/GHG1S-4FP01.
+
+
 http://dx.doi.org/10.5067/GHAAO-4BC02
 
 National Centers for Environmental Information. 2016. GHRSST Level 4 AVHRR_OI Global Blended Sea Surface Temperature Analysis (GDS version 2) from NCEI. Ver. 2.0. PO.DAAC, CA, USA.  https://doi.org/10.5067/GHAAO-4BC02.

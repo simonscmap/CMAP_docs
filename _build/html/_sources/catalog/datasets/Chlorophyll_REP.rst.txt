@@ -59,7 +59,7 @@ http://resources.marine.copernicus.eu/documents/PUM/CMEMS-OC-PUM-009-ALL.pdf
 How to Acknowledge
 ******************
 
-E.U. Copernicus Marine Service Information
+Data provided by: E.U. Copernicus Marine Service Information
 
 
 *Volpe, G., S. Colella, V. Forneris, C. Tronconi, and R. Santoleri: The Mediterranean
