@@ -53,9 +53,7 @@ Table of Variables
 Data Source
 ***********
 
-National Oceanic and Atmospheric Administration Atlantic Oceanography and Meteorological Laboratory
-
-https://www.aoml.noaa.gov/phod/gdp/index.php
+Data provided by: National Oceanic and Atmospheric Administration Atlantic Oceanography and Meteorological Laboratory - https://www.aoml.noaa.gov/phod/gdp/index.php
 
 How to Acknowledge
 ******************

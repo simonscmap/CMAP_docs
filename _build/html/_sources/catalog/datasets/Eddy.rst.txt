@@ -52,7 +52,7 @@ How to Acknowledge
 ******************
 
 
-The altimeter the Mesoscale Eddy Trajectory Atlas products were produced by SSALTO/DUACS and distributed by AVISO+ (https://www.aviso.altimetry.fr/ ) with support from CNES, in collaboration with Oregon State University with support from NASA
+The Mesoscale Eddy Trajectory Atlas products were produced by SSALTO/DUACS and distributed by AVISO+ (https://www.aviso.altimetry.fr/ ) with support from CNES, in collaboration with Oregon State University with support from NASA
 
 
 Dudley B. Chelton, Michael G. Schlax, Roger M. Samelson,

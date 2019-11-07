@@ -42,7 +42,7 @@ Table of Variables
 Data Source
 ***********
 
-François Ribalet, Annette Hynes and Chris Berthiaume, Armbrust lab, University of Washington
+Data provided by: François Ribalet, Annette Hynes and Chris Berthiaume, Armbrust lab, University of Washington
 
 How to Acknowledge
 ******************

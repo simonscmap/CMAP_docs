@@ -55,8 +55,10 @@ The primers used by Milici et al. (2016) are prokaryotic-specific, and do have m
 
 Data Source
 ***********
-| Jed Fuhrman lab, USC
-| Jesse McNichol (mcnichol@alum.mit.edu)
+
+Data provided by: Jesse McNichol (mcnichol@alum.mit.edu) & Jed Fuhrman lab, USC
+
+
 
 How to Acknowledge
 ******************
