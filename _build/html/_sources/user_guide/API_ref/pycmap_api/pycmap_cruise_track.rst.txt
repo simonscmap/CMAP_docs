@@ -30,13 +30,13 @@ Cruise Track Plot
     |
 
     :Parameters:
-        **cruiseName: string**
-            The official cruise name. If applicable, you may also use cruise
+        **cruiseName: list of string**
+            A list of cruise official names. If applicable, you may also use cruise
             "nickname" ('Diel', 'Gradients_1' ...). A full list of cruise names can
             be retrieved using `cruises()`_ method.
 
 
-    :returns\:: list of graph objects
+    :returns\:: void
         This method has no returns.
 
 |
