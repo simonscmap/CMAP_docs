@@ -1,0 +1,1 @@
+The Combined Cruise Salinity dataset in CMAP is a collection of in-situ cruise collected salinity records. The two initial sources are from the SeaFlow associated cruises and the BODC-AMT cruises. Data is uncalibrated and in units of PSU.

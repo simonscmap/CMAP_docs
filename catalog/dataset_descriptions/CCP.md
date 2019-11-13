@@ -1,0 +1,1 @@
+The Combined Cruise PAR dataset in CMAP is a collection of in-situ cruise collected PAR (Photosynthetically active radiation) records. The two initial sources are from the SeaFlow associated cruises and the BODC-AMT cruises. Data is uncalibrated.

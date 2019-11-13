@@ -10,11 +10,8 @@
 
 .. _template: https://github.com/mdashkezari/opedia/tree/master/template
 
-.. _Github: https://github.com/mdashkezari/opedia
-
 .. _Slack: https://join.slack.com/t/simons-cmap/shared_invite/enQtNjQzMTkzMjg0NjQ2LWE4N2FjNDAwMjdiNzU0MGU4OTUzMGE4YWE5MjQwNGY2MjVlZTE2MTE3ZWNiOTAyY2E5ZDUxYzYwMGZhYWUwZjg
 
-.. .. _Gitter:
 
 
 
@@ -137,16 +134,19 @@ Second Sheet: "dataset_meta_data"
 1. **dataset_short_name**: dataset short name
     - type: string
     - length: <50 chars
+    - Short, human readable name of your dataset. Ex: Darwin_3_Day_Ecosystem
 
 2. **dataset_long_name**: descriptive dataset name
 
     - type: string
     - length: <500 chars
+    - Descriptive human readable name of your dataset: Darwin 3 Day Averaged Ecosystem Characteristics
 
 3. **dataset_version**: dataset version
 
     - type: string
     - length: <50 chars
+    - ex: V1
 
 4. **dataset_release_date**: dataset release date
 
@@ -173,7 +173,7 @@ Second Sheet: "dataset_meta_data"
     - type: string
     - length: <100 chars
 
-9. **dataset_description**: any additional descriptions
+9. **dataset_description**: A description of your dataset detailing collection and processing methodology.
 
     - type: string
     - length: no limit
@@ -205,11 +205,13 @@ Third Sheet: "vars_meta_data"
 
     - type: string
     - length: <50 chars
+    - Computer-readable short name. Should not contain any leading numbers, special characters (ex: '&') or spaces. Ex: SST
 
 2. **var_long_name**: descriptive variable name
 
     - type: string
     - length: <500 chars
+    - Human readable variable name. Think of this as a common name for the variable. Ex: Sea Surface Temperature
 
 3. **var_standard_name**: standard variable name (more details in CF Conventions and COARDS Conventions)
 
@@ -220,12 +222,13 @@ Third Sheet: "vars_meta_data"
 
     - type: string
     - length: <50 chars
+    - Prefer symbols to descriptions. Ex: "/" is better than "per"
 
 5. **var_sensor**: device by which variable is measured
 
     - type: string
     - length: <50 chars
-    - examples: [satellite, cruise_name, simulation, ...]
+    - examples: [satellite, in-situ, blen, flow cytometry, CTD, underway CTD, Optical, Float, Drifter, AUV etc..]
 
 6. **var_spatial_res**: variable spatial resolution
 
@@ -251,7 +254,7 @@ Third Sheet: "vars_meta_data"
     - length: <100 chars
     - examples: [Physics, Chemistry, Biology, BioGeoChemistry, ...]
 
-10. **var_keywords**: keywords pertinent to the variable (separated by comma)
+10. **var_keywords**: keywords pertinent to the variable (separated by comma).
 
     - type: string
     - length: <500 chars
@@ -260,8 +263,7 @@ Third Sheet: "vars_meta_data"
 
 .. note:: **Keywords are variable-specific and case-insensitive. Please separate each keyword by comma. The suggested format for each variable keyword list is:**
 
-    - var_short_name
-    - var_long_name
+
     - Example keywords related to any official or unofficial variable names:   pro / prochloro / ...
     - Example keywords related to sensor/apparatus:  cruise / satellite / computer (in case of mode) / SeaFlow / ....
     - Example keywords related to official or unofficial cruise names (if applicable): KM1427 / Gradients 2.0 / ....
@@ -274,7 +276,7 @@ Third Sheet: "vars_meta_data"
 
     **Keyword Example for <proprochloro_abundance> variable in the SeaFlow Dataset:**
 
-    - prochloro_abundance, Prochlorococcus Abundance , seaflow, pro, prochloro, prochlorococcus, flow, cytometry, flow-cytometry, insitu, in-situ, cruise,  observation, rep, reprocessed, bio, biology, armbrust, UW, abundance,cell abundance
+    - pro, prochloro, prochlorococcus, seaflow, flow, cytometry, flow-cytometry, insitu, in-situ, cruise,  observation, rep, reprocessed, bio, biology, armbrust, UW, University of Washington, abundance,cell abundance
 
 
 11. **var_comment**: any other comment about the variable

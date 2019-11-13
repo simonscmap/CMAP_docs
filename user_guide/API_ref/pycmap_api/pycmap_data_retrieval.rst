@@ -16,6 +16,8 @@ The methods below can be used to retrieve metadata and to query, subset and colo
 +-------------------------------+--------------------------------------------------------------+
 | :ref:`getcatalog`             |       Retrieve Catalog                                       |
 +-------------------------------+--------------------------------------------------------------+
+| :ref:`searchCatalog`          |       Search Catalog by Keyword                              |
++-------------------------------+--------------------------------------------------------------+
 | :ref:`Dataset_list`           |       Retrieve List of Datasets                              |
 +-------------------------------+--------------------------------------------------------------+
 | :ref:`metadata`               |       Retrieve Metadata                                      |
@@ -72,6 +74,7 @@ The methods below can be used to retrieve metadata and to query, subset and colo
   pycmap_api
   pycmap_query
   pycmap_catalog
+  pycmap_search_catalog
   pycmap_dataset
   pycmap_metadata
   pycmap_dataset_columns

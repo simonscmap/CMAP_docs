@@ -359,6 +359,7 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <dt><strong>dataset_short_name</strong>: dataset short name</dt><dd><ul class="simple">
 <li><p>type: string</p></li>
 <li><p>length: &lt;50 chars</p></li>
+<li><p>Short, human readable name of your dataset. Ex: Darwin_3_Day_Ecosystem</p></li>
 </ul>
 </dd>
 </dl>
@@ -368,6 +369,7 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <div><ul class="simple">
 <li><p>type: string</p></li>
 <li><p>length: &lt;500 chars</p></li>
+<li><p>Descriptive human readable name of your dataset: Darwin 3 Day Averaged Ecosystem Characteristics</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -376,6 +378,7 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <div><ul class="simple">
 <li><p>type: string</p></li>
 <li><p>length: &lt;50 chars</p></li>
+<li><p>ex: V1</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -419,7 +422,7 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 </ul>
 </div></blockquote>
 </li>
-<li><p><strong>dataset_description</strong>: any additional descriptions</p>
+<li><p><strong>dataset_description</strong>: A description of your dataset detailing collection and processing methodology.</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>type: string</p></li>
@@ -485,6 +488,7 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <div><ul class="simple">
 <li><p>type: string</p></li>
 <li><p>length: &lt;50 chars</p></li>
+<li><p>Computer-readable short name. Should not contain any leading numbers, special characters (ex: ‘&amp;’) or spaces. Ex: SST</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -493,6 +497,7 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <div><ul class="simple">
 <li><p>type: string</p></li>
 <li><p>length: &lt;500 chars</p></li>
+<li><p>Human readable variable name. Think of this as a common name for the variable. Ex: Sea Surface Temperature</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -509,6 +514,7 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <div><ul class="simple">
 <li><p>type: string</p></li>
 <li><p>length: &lt;50 chars</p></li>
+<li><p>Prefer symbols to descriptions. Ex: “/” is better than “per”</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -517,7 +523,7 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <div><ul class="simple">
 <li><p>type: string</p></li>
 <li><p>length: &lt;50 chars</p></li>
-<li><p>examples: [satellite, cruise_name, simulation, …]</p></li>
+<li><p>examples: [satellite, in-situ, blen, flow cytometry, CTD, underway CTD, Optical, Float, Drifter, AUV etc..]</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -557,7 +563,7 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 </ul>
 </div></blockquote>
 </li>
-<li><p><strong>var_keywords</strong>: keywords pertinent to the variable (separated by comma)</p>
+<li><p><strong>var_keywords</strong>: keywords pertinent to the variable (separated by comma).</p>
 <ul class="simple">
 <li><p>type: string</p></li>
 <li><p>length: &lt;500 chars</p></li>
@@ -570,8 +576,6 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <p class="admonition-title">Note</p>
 <p><strong>Keywords are variable-specific and case-insensitive. Please separate each keyword by comma. The suggested format for each variable keyword list is:</strong></p>
 <ul class="simple">
-<li><p>var_short_name</p></li>
-<li><p>var_long_name</p></li>
 <li><p>Example keywords related to any official or unofficial variable names:   pro / prochloro / …</p></li>
 <li><p>Example keywords related to sensor/apparatus:  cruise / satellite / computer (in case of mode) / SeaFlow / ….</p></li>
 <li><p>Example keywords related to official or unofficial cruise names (if applicable): KM1427 / Gradients 2.0 / ….</p></li>
@@ -583,7 +587,7 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 </ul>
 <p><strong>Keyword Example for &lt;proprochloro_abundance&gt; variable in the SeaFlow Dataset:</strong></p>
 <ul class="simple">
-<li><p>prochloro_abundance, Prochlorococcus Abundance , seaflow, pro, prochloro, prochlorococcus, flow, cytometry, flow-cytometry, insitu, in-situ, cruise,  observation, rep, reprocessed, bio, biology, armbrust, UW, abundance,cell abundance</p></li>
+<li><p>pro, prochloro, prochlorococcus, seaflow, flow, cytometry, flow-cytometry, insitu, in-situ, cruise,  observation, rep, reprocessed, bio, biology, armbrust, UW, University of Washington, abundance,cell abundance</p></li>
 </ul>
 </div>
 <ol class="arabic simple" start="11">
@@ -611,7 +615,7 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
     <p>
         &copy; Copyright 2019, Mohammad Dehghani Ashkezari &amp; Norland Raphael Hagen
       <span class="lastupdated">
-        Last updated on Nov 12, 2019.
+        Last updated on Nov 13, 2019.
       </span>
 
     </p>
