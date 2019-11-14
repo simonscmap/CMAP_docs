@@ -34,9 +34,9 @@ Data Subset: Generic Space-Time Cut
         **lat2: float**
             End latitude [degree N]. This parameter sets the upper bound of the meridional cut. Note latitude ranges from -90° to 90°.
         **lon1: float**
-            Start longitude [degree E]. This parameter sets the lower bound of the zonal cut. Note latitude ranges from -180° to 180°.
+            Start longitude [degree E]. This parameter sets the lower bound of the zonal cut. Note longitude ranges from -180° to 180°.
         **lon2: float**
-            End longitude [degree E]. This parameter sets the upper bound of the zonal cut. Note latitude ranges from -180° to 180°.
+            End longitude [degree E]. This parameter sets the upper bound of the zonal cut. Note longitue ranges from -180° to 180°.
         **depth1: float**
             Start depth [m]. This parameter sets the lower bound of the vertical cut. Note depth is a positive number (it is 0 at surface and grows towards ocean floor).
         **depth2: float**
