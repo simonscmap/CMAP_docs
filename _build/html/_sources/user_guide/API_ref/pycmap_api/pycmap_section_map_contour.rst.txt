@@ -17,6 +17,8 @@ Section Map, Section Contour
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
    :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/Viz_Section.ipynb
 
+.. image:: https://mybinder.org/badge_logo.svg
+   :target: https://mybinder.org/v2/gh/simonscmap/pycmap/master?filepath=docs%2FViz_Section.ipynb
 
 
 

@@ -11,6 +11,9 @@ Variable Stat
    :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/Stat.ipynb
 
 
+.. image:: https://mybinder.org/badge_logo.svg
+   :target: https://mybinder.org/v2/gh/simonscmap/pycmap/master?filepath=docs%2FStat.ipynb
+
 .. method:: get_var_stat(tableName, varName)
 
 

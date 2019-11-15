@@ -10,6 +10,9 @@ Variable Long Name
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
    :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/LongName.ipynb
 
+.. image:: https://mybinder.org/badge_logo.svg
+   :target: https://mybinder.org/v2/gh/simonscmap/pycmap/master?filepath=docs%2FLongName.ipynb
+
 
 .. method:: get_var_long_name(tableName, varName)
 

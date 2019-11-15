@@ -11,6 +11,10 @@ Depth Profile
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
    :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/Viz_DepthProfile.ipynb
 
+.. image:: https://mybinder.org/badge_logo.svg
+   :target: https://mybinder.org/v2/gh/simonscmap/pycmap/master?filepath=docs%2FViz_DepthProfile.ipynb
+
+
 .. _API key: pycmap_api.html
 .. _APIs parameters: pycmap_api.html
 .. _APIs vizEngine: pycmap_api.html

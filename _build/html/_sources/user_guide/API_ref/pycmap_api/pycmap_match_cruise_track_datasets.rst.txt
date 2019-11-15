@@ -14,6 +14,10 @@ Match (colocalize) Cruise Track with Datasets
    :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/MatchCruise.ipynb
 
 
+.. image:: https://mybinder.org/badge_logo.svg
+   :target: https://mybinder.org/v2/gh/simonscmap/pycmap/master?filepath=docs%2FMatchCruise.ipynb
+
+
 .. method:: along_track(cruise, targetTables, targetVars, depth1, depth2, temporalTolerance, latTolerance, lonTolerance, depthTolerance)
 
 

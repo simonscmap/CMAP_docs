@@ -9,6 +9,8 @@ Cruise Spatio-Tempoal Bounds
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
    :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/CruiseBounds.ipynb
 
+.. image:: https://mybinder.org/badge_logo.svg
+   :target: https://mybinder.org/v2/gh/simonscmap/pycmap/master?filepath=docs%2FCruiseBounds.ipynb
 
 .. method:: cruise_bounds(cruiseName)
 

@@ -14,6 +14,9 @@ Data Visualization
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
    :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/Viz.ipynb
 
+.. image:: https://mybinder.org/badge_logo.svg
+   :target: https://mybinder.org/v2/gh/simonscmap/pycmap/master?filepath=docs%2FViz.ipynb
+
 
 
 The main focus of pycmap (and the broader Simons CMAP project) is to

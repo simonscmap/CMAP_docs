@@ -9,6 +9,9 @@ Match (colocalize) Datasets
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
    :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/Match.ipynb
 
+.. image:: https://mybinder.org/badge_logo.svg
+   :target: https://mybinder.org/v2/gh/simonscmap/pycmap/master?filepath=docs%2FMatch.ipynb
+
 
 .. method:: match(sourceTable, sourceVar, targetTables, targetVars, dt1, dt2, lat1, lat2, lon1, lon2, depth1, depth2, temporalTolerance, latTolerance, lonTolerance, depthTolerance)
 
@@ -192,5 +195,3 @@ Darwin model first depth level is at 5 m (not 0), and so ±5 meter vertical tole
   plt.xlabel('picoprokaryote' + api.get_unit('tblDarwin_Phytoplankton', 'picoprokaryote'))
   plt.ylabel('Me_PseudoCobalamin_Particulate_pM' + api.get_unit('tblKM1314_Cobalmins', 'Me_PseudoCobalamin_Particulate_pM'))
   plt.show()
-
-  

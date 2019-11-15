@@ -10,6 +10,10 @@ Data Subset: Depth Profile
    :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/DepthProfile.ipynb
 
 
+.. image:: https://mybinder.org/badge_logo.svg
+   :target: https://mybinder.org/v2/gh/simonscmap/pycmap/master?filepath=docs%2FDepthProfile.ipynb
+
+
 .. method:: depth_profile(table, variable, dt1, dt2, lat1, lat2, lon1, lon2, depth1, depth2)
 
 

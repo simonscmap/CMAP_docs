@@ -9,6 +9,9 @@ Data Subset: Time Series
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
    :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/TimeSeries.ipynb
 
+.. image:: https://mybinder.org/badge_logo.svg
+   :target: https://mybinder.org/v2/gh/simonscmap/pycmap/master?filepath=docs%2FTimeSeries.ipynb
+
 
 .. method:: time_series(table, variable, dt1, dt2, lat1, lat2, lon1, lon2, depth1, depth2, interval=None)
 
