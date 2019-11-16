@@ -63,6 +63,7 @@ What is an API Key and how do I get one?
 ----------------------------------------
 
 An API Key is a unique identifier that allows Simons CMAP to track usage metrics.
+
 An API key can be obtained through the registration form at: https://simonscmap.com/apikeymanagement
 The API key will allow you to use both the `pycmap Python application`_ and the `Web Application`_.
 

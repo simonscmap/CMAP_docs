@@ -3,7 +3,7 @@
 
 .. _cmap4r: https://github.com/simonscmap/cmap4r
 
-.. _Slack: https://join.slack.com/t/simons-cmap/shared_invite/enQtNjQzMTkzMjg0NjQ2LWE4N2FjNDAwMjdiNzU0MGU4OTUzMGE4YWE5MjQwNGY2MjVlZTE2MTE3ZWNiOTAyY2E5ZDUxYzYwMGZhYWUwZjg
+.. _Slack: https://join.slack.com/t/simons-cmap/shared_invite/enQtNjQzMTkzMjg0NjQ2LTdlOGRhZjNhMDY3MjRlNjg2OTY5NzE3ZWZhNWE0OWZhYmQzMTJjNDkyNDQ1MjNkZDg0N2MzMzhlZDliNGYxYzQ
 
 
 Contact and Contribute
