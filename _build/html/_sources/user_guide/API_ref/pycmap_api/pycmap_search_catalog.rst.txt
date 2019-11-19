@@ -83,3 +83,20 @@ Returns a list of optical measurements during the Gradients 1 cruise (KOK1606), 
 
   api = pycmap.API(token='<YOUR_API_KEY>')
   api.search_catalog('optics KOK1606')
+
+.. figure:: ../../../_static/overview_icons/sql.png
+ :scale: 10 %
+
+**SQL Statement**
+
+Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
+
+.. code-block::
+
+   EXEC uspSearchCatalog 'space-separated keywords'
+
+**Example:**
+List of satellite Chlorophyll products:
+.. code-block::
+
+   EXEC uspSearchCatalog 'chl satellite'

@@ -122,3 +122,39 @@ The last few lines of code (lines 28-32) makes a simple plot to visualize the re
   plt.xlabel('Year')
   plt.ylabel(api.get_var_long_name(table, variable) + api.get_unit(table, variable))
   plt.show()
+
+
+.. figure:: ../../../_static/overview_icons/sql.png
+ :scale: 10 %
+
+**SQL Statement**
+
+Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
+
+.. code-block::
+
+   EXEC uspTimeSeries 'tableName', 'variable', 'dt1', 'dt2', 'lat1', 'lat2', 'lon1', 'lon2', 'depth1', 'depth2'
+
+**Examples (different intervals):**
+
+.. code-block::
+
+   EXEC uspTimeSeries 'tblsst_AVHRR_OI_NRT', 'sst', '2016-01-01', '2016-12-31', '20', '25', '-160', '-158', '0', '0'
+
+.. code-block::
+
+   EXEC uspWeekly 'tblsst_AVHRR_OI_NRT', 'sst', '2016-01-01', '2016-12-31', '20', '25', '-160', '-158', '0', '0'
+
+.. code-block::
+
+   EXEC uspMonthly 'tblsst_AVHRR_OI_NRT', 'sst', '2016-01-01', '2016-12-31', '20', '25', '-160', '-158', '0', '0'
+
+.. code-block::
+
+   EXEC uspQuarterly 'tblsst_AVHRR_OI_NRT', 'sst', '2016-01-01', '2016-12-31', '20', '25', '-160', '-158', '0', '0'
+
+.. code-block::
+
+   EXEC uspAnnual 'tblsst_AVHRR_OI_NRT', 'sst', '2015-01-01', '2018-12-31', '20', '25', '-160', '-158', '0', '0'
+
+   

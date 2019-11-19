@@ -47,3 +47,22 @@ Metadata
 
   api = pycmap.API(token='<YOUR_API_KEY>')
   api.get_metadata(['tblsst_AVHRR_OI_NRT', 'tblArgoMerge_REP'], ['sst', 'argo_merge_salinity_adj'])
+
+
+.. figure:: ../../../_static/overview_icons/sql.png
+ :scale: 10 %
+
+**SQL Statement**
+
+Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
+
+.. code-block::
+
+   EXEC uspVariableMetaData 'table', 'variable'
+
+**Example:**
+Metadata associated with Argo salinity measurements:
+
+.. code-block::
+
+   EXEC uspVariableMetaData 'tblArgoMerge_REP', 'argo_merge_salinity_adj'

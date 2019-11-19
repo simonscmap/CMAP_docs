@@ -209,8 +209,11 @@
 <dl class="method">
 <dt id="is_grid">
 <code class="sig-name descname">is_grid</code><span class="sig-paren">(</span><em class="sig-param">tableName</em>, <em class="sig-param">varName</em><span class="sig-paren">)</span><a class="headerlink" href="#is_grid" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns True if the specified variable represents a gridded product; otherwise returns False. For instance, model outputs or satellite products in form of structured arrays are considered gridded products, while underway cruise measurements with irregular spatial or temporal resolutions are considered “sparse” products.</p>
-<div class="line-block">
+<dd></dd></dl>
+
+<dl>
+<dt>Returns True if the specified variable represents a gridded product; otherwise returns False. For instance, model outputs or satellite products in form of structured arrays are considered gridded products,</dt><dd><dl>
+<dt>while underway cruise measurements with irregular spatial or temporal resolutions are considered “sparse” products.</dt><dd><div class="line-block">
 <div class="line"><br /></div>
 </div>
 <dl class="field-list simple">
@@ -218,16 +221,18 @@
 <dd class="field-odd"><dl class="simple">
 <dt><strong>tableName: string</strong></dt><dd><p>The name of table associated with the dataset. A full list of table names can be found in the <a class="reference internal" href="../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
 </dd>
-<dt><strong>variable: string or list of string</strong></dt><dd><p>Variable short name. A full list of variable short names can be found in the <a class="reference internal" href="../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
+<dt><strong>varName: string or list of string</strong></dt><dd><p>Variable short name. A full list of variable short names can be found in the <a class="reference internal" href="../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns:</dt>
+<dt class="field-even">returns:</dt>
 <dd class="field-even"><p>Boolean.</p>
 </dd>
 </dl>
-</dd></dl>
-
+</dd>
+</dl>
+</dd>
+</dl>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -255,7 +260,7 @@
     <p>
         &copy; Copyright 2019, Mohammad Dehghani Ashkezari &amp; Norland Raphael Hagen
       <span class="lastupdated">
-        Last updated on Nov 15, 2019.
+        Last updated on Nov 19, 2019.
       </span>
 
     </p>

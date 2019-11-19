@@ -415,6 +415,50 @@ columns to the final dataframe:
 <span class="c1">#!ls</span>
 </pre></div>
 </div>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../../../_images/sql.png"><img alt="../../../_images/sql.png" src="../../../_images/sql.png" style="width: 51.2px; height: 51.2px;" /></a>
+</div>
+<p><strong>SQL Statement</strong></p>
+<p>Here is how to achieve the same results using a direct SQL statement. Please refer to <a class="reference internal" href="pycmap_query.html#query"><span class="std std-ref">Query</span></a> for more information.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">EXEC</span> <span class="n">uspMatch</span>
+  <span class="s1">&#39;sourceTable&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;sourceVariable&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;targetTables&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;targetVariables&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;dt1&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;dt2&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;lat1&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;lat2&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;lon1&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;lon2&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;depth1&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;depth2&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;timeTolerance&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;latTolerance&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;lonTolerance&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;depthTolerance&#39;</span>
+</pre></div>
+</div>
+<p><strong>Example:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">EXEC</span> <span class="n">uspMatch</span>
+  <span class="s1">&#39;tblKM1314_Cobalmins&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;Me_PseudoCobalamin_Particulate_pM&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;tblDarwin_Phytoplankton&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;picoprokaryote&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;2013-08-09 00:00:00&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;2013-09-07 00:00:00&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;22.25&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;50.25&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;-159.25&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;-127.75&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;-5&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;305&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;2&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;0.25&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;0.25&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;5&#39;</span>
+</pre></div>
+</div>
 </div>
 </div>
 
@@ -431,7 +475,7 @@ columns to the final dataframe:
     <p>
         &copy; Copyright 2019, Mohammad Dehghani Ashkezari &amp; Norland Raphael Hagen
       <span class="lastupdated">
-        Last updated on Nov 15, 2019.
+        Last updated on Nov 19, 2019.
       </span>
 
     </p>

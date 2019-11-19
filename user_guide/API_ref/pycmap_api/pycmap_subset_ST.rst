@@ -162,3 +162,19 @@ A simple plot is made to visualize the retrieved data.
                      depth2=0
                      )
   plot(df)
+
+.. figure:: ../../../_static/overview_icons/sql.png
+ :scale: 10 %
+
+**SQL Statement**
+
+Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
+
+.. code-block::
+
+   EXEC uspSpaceTime 'tableName', 'variable', 'dt1', 'dt2', 'lat1', 'lat2', 'lon1', 'lon2', 'depth1', 'depth2'
+
+**Example:**
+.. code-block::
+
+   EXEC uspSpaceTime 'tblsst_AVHRR_OI_NRT', 'sst', '2016-04-30', '2016-04-30', '10', '70', '-180', '80', '0', '0'

@@ -41,3 +41,21 @@ Cruise Trajectory
 
   api = pycmap.API(token='<YOUR_API_KEY>')
   api.cruise_trajectory('KM1513')
+
+
+.. figure:: ../../../_static/overview_icons/sql.png
+ :scale: 10 %
+
+**SQL Statement**
+
+Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
+
+.. code-block::
+
+   EXEC uspCruiseTrajectoryByName 'Cruise Official Name'
+
+**Example:**
+
+.. code-block::
+
+   EXEC uspCruiseTrajectoryByName 'KM1513'

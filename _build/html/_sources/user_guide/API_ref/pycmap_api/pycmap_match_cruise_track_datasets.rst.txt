@@ -246,3 +246,53 @@ columns to the final dataframe:
   # the results are stored in csv files at the current working address
   # if you are running this script on colab, run the following command to list the generated csv files:
   #!ls
+
+
+.. figure:: ../../../_static/overview_icons/sql.png
+ :scale: 10 %
+
+**SQL Statement**
+
+Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
+
+.. code-block::
+
+  EXEC uspMatch
+    'sourceTable',
+    'sourceVariable',
+    'targetTables',
+    'targetVariables',
+    'dt1',
+    'dt2',
+    'lat1',
+    'lat2',
+    'lon1',
+    'lon2',
+    'depth1',
+    'depth2',
+    'timeTolerance',
+    'latTolerance',
+    'lonTolerance',
+    'depthTolerance'
+
+**Example:**
+
+.. code-block::
+
+  EXEC uspMatch
+    'tblKM1314_Cobalmins',
+    'Me_PseudoCobalamin_Particulate_pM',
+    'tblDarwin_Phytoplankton',
+    'picoprokaryote',
+    '2013-08-09 00:00:00',
+    '2013-09-07 00:00:00',
+    '22.25',
+    '50.25',
+    '-159.25',
+    '-127.75',
+    '-5',
+    '305',
+    '2',
+    '0.25',
+    '0.25',
+    '5'

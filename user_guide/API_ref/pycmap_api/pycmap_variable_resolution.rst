@@ -24,7 +24,7 @@ Variable Resolution
     :Parameters:
         **tableName: string**
             The name of table associated with the dataset. A full list of table names can be found in the :ref:`Catalog`.
-        **variable: string or list of string**
+        **varName: string or list of string**
             Variable short name. A full list of variable short names can be found in the :ref:`Catalog`.
 
 
@@ -45,3 +45,20 @@ Variable Resolution
 
   api = pycmap.API(token='<YOUR_API_KEY>')
   api.get_var_resolution('tblModis_AOD_REP', 'AOD')
+
+.. figure:: ../../../_static/overview_icons/sql.png
+ :scale: 10 %
+
+**SQL Statement**
+
+Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
+
+.. code-block::
+
+   EXEC uspVariableResolution 'tableName', 'varName'
+
+**Example:**
+
+.. code-block::
+
+   EXEC uspVariableResolution 'tblModis_AOD_REP', 'AOD'

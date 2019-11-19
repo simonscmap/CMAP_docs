@@ -209,13 +209,12 @@
 <dl class="method">
 <dt>
 <code class="sig-name descname">match</code><span class="sig-paren">(</span><em class="sig-param">sourceTable</em>, <em class="sig-param">sourceVar</em>, <em class="sig-param">targetTables</em>, <em class="sig-param">targetVars</em>, <em class="sig-param">dt1</em>, <em class="sig-param">dt2</em>, <em class="sig-param">lat1</em>, <em class="sig-param">lat2</em>, <em class="sig-param">lon1</em>, <em class="sig-param">lon2</em>, <em class="sig-param">depth1</em>, <em class="sig-param">depth2</em>, <em class="sig-param">temporalTolerance</em>, <em class="sig-param">latTolerance</em>, <em class="sig-param">lonTolerance</em>, <em class="sig-param">depthTolerance</em><span class="sig-paren">)</span></dt>
-<dd><p>Colocalizes the source variable (from source table) with the target variable (from target table). The matching results rely on the tolerance parameters because they set the matching boundaries between the source and target datasets. Notice the source has to be a single non-climatological variable. You may pass empty string (‘’) as source variable if you only want to get the time and location info from the source table. Please note that the number of matching entries between each target variable and the source variable might vary depending on the temporal and spatial resolutions of the target variable. In principle, if the source dataset is fully covered by the target variable’s spatio-temporal range, there should always be matching results if the tolerance parameters are larger than half of their corresponding spatial/temporal resolutions. Please explore the <a class="reference internal" href="../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a> to find appropriate target variables.
-|
-This method returns a dataframe containing the source variable joined with the target variable(s).</p>
+<dd><p>Colocalizes the source variable (from source table) with the target variable (from target table). The matching results rely on the tolerance parameters because they set the matching boundaries between the source and target datasets. Notice the source has to be a single non-climatological variable. You may pass empty string (‘’) as source variable if you only want to get the time and location info from the source table. Please note that the number of matching entries between each target variable and the source variable might vary depending on the temporal and spatial resolutions of the target variable. In principle, if the source dataset is fully covered by the target variable’s spatio-temporal range, there should always be matching results if the tolerance parameters are larger than half of their corresponding spatial/temporal resolutions. Please explore the <a class="reference internal" href="../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a> to find appropriate target variables.</p>
+<p>This method returns a dataframe containing the source variable joined with the target variable(s).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Currently, the ‘match’ method is not optimized for matching very large subsets of massive datasets such as models and satellites. It would be best to use this method to colocalize in-situ measurements such as station-based or underway cruise datasets (which are typically ‘small’) with any other datasets (models, satellites, or other observations).
-Stay tuned!</p>
+<p>Currently, the ‘match’ method is not optimized for matching very large subsets of massive datasets such as models and satellites. It would be best to use this method to colocalize in-situ measurements such as station-based or underway cruise datasets (which are typically ‘small’) with any other datasets (models, satellites, or other observations).</p>
+<p>Stay tuned!</p>
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -368,6 +367,50 @@ api.cruise_bounds(‘AMT13’)</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../../../_images/sql.png"><img alt="../../../_images/sql.png" src="../../../_images/sql.png" style="width: 51.2px; height: 51.2px;" /></a>
+</div>
+<p><strong>SQL Statement</strong></p>
+<p>Here is how to achieve the same results using a direct SQL statement. Please refer to <a class="reference internal" href="pycmap_query.html#query"><span class="std std-ref">Query</span></a> for more information.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">EXEC</span> <span class="n">uspMatch</span>
+ <span class="s1">&#39;sourceTable&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;sourceVariable&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;targetTable&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;targetVariable&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;dt1&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;dt2&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;lat1&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;lat2&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;lon1&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;lon2&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;depth1&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;depth2&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;timeTolerance&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;latTolerance&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;lonTolerance&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;depthTolerance&#39;</span>
+</pre></div>
+</div>
+<p><strong>Example:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">EXEC</span> <span class="n">uspMatch</span>
+ <span class="s1">&#39;tblKM1314_Cobalmins&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Me_PseudoCobalamin_Particulate_pM&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;tblDarwin_Phytoplankton&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;picoprokaryote&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;2013-08-09 00:00:00&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;2013-09-07 00:00:00&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;22.25&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;50.25&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;-159.25&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;-127.75&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;-5&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;305&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;2&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;0.25&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;0.25&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;5&#39;</span>
+</pre></div>
+</div>
 </div>
 </div>
 
@@ -384,7 +427,7 @@ api.cruise_bounds(‘AMT13’)</p>
     <p>
         &copy; Copyright 2019, Mohammad Dehghani Ashkezari &amp; Norland Raphael Hagen
       <span class="lastupdated">
-        Last updated on Nov 15, 2019.
+        Last updated on Nov 19, 2019.
       </span>
 
     </p>

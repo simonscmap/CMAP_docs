@@ -171,3 +171,24 @@ changed by: ``pycmap.API(vizEngine='bokeh')``
 .. raw:: html
 
    <iframe src="../../../_static/pycmap_tutorial_viz/html/depth_profile_modified_argo_merge_chl_adj.html"  frameborder = 0  height="650px" width="100%">></iframe>
+
+
+
+
+
+.. figure:: ../../../_static/overview_icons/sql.png
+  :scale: 10 %
+
+**SQL Statement**
+
+Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
+
+.. code-block::
+
+  EXEC uspDepthProfile 'tableName', 'variable', 'dt1', 'dt2', 'lat1', 'lat2', 'lon1', 'lon2', 'depth1', 'depth2'
+
+**Example:**
+
+.. code-block::
+
+  EXEC uspDepthProfile 'tblPisces_NRT', 'CHL', '2016-04-30', '2016-04-30', '20', '24', '-170', '-150', '0', '1500'

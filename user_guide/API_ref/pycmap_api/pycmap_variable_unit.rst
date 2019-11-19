@@ -25,7 +25,7 @@ Variable Unit
     :Parameters:
         **tableName: string**
             The name of table associated with the dataset. A full list of table names can be found in the :ref:`Catalog`.
-        **variable: string or list of string**
+        **varName: string or list of string**
             Variable short name. A full list of variable short names can be found in the :ref:`Catalog`.
 
 
@@ -47,34 +47,19 @@ Variable Unit
   api = pycmap.API(token='<YOUR_API_KEY>')
   api.get_unit('tblHOT_ParticleFlux', 'silica_hot')
 
+.. figure:: ../../../_static/overview_icons/sql.png
+ :scale: 10 %
 
+**SQL Statement**
 
-  def astype(self, dtype, copy=True, errors="raise", **kwargs):
-        """
-        Cast a pandas object to a specified dtype ``dtype``.
-        Parameters
-        ----------
-        dtype : data type, or dict of column name -> data type
-            Use a numpy.dtype or Python type to cast entire pandas object to
-            the same type. Alternatively, use {col: dtype, ...}, where col is a
-            column label and dtype is a numpy.dtype or Python type to cast one
-            or more of the DataFrame's columns to column-specific types.
-        copy : bool, default True
-            Return a copy when ``copy=True`` (be very careful setting
-            ``copy=False`` as changes to values then may propagate to other
-            pandas objects).
-        errors : {'raise', 'ignore'}, default 'raise'
-            Control raising of exceptions on invalid data for provided dtype.
-            - ``raise`` : allow exceptions to be raised
-            - ``ignore`` : suppress exceptions. On error return original object
-            .. versionadded:: 0.20.0
-        kwargs : keyword arguments to pass on to the constructor
-        Returns
-        -------
-        casted : same type as caller
-        See Also
-        --------
-        to_datetime : Convert argument to datetime.
-        to_timedelta : Convert argument to timedelta.
-        to_numeric : Convert argument to a numeric type.
-        numpy.ndarray.astype : Cast a numpy array to a specified type.
+Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
+
+.. code-block::
+
+   EXEC uspVariableUnit 'tableName', 'varName'
+
+**Example:**
+
+.. code-block::
+
+   EXEC uspVariableUnit 'tblHOT_ParticleFlux', 'silica_hot'

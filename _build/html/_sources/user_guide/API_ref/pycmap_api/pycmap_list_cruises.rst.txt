@@ -39,3 +39,15 @@ List of Cruises
 
   api = pycmap.API(token='<YOUR_API_KEY>')
   api.cruises()
+
+
+.. figure:: ../../../_static/overview_icons/sql.png
+ :scale: 10 %
+
+**SQL Statement**
+
+Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
+
+.. code-block::
+
+   EXEC uspCruises

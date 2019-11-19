@@ -17,18 +17,19 @@ If Column Exists
 .. method:: has_field(tableName, varName)
 
 
-    Returns True if the specified column (field) exists in the table; otherwise returns False.
+    Returns True if the specified column (field) exists in the table
+    Returns False if either table or variable does not exist (also see :ref:`columns`)
 
     |
 
     :Parameters:
         **tableName: string**
             The name of table associated with the dataset. A full list of table names can be found in the :ref:`Catalog`.
-        **variable: string or list of string**
+        **varName: string or list of string**
             Variable short name. A full list of variable short names can be found in the :ref:`Catalog`.
 
 
-    :returns\:: String literal.
+    :returns\:: Boolean
 
 
 

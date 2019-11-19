@@ -49,3 +49,15 @@ Cruise Details by Name
   # alternatively, you may pass cruise nickname, if exists.
   # below, "meso_scope" is a nickname, the official name is "KM1709"
   # api.cruise_by_name('meso_scope')
+
+
+.. figure:: ../../../_static/overview_icons/sql.png
+ :scale: 10 %
+
+**SQL Statement**
+
+Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
+
+.. code-block::
+
+   EXEC uspCruiseByName 'KOK1606'

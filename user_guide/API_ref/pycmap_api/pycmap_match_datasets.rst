@@ -17,11 +17,13 @@ Match (colocalize) Datasets
 
 
     Colocalizes the source variable (from source table) with the target variable (from target table). The matching results rely on the tolerance parameters because they set the matching boundaries between the source and target datasets. Notice the source has to be a single non-climatological variable. You may pass empty string ('') as source variable if you only want to get the time and location info from the source table. Please note that the number of matching entries between each target variable and the source variable might vary depending on the temporal and spatial resolutions of the target variable. In principle, if the source dataset is fully covered by the target variable's spatio-temporal range, there should always be matching results if the tolerance parameters are larger than half of their corresponding spatial/temporal resolutions. Please explore the :ref:`Catalog` to find appropriate target variables.
-    |
+
+
     This method returns a dataframe containing the source variable joined with the target variable(s).
 
     .. note::
       Currently, the 'match' method is not optimized for matching very large subsets of massive datasets such as models and satellites. It would be best to use this method to colocalize in-situ measurements such as station-based or underway cruise datasets (which are typically 'small') with any other datasets (models, satellites, or other observations).
+
       Stay tuned!
 
 
@@ -195,3 +197,53 @@ Darwin model first depth level is at 5 m (not 0), and so ±5 meter vertical tole
   plt.xlabel('picoprokaryote' + api.get_unit('tblDarwin_Phytoplankton', 'picoprokaryote'))
   plt.ylabel('Me_PseudoCobalamin_Particulate_pM' + api.get_unit('tblKM1314_Cobalmins', 'Me_PseudoCobalamin_Particulate_pM'))
   plt.show()
+
+
+.. figure:: ../../../_static/overview_icons/sql.png
+ :scale: 10 %
+
+**SQL Statement**
+
+Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
+
+.. code-block::
+
+  EXEC uspMatch
+   'sourceTable',
+   'sourceVariable',
+   'targetTable',
+   'targetVariable',
+   'dt1',
+   'dt2',
+   'lat1',
+   'lat2',
+   'lon1',
+   'lon2',
+   'depth1',
+   'depth2',
+   'timeTolerance',
+   'latTolerance',
+   'lonTolerance',
+   'depthTolerance'
+
+**Example:**
+
+.. code-block::
+
+  EXEC uspMatch
+   'tblKM1314_Cobalmins',
+   'Me_PseudoCobalamin_Particulate_pM',
+   'tblDarwin_Phytoplankton',
+   'picoprokaryote',
+   '2013-08-09 00:00:00',
+   '2013-09-07 00:00:00',
+   '22.25',
+   '50.25',
+   '-159.25',
+   '-127.75',
+   '-5',
+   '305',
+   '2',
+   '0.25',
+   '0.25',
+   '5'

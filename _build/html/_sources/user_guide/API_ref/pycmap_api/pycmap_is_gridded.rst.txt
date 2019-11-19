@@ -16,15 +16,15 @@ Is Gridded Product
 .. method:: is_grid(tableName, varName)
 
 
-    Returns True if the specified variable represents a gridded product; otherwise returns False. For instance, model outputs or satellite products in form of structured arrays are considered gridded products, while underway cruise measurements with irregular spatial or temporal resolutions are considered "sparse" products.
-
+Returns True if the specified variable represents a gridded product; otherwise returns False. For instance, model outputs or satellite products in form of structured arrays are considered gridded products,
+ while underway cruise measurements with irregular spatial or temporal resolutions are considered "sparse" products.
     |
 
 
     :Parameters:
         **tableName: string**
             The name of table associated with the dataset. A full list of table names can be found in the :ref:`Catalog`.
-        **variable: string or list of string**
+        **varName: string or list of string**
             Variable short name. A full list of variable short names can be found in the :ref:`Catalog`.
 
 

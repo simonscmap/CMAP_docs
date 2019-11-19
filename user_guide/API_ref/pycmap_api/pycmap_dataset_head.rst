@@ -38,7 +38,6 @@ Dataset Head
 
 **Example**
 
-
 .. code-block:: python
 
   #!pip install pycmap -q     #uncomment to install pycmap, if necessary
@@ -47,3 +46,22 @@ Dataset Head
 
   api = pycmap.API(token='<YOUR_API_KEY>')
   api.head('tblFalkor_2018')
+
+
+.. figure:: ../../../_static/overview_icons/sql.png
+  :scale: 10 %
+
+**SQL Statement**
+
+Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
+
+.. code-block::
+
+  EXEC uspHead 'tableName', 'rows'
+
+**Example:**
+Top 5 rows from Falkor data set:
+
+.. code-block::
+
+  EXEC uspHead 'tblFalkor_2018', '5'
