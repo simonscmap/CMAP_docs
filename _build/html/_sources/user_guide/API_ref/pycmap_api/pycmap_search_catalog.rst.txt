@@ -97,6 +97,7 @@ Here is how to achieve the same results using a direct SQL statement. Please ref
 
 **Example:**
 List of satellite Chlorophyll products:
+
 .. code-block::
 
    EXEC uspSearchCatalog 'chl satellite'

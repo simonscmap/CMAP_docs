@@ -175,6 +175,7 @@ Here is how to achieve the same results using a direct SQL statement. Please ref
    EXEC uspSpaceTime 'tableName', 'variable', 'dt1', 'dt2', 'lat1', 'lat2', 'lon1', 'lon2', 'depth1', 'depth2'
 
 **Example:**
+
 .. code-block::
 
    EXEC uspSpaceTime 'tblsst_AVHRR_OI_NRT', 'sst', '2016-04-30', '2016-04-30', '10', '70', '-180', '80', '0', '0'
