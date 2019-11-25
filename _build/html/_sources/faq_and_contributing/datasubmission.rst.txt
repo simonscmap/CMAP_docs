@@ -10,6 +10,12 @@
 
 .. _template: https://github.com/mdashkezari/opedia/tree/master/template
 
+
+
+.. |template| raw:: html
+
+   <a href="http://geoiptool.com" target="_blank"></a>
+
 .. _Slack: https://join.slack.com/t/simons-cmap/shared_invite/enQtNjQzMTkzMjg0NjQ2LWE4N2FjNDAwMjdiNzU0MGU4OTUzMGE4YWE5MjQwNGY2MjVlZTE2MTE3ZWNiOTAyY2E5ZDUxYzYwMGZhYWUwZjg
 
 
@@ -52,7 +58,7 @@ Data Template and File Structure
 
 The preferred file format is excel spreadsheet. Data is stored in the first sheet and the sheet title is "data". The second sheet stores the dataset meta-data and is called "dataset_meta_data". Meta-data associated with the variables in the dataset are kept in the third sheet, "vars_meta_data". An example template can be found here_.
 
-A template_ is available.
+A template_ is available. |template|
 
 Dataset Filename Convention
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~

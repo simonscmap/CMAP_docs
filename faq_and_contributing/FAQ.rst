@@ -52,7 +52,7 @@ What do the |colab| and |binder| badges do?
 Google Colab and Binder are projects that allow you to run code on the cloud without downloading or installing anything on your computer.
 Simons CMAP has Colab and Binder badges, which allow you to run any of the pycmap examples simply by clicking on the badges.
 
-Google Colab seems to start fasters, but currently requires you to uncomment (ie. remove the '#') to install pycmap.
+Google Colab seems to start faster, but currently requires you to uncomment (ie. remove the '#') to install pycmap.
 Binder takes a little longer to start, but may be easier to use.
 Feel free to try one or both!
 
