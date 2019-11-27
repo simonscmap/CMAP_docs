@@ -96,6 +96,7 @@ Here is how to achieve the same results using a direct SQL statement. Please ref
    EXEC uspSearchCatalog 'space-separated keywords'
 
 **Example:**
+
 List of satellite Chlorophyll products:
 
 .. code-block::
