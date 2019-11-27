@@ -91,14 +91,14 @@ Returns a list of optical measurements during the Gradients 1 cruise (KOK1606), 
 
 Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
 
-.. code-block::
+.. code-block:: sql
 
-   EXEC uspSearchCatalog 'space-separated keywords'
+  EXEC uspSearchCatalog 'space-separated keywords'
 
 **Example:**
 
 List of satellite Chlorophyll products:
 
-.. code-block::
+.. code-block:: sql
 
-   EXEC uspSearchCatalog 'chl satellite'
+  EXEC uspSearchCatalog 'chl satellite'

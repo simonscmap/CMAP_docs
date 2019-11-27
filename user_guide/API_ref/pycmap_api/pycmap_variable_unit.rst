@@ -54,12 +54,12 @@ Variable Unit
 
 Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
 
-.. code-block::
+.. code-block:: sql
 
-   EXEC uspVariableUnit 'tableName', 'varName'
+  EXEC uspVariableUnit 'tableName', 'varName'
 
 **Example:**
 
-.. code-block::
+.. code-block:: sql
 
-   EXEC uspVariableUnit 'tblHOT_ParticleFlux', 'silica_hot'
+  EXEC uspVariableUnit 'tblHOT_ParticleFlux', 'silica_hot'

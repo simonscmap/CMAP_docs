@@ -230,24 +230,22 @@ This method requires no input.</p>
 
 <span class="n">api</span> <span class="o">=</span> <span class="n">pycmap</span><span class="o">.</span><span class="n">API</span><span class="p">(</span><span class="n">token</span><span class="o">=</span><span class="s1">&#39;&lt;YOUR_API_KEY&gt;&#39;</span><span class="p">)</span>
 <span class="n">api</span><span class="o">.</span><span class="n">get_catalog</span><span class="p">()</span>
-
-
-<span class="o">..</span> <span class="n">code</span><span class="o">-</span><span class="n">block</span><span class="p">::</span> <span class="n">python</span>
-
-  <span class="c1">#!pip install pycmap -q     #uncomment to install pycmap, if necessary</span>
-
-  <span class="kn">import</span> <span class="nn">pycmap</span>
-
-  <span class="n">api</span> <span class="o">=</span> <span class="n">pycmap</span><span class="o">.</span><span class="n">API</span><span class="p">(</span><span class="n">token</span><span class="o">=</span><span class="s1">&#39;&lt;YOUR_API_KEY&gt;&#39;</span><span class="p">)</span>
-  <span class="n">api</span><span class="o">.</span><span class="n">search_catalog</span><span class="p">(</span><span class="s1">&#39;optics KOK1606&#39;</span><span class="p">)</span>
-
-<span class="o">..</span> <span class="n">figure</span><span class="p">::</span> <span class="o">../../../</span><span class="n">_static</span><span class="o">/</span><span class="n">overview_icons</span><span class="o">/</span><span class="n">sql</span><span class="o">.</span><span class="n">png</span>
- <span class="p">:</span><span class="n">scale</span><span class="p">:</span> <span class="mi">10</span> <span class="o">%</span>
 </pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!pip install pycmap -q     #uncomment to install pycmap, if necessary</span>
+
+<span class="kn">import</span> <span class="nn">pycmap</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">pycmap</span><span class="o">.</span><span class="n">API</span><span class="p">(</span><span class="n">token</span><span class="o">=</span><span class="s1">&#39;&lt;YOUR_API_KEY&gt;&#39;</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">search_catalog</span><span class="p">(</span><span class="s1">&#39;optics KOK1606&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../../../_images/sql.png"><img alt="../../../_images/sql.png" src="../../../_images/sql.png" style="width: 51.2px; height: 51.2px;" /></a>
 </div>
 <p><strong>SQL Statement</strong></p>
 <p>Here is how to achieve the same results using a direct SQL statement. Please refer to <a class="reference internal" href="pycmap_query.html#query"><span class="std std-ref">Query</span></a> for more information.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">EXEC</span> <span class="n">uspCatalog</span>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">EXEC</span> <span class="n">uspCatalog</span>
 </pre></div>
 </div>
 </div>

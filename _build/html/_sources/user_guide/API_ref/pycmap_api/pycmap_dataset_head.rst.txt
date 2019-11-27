@@ -55,13 +55,14 @@ Dataset Head
 
 Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
 
-.. code-block::
+.. code-block:: sql
 
   EXEC uspHead 'tableName', 'rows'
 
 **Example:**
+
 Top 5 rows from Falkor data set:
 
-.. code-block::
+.. code-block:: sql
 
   EXEC uspHead 'tblFalkor_2018', '5'

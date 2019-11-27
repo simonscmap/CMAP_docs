@@ -255,7 +255,7 @@ columns to the final dataframe:
 
 Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
 
-.. code-block::
+.. code-block:: sql
 
   EXEC uspMatch
     'sourceTable',
@@ -277,7 +277,9 @@ Here is how to achieve the same results using a direct SQL statement. Please ref
 
 **Example:**
 
-.. code-block::
+.. code-block:: sql
+
+
 
   EXEC uspMatch
     'tblKM1314_Cobalmins',

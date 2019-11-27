@@ -52,12 +52,12 @@ Cruise Variables
 
 Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
 
-.. code-block::
+.. code-block:: sql
 
-   EXEC uspCruiseVariablesByName 'Cruise Official Name'
+  EXEC uspCruiseVariablesByName 'Cruise Official Name'
 
 **Example:**
 
-.. code-block::
+.. code-block:: sql
 
-   EXEC uspCruiseVariablesByName 'FK180310-1'
+  EXEC uspCruiseVariablesByName 'FK180310-1'

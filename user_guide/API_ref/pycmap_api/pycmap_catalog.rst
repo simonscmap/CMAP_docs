@@ -45,22 +45,23 @@ Catalog
   api.get_catalog()
 
 
-  .. code-block:: python
+.. code-block:: python
 
-    #!pip install pycmap -q     #uncomment to install pycmap, if necessary
+  #!pip install pycmap -q     #uncomment to install pycmap, if necessary
 
-    import pycmap
+  import pycmap
 
-    api = pycmap.API(token='<YOUR_API_KEY>')
-    api.search_catalog('optics KOK1606')
+  api = pycmap.API(token='<YOUR_API_KEY>')
+  api.search_catalog('optics KOK1606')
 
-  .. figure:: ../../../_static/overview_icons/sql.png
-   :scale: 10 %
+
+.. figure:: ../../../_static/overview_icons/sql.png
+ :scale: 10 %
 
 **SQL Statement**
 
 Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
 
-.. code-block::
+.. code-block:: sql
 
-   EXEC uspCatalog
+  EXEC uspCatalog

@@ -56,13 +56,14 @@ Metadata
 
 Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
 
-.. code-block::
+.. code-block:: sql
 
-   EXEC uspVariableMetaData 'table', 'variable'
+  EXEC uspVariableMetaData 'table', 'variable'
 
 **Example:**
+
 Metadata associated with Argo salinity measurements:
 
-.. code-block::
+.. code-block:: sql
 
-   EXEC uspVariableMetaData 'tblArgoMerge_REP', 'argo_merge_salinity_adj'
+  EXEC uspVariableMetaData 'tblArgoMerge_REP', 'argo_merge_salinity_adj'

@@ -54,13 +54,14 @@ Variable Stat
 
 Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
 
-.. code-block::
+.. code-block:: sql
 
-   EXEC uspVariableStat 'tableName', 'varName'
+  EXEC uspVariableStat 'tableName', 'varName'
 
 **Example:**
+
 List of satellite Chlorophyll products:
 
-.. code-block::
+.. code-block:: sql
 
-   EXEC uspVariableStat 'tblHOT_LAVA', 'Prochlorococcus'
+  EXEC uspVariableStat 'tblHOT_LAVA', 'Prochlorococcus'

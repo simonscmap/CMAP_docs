@@ -50,13 +50,14 @@ Dataset Columns
 
 Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
 
-.. code-block::
+.. code-block:: sql
 
-   EXEC uspColumns 'tableName'
+  EXEC uspColumns 'tableName'
 
 **Example:**
+
 Metadata associated with Argo salinity measurement
 
-.. code-block::
+.. code-block:: sql
 
-   EXEC uspColumns 'tblAMT13_Chisholm'
+  EXEC uspColumns 'tblAMT13_Chisholm'

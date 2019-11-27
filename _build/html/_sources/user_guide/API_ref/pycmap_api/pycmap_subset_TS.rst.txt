@@ -131,30 +131,28 @@ The last few lines of code (lines 28-32) makes a simple plot to visualize the re
 
 Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
 
-.. code-block::
+.. code-block:: sql
 
-   EXEC uspTimeSeries 'tableName', 'variable', 'dt1', 'dt2', 'lat1', 'lat2', 'lon1', 'lon2', 'depth1', 'depth2'
+  EXEC uspTimeSeries 'tableName', 'variable', 'dt1', 'dt2', 'lat1', 'lat2', 'lon1', 'lon2', 'depth1', 'depth2'
 
 **Examples (different intervals):**
 
-.. code-block::
+.. code-block:: sql
 
-   EXEC uspTimeSeries 'tblsst_AVHRR_OI_NRT', 'sst', '2016-01-01', '2016-12-31', '20', '25', '-160', '-158', '0', '0'
+  EXEC uspTimeSeries 'tblsst_AVHRR_OI_NRT', 'sst', '2016-01-01', '2016-12-31', '20', '25', '-160', '-158', '0', '0'
 
-.. code-block::
+.. code-block:: sql
 
-   EXEC uspWeekly 'tblsst_AVHRR_OI_NRT', 'sst', '2016-01-01', '2016-12-31', '20', '25', '-160', '-158', '0', '0'
+  EXEC uspWeekly 'tblsst_AVHRR_OI_NRT', 'sst', '2016-01-01', '2016-12-31', '20', '25', '-160', '-158', '0', '0'
 
-.. code-block::
+.. code-block:: sql
 
-   EXEC uspMonthly 'tblsst_AVHRR_OI_NRT', 'sst', '2016-01-01', '2016-12-31', '20', '25', '-160', '-158', '0', '0'
+  EXEC uspMonthly 'tblsst_AVHRR_OI_NRT', 'sst', '2016-01-01', '2016-12-31', '20', '25', '-160', '-158', '0', '0'
 
-.. code-block::
+.. code-block:: sql
 
-   EXEC uspQuarterly 'tblsst_AVHRR_OI_NRT', 'sst', '2016-01-01', '2016-12-31', '20', '25', '-160', '-158', '0', '0'
+  EXEC uspQuarterly 'tblsst_AVHRR_OI_NRT', 'sst', '2016-01-01', '2016-12-31', '20', '25', '-160', '-158', '0', '0'
 
-.. code-block::
+.. code-block:: sql
 
-   EXEC uspAnnual 'tblsst_AVHRR_OI_NRT', 'sst', '2015-01-01', '2018-12-31', '20', '25', '-160', '-158', '0', '0'
-
-   
+  EXEC uspAnnual 'tblsst_AVHRR_OI_NRT', 'sst', '2015-01-01', '2018-12-31', '20', '25', '-160', '-158', '0', '0'

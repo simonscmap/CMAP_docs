@@ -183,12 +183,12 @@ changed by: ``pycmap.API(vizEngine='bokeh')``
 
 Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
 
-.. code-block::
+.. code-block:: sql
 
   EXEC uspDepthProfile 'tableName', 'variable', 'dt1', 'dt2', 'lat1', 'lat2', 'lon1', 'lon2', 'depth1', 'depth2'
 
 **Example:**
 
-.. code-block::
+.. code-block:: sql
 
   EXEC uspDepthProfile 'tblPisces_NRT', 'CHL', '2016-04-30', '2016-04-30', '20', '24', '-170', '-150', '0', '1500'

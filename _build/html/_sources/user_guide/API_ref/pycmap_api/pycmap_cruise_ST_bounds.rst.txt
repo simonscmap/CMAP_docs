@@ -52,6 +52,6 @@ Cruise Spatio-Tempoal Bounds
 
 Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
 
-.. code-block::
+.. code-block:: sql
 
-   EXEC uspCruiseByName 'KOK1606'
+  EXEC uspCruiseByName 'KOK1606'

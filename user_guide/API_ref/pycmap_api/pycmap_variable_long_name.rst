@@ -56,12 +56,12 @@ Variable Long Name
 
 Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
 
-.. code-block::
+.. code-block:: sql
 
-   EXEC uspVariableLongName 'tableName', 'varName'
+  EXEC uspVariableLongName 'tableName', 'varName'
 
 **Example:**
 
-.. code-block::
+.. code-block:: sql
 
-   EXEC uspVariableLongName 'tblAltimetry_REP', 'adt
+  EXEC uspVariableLongName 'tblAltimetry_REP', 'adt'

@@ -114,3 +114,22 @@ This example retrieves depth profile of modeled chlorophyll concentration estima
   plt.xlabel('Depth [m]')
   plt.ylabel(api.get_var_long_name(table, variable) + api.get_unit(table, variable))
   plt.show()
+
+.. figure:: ../../../_static/overview_icons/sql.png
+ :scale: 10 %
+
+**SQL Statement**
+
+Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
+
+
+
+.. code-block:: sql
+
+  EXEC uspDepthProfile 'tableName', 'variable', 'dt1', 'dt2', 'lat1', 'lat2', 'lon1', 'lon2', 'depth1', 'depth2'
+
+**Example:**
+
+.. code-block:: sql
+
+  EXEC uspDepthProfile 'tblPisces_NRT', 'CHL', '2016-04-30', '2016-04-30', '20', '24', '-170', '-150', '0', '1500'
