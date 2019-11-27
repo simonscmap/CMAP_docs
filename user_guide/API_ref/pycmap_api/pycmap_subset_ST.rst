@@ -170,6 +170,11 @@ A simple plot is made to visualize the retrieved data.
 
 Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
 
+.. highlight:: python
+
+  EXEC uspSpaceTime 'tableName', 'variable', 'dt1', 'dt2', 'lat1', 'lat2', 'lon1', 'lon2', 'depth1', 'depth2'
+
+
 .. code-block::
 
    EXEC uspSpaceTime 'tableName', 'variable', 'dt1', 'dt2', 'lat1', 'lat2', 'lon1', 'lon2', 'depth1', 'depth2'
