@@ -2,7 +2,6 @@
 
 
 
-
 Metadata
 ========
 
@@ -32,7 +31,6 @@ Metadata
 
 
     :returns\:: Pandas dataframe.
-
 
 |
 

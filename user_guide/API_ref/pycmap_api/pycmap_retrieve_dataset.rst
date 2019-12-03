@@ -31,7 +31,6 @@ Retrieve Dataset
     :returns\:: Pandas dataframe.
 
 
-
 |
 
 **Example**

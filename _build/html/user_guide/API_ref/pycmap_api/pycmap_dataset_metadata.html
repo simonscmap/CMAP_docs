@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Data Retrieval &mdash; CMAP</title>
+  <title>Dataset Metadata &mdash; CMAP</title>
   
 
   
@@ -39,8 +39,8 @@
   <link rel="stylesheet" href="../../../_static/style.css" type="text/css" />
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="API" href="pycmap_api.html" />
-    <link rel="prev" title="Installation" href="pycmap_install.html" /> 
+    <link rel="next" title="Dataset Columns" href="pycmap_dataset_columns.html" />
+    <link rel="prev" title="Metadata" href="pycmap_metadata.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -92,14 +92,14 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../api_ref.html">Software Packages</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="pycmap_api_ref.html">pycmap API</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="pycmap_install.html">Installation</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Data Retrieval</a><ul>
+<li class="toctree-l3 current"><a class="reference internal" href="pycmap_data_retrieval.html">Data Retrieval</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="pycmap_api.html">API</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_query.html">Query</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_catalog.html">Catalog</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_search_catalog.html">Search Catalog</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_dataset.html">Datasets</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_metadata.html">Metadata</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_dataset_metadata.html">Dataset Metadata</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Dataset Metadata</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_dataset_columns.html">Dataset Columns</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_dataset_head.html">Dataset Head</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_variable_long_name.html">Variable Long Name</a></li>
@@ -184,7 +184,9 @@
         
           <li><a href="pycmap_api_ref.html">pycmap API</a> &raquo;</li>
         
-      <li>Data Retrieval</li>
+          <li><a href="pycmap_data_retrieval.html">Data Retrieval</a> &raquo;</li>
+        
+      <li>Dataset Metadata</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -201,102 +203,54 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="data-retrieval">
-<span id="dataret"></span><h1>Data Retrieval<a class="headerlink" href="#data-retrieval" title="Permalink to this headline">¶</a></h1>
-<p>The methods below can be used to retrieve metadata and to query, subset and colocalize datasets. To begin, you must create an instance of the pycmap API. This tutorial can be found below.</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 67%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_api.html#pycmapapi"><span class="std std-ref">API</span></a></p></td>
-<td><p>Create an Instance of the API</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_query.html#query"><span class="std std-ref">Query</span></a></p></td>
-<td><p>Generic SQL Query</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_catalog.html#getcatalog"><span class="std std-ref">Catalog</span></a></p></td>
-<td><p>Retrieve Catalog</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_search_catalog.html#searchcatalog"><span class="std std-ref">Search Catalog</span></a></p></td>
-<td><p>Search Catalog by Keyword</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_dataset.html#dataset-list"><span class="std std-ref">Datasets</span></a></p></td>
-<td><p>Retrieve List of Datasets</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_metadata.html#metadata"><span class="std std-ref">Metadata</span></a></p></td>
-<td><p>Retrieve Variable Metadata</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_dataset_metadata.html#datasetmetadata"><span class="std std-ref">Dataset Metadata</span></a></p></td>
-<td><p>Retrieve Dataset Metadata</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_dataset_columns.html#columns"><span class="std std-ref">Dataset Columns</span></a></p></td>
-<td><p>Retrieve Column Names</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_dataset_head.html#dataset-head"><span class="std std-ref">Dataset Head</span></a></p></td>
-<td><p>Retrieve Top Rows of Given Dataset</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_variable_long_name.html#var-long-name"><span class="std std-ref">Variable Long Name</span></a></p></td>
-<td><p>Returns Long Name of Given Variable</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_variable_unit.html#var-unit"><span class="std std-ref">Variable Unit</span></a></p></td>
-<td><p>Returns Unit for Given Variable, if applicable</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_variable_resolution.html#varres"><span class="std std-ref">Variable Resolution</span></a></p></td>
-<td><p>Returns Spatial and Temporal Resolution of Given Variable</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_var_coverage.html#varcover"><span class="std std-ref">Variable Coverage</span></a></p></td>
-<td><p>Returns Spatial and Temporal Coverage of Given Variable</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_var_stat.html#varstat"><span class="std std-ref">Variable Stat</span></a></p></td>
-<td><p>Returns Summary Statistics for Given Variable</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_has_field.html#hasfield"><span class="std std-ref">If Column Exists</span></a></p></td>
-<td><p>Returns True if Column Exists</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_is_gridded.html#gridded"><span class="std std-ref">Is Gridded Product</span></a></p></td>
-<td><p>Returns True if Variable is Gridded Product</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_is_climatology.html#clim"><span class="std std-ref">Is Climatology Product</span></a></p></td>
-<td><p>Returns True if Dataset is Climatology Product</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_list_cruises.html#list-cruises"><span class="std std-ref">List of Cruises</span></a></p></td>
-<td><p>Returns Cruise Expedition Details</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_cruise_details.html#cruise-details"><span class="std std-ref">Cruise Details by Name</span></a></p></td>
-<td><p>Returns Cruise Specific Details by Name</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_cruise_ST_bounds.html#cruise-st"><span class="std std-ref">Cruise Spatio-Tempoal Bounds</span></a></p></td>
-<td><p>Returns Cruise Spatio-Temporal Bounds</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_cruise_trajectory.html#cruise-traj"><span class="std std-ref">Cruise Trajectory</span></a></p></td>
-<td><p>Returns Trajectory for Specific Cruise</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_cruise_variables.html#cruisevars"><span class="std std-ref">Cruise Variables</span></a></p></td>
-<td><p>Returns Variables Associated with Specific Cruise</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_retrieve_dataset.html#retrieve-dataset"><span class="std std-ref">Retrieve Dataset</span></a></p></td>
-<td><p>Returns the Entire Dataset</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_subset_ST.html#subset-st"><span class="std std-ref">Data Subset: Generic Space-Time Cut</span></a></p></td>
-<td><p>Returns a Subset of Data Defined by Space and Time</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_subset_TS.html#subset-ts"><span class="std std-ref">Data Subset: Time Series</span></a></p></td>
-<td><p>Returns a Subset of Data Aggregated by Time</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_subset_DP.html#subset-dp"><span class="std std-ref">Data Subset: Depth Profile</span></a></p></td>
-<td><p>Returns a Subset of Data Aggregated by Depth</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_match_datasets.html#match"><span class="std std-ref">Match (colocalize) Datasets</span></a></p></td>
-<td><p>Colocalizes Variables between Datasets</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_match_cruise_track_datasets.html#matchcruise"><span class="std std-ref">Match (colocalize) Cruise Track with Datasets</span></a></p></td>
-<td><p>Colocalizes Variables along Cruise Trajectory</p></td>
-</tr>
-</tbody>
-</table>
-<div class="toctree-wrapper compound">
+  <div class="section" id="dataset-metadata">
+<span id="datasetmetadata"></span><h1>Dataset Metadata<a class="headerlink" href="#dataset-metadata" title="Permalink to this headline">¶</a></h1>
+<a class="reference external image-reference" href="https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/DatasetMetaData.ipynb"><img alt="https://colab.research.google.com/assets/colab-badge.svg" src="https://colab.research.google.com/assets/colab-badge.svg" /></a>
+<a class="reference external image-reference" href="https://mybinder.org/v2/gh/simonscmap/pycmap/master?filepath=docs%2FDatasetMetaData.ipynb"><img alt="https://mybinder.org/badge_logo.svg" src="https://mybinder.org/badge_logo.svg" /></a>
+<dl class="method">
+<dt id="get_dataset_metadata">
+<code class="sig-name descname">get_dataset_metadata</code><span class="sig-paren">(</span><em class="sig-param">tableName</em><span class="sig-paren">)</span><a class="headerlink" href="#get_dataset_metadata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a dataframe containing the dataset metadata. (such as a list of all variables, data source, distributor, references, and etc..)</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>tableName: string</strong></dt><dd><p>The name of table where the dataset is stored. A full list of table names can be found in the <a class="reference internal" href="../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns:</dt>
+<dd class="field-even"><p>Pandas dataframe.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Example</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!pip install pycmap -q     #uncomment to install pycmap, if necessary</span>
+
+<span class="kn">import</span> <span class="nn">pycmap</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">pycmap</span><span class="o">.</span><span class="n">API</span><span class="p">(</span><span class="n">token</span><span class="o">=</span><span class="s1">&#39;&lt;YOUR_API_KEY&gt;&#39;</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">get_dataset_metadata</span><span class="p">(</span><span class="s1">&#39;tblArgoMerge_REP&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../../../_images/sql.png"><img alt="../../../_images/sql.png" src="../../../_images/sql.png" style="width: 51.2px; height: 51.2px;" /></a>
+</div>
+<p><strong>SQL Statement</strong></p>
+<p>Here is how to achieve the same results using a direct SQL statement. Please refer to <a class="reference internal" href="pycmap_query.html#query"><span class="std std-ref">Query</span></a> for more information.</p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">EXEC</span> <span class="n">uspDatasetMetadata</span> <span class="s1">&#39;tableName&#39;</span>
+</pre></div>
+</div>
+<p><strong>Example:</strong></p>
+<p>Metadata associated with the Argo dataset:</p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">EXEC</span> <span class="n">uspDatasetMetadata</span> <span class="s1">&#39;tblArgoMerge_REP&#39;</span>
+</pre></div>
 </div>
 </div>
 

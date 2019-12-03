@@ -125,7 +125,7 @@ for more details.
   plt.plot(df['NO3'], df['synecho_abundance'], '.')
   plt.ylabel('synecho_abundance' + api.get_unit('tblSeaFlow', 'synecho_abundance'))
   plt.xlabel('NO3' + api.get_unit('tblPisces_NRT', 'NO3'))
-
+  plt.show()
 
 
 Example 2:

@@ -20,7 +20,9 @@ The methods below can be used to retrieve metadata and to query, subset and colo
 +-------------------------------+--------------------------------------------------------------+
 | :ref:`Dataset_list`           |       Retrieve List of Datasets                              |
 +-------------------------------+--------------------------------------------------------------+
-| :ref:`metadata`               |       Retrieve Metadata                                      |
+| :ref:`metadata`               |       Retrieve Variable Metadata                             |
++-------------------------------+--------------------------------------------------------------+
+| :ref:`datasetmetadata`        |       Retrieve Dataset Metadata                              |
 +-------------------------------+--------------------------------------------------------------+
 | :ref:`columns`                |       Retrieve Column Names                                  |
 +-------------------------------+--------------------------------------------------------------+
@@ -77,6 +79,7 @@ The methods below can be used to retrieve metadata and to query, subset and colo
   pycmap_search_catalog
   pycmap_dataset
   pycmap_metadata
+  pycmap_dataset_metadata
   pycmap_dataset_columns
   pycmap_dataset_head
   pycmap_variable_long_name
