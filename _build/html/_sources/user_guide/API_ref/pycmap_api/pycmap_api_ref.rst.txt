@@ -29,6 +29,10 @@ pycmap API
   :target: pycmap_data_vizualization.html
 
 
+.. |presentation| image:: /_static/API_install_icons/presentation.png
+  :align: middle
+  :scale: 40%
+  :target: pycmap_presentations.html
 
 
 
@@ -47,11 +51,11 @@ cloud using the  |colab|  badge or on Binder using the |binder| badge which appe
 
 Once you receive an API key you can install pycmap locally and then retrieve and visualize data. Below are links providing details and tutorials on how to install, retrieve and visualize data with pycmap.
 
-+------------------------+------------------------+------------------------+
-|      |install_icon|    |    |data_retrieval|    | |data_vizualization|   |
-+------------------------+------------------------+------------------------+
-| :ref:`pycmapInstall`   | :ref:`dataRet`         |  :ref:`dataViz`        |
-+------------------------+------------------------+------------------------+
++------------------------+------------------------+------------------------+------------------------+
+|      |install_icon|    |    |data_retrieval|    | |data_vizualization|   | |presentation|         |
++------------------------+------------------------+------------------------+------------------------+
+| :ref:`pycmapInstall`   | :ref:`dataRet`         |  :ref:`dataViz`        |  :ref:`dataPres`       |
++------------------------+------------------------+------------------------+------------------------+
 
 
 
@@ -67,3 +71,4 @@ Once you receive an API key you can install pycmap locally and then retrieve and
   pycmap_install.rst
   pycmap_data_retrieval.rst
   pycmap_data_vizualization.rst
+  pycmap_presentations.rst

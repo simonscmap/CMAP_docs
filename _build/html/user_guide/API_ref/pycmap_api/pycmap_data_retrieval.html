@@ -27,7 +27,9 @@
         <script type="text/javascript" src="../../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../../_static/doctools.js"></script>
         <script type="text/javascript" src="../../../_static/language_data.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
         <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
     
     <script type="text/javascript" src="../../../_static/js/theme.js"></script>
 
@@ -39,7 +41,7 @@
   <link rel="stylesheet" href="../../../_static/style.css" type="text/css" />
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="API" href="pycmap_api.html" />
+    <link rel="next" title="API" href="data_retrieval/pycmap_api.html" />
     <link rel="prev" title="Installation" href="pycmap_install.html" /> 
 </head>
 
@@ -93,37 +95,38 @@
 <li class="toctree-l2 current"><a class="reference internal" href="pycmap_api_ref.html">pycmap API</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="pycmap_install.html">Installation</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Data Retrieval</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_api.html">API</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_query.html">Query</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_catalog.html">Catalog</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_search_catalog.html">Search Catalog</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_dataset.html">Datasets</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_metadata.html">Metadata</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_dataset_metadata.html">Dataset Metadata</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_dataset_columns.html">Dataset Columns</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_dataset_head.html">Dataset Head</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_variable_long_name.html">Variable Long Name</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_variable_unit.html">Variable Unit</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_variable_resolution.html">Variable Resolution</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_var_coverage.html">Variable Coverage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_var_stat.html">Variable Stat</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_has_field.html">If Column Exists</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_is_gridded.html">Is Gridded Product</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_is_climatology.html">Is Climatology Product</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_list_cruises.html">List of Cruises</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_details.html">Cruise Details by Name</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_ST_bounds.html">Cruise Spatio-Tempoal Bounds</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_trajectory.html">Cruise Trajectory</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_variables.html">Cruise Variables</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_retrieve_dataset.html">Retrieve Dataset</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_subset_ST.html">Data Subset: Generic Space-Time Cut</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_subset_TS.html">Data Subset: Time Series</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_subset_DP.html">Data Subset: Depth Profile</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_match_datasets.html">Match (colocalize) Datasets</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_match_cruise_track_datasets.html">Match (colocalize) Cruise Track with Datasets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_retrieval/pycmap_api.html">API</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_retrieval/pycmap_query.html">Query</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_retrieval/pycmap_catalog.html">Catalog</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_retrieval/pycmap_search_catalog.html">Search Catalog</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_retrieval/pycmap_dataset.html">Datasets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_retrieval/pycmap_metadata.html">Metadata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_retrieval/pycmap_dataset_metadata.html">Dataset Metadata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_retrieval/pycmap_dataset_columns.html">Dataset Columns</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_retrieval/pycmap_dataset_head.html">Dataset Head</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_retrieval/pycmap_variable_long_name.html">Variable Long Name</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_retrieval/pycmap_variable_unit.html">Variable Unit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_retrieval/pycmap_variable_resolution.html">Variable Resolution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_retrieval/pycmap_var_coverage.html">Variable Coverage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_retrieval/pycmap_var_stat.html">Variable Stat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_retrieval/pycmap_has_field.html">If Column Exists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_retrieval/pycmap_is_gridded.html">Is Gridded Product</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_retrieval/pycmap_is_climatology.html">Is Climatology Product</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_retrieval/pycmap_list_cruises.html">List of Cruises</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_retrieval/pycmap_cruise_details.html">Cruise Details by Name</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_retrieval/pycmap_cruise_ST_bounds.html">Cruise Spatio-Tempoal Bounds</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_retrieval/pycmap_cruise_trajectory.html">Cruise Trajectory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_retrieval/pycmap_cruise_variables.html">Cruise Variables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_retrieval/pycmap_retrieve_dataset.html">Retrieve Dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_retrieval/pycmap_subset_ST.html">Data Subset: Generic Space-Time Cut</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_retrieval/pycmap_subset_TS.html">Data Subset: Time Series</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_retrieval/pycmap_subset_DP.html">Data Subset: Depth Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_retrieval/pycmap_match_datasets.html">Match (colocalize) Datasets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_retrieval/pycmap_match_cruise_track_datasets.html">Match (colocalize) Cruise Track with Datasets</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="pycmap_data_vizualization.html">Data Visualization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pycmap_presentations.html">Presentations</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../opedia_tutorials/opedia_tutorials.html">opedia (depreciated)</a></li>
@@ -201,7 +204,31 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="data-retrieval">
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="data-retrieval">
 <span id="dataret"></span><h1>Data Retrieval<a class="headerlink" href="#data-retrieval" title="Permalink to this headline">¶</a></h1>
 <p>The methods below can be used to retrieve metadata and to query, subset and colocalize datasets. To begin, you must create an instance of the pycmap API. This tutorial can be found below.</p>
 <table class="docutils align-default">
@@ -210,88 +237,88 @@
 <col style="width: 67%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_api.html#pycmapapi"><span class="std std-ref">API</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="data_retrieval/pycmap_api.html#pycmapapi"><span class="std std-ref">API</span></a></p></td>
 <td><p>Create an Instance of the API</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_query.html#query"><span class="std std-ref">Query</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="data_retrieval/pycmap_query.html#query"><span class="std std-ref">Query</span></a></p></td>
 <td><p>Generic SQL Query</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_catalog.html#getcatalog"><span class="std std-ref">Catalog</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="data_retrieval/pycmap_catalog.html#getcatalog"><span class="std std-ref">Catalog</span></a></p></td>
 <td><p>Retrieve Catalog</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_search_catalog.html#searchcatalog"><span class="std std-ref">Search Catalog</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="data_retrieval/pycmap_search_catalog.html#searchcatalog"><span class="std std-ref">Search Catalog</span></a></p></td>
 <td><p>Search Catalog by Keyword</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_dataset.html#dataset-list"><span class="std std-ref">Datasets</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="data_retrieval/pycmap_dataset.html#dataset-list"><span class="std std-ref">Datasets</span></a></p></td>
 <td><p>Retrieve List of Datasets</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_metadata.html#metadata"><span class="std std-ref">Metadata</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="data_retrieval/pycmap_metadata.html#metadata"><span class="std std-ref">Metadata</span></a></p></td>
 <td><p>Retrieve Variable Metadata</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_dataset_metadata.html#datasetmetadata"><span class="std std-ref">Dataset Metadata</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="data_retrieval/pycmap_dataset_metadata.html#datasetmetadata"><span class="std std-ref">Dataset Metadata</span></a></p></td>
 <td><p>Retrieve Dataset Metadata</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_dataset_columns.html#columns"><span class="std std-ref">Dataset Columns</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="data_retrieval/pycmap_dataset_columns.html#columns"><span class="std std-ref">Dataset Columns</span></a></p></td>
 <td><p>Retrieve Column Names</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_dataset_head.html#dataset-head"><span class="std std-ref">Dataset Head</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="data_retrieval/pycmap_dataset_head.html#dataset-head"><span class="std std-ref">Dataset Head</span></a></p></td>
 <td><p>Retrieve Top Rows of Given Dataset</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_variable_long_name.html#var-long-name"><span class="std std-ref">Variable Long Name</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="data_retrieval/pycmap_variable_long_name.html#var-long-name"><span class="std std-ref">Variable Long Name</span></a></p></td>
 <td><p>Returns Long Name of Given Variable</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_variable_unit.html#var-unit"><span class="std std-ref">Variable Unit</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="data_retrieval/pycmap_variable_unit.html#var-unit"><span class="std std-ref">Variable Unit</span></a></p></td>
 <td><p>Returns Unit for Given Variable, if applicable</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_variable_resolution.html#varres"><span class="std std-ref">Variable Resolution</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="data_retrieval/pycmap_variable_resolution.html#varres"><span class="std std-ref">Variable Resolution</span></a></p></td>
 <td><p>Returns Spatial and Temporal Resolution of Given Variable</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_var_coverage.html#varcover"><span class="std std-ref">Variable Coverage</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="data_retrieval/pycmap_var_coverage.html#varcover"><span class="std std-ref">Variable Coverage</span></a></p></td>
 <td><p>Returns Spatial and Temporal Coverage of Given Variable</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_var_stat.html#varstat"><span class="std std-ref">Variable Stat</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="data_retrieval/pycmap_var_stat.html#varstat"><span class="std std-ref">Variable Stat</span></a></p></td>
 <td><p>Returns Summary Statistics for Given Variable</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_has_field.html#hasfield"><span class="std std-ref">If Column Exists</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="data_retrieval/pycmap_has_field.html#hasfield"><span class="std std-ref">If Column Exists</span></a></p></td>
 <td><p>Returns True if Column Exists</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_is_gridded.html#gridded"><span class="std std-ref">Is Gridded Product</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="data_retrieval/pycmap_is_gridded.html#gridded"><span class="std std-ref">Is Gridded Product</span></a></p></td>
 <td><p>Returns True if Variable is Gridded Product</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_is_climatology.html#clim"><span class="std std-ref">Is Climatology Product</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="data_retrieval/pycmap_is_climatology.html#clim"><span class="std std-ref">Is Climatology Product</span></a></p></td>
 <td><p>Returns True if Dataset is Climatology Product</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_list_cruises.html#list-cruises"><span class="std std-ref">List of Cruises</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="data_retrieval/pycmap_list_cruises.html#list-cruises"><span class="std std-ref">List of Cruises</span></a></p></td>
 <td><p>Returns Cruise Expedition Details</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_cruise_details.html#cruise-details"><span class="std std-ref">Cruise Details by Name</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="data_retrieval/pycmap_cruise_details.html#cruise-details"><span class="std std-ref">Cruise Details by Name</span></a></p></td>
 <td><p>Returns Cruise Specific Details by Name</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_cruise_ST_bounds.html#cruise-st"><span class="std std-ref">Cruise Spatio-Tempoal Bounds</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="data_retrieval/pycmap_cruise_ST_bounds.html#cruise-st"><span class="std std-ref">Cruise Spatio-Tempoal Bounds</span></a></p></td>
 <td><p>Returns Cruise Spatio-Temporal Bounds</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_cruise_trajectory.html#cruise-traj"><span class="std std-ref">Cruise Trajectory</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="data_retrieval/pycmap_cruise_trajectory.html#cruise-traj"><span class="std std-ref">Cruise Trajectory</span></a></p></td>
 <td><p>Returns Trajectory for Specific Cruise</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_cruise_variables.html#cruisevars"><span class="std std-ref">Cruise Variables</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="data_retrieval/pycmap_cruise_variables.html#cruisevars"><span class="std std-ref">Cruise Variables</span></a></p></td>
 <td><p>Returns Variables Associated with Specific Cruise</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_retrieve_dataset.html#retrieve-dataset"><span class="std std-ref">Retrieve Dataset</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="data_retrieval/pycmap_retrieve_dataset.html#retrieve-dataset"><span class="std std-ref">Retrieve Dataset</span></a></p></td>
 <td><p>Returns the Entire Dataset</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_subset_ST.html#subset-st"><span class="std std-ref">Data Subset: Generic Space-Time Cut</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="data_retrieval/pycmap_subset_ST.html#subset-st"><span class="std std-ref">Data Subset: Generic Space-Time Cut</span></a></p></td>
 <td><p>Returns a Subset of Data Defined by Space and Time</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_subset_TS.html#subset-ts"><span class="std std-ref">Data Subset: Time Series</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="data_retrieval/pycmap_subset_TS.html#subset-ts"><span class="std std-ref">Data Subset: Time Series</span></a></p></td>
 <td><p>Returns a Subset of Data Aggregated by Time</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_subset_DP.html#subset-dp"><span class="std std-ref">Data Subset: Depth Profile</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="data_retrieval/pycmap_subset_DP.html#subset-dp"><span class="std std-ref">Data Subset: Depth Profile</span></a></p></td>
 <td><p>Returns a Subset of Data Aggregated by Depth</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pycmap_match_datasets.html#match"><span class="std std-ref">Match (colocalize) Datasets</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="data_retrieval/pycmap_match_datasets.html#match"><span class="std std-ref">Match (colocalize) Datasets</span></a></p></td>
 <td><p>Colocalizes Variables between Datasets</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pycmap_match_cruise_track_datasets.html#matchcruise"><span class="std std-ref">Match (colocalize) Cruise Track with Datasets</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="data_retrieval/pycmap_match_cruise_track_datasets.html#matchcruise"><span class="std std-ref">Match (colocalize) Cruise Track with Datasets</span></a></p></td>
 <td><p>Colocalizes Variables along Cruise Trajectory</p></td>
 </tr>
 </tbody>
@@ -313,7 +340,7 @@
     <p>
         &copy; Copyright 2019, Mohammad Dehghani Ashkezari &amp; Norland Raphael Hagen
       <span class="lastupdated">
-        Last updated on Dec 03, 2019.
+        Last updated on Dec 30, 2019.
       </span>
 
     </p>

@@ -89,11 +89,11 @@ Data Visualization Methods
   :maxdepth: 1
   :hidden:
 
-  pycmap_histogram
-  pycmap_time_series
-  pycmap_rm_cp_3d
-  pycmap_section_map_contour
-  pycmap_depth_profile
-  pycmap_cruise_track
-  pycmap_correlation_matrix
-  pycmap_correlation_matrix_cruise_track
+  data_vizualization/pycmap_histogram
+  data_vizualization/pycmap_time_series
+  data_vizualization/pycmap_rm_cp_3d
+  data_vizualization/pycmap_section_map_contour
+  data_vizualization/pycmap_depth_profile
+  data_vizualization/pycmap_cruise_track
+  data_vizualization/pycmap_correlation_matrix
+  data_vizualization/pycmap_correlation_matrix_cruise_track

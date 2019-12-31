@@ -1,0 +1,335 @@
+
+<html>
+<head>
+<style>
+
+    h2 {
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 5px;
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 90%;
+    }
+    table tbody tr:hover {
+        background-color: #dddddd;
+    }
+    .wide {
+        width: 90%;
+    }
+
+</style>
+</head>
+<body>
+    <table border="1" class="dataframe wide">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Table_Name</th>
+      <th>Short_Name</th>
+      <th>Long_Name</th>
+      <th>Unit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>AOU_WOA_clim</td>
+      <td>Objectively Analyzed Climatology for Apparent ...</td>
+      <td>mL/L</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>AOU_stat_mean_WOA_clim</td>
+      <td>Statistical Mean for  Apparent Oxygen Utilizat...</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>AOU_num_obs_WOA_clim</td>
+      <td>Number of  Apparent Oxygen Utilization (AOU) O...</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>AOU_stdev_WOA_clim</td>
+      <td>Apparent Oxygen Utilization (AOU) Standard Dev...</td>
+      <td>mL/L</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>AOU_stderr_WOA_clim</td>
+      <td>Apparent Oxygen Utilization (AOU) Standard Err...</td>
+      <td>mL/L</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>density_WOA_clim</td>
+      <td>Objectively Analyzed Climatology for Density W...</td>
+      <td>kg/m^3</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>density_stat_mean_WOA_clim</td>
+      <td>Statistical Mean for  Density World Ocean Atlas</td>
+      <td>kg/m^3</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>density_num_obs_WOA_clim</td>
+      <td>Number of  Density Observations World Ocean Atlas</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>density_stdev_WOA_clim</td>
+      <td>Density Standard Deviation from Statistical Me...</td>
+      <td>kg/m^3</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>o2sat_WOA_clim</td>
+      <td>Objectively Analyzed Climatology for Percent O...</td>
+      <td>%</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>o2sat_stat_mean_WOA_clim</td>
+      <td>Statistical Mean for  Percent Oxygen Saturatio...</td>
+      <td>%</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>o2sat_num_obs_WOA_clim</td>
+      <td>Number of  Percent Oxygen Saturation Observati...</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>o2sat_stdev_WOA_clim</td>
+      <td>Percent Oxygen Saturation Standard Deviation f...</td>
+      <td>%</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>o2sat_stderr_WOA_clim</td>
+      <td>Percent Oxygen Saturation Standard Error of th...</td>
+      <td>%</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>oxygen_WOA_clim</td>
+      <td>Objectively Analyzed Climatology for Dissolved...</td>
+      <td>mL/L</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>oxygen_stat_mean_WOA_clim</td>
+      <td>Statistical Mean for  Dissolved Oxygen World O...</td>
+      <td>mL/L</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>oxygen_num_obs_WOA_clim</td>
+      <td>Number of  Dissolved Oxygen Observations World...</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>oxygen_stdev_WOA_clim</td>
+      <td>Dissolved Oxygen Standard Deviation from Stati...</td>
+      <td>mL/L</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>oxygen_stderr_WOA_clim</td>
+      <td>Dissolved Oxygen Standard Error of the Statist...</td>
+      <td>mL/L</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>salinity_WOA_clim</td>
+      <td>Objectively Analyzed Climatology for Salinity ...</td>
+      <td>PSU</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>salinity_stat_mean_WOA_clim</td>
+      <td>Statistical Mean for  Salinity World Ocean Atlas</td>
+      <td>PSU</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>salinity_num_obs_WOA_clim</td>
+      <td>Number of  Salinity Observations World Ocean A...</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>salinity_stdev_WOA_clim</td>
+      <td>Salinity Standard Deviation from Statistical M...</td>
+      <td>PSU</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>salinity_stderr_WOA_clim</td>
+      <td>Salinity Standard Error of the Statistical Mea...</td>
+      <td>PSU</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>conductivity_WOA_clim</td>
+      <td>Objectively Analyzed Climatology for Conductiv...</td>
+      <td>Sm-1</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>conductivity_stat_mean_WOA_clim</td>
+      <td>Statistical Mean for  Conductivity World Ocean...</td>
+      <td>Sm-1</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>conductivity_num_obs_WOA_clim</td>
+      <td>Number of  Conductivity Observations World Oce...</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>conductivity_stdev_WOA_clim</td>
+      <td>Conductivity Standard Deviation from Statistic...</td>
+      <td>Sm-1</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>sea_water_temp_WOA_clim</td>
+      <td>Objectively Analyzed Climatology for Temperatu...</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>sea_water_temp_stat_mean_WOA_clim</td>
+      <td>Statistical Mean for Temperature World Ocean A...</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>sea_water_temp_num_obs_WOA_clim</td>
+      <td>Number of Temperature Observations World Ocean...</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>sea_water_temp_stdev_WOA_clim</td>
+      <td>Temperature Standard Deviation from Statistica...</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>sea_water_temp_stderr_WOA_clim</td>
+      <td>Temperature Standard Error of the Statistical ...</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>nitrate_WOA_clim</td>
+      <td>Objectively Analyzed Climatology for Nitrate W...</td>
+      <td>mcmol/L</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>nitrate_stat_mean_WOA_clim</td>
+      <td>Statistical Mean for  Nitrate World Ocean Atlas</td>
+      <td>mcmol/L</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>nitrate_num_obs_WOA_clim</td>
+      <td>Number of  Nitrate Observations World Ocean Atlas</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>nitrate_stdev_WOA_clim</td>
+      <td>Nitrate Standard Deviation from Statistical Me...</td>
+      <td>mcmol/L</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>nitrate_stderr_WOA_clim</td>
+      <td>Nitrate Standard Error of the Statistical Mean...</td>
+      <td>mcmol/L</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>phosphate_WOA_clim</td>
+      <td>Objectively Analyzed Climatology for Phosphate...</td>
+      <td>mcmol/L</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>phosphate_stat_mean_WOA_clim</td>
+      <td>Statistical Mean for  Phosphate World Ocean Atlas</td>
+      <td>mcmol/L</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>phosphate_num_obs_WOA_clim</td>
+      <td>Number of  Phosphate Observations World Ocean ...</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>phosphate_stdev_WOA_clim</td>
+      <td>Phosphate Standard Deviation from Statistical ...</td>
+      <td>mcmol/L</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>phosphate_stderr_WOA_clim</td>
+      <td>Phosphate Standard Error of the Statistical Me...</td>
+      <td>mcmol/L</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>silicate_WOA_clim</td>
+      <td>Objectively Analyzed Climatology for Silicate ...</td>
+      <td>mcmol/L</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>silicate_stat_mean_WOA_clim</td>
+      <td>Statistical Mean for  Silicate World Ocean Atlas</td>
+      <td>mcmol/L</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>silicate_num_obs_WOA_clim</td>
+      <td>Number of  Silicate Observations World Ocean A...</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>silicate_stdev_WOA_clim</td>
+      <td>Silicate Standard Deviation from Statistical M...</td>
+      <td>mcmol/L</td>
+    </tr>
+    <tr>
+      <td>tblWOA_Climatology</td>
+      <td>silicate_stderr_WOA_clim</td>
+      <td>Silicate Standard Error of the Statistical Mea...</td>
+      <td>mcmol/L</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

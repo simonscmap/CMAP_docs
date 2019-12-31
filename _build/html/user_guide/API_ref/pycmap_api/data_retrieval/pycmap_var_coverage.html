@@ -1,0 +1,328 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Variable Coverage &mdash; CMAP</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../../../_static/CMAP_logo.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/style.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Variable Stat" href="pycmap_var_stat.html" />
+    <link rel="prev" title="Variable Resolution" href="pycmap_variable_resolution.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> CMAP
+          
+
+          
+            
+            <img src="../../../../_static/CMAP_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting_started/installation/installation.html">Installation</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../catalog/catalog.html">Data Catalog</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../api_ref.html">Software Packages</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../pycmap_api_ref.html">pycmap API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../pycmap_install.html">Installation</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../pycmap_data_retrieval.html">Data Retrieval</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="pycmap_api.html">API</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_query.html">Query</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_catalog.html">Catalog</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_search_catalog.html">Search Catalog</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_dataset.html">Datasets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_metadata.html">Metadata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_dataset_metadata.html">Dataset Metadata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_dataset_columns.html">Dataset Columns</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_dataset_head.html">Dataset Head</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_variable_long_name.html">Variable Long Name</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_variable_unit.html">Variable Unit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_variable_resolution.html">Variable Resolution</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Variable Coverage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_var_stat.html">Variable Stat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_has_field.html">If Column Exists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_is_gridded.html">Is Gridded Product</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_is_climatology.html">Is Climatology Product</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_list_cruises.html">List of Cruises</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_details.html">Cruise Details by Name</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_ST_bounds.html">Cruise Spatio-Tempoal Bounds</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_trajectory.html">Cruise Trajectory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_variables.html">Cruise Variables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_retrieve_dataset.html">Retrieve Dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_subset_ST.html">Data Subset: Generic Space-Time Cut</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_subset_TS.html">Data Subset: Time Series</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_subset_DP.html">Data Subset: Depth Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_match_datasets.html">Match (colocalize) Datasets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_match_cruise_track_datasets.html">Match (colocalize) Cruise Track with Datasets</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pycmap_data_vizualization.html">Data Visualization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pycmap_presentations.html">Presentations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../opedia_tutorials/opedia_tutorials.html">opedia (depreciated)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cmap4r_api/cmap4r_api.html">cmap4r API</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../faq_and_contributing/datasubmission.html">Data Submission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../faq_and_contributing/FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../faq_and_contributing/contact.html">Contact and Contribute</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">CMAP</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../api_ref.html">Software Packages</a> &raquo;</li>
+        
+          <li><a href="../pycmap_api_ref.html">pycmap API</a> &raquo;</li>
+        
+          <li><a href="../pycmap_data_retrieval.html">Data Retrieval</a> &raquo;</li>
+        
+      <li>Variable Coverage</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="variable-coverage">
+<span id="varcover"></span><h1>Variable Coverage<a class="headerlink" href="#variable-coverage" title="Permalink to this headline">¶</a></h1>
+<a class="reference external image-reference" href="https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/Coverage.ipynb"><img alt="https://colab.research.google.com/assets/colab-badge.svg" src="https://colab.research.google.com/assets/colab-badge.svg" /></a>
+<a class="reference external image-reference" href="https://mybinder.org/v2/gh/simonscmap/pycmap/master?filepath=docs%2FCoverage.ipynb"><img alt="https://mybinder.org/badge_logo.svg" src="https://mybinder.org/badge_logo.svg" /></a>
+<dl class="method">
+<dt id="get_var_coverage">
+<code class="sig-name descname">get_var_coverage</code><span class="sig-paren">(</span><em class="sig-param">tableName</em>, <em class="sig-param">varName</em><span class="sig-paren">)</span><a class="headerlink" href="#get_var_coverage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns spatial and temporal coverage of the given variable.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>tableName: string</strong></dt><dd><p>The name of table associated with the dataset. A full list of table names can be found in the <a class="reference internal" href="../../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
+</dd>
+<dt><strong>variable: string or list of string</strong></dt><dd><p>Variable short name. A full list of variable short names can be found in the <a class="reference internal" href="../../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns:</dt>
+<dd class="field-even"><p>Pandas dataframe.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Example</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!pip install pycmap -q     #uncomment to install pycmap, if necessary</span>
+
+<span class="kn">import</span> <span class="nn">pycmap</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">pycmap</span><span class="o">.</span><span class="n">API</span><span class="p">(</span><span class="n">token</span><span class="o">=</span><span class="s1">&#39;&lt;YOUR_API_KEY&gt;&#39;</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">get_var_coverage</span><span class="p">(</span><span class="s1">&#39;tblCHL_REP&#39;</span><span class="p">,</span> <span class="s1">&#39;chl&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../../../../_images/sql.png"><img alt="../../../../_images/sql.png" src="../../../../_images/sql.png" style="width: 51.2px; height: 51.2px;" /></a>
+</div>
+<p><strong>SQL Statement</strong></p>
+<p>Here is how to achieve the same results using a direct SQL statement. Please refer to <a class="reference internal" href="pycmap_query.html#query"><span class="std std-ref">Query</span></a> for more information.</p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">EXEC</span> <span class="n">uspVariableCoverage</span> <span class="s1">&#39;tableName&#39;</span><span class="p">,</span> <span class="s1">&#39;varName&#39;</span>
+</pre></div>
+</div>
+<p><strong>Example:</strong></p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">EXEC</span> <span class="n">uspVariableCoverage</span> <span class="s1">&#39;tblCHL_REP&#39;</span><span class="p">,</span> <span class="s1">&#39;chl&#39;</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Mohammad Dehghani Ashkezari &amp; Norland Raphael Hagen
+      <span class="lastupdated">
+        Last updated on Dec 30, 2019.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

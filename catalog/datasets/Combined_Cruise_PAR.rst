@@ -29,7 +29,7 @@ Combined Cruise PAR
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/CCS.md
+.. mdinclude:: ../dataset_descriptions/CCP.md
     :start-line: 0
 
 

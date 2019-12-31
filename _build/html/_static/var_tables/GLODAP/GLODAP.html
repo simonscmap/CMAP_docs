@@ -1,0 +1,335 @@
+
+<html>
+<head>
+<style>
+
+    h2 {
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 5px;
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 90%;
+    }
+    table tbody tr:hover {
+        background-color: #dddddd;
+    }
+    .wide {
+        width: 90%;
+    }
+
+</style>
+</head>
+<body>
+    <table border="1" class="dataframe wide">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Table_Name</th>
+      <th>Short_Name</th>
+      <th>Long_Name</th>
+      <th>Unit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>pressure</td>
+      <td>Sampling Pressure</td>
+      <td>dbar</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>temperature</td>
+      <td>Temperature</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>theta_potential_temperature</td>
+      <td>Potential Temperature</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>salinity</td>
+      <td>Salinity</td>
+      <td>PSU</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>sigma0_potential_density</td>
+      <td>Potential Density Anomaly</td>
+      <td>kg/m^3</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>sigma1_potential_density_ref_1000_dbar</td>
+      <td>Potential Density Anomaly, ref 1000dbar</td>
+      <td>kg/m^3</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>sigma2_potential_density_ref_2000_dbar</td>
+      <td>Potential Density Anomaly, ref 1000dbar</td>
+      <td>kg/m^3</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>sigma3_potential_density_ref_3000_dbar</td>
+      <td>Potential Density Anomaly, ref 1000dbar</td>
+      <td>kg/m^3</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>sigma4_potential_density_ref_4000_dbar</td>
+      <td>Potential Density Anomaly, ref 1000dbar</td>
+      <td>kg/m^3</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>gamma_neutral_density</td>
+      <td>Neutral Density Anomaly</td>
+      <td>kg/m^3</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>oxygen</td>
+      <td>Oxygen</td>
+      <td>µmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>aou</td>
+      <td>Apparent Oxygen Utilization</td>
+      <td>µmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>nitrate</td>
+      <td>Nitrate</td>
+      <td>µmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>nitrite</td>
+      <td>Nitrite</td>
+      <td>µmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>silicate</td>
+      <td>Silicate</td>
+      <td>µmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>phosphate</td>
+      <td>Phosphate</td>
+      <td>µmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>tco2</td>
+      <td>TCO2</td>
+      <td>µmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>talk</td>
+      <td>Talk</td>
+      <td>µmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>phts25p0_pH_25C_0dbar</td>
+      <td>pH at total scale, 25C and 0 dbar of pressure</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>phtsinsitutp_pH_insitu</td>
+      <td>pH at total scale, in situ temperature and pre...</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>cfc11</td>
+      <td>CFC-11</td>
+      <td>pmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>pcfc11</td>
+      <td>PCFC-11</td>
+      <td>ppt</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>cfc12</td>
+      <td>CFC-12</td>
+      <td>pmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>pcfc12</td>
+      <td>PCFC-12</td>
+      <td>ppt</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>cfc113</td>
+      <td>CFC-13</td>
+      <td>pmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>pcfc113</td>
+      <td>PCFC-13</td>
+      <td>ppt</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>ccl4</td>
+      <td>CCL4</td>
+      <td>pmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>pccl4</td>
+      <td>pCCL4</td>
+      <td>ppt</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>sf6</td>
+      <td>SF6</td>
+      <td>fmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>psf6</td>
+      <td>pSF6</td>
+      <td>ppt</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>c13</td>
+      <td>C13</td>
+      <td>‰</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>c14</td>
+      <td>C14</td>
+      <td>‰</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>c14err</td>
+      <td>C13 Counting Error</td>
+      <td>‰</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>h3</td>
+      <td>H3</td>
+      <td>TU</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>h3err</td>
+      <td>H3 Counting Error</td>
+      <td>TU</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>he3</td>
+      <td>He3</td>
+      <td>%</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>he3err</td>
+      <td>He3 Counting Error</td>
+      <td>%</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>he</td>
+      <td>He</td>
+      <td>nmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>heerr</td>
+      <td>He Counting Error</td>
+      <td>nmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>neon</td>
+      <td>Ne</td>
+      <td>nmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>neonerr</td>
+      <td>Ne Counting Error</td>
+      <td>nmol/kg</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>o18</td>
+      <td>Delta O18</td>
+      <td>‰</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>toc</td>
+      <td>Total Organic Carbon</td>
+      <td>µmol L -1 c</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>doc</td>
+      <td>Dissolved Organic Carbon</td>
+      <td>µmol L -1 c</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>don</td>
+      <td>Dissolved Organic Nitrogen</td>
+      <td>µmol L -1 c</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>tdn</td>
+      <td>Total Dissolved Nitrogen</td>
+      <td>µmol L -1 c</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>chla</td>
+      <td>Chlorophyll a</td>
+      <td>µg kg -1 c</td>
+    </tr>
+    <tr>
+      <td>tblGLODAP</td>
+      <td>cruise_expocode</td>
+      <td>Expocode – Expedition Code for NODC</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

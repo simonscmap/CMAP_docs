@@ -27,7 +27,9 @@
         <script type="text/javascript" src="../../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../../_static/doctools.js"></script>
         <script type="text/javascript" src="../../../_static/language_data.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
         <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
     
     <script type="text/javascript" src="../../../_static/js/theme.js"></script>
 
@@ -94,6 +96,7 @@
 <li class="toctree-l3"><a class="reference internal" href="pycmap_install.html">Installation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pycmap_data_retrieval.html">Data Retrieval</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pycmap_data_vizualization.html">Data Visualization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pycmap_presentations.html">Presentations</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../opedia_tutorials/opedia_tutorials.html">opedia (depreciated)</a></li>
@@ -169,7 +172,31 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="pycmap-api">
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="pycmap-api">
 <h1>pycmap API<a class="headerlink" href="#pycmap-api" title="Permalink to this headline">¶</a></h1>
 <p>Pycmap is the python package of Simons CMAP project that provides a simple and unified interface to the hosted datasets at Simons CMAP database.</p>
 <p>The pycmap package requires an API key. To obtain an API key please first register for at: <a class="reference external" href="https://simonscmap.com/register">https://simonscmap.com/register</a> and then click on the API link at the op of the page to get the API key. You will need to keep this key for future use.</p>
@@ -180,9 +207,10 @@ cloud using the  <img alt="colab" src="https://colab.research.google.com/assets/
 <p>Once you receive an API key you can install pycmap locally and then retrieve and visualize data. Below are links providing details and tutorials on how to install, retrieve and visualize data with pycmap.</p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference external" href="pycmap_install.html"><div align="middle" class="align-middle"><img alt="install_icon" src="../../../_images/install.svg" /></div>
@@ -191,10 +219,12 @@ cloud using the  <img alt="colab" src="https://colab.research.google.com/assets/
 </a></p></td>
 <td><p><a class="reference external" href="pycmap_data_vizualization.html"><div align="middle" class="align-middle"><img alt="data_vizualization" src="../../../_images/vizualize.svg" /></div>
 </a></p></td>
+<td><p><a class="reference external" href="pycmap_presentations.html"><img alt="presentation" class="align-middle" src="../../../_images/presentation.png" style="width: 192.0px; height: 192.0px;" /></a></p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="pycmap_install.html#pycmapinstall"><span class="std std-ref">Installation</span></a></p></td>
 <td><p><a class="reference internal" href="pycmap_data_retrieval.html#dataret"><span class="std std-ref">Data Retrieval</span></a></p></td>
 <td><p><a class="reference internal" href="pycmap_data_vizualization.html#dataviz"><span class="std std-ref">Data Visualization</span></a></p></td>
+<td><p><a class="reference internal" href="pycmap_presentations.html#datapres"><span class="std std-ref">Presentations</span></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -215,7 +245,7 @@ cloud using the  <img alt="colab" src="https://colab.research.google.com/assets/
     <p>
         &copy; Copyright 2019, Mohammad Dehghani Ashkezari &amp; Norland Raphael Hagen
       <span class="lastupdated">
-        Last updated on Dec 03, 2019.
+        Last updated on Dec 31, 2019.
       </span>
 
     </p>

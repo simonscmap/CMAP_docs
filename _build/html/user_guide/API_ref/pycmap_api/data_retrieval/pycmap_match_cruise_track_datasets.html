@@ -1,0 +1,537 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Match (colocalize) Cruise Track with Datasets &mdash; CMAP</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../../../_static/CMAP_logo.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/style.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Data Visualization" href="../pycmap_data_vizualization.html" />
+    <link rel="prev" title="Match (colocalize) Datasets" href="pycmap_match_datasets.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> CMAP
+          
+
+          
+            
+            <img src="../../../../_static/CMAP_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting_started/installation/installation.html">Installation</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../catalog/catalog.html">Data Catalog</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../api_ref.html">Software Packages</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../pycmap_api_ref.html">pycmap API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../pycmap_install.html">Installation</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../pycmap_data_retrieval.html">Data Retrieval</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="pycmap_api.html">API</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_query.html">Query</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_catalog.html">Catalog</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_search_catalog.html">Search Catalog</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_dataset.html">Datasets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_metadata.html">Metadata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_dataset_metadata.html">Dataset Metadata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_dataset_columns.html">Dataset Columns</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_dataset_head.html">Dataset Head</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_variable_long_name.html">Variable Long Name</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_variable_unit.html">Variable Unit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_variable_resolution.html">Variable Resolution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_var_coverage.html">Variable Coverage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_var_stat.html">Variable Stat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_has_field.html">If Column Exists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_is_gridded.html">Is Gridded Product</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_is_climatology.html">Is Climatology Product</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_list_cruises.html">List of Cruises</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_details.html">Cruise Details by Name</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_ST_bounds.html">Cruise Spatio-Tempoal Bounds</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_trajectory.html">Cruise Trajectory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_variables.html">Cruise Variables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_retrieve_dataset.html">Retrieve Dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_subset_ST.html">Data Subset: Generic Space-Time Cut</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_subset_TS.html">Data Subset: Time Series</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_subset_DP.html">Data Subset: Depth Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_match_datasets.html">Match (colocalize) Datasets</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Match (colocalize) Cruise Track with Datasets</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pycmap_data_vizualization.html">Data Visualization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pycmap_presentations.html">Presentations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../opedia_tutorials/opedia_tutorials.html">opedia (depreciated)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cmap4r_api/cmap4r_api.html">cmap4r API</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../faq_and_contributing/datasubmission.html">Data Submission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../faq_and_contributing/FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../faq_and_contributing/contact.html">Contact and Contribute</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">CMAP</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../api_ref.html">Software Packages</a> &raquo;</li>
+        
+          <li><a href="../pycmap_api_ref.html">pycmap API</a> &raquo;</li>
+        
+          <li><a href="../pycmap_data_retrieval.html">Data Retrieval</a> &raquo;</li>
+        
+      <li>Match (colocalize) Cruise Track with Datasets</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="match-colocalize-cruise-track-with-datasets">
+<span id="matchcruise"></span><h1>Match (colocalize) Cruise Track with Datasets<a class="headerlink" href="#match-colocalize-cruise-track-with-datasets" title="Permalink to this headline">¶</a></h1>
+<a class="reference external image-reference" href="https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/MatchCruise.ipynb"><img alt="https://colab.research.google.com/assets/colab-badge.svg" src="https://colab.research.google.com/assets/colab-badge.svg" /></a>
+<a class="reference external image-reference" href="https://mybinder.org/v2/gh/simonscmap/pycmap/master?filepath=docs%2FMatchCruise.ipynb"><img alt="https://mybinder.org/badge_logo.svg" src="https://mybinder.org/badge_logo.svg" /></a>
+<dl class="method">
+<dt id="along_track">
+<code class="sig-name descname">along_track</code><span class="sig-paren">(</span><em class="sig-param">cruise</em>, <em class="sig-param">targetTables</em>, <em class="sig-param">targetVars</em>, <em class="sig-param">depth1</em>, <em class="sig-param">depth2</em>, <em class="sig-param">temporalTolerance</em>, <em class="sig-param">latTolerance</em>, <em class="sig-param">lonTolerance</em>, <em class="sig-param">depthTolerance</em><span class="sig-paren">)</span><a class="headerlink" href="#along_track" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method colocalizes a cruise trajectory with the specified target variables. The matching results rely on the tolerance parameters because these parameters set the matching boundaries between the cruise trajectory and target datasets. Please note that the number of matching entries for each target variable might vary depending on the temporal and spatial resolutions of the target variable. In principle, if the cruise trajectory is fully covered by the target variable’s spatio-temporal range, there should always be matching results if the tolerance parameters are larger than half of their corresponding spatial/temporal resolutions. Please explore the <a class="reference internal" href="../../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a> to find appropriate target variables to colocalize with the desired cruise.
+|
+This method returns a dataframe containing the cruise trajectory joined with the target variable(s).</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>cruise: string</strong></dt><dd><p>The official cruise name. If applicable, you may also use cruise “nickname” (‘Diel’, ‘Gradients_1’ …). A full list of cruise names can be retrieved using cruise method.</p>
+</dd>
+<dt><strong>targetTables: list of string</strong></dt><dd><p>Table names of the target datasets to be matched with the source data. Notice source dataset can be matched with multiple target datasets. A full list of table names can be found in the <a class="reference internal" href="../../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
+</dd>
+<dt><strong>targetVars: list of string</strong></dt><dd><p>Variable short names to be matched with the source variable. A full list of variable short names can be found in the <a class="reference internal" href="../../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
+</dd>
+<dt><strong>depth1: float</strong></dt><dd><p>Start depth [m]. This parameter sets the lower bound of the depth cut on the target datasets. ‘depth1’ and ‘depth2’ allow matching a cruise trajectory (which is at the surface, hopefully!) with target variables at lower depth. Note depth is a positive number (depth is 0 at surface and grows towards ocean floor).</p>
+</dd>
+<dt><strong>depth2: float</strong></dt><dd><p>End depth [m]. This parameter sets the upper bound of the depth cut on the target datasets. Note depth is a positive number (depth is 0 at surface and grows towards ocean floor).</p>
+</dd>
+<dt><strong>temporalTolerance: list of int</strong></dt><dd><p>Temporal tolerance values between the cruise trajectory and target datasets. The size and order of values in this list should match those of targetTables. If only a single integer value is given, that would be applied to all target datasets. This parameter is in day units except when the target variable represents monthly climatology data in which case it is in month units. Notice fractional values are not supported in the current version.</p>
+</dd>
+<dt><strong>latTolerance: list of float or int</strong></dt><dd><p>Spatial tolerance values in meridional direction [deg] between the cruise trajectory and target datasets. The size and order of values in this list should match those of targetTables. If only a single float value is given, that would be applied to all target datasets. A “safe” value for this parameter can be slightly larger than the half of the target variable’s spatial resolution.</p>
+</dd>
+<dt><strong>lonTolerance: list of float or int</strong></dt><dd><p>Spatial tolerance values in zonal direction [deg] between the cruise trajectory and target datasets. The size and order of values in this list should match those of targetTables. If only a single float value is given, that would be applied to all target datasets. A “safe” value for this parameter can be slightly larger than the half of the target variable’s spatial resolution.</p>
+</dd>
+<dt><strong>depthTolerance: list of float or int</strong></dt><dd><p>Spatial tolerance values in vertical direction [m] between the cruise trajectory and target datasets. The size and order of values in this list should match those of targetTables. If only a single float value is given, that would be applied to all target datasets.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns:</dt>
+<dd class="field-even"><p>Pandas dataframe.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="example-1">
+<h2>Example 1:<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
+<p>This example demonstrates how to colocalize the “Diel” cruise (official name: KM1513) with 2 target variables (lines 8-9):</p>
+<ul class="simple">
+<li><p>‘synecho_abundance’ from underway <a class="reference external" href="https://cmap.readthedocs.io/en/latest/catalog/datasets/SeaFlow.html#seaflow">seaflow dataset</a></p></li>
+<li><p>‘NO3’ from <a class="reference external" href="https://cmap.readthedocs.io/en/latest/catalog/datasets/Pisces.html#pisces">Pisces model</a></p></li>
+</ul>
+<p>The last few lines of this snippet plots the colocalized synecho_abundance versus NO3 concentration.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Tip1:</strong></p>
+<p>The official name of this cruise is ‘KM1513’ and one can use the official name, instead (line 7).</p>
+<p><strong>Tip2:</strong></p>
+<p>A full list of hosted cruise expeditions can be retrieved using the cruises method.</p>
+<p><strong>Tip3:</strong></p>
+<p>The temporalTolerance parameter is set to [0, 4] (line 12). This means:
+-  ±0 day temporal tolerance when matching with ‘synecho_abundance’ (exact date-time matching)
+-  ±4 day temporal tolerance when matching with ‘NO3’ (Pisces is a weekly averaged dataset)</p>
+<p><strong>Tip4:</strong></p>
+<p>The latTolerance and lonTolerance parameters are set to [0, 0.25] (lines 13-14). This means:
+-  ±0 degree spatial tolerances (in meridional and zonal directions) when matching with ‘synecho_abundance’ (exact lat/lon matching)
+-  ±0.25 degrees spatial tolerances (in meridional and zonal directions) when matching with ‘NO3’. This dataset has 0.25 degree spatial resolution which means one may reduce the spatial tolerance for this target dataset down to 0.25/2 = 0.125 degrees.</p>
+<p><strong>Tip5:</strong></p>
+<p>The depthTolerance parameter is set to [5, 5] (line 20). This means:
+The depthTolerance parameter is set to [5, 5] (line 20). This means: *
+±5 meters vertical tolerances when matching with ‘synecho_abundance’ *
+±5 meters vertical tolerances when matching with ‘NO3’. Note that Pisces
+dataset have several depth levels between surface and 5 m. The spacing
+between the depth levels is not have uniform. See the <a class="reference external" href="https://cmap.readthedocs.io/en/latest/catalog/datasets/Pisces.html#pisces">dataset page</a>
+for more details.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!pip install pycmap -q     # uncomment to install pycmap, if necessary</span>
+
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">pycmap</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">pycmap</span><span class="o">.</span><span class="n">API</span><span class="p">(</span><span class="n">token</span><span class="o">=</span><span class="s1">&#39;&lt;YOUR_API_KEY&gt;&#39;</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">along_track</span><span class="p">(</span>
+                    <span class="n">cruise</span><span class="o">=</span><span class="s1">&#39;diel&#39;</span><span class="p">,</span>
+                    <span class="n">targetTables</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;tblSeaFlow&#39;</span><span class="p">,</span> <span class="s1">&#39;tblPisces_NRT&#39;</span><span class="p">],</span>
+                    <span class="n">targetVars</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;synecho_abundance&#39;</span><span class="p">,</span> <span class="s1">&#39;NO3&#39;</span><span class="p">],</span>
+                    <span class="n">depth1</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                    <span class="n">depth2</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+                    <span class="n">temporalTolerance</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
+                    <span class="n">latTolerance</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">],</span>
+                    <span class="n">lonTolerance</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">],</span>
+                    <span class="n">depthTolerance</span><span class="o">=</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+                    <span class="p">)</span>
+
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;NO3&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;synecho_abundance&#39;</span><span class="p">],</span> <span class="s1">&#39;.&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;synecho_abundance&#39;</span> <span class="o">+</span> <span class="n">api</span><span class="o">.</span><span class="n">get_unit</span><span class="p">(</span><span class="s1">&#39;tblSeaFlow&#39;</span><span class="p">,</span> <span class="s1">&#39;synecho_abundance&#39;</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;NO3&#39;</span> <span class="o">+</span> <span class="n">api</span><span class="o">.</span><span class="n">get_unit</span><span class="p">(</span><span class="s1">&#39;tblPisces_NRT&#39;</span><span class="p">,</span> <span class="s1">&#39;NO3&#39;</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-2">
+<h2>Example 2:<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
+<p>Imagine you would like to colocalize a ‘large’ number of variables along track of multiple cruises. Hard-coding the variable names, table names, and tolerance parameters (as is shown in the previous example) is an error-prone process. This example show an alternative approach to implement multi-variable colocalization.</p>
+<p>Here we colocalize two open-ocean North-Pacific transect cruises (‘KOK1606’ [gradient1], ‘MGL1704’ [gradient2]) with 14 variables from satellite datasets, model outputs, underway cruise measurements, and World-Ocean-Atlas climatology dataset. A full list of variables can be retrieved using the get_catalog() command. Also, please review the tips mentioned in the previous example since they are generally relevant to this case, too. It takes a few minutes to run this script since we are colocalizing two long cruises with multiple target variables. Reduce the number of cruises (line 12), and/or number of target variables (lines 19-36) to save time.</p>
+<p>As a simple show case, the colocalized synechococcus abundance is plotted against latitude and is compared with phosphaste concentration from World Ocean Atlas monthly climatology dataset (line 91). The full colocalized dataset is stored in a csv file on local machine.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Tip:</strong></p>
+<p>Once the colocalization is finished, you may add new “calculated”
+columns to the final dataframe:
+<code class="docutils literal notranslate"><span class="pre">df['NO3_divided_Fe']</span> <span class="pre">=</span> <span class="pre">df['NO3']</span> <span class="pre">/</span> <span class="pre">df['Fe']</span></code></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">namedtuple</span>
+<span class="kn">import</span> <span class="nn">pycmap</span>
+
+
+
+<span class="k">def</span> <span class="nf">open_ocean_cruises</span><span class="p">():</span>
+    <span class="k">return</span> <span class="p">[</span><span class="s1">&#39;MGL1704&#39;</span><span class="p">,</span> <span class="s1">&#39;KOK1606&#39;</span><span class="p">]</span>
+
+
+<span class="k">def</span> <span class="nf">match_params</span><span class="p">():</span>
+    <span class="n">Param</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s1">&#39;Param&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="s1">&#39;variable&#39;</span><span class="p">,</span> <span class="s1">&#39;temporalTolerance&#39;</span><span class="p">,</span> <span class="s1">&#39;latTolerance&#39;</span><span class="p">,</span> <span class="s1">&#39;lonTolerance&#39;</span><span class="p">,</span> <span class="s1">&#39;depthTolerance&#39;</span><span class="p">])</span>
+    <span class="n">params</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="c1">######## ship data (not calibrated)</span>
+    <span class="n">params</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Param</span><span class="p">(</span><span class="s1">&#39;tblCruise_Salinity&#39;</span><span class="p">,</span> <span class="s1">&#39;salinity&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+    <span class="n">params</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Param</span><span class="p">(</span><span class="s1">&#39;tblCruise_Temperature&#39;</span><span class="p">,</span> <span class="s1">&#39;temperature&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+    <span class="c1">######## underway seaflow</span>
+    <span class="n">params</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Param</span><span class="p">(</span><span class="s1">&#39;tblSeaFlow&#39;</span><span class="p">,</span> <span class="s1">&#39;prochloro_abundance&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+    <span class="n">params</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Param</span><span class="p">(</span><span class="s1">&#39;tblSeaFlow&#39;</span><span class="p">,</span> <span class="s1">&#39;synecho_abundance&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+    <span class="c1">######## satellite</span>
+    <span class="n">params</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Param</span><span class="p">(</span><span class="s1">&#39;tblCHL_REP&#39;</span><span class="p">,</span> <span class="s1">&#39;chl&#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+    <span class="n">params</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Param</span><span class="p">(</span><span class="s1">&#39;tblModis_AOD_REP&#39;</span><span class="p">,</span> <span class="s1">&#39;AOD&#39;</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+    <span class="n">params</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Param</span><span class="p">(</span><span class="s1">&#39;tblAltimetry_REP&#39;</span><span class="p">,</span> <span class="s1">&#39;sla&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+    <span class="c1">####### model</span>
+    <span class="n">params</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Param</span><span class="p">(</span><span class="s1">&#39;tblPisces_NRT&#39;</span><span class="p">,</span> <span class="s1">&#39;Fe&#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+    <span class="n">params</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Param</span><span class="p">(</span><span class="s1">&#39;tblPisces_NRT&#39;</span><span class="p">,</span> <span class="s1">&#39;NO3&#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+    <span class="n">params</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Param</span><span class="p">(</span><span class="s1">&#39;tblPisces_NRT&#39;</span><span class="p">,</span> <span class="s1">&#39;PO4&#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+    <span class="n">params</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Param</span><span class="p">(</span><span class="s1">&#39;tblDarwin_Nutrient_Climatology&#39;</span><span class="p">,</span> <span class="s1">&#39;NH4_darwin_clim&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+    <span class="n">params</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Param</span><span class="p">(</span><span class="s1">&#39;tblDarwin_Nutrient_Climatology&#39;</span><span class="p">,</span> <span class="s1">&#39;SiO2_darwin_clim&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+    <span class="c1">####### WOA</span>
+    <span class="n">params</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Param</span><span class="p">(</span><span class="s1">&#39;tblWOA_Climatology&#39;</span><span class="p">,</span> <span class="s1">&#39;density_WOA_clim&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">.</span><span class="mi">75</span><span class="p">,</span> <span class="o">.</span><span class="mi">75</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+    <span class="n">params</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Param</span><span class="p">(</span><span class="s1">&#39;tblWOA_Climatology&#39;</span><span class="p">,</span> <span class="s1">&#39;phosphate_WOA_clim&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+
+    <span class="n">tables</span><span class="p">,</span> <span class="n">variables</span><span class="p">,</span> <span class="n">temporalTolerance</span><span class="p">,</span> <span class="n">latTolerance</span><span class="p">,</span> <span class="n">lonTolerance</span><span class="p">,</span> <span class="n">depthTolerance</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">params</span><span class="p">)):</span>
+        <span class="n">tables</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">table</span><span class="p">)</span>
+        <span class="n">variables</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">variable</span><span class="p">)</span>
+        <span class="n">temporalTolerance</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">temporalTolerance</span><span class="p">)</span>
+        <span class="n">latTolerance</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">latTolerance</span><span class="p">)</span>
+        <span class="n">lonTolerance</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">lonTolerance</span><span class="p">)</span>
+        <span class="n">depthTolerance</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">depthTolerance</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">tables</span><span class="p">,</span> <span class="n">variables</span><span class="p">,</span> <span class="n">temporalTolerance</span><span class="p">,</span> <span class="n">latTolerance</span><span class="p">,</span> <span class="n">lonTolerance</span><span class="p">,</span> <span class="n">depthTolerance</span>
+
+
+
+<span class="k">def</span> <span class="nf">plot</span><span class="p">(</span><span class="n">api</span><span class="p">,</span> <span class="n">df</span><span class="p">):</span>
+    <span class="n">tbl1</span><span class="p">,</span> <span class="n">tbl2</span> <span class="o">=</span> <span class="s1">&#39;tblSeaFlow&#39;</span><span class="p">,</span> <span class="s1">&#39;tblWOA_Climatology&#39;</span>
+    <span class="n">var1</span><span class="p">,</span> <span class="n">var2</span> <span class="o">=</span> <span class="s1">&#39;prochloro_abundance&#39;</span><span class="p">,</span> <span class="s1">&#39;phosphate_WOA_clim&#39;</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="n">ax1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+    <span class="n">ax2</span> <span class="o">=</span> <span class="n">ax1</span><span class="o">.</span><span class="n">twinx</span><span class="p">()</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;lat&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="n">var1</span><span class="p">],</span> <span class="s1">&#39;g.&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;lat&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="n">var2</span><span class="p">],</span> <span class="s1">&#39;b.&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;latitude [deg]&#39;</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="n">var1</span> <span class="o">+</span> <span class="n">api</span><span class="o">.</span><span class="n">get_unit</span><span class="p">(</span><span class="n">tbl1</span><span class="p">,</span> <span class="n">var1</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">)</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="n">var2</span> <span class="o">+</span> <span class="n">api</span><span class="o">.</span><span class="n">get_unit</span><span class="p">(</span><span class="n">tbl2</span><span class="p">,</span> <span class="n">var2</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    <span class="k">return</span>
+
+
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="n">api</span> <span class="o">=</span> <span class="n">pycmap</span><span class="o">.</span><span class="n">API</span><span class="p">(</span><span class="n">token</span><span class="o">=</span><span class="s1">&#39;&lt;YOUR_API_KEY&gt;&#39;</span><span class="p">)</span>
+    <span class="n">cruises</span> <span class="o">=</span> <span class="n">open_ocean_cruises</span><span class="p">()</span>
+    <span class="n">tables</span><span class="p">,</span> <span class="n">variables</span><span class="p">,</span> <span class="n">temporalTolerance</span><span class="p">,</span> <span class="n">latTolerance</span><span class="p">,</span> <span class="n">lonTolerance</span><span class="p">,</span> <span class="n">depthTolerance</span> <span class="o">=</span> <span class="n">match_params</span><span class="p">()</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({})</span>
+    <span class="k">for</span> <span class="n">cruise</span> <span class="ow">in</span> <span class="n">cruises</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">********************************&#39;</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Colocalizing </span><span class="si">%s</span><span class="s1"> cruise...&#39;</span> <span class="o">%</span> <span class="n">cruise</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;********************************</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">along_track</span><span class="p">(</span>
+                              <span class="n">cruise</span><span class="o">=</span><span class="n">cruise</span><span class="p">,</span>
+                              <span class="n">targetTables</span><span class="o">=</span><span class="n">tables</span><span class="p">,</span>
+                              <span class="n">targetVars</span><span class="o">=</span><span class="n">variables</span><span class="p">,</span>
+                              <span class="n">temporalTolerance</span><span class="o">=</span><span class="n">temporalTolerance</span><span class="p">,</span>
+                              <span class="n">latTolerance</span><span class="o">=</span><span class="n">latTolerance</span><span class="p">,</span>
+                              <span class="n">lonTolerance</span><span class="o">=</span><span class="n">lonTolerance</span><span class="p">,</span>
+                              <span class="n">depthTolerance</span><span class="o">=</span><span class="n">depthTolerance</span><span class="p">,</span>
+                              <span class="n">depth1</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                              <span class="n">depth2</span><span class="o">=</span><span class="mi">5</span>
+                              <span class="p">)</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">df</span> <span class="o">=</span> <span class="n">data</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df</span><span class="p">,</span> <span class="n">data</span><span class="p">],</span> <span class="n">ignore_index</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1">.csv&#39;</span> <span class="o">%</span> <span class="n">cruise</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;sfMatch.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+    <span class="n">plot</span><span class="p">(</span><span class="n">api</span><span class="p">,</span> <span class="n">df</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">df</span>
+
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">main</span><span class="p">()</span>
+
+<span class="c1"># the results are stored in csv files at the current working address</span>
+<span class="c1"># if you are running this script on colab, run the following command to list the generated csv files:</span>
+<span class="c1">#!ls</span>
+</pre></div>
+</div>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../../../../_images/sql.png"><img alt="../../../../_images/sql.png" src="../../../../_images/sql.png" style="width: 51.2px; height: 51.2px;" /></a>
+</div>
+<p><strong>SQL Statement</strong></p>
+<p>Here is how to achieve the same results using a direct SQL statement. Please refer to <a class="reference internal" href="pycmap_query.html#query"><span class="std std-ref">Query</span></a> for more information.</p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">EXEC</span> <span class="n">uspMatch</span>
+  <span class="s1">&#39;sourceTable&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;sourceVariable&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;targetTables&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;targetVariables&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;dt1&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;dt2&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;lat1&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;lat2&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;lon1&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;lon2&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;depth1&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;depth2&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;timeTolerance&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;latTolerance&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;lonTolerance&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;depthTolerance&#39;</span>
+</pre></div>
+</div>
+<p><strong>Example:</strong></p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">EXEC</span> <span class="n">uspMatch</span>
+  <span class="s1">&#39;tblKM1314_Cobalmins&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;Me_PseudoCobalamin_Particulate_pM&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;tblDarwin_Phytoplankton&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;picoprokaryote&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;2013-08-09 00:00:00&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;2013-09-07 00:00:00&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;22.25&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;50.25&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;-159.25&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;-127.75&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;-5&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;305&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;2&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;0.25&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;0.25&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;5&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Mohammad Dehghani Ashkezari &amp; Norland Raphael Hagen
+      <span class="lastupdated">
+        Last updated on Dec 30, 2019.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

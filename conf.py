@@ -51,9 +51,12 @@ extensions = [
     'sphinx.ext.doctest',
     'sphinx.ext.viewcode',
     'sphinx.ext.extlinks',
-    "sphinx.ext.intersphinx"
+    "sphinx.ext.intersphinx",
+    "nbsphinx"
     # 'sphinx_gallery.gen_gallery',
 ]
+nbsphinx_allow_errors = True
+nbsphinx_timeout = 1200
 
 # Always show the source code that generates a plot
 plot_include_source = True
@@ -114,6 +117,7 @@ add_function_parentheses = False
 html_show_sourcelink = False
 html_show_sphinx = True
 html_show_copyright = True
+
 
 # Theme config
 html_theme = "sphinx_rtd_theme"
