@@ -57,6 +57,7 @@ extensions = [
 ]
 nbsphinx_allow_errors = True
 nbsphinx_timeout = 1200
+nbsphinx_kernel_name = 'python3'
 
 # Always show the source code that generates a plot
 plot_include_source = True
