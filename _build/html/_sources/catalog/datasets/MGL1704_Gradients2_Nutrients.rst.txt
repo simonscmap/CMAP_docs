@@ -2,8 +2,8 @@
 
 .. _MGL1704_Nutrients:
 
-Nutrient data from the MGL1704 Cruise
-*************************************
+Organic and Inorganic Nutrients from the MGL1704 Cruise
+*******************************************************
 
 
 
