@@ -49,11 +49,10 @@ Table of Variables
 Data Source
 ***********
 
-NSIDC
-
-NASA JPL - Oceans Melting Greenland Mission
+The Oceans Melting Greenland AXCTD data were obtained from the NASA EOSDIS Physical Oceanography Distributed Active Archive Center (PO.DAAC) at the Jet Propulsion Laboratory, Pasadena, CA (https://doi.org/10.5067/OMGEV-AXCT1).
 
 https://omg.jpl.nasa.gov/portal/
+https://podaac.jpl.nasa.gov/dataset/OMG_L2_AXCTD
 
 How to Acknowledge
 ******************
