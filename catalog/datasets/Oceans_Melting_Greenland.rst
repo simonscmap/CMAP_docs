@@ -41,9 +41,10 @@ Table of Variables
 
 .. raw:: html
 
-    <iframe src="../../_static/var_tables/OMG_CTD/OMG_CTD.html"  frameborder = 0 height = '100px' width="100%">></iframe>
+    <iframe src="../../_static/var_tables/OMG_CTD/OMG_CTD.html"  frameborder = 0 height = '200px' width="100%">></iframe>
 
 
+|
 
 Data Source
 ***********
