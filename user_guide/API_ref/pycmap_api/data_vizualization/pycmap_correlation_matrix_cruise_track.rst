@@ -196,7 +196,7 @@ Review `Match (colocalize) Cruise Track with Datasets`_, and `Match
 
 .. raw:: html
 
-  <iframe src="../../../_static/pycmap_tutorial_viz/html/correlation_matrix_cruise_track_annotated_heatmap_Along_Track_MGL1704.html"  frameborder = 0  height="800px" width="100%">></iframe>
+  <iframe src="../../../../_static/pycmap_tutorial_viz/html/correlation_matrix_cruise_track_annotated_heatmap_Along_Track_MGL1704.html"  frameborder = 0  height="800px" width="100%">></iframe>
 
 
 
@@ -221,4 +221,4 @@ Review `Match (colocalize) Cruise Track with Datasets`_, and `Match
 
 .. raw:: html
 
-   <iframe src="../../../_static/pycmap_tutorial_viz/html/correlation_matrix_cruise_track_modified_annotated_heatmap_Along_Track_MGL1704.html"  frameborder = 0  height="1100px" width="100%">></iframe>
+   <iframe src="../../../../_static/pycmap_tutorial_viz/html/correlation_matrix_cruise_track_modified_annotated_heatmap_Along_Track_MGL1704.html"  frameborder = 0  height="1100px" width="100%">></iframe>

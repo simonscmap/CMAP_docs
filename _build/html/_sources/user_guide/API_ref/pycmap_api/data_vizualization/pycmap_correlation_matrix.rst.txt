@@ -228,7 +228,7 @@ variables (lines 7-8):
 
 .. raw:: html
 
-   <iframe src="../../../_static/pycmap_tutorial_viz/html/correlation_matrix_annotated_heatmap_MIT9313PCR_Chisholm.html"  frameborder = 0  height="800px" width="100%">></iframe>
+   <iframe src="../../../../_static/pycmap_tutorial_viz/html/correlation_matrix_annotated_heatmap_MIT9313PCR_Chisholm.html"  frameborder = 0  height="800px" width="100%">></iframe>
 
 
 .. code-block:: python
@@ -248,4 +248,4 @@ variables (lines 7-8):
 
 .. raw:: html
 
-   <iframe src="../../../_static/pycmap_tutorial_viz/html/correlation_matrix_modified_annotated_heatmap_MIT9313PCR_Chisholm.html"  frameborder = 0  height="1100px" width="100%">></iframe>
+   <iframe src="../../../../_static/pycmap_tutorial_viz/html/correlation_matrix_modified_annotated_heatmap_MIT9313PCR_Chisholm.html"  frameborder = 0  height="1100px" width="100%">></iframe>

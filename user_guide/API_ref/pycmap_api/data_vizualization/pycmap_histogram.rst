@@ -131,16 +131,16 @@ visualization library (plotly) which may be changed by:
 
 .. raw:: html
 
-   <iframe src="../../../_static/pycmap_tutorial_viz/html/histogram_CTD_Oxygen.html"  frameborder = 0  height="420px" width="100%">></iframe>
+   <iframe src="../../../../_static/pycmap_tutorial_viz/html/histogram_CTD_Oxygen.html"  frameborder = 0  height="420px" width="100%">></iframe>
 
 
 .. raw:: html
 
-   <iframe src="../../../_static/pycmap_tutorial_viz/html/histogram_O2_darwin_clim.html"  frameborder = 0  height="420px" width="100%">></iframe>
+   <iframe src="../../../../_static/pycmap_tutorial_viz/html/histogram_O2_darwin_clim.html"  frameborder = 0  height="420px" width="100%">></iframe>
 
 .. raw:: html
 
-   <iframe src="../../../_static/pycmap_tutorial_viz/html/histogram_oxygen_WOA_clim.html"  frameborder = 0  height="420px" width="100%">></iframe>
+   <iframe src="../../../../_static/pycmap_tutorial_viz/html/histogram_oxygen_WOA_clim.html"  frameborder = 0  height="420px" width="100%">></iframe>
 
 
 

@@ -149,12 +149,12 @@ library (plotly) which may be changed by:
 
 .. raw:: html
 
-   <iframe src="../../../_static/pycmap_tutorial_viz/html/time_series_sla.html"  frameborder = 0  height="420px" width="100%">></iframe>
+   <iframe src="../../../../_static/pycmap_tutorial_viz/html/time_series_sla.html"  frameborder = 0  height="420px" width="100%">></iframe>
 
 
 .. raw:: html
 
-   <iframe src="../../../_static/pycmap_tutorial_viz/html/time_series_sss.html"  frameborder = 0  height="420px" width="100%">></iframe>
+   <iframe src="../../../../_static/pycmap_tutorial_viz/html/time_series_sss.html"  frameborder = 0  height="420px" width="100%">></iframe>
 
 
 
@@ -172,4 +172,4 @@ library (plotly) which may be changed by:
 
 .. raw:: html
 
-   <iframe src="../../../_static/pycmap_tutorial_viz/html/time_series_modified_sla.html"  frameborder = 0  height="600px" width="100%">></iframe>
+   <iframe src="../../../../_static/pycmap_tutorial_viz/html/time_series_modified_sla.html"  frameborder = 0  height="600px" width="100%">></iframe>

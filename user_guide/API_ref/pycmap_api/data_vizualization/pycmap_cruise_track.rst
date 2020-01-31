@@ -62,4 +62,4 @@ Example:
 
 .. raw:: html
 
-   <iframe src="../../../_static/pycmap_tutorial_viz/html/cruise_track_cruiseTrack.html"  frameborder = 0  height="550px" width="100%">></iframe>
+   <iframe src="../../../../_static/pycmap_tutorial_viz/html/cruise_track_cruiseTrack.html"  frameborder = 0  height="550px" width="100%">></iframe>

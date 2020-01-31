@@ -145,13 +145,13 @@ changed by: ``pycmap.API(vizEngine='bokeh')``
 
 .. raw:: html
 
-  <iframe src="../../../_static/pycmap_tutorial_viz/html/depth_profile_argo_merge_chl_adj.html"  frameborder = 0  height="450px" width="100%">></iframe>
+  <iframe src="../../../../_static/pycmap_tutorial_viz/html/depth_profile_argo_merge_chl_adj.html"  frameborder = 0  height="450px" width="100%">></iframe>
 
 |
 
 .. raw:: html
 
-  <iframe src="../../../_static/pycmap_tutorial_viz/html/depth_profile_CHL.html"  frameborder = 0  height="450px" width="100%">></iframe>
+  <iframe src="../../../../_static/pycmap_tutorial_viz/html/depth_profile_CHL.html"  frameborder = 0  height="450px" width="100%">></iframe>
 
 
 
@@ -170,7 +170,7 @@ changed by: ``pycmap.API(vizEngine='bokeh')``
 
 .. raw:: html
 
-   <iframe src="../../../_static/pycmap_tutorial_viz/html/depth_profile_modified_argo_merge_chl_adj.html"  frameborder = 0  height="650px" width="100%">></iframe>
+   <iframe src="../../../../_static/pycmap_tutorial_viz/html/depth_profile_modified_argo_merge_chl_adj.html"  frameborder = 0  height="650px" width="100%">></iframe>
 
 
 
