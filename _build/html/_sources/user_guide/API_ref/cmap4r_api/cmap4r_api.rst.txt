@@ -1,9 +1,12 @@
 
 
-.. _github: https://github.com/simonscmap/cmap4r
+.. _`here`: https://simonscmap.github.io/cmap4r/index.html
 
+.. _github: https://github.com/simonscmap/cmap4r
 
 cmap4r API
 ==========
 
-cmap4r is a R programming language package currently in development. More details on the project can be found on the cmap4r github_ page.
+The online documentation for the cmap4r package can be found here_
+
+The package source can be found on github_

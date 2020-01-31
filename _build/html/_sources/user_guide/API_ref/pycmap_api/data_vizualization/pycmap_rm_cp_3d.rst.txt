@@ -144,13 +144,13 @@ by: ``pycmap.API(vizEngine='bokeh')``
 
 .. raw:: html
 
-  <iframe src="../../../_static/pycmap_tutorial_viz/html/gridded_map_phosphate_WOA_clim.html"  frameborder = 0  height="550px" width="100%">></iframe>
+  <iframe src="../../../../_static/pycmap_tutorial_viz/html/gridded_map_phosphate_WOA_clim.html"  frameborder = 0  height="550px" width="100%">></iframe>
 
 
 
 .. raw:: html
 
-  <iframe src="../../../_static/pycmap_tutorial_viz/html/gridded_map_Fe.html"  frameborder = 0  height="550px" width="100%">></iframe>
+  <iframe src="../../../../_static/pycmap_tutorial_viz/html/gridded_map_Fe.html"  frameborder = 0  height="550px" width="100%">></iframe>
 
 
 
