@@ -144,13 +144,13 @@ by: ``pycmap.API(vizEngine='bokeh')``
 
 .. raw:: html
 
-  <iframe src="../../../../../_static/pycmap_tutorial_viz/html/gridded_map_phosphate_WOA_clim.html"  frameborder = 0  height="550px" width="100%">></iframe>
+  <iframe src="../../../../../../_static/pycmap_tutorial_viz/html/gridded_map_phosphate_WOA_clim.html"  frameborder = 0  height="550px" width="100%">></iframe>
 
 
 
 .. raw:: html
 
-  <iframe src="../../../../../_static/pycmap_tutorial_viz/html/gridded_map_Fe.html"  frameborder = 0  height="550px" width="100%">></iframe>
+  <iframe src="../../../../../../_static/pycmap_tutorial_viz/html/gridded_map_Fe.html"  frameborder = 0  height="550px" width="100%">></iframe>
 
 
 
@@ -169,7 +169,7 @@ by: ``pycmap.API(vizEngine='bokeh')``
 
 .. raw:: html
 
-  <iframe src="../../../../_static/pycmap_tutorial_viz/html/gridded_map_modified_Fe.html"  frameborder = 0  height="750px" width="100%">></iframe>
+  <iframe src="../../../../../_static/pycmap_tutorial_viz/html/gridded_map_modified_Fe.html"  frameborder = 0  height="750px" width="100%">></iframe>
 
 
 Example 2: Sparse Maps
@@ -209,7 +209,7 @@ abundance from `Global Pikophytoplankton`_ dataset.
 
 .. raw:: html
 
-   <iframe src="../../../../_static/pycmap_tutorial_viz/html/sparse_map_heatMap.html"  frameborder = 0  height="550px" width="100%">></iframe>
+   <iframe src="../../../../../_static/pycmap_tutorial_viz/html/sparse_map_heatMap.html"  frameborder = 0  height="550px" width="100%">></iframe>
 
 |
 
@@ -249,7 +249,7 @@ plotly library.
 
 .. raw:: html
 
-  <iframe src="../../../../_static/pycmap_tutorial_viz/html/contour_map_sst.html"  frameborder = 0  height="550px" width="100%">></iframe>
+  <iframe src="../../../../../_static/pycmap_tutorial_viz/html/contour_map_sst.html"  frameborder = 0  height="550px" width="100%">></iframe>
 
 Example 4: 3D Surface
 ---------------------
@@ -288,4 +288,4 @@ Currently, 3D map plots are only supported by the plotly library.
 
 .. raw:: html
 
- <iframe src="../../../../_static/pycmap_tutorial_viz/html/3D_surface_NO3.html"  frameborder = 0  height="550px" width="100%">></iframe>
+ <iframe src="../../../../../_static/pycmap_tutorial_viz/html/3D_surface_NO3.html"  frameborder = 0  height="550px" width="100%">></iframe>

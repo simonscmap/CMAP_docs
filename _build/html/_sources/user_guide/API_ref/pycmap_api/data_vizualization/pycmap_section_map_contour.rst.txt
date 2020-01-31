@@ -158,7 +158,7 @@ visualization library (plotly) which may be changed by:
 
 .. raw:: html
 
-  <iframe src="../../../_static/pycmap_tutorial_viz/html/section_map_NO3.html"  frameborder = 0  height="550px" width="100%">></iframe>
+  <iframe src="../../../../_static/pycmap_tutorial_viz/html/section_map_NO3.html"  frameborder = 0  height="550px" width="100%">></iframe>
 
 
 
@@ -179,7 +179,7 @@ visualization library (plotly) which may be changed by:
 
 .. raw:: html
 
-  <iframe src="../../../_static/pycmap_tutorial_viz/html/section_map_modified_NO3.html"  frameborder = 0  height="850px" width="100%">></iframe>
+  <iframe src="../../../../_static/pycmap_tutorial_viz/html/section_map_modified_NO3.html"  frameborder = 0  height="850px" width="100%">></iframe>
 
 
 
@@ -221,4 +221,4 @@ concentration`_ calculated by Darwin model.
 
 .. raw:: html
 
-   <iframe src="../../../_static/pycmap_tutorial_viz/html/section_contour_SIO2.html"  frameborder = 0  height="550px" width="100%">></iframe>
+   <iframe src="../../../../_static/pycmap_tutorial_viz/html/section_contour_SIO2.html"  frameborder = 0  height="550px" width="100%">></iframe>
