@@ -43,7 +43,7 @@ Cruise Trajectory
   api.cruise_trajectory('KM1513')
 
 
-.. figure:: /_static/CMAP_logos/cmap_main_logo.png
+.. figure:: /_static/overview_icons/sql.png
  :scale: 10 %
 
 **SQL Statement**
