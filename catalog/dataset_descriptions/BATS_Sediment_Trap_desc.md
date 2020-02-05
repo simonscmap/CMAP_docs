@@ -1,0 +1,1 @@
+The BATS (Bermuda Atlantic Time-series Study) sediment trap - flux dataset is time-series spanning from 1988 to 2016. The dataset contains multiple nutrient flux measurements. Cruise_ID is in the following format:  5 digit number !####, where !   = Cruise type, 1=BATS core. #### = Cruise number e.g., 10048 is BATS core 48
