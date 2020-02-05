@@ -37,14 +37,6 @@ Table of Variables
 |
 
 
-Global Prochlorococcus Distribution (0-5 m)
-###########################################
-
-.. raw:: html
-
-    <iframe src="../../_static/var_plots/flombaum_vis.html"  frameborder = 0  height="700px" width="100%">></iframe>
-
-|
 
 
 
