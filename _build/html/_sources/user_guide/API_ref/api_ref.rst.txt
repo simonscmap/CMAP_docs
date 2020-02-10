@@ -24,11 +24,11 @@ Software Packages
 
 .. table::
 
-    +------------------------+
-    |      |pycmap API|      |
-    +========================+
-    | `pycmap API`_          |
-    +------------------------+
+    +------------------------+------------------------+
+    |      |pycmap API|      |    |cmap4r API|        |
+    +========================+========================+
+    | `pycmap API`_          | `cmap4r API`_          |
+    +------------------------+------------------------+
 
 
 .. toctree::
@@ -36,5 +36,4 @@ Software Packages
 
   pycmap_api/pycmap_api_ref.rst
   opedia_tutorials/opedia_tutorials.rst
-
   cmap4r_api/cmap4r_api.rst
