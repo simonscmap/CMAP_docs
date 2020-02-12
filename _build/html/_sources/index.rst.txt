@@ -67,7 +67,6 @@ Simons CMAP website is under active development: https://simonscmap.com
     :hidden:
     :caption: User Guide
 
-
     catalog/catalog
     user_guide/API_ref/api_ref.rst
 
