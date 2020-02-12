@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     
-        <title>cmap4r API &mdash; CMAP</title>
+        <title>matcmap API &mdash; CMAP</title>
     
 
 
@@ -44,8 +44,8 @@
   <link rel="stylesheet" href="../../../_static/style.css" type="text/css" />
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="matcmap API" href="../matcmap_api/matcmap_api_ref.html" />
-    <link rel="prev" title="SQL Queries" href="../opedia_tutorials/opedia_sql.html" /> 
+    <link rel="next" title="juliacmap API" href="../juliacmap_api/juliacmap_api_ref.html" />
+    <link rel="prev" title="cmap4r API" href="../cmap4r_api/cmap4r_api.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -100,8 +100,13 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../api_ref.html">Software Packages</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../pycmap_api/pycmap_api_ref.html">pycmap API</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../opedia_tutorials/opedia_tutorials.html">opedia (depreciated)</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">cmap4r API</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../matcmap_api/matcmap_api_ref.html">matcmap API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cmap4r_api/cmap4r_api.html">cmap4r API</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">matcmap API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#documentation">Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../juliacmap_api/juliacmap_api_ref.html">juliacmap API</a></li>
 </ul>
 </li>
@@ -180,7 +185,7 @@
         
           <li><a href="../api_ref.html">Software Packages</a> &raquo;</li>
         
-      <li>cmap4r API</li>
+      <li>matcmap API</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -221,26 +226,65 @@
     text-align: unset;
 }
 </style>
-<div class="section" id="cmap4r-api">
-<h1>cmap4r API<a class="headerlink" href="#cmap4r-api" title="Permalink to this headline">¶</a></h1>
-<p>cmap4r is a package developed for the R programming langague to interact with the Simons CMAP database. It shares some of the structure and functionality of the pycmap package.
-More details can be found on the cmap4r github page or in the cmap4r online documentation. Both are listed below:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p><a class="reference external" href="https://github.com/simonscmap/cmap4r"><img alt="cmap4r github" class="align-middle" src="../../../_images/GitHub-Mark-120px-plus.png" style="width: 90.0px; height: 90.0px;" /></a></p></th>
-<th class="head"><p><a class="reference external" href="https://simonscmap.github.io/cmap4r/index.html"><img alt="cmap4r documentation" class="align-middle" src="../../../_images/doc_logo.png" style="width: 93.60000000000001px; height: 93.60000000000001px;" /></a></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/simonscmap/cmap4r">Github</a></p></td>
-<td><p><a class="reference external" href="https://simonscmap.github.io/cmap4r/index.html">Docs</a></p></td>
-</tr>
-</tbody>
-</table>
+<div class="section" id="matcmap-api">
+<h1>matcmap API<a class="headerlink" href="#matcmap-api" title="Permalink to this headline">¶</a></h1>
+<p>matcmap is the MATLAB client for Simons CMAP project.
+It provides access to the Simons CMAP database where various ocean data sets are hosted.
+These data sets include multi decades of remote sensing observations (satellite),
+numerical model estimates, and field expeditions.</p>
+<p>This package is adopted from <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html">pycmap</a> which is the python client of Simons CMAP ecosystem.</p>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>Clone or download the repository. The source code is in the src directory.
+The CMAP.m file abstracts the Simons CMAP API and provides the user with several
+methods to query the database and extract subsets of data.
+In order to make API requests, you need to get an API key from <a class="reference external" href="https://simonscmap.com/register">Simons CMAP website</a>.
+Once you got your API key run the following command (in the MATLAB Command Window)
+to store the API key on your local machine:</p>
+<div class="highlight-MATLAB notranslate"><div class="highlight"><pre><span></span><span class="n">CMAP</span><span class="p">.</span><span class="n">set_api_key</span><span class="p">(</span><span class="s">&#39;your api key&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
+<p>In the MATLAB Command Window run the following command to see the docs:</p>
+<div class="highlight-MATLAB notranslate"><div class="highlight"><pre><span></span><span class="n">doc</span> <span class="n">CMAP</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Get the list of data sets:</p></li>
+</ol>
+<div class="highlight-MATLAB notranslate"><div class="highlight"><pre><span></span><span class="n">CMAP</span><span class="p">.</span><span class="n">datasets</span><span class="p">()</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Retrieve a subset of sea surface temperature measured by satellite. A simple plot is made to visualize the retrieved data.</p></li>
+</ol>
+<div class="highlight-MATLAB notranslate"><div class="highlight"><pre><span></span><span class="n">tbl</span> <span class="p">=</span> <span class="n">CMAP</span><span class="p">.</span><span class="n">space_time</span><span class="p">(</span><span class="c">...</span>
+                  <span class="s">&#39;tblsst_AVHRR_OI_NRT&#39;</span><span class="p">,</span><span class="c">... % table</span>
+                  <span class="s">&#39;sst&#39;</span><span class="p">,</span><span class="c">... % variable</span>
+                  <span class="s">&#39;2016-04-30&#39;</span><span class="p">,</span><span class="c">... % dt1</span>
+                  <span class="s">&#39;2016-04-30&#39;</span><span class="p">,</span><span class="c">... % dt2</span>
+                  <span class="mi">10</span><span class="p">,</span><span class="c">... % lat1</span>
+                  <span class="mi">70</span><span class="p">,</span><span class="c">... % lat2</span>
+                  <span class="o">-</span><span class="mi">180</span><span class="p">,</span><span class="c">... % lon1</span>
+                  <span class="o">-</span><span class="mi">80</span><span class="p">,</span><span class="c">... % lon2</span>
+                  <span class="mi">0</span><span class="p">,</span><span class="c">... % depth1</span>
+                  <span class="mi">0</span><span class="p">);</span>   <span class="c">% depth2</span>
+
+<span class="n">lat</span> <span class="p">=</span> <span class="n">unique</span><span class="p">(</span><span class="n">tbl</span><span class="p">.</span><span class="n">lat</span><span class="p">);</span>
+<span class="n">lon</span> <span class="p">=</span> <span class="n">unique</span><span class="p">(</span><span class="n">tbl</span><span class="p">.</span><span class="n">lon</span><span class="p">);</span>
+<span class="n">sst</span> <span class="p">=</span> <span class="nb">reshape</span><span class="p">(</span><span class="n">tbl</span><span class="p">.</span><span class="n">sst</span><span class="p">,</span> <span class="nb">length</span><span class="p">(</span><span class="n">lon</span><span class="p">),</span> <span class="nb">length</span><span class="p">(</span><span class="n">lat</span><span class="p">));</span>
+<span class="n">imagesc</span><span class="p">(</span><span class="n">lon</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">sst</span><span class="o">&#39;</span><span class="p">);</span>
+<span class="n">axis</span> <span class="n">xy</span><span class="p">;</span>
+<span class="n">title</span><span class="p">(</span><span class="s">&#39;Sea Surface Temperature&#39;</span><span class="p">);</span>
+<span class="n">colorbar</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
 </div>
 
 
