@@ -46,12 +46,12 @@ h1 {
 
 
 
-.wy-nav-top {
-    background-color: #555555;
+/* .wy-nav-top {
+    background-color: #184562;
 }
 
 .wy-side-nav-search {
-    background-color: #555555;
+    background-color: #184562;
 }
 
 .wy-side-nav-search > a img.logo {
@@ -59,8 +59,28 @@ h1 {
 }
 
 .wy-side-nav-search input[type="text"] {
-    border-color: #555555;
+    border-color: #184562;
+} */
+
+
+.wy-menu > .caption > span.caption-text {
+  color: #40ab57;
 }
+.wy-nav-top {
+    background-color: #184562;
+}
+
+.wy-side-nav-search {
+    background-color: #184562;
+}
+
+.wy-side-nav-search > a img.logo {
+    width: 50%;
+}
+
+.wy-side-nav-search input[type="text"] {
+    border-color: #184562;
+} */
 
 /* Remove the padding from the Parameters table */
 .rst-content table.field-list .field-name {

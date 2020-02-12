@@ -55,7 +55,7 @@ Simons CMAP website is under active development: https://simonscmap.com
 .. toctree::
     :maxdepth: 2
     :hidden:
-
+    :caption: Getting Started
 
 
     getting_started/installation/installation.rst
@@ -65,6 +65,7 @@ Simons CMAP website is under active development: https://simonscmap.com
 .. toctree::
     :maxdepth: 4
     :hidden:
+    :caption: User Guide
 
 
     catalog/catalog
@@ -73,6 +74,7 @@ Simons CMAP website is under active development: https://simonscmap.com
 .. toctree::
     :maxdepth: 2
     :hidden:
+    :caption: FAQ and Contributing
 
 
     faq_and_contributing/datasubmission
