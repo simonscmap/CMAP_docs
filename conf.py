@@ -23,7 +23,7 @@ sys.path.insert(0, os.path.abspath('..'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'CMAP'
+project = 'Simons CMAP'
 copyright = '2019, Mohammad Dehghani Ashkezari & Norland Raphael Hagen'
 author = 'Mohammad Dehghani Ashkezari & Norland Raphael Hagen'
 
