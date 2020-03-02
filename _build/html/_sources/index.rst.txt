@@ -24,7 +24,7 @@
 .. raw:: html
 
     <div class="banner">
-        <img src="_static/CMAP_logos/cmap_logo_blue.png" alt="CMAP logo" width="800px">
+        <img src="_static/CMAP_logos/CMAP_logo_High_Res.png" alt="CMAP logo" width="800px">
     </div>
 
 
