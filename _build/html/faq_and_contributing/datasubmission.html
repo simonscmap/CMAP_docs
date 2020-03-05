@@ -272,8 +272,8 @@
 </div>
 <div class="section" id="data-template-and-file-structure">
 <h2>Data Template and File Structure<a class="headerlink" href="#data-template-and-file-structure" title="Permalink to this headline">¶</a></h2>
-<p>The preferred file format is excel spreadsheet. Data is stored in the first sheet and the sheet title is “data”. The second sheet stores the dataset meta-data and is called “dataset_meta_data”. Meta-data associated with the variables in the dataset are kept in the third sheet, “vars_meta_data”. An example template can be found <a class="reference external" href="https://github.com/mdashkezari/opedia/tree/master/template">here</a>.</p>
-<p>A <a class="reference external" href="https://github.com/mdashkezari/opedia/tree/master/template">template</a> is available. <a href="http://geoiptool.com" target="_blank"></a></p>
+<p>The preferred file format is excel spreadsheet. Data is stored in the first sheet and the sheet title is “data”. The second sheet stores the dataset meta-data and is called “dataset_meta_data”. Meta-data associated with the variables in the dataset are kept in the third sheet, “vars_meta_data”.</p>
+<p>A <a class="reference external" href="https://github.com/simonscmap/DBIngest/tree/master/template">template</a> is available.</p>
 <div class="section" id="dataset-filename-convention">
 <h3>Dataset Filename Convention<a class="headerlink" href="#dataset-filename-convention" title="Permalink to this headline">¶</a></h3>
 <p>Dataset filename: &lt;dataset_short_name&gt;_&lt;dataset_release_data&gt;_v&lt;dataset_version&gt;.xlxs
@@ -290,30 +290,48 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <h3>First Sheet: “data”<a class="headerlink" href="#first-sheet-data" title="Permalink to this headline">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 24%" />
-<col style="width: 24%" />
-<col style="width: 25%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 5%" />
+<col style="width: 7%" />
 <col style="width: 14%" />
+<col style="width: 7%" />
+<col style="width: 10%" />
+<col style="width: 7%" />
+<col style="width: 10%" />
+<col style="width: 6%" />
 <col style="width: 5%" />
-<col style="width: 2%" />
-<col style="width: 5%" />
+<col style="width: 8%" />
+<col style="width: 7%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p>time</p></td>
-<td><p>lat</p></td>
-<td><p>lon</p></td>
-<td><p>depth {if exists}</p></td>
-<td><p>&lt;<span class="math notranslate nohighlight">\(var_1\)</span>&gt;</p></td>
-<td><p>…</p></td>
-<td><p>&lt;<span class="math notranslate nohighlight">\(var_n\)</span>&gt;</p></td>
+<tr class="row-odd"><td><p>dataset_short_name</p></td>
+<td><p>dataset_long_name</p></td>
+<td><p>dataset_version</p></td>
+<td><p>dataset_release_date</p></td>
+<td><p>dataset_make</p></td>
+<td><p>dataset_source</p></td>
+<td><p>dataset_distributor</p></td>
+<td><p>dataset_acknowledgement</p></td>
+<td><p>dataset_doi</p></td>
+<td><p>dataset_history</p></td>
+<td><p>dataset_description</p></td>
+<td><p>dataset_references</p></td>
+<td><p>climatology</p></td>
 </tr>
-<tr class="row-even"><td><p>&lt; Format  %Y-%m-%dT%H:%M:%S,  Time-Zone:  UTC,  example: 2014-02-28T14:25:55 &gt;</p></td>
-<td><p>&lt; Format: Decimal (not military grid system), Unit: degree, Range: [-90, 90] &gt;</p></td>
-<td><p>&lt; Format: Decimal (not military grid system), Unit: degree, Range: [-180, 180] &gt;</p></td>
-<td><p>&lt; Positive value, Unit: [m], example: 10.25 &gt;</p></td>
-<td><p>&lt; variable 1 &gt;</p></td>
-<td><p>…</p></td>
-<td><p>&lt; variable n &gt;</p></td>
+<tr class="row-even"><td><p>&lt;short name of your dataset (&lt;50 chars)&gt;</p></td>
+<td><p>&lt;long name of your dataset (&lt;500 chars)&gt;</p></td>
+<td><p>&lt;dataset version (&lt;50 chars)&gt;</p></td>
+<td><p>&lt;Format  %Y-%m-%d,  example: 2018-06-20&gt;</p></td>
+<td><p>&lt;how dataset is made (fixed options= [assimilation, model, observation]) (&lt;50 chars)&gt;</p></td>
+<td><p>&lt;name of your lab/institution (&lt;100 chars)&gt;</p></td>
+<td><p>&lt;the distributor of the data product (optional &lt;100 chars)&gt;</p></td>
+<td><p>&lt;the acknowledgment listed for the dataset &gt;</p></td>
+<td><p>&lt;digital object identifier (doi) associated with the dataset&gt;</p></td>
+<td><p>&lt;any note about the dataset evolution&gt;</p></td>
+<td><p>&lt;a descrption of your dataset&gt;</p></td>
+<td><p>&lt;list of associated docs/publications (&lt;500chars) &gt;</p></td>
+<td><p>&lt;null if not climatology, 1 climatology&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -409,87 +427,126 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 </tbody>
 </table>
 <p><strong>Columns by order</strong>:</p>
-<ol class="arabic">
+<ol class="arabic simple">
 <li><dl class="simple">
 <dt><strong>dataset_short_name</strong>: dataset short name</dt><dd><ul class="simple">
 <li><p>type: string</p></li>
 <li><p>length: &lt;50 chars</p></li>
-<li><p>Short, human readable name of your dataset. Ex: Darwin_3_Day_Ecosystem</p></li>
+<li><p>short, human readable name of your dataset.</p></li>
+<li><p>examples: BATS Bacteria Production</p></li>
 </ul>
 </dd>
 </dl>
 </li>
-<li><p><strong>dataset_long_name</strong>: descriptive dataset name</p>
-<blockquote>
-<div><ul class="simple">
+<li><dl class="simple">
+<dt><strong>dataset_long_name</strong>: descriptive dataset name</dt><dd><ul class="simple">
 <li><p>type: string</p></li>
 <li><p>length: &lt;500 chars</p></li>
-<li><p>Descriptive human readable name of your dataset: Darwin 3 Day Averaged Ecosystem Characteristics</p></li>
+<li><p>Descriptive human readable name of your dataset</p></li>
+<li><p>examples: Bermuda Atlantic Time-series Study (BATS) Bacteria Production</p></li>
 </ul>
-</div></blockquote>
+</dd>
+</dl>
 </li>
-<li><p><strong>dataset_version</strong>: dataset version</p>
-<blockquote>
-<div><ul class="simple">
+<li><dl class="simple">
+<dt><strong>dataset_version</strong>: dataset version</dt><dd><ul class="simple">
 <li><p>type: string</p></li>
 <li><p>length: &lt;50 chars</p></li>
-<li><p>ex: V1</p></li>
+<li><p>examples: V1, Version 3.5</p></li>
 </ul>
-</div></blockquote>
+</dd>
+</dl>
 </li>
-<li><p><strong>dataset_release_date</strong>: dataset release date</p>
-<blockquote>
-<div><ul class="simple">
+<li><dl class="simple">
+<dt><strong>dataset_release_date</strong>: dataset release date</dt><dd><ul class="simple">
 <li><p>type: date</p></li>
 <li><p>format: %Y-%m-%d (zero padding required)</p></li>
 </ul>
-</div></blockquote>
+</dd>
+</dl>
 </li>
-<li><p><strong>dataset_make</strong>: how dataset is made (fixed options= [assimilation, model, observation])</p>
-<blockquote>
-<div><ul class="simple">
+<li><dl class="simple">
+<dt><strong>dataset_make</strong>: how dataset is made (fixed options= [assimilation, model, observation])</dt><dd><ul class="simple">
 <li><p>type: string</p></li>
 <li><p>length: &lt;50 chars</p></li>
 </ul>
-</div></blockquote>
+</dd>
+</dl>
 </li>
-<li><p><strong>dataset_source</strong>: name of your lab and/or institution</p>
-<blockquote>
-<div><ul class="simple">
+<li><dl class="simple">
+<dt><strong>dataset_source</strong>: name of your lab and/or institution</dt><dd><ul class="simple">
+<li><p>type: string</p></li>
+<li><p>length: &lt;100 chars</p></li>
+<li><p>examples: Bermuda Institute of Ocean Sciences</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>dataset_distributor</strong>: name of the distributor of the data product (optional: if the dataset source differs from the distributor)</dt><dd><ul class="simple">
+<li><dl class="simple">
+<dt>type: string</dt><dd><ul>
+<li><p>length: &lt;100 chars</p></li>
+<li><p>examples: Distributed by NASA PODAAC</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>dataset_acknowledgement</strong>: Any acknowledgement(s) for this dataset</dt><dd><ul class="simple">
 <li><p>type: string</p></li>
 <li><p>length: &lt;100 chars</p></li>
 </ul>
-</div></blockquote>
+</dd>
+</dl>
 </li>
-<li><p><strong>dataset_doi</strong>:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>type: string</p></li>
-<li><p>length</p></li>
-</ul>
-</div></blockquote>
-</li>
-<li><p><strong>dataset_history</strong>: notes regarding the evolution of the dataset with respect to the previous versions, if applicable</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>type: string</p></li>
-<li><p>length: &lt;100 chars</p></li>
-</ul>
-</div></blockquote>
-</li>
-<li><p><strong>dataset_description</strong>: A description of your dataset detailing collection and processing methodology.</p>
-<blockquote>
-<div><ul class="simple">
+<li><dl class="simple">
+<dt><strong>dataset_doi</strong>: digital object identifier (doi) associated with the dataset.</dt><dd><ul class="simple">
 <li><p>type: string</p></li>
 <li><p>length: no limit</p></li>
 </ul>
-</div></blockquote>
+</dd>
+</dl>
 </li>
-<li><p><strong>dataset_references</strong>: links/citations associated with the dataset documentations/publications (enter each ref. in a separate row)</p>
-<ul class="simple">
+</ol>
+<ol class="arabic simple" start="7">
+<li><dl class="simple">
+<dt><strong>dataset_history</strong>: notes regarding the evolution of the dataset with respect to the previous versions, if applicable.</dt><dd><ul class="simple">
+<li><p>type: string</p></li>
+<li><p>length: &lt;100 chars</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>dataset_description</strong>: A description of your dataset detailing collection and processing methodology.</dt><dd><ul class="simple">
+<li><p>type: string</p></li>
+<li><p>length: no limit</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>dataset_references</strong>: links/citations associated with the dataset documentations/publications (enter each ref. in a separate row)</dt><dd><ul class="simple">
 <li><p>type: string</p></li>
 <li><p>length: &lt;500 chars per item</p></li>
 </ul>
+</dd>
+</dl>
+</li>
+</ol>
+<ol class="arabic simple" start="13">
+<li><dl class="simple">
+<dt><strong>climatology</strong>: is the dataset a climatology product? (&lt;null if not climatology, 1 climatology&gt;)</dt><dd><ul class="simple">
+<li><p>type: string</p></li>
+<li><p>length: &lt;10 chars</p></li>
+</ul>
+</dd>
+</dl>
 </li>
 </ol>
 </div>
@@ -499,38 +556,38 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <colgroup>
 <col style="width: 5%" />
 <col style="width: 5%" />
+<col style="width: 15%" />
 <col style="width: 4%" />
-<col style="width: 16%" />
-<col style="width: 5%" />
 <col style="width: 13%" />
 <col style="width: 11%" />
-<col style="width: 13%" />
-<col style="width: 17%" />
-<col style="width: 6%" />
+<col style="width: 12%" />
+<col style="width: 16%" />
+<col style="width: 8%" />
+<col style="width: 5%" />
 <col style="width: 5%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>var_short_name</p></td>
 <td><p>var_long_name</p></td>
-<td><p>var_standard_name</p></td>
 <td><p>var_sensor</p></td>
 <td><p>var_unit</p></td>
 <td><p>var_spatial_res</p></td>
 <td><p>var_temporal_res</p></td>
 <td><p>var_missing_value</p></td>
 <td><p>var_discipline</p></td>
+<td><p>visualize</p></td>
 <td><p>var_keywords</p></td>
 <td><p>var_comment</p></td>
 </tr>
 <tr class="row-even"><td><p>&lt;variable short name (&lt;50 chars)&gt;</p></td>
 <td><p>&lt;variable long name (&lt;500 chars)&gt;</p></td>
-<td><p>&lt;variable standard name&gt;</p></td>
 <td><p>&lt;device by which variable is measured (&lt;50 chars) examples: [satellite, cruise_name, simulation, …]&gt;</p></td>
 <td><p>&lt;variable unit (&lt;50 chars)&gt;</p></td>
 <td><p>&lt;variable spatial resolution (examples: [1/25° X 1/25° , 50km X 50km, Irregular] )&gt;</p></td>
 <td><p>&lt;variable temporal resolution (examples: [Hourly, Daily, Irregular] )&gt;</p></td>
 <td><p>&lt;placeholder for missing values (examples: empty cell, “nan”, “unknown”, #FFFF)&gt;</p></td>
-<td><p>&lt;associated discipline(s) (&lt;100 chars) (examples: [Physics, Chemistry, Biology, BioGeoChemistry, etc..])&gt;</p></td>
+<td><p>&lt;associated discipline(s) (&lt;100 chars) (examples: [Physics, Chemistry, Biology, BioGeoChemistry, etc..])&gt; ↓</p></td>
+<td><p>&lt;0 is not visualizable, 1 is visualizable &gt;</p></td>
 <td><p>&lt;associated keywords (&lt;500 chars)&gt;</p></td>
 <td><p>&lt;variable comment/description&gt;</p></td>
 </tr>
@@ -538,95 +595,92 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 </table>
 <p><strong>Columns by order</strong>:</p>
 <ol class="arabic">
-<li><p><strong>var_short_name</strong>: variable short name</p>
-<blockquote>
-<div><ul class="simple">
+<li><dl class="simple">
+<dt><strong>var_short_name</strong>: variable short name</dt><dd><ul class="simple">
 <li><p>type: string</p></li>
 <li><p>length: &lt;50 chars</p></li>
 <li><p>Computer-readable short name. Should not contain any leading numbers, special characters (ex: ‘&amp;’) or spaces. Ex: SST</p></li>
 </ul>
-</div></blockquote>
+</dd>
+</dl>
 </li>
-<li><p><strong>var_long_name</strong>: descriptive variable name</p>
-<blockquote>
-<div><ul class="simple">
+<li><dl class="simple">
+<dt><strong>var_long_name</strong>: descriptive variable name</dt><dd><ul class="simple">
 <li><p>type: string</p></li>
 <li><p>length: &lt;500 chars</p></li>
 <li><p>Human readable variable name. Think of this as a common name for the variable. Ex: Sea Surface Temperature</p></li>
 </ul>
-</div></blockquote>
+</dd>
+</dl>
 </li>
-<li><p><strong>var_standard_name</strong>: standard variable name (more details in CF Conventions and COARDS Conventions)</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>type: string</p></li>
-<li><p>length: &lt;500 chars</p></li>
-</ul>
-</div></blockquote>
-</li>
-<li><p><strong>var_unit</strong>: variable unit</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>type: string</p></li>
-<li><p>length: &lt;50 chars</p></li>
-<li><p>Prefer symbols to descriptions. Ex: “/” is better than “per”</p></li>
-</ul>
-</div></blockquote>
-</li>
-<li><p><strong>var_sensor</strong>: device by which variable is measured</p>
-<blockquote>
-<div><ul class="simple">
+<li><dl class="simple">
+<dt><strong>var_sensor</strong>: device by which variable is measured</dt><dd><ul class="simple">
 <li><p>type: string</p></li>
 <li><p>length: &lt;50 chars</p></li>
 <li><p>examples: [satellite, in-situ, blen, flow cytometry, CTD, underway CTD, Optical, Float, Drifter, AUV etc..]</p></li>
 </ul>
-</div></blockquote>
+</dd>
+</dl>
 </li>
-<li><p><strong>var_spatial_res</strong>: variable spatial resolution</p>
-<blockquote>
-<div><ul class="simple">
+<li><dl class="simple">
+<dt><strong>var_unit</strong>: variable unit</dt><dd><ul class="simple">
+<li><p>type: string</p></li>
+<li><p>length: &lt;50 chars</p></li>
+<li><p>Prefer symbols to descriptions. Ex: “/” is better than “per”</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>var_spatial_res</strong>: variable spatial resolution</dt><dd><ul class="simple">
 <li><p>type: string</p></li>
 <li><p>length: &lt;50 chars</p></li>
 <li><p>examples: [1/25° X 1/25° , 50km X 50km, Irregular, …]</p></li>
 </ul>
-</div></blockquote>
+</dd>
+</dl>
 </li>
-<li><p><strong>var_temporal_res</strong>: variable temporal resolution</p>
-<blockquote>
-<div><ul class="simple">
+<li><dl class="simple">
+<dt><strong>var_temporal_res</strong>: variable temporal resolution</dt><dd><ul class="simple">
 <li><p>type: string</p></li>
 <li><p>length: &lt;50 chars</p></li>
 <li><p>examples: [Hourly, Daily, Irregular, …]</p></li>
 </ul>
-</div></blockquote>
+</dd>
+</dl>
 </li>
-<li><p><strong>var_missing_value</strong>: placeholder for missing values</p>
-<blockquote>
-<div><ul class="simple">
+<li><dl class="simple">
+<dt><strong>var_missing_value</strong>: placeholder for missing values</dt><dd><ul class="simple">
 <li><p>type: string</p></li>
 <li><p>length: &lt;50 chars</p></li>
 <li><p>examples: [empty cell, “nan”, “unknown”, #FFFF, -999, …]</p></li>
 </ul>
-</div></blockquote>
+</dd>
+</dl>
 </li>
-<li><p><strong>var_discipline</strong>: the closest discipline(s) associated with the variable</p>
-<blockquote>
-<div><ul class="simple">
+<li><dl class="simple">
+<dt><strong>var_discipline</strong>: the closest discipline(s) associated with the variable</dt><dd><ul class="simple">
 <li><p>type: string</p></li>
 <li><p>length: &lt;100 chars</p></li>
 <li><p>examples: [Physics, Chemistry, Biology, BioGeoChemistry, …]</p></li>
 </ul>
-</div></blockquote>
+</dd>
+</dl>
 </li>
-<li><p><strong>var_keywords</strong>: keywords pertinent to the variable (separated by comma).</p>
-<ul class="simple">
-<li><p>type: string</p></li>
-<li><p>length: &lt;500 chars</p></li>
-<li><p>delimiter = ‘,’</p></li>
-<li><p>examples: [field sample, Biology, abundance, synechococcus, …]</p></li>
+<li><dl class="simple">
+<dt><strong>visualize</strong>: Is this variable visualizable? If not, it can be excluded from the Simons CMAP web application.</dt><dd><ul class="simple">
+<li><p>type: int</p></li>
+<li><p>length: &lt;2 chars</p></li>
+<li><p>examples: [0 is not visualizable, 1 is visualizable]. ex: station # = 0 (non visualize), prochlorococcus abundance = 1 (visualize)</p></li>
 </ul>
+</dd>
+</dl>
 </li>
-</ol>
+<li><p><strong>var_keywords</strong>: keywords pertinent to the variable (separated by comma).
+- type: string
+- length: &lt;500 chars
+- delimiter = ‘,’
+- examples: [field sample, Biology, abundance, synechococcus, …]</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><strong>Keywords are variable-specific and case-insensitive. Please separate each keyword by comma. The suggested format for each variable keyword list is:</strong></p>
@@ -640,17 +694,15 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <li><p>Example keywords related to the associated discipline(s): chemistry / biology / physics / biogeochemical / biogeography …</p></li>
 <li><p>Any other keywords you think are relevant</p></li>
 </ul>
-<p><strong>Keyword Example for &lt;proprochloro_abundance&gt; variable in the SeaFlow Dataset:</strong></p>
-<ul class="simple">
-<li><p>pro, prochloro, prochlorococcus, seaflow, flow, cytometry, flow-cytometry, insitu, in-situ, cruise,  observation, rep, reprocessed, bio, biology, armbrust, UW, University of Washington, abundance,cell abundance</p></li>
-</ul>
 </div>
-<ol class="arabic simple" start="11">
-<li><p><strong>var_comment</strong>: any other comment about the variable</p>
-<ul class="simple">
+</li>
+<li><dl class="simple">
+<dt><strong>var_comment</strong>: any other comment about the variable.</dt><dd><ul class="simple">
 <li><p>type: string</p></li>
 <li><p>length: no limit</p></li>
 </ul>
+</dd>
+</dl>
 </li>
 </ol>
 </div>
@@ -670,7 +722,7 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
     <p>
         &copy; Copyright 2019, Mohammad Dehghani Ashkezari &amp; Norland Raphael Hagen
       <span class="lastupdated">
-        Last updated on Feb 18, 2020.
+        Last updated on Mar 04, 2020.
       </span>
 
     </p>
