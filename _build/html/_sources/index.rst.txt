@@ -13,8 +13,6 @@
    :target: https://badge.fury.io/py/pycmap
 
 
-
-
 .. image:: https://zenodo.org/badge/199070692.svg
   :target: https://zenodo.org/badge/latestdoi/199070692
 

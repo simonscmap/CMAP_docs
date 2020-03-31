@@ -102,6 +102,7 @@
 <p class="caption"><span class="caption-text">FAQ and Contributing</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Data Submission</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#data-template">Data Template</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#dataset-requirements">Dataset Requirements</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#data-must-be-in-the-format">1. Data must be in the format:</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#data-must-have-supporting-meta-data-ie-data-about-your-data">2. Data must have supporting meta-data, ie. data about your data.</a></li>
@@ -230,6 +231,24 @@
 <div class="section" id="data-submission">
 <h1>Data Submission<a class="headerlink" href="#data-submission" title="Permalink to this headline">¶</a></h1>
 <p>If you wish to suggest a dataset be added to the database or have some data that you would like added, please email Raphael (<a class="reference external" href="mailto:nrhagen&#37;&#52;&#48;uw&#46;edu">nrhagen<span>&#64;</span>uw<span>&#46;</span>edu</a>).</p>
+<div class="section" id="data-template">
+<h2>Data Template<a class="headerlink" href="#data-template" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference external" href="https://github.com/simonscmap/DBIngest/tree/master/template"><img alt="template_download" class="align-middle" src="../_images/spreadsheet.png" style="width: 179.2px; height: 179.2px;" /></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/simonscmap/DBIngest/raw/master/template/datasetTemplate.xlsx">Download Data Template</a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="banner">
+    <img src="../_static/overview_icons/process_flow.png" alt="Process Flow" width="800px">
+</div></div>
 <div class="section" id="dataset-requirements">
 <h2>Dataset Requirements<a class="headerlink" href="#dataset-requirements" title="Permalink to this headline">¶</a></h2>
 <p>To add your dataset to CMAP and make it usable we have a few data and metadata conventions.</p>
@@ -273,7 +292,6 @@
 <div class="section" id="data-template-and-file-structure">
 <h2>Data Template and File Structure<a class="headerlink" href="#data-template-and-file-structure" title="Permalink to this headline">¶</a></h2>
 <p>The preferred file format is excel spreadsheet. Data is stored in the first sheet and the sheet title is “data”. The second sheet stores the dataset meta-data and is called “dataset_meta_data”. Meta-data associated with the variables in the dataset are kept in the third sheet, “vars_meta_data”.</p>
-<p>A <a class="reference external" href="https://github.com/simonscmap/DBIngest/tree/master/template">template</a> is available.</p>
 <div class="section" id="dataset-filename-convention">
 <h3>Dataset Filename Convention<a class="headerlink" href="#dataset-filename-convention" title="Permalink to this headline">¶</a></h3>
 <p>Dataset filename: &lt;dataset_short_name&gt;_&lt;dataset_release_data&gt;_v&lt;dataset_version&gt;.xlxs
@@ -720,9 +738,9 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2019, Mohammad Dehghani Ashkezari &amp; Norland Raphael Hagen
+        &copy; Copyright 
       <span class="lastupdated">
-        Last updated on Mar 04, 2020.
+        Last updated on Mar 31, 2020.
       </span>
 
     </p>

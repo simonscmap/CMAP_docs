@@ -6,17 +6,44 @@
 ..
 .. _PANGAEA: https://www.pangaea.de/
 ..
-.. _template: https://github.com/simonscmap/DBIngest/tree/master/template
-..
+.. _Download Data Template: https://github.com/simonscmap/DBIngest/raw/master/template/datasetTemplate.xlsx
 
 
 
-
+.. |template_download| image:: /_static/overview_icons/spreadsheet.png
+  :align: middle
+  :scale: 35%
+  :target: https://github.com/simonscmap/DBIngest/tree/master/template
 
 Data Submission
 ===============
 
 If you wish to suggest a dataset be added to the database or have some data that you would like added, please email Raphael (nrhagen@uw.edu).
+
+
+Data Template
+-------------
+
+.. table::
+
+    +-----------------------------+
+    | |template_download|         |
+    +=============================+
+    | `Download Data Template`_   |
+    +-----------------------------+
+
+
+
+
+
+.. raw:: html
+
+    <div class="banner">
+        <img src="../_static/overview_icons/process_flow.png" alt="Process Flow" width="800px">
+    </div>
+
+
+
 
 Dataset Requirements
 --------------------
@@ -49,7 +76,6 @@ Data Template and File Structure
 
 The preferred file format is excel spreadsheet. Data is stored in the first sheet and the sheet title is "data". The second sheet stores the dataset meta-data and is called "dataset_meta_data". Meta-data associated with the variables in the dataset are kept in the third sheet, "vars_meta_data".
 
-A template_ is available.
 
 Dataset Filename Convention
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~

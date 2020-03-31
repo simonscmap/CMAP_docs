@@ -2,8 +2,8 @@
 
 .. _pycmap API: pycmap_api/pycmap_api_ref.html
 .. _cmap4r API: cmap4r_api/cmap4r_api.html
-.. _matcmap API: pycmap_api/matcmap_api_ref.html
-.. _juliacmap API: cmap4r_api/juliacmap_api.html
+.. _matcmap API: matcmap_api/matcmap_api_ref.html
+.. _juliacmap API: juliacmap_api/juliacmap_api_ref.html
 
 .. |pycmap API| image:: /_static/installation_icons/python_logo.png
    :align: middle
@@ -31,8 +31,8 @@
 Software Packages
 =================
 
-
-
+An API key is required to run all software packages. To obtain an API key, go to https://simonscmap.com/apikeymanagement. 
+Please keep this key for future use.
 
 .. table::
 

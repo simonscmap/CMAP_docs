@@ -37,27 +37,19 @@ pycmap API
 
 
 
-Pycmap is the python package of Simons CMAP project that provides a simple and unified interface to the hosted datasets at Simons CMAP database.
+Pycmap is the python package of the Simons CMAP project. It provides a simple and unified interface to the hosted datasets in the Simons CMAP database.
 
-The pycmap package requires an API key. To obtain an API key please first register for at: https://simonscmap.com/register and then click on the API link at the op of the page to get the API key. You will need to keep this key for future use.
-
-
-
-The pycmap documentation is written in the Jupyter Notebook format and available on github_. Each notebook contains one or
-more example codes. Please click here_ to download the pycmap project and associated documentation.
-The documentation can be run locally using a Jupyter Notebook or alternatively, you may run the examples on google
-cloud using the  |colab|  badge or on Binder using the |binder| badge which appears at the top of each tutorial page.
-
-
-Once you receive an API key you can install pycmap locally and then retrieve and visualize data. Below are links providing details and tutorials on how to install, retrieve and visualize data with pycmap.
+The pycmap documentation is written in the Jupyter Notebook format and available on github_.
+Each notebook contains one or more example codes.
+You can run the examples on google cloud using the |colab| badge or on Binder using the |binder| badge that appears at the top of each tutorial page.
+Alternatively, you can run the code locally using a Jupyter Notebook.
+Please click here_ to download the pycmap project and associated documentation.
 
 +------------------------+------------------------+------------------------+------------------------+
 |      |install_icon|    |    |data_retrieval|    | |data_vizualization|   | |presentation|         |
 +------------------------+------------------------+------------------------+------------------------+
 | :ref:`pycmapInstall`   | :ref:`dataRet`         |  :ref:`dataViz`        |  :ref:`dataPres`       |
 +------------------------+------------------------+------------------------+------------------------+
-
-
 
 
 
