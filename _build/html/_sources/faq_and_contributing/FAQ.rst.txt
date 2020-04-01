@@ -26,6 +26,8 @@
 
 .. _Github: https://github.com/simonscmap
 
+.. _register: https://simonscmap.com/register
+
 .. _Slack: https://join.slack.com/t/simons-cmap/shared_invite/enQtNjQzMTkzMjg0NjQ2LWE4N2FjNDAwMjdiNzU0MGU4OTUzMGE4YWE5MjQwNGY2MjVlZTE2MTE3ZWNiOTAyY2E5ZDUxYzYwMGZhYWUwZjg
 
 .. |colab| image:: https://colab.research.google.com/assets/colab-badge.svg
@@ -58,8 +60,8 @@ Feel free to try one or both!
 What is an API Key and how do I get one?
 ----------------------------------------
 
-An API key is a unique identifier required to run all software packages. To obtain an API key, please register first and then go to https://simonscmap.com/apikeymanagement.
-Please keep this key for future use. All projects developed by Simons CMAP team are open-source and can be found on github.
+An API key is a unique identifier required to run all software packages. To obtain an API key, please register_ first and then go to https://simonscmap.com/apikeymanagement.
+Please keep this key for future use. All projects developed by Simons CMAP team are open-source and can be found on Github_.
 
 **Please do not share API keys.**
 

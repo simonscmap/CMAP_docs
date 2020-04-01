@@ -1,4 +1,7 @@
 
+.. _Github: https://github.com/simonscmap
+
+.. _register: https://simonscmap.com/register
 
 .. _pycmap API: pycmap_api/pycmap_api_ref.html
 .. _cmap4r API: cmap4r_api/cmap4r_api.html
@@ -32,7 +35,7 @@ Software Packages
 =================
 
 An API key is required to run all software packages. To obtain an API key, please register first and then go to https://simonscmap.com/apikeymanagement.
-Please keep this key for future use. All projects developed by Simons CMAP team are open-source and can be found on github.
+Please keep this key for future use. All projects developed by Simons CMAP team are open-source and can be found on Github_.
 
 .. table::
 
