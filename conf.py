@@ -57,7 +57,7 @@ extensions = [
 ]
 nbsphinx_allow_errors = True
 nbsphinx_timeout = 1200
-
+html_scaled_image_link = False
 # Always show the source code that generates a plot
 plot_include_source = True
 plot_formats = ['png']
