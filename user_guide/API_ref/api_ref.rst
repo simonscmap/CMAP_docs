@@ -31,7 +31,7 @@
 Software Packages
 =================
 
-An API key is required to run all software packages. To obtain an API key, go to https://simonscmap.com/apikeymanagement. 
+An API key is required to run all software packages. To obtain an API key, go to https://simonscmap.com/apikeymanagement.
 Please keep this key for future use.
 
 .. table::
@@ -47,7 +47,7 @@ Please keep this key for future use.
   :hidden:
 
   pycmap_api/pycmap_api_ref.rst
-  opedia_tutorials/opedia_tutorials.rst
   cmap4r_api/cmap4r_api.rst
   matcmap_api/matcmap_api_ref.rst
   juliacmap_api/juliacmap_api_ref.rst
+  opedia_tutorials/opedia_tutorials.rst

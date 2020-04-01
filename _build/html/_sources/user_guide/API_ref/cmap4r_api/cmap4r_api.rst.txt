@@ -23,6 +23,8 @@ cmap4r API
 cmap4r is a package developed for the R programming language to interact with the Simons CMAP database. It shares some of the structure and functionality of the pycmap package.
 More details can be found on the cmap4r github page or in the cmap4r online documentation. Both are listed below:
 
+
+
 .. table::
 
     +------------------------+------------------------+
@@ -30,3 +32,6 @@ More details can be found on the cmap4r github page or in the cmap4r online docu
     +========================+========================+
     | `Github`_              |`Docs`_                 |
     +------------------------+------------------------+
+
+
+  

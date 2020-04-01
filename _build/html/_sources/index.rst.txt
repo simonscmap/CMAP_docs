@@ -49,15 +49,6 @@ Simons CMAP website is under active development: https://simonscmap.com
 **This project is supported by the** `Simons Foundation`_
 
 
-.. toctree::
-    :maxdepth: 2
-    :hidden:
-    :caption: Getting Started
-
-
-    getting_started/installation/installation.rst
-
-
 
 .. toctree::
     :maxdepth: 4
