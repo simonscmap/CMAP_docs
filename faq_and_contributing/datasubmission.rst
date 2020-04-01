@@ -22,7 +22,7 @@ If you wish to suggest a dataset be added to the database or have some data that
 
 In short the current data submission process is:
 
-1. Contact us about adding a dataset to CMAP. (nrhagen@uw.edu)
+1. Contact us about adding a dataset to CMAP.
 2. Format your data and metadata in the CMAP format.
 3. Submit your dataset via email for feedback and review.
 4. Once OK'ed, register a DOI for your dataset.
@@ -220,11 +220,12 @@ Third Sheet: "vars_meta_data"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-+-----------------------------------+-----------------------------------+--------------------------------------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+---------------------------------------------------+-----------------------------------+----------------------------------+
-|var_short_name                     |    var_long_name                  | var_sensor                                                                                             |  var_unit                   | var_spatial_res                                                                     |      var_temporal_res                                                  | var_missing_value                                                                | var_discipline                                                                                              |       visualize                                   | var_keywords                      |  var_comment                     |
-+-----------------------------------+-----------------------------------+--------------------------------------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+---------------------------------------------------+-----------------------------------+----------------------------------+
-| <variable short name (<50 chars)> | <variable long name (<500 chars)> | <device by which variable is measured (<50 chars) examples: [satellite, cruise_name, simulation, ...]> | <variable unit (<50 chars)> | <variable spatial resolution (examples: [1/25° X 1/25° , 50km X 50km, Irregular] )> | <variable temporal resolution (examples: [Hourly, Daily, Irregular] )> | <placeholder for missing values (examples: empty cell, "nan", "unknown", #FFFF)> | <associated discipline(s) (<100 chars) (examples: [Physics, Chemistry, Biology, BioGeoChemistry, etc..])> ↓ |  <0 is not visualizable, 1 is visualizable >      |<associated keywords (<500 chars)> | <variable comment/description>   |
-+-----------------------------------+-----------------------------------+--------------------------------------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+---------------------------------------------------+-----------------------------------+----------------------------------+
++-----------------------------------+-----------------------------------+--------------------------------------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+---------------------------------------------------+-----------------------------------+----------------------------------+
+|var_short_name                     |    var_long_name                  | var_sensor                                                                                             |  var_unit                   | var_spatial_res                                                                     |      var_temporal_res                                                  | var_discipline                                                                                              |       visualize                                   | var_keywords                      |  var_comment                     |
++-----------------------------------+-----------------------------------+--------------------------------------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+---------------------------------------------------+-----------------------------------+----------------------------------+
+| <variable short name (<50 chars)> | <variable long name (<500 chars)> | <device by which variable is measured (<50 chars) examples: [satellite, cruise_name, simulation, ...]> | <variable unit (<50 chars)> | <variable spatial resolution (examples: [1/25° X 1/25° , 50km X 50km, Irregular] )> | <variable temporal resolution (examples: [Hourly, Daily, Irregular] )> | <associated discipline(s) (<100 chars) (examples: [Physics, Chemistry, Biology, BioGeoChemistry, etc..])> ↓ |  <0 is not visualizable, 1 is visualizable >      |<associated keywords (<500 chars)> | <variable comment/description>   |
++-----------------------------------+-----------------------------------+--------------------------------------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+---------------------------------------------------+-----------------------------------+----------------------------------+
+
 
 
 **Columns by order**:
@@ -261,22 +262,17 @@ Third Sheet: "vars_meta_data"
     - length: <50 chars
     - examples: [Hourly, Daily, Irregular, ...]
 
-7. **var_missing_value**: placeholder for missing values
-    - type: string
-    - length: <50 chars
-    - examples: [empty cell, "nan", "unknown", #FFFF, -999, ...]
-
-8. **var_discipline**: the closest discipline(s) associated with the variable
+7. **var_discipline**: the closest discipline(s) associated with the variable
     - type: string
     - length: <100 chars
     - examples: [Physics, Chemistry, Biology, BioGeoChemistry, ...]
 
-9. **visualize**: Is this variable visualizable? If not, it can be excluded from the Simons CMAP web application.
+8. **visualize**: Is this variable visualizable? If not, it can be excluded from the Simons CMAP web application.
     - type: int
     - length: <2 chars
     - examples: [0 is not visualizable, 1 is visualizable]. ex: station # = 0 (non visualize), prochlorococcus abundance = 1 (visualize)
 
-10. **var_keywords**: keywords pertinent to the variable (separated by comma).
+9. **var_keywords**: keywords pertinent to the variable (separated by comma).
     - type: string
     - length: <500 chars
     - delimiter = ','
@@ -295,6 +291,6 @@ Third Sheet: "vars_meta_data"
 
 
 
-11. **var_comment**: any other comment about the variable.
+10. **var_comment**: any other comment about the variable.
   	- type: string
   	- length: no limit

@@ -228,7 +228,7 @@
 <p>If you wish to suggest a dataset be added to the database or have some data that you would like added, please email Raphael (<a class="reference external" href="mailto:nrhagen&#37;&#52;&#48;uw&#46;edu">nrhagen<span>&#64;</span>uw<span>&#46;</span>edu</a>).</p>
 <p>In short the current data submission process is:</p>
 <ol class="arabic simple">
-<li><p>Contact us about adding a dataset to CMAP. (<a class="reference external" href="mailto:nrhagen&#37;&#52;&#48;uw&#46;edu">nrhagen<span>&#64;</span>uw<span>&#46;</span>edu</a>)</p></li>
+<li><p>Contact us about adding a dataset to CMAP.</p></li>
 <li><p>Format your data and metadata in the CMAP format.</p></li>
 <li><p>Submit your dataset via email for feedback and review.</p></li>
 <li><p>Once OK’ed, register a DOI for your dataset.</p></li>
@@ -576,17 +576,16 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <h3>Third Sheet: “vars_meta_data”<a class="headerlink" href="#third-sheet-vars-meta-data" title="Permalink to this headline">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 18%" />
 <col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 15%" />
-<col style="width: 4%" />
-<col style="width: 13%" />
-<col style="width: 11%" />
+<col style="width: 14%" />
 <col style="width: 12%" />
-<col style="width: 16%" />
-<col style="width: 8%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
+<col style="width: 19%" />
+<col style="width: 9%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>var_short_name</p></td>
@@ -595,7 +594,6 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <td><p>var_unit</p></td>
 <td><p>var_spatial_res</p></td>
 <td><p>var_temporal_res</p></td>
-<td><p>var_missing_value</p></td>
 <td><p>var_discipline</p></td>
 <td><p>visualize</p></td>
 <td><p>var_keywords</p></td>
@@ -607,7 +605,6 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <td><p>&lt;variable unit (&lt;50 chars)&gt;</p></td>
 <td><p>&lt;variable spatial resolution (examples: [1/25° X 1/25° , 50km X 50km, Irregular] )&gt;</p></td>
 <td><p>&lt;variable temporal resolution (examples: [Hourly, Daily, Irregular] )&gt;</p></td>
-<td><p>&lt;placeholder for missing values (examples: empty cell, “nan”, “unknown”, #FFFF)&gt;</p></td>
 <td><p>&lt;associated discipline(s) (&lt;100 chars) (examples: [Physics, Chemistry, Biology, BioGeoChemistry, etc..])&gt; ↓</p></td>
 <td><p>&lt;0 is not visualizable, 1 is visualizable &gt;</p></td>
 <td><p>&lt;associated keywords (&lt;500 chars)&gt;</p></td>
@@ -672,15 +669,6 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 </dl>
 </li>
 <li><dl class="simple">
-<dt><strong>var_missing_value</strong>: placeholder for missing values</dt><dd><ul class="simple">
-<li><p>type: string</p></li>
-<li><p>length: &lt;50 chars</p></li>
-<li><p>examples: [empty cell, “nan”, “unknown”, #FFFF, -999, …]</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
 <dt><strong>var_discipline</strong>: the closest discipline(s) associated with the variable</dt><dd><ul class="simple">
 <li><p>type: string</p></li>
 <li><p>length: &lt;100 chars</p></li>
@@ -698,11 +686,13 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 </dd>
 </dl>
 </li>
-<li><p><strong>var_keywords</strong>: keywords pertinent to the variable (separated by comma).
-- type: string
-- length: &lt;500 chars
-- delimiter = ‘,’
-- examples: [field sample, Biology, abundance, synechococcus, …]</p>
+<li><dl>
+<dt><strong>var_keywords</strong>: keywords pertinent to the variable (separated by comma).</dt><dd><ul class="simple">
+<li><p>type: string</p></li>
+<li><p>length: &lt;500 chars</p></li>
+<li><p>delimiter = ‘,’</p></li>
+<li><p>examples: [field sample, Biology, abundance, synechococcus, …]</p></li>
+</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><strong>Keywords are variable-specific and case-insensitive. Please separate each keyword by comma. The suggested format for each variable keyword list is:</strong></p>
@@ -717,6 +707,8 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <li><p>Any other keywords you think are relevant</p></li>
 </ul>
 </div>
+</dd>
+</dl>
 </li>
 <li><dl class="simple">
 <dt><strong>var_comment</strong>: any other comment about the variable.</dt><dd><ul class="simple">
