@@ -24,11 +24,7 @@
 
 .. _PANGAEA: https://www.pangaea.de/
 
-.. _here: https://github.com/mdashkezari/opedia/tree/master/template
-
-.. _template: https://github.com/mdashkezari/opedia/tree/master/template
-
-.. _Github: https://github.com/mdashkezari/opedia
+.. _Github: https://github.com/simonscmap
 
 .. _Slack: https://join.slack.com/t/simons-cmap/shared_invite/enQtNjQzMTkzMjg0NjQ2LWE4N2FjNDAwMjdiNzU0MGU4OTUzMGE4YWE5MjQwNGY2MjVlZTE2MTE3ZWNiOTAyY2E5ZDUxYzYwMGZhYWUwZjg
 
@@ -36,8 +32,6 @@
 .. |binder| image:: https://img.shields.io/badge/launch-binder-579aca.svg
 
 
-.. _`Web Application`: https://simonscmap.com/
-.. _`pycmap Python application`: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html
 
 
 
@@ -64,10 +58,8 @@ Feel free to try one or both!
 What is an API Key and how do I get one?
 ----------------------------------------
 
-An API Key is a unique identifier that allows Simons CMAP to track usage metrics.
-
-An API key can be obtained through the registration form at: https://simonscmap.com/apikeymanagement
-The API key will allow you to use both the `pycmap Python application`_ and the `Web Application`_.
+An API key is a unique identifier required to run all software packages. To obtain an API key, please register first and then go to https://simonscmap.com/apikeymanagement.
+Please keep this key for future use. All projects developed by Simons CMAP team are open-source and can be found on github.
 
 **Please do not share API keys.**
 
@@ -82,11 +74,11 @@ Some DOI providers, such as Zenodo, allow for dataset version controlling.
 
 We strongly suggest getting a DOI for your dataset prior to it's submission into CMAP. This will allow users to properly acknowledge your dataset.
 
-Below is an example list of entities that may issue and link your dataset to a unique doi:
+Below is an example list of entities that may issue and link your dataset to a unique DOI:
 
+  - Zenodo_
   - Dryad_ (only accepts published datsets)
   - FigShare_
-  - Zenodo_
   - Open_Science_Framework_
   - Harvard_Dataverse_
   - NCEI_

@@ -31,8 +31,8 @@
 Software Packages
 =================
 
-An API key is required to run all software packages. To obtain an API key, go to https://simonscmap.com/apikeymanagement.
-Please keep this key for future use.
+An API key is required to run all software packages. To obtain an API key, please register first and then go to https://simonscmap.com/apikeymanagement.
+Please keep this key for future use. All projects developed by Simons CMAP team are open-source and can be found on github.
 
 .. table::
 
