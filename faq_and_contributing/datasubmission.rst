@@ -63,7 +63,12 @@ CMAP is not a data repository and we do not archive and version control datasets
 Data Template and File Structure
 --------------------------------
 
-The preferred file format is excel spreadsheet. Data is stored in the first sheet and the sheet title is "data". The second sheet stores the dataset meta-data and is called "dataset_meta_data". Meta-data associated with the variables in the dataset are kept in the third sheet, "vars_meta_data".
+The CMAP data template consists of three sections: data, dataset metadata and variable metadata. Data is stored in the first sheet and the sheet title is "data". The second sheet stores the dataset meta-data and is called "dataset_meta_data". Meta-data associated with the variables in the dataset are kept in the third sheet, "vars_meta_data".
+
+The current data template is an excel spreadsheet. If submitting data in the multi-sheet format does not work for you the data, dataset_metadata, and vars_metadata .csv's can be submitted individually.
+Note, information from all three sheets is required for a dataset to be added to CMAP.
+If you are submitting a dataset that is too large to be stored in a tabular format, the preferred format is netcdf for the data and tabular data for the metadata.
+
 
 
 Dataset Filename Convention

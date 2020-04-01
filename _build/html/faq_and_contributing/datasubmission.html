@@ -285,7 +285,10 @@
 </div>
 <div class="section" id="data-template-and-file-structure">
 <h2>Data Template and File Structure<a class="headerlink" href="#data-template-and-file-structure" title="Permalink to this headline">¶</a></h2>
-<p>The preferred file format is excel spreadsheet. Data is stored in the first sheet and the sheet title is “data”. The second sheet stores the dataset meta-data and is called “dataset_meta_data”. Meta-data associated with the variables in the dataset are kept in the third sheet, “vars_meta_data”.</p>
+<p>The CMAP data template consists of three sections: data, dataset metadata and variable metadata. Data is stored in the first sheet and the sheet title is “data”. The second sheet stores the dataset meta-data and is called “dataset_meta_data”. Meta-data associated with the variables in the dataset are kept in the third sheet, “vars_meta_data”.</p>
+<p>The current data template is an excel spreadsheet. If submitting data in the multi-sheet format does not work for you the data, dataset_metadata, and vars_metadata .csv’s can be submitted individually.
+Note, information from all three sheets is required for a dataset to be added to CMAP.
+If you are submitting a dataset that is too large to be stored in a tabular format, the preferred format is netcdf for the data and tabular data for the metadata.</p>
 <div class="section" id="dataset-filename-convention">
 <h3>Dataset Filename Convention<a class="headerlink" href="#dataset-filename-convention" title="Permalink to this headline">¶</a></h3>
 <p>Dataset filename: &lt;dataset_short_name&gt;_&lt;dataset_release_data&gt;_v&lt;dataset_version&gt;.xlxs
@@ -734,7 +737,7 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
     <p>
         &copy; Copyright 
       <span class="lastupdated">
-        Last updated on Mar 31, 2020.
+        Last updated on Apr 01, 2020.
       </span>
 
     </p>
