@@ -20,6 +20,14 @@ Data Submission
 
 If you wish to suggest a dataset be added to the database or have some data that you would like added, please email Raphael (nrhagen@uw.edu).
 
+In short the current data submission process is:
+
+1. Contact us about adding a dataset to CMAP. (nrhagen@uw.edu)
+2. Format your data and metadata in the CMAP format.
+3. Submit your dataset via email for feedback and review.
+4. Once OK'ed, register a DOI for your dataset.
+5. Submit dataset via email with DOI for ingestion into CMAP.
+
 
 Data Template
 -------------
@@ -39,6 +47,8 @@ Dataset Requirements
 
 To add your dataset to CMAP and make it usable we have a few data and metadata conventions.
 
+.. note:: CMAP is not a data repository and we do not archive and version control datasets. We recommend that once your dataset has been approved for submission to CMAP, you register your dataset at a data repository (i.e. Zenodo, Dryad, Figshare, PANGAEA, etc) and obtain a DOI. We will include your DOI when the data is ingested into CMAP.
+
 1. Data must be in the format:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -53,10 +63,6 @@ Data in CMAP is indexed on space and time. For data to be able to be co-localize
 
 For other scientist to find and use your data, we need metadata on the dataset and the variables within the dataset.
 
-3. Data should have a DOI (Digital Object Identifier) or a reference.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-CMAP is not a data repository and we do not archive and version control datasets. There are multiple free DOI registers: Zenodo_, Dryad_, Figshare_, PANGAEA_...
 
 |
 
