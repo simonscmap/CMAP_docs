@@ -34,17 +34,6 @@ Data Template
 
 
 
-
-
-.. raw:: html
-
-    <div class="banner">
-        <img src="../_static/overview_icons/process_flow.png" alt="Process Flow" width="800px">
-    </div>
-
-
-
-
 Dataset Requirements
 --------------------
 
