@@ -312,48 +312,24 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <h3>First Sheet: “data”<a class="headerlink" href="#first-sheet-data" title="Permalink to this headline">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 7%" />
-<col style="width: 7%" />
-<col style="width: 5%" />
-<col style="width: 7%" />
-<col style="width: 14%" />
-<col style="width: 7%" />
+<col style="width: 36%" />
 <col style="width: 10%" />
-<col style="width: 7%" />
 <col style="width: 10%" />
-<col style="width: 6%" />
-<col style="width: 5%" />
-<col style="width: 8%" />
-<col style="width: 7%" />
+<col style="width: 15%" />
+<col style="width: 28%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p>dataset_short_name</p></td>
-<td><p>dataset_long_name</p></td>
-<td><p>dataset_version</p></td>
-<td><p>dataset_release_date</p></td>
-<td><p>dataset_make</p></td>
-<td><p>dataset_source</p></td>
-<td><p>dataset_distributor</p></td>
-<td><p>dataset_acknowledgement</p></td>
-<td><p>dataset_doi</p></td>
-<td><p>dataset_history</p></td>
-<td><p>dataset_description</p></td>
-<td><p>dataset_references</p></td>
-<td><p>climatology</p></td>
+<tr class="row-odd"><td><p>time</p></td>
+<td><p>lat</p></td>
+<td><p>lon</p></td>
+<td><p>depth</p></td>
+<td><p>&lt;v_1&gt;</p></td>
 </tr>
-<tr class="row-even"><td><p>&lt;short name of your dataset (&lt;50 chars)&gt;</p></td>
-<td><p>&lt;long name of your dataset (&lt;500 chars)&gt;</p></td>
-<td><p>&lt;dataset version (&lt;50 chars)&gt;</p></td>
-<td><p>&lt;Format  %Y-%m-%d,  example: 2018-06-20&gt;</p></td>
-<td><p>&lt;how dataset is made (fixed options= [assimilation, model, observation]) (&lt;50 chars)&gt;</p></td>
-<td><p>&lt;name of your lab/institution (&lt;100 chars)&gt;</p></td>
-<td><p>&lt;the distributor of the data product (optional &lt;100 chars)&gt;</p></td>
-<td><p>&lt;the acknowledgment listed for the dataset &gt;</p></td>
-<td><p>&lt;digital object identifier (doi) associated with the dataset&gt;</p></td>
-<td><p>&lt;any note about the dataset evolution&gt;</p></td>
-<td><p>&lt;a descrption of your dataset&gt;</p></td>
-<td><p>&lt;list of associated docs/publications (&lt;500chars) &gt;</p></td>
-<td><p>&lt;null if not climatology, 1 climatology&gt;</p></td>
+<tr class="row-even"><td><p>&lt;corresponding datetime&gt; (%Y-%m-%dT%H:%M:%S)</p></td>
+<td><p>&lt;latitude&gt;</p></td>
+<td><p>&lt;longitude&gt;</p></td>
+<td><p>depth (if exists)</p></td>
+<td><p>&lt;first variable&gt; (var_short_name)</p></td>
 </tr>
 </tbody>
 </table>
@@ -412,16 +388,19 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <h3>Second Sheet: “dataset_meta_data”<a class="headerlink" href="#second-sheet-dataset-meta-data" title="Permalink to this headline">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 9%" />
-<col style="width: 9%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 5%" />
+<col style="width: 7%" />
+<col style="width: 14%" />
+<col style="width: 7%" />
+<col style="width: 10%" />
+<col style="width: 7%" />
+<col style="width: 10%" />
 <col style="width: 6%" />
-<col style="width: 9%" />
-<col style="width: 18%" />
-<col style="width: 9%" />
-<col style="width: 13%" />
+<col style="width: 5%" />
 <col style="width: 8%" />
 <col style="width: 7%" />
-<col style="width: 11%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>dataset_short_name</p></td>
@@ -430,10 +409,13 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <td><p>dataset_release_date</p></td>
 <td><p>dataset_make</p></td>
 <td><p>dataset_source</p></td>
+<td><p>dataset_distributor</p></td>
+<td><p>dataset_acknowledgement</p></td>
 <td><p>dataset_doi</p></td>
 <td><p>dataset_history</p></td>
 <td><p>dataset_description</p></td>
 <td><p>dataset_references</p></td>
+<td><p>climatology</p></td>
 </tr>
 <tr class="row-even"><td><p>&lt;short name of your dataset (&lt;50 chars)&gt;</p></td>
 <td><p>&lt;long name of your dataset (&lt;500 chars)&gt;</p></td>
@@ -441,10 +423,13 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <td><p>&lt;Format  %Y-%m-%d,  example: 2018-06-20&gt;</p></td>
 <td><p>&lt;how dataset is made (fixed options= [assimilation, model, observation]) (&lt;50 chars)&gt;</p></td>
 <td><p>&lt;name of your lab/institution (&lt;100 chars)&gt;</p></td>
+<td><p>&lt;the distributor of the data product (optional &lt;100 chars)&gt;</p></td>
+<td><p>&lt;the acknowledgment listed for the dataset &gt;</p></td>
 <td><p>&lt;digital object identifier (doi) associated with the dataset&gt;</p></td>
 <td><p>&lt;any note about the dataset evolution&gt;</p></td>
 <td><p>&lt;a descrption of your dataset&gt;</p></td>
 <td><p>&lt;list of associated docs/publications (&lt;500chars) &gt;</p></td>
+<td><p>&lt;null if not climatology, 1 climatology&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -534,8 +519,6 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 </dd>
 </dl>
 </li>
-</ol>
-<ol class="arabic simple" start="7">
 <li><dl class="simple">
 <dt><strong>dataset_history</strong>: notes regarding the evolution of the dataset with respect to the previous versions, if applicable.</dt><dd><ul class="simple">
 <li><p>type: string</p></li>
@@ -552,16 +535,9 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 </dd>
 </dl>
 </li>
-<li><dl class="simple">
-<dt><strong>dataset_references</strong>: links/citations associated with the dataset documentations/publications (enter each ref. in a separate row)</dt><dd><ul class="simple">
-<li><p>type: string</p></li>
-<li><p>length: &lt;500 chars per item</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-</ol>
-<ol class="arabic simple" start="13">
+<li><p><strong>dataset_references</strong>: links/citations associated with the dataset documentations/publications (enter each ref. in a separate row)
+- type: string
+- length: &lt;500 chars per item</p></li>
 <li><dl class="simple">
 <dt><strong>climatology</strong>: is the dataset a climatology product? (&lt;null if not climatology, 1 climatology&gt;)</dt><dd><ul class="simple">
 <li><p>type: string</p></li>
@@ -736,7 +712,7 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
     <p>
         &copy; Copyright 
       <span class="lastupdated">
-        Last updated on Apr 01, 2020.
+        Last updated on Apr 06, 2020.
       </span>
 
     </p>
