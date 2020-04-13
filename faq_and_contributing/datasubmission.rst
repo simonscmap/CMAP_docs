@@ -27,7 +27,7 @@
 Data Submission
 ===============
 
-If you wish to suggest a dataset be added to the database or have some data that you would like added, please email us (simonscmap@uw.edu).
+If you wish to suggest a dataset be added to the database or have some data that you would like added, please email us (cmap-data-submission@uw.edu).
 
 In short the current data submission process is:
 
