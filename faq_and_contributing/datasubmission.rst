@@ -8,6 +8,15 @@
 ..
 .. _Download Data Template: https://github.com/simonscmap/DBIngest/raw/master/template/datasetTemplate.xlsx
 
+.. _Download SeaFlow Example: https://github.com/simonscmap/DBIngest/raw/master/template/SeaFlow_example.xlsx
+
+.. _Download Gradients 1 Fluormetric Chl Example: https://github.com/simonscmap/DBIngest/raw/master/template/Gradients1-KOK1606-FluorometricChlorophyll_2020-03-03_V1.1_example.xlsx
+
+.. _Download Gradients 1 Cobalamin Example: https://github.com/simonscmap/DBIngest/raw/master/template/KOK1606_Gradients1_Cobalamin_example.xlsx
+
+.. _Download Gradients 3 Underway CTD Example: https://github.com/simonscmap/DBIngest/raw/master/template/KM1906_Gradients3_uwayCTD_example.xlsx
+
+
 
 
 .. |template_download| image:: /_static/overview_icons/spreadsheet.png
@@ -18,7 +27,7 @@
 Data Submission
 ===============
 
-If you wish to suggest a dataset be added to the database or have some data that you would like added, please email Raphael (nrhagen@uw.edu).
+If you wish to suggest a dataset be added to the database or have some data that you would like added, please email us (simonscmap@uw.edu).
 
 In short the current data submission process is:
 
@@ -39,6 +48,19 @@ Data Template
     +=============================+
     | `Download Data Template`_   |
     +-----------------------------+
+
+
+
+Dataset Examples
+----------------
+
+
+
+* `Download SeaFlow Example`_
+* `Download Gradients 1 Fluormetric Chl Example`_
+* `Download Gradients 1 Cobalamin Example`_
+* `Download Gradients 3 Underway CTD Example`_
+
 
 
 

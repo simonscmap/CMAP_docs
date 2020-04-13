@@ -14,12 +14,9 @@ Contact and Contribute
 Who to Contact
 --------------
 
-If you have questions about using Simons CMAP feel free to contact either:
+If you have questions about using Simons CMAP feel free to contact us at: cmap-data-submission@uw.edu
 
-- Raphael Hagen (nrhagen@uw.edu)
-- Mohammad D. Ashkezari (mdehghan@uw.edu)
-
-Or talk with us on our Slack_ channel
+or preferably join our Slack_ channel
 
 How to Contribute
 -----------------
