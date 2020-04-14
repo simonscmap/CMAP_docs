@@ -91,10 +91,15 @@ Below is an example list of entities that may issue and link your dataset to a u
   - NASA_Goddard_
   - NERC_
 
+.. raw:: html
 
-.. - How do I retrieve dataset metadata?
-.. -------------------------------------
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://player.vimeo.com/video/407462463" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 80%; height: 100%;"></iframe>
+    </div>
 
+
+
+|
 
 How do I cite data found in CMAP?
 ---------------------------------
