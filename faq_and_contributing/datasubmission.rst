@@ -216,24 +216,28 @@ Second Sheet: "dataset_meta_data"
   	- type: string
   	- length: <100 chars
 
-9. **dataset_doi**: digital object identifier (doi) associated with the dataset.
-    - type: string
-    - length: no limit
-
-10. **dataset_history**: notes regarding the evolution of the dataset with respect to the previous versions, if applicable.
+9. **contact_email**: Email address of data submitter. Note: This will be public information in the database.
   	- type: string
   	- length: <100 chars
 
-11. **dataset_description**: A description of your dataset detailing collection and processing methodology.
+10. **dataset_doi**: digital object identifier (doi) associated with the dataset.
+    - type: string
+    - length: no limit
+
+11. **dataset_history**: notes regarding the evolution of the dataset with respect to the previous versions, if applicable.
+  	- type: string
+  	- length: <100 chars
+
+12. **dataset_description**: A description of your dataset detailing collection and processing methodology.
   	- type: string
   	- length: no limit
 
-12. **dataset_references**: links/citations associated with the dataset documentations/publications (enter each ref. in a separate row)
+13. **dataset_references**: links/citations associated with the dataset documentations/publications (enter each ref. in a separate row)
     - type: string
     - length: <500 chars per item
 
 
-13. **climatology**: is the dataset a climatology product? (<null if not climatology, 1 climatology>)
+14. **climatology**: is the dataset a climatology product? (<null if not climatology, 1 climatology>)
   	- type: string
   	- length: <10 chars
 

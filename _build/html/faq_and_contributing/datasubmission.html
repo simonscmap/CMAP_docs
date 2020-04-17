@@ -522,13 +522,16 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 </dl>
 </li>
 <li><dl class="simple">
-<dt><strong>dataset_doi</strong>: digital object identifier (doi) associated with the dataset.</dt><dd><ul class="simple">
+<dt><strong>contact_email</strong>: Email address of data submitter. Note: This will be public information in the database.</dt><dd><ul class="simple">
 <li><p>type: string</p></li>
-<li><p>length: no limit</p></li>
+<li><p>length: &lt;100 chars</p></li>
 </ul>
 </dd>
 </dl>
 </li>
+<li><p><strong>dataset_doi</strong>: digital object identifier (doi) associated with the dataset.
+- type: string
+- length: no limit</p></li>
 <li><dl class="simple">
 <dt><strong>dataset_history</strong>: notes regarding the evolution of the dataset with respect to the previous versions, if applicable.</dt><dd><ul class="simple">
 <li><p>type: string</p></li>
@@ -722,7 +725,7 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
     <p>
         &copy; Copyright 
       <span class="lastupdated">
-        Last updated on Apr 13, 2020.
+        Last updated on Apr 17, 2020.
       </span>
 
     </p>
