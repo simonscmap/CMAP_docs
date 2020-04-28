@@ -16,7 +16,6 @@
    :target: https://simonscmap.github.io/cmap4r/index.html
 
 
-
 cmap4r API
 ==========
 
@@ -32,6 +31,3 @@ More details can be found on the cmap4r github page or in the cmap4r online docu
     +========================+========================+
     | `Github`_              |`Docs`_                 |
     +------------------------+------------------------+
-
-
-  
