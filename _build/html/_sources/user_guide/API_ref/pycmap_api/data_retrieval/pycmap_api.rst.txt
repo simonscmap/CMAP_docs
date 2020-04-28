@@ -15,14 +15,14 @@ API
 
 .. class:: API
 
-    To retrieve data, create an instance of the system's API and pass the API key. It is no necessary to pass the API key every time you run a code locally, because it will be stored locally. The API class has other optional parameters to adjust its behavior. All parameters can be updated persistently at any point in the code.
+    To retrieve data, create an instance of the system's API and pass the API key. It is not necessary to pass the API key every time you run a code locally, because it will be stored locally. The API class has other optional parameters to adjust its behavior. All parameters can be updated persistently at any point in the code.
 
     ``class pycmap.API(token=<API KEY>, baseURL='https://simonscmap.com', headers=None, vizEngine='plotly', exportDir='./export/', > exportFormat='.csv', figureDir='./figure/')``
     |
 
     :Parameters:
         **token: string, required**
-            Access token (API Key) required to make client requests. You may get an API key here: https://simonscmap.com
+            Access token (API Key) required to make client requests. You may get an API key here: https://simonscmap.com/apikeymanagement
         **baseURL: string, optional, default: https://simonscmap.com**
             Root endpoint of Simons CMAP API.
         **headers: dict, optional, default: None**
@@ -34,8 +34,8 @@ API
         **exportFormat: string, optional, default: '.csv'**
             File format of the exported files. Currently, only csv format is supported.
         **figureDir: string, optional, default: './figure/'**
-            Path to local directory where the figures are stored. The interactive figure objects are stored in form of html files.
-            Note: inline graphs (e.g. on jupyter notebook) are not saved.
+            Path to local directory where the figures are stored. The interactive figure objects are stored in the form of html files.
+            Note: inline graphs (e.g. on Jupyter notebook) are not saved.
 
 
 **Example**

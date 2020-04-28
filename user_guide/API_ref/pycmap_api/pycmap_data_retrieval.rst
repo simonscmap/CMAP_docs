@@ -6,7 +6,7 @@ Data Retrieval
 ==============
 
 
-The methods below can be used to retrieve metadata and to query, subset and colocalize datasets. To begin, you must create an instance of the pycmap API. This tutorial can be found below.
+The methods below can be used to retrieve metadata and to query, subset, and colocalize datasets. To begin, you must create an instance of the pycmap API. This tutorial can be found below.
 
 
 +-------------------------------+--------------------------------------------------------------+

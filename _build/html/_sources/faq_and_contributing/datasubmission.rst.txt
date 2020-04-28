@@ -29,7 +29,7 @@ Data Submission
 
 If you wish to suggest a dataset be added to the database or have some data that you would like added, please email us (cmap-data-submission@uw.edu).
 
-In short the current data submission process is:
+The current data submission process is:
 
 1. Contact us about adding a dataset to CMAP.
 2. Format your data and metadata in the CMAP format.
@@ -67,7 +67,7 @@ Dataset Examples
 Dataset Requirements
 --------------------
 
-To add your dataset to CMAP and make it usable we have a few data and metadata conventions.
+To add your dataset to CMAP, please use the following data and metadata conventions.
 
 .. note:: CMAP is not a data repository and we do not archive and version control datasets. We recommend that once your dataset has been approved for submission to CMAP, you register your dataset at a data repository (i.e. Zenodo, Dryad, Figshare, PANGAEA, etc) and obtain a DOI. We will include your DOI when the data is ingested into CMAP.
 
@@ -78,13 +78,12 @@ To add your dataset to CMAP and make it usable we have a few data and metadata c
 | time | lat | lon | depth {if exists} | <:math:`var_1`> | ... | <:math:`var_n`> |
 +------+-----+-----+-------------------+-----------------+-----+-----------------+
 
-Data in CMAP is indexed on space and time. For data to be able to be co-localized, it must be in this format.
+Data in CMAP is indexed on space and time. To enable data to be co-localized, it must be in this format.
 
 2. Data must have supporting meta-data, ie. data about your data.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For other scientist to find and use your data, we need metadata on the dataset and the variables within the dataset.
-
+For other scientists to find and use your data, we need metadata and the variables within the dataset.
 
 |
 
@@ -93,8 +92,8 @@ Data Template and File Structure
 
 The CMAP data template consists of three sections: data, dataset metadata and variable metadata. Data is stored in the first sheet and the sheet title is "data". The second sheet stores the dataset meta-data and is called "dataset_meta_data". Meta-data associated with the variables in the dataset are kept in the third sheet, "vars_meta_data".
 
-The current data template is an excel spreadsheet. If submitting data in the multi-sheet format does not work for you the data, dataset_metadata, and vars_metadata .csv's can be submitted individually.
-Note, information from all three sheets is required for a dataset to be added to CMAP.
+The current data template is an excel spreadsheet. If submitting data in the multi-sheet format does not work for you, the data, dataset_metadata, and vars_metadata .csv's can be submitted individually.
+Note, information from all three sheets is required for a dataset to be added to CMAP.	Please note, information from all three sheets is required for a dataset to be added to CMAP.
 If you are submitting a dataset that is too large to be stored in a tabular format, the preferred format is netcdf for the data and tabular data for the metadata.
 
 
@@ -181,13 +180,13 @@ Second Sheet: "dataset_meta_data"
     - type: string
     - length: <50 chars
     - short, human readable name of your dataset.
-    - examples: BATS Bacteria Production
+    - example: BATS Bacteria Production
 
 2. **dataset_long_name**: descriptive dataset name
     - type: string
     - length: <500 chars
     - Descriptive human readable name of your dataset
-    - examples: Bermuda Atlantic Time-series Study (BATS) Bacteria Production
+    - example: Bermuda Atlantic Time-series Study (BATS) Bacteria Production
 
 3. **dataset_version**: dataset version
     - type: string
@@ -205,12 +204,12 @@ Second Sheet: "dataset_meta_data"
 6. **dataset_source**: name of your lab and/or institution
     - type: string
     - length: <100 chars
-    - examples: Bermuda Institute of Ocean Sciences
+    - example: Bermuda Institute of Ocean Sciences
 
 7. **dataset_distributor**: name of the distributor of the data product (optional: if the dataset source differs from the distributor)
     - type: string
   	- length: <100 chars
-  	- examples: Distributed by NASA PODAAC
+  	- example: Distributed by NASA PODAAC
 
 8. **dataset_acknowledgement**: Any acknowledgement(s) for this dataset
   	- type: string
@@ -260,13 +259,14 @@ Third Sheet: "vars_meta_data"
 1. **var_short_name**: variable short name
     - type: string
     - length: <50 chars
-    - Computer-readable short name. Should not contain any leading numbers, special characters (ex: '&') or spaces. Ex: SST
+    - Computer-readable short name. Should not contain any leading numbers, special characters (ex: '&') or spaces.
+    - example: SST
 
 2. **var_long_name**: descriptive variable name
     - type: string
     - length: <500 chars
-    - Human readable variable name. Think of this as a common name for the variable. Ex: Sea Surface Temperature
-
+    - Human readable variable name. Think of this as a common name for the variable.
+    - example: Sea Surface Temperature
 
 3. **var_sensor**: device by which variable is measured
     - type: string
@@ -276,8 +276,9 @@ Third Sheet: "vars_meta_data"
 4. **var_unit**: variable unit
     - type: string
     - length: <50 chars
-    - Prefer symbols to descriptions. Ex: "/" is better than "per"
-
+    - Prefer symbols to descriptions.
+    - example: "/" is better than "per"
+    
 5. **var_spatial_res**: variable spatial resolution
     - type: string
     - length: <50 chars

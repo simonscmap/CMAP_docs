@@ -34,11 +34,10 @@
 
 
 Simons CMAP is an open-source data service to retrieve, visualize, and analyze oceanic datasets such as in-situ observations,
-multi-decade global satellite remote sensing, and model outputs.
+multi-decadal global satellite remote sensing, and model outputs.
 It enables scientists and the public to dive into the vast,
-and often underutilized ocean datasets and to retrieve customized subsets of these
-massive datasets without going through the time-consuming process of data collection and preparation.
-
+and often underutilized, ocean datasets and to retrieve customized subsets of these
+massive datasets without going through the time-consuming process of data collection and preparation.	massive datasets without the time-consuming process of data collection and preparation.
 
 
 

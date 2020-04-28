@@ -25,7 +25,7 @@ Variable Long Name
 
     :Parameters:
         **tableName: string**
-            The name of table associated with the dataset. A full list of table names can be found in the :ref:`Catalog`.
+            The name of the table associated with the dataset. A full list of table names can be found in the :ref:`Catalog`.
         **variable: string or list of string**
             Variable short name. A full list of variable short names can be found in the :ref:`Catalog`.
 

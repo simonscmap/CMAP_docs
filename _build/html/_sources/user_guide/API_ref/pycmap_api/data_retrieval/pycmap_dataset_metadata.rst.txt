@@ -25,7 +25,7 @@ Dataset Metadata
 
     :Parameters:
         **tableName: string**
-            The name of table where the dataset is stored. A full list of table names can be found in the :ref:`Catalog`.
+            The name of the table where the dataset is stored. A full list of table names can be found in the :ref:`Catalog`.
 
     :returns\:: Pandas dataframe.
 

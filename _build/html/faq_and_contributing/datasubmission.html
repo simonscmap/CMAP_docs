@@ -227,7 +227,7 @@
 <div class="section" id="data-submission">
 <h1>Data Submission<a class="headerlink" href="#data-submission" title="Permalink to this headline">¶</a></h1>
 <p>If you wish to suggest a dataset be added to the database or have some data that you would like added, please email us (<a class="reference external" href="mailto:cmap-data-submission&#37;&#52;&#48;uw&#46;edu">cmap-data-submission<span>&#64;</span>uw<span>&#46;</span>edu</a>).</p>
-<p>In short the current data submission process is:</p>
+<p>The current data submission process is:</p>
 <ol class="arabic simple">
 <li><p>Contact us about adding a dataset to CMAP.</p></li>
 <li><p>Format your data and metadata in the CMAP format.</p></li>
@@ -262,7 +262,7 @@
 </div>
 <div class="section" id="dataset-requirements">
 <h2>Dataset Requirements<a class="headerlink" href="#dataset-requirements" title="Permalink to this headline">¶</a></h2>
-<p>To add your dataset to CMAP and make it usable we have a few data and metadata conventions.</p>
+<p>To add your dataset to CMAP, please use the following data and metadata conventions.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>CMAP is not a data repository and we do not archive and version control datasets. We recommend that once your dataset has been approved for submission to CMAP, you register your dataset at a data repository (i.e. Zenodo, Dryad, Figshare, PANGAEA, etc) and obtain a DOI. We will include your DOI when the data is ingested into CMAP.</p>
@@ -290,11 +290,11 @@
 </tr>
 </tbody>
 </table>
-<p>Data in CMAP is indexed on space and time. For data to be able to be co-localized, it must be in this format.</p>
+<p>Data in CMAP is indexed on space and time. To enable data to be co-localized, it must be in this format.</p>
 </div>
 <div class="section" id="data-must-have-supporting-meta-data-ie-data-about-your-data">
 <h3>2. Data must have supporting meta-data, ie. data about your data.<a class="headerlink" href="#data-must-have-supporting-meta-data-ie-data-about-your-data" title="Permalink to this headline">¶</a></h3>
-<p>For other scientist to find and use your data, we need metadata on the dataset and the variables within the dataset.</p>
+<p>For other scientists to find and use your data, we need metadata and the variables within the dataset.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -303,8 +303,8 @@
 <div class="section" id="data-template-and-file-structure">
 <h2>Data Template and File Structure<a class="headerlink" href="#data-template-and-file-structure" title="Permalink to this headline">¶</a></h2>
 <p>The CMAP data template consists of three sections: data, dataset metadata and variable metadata. Data is stored in the first sheet and the sheet title is “data”. The second sheet stores the dataset meta-data and is called “dataset_meta_data”. Meta-data associated with the variables in the dataset are kept in the third sheet, “vars_meta_data”.</p>
-<p>The current data template is an excel spreadsheet. If submitting data in the multi-sheet format does not work for you the data, dataset_metadata, and vars_metadata .csv’s can be submitted individually.
-Note, information from all three sheets is required for a dataset to be added to CMAP.
+<p>The current data template is an excel spreadsheet. If submitting data in the multi-sheet format does not work for you, the data, dataset_metadata, and vars_metadata .csv’s can be submitted individually.
+Note, information from all three sheets is required for a dataset to be added to CMAP.  Please note, information from all three sheets is required for a dataset to be added to CMAP.
 If you are submitting a dataset that is too large to be stored in a tabular format, the preferred format is netcdf for the data and tabular data for the metadata.</p>
 <div class="section" id="dataset-filename-convention">
 <h3>Dataset Filename Convention<a class="headerlink" href="#dataset-filename-convention" title="Permalink to this headline">¶</a></h3>
@@ -450,7 +450,7 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <li><p>type: string</p></li>
 <li><p>length: &lt;50 chars</p></li>
 <li><p>short, human readable name of your dataset.</p></li>
-<li><p>examples: BATS Bacteria Production</p></li>
+<li><p>example: BATS Bacteria Production</p></li>
 </ul>
 </dd>
 </dl>
@@ -460,7 +460,7 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <li><p>type: string</p></li>
 <li><p>length: &lt;500 chars</p></li>
 <li><p>Descriptive human readable name of your dataset</p></li>
-<li><p>examples: Bermuda Atlantic Time-series Study (BATS) Bacteria Production</p></li>
+<li><p>example: Bermuda Atlantic Time-series Study (BATS) Bacteria Production</p></li>
 </ul>
 </dd>
 </dl>
@@ -494,7 +494,7 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <dt><strong>dataset_source</strong>: name of your lab and/or institution</dt><dd><ul class="simple">
 <li><p>type: string</p></li>
 <li><p>length: &lt;100 chars</p></li>
-<li><p>examples: Bermuda Institute of Ocean Sciences</p></li>
+<li><p>example: Bermuda Institute of Ocean Sciences</p></li>
 </ul>
 </dd>
 </dl>
@@ -504,7 +504,7 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <li><dl class="simple">
 <dt>type: string</dt><dd><ul>
 <li><p>length: &lt;100 chars</p></li>
-<li><p>examples: Distributed by NASA PODAAC</p></li>
+<li><p>example: Distributed by NASA PODAAC</p></li>
 </ul>
 </dd>
 </dl>
@@ -607,7 +607,8 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <dt><strong>var_short_name</strong>: variable short name</dt><dd><ul class="simple">
 <li><p>type: string</p></li>
 <li><p>length: &lt;50 chars</p></li>
-<li><p>Computer-readable short name. Should not contain any leading numbers, special characters (ex: ‘&amp;’) or spaces. Ex: SST</p></li>
+<li><p>Computer-readable short name. Should not contain any leading numbers, special characters (ex: ‘&amp;’) or spaces.</p></li>
+<li><p>example: SST</p></li>
 </ul>
 </dd>
 </dl>
@@ -616,7 +617,8 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <dt><strong>var_long_name</strong>: descriptive variable name</dt><dd><ul class="simple">
 <li><p>type: string</p></li>
 <li><p>length: &lt;500 chars</p></li>
-<li><p>Human readable variable name. Think of this as a common name for the variable. Ex: Sea Surface Temperature</p></li>
+<li><p>Human readable variable name. Think of this as a common name for the variable.</p></li>
+<li><p>example: Sea Surface Temperature</p></li>
 </ul>
 </dd>
 </dl>
@@ -634,7 +636,8 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <dt><strong>var_unit</strong>: variable unit</dt><dd><ul class="simple">
 <li><p>type: string</p></li>
 <li><p>length: &lt;50 chars</p></li>
-<li><p>Prefer symbols to descriptions. Ex: “/” is better than “per”</p></li>
+<li><p>Prefer symbols to descriptions.</p></li>
+<li><p>example: “/” is better than “per”</p></li>
 </ul>
 </dd>
 </dl>
@@ -725,7 +728,7 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
     <p>
         &copy; Copyright 
       <span class="lastupdated">
-        Last updated on Apr 17, 2020.
+        Last updated on Apr 28, 2020.
       </span>
 
     </p>

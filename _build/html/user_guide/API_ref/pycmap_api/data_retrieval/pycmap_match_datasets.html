@@ -116,7 +116,7 @@
 <li class="toctree-l4"><a class="reference internal" href="pycmap_is_climatology.html">Is Climatology Product</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_list_cruises.html">List of Cruises</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_details.html">Cruise Details by Name</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_ST_bounds.html">Cruise Spatio-Tempoal Bounds</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_ST_bounds.html">Cruise Spatio-Temporal Bounds</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_trajectory.html">Cruise Trajectory</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_variables.html">Cruise Variables</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_retrieve_dataset.html">Retrieve Dataset</a></li>
@@ -281,28 +281,28 @@
 </dd>
 <dt><strong>sourceVar: string</strong></dt><dd><p>The source variable short name. The target variables are matched (colocalized) with this variable. A full list of variable short names can be found in the <a class="reference internal" href="../../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
 </dd>
-<dt><strong>targetTables: list of string</strong></dt><dd><p>Table names of the target datasets to be matched with the source data. Notice source dataset can be matched with multiple target datasets. A full list of table names can be found in the <a class="reference internal" href="../../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
+<dt><strong>targetTables: list of string</strong></dt><dd><p>Table names of the target datasets to be matched with the source data. Note source dataset can be matched with multiple target datasets. A full list of table names can be found in the <a class="reference internal" href="../../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
 </dd>
 <dt><strong>targetVars: list of string</strong></dt><dd><p>Variable short names to be matched with the source variable. A full list of variable short names can be found in the <a class="reference internal" href="../../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
 </dd>
 <dt><strong>dt1: string</strong></dt><dd><p>Start date or datetime. This parameter sets the lower bound of the temporal cut.
-Example values: ‘2016-05-25’ or ‘2017-12-10 17:25:00’</p>
+Example values: ‘2016-05-25’ or ‘2017-12-10 17:25:00’.</p>
 </dd>
-<dt><strong>dt2: string</strong></dt><dd><p>End date or datetime. This parameter sets the upper bound of the temporal cut.</p>
+<dt><strong>dt2: string</strong></dt><dd><p>End date or datetime. This parameter sets the upper bound of the temporal cut. Example values: ‘2016-05-25’ or ‘2017-12-10 17:25:00’.</p>
 </dd>
 <dt><strong>lat1: float</strong></dt><dd><p>Start latitude [degree N]. This parameter sets the lower bound of the meridional cut. Note latitude ranges from -90° to 90°.</p>
 </dd>
 <dt><strong>lat2: float</strong></dt><dd><p>End latitude [degree N]. This parameter sets the upper bound of the meridional cut. Note latitude ranges from -90° to 90°.</p>
 </dd>
-<dt><strong>lon1: float</strong></dt><dd><p>Start longitude [degree E]. This parameter sets the lower bound of the zonal cut. Note latitude ranges from -180° to 180°.</p>
+<dt><strong>lon1: float</strong></dt><dd><p>Start longitude [degree E]. This parameter sets the lower bound of the zonal cut. Note longitude ranges from -180° to 180°.</p>
 </dd>
-<dt><strong>lon2: float</strong></dt><dd><p>End longitude [degree E]. This parameter sets the upper bound of the zonal cut. Note latitude ranges from -180° to 180°.</p>
+<dt><strong>lon2: float</strong></dt><dd><p>End longitude [degree E]. This parameter sets the upper bound of the zonal cut. Note longitude ranges from -180° to 180°.</p>
 </dd>
-<dt><strong>depth1: float</strong></dt><dd><p>Start depth [m]. This parameter sets the lower bound of the vertical cut. Note depth is a positive number (it is 0 at surface and grows towards ocean floor).</p>
+<dt><strong>depth1: float</strong></dt><dd><p>Start depth [m]. This parameter sets the lower bound of the vertical cut. Note depth is a positive number (it is 0 at the surface and increases towards the ocean floor).</p>
 </dd>
-<dt><strong>depth2: float</strong></dt><dd><p>End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at surface and grows towards ocean floor).</p>
+<dt><strong>depth2: float</strong></dt><dd><p>End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at the surface and increases towards the ocean floor).</p>
 </dd>
-<dt><strong>temporalTolerance: list of int</strong></dt><dd><p>Temporal tolerance values between pairs of source and target datasets. The size and order of values in this list should match those of targetTables. If only a single integer value is given, that would be applied to all target datasets. This parameter is in day units except when the target variable represents monthly climatology data in which case it is in month units. Notice fractional values are not supported in the current version.</p>
+<dt><strong>temporalTolerance: list of int</strong></dt><dd><p>Temporal tolerance values between pairs of source and target datasets. The size and order of values in this list should match those of targetTables. If only a single integer value is given, that would be applied to all target datasets. This parameter is in days except when the target variable represents monthly climatology data in which case it is in months. Notice fractional values are not supported in the current version.</p>
 </dd>
 <dt><strong>latTolerance: list of float or int</strong></dt><dd><p>Spatial tolerance values in meridional direction [deg] between pairs of source and target datasets. The size and order of values in this list should match those of targetTables. If only a single float value is given, that would be applied to all target datasets. A “safe” value for this parameter can be slightly larger than the half of the target variable’s spatial resolution.</p>
 </dd>
@@ -323,7 +323,7 @@ Example values: ‘2016-05-25’ or ‘2017-12-10 17:25:00’</p>
 </div>
 <div class="section" id="example-1">
 <h2>Example 1:<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
-<p>In this example the abundance of a prochlorococcus strain (MIT9313PCR, see lines 5-6) measured by Chisholm lab during the AMT13 cruise (Atlantic Meridional Transect Cruise 13) is colocalized with 3 target variables (lines 7-8):</p>
+<p>In this example, the abundance of a prochlorococcus strain (MIT9313PCR, see lines 5-6) measured by Chisholm lab during the AMT13 cruise (Atlantic Meridional Transect Cruise 13) is colocalized with 3 target variables (lines 7-8):</p>
 <ul class="simple">
 <li><p>‘MIT9312PCR_Chisholm’ from the same source dataset</p></li>
 <li><p>‘phosphate*WOA*clim’ from World Ocean Atlas monthly climatology dataset</p></li>
@@ -333,24 +333,30 @@ Example values: ‘2016-05-25’ or ‘2017-12-10 17:25:00’</p>
 <div class="line"><br /></div>
 </div>
 <p><strong>Tip1:</strong></p>
-<p>The space-time cut parameters (lines 9-16) have been set in such a way to encompass the entire source dataset ‘tblAMT13_Chisholm’ (see the dataset page for more details). Notice that the last data point at the source dataset has been measured at ‘2003-10-12 12:44:00’. For simplicity dt2 has been set to ‘2003-10-13’, but you could also use the exact date-time ‘2003-10-12 12:44:00’.</p>
+<p>The space-time cut parameters (lines 9-16) have been set in such a way to encompass the entire source dataset ‘tblAMT13_Chisholm’ (see the dataset page for more details). Note that the last data point at the source dataset has been measured at ‘2003-10-12 12:44:00’. For simplicity dt2 has been set to ‘2003-10-13’, but you could also use the exact date-time ‘2003-10-12 12:44:00’.</p>
 <p><strong>Tip2:</strong></p>
 <p>AMT13 cruise trajectory is already in Simons CMAP database. Therefore, another way to find reasonable values for the space-time cut parameters (lines 9-16) is to use the outputs of the following command:
-api.cruise_bounds(‘AMT13’)</p>
+api.cruise_bounds(‘AMT13’).</p>
 <p><strong>Tip3:</strong></p>
-<p>The temporalTolerance parameter is set to [0, 0, 1] (line 17). This means:
--  ±0 day temporal tolerance when matching with ‘MIT9312PCR_Chisholm’ (exact date-time matching)
--  ±0 month temporal tolerance when matching with ‘phosphate*WOA*clim’ (this is a monthly climatology dataset)
--  ±4 day temporal tolerance when matching with ‘chl’ (this is a weekly averaged dataset)</p>
+<p>The temporalTolerance parameter is set to [0, 0, 1] (line 17). This means:</p>
+<ul class="simple">
+<li><p>±0 day temporal tolerance when matching with ‘MIT9312PCR_Chisholm’ (exact date-time matching)</p></li>
+<li><p>±0 month temporal tolerance when matching with ‘phosphate*WOA*clim’ (this is a monthly climatology dataset)</p></li>
+<li><p>±4 day temporal tolerance when matching with ‘chl’ (this is a weekly averaged dataset)</p></li>
+</ul>
 <p><strong>Tip4:</strong></p>
-<p>The latTolerance and lonTolerance parameters are set to [0, 0.5, 0.25] (lines 18-19). This means:
--  ±0 day temporal tolerance when matching with ‘MIT9312PCR_Chisholm’ (exact date-time matching)
--  ±0 month temporal tolerance when matching with ‘phosphate*WOA*clim’ (this is a monthly climatology dataset)
--  ±4 day temporal tolerance when matching with ‘chl’ (this is a weekly averaged dataset)</p>
+<p>The latTolerance and lonTolerance parameters are set to [0, 0.5, 0.25] (lines 18-19). This means:</p>
+<ul class="simple">
+<li><p>±0 day temporal tolerance when matching with ‘MIT9312PCR_Chisholm’ (exact date-time matching)</p></li>
+<li><p>±0 month temporal tolerance when matching with ‘phosphate*WOA*clim’ (this is a monthly climatology dataset)</p></li>
+<li><p>±4 day temporal tolerance when matching with ‘chl’ (this is a weekly averaged dataset)</p></li>
+</ul>
 <p><strong>Tip5:</strong></p>
-<p>The depthTolerance parameter is set to [0, 5, 0] (line 20). This means:
--  ±0 meters vertical tolerances when matching with ‘MIT9312PCR_Chisholm’ (exact depth matching)
--  ±5 meters vertical tolerances when matching with ‘phosphate*WOA*clim’ (note that this dataset, similar to model outputs, does not have uniform depth levels)</p>
+<p>The depthTolerance parameter is set to [0, 5, 0] (line 20). This means:</p>
+<ul class="simple">
+<li><p>±0 meters vertical tolerances when matching with ‘MIT9312PCR_Chisholm’ (exact depth matching).</p></li>
+<li><p>±5 meters vertical tolerances when matching with ‘phosphate*WOA*clim’ (note that this dataset, similar to model outputs, does not have uniform depth levels).</p></li>
+</ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!pip install pycmap -q     #uncomment to install pycmap, if necessary</span>
 
 <span class="kn">import</span> <span class="nn">pycmap</span>
@@ -379,14 +385,14 @@ api.cruise_bounds(‘AMT13’)</p>
 </div>
 <div class="section" id="example-2">
 <h2>Example 2:<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
-<p>The source variable in this example is particulate pseudo cobalamin (‘Me_PseudoCobalamin_Particulate_pM’ see lines 5-6) measured by Ingalls lab during the KM1315 cruise (see dataset page for more details). This variable is colocalized with one target variabele, ‘picoprokaryote’ concentration, from Darwin model (lines 7-8). The colocalized data, then is visualized. please review the above Example 1, since the mentioned tips apply to this example too.</p>
+<p>The source variable in this example is particulate pseudo cobalamin (‘Me_PseudoCobalamin_Particulate_pM’ see lines 5-6) measured by Ingalls lab during the KM1315 cruise. This variable is colocalized with one target variabele, ‘picoprokaryote’ concentration, from Darwin model (lines 7-8). The colocalized data, then is visualized. please review the above Example 1, since the mentioned tips apply to this example too.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p><strong>Tip1:</strong></p>
-<p>The employed Darwin model outputs in this example is a 3-day averaged dataset, and therefore ±2 day temporal tolerance is used (line 17).</p>
+<p>The employed Darwin model outputs are a 3-day averaged dataset, and therefore ±2 day temporal tolerance is used (line 17).</p>
 <p><strong>Tip2:</strong></p>
-<p>The employed Darwin model outputs in this example has a 0.5 degree spatial resolution in zonal and meridional directions, and so ±0.25 degree spatial tolerance is used (line 18-19).</p>
+<p>The employed Darwin model outputs have has a 0.5 degree spatial resolution in zonal and meridional directions, and so ±0.25 degree spatial tolerance is used (line 18-19).</p>
 <p><strong>Tip3:</strong></p>
 <p>Darwin model first depth level is at 5 m (not 0), and so ±5 meter vertical tolerance should cover all surface measurements (line 20).</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># !pip install pycmap -q     # uncomment to install pycmap, if necessary</span>
@@ -482,7 +488,7 @@ api.cruise_bounds(‘AMT13’)</p>
     <p>
         &copy; Copyright 
       <span class="lastupdated">
-        Last updated on Apr 01, 2020.
+        Last updated on Apr 28, 2020.
       </span>
 
     </p>

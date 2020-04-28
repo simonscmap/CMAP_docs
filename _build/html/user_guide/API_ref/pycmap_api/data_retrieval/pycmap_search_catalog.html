@@ -116,7 +116,7 @@
 <li class="toctree-l4"><a class="reference internal" href="pycmap_is_climatology.html">Is Climatology Product</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_list_cruises.html">List of Cruises</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_details.html">Cruise Details by Name</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_ST_bounds.html">Cruise Spatio-Tempoal Bounds</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_ST_bounds.html">Cruise Spatio-Temporal Bounds</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_trajectory.html">Cruise Trajectory</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_variables.html">Cruise Variables</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_retrieve_dataset.html">Retrieve Dataset</a></li>
@@ -271,9 +271,9 @@ The passed keywords should be separated by blank space.
 The search result is not sensitive to the order of keywords and is not case sensitive.
 The passed keywords can provide any ‘hint’ associated with the target variables. Below are a few examples:</p>
 <ul class="simple">
-<li><p>the exact variable name (e.g. NO3), or its linguistic term (Nitrate)</p></li>
-<li><p>methodology (model, satellite …), instrument (CTD, seaflow), or disciplines (physics, biology …)</p></li>
-<li><p>the cruise official name (e.g. KOK1606), or unofficial cruise name (Falkor)</p></li>
+<li><p>the exact variable name (e.g. NO3), or its linguistic term (nitrate)</p></li>
+<li><p>methodology (e.g. model, satellite …), instrument (e.g. CTD, seaflow), or disciplines (e.g. physics, biology …)</p></li>
+<li><p>the official cruise name (e.g. KOK1606), or unofficial cruise name (Falkor)</p></li>
 <li><p>the name of data producer (e.g Penny Chisholm) or institution name (MIT)</p></li>
 </ul>
 <p>If you searched for a variable with semantically-related-keywords and did not get the correct results, please let us know.
@@ -305,7 +305,7 @@ We can update the keywords at any point.</p>
 </pre></div>
 </div>
 <p><strong>Example 2:</strong></p>
-<p>Returns a list of Nitrite measurements during the Falkor cruise, if exists.</p>
+<p>Returns a list of nitrite measurements during the Falkor cruise, if exists.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!pip install pycmap -q     #uncomment to install pycmap, if necessary</span>
 
 <span class="kn">import</span> <span class="nn">pycmap</span>
@@ -333,7 +333,7 @@ We can update the keywords at any point.</p>
 </pre></div>
 </div>
 <p><strong>Example:</strong></p>
-<p>List of satellite Chlorophyll products:</p>
+<p>List of satellite chlorophyll products:</p>
 <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">EXEC</span> <span class="n">uspSearchCatalog</span> <span class="s1">&#39;chl satellite&#39;</span>
 </pre></div>
 </div>
@@ -352,7 +352,7 @@ We can update the keywords at any point.</p>
     <p>
         &copy; Copyright 
       <span class="lastupdated">
-        Last updated on Apr 01, 2020.
+        Last updated on Apr 28, 2020.
       </span>
 
     </p>

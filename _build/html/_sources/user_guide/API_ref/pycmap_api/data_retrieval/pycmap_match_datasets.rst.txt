@@ -36,29 +36,29 @@ Match (colocalize) Datasets
         **sourceVar: string**
             The source variable short name. The target variables are matched (colocalized) with this variable. A full list of variable short names can be found in the :ref:`Catalog`.
         **targetTables: list of string**
-            Table names of the target datasets to be matched with the source data. Notice source dataset can be matched with multiple target datasets. A full list of table names can be found in the :ref:`Catalog`.
+            Table names of the target datasets to be matched with the source data. Note source dataset can be matched with multiple target datasets. A full list of table names can be found in the :ref:`Catalog`.
         **targetVars: list of string**
             Variable short names to be matched with the source variable. A full list of variable short names can be found in the :ref:`Catalog`.
         **dt1: string**
             Start date or datetime. This parameter sets the lower bound of the temporal cut.
-            Example values: '2016-05-25' or '2017-12-10 17:25:00'
+            Example values: '2016-05-25' or '2017-12-10 17:25:00'.
         **dt2: string**
-            End date or datetime. This parameter sets the upper bound of the temporal cut.
+            End date or datetime. This parameter sets the upper bound of the temporal cut. Example values: '2016-05-25' or '2017-12-10 17:25:00'.
         **lat1: float**
             Start latitude [degree N]. This parameter sets the lower bound of the meridional cut. Note latitude ranges from -90° to 90°.
         **lat2: float**
             End latitude [degree N]. This parameter sets the upper bound of the meridional cut. Note latitude ranges from -90° to 90°.
         **lon1: float**
-            Start longitude [degree E]. This parameter sets the lower bound of the zonal cut. Note latitude ranges from -180° to 180°.
+            Start longitude [degree E]. This parameter sets the lower bound of the zonal cut. Note longitude ranges from -180° to 180°.
         **lon2: float**
-            End longitude [degree E]. This parameter sets the upper bound of the zonal cut. Note latitude ranges from -180° to 180°.
+            End longitude [degree E]. This parameter sets the upper bound of the zonal cut. Note longitude ranges from -180° to 180°.
         **depth1: float**
-            Start depth [m]. This parameter sets the lower bound of the vertical cut. Note depth is a positive number (it is 0 at surface and grows towards ocean floor).
+            Start depth [m]. This parameter sets the lower bound of the vertical cut. Note depth is a positive number (it is 0 at the surface and increases towards the ocean floor).
         **depth2: float**
-            End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at surface and grows towards ocean floor).
+            End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at the surface and increases towards the ocean floor).
 
         **temporalTolerance: list of int**
-            Temporal tolerance values between pairs of source and target datasets. The size and order of values in this list should match those of targetTables. If only a single integer value is given, that would be applied to all target datasets. This parameter is in day units except when the target variable represents monthly climatology data in which case it is in month units. Notice fractional values are not supported in the current version.
+            Temporal tolerance values between pairs of source and target datasets. The size and order of values in this list should match those of targetTables. If only a single integer value is given, that would be applied to all target datasets. This parameter is in days except when the target variable represents monthly climatology data in which case it is in months. Notice fractional values are not supported in the current version.
         **latTolerance: list of float or int**
             Spatial tolerance values in meridional direction [deg] between pairs of source and target datasets. The size and order of values in this list should match those of targetTables. If only a single float value is given, that would be applied to all target datasets. A "safe" value for this parameter can be slightly larger than the half of the target variable's spatial resolution.
         **lonTolerance: list of float or int**
@@ -75,7 +75,7 @@ Match (colocalize) Datasets
 Example 1:
 ----------
 
-In this example the abundance of a prochlorococcus strain (MIT9313PCR, see lines 5-6) measured by Chisholm lab during the AMT13 cruise (Atlantic Meridional Transect Cruise 13) is colocalized with 3 target variables (lines 7-8):
+In this example, the abundance of a prochlorococcus strain (MIT9313PCR, see lines 5-6) measured by Chisholm lab during the AMT13 cruise (Atlantic Meridional Transect Cruise 13) is colocalized with 3 target variables (lines 7-8):
 
 -  'MIT9312PCR_Chisholm' from the same source dataset
 -  'phosphate*WOA*\ clim' from World Ocean Atlas monthly climatology dataset
@@ -85,16 +85,17 @@ In this example the abundance of a prochlorococcus strain (MIT9313PCR, see lines
 
 **Tip1:**
 
-The space-time cut parameters (lines 9-16) have been set in such a way to encompass the entire source dataset 'tblAMT13_Chisholm' (see the dataset page for more details). Notice that the last data point at the source dataset has been measured at '2003-10-12 12:44:00'. For simplicity dt2 has been set to '2003-10-13', but you could also use the exact date-time '2003-10-12 12:44:00'.
+The space-time cut parameters (lines 9-16) have been set in such a way to encompass the entire source dataset 'tblAMT13_Chisholm' (see the dataset page for more details). Note that the last data point at the source dataset has been measured at '2003-10-12 12:44:00'. For simplicity dt2 has been set to '2003-10-13', but you could also use the exact date-time '2003-10-12 12:44:00'.
 
 **Tip2:**
 
 AMT13 cruise trajectory is already in Simons CMAP database. Therefore, another way to find reasonable values for the space-time cut parameters (lines 9-16) is to use the outputs of the following command:
-api.cruise_bounds('AMT13')
+api.cruise_bounds('AMT13').
 
 **Tip3:**
 
 The temporalTolerance parameter is set to [0, 0, 1] (line 17). This means:
+
 -  ±0 day temporal tolerance when matching with 'MIT9312PCR_Chisholm' (exact date-time matching)
 -  ±0 month temporal tolerance when matching with 'phosphate*WOA*\ clim' (this is a monthly climatology dataset)
 -  ±4 day temporal tolerance when matching with 'chl' (this is a weekly averaged dataset)
@@ -102,6 +103,7 @@ The temporalTolerance parameter is set to [0, 0, 1] (line 17). This means:
 **Tip4:**
 
 The latTolerance and lonTolerance parameters are set to [0, 0.5, 0.25] (lines 18-19). This means:
+
 -  ±0 day temporal tolerance when matching with 'MIT9312PCR_Chisholm' (exact date-time matching)
 -  ±0 month temporal tolerance when matching with 'phosphate*WOA*\ clim' (this is a monthly climatology dataset)
 -  ±4 day temporal tolerance when matching with 'chl' (this is a weekly averaged dataset)
@@ -109,8 +111,9 @@ The latTolerance and lonTolerance parameters are set to [0, 0.5, 0.25] (lines 18
 **Tip5:**
 
 The depthTolerance parameter is set to [0, 5, 0] (line 20). This means:
--  ±0 meters vertical tolerances when matching with 'MIT9312PCR_Chisholm' (exact depth matching)
--  ±5 meters vertical tolerances when matching with 'phosphate*WOA*\ clim' (note that this dataset, similar to model outputs, does not have uniform depth levels)
+
+-  ±0 meters vertical tolerances when matching with 'MIT9312PCR_Chisholm' (exact depth matching).
+-  ±5 meters vertical tolerances when matching with 'phosphate*WOA*\ clim' (note that this dataset, similar to model outputs, does not have uniform depth levels).
 
 
 
@@ -146,17 +149,17 @@ The depthTolerance parameter is set to [0, 5, 0] (line 20). This means:
 Example 2:
 ----------
 
-The source variable in this example is particulate pseudo cobalamin ('Me_PseudoCobalamin_Particulate_pM' see lines 5-6) measured by Ingalls lab during the KM1315 cruise (see dataset page for more details). This variable is colocalized with one target variabele, 'picoprokaryote' concentration, from Darwin model (lines 7-8). The colocalized data, then is visualized. please review the above Example 1, since the mentioned tips apply to this example too.
+The source variable in this example is particulate pseudo cobalamin ('Me_PseudoCobalamin_Particulate_pM' see lines 5-6) measured by Ingalls lab during the KM1315 cruise. This variable is colocalized with one target variabele, 'picoprokaryote' concentration, from Darwin model (lines 7-8). The colocalized data, then is visualized. please review the above Example 1, since the mentioned tips apply to this example too.
 
 |
 
 **Tip1:**
 
-The employed Darwin model outputs in this example is a 3-day averaged dataset, and therefore ±2 day temporal tolerance is used (line 17).
+The employed Darwin model outputs are a 3-day averaged dataset, and therefore ±2 day temporal tolerance is used (line 17).
 
 **Tip2:**
 
-The employed Darwin model outputs in this example has a 0.5 degree spatial resolution in zonal and meridional directions, and so ±0.25 degree spatial tolerance is used (line 18-19).
+The employed Darwin model outputs have has a 0.5 degree spatial resolution in zonal and meridional directions, and so ±0.25 degree spatial tolerance is used (line 18-19).
 
 
 **Tip3:**

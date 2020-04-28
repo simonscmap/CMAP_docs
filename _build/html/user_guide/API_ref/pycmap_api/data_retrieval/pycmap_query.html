@@ -116,7 +116,7 @@
 <li class="toctree-l4"><a class="reference internal" href="pycmap_is_climatology.html">Is Climatology Product</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_list_cruises.html">List of Cruises</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_details.html">Cruise Details by Name</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_ST_bounds.html">Cruise Spatio-Tempoal Bounds</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_ST_bounds.html">Cruise Spatio-Temporal Bounds</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_trajectory.html">Cruise Trajectory</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_variables.html">Cruise Variables</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_retrieve_dataset.html">Retrieve Dataset</a></li>
@@ -277,18 +277,18 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Tables which represent a climatological dataset, such as ‘tblDarwin_Nutrient_Climatology’, will not have a ‘time’ field.
-Also, if a table represents a surface dataset, such as satellite products, there would be no ‘depth’ field. ‘depth’ is a positive number in meters unit;
-it is zero at the surface growing towards the ocean’s floor. ‘lat’ and ‘lon’ are in degrees units, ranging from -90° to 90° and -180° to 180°, respectively.</p>
+Also, if a table represents a surface dataset, such as satellite products, there would be no ‘depth’ field. ‘depth’ is a positive number in meters;
+it is zero at the surface and increasing towards the ocean’s floor. ‘lat’ and ‘lon’ are in degrees units, ranging from -90° to 90° and -180° to 180°, respectively.</p>
 <p>Please keep in mind that some of the datasets are massive in size (10s of TB), avoid queries without WHERE clause (<code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">*</span> <span class="pre">FROM</span> <span class="pre">TABLENAME</span></code>).
 Always try to add some constraints on time, lat, lon, and depth fields (see the basic examples below).</p>
 <p>Moreover, the database hosts a wide range of predefined stored procedures and functions to streamline nearly all CMAP data services.
-For instance retrieving the catalog information is achieved using a single call of this procedure: uspCatalog.
+For instance, retrieving the catalog information is achieved using a single call of this procedure: uspCatalog.
 These predefined procedures can be called using the pycmap package (see Example 3).
 Alternatively, one may use any SQL client to execute these procedures to retrieve and visualize data (examples: <a class="reference external" href="https://docs.microsoft.com/en-us/sql/azure-data-studio/download?view=sql-server-ver15">Azure Data Studio</a>, or <a class="reference external" href="https://plot.ly/free-sql-client-download/">Plotly Falcon</a>).
-Using the predefined procedures all CMAP data services are centralized at the database layer which dramatically facilitates
+Using the predefined procedures, all CMAP data services are centralized at the database layer which dramatically facilitates
 the process of developing apps with different programming languages (pycmap, web app, cmap4r, …).
 Please note that you can improve the current procedures or add new procedures by contributing at the <a class="reference external" href="https://github.com/simonscmap/DB">CMAP database repository</a>.
-Below is a selected list of stored procedures and functions, their arguments will be described in more details subsequently:</p>
+Below is a selected list of stored procedures and functions, their arguments will be described in more detail subsequently:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>uspCatalog</p></li>
@@ -396,7 +396,7 @@ Below is a selected list of stored procedures and functions, their arguments wil
     <p>
         &copy; Copyright 
       <span class="lastupdated">
-        Last updated on Apr 01, 2020.
+        Last updated on Apr 28, 2020.
       </span>
 
     </p>

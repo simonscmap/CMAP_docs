@@ -24,9 +24,9 @@ Search Catalog
     The search result is not sensitive to the order of keywords and is not case sensitive.
     The passed keywords can provide any 'hint' associated with the target variables. Below are a few examples:
 
-    - the exact variable name (e.g. NO3), or its linguistic term (Nitrate)
-    - methodology (model, satellite ...), instrument (CTD, seaflow), or disciplines (physics, biology ...)
-    - the cruise official name (e.g. KOK1606), or unofficial cruise name (Falkor)
+    - the exact variable name (e.g. NO3), or its linguistic term (nitrate)
+    - methodology (e.g. model, satellite ...), instrument (e.g. CTD, seaflow), or disciplines (e.g. physics, biology ...)
+    - the official cruise name (e.g. KOK1606), or unofficial cruise name (Falkor)
     - the name of data producer (e.g Penny Chisholm) or institution name (MIT)
 
     If you searched for a variable with semantically-related-keywords and did not get the correct results, please let us know.
@@ -60,7 +60,7 @@ List of all measurements by University of Hawaii hosted by Simons CMAP.
 
 **Example 2:**
 
-Returns a list of Nitrite measurements during the Falkor cruise, if exists.
+Returns a list of nitrite measurements during the Falkor cruise, if exists.
 
 .. code-block:: python
 
@@ -97,7 +97,7 @@ Here is how to achieve the same results using a direct SQL statement. Please ref
 
 **Example:**
 
-List of satellite Chlorophyll products:
+List of satellite chlorophyll products:
 
 .. code-block:: sql
 

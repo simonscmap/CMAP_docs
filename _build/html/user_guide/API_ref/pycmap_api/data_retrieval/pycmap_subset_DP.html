@@ -116,7 +116,7 @@
 <li class="toctree-l4"><a class="reference internal" href="pycmap_is_climatology.html">Is Climatology Product</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_list_cruises.html">List of Cruises</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_details.html">Cruise Details by Name</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_ST_bounds.html">Cruise Spatio-Tempoal Bounds</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_ST_bounds.html">Cruise Spatio-Temporal Bounds</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_trajectory.html">Cruise Trajectory</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_variables.html">Cruise Variables</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_retrieve_dataset.html">Retrieve Dataset</a></li>
@@ -264,10 +264,7 @@
 <dl class="method">
 <dt id="depth_profile">
 <code class="sig-name descname">depth_profile</code><span class="sig-paren">(</span><em class="sig-param">table</em>, <em class="sig-param">variable</em>, <em class="sig-param">dt1</em>, <em class="sig-param">dt2</em>, <em class="sig-param">lat1</em>, <em class="sig-param">lat2</em>, <em class="sig-param">lon1</em>, <em class="sig-param">lon2</em>, <em class="sig-param">depth1</em>, <em class="sig-param">depth2</em><span class="sig-paren">)</span><a class="headerlink" href="#depth_profile" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns a subset of data according to the specified space-time constraints (dt1, dt2, lat1, lat2, lon1, lon2, depth1, depth2). The returned data subset is aggregated by depth: at each depth level the mean and standard deviation of the variable values within the space-time constraints are computed. The sequence of these values construct the depth profile. The resulted depth profile is returned in form of a Pandas dataframe ordered by depth.</p>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
+<dd><p>Returns a subset of data according to the specified space-time constraints (dt1, dt2, lat1, lat2, lon1, lon2, depth1, depth2). The returned data subset is aggregated by depth: at each depth level the mean and standard deviation of the variable values within the space-time constraints are computed. The sequence of these values construct the depth profile. The resulting depth profile is returned in the form of a Pandas dataframe ordered by depth.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -276,21 +273,21 @@
 <dt><strong>variable: string</strong></dt><dd><p>Variable short name which directly corresponds to a field name in the table. A subset of this variable is returned by this method according to the spatio-temporal cut parameters (below). A full list of variable short names can be found in <a class="reference internal" href="../../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
 </dd>
 <dt><strong>dt1: string</strong></dt><dd><p>Start date or datetime. This parameter sets the lower bound of the temporal cut.
-Example values: ‘2016-05-25’ or ‘2017-12-10 17:25:00’</p>
+Example values: ‘2016-05-25’ or ‘2017-12-10 17:25:00’.</p>
 </dd>
-<dt><strong>dt2: string</strong></dt><dd><p>End date or datetime. This parameter sets the upper bound of the temporal cut.</p>
+<dt><strong>dt2: string</strong></dt><dd><p>End date or datetime. This parameter sets the upper bound of the temporal cut. Example values: ‘2016-05-25’ or ‘2017-12-10 17:25:00’.</p>
 </dd>
 <dt><strong>lat1: float</strong></dt><dd><p>Start latitude [degree N]. This parameter sets the lower bound of the meridional cut. Note latitude ranges from -90° to 90°.</p>
 </dd>
 <dt><strong>lat2: float</strong></dt><dd><p>End latitude [degree N]. This parameter sets the upper bound of the meridional cut. Note latitude ranges from -90° to 90°.</p>
 </dd>
-<dt><strong>lon1: float</strong></dt><dd><p>Start longitude [degree E]. This parameter sets the lower bound of the zonal cut. Note latitude ranges from -180° to 180°.</p>
+<dt><strong>lon1: float</strong></dt><dd><p>Start longitude [degree E]. This parameter sets the lower bound of the zonal cut. Note longitude ranges from -180° to 180°.</p>
 </dd>
-<dt><strong>lon2: float</strong></dt><dd><p>End longitude [degree E]. This parameter sets the upper bound of the zonal cut. Note latitude ranges from -180° to 180°.</p>
+<dt><strong>lon2: float</strong></dt><dd><p>End longitude [degree E]. This parameter sets the upper bound of the zonal cut. Note longitude ranges from -180° to 180°.</p>
 </dd>
-<dt><strong>depth1: float</strong></dt><dd><p>Start depth [m]. This parameter sets the lower bound of the vertical cut. Note depth is a positive number (it is 0 at surface and grows towards ocean floor).</p>
+<dt><strong>depth1: float</strong></dt><dd><p>Start depth [m]. This parameter sets the lower bound of the vertical cut. Note depth is a positive number (it is 0 at the surface and increases towards the ocean floor).</p>
 </dd>
-<dt><strong>depth2: float</strong></dt><dd><p>End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at surface and grows towards ocean floor).</p>
+<dt><strong>depth2: float</strong></dt><dd><p>End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at the surface and increases towards the ocean floor).</p>
 </dd>
 </dl>
 </dd>
@@ -304,7 +301,7 @@ Example values: ‘2016-05-25’ or ‘2017-12-10 17:25:00’</p>
 <div class="line"><br /></div>
 </div>
 <p><strong>Example 1:</strong></p>
-<p>This example retrieves a depth profile of in-situ chlorophyll concentration measurements by Argo Floats. The last few lines of code (lines 22-25) creates a simple plot showing the chlorophyll depth profile (deep chlorophyll maximum near 100 m).</p>
+<p>This example retrieves a depth profile of in-situ chlorophyll concentration measurements by Argo Floats.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!pip install pycmap -q     #uncomment to install pycmap, if necessary</span>
 
 <span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
@@ -328,7 +325,7 @@ Example values: ‘2016-05-25’ or ‘2017-12-10 17:25:00’</p>
 </pre></div>
 </div>
 <p><strong>Example 2:</strong></p>
-<p>This example retrieves depth profile of modeled chlorophyll concentration estimated by Pisces, a weekly 0.5° resolution BioGeoChemical model. The last few lines of code (lines 22-25) creates a simple plot showing the chlorophyll depth profile. The deep chlorophyll maximum (DCM) is approximately near ~100 m, closely matching the in-situ observations by ARGO Floats (see the previous example).</p>
+<p>This example retrieves a depth profile of modeled chlorophyll concentration estimated by Pisces, a weekly 0.5° resolution BioGeoChemical model. The last few lines of code (lines 22-25) create a simple plot showing the chlorophyll depth profile. The deep chlorophyll maximum (DCM) is approximately at 100 m, closely matching the in-situ observations by ARGO Floats (see Example 1).</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!pip install pycmap -q     #uncomment to install pycmap, if necessary</span>
 
 <span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
@@ -383,7 +380,7 @@ Example values: ‘2016-05-25’ or ‘2017-12-10 17:25:00’</p>
     <p>
         &copy; Copyright 
       <span class="lastupdated">
-        Last updated on Apr 01, 2020.
+        Last updated on Apr 28, 2020.
       </span>
 
     </p>

@@ -36,6 +36,7 @@ Metadata
 
 **Example**
 
+Retrieve dataset metadata for the satellite SST and Argo salinity datasets.
 
 .. code-block:: python
 

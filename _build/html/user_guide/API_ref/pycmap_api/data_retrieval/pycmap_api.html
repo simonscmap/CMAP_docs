@@ -116,7 +116,7 @@
 <li class="toctree-l4"><a class="reference internal" href="pycmap_is_climatology.html">Is Climatology Product</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_list_cruises.html">List of Cruises</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_details.html">Cruise Details by Name</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_ST_bounds.html">Cruise Spatio-Tempoal Bounds</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_ST_bounds.html">Cruise Spatio-Temporal Bounds</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_trajectory.html">Cruise Trajectory</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_variables.html">Cruise Variables</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_retrieve_dataset.html">Retrieve Dataset</a></li>
@@ -264,13 +264,13 @@
 <dl class="class">
 <dt id="API">
 <em class="property">class </em><code class="sig-name descname">API</code><a class="headerlink" href="#API" title="Permalink to this definition">¶</a></dt>
-<dd><p>To retrieve data, create an instance of the system’s API and pass the API key. It is no necessary to pass the API key every time you run a code locally, because it will be stored locally. The API class has other optional parameters to adjust its behavior. All parameters can be updated persistently at any point in the code.</p>
+<dd><p>To retrieve data, create an instance of the system’s API and pass the API key. It is not necessary to pass the API key every time you run a code locally, because it will be stored locally. The API class has other optional parameters to adjust its behavior. All parameters can be updated persistently at any point in the code.</p>
 <p><code class="docutils literal notranslate"><span class="pre">class</span> <span class="pre">pycmap.API(token=&lt;API</span> <span class="pre">KEY&gt;,</span> <span class="pre">baseURL='https://simonscmap.com',</span> <span class="pre">headers=None,</span> <span class="pre">vizEngine='plotly',</span> <span class="pre">exportDir='./export/',</span> <span class="pre">&gt;</span> <span class="pre">exportFormat='.csv',</span> <span class="pre">figureDir='./figure/')</span></code>
 |</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>token: string, required</strong></dt><dd><p>Access token (API Key) required to make client requests. You may get an API key here: <a class="reference external" href="https://simonscmap.com">https://simonscmap.com</a></p>
+<dt><strong>token: string, required</strong></dt><dd><p>Access token (API Key) required to make client requests. You may get an API key here: <a class="reference external" href="https://simonscmap.com/apikeymanagement">https://simonscmap.com/apikeymanagement</a></p>
 </dd>
 <dt><strong>baseURL: string, optional, default: https://simonscmap.com</strong></dt><dd><p>Root endpoint of Simons CMAP API.</p>
 </dd>
@@ -282,8 +282,8 @@
 </dd>
 <dt><strong>exportFormat: string, optional, default: ‘.csv’</strong></dt><dd><p>File format of the exported files. Currently, only csv format is supported.</p>
 </dd>
-<dt><strong>figureDir: string, optional, default: ‘./figure/’</strong></dt><dd><p>Path to local directory where the figures are stored. The interactive figure objects are stored in form of html files.
-Note: inline graphs (e.g. on jupyter notebook) are not saved.</p>
+<dt><strong>figureDir: string, optional, default: ‘./figure/’</strong></dt><dd><p>Path to local directory where the figures are stored. The interactive figure objects are stored in the form of html files.
+Note: inline graphs (e.g. on Jupyter notebook) are not saved.</p>
 </dd>
 </dl>
 </dd>
@@ -313,7 +313,7 @@ Note: inline graphs (e.g. on jupyter notebook) are not saved.</p>
     <p>
         &copy; Copyright 
       <span class="lastupdated">
-        Last updated on Apr 01, 2020.
+        Last updated on Apr 28, 2020.
       </span>
 
     </p>

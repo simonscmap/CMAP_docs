@@ -18,7 +18,7 @@ If Column Exists
 
 
     Returns True if the specified column (field) exists in the table
-    Returns False if either table or variable does not exist (also see :ref:`columns`)
+    Returns False if either table or variable does not exist (also see :ref:`columns`).
 
     |
 

@@ -21,7 +21,7 @@ Installation
   :target: https://mybinder.org/v2/gh/simonscmap/pycmap/master?filepath=docs%2FInstallation.ipynb
 
 
-To use pycmap locally, you will need Python 3+ installed on your computer. We recommend the `Anaconda Distribution`_
+To use pycmap locally, you will need Python 3+ installed on your computer. We recommend the `Anaconda Distribution`_.
 
 
 pycmap can be installed using pip:
@@ -32,12 +32,11 @@ pycmap can be installed using pip:
 
 
 
-In order to use pycmap, you will need to obtain an API key from
-SimonsCMAP website: https://simonscmap.com.
+In order to use pycmap, you will need to obtain an API key from https://simonscmap.com/apikeymanagement.
 
 .. note::
 
-  You may install pycmap on cloud-based jupyter notebooks (such as
+  You may install pycmap on cloud-based Jupyter notebooks (such as
   `Binder`_, or `Colab`_) by running the following command.
 
 

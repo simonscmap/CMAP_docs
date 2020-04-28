@@ -33,6 +33,7 @@ Is Climatology Product
 
 **Example**
 
+..Comment: State what the example does.
 
 .. code-block:: python
 

@@ -116,7 +116,7 @@
 <li class="toctree-l4"><a class="reference internal" href="pycmap_is_climatology.html">Is Climatology Product</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_list_cruises.html">List of Cruises</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_details.html">Cruise Details by Name</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_ST_bounds.html">Cruise Spatio-Tempoal Bounds</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_ST_bounds.html">Cruise Spatio-Temporal Bounds</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_trajectory.html">Cruise Trajectory</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_cruise_variables.html">Cruise Variables</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pycmap_retrieve_dataset.html">Retrieve Dataset</a></li>
@@ -264,26 +264,22 @@
 <dl class="method">
 <dt id="along_track">
 <code class="sig-name descname">along_track</code><span class="sig-paren">(</span><em class="sig-param">cruise</em>, <em class="sig-param">targetTables</em>, <em class="sig-param">targetVars</em>, <em class="sig-param">depth1</em>, <em class="sig-param">depth2</em>, <em class="sig-param">temporalTolerance</em>, <em class="sig-param">latTolerance</em>, <em class="sig-param">lonTolerance</em>, <em class="sig-param">depthTolerance</em><span class="sig-paren">)</span><a class="headerlink" href="#along_track" title="Permalink to this definition">¶</a></dt>
-<dd><p>This method colocalizes a cruise trajectory with the specified target variables. The matching results rely on the tolerance parameters because these parameters set the matching boundaries between the cruise trajectory and target datasets. Please note that the number of matching entries for each target variable might vary depending on the temporal and spatial resolutions of the target variable. In principle, if the cruise trajectory is fully covered by the target variable’s spatio-temporal range, there should always be matching results if the tolerance parameters are larger than half of their corresponding spatial/temporal resolutions. Please explore the <a class="reference internal" href="../../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a> to find appropriate target variables to colocalize with the desired cruise.
-|
-This method returns a dataframe containing the cruise trajectory joined with the target variable(s).</p>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
+<dd><p>This method colocalizes a cruise trajectory with the specified target variables. The matching results rely on the tolerance parameters because these parameters set the matching boundaries between the cruise trajectory and target datasets. Please note that the number of matching entries for each target variable might vary depending on the temporal and spatial resolutions of the target variable. In principle, if the cruise trajectory is fully covered by the target variable’s spatio-temporal range, there should always be matching results if the tolerance parameters are larger than half of their corresponding spatial/temporal resolutions. Please explore the <a class="reference internal" href="../../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a> to find appropriate target variables to colocalize with the desired cruise.</p>
+<p>This method returns a dataframe containing the cruise trajectory joined with the target variable(s).</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>cruise: string</strong></dt><dd><p>The official cruise name. If applicable, you may also use cruise “nickname” (‘Diel’, ‘Gradients_1’ …). A full list of cruise names can be retrieved using cruise method.</p>
+<dt><strong>cruise: string</strong></dt><dd><p>The official cruise name. If applicable, you may also use cruise “nickname” (‘Diel’, ‘Gradients_1’ …). A full list of cruise names can be retrieved using <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/data_retrieval/pycmap_list_cruises.html">Cruises()</a> method.</p>
 </dd>
 <dt><strong>targetTables: list of string</strong></dt><dd><p>Table names of the target datasets to be matched with the source data. Notice source dataset can be matched with multiple target datasets. A full list of table names can be found in the <a class="reference internal" href="../../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
 </dd>
 <dt><strong>targetVars: list of string</strong></dt><dd><p>Variable short names to be matched with the source variable. A full list of variable short names can be found in the <a class="reference internal" href="../../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
 </dd>
-<dt><strong>depth1: float</strong></dt><dd><p>Start depth [m]. This parameter sets the lower bound of the depth cut on the target datasets. ‘depth1’ and ‘depth2’ allow matching a cruise trajectory (which is at the surface, hopefully!) with target variables at lower depth. Note depth is a positive number (depth is 0 at surface and grows towards ocean floor).</p>
+<dt><strong>depth1: float</strong></dt><dd><p>Start depth [m]. This parameter sets the lower bound of the depth cut on the target datasets. ‘depth1’ and ‘depth2’ allow matching a cruise trajectory (which is at the surface, hopefully!) with target variables at lower depth. Note depth is a positive number (depth is 0 at the surface and increases towards the ocean floor).</p>
 </dd>
-<dt><strong>depth2: float</strong></dt><dd><p>End depth [m]. This parameter sets the upper bound of the depth cut on the target datasets. Note depth is a positive number (depth is 0 at surface and grows towards ocean floor).</p>
+<dt><strong>depth2: float</strong></dt><dd><p>End depth [m]. This parameter sets the upper bound of the depth cut on the target datasets. Note depth is a positive number (depth is 0 at the surface and increases towards the ocean floor).</p>
 </dd>
-<dt><strong>temporalTolerance: list of int</strong></dt><dd><p>Temporal tolerance values between the cruise trajectory and target datasets. The size and order of values in this list should match those of targetTables. If only a single integer value is given, that would be applied to all target datasets. This parameter is in day units except when the target variable represents monthly climatology data in which case it is in month units. Notice fractional values are not supported in the current version.</p>
+<dt><strong>temporalTolerance: list of int</strong></dt><dd><p>Temporal tolerance values between the cruise trajectory and target datasets. The size and order of values in this list should match those of targetTables. If only a single integer value is given, that would be applied to all target datasets. This parameter is in days except when the target variable represents monthly climatology data in which case it is in months. Notice fractional values are not supported in the current version.</p>
 </dd>
 <dt><strong>latTolerance: list of float or int</strong></dt><dd><p>Spatial tolerance values in meridional direction [deg] between the cruise trajectory and target datasets. The size and order of values in this list should match those of targetTables. If only a single float value is given, that would be applied to all target datasets. A “safe” value for this parameter can be slightly larger than the half of the target variable’s spatial resolution.</p>
 </dd>
@@ -309,30 +305,30 @@ This method returns a dataframe containing the cruise trajectory joined with the
 <li><p>‘synecho_abundance’ from underway <a class="reference external" href="https://cmap.readthedocs.io/en/latest/catalog/datasets/SeaFlow.html#seaflow">seaflow dataset</a></p></li>
 <li><p>‘NO3’ from <a class="reference external" href="https://cmap.readthedocs.io/en/latest/catalog/datasets/Pisces.html#pisces">Pisces model</a></p></li>
 </ul>
-<p>The last few lines of this snippet plots the colocalized synecho_abundance versus NO3 concentration.</p>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
+<p>The last few lines of code (lines 21-24), plot the colocalized synecho_abundance versus NO3 concentration.
+|</p>
 <p><strong>Tip1:</strong></p>
-<p>The official name of this cruise is ‘KM1513’ and one can use the official name, instead (line 7).</p>
+<p>The official name of this cruise is ‘KM1513’. One can use the unofficial name, ‘diel’, instead (line 7).</p>
 <p><strong>Tip2:</strong></p>
-<p>A full list of hosted cruise expeditions can be retrieved using the cruises method.</p>
+<p>A full list of cruise expeditions can be retrieved using the <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/data_retrieval/pycmap_list_cruises.html">Cruises()</a> method.</p>
 <p><strong>Tip3:</strong></p>
-<p>The temporalTolerance parameter is set to [0, 4] (line 12). This means:
--  ±0 day temporal tolerance when matching with ‘synecho_abundance’ (exact date-time matching)
--  ±4 day temporal tolerance when matching with ‘NO3’ (Pisces is a weekly averaged dataset)</p>
+<p>The temporalTolerance parameter is set to [0, 4] (line 12). This means:</p>
+<ul class="simple">
+<li><p>±0 day temporal tolerance when matching with ‘synecho_abundance’ (exact date-time matching)</p></li>
+<li><p>±4 day temporal tolerance when matching with ‘NO3’ (Pisces is a weekly averaged dataset)</p></li>
+</ul>
 <p><strong>Tip4:</strong></p>
-<p>The latTolerance and lonTolerance parameters are set to [0, 0.25] (lines 13-14). This means:
--  ±0 degree spatial tolerances (in meridional and zonal directions) when matching with ‘synecho_abundance’ (exact lat/lon matching)
--  ±0.25 degrees spatial tolerances (in meridional and zonal directions) when matching with ‘NO3’. This dataset has 0.25 degree spatial resolution which means one may reduce the spatial tolerance for this target dataset down to 0.25/2 = 0.125 degrees.</p>
+<p>The latTolerance and lonTolerance parameters are set to [0, 0.25] (lines 13-14). This means:</p>
+<ul class="simple">
+<li><p>±0 degree spatial tolerances (in meridional and zonal directions) when matching with ‘synecho_abundance’ (exact lat/lon matching).</p></li>
+<li><p>±0.25 degrees spatial tolerances (in meridional and zonal directions) when matching with ‘NO3’. This dataset has 0.25 degree spatial resolution which means one may reduce the spatial tolerance for this target dataset down to 0.25/2 = 0.125 degrees.</p></li>
+</ul>
 <p><strong>Tip5:</strong></p>
 <p>The depthTolerance parameter is set to [5, 5] (line 20). This means:
-The depthTolerance parameter is set to [5, 5] (line 20). This means: *
-±5 meters vertical tolerances when matching with ‘synecho_abundance’ *
-±5 meters vertical tolerances when matching with ‘NO3’. Note that Pisces
-dataset have several depth levels between surface and 5 m. The spacing
-between the depth levels is not have uniform. See the <a class="reference external" href="https://cmap.readthedocs.io/en/latest/catalog/datasets/Pisces.html#pisces">dataset page</a>
-for more details.</p>
+-  ±5 meters vertical tolerances when matching with ‘synecho_abundance’
+-  ±5 meters vertical tolerances when matching with ‘NO3’.</p>
+<p>Note that the Pisces dataset has several depth levels between surface and 5 m. The spacing
+between the depth levels is not have uniform.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!pip install pycmap -q     # uncomment to install pycmap, if necessary</span>
 
 <span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
@@ -362,8 +358,8 @@ for more details.</p>
 </div>
 <div class="section" id="example-2">
 <h2>Example 2:<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
-<p>Imagine you would like to colocalize a ‘large’ number of variables along track of multiple cruises. Hard-coding the variable names, table names, and tolerance parameters (as is shown in the previous example) is an error-prone process. This example show an alternative approach to implement multi-variable colocalization.</p>
-<p>Here we colocalize two open-ocean North-Pacific transect cruises (‘KOK1606’ [gradient1], ‘MGL1704’ [gradient2]) with 14 variables from satellite datasets, model outputs, underway cruise measurements, and World-Ocean-Atlas climatology dataset. A full list of variables can be retrieved using the get_catalog() command. Also, please review the tips mentioned in the previous example since they are generally relevant to this case, too. It takes a few minutes to run this script since we are colocalizing two long cruises with multiple target variables. Reduce the number of cruises (line 12), and/or number of target variables (lines 19-36) to save time.</p>
+<p>Imagine you would like to colocalize a ‘large’ number of variables along the track of multiple cruises. Hard-coding the variable names, table names, and tolerance parameters (as shown in Example 1) is an error-prone process. This example show an alternative approach to implement multi-variable colocalization.</p>
+<p>Here, we colocalize two open-ocean North-Pacific transect cruises (‘KOK1606’ [gradient1], ‘MGL1704’ [gradient2]) with 14 variables from satellite datasets, model outputs, underway cruise measurements, and World-Ocean-Atlas climatology dataset. A full list of variables can be retrieved using the get_catalog() command (COMMENT: Make get_catalog() a hyperlink). Also, please review the tips mentioned Example 1 since they are generally relevant to this example. It takes a few minutes to run this script since we are colocalizing two long cruises with multiple target variables. Reduce the number of cruises (line 12), and/or number of target variables (lines 19-36) to save time.</p>
 <p>As a simple show case, the colocalized synechococcus abundance is plotted against latitude and is compared with phosphaste concentration from World Ocean Atlas monthly climatology dataset (line 91). The full colocalized dataset is stored in a csv file on local machine.</p>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -531,7 +527,7 @@ columns to the final dataframe:
     <p>
         &copy; Copyright 
       <span class="lastupdated">
-        Last updated on Apr 01, 2020.
+        Last updated on Apr 28, 2020.
       </span>
 
     </p>
