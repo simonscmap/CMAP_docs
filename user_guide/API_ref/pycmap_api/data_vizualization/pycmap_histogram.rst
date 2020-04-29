@@ -25,10 +25,14 @@ Histogram Plot
     Creates a histogram graph for each variable according to the specified space-time constraints (dt1, dt2, lat1, lat2, lon1, lon2, depth1, depth2). Change the `APIs vizEngine`_ parameter if you wish to use a different visualization library.
     Returns the generated graph objects in form of a python list. One may use the returned objects to modify the graph properties.
 
+..COMMENT: The above link 'APIs vizEngine' not working. 
+
     .. note::
       This method requires a valid `API key`_. It is not necessary to set the
       API key every time because the API properties are stored locally after
       being called the first time.
+
+..COMMENT: The above link 'API key' not working.
 
     |
 
@@ -42,20 +46,24 @@ Histogram Plot
             Example values: '2016-05-25' or '2017-12-10 17:25:00'
         **dt2: string**
             End date or datetime. This parameter sets the upper bound of the temporal cut.
+            Example values: '2016-05-25' or '2017-12-10 17:25:00'
         **lat1: float**
             Start latitude [degree N]. This parameter sets the lower bound of the meridional cut. Note latitude ranges from -90° to 90°.
         **lat2: float**
             End latitude [degree N]. This parameter sets the upper bound of the meridional cut. Note latitude ranges from -90° to 90°.
         **lon1: float**
-            Start longitude [degree E]. This parameter sets the lower bound of the zonal cut. Note latitude ranges from -180° to 180°.
+            Start longitude [degree E]. This parameter sets the lower bound of the zonal cut. Note longitude ranges from -180° to 180°.
         **lon2: float**
-            End longitude [degree E]. This parameter sets the upper bound of the zonal cut. Note latitude ranges from -180° to 180°.
+            End longitude [degree E]. This parameter sets the upper bound of the zonal cut. Note longitude ranges from -180° to 180°.
         **depth1: float**
-            Start depth [m]. This parameter sets the lower bound of the vertical cut. Note depth is a positive number (it is 0 at surface and grows towards ocean floor).
+            Start depth [m]. This parameter sets the lower bound of the vertical cut. Note depth is a positive number (it is 0 at the surface and increases towards the ocean floor).
         **depth2: float**
-            End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at surface and grows towards ocean floor).
+            End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at the surface and increases towards the ocean floor).
         **exportDataFlag: boolean, default: False**
           If True, the graph data points are stored on the local machine. The export path and file format are set by the `APIs parameters`_.
+        
+..COMMENT: THe above link 'APIs parameters' is not working. 
+
         **show: boolean, default: True**
           If True, the graph object is returned and is displayed. The graph file is saved on the local machine at the figureDir directory.
           If False, the graph object is returned but not displayed.
@@ -64,8 +72,7 @@ Histogram Plot
 
 
 
-    :returns\:: list of graph objects
-      A list of graph objects. Below are the graph's properties and methods.
+    :returns\:: A list of graph objects. Below are the graph's properties and methods.
 
       :Properties:
         **data: dataframe**
@@ -79,11 +86,11 @@ Histogram Plot
         **width: int**
           Graph's width in pixels.
         **xlabel: str**
-          The graphs's x-axis label.
+          Graph's x-axis label.
         **ylabel: str**
-          The graphs's y-axis label.
+          Graphs's y-axis label.
         **title: str**
-          The graphs's title.
+          Graphs's title.
 
     :Methods:
       **render()**
@@ -155,3 +162,5 @@ visualization library (plotly) which may be changed by:
   go[0].width = 600
   go[0].height = 600
   go[0].render()
+
+..COMMENT: Have these in the order that they are listed above so that the user can easily compare.
