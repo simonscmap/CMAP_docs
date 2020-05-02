@@ -23,24 +23,28 @@ Cruise Track Plot
 
     Plots the cruise trajectory on a geospatial map.
 
+..COMMENT: From the sentence above it sounds like you can only plot one cruise trajectory at a time. So I was surprised to see two cruise tracks in the example. I mean, it makes sense that you can plot more than one at a time and one should be able to! However, you may want to clarify that more than one can be plotted at one time. 
 
     .. note::
       This method requires a valid `API key`_. It is not necessary to set the
       API key every time because the API properties are stored locally after
       being called the first time.
 
+..COMMENT: The above 'API key' link is not working.
 
 
     |
 
     :Parameters:
         **cruiseName: list of string**
-            A list of cruise official names. If applicable, you may also use cruise
+            A list of official cruise names. If applicable, you may also use cruise
             "nickname" ('Diel', 'Gradients_1' ...). A full list of cruise names can
             be retrieved using `cruises()`_ method.
 
+..COMMENT: The above 'cruises()' link is not working. 
 
     :returns\:: void
+    
         This method has no returns.
 
 |
