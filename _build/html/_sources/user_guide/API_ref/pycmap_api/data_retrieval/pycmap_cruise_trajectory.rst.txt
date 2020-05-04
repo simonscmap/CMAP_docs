@@ -25,7 +25,7 @@ Cruise Trajectory
           A full list of cruise names can be retrieved using cruise method.
 
 
-    :returns\:: Pandas dataframe.
+    :returns: Pandas dataframe.
 
 
 |

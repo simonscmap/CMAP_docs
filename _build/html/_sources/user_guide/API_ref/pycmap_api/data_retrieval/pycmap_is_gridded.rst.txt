@@ -26,7 +26,7 @@ Returns True if the specified variable represents a gridded product; otherwise r
             Variable short name. A full list of variable short names can be found in the :ref:`Catalog`.
 
 
-    :returns\:: Boolean.
+    :returns: Boolean.
 
 
 

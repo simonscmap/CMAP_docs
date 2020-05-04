@@ -242,12 +242,11 @@
 and visualizes a correlation matrix showing the pairwise correlation
 coefficients between the colocalized variables. The colocalization
 procedure relies on the tolerance parameters because they set the
-matching boundaries between the cruise track and target datasets. Note
-that, currently, this graph is only supported by plotly library.</p>
-<p>Returns the generated correlation graph object using which one may modify the graph properties (see example below).</p>
+matching boundaries between the cruise track and target datasets. Currently, this graph is only supported by plotly library.</p>
+<p>Returns the generated correlation graph object. One may modify the graph properties (see example below).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This method requires a valid <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html">API key</a>. It is not necessary to set the
+<p>This method requires a valid <a class="reference external" href="https://simonscmap.com/apikeymanagement">API key</a>. It is not necessary to set the
 API key every time because the API properties are stored locally after
 being called the first time.</p>
 </div>
@@ -259,15 +258,15 @@ being called the first time.</p>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>cruise: string</strong></dt><dd><p>The official cruise name. If applicable, you may also use cruise “nickname” (‘Diel’, ‘Gradients_1’ …). A full list of cruise names can be retrieved using <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/data_retrieval/pycmap_list_cruises.html">cruise</a> method.</p>
 </dd>
-<dt><strong>targetTables: list of string</strong></dt><dd><p>Table names of the target datasets to be matched with the source data. Notice source dataset can be matched with multiple target datasets. A full list of table names can be found in <a class="reference internal" href="../../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
+<dt><strong>targetTables: list of string</strong></dt><dd><p>Table names of the target datasets to be matched with the source data. Note source dataset can be matched with multiple target datasets. A full list of table names can be found in <a class="reference internal" href="../../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
 </dd>
 <dt><strong>targetVars: list of string</strong></dt><dd><p>Variable short names to be matched with the source variable. A full list of variable short names can be found in <a class="reference internal" href="../../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
 </dd>
-<dt><strong>depth1: float</strong></dt><dd><p>Start depth [m]. This parameter sets the lower bound of the depth cut on the traget datasets. ‘depth1’ and ‘depth2’ allow matching a cruise trajectory (which is at the surface, hopefully!) with traget varaiables at lower depth. Note depth is a positive number (depth is 0 at surface and grows towards ocean floor).</p>
+<dt><strong>depth1: float</strong></dt><dd><p>Start depth [m]. This parameter sets the lower bound of the depth cut on the target datasets. ‘depth1’ and ‘depth2’ allow matching a cruise trajectory (which is at the surface, hopefully!) with target varaiables at lower depth. Note depth is a positive number (depth is 0 at the surface and increases towards the ocean floor).</p>
 </dd>
-<dt><strong>depth2: float</strong></dt><dd><p>End depth [m]. This parameter sets the upper bound of the depth cut on the traget datasets. Note depth is a positive number (depth is 0 at surface and grows towards ocean floor).</p>
+<dt><strong>depth2: float</strong></dt><dd><p>End depth [m]. This parameter sets the upper bound of the depth cut on the target datasets. Note depth is a positive number (depth is 0 at the surface and increases towards the ocean floor).</p>
 </dd>
-<dt><strong>temporalTolerance: list of int</strong></dt><dd><p>Temporal tolerance values between pairs of source and target datasets. The size and order of values in this list should match those of targetTables. If only a single integer value is given, that would be applied to all target datasets. This parameter is in day units except when the target variable represents monthly climatology data in which case it is in month units. Notice fractional values are not supported in the current version.</p>
+<dt><strong>temporalTolerance: list of int</strong></dt><dd><p>Temporal tolerance values between pairs of source and target datasets. The size and order of values in this list should match those of targetTables. If only a single integer value is given, that would be applied to all target datasets. This parameter is in day units except when the target variable represents monthly climatology data in which case it is in month units. Note fractional values are not supported in the current version.</p>
 </dd>
 <dt><strong>latTolerance: list of float or int</strong></dt><dd><p>Spatial tolerance values in meridional direction [deg] between pairs of source and target datasets. The size and order of values in this list should match those of targetTables. If only a single float value is given, that would be applied to all target datasets. A “safe” value for this parameter can be slightly larger than the half of the target variable’s spatial resolution.</p>
 </dd>
@@ -287,12 +286,12 @@ If False, the graph object is returned but not displayed.</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns:</dt>
-<dd class="field-even"><p>the graph object
-Below are the graph’s properties and methods.</p>
-<dl class="field-list simple">
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>the graph object</p>
+<p>Below are the graph’s properties and methods.</p>
+<dl class="field-list">
 <dt class="field-odd">Properties</dt>
-<dd class="field-odd"><dl class="simple">
+<dd class="field-odd"><dl>
 <dt><strong>x: list of string</strong></dt><dd><p>Correlation matrix column titles (covariate names).</p>
 </dd>
 <dt><strong>y: list of string</strong></dt><dd><p>Correlation matrix row titles (covariate names).</p>
@@ -300,8 +299,8 @@ Below are the graph’s properties and methods.</p>
 <dt><strong>z: numpy.ndarray</strong></dt><dd><p>Computed pairwise correlation coefficients.</p>
 </dd>
 <dt><strong>cmap: str or cmocean colormap</strong></dt><dd><p>Colormap name. Any matplotlib (e.g. ‘viridis’, ..) or cmocean (e.g. cmocean.cm.thermal, ..) colormaps can be passed to this property. A full list of matplotlib and cmocean color palettes can be found at the following links:
-<a class="reference external" href="https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html">https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html</a>
-<a class="reference external" href="https://matplotlib.org/cmocean/">https://matplotlib.org/cmocean/</a></p>
+<a class="reference external" href="https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html">https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html</a></p>
+<p><a class="reference external" href="https://matplotlib.org/cmocean/">https://matplotlib.org/cmocean/</a></p>
 </dd>
 <dt><strong>vmin: float</strong></dt><dd><p>This parameter defines the lower bound of the colorbar.</p>
 </dd>
@@ -311,11 +310,12 @@ Below are the graph’s properties and methods.</p>
 </dd>
 <dt><strong>width: int</strong></dt><dd><p>Graph’s width in pixels.</p>
 </dd>
-<dt><strong>title: str</strong></dt><dd><p>The graphs’s title.</p>
+<dt><strong>title: str</strong></dt><dd><p>Graphs’s title.</p>
 </dd>
 </dl>
 </dd>
 </dl>
+</p>
 </dd>
 <dt class="field-even">Methods</dt>
 <dd class="field-even"><dl class="simple">
@@ -336,14 +336,14 @@ variables, including underway measurements of prochlorococcus,
 synechococcus, and picoeukaryote abundances by <a class="reference external" href="https://cmap.readthedocs.io/en/latest/catalog/datasets/SeaFlow.html#seaflow">SeaFlow dataset</a>,
 satellite products (adt, chl, sst), and model estimates (see the
 <code class="docutils literal notranslate"><span class="pre">match_params()</span></code> function below for more details). Please explore the
-<a class="reference external" href="https://simonscmap.com/">catalog</a> to find more appropriate target variables.</p>
-<p>Returns the generated correlation graph object using which one may
+<a class="reference external" href="https://simonscmap.com/catalog">catalog</a> to find more appropriate target variables.</p>
+<p>Returns the generated correlation graph object. One may
 modify the graph properties (see example below).</p>
 <p>Review <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/data_retrieval/pycmap_match_cruise_track_datasets.html">Match (colocalize) Cruise Track with Datasets</a>, and <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/data_retrieval/pycmap_match_datasets.html">Match
 (colocalize) Datasets</a> pages for more details and tips!</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This method requires a valid <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html">API key</a>. It is not necessary to set the
+<p>This method requires a valid <a class="reference external" href="https://simonscmap.com/apikeymanagement">API key</a>. It is not necessary to set the
 API key every time because the API properties are stored locally after
 being called the first time.</p>
 </div>

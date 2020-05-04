@@ -25,7 +25,7 @@ Is Climatology Product
 
 
 
-    :returns\:: Boolean.
+    :returns: Boolean.
 
 
 

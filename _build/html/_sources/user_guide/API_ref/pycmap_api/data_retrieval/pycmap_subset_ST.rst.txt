@@ -49,7 +49,7 @@ Data Subset: Generic Space-Time Cut
             End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at the surface and increases towards the ocean floor).
 
 
-    :returns\:: Pandas dataframe.
+    :returns: Pandas dataframe.
 
 
 |

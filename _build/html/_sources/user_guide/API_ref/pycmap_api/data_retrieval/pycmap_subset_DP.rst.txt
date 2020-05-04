@@ -47,7 +47,7 @@ Data Subset: Depth Profile
 
 
 
-    :returns\:: Pandas dataframe.
+    :returns: Pandas dataframe.
 
 
 |

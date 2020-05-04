@@ -30,7 +30,7 @@ Dataset Head
           Number of top rows to be returned (default 5).
 
 
-    :returns\:: Pandas dataframe.
+    :returns: Pandas dataframe.
 
 
 
@@ -38,7 +38,7 @@ Dataset Head
 
 **Example**
 
-Retrieves the top five rows of dataset. 
+Retrieves the top five rows of dataset.
 
 .. code-block:: python
 
