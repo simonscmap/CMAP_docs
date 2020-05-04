@@ -14,9 +14,10 @@ Correlation Matrix
 .. _chlorophyll dataset: https://cmap.readthedocs.io/en/latest/catalog/datasets/Chlorophyll_REP.html#chlorophyll-rep
 .. _Darwin model: https://cmap.readthedocs.io/en/latest/catalog/datasets/Darwin_3day.html#darwin-3day
 .. _dataset page: https://cmap.readthedocs.io/en/latest/catalog/datasets/Chisholm_AMT13.html#chisholm-amt13
-.. _Match (colocalize) Datasets: Match.ipynb
-.. _API key: pycmap_api.html
-.. _APIs parameters: pycmap_api.html
+.. _Match (colocalize) Datasets: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/data_retrieval/pycmap_match_datasets.html
+.. _`API key`: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html
+.. _`APIs parameters`: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html
+
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
    :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/Viz_CorrelationMatrix.ipynb
@@ -25,8 +26,8 @@ Correlation Matrix
    :target: https://mybinder.org/v2/gh/simonscmap/pycmap/master?filepath=docs%2FViz_CorrelationMatrix.ipynb
 
 
-.. _Match (colocalize) Datasets: Match.ipynb
-.. _catalog: Catalog.ipynb
+.. _Match (colocalize) Datasets: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/data_retrieval/pycmap_match_datasets.html
+.. _catalog: https://simonscmap.com/
 
 
 .. method:: plot_corr_map(sourceTable, sourceVar, targetTables, targetVars, dt1, dt2, lat1, lat2, lon1, lon2, depth1, depth2, temporalTolerance, latTolerance, lonTolerance, depthTolerance, method='spearman', exportDataFlag=False, show=True)
@@ -53,7 +54,6 @@ Correlation Matrix
       API key every time because the API properties are stored locally after
       being called the first time.
 
-..COMMENT: The above 'API key' link is not working. 
 
     |
 
@@ -66,14 +66,12 @@ Correlation Matrix
         **targetTables: list of string**
             Table names of the target datasets to be matched with the source data. Note source dataset can be matched with multiple target datasets. A full list of table names can be found in :ref:`Catalog`.
         **dt1: string**
-            Start date or datetime. Both source and target datasets are filtered before matching. This parameter sets the lower bound of the temporal cut. 
+            Start date or datetime. Both source and target datasets are filtered before matching. This parameter sets the lower bound of the temporal cut.
 
-..COMMENT: Give an example.
+            Example values: '2016-05-25' or '2017-12-10 17:25:00'.
 
         **dt2: string**
             End date or datetime. Both source and target datasets are filtered before matching. This parameter sets the upper bound of the temporal cut.
-            
-..COMMENT: Give an example. 
 
         **lat1: float**
             Start latitude [degree N]. Both source and target datasets are filtered before matching. This parameter sets the lower bound of the meridional cut. Note latitude ranges from -90 to 90 degrees.
@@ -104,8 +102,7 @@ Correlation Matrix
 
         **exportDataFlag: boolean, default: False**
           If True, the graph data points are stored on the local machine. The export path and file format are set by the `APIs parameters`_.
-          
-..COMMENT: The above 'APIs parameters' link is not working. 
+
 
         **show: boolean, default: True**
           If True, the graph object is returned and is displayed. The graph file is saved on the local machine at the figureDir directory.
@@ -113,8 +110,8 @@ Correlation Matrix
 
 
 
-    :returns\:: the graph object
-    
+    :returns: the graph object
+
       Below are the graph's properties and methods.
 
       :Properties:
@@ -127,9 +124,8 @@ Correlation Matrix
         **cmap: str or cmocean colormap**
           Colormap name. Any matplotlib (e.g. 'viridis', ..) or cmocean (e.g. cmocean.cm.thermal, ..) colormaps can be passed to this property. A full list of matplotlib and cmocean color palettes can be found at the following links:
           https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html
+
           https://matplotlib.org/cmocean/
-        
-..COMMENT: The above links do not have a space in between. Hard to see that there are two links in my browser. 
 
         **vmin: float**
           This parameter defines the lower bound of the colorbar.
@@ -176,7 +172,7 @@ variables (lines 7-8):
   Please review the **Example 1** at `Match (colocalize) Datasets`_ page
   since all of the mentioned tips directly apply to this example too.
 
-..COMMENT: The above 'Match (colocalize) Datasets' link is not working. 
+..COMMENT: The above 'Match (colocalize) Datasets' link is not working.
 
 
 .. code-block:: python

@@ -39,9 +39,8 @@ Cruise Track Plot
             "nickname" ('Diel', 'Gradients_1' ...). A full list of cruise names can
             be retrieved using `cruises()`_ method.
 
-..COMMENT: The above 'cruises()' link is not working.
 
-    :returns\:: void
+    :returns: 
 
         This method has no returns.
 
