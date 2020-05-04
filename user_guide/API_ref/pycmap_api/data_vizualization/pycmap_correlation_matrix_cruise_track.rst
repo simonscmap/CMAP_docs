@@ -9,7 +9,7 @@ Correlation Matrix Along Cruise Track
 .. _cruise: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/data_retrieval/pycmap_list_cruises.html
 .. _Match (colocalize) Cruise Track with Datasets: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/data_retrieval/pycmap_match_cruise_track_datasets.html
 .. _Match (colocalize) Datasets: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/data_retrieval/pycmap_match_datasets.html
-.. _`API key`: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html
+.. _`API key`: https://simonscmap.com/apikeymanagement
 .. _`APIs parameters`: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
@@ -20,7 +20,7 @@ Correlation Matrix Along Cruise Track
 
 
 .. _SeaFlow dataset: https://cmap.readthedocs.io/en/latest/catalog/datasets/SeaFlow.html#seaflow
-.. _catalog: https://simonscmap.com/
+.. _catalog: https://simonscmap.com/catalog
 
 .. method:: plot_cruise_corr_map(cruise, targetTables, targetVars, depth1, depth2, temporalTolerance, latTolerance, lonTolerance, depthTolerance, method='spearman', exportDataFlag=False, show=True)
 
@@ -32,8 +32,6 @@ Correlation Matrix Along Cruise Track
     procedure relies on the tolerance parameters because they set the
     matching boundaries between the cruise track and target datasets. Currently, this graph is only supported by plotly library.
 
-..COMMENT: The above 'Match (colocalize) Cruise Track with Datasets' link is not working. 
-
     Returns the generated correlation graph object. One may modify the graph properties (see example below).
 
 
@@ -42,7 +40,6 @@ Correlation Matrix Along Cruise Track
       API key every time because the API properties are stored locally after
       being called the first time.
 
-..COMMENT: The above 'API key' link is not working. 
 
     |
 
@@ -51,8 +48,6 @@ Correlation Matrix Along Cruise Track
     :Parameters:
         **cruise: string**
             The official cruise name. If applicable, you may also use cruise "nickname" ('Diel', 'Gradients_1' ...). A full list of cruise names can be retrieved using `cruise`_ method.
-            
-..COMMENT: The above 'cruise' link is not working. 
 
         **targetTables: list of string**
             Table names of the target datasets to be matched with the source data. Note source dataset can be matched with multiple target datasets. A full list of table names can be found in :ref:`Catalog`.
@@ -79,8 +74,7 @@ Correlation Matrix Along Cruise Track
 
         **exportDataFlag: boolean, default: False**
           If True, the graph data points are stored on the local machine. The export path and file format are set by the `APIs parameters`_.
-     
-..COMMENT: The above 'APIs parameters' link is not working.
+
 
         **show: boolean, default: True**
           If True, the graph object is returned and is displayed. The graph file is saved on the local machine at the figureDir directory.
@@ -88,8 +82,8 @@ Correlation Matrix Along Cruise Track
 
 
 
-    :returns\:: the graph object
-    
+    :returns: the graph object
+
       Below are the graph's properties and methods.
 
       :Properties:
@@ -102,9 +96,9 @@ Correlation Matrix Along Cruise Track
         **cmap: str or cmocean colormap**
           Colormap name. Any matplotlib (e.g. 'viridis', ..) or cmocean (e.g. cmocean.cm.thermal, ..) colormaps can be passed to this property. A full list of matplotlib and cmocean color palettes can be found at the following links:
           https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html
+
           https://matplotlib.org/cmocean/
 
-..COMMENT: Not obvious that there are two links given above in my browser. Add some space. 
 
         **vmin: float**
           This parameter defines the lower bound of the colorbar.
@@ -133,7 +127,6 @@ satellite products (adt, chl, sst), and model estimates (see the
 ``match_params()`` function below for more details). Please explore the
 `catalog`_ to find more appropriate target variables.
 
-..COMMENT: The above 'catalog' link is not working.
 
 Returns the generated correlation graph object. One may
 modify the graph properties (see example below).
@@ -141,14 +134,12 @@ modify the graph properties (see example below).
 Review `Match (colocalize) Cruise Track with Datasets`_, and `Match
 (colocalize) Datasets`_ pages for more details and tips!
 
-..COMMENT: The two links in the previous sentence are not working. 
 
 .. note::
   This method requires a valid `API key`_. It is not necessary to set the
   API key every time because the API properties are stored locally after
   being called the first time.
 
-..COMMENT: The above 'API key' link is not working.
 
 
 

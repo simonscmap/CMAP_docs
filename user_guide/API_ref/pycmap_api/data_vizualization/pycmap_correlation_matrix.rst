@@ -15,7 +15,7 @@ Correlation Matrix
 .. _Darwin model: https://cmap.readthedocs.io/en/latest/catalog/datasets/Darwin_3day.html#darwin-3day
 .. _dataset page: https://cmap.readthedocs.io/en/latest/catalog/datasets/Chisholm_AMT13.html#chisholm-amt13
 .. _Match (colocalize) Datasets: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/data_retrieval/pycmap_match_datasets.html
-.. _`API key`: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html
+.. _`API key`: https://simonscmap.com/apikeymanagement
 .. _`APIs parameters`: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html
 
 

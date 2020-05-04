@@ -51,7 +51,7 @@ Data Subset: Time Series
             -  **'a'** or **'y'** for annual/yearly timeseries.
 
 
-    :returns\:: Pandas dataframe.
+    :returns: Pandas dataframe.
 
 
 |

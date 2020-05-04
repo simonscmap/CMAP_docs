@@ -22,7 +22,7 @@ List of Cruises
 
     |
 
-    :returns\:: Pandas dataframe.
+    :returns: Pandas dataframe.
 
 
 

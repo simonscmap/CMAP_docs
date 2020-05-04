@@ -49,7 +49,7 @@ Match (colocalize) Cruise Track with Datasets
         **depthTolerance: list of float or int**
             Spatial tolerance values in vertical direction [m] between the cruise trajectory and target datasets. The size and order of values in this list should match those of targetTables. If only a single float value is given, that would be applied to all target datasets.
 
-    :returns\:: Pandas dataframe.
+    :returns: Pandas dataframe.
 
 
 |

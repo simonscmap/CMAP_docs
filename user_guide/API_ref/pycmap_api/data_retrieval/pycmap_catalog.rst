@@ -25,7 +25,7 @@ Catalog
 
     |
 
-    :returns\:: Pandas dataframe.
+    :returns: Pandas dataframe.
 
 
 

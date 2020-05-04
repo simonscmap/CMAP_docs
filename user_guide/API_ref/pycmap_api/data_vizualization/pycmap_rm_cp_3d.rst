@@ -13,10 +13,9 @@ Regional Map, Contour Plot, 3D Surface Plot
 .. image:: https://mybinder.org/badge_logo.svg
    :target: https://mybinder.org/v2/gh/simonscmap/pycmap/master?filepath=docs%2FViz_RegionalMap.ipynb
 
-.. _API key: pycmap_api.html
-.. _APIs parameters: pycmap_api.html
-.. _APIs vizEngine: pycmap_api.html
-
+.. _`API key`: https://simonscmap.com/apikeymanagement
+.. _APIs parameters: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html
+.. _`APIs vizEngine`: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html
 
 
 .. method:: plot_map(tables, variables, dt1, dt2, lat1, lat2, lon1, lon2, depth1, depth2, exportDataFlag=False, show=True, levels=0, surface3D=False)
@@ -71,7 +70,7 @@ Regional Map, Contour Plot, 3D Surface Plot
 
 
 
-    :returns\:: list of graph objects
+    :returns: list of graph objects
       A list of graph objects. Below are the graph's properties and methods.
 
       :Properties:

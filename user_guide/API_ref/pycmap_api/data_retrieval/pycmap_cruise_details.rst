@@ -28,7 +28,7 @@ Cruise Details by Name
 
 
 
-    :returns\:: Pandas dataframe.
+    :returns: Pandas dataframe.
 
 
 

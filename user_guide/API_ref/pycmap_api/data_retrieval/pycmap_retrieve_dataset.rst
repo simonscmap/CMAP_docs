@@ -28,7 +28,7 @@ Retrieve Dataset
           The name of the table associated with the dataset. A full list of table names can be found in the :ref:`Catalog` or :ref:`Dataset_list` method.
 
 
-    :returns\:: Pandas dataframe.
+    :returns: Pandas dataframe.
 
 
 |

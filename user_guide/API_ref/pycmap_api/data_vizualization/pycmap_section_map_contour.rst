@@ -7,7 +7,7 @@ Section Map, Section Contour
 ============================
 
 
-.. _API key: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html
+.. _API key: https://simonscmap.com/apikeymanagement
 .. _APIs parameters: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html
 .. _`APIs vizEngine`: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html
 
