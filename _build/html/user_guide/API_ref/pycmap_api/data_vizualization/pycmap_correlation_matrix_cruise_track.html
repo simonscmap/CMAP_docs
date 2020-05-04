@@ -238,7 +238,7 @@
 <dt id="plot_cruise_corr_map">
 <code class="sig-name descname">plot_cruise_corr_map</code><span class="sig-paren">(</span><em class="sig-param">cruise</em>, <em class="sig-param">targetTables</em>, <em class="sig-param">targetVars</em>, <em class="sig-param">depth1</em>, <em class="sig-param">depth2</em>, <em class="sig-param">temporalTolerance</em>, <em class="sig-param">latTolerance</em>, <em class="sig-param">lonTolerance</em>, <em class="sig-param">depthTolerance</em>, <em class="sig-param">method='spearman'</em>, <em class="sig-param">exportDataFlag=False</em>, <em class="sig-param">show=True</em><span class="sig-paren">)</span><a class="headerlink" href="#plot_cruise_corr_map" title="Permalink to this definition">¶</a></dt>
 <dd><p>This function colocalizes the target variables along track of a cruise
-(see <a class="reference external" href="MatchCruise.ipynb">Match (colocalize) Cruise Track with Datasets</a>). It then computes
+(see <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/data_retrieval/pycmap_match_cruise_track_datasets.html">Match (colocalize) Cruise Track with Datasets</a>). It then computes
 and visualizes a correlation matrix showing the pairwise correlation
 coefficients between the colocalized variables. The colocalization
 procedure relies on the tolerance parameters because they set the
@@ -247,7 +247,7 @@ that, currently, this graph is only supported by plotly library.</p>
 <p>Returns the generated correlation graph object using which one may modify the graph properties (see example below).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This method requires a valid <a class="reference external" href="pycmap_api.html">API key</a>. It is not necessary to set the
+<p>This method requires a valid <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html">API key</a>. It is not necessary to set the
 API key every time because the API properties are stored locally after
 being called the first time.</p>
 </div>
@@ -257,7 +257,7 @@ being called the first time.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>cruise: string</strong></dt><dd><p>The official cruise name. If applicable, you may also use cruise “nickname” (‘Diel’, ‘Gradients_1’ …). A full list of cruise names can be retrieved using <a class="reference external" href="Cruises.ipynb">cruise</a> method.</p>
+<dt><strong>cruise: string</strong></dt><dd><p>The official cruise name. If applicable, you may also use cruise “nickname” (‘Diel’, ‘Gradients_1’ …). A full list of cruise names can be retrieved using <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/data_retrieval/pycmap_list_cruises.html">cruise</a> method.</p>
 </dd>
 <dt><strong>targetTables: list of string</strong></dt><dd><p>Table names of the target datasets to be matched with the source data. Notice source dataset can be matched with multiple target datasets. A full list of table names can be found in <a class="reference internal" href="../../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
 </dd>
@@ -280,7 +280,7 @@ a metric for monotonic relationships. Other options involve
 <strong>‘pearson’</strong> and <strong>‘kendall’</strong>. <em>‘pearson’</em> is the standard correlation
 coefficient, more favorable for linear correlations. <em>‘kendall’</em> evaluates Kendall Tau correlation coefficient.</p>
 </dd>
-<dt><strong>exportDataFlag: boolean, default: False</strong></dt><dd><p>If True, the graph data points are stored on the local machine. The export path and file format are set by the <a class="reference external" href="pycmap_api.html">APIs parameters</a>.</p>
+<dt><strong>exportDataFlag: boolean, default: False</strong></dt><dd><p>If True, the graph data points are stored on the local machine. The export path and file format are set by the <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html">APIs parameters</a>.</p>
 </dd>
 <dt><strong>show: boolean, default: True</strong></dt><dd><p>If True, the graph object is returned and is displayed. The graph file is saved on the local machine at the figureDir directory.
 If False, the graph object is returned but not displayed.</p>
@@ -336,14 +336,14 @@ variables, including underway measurements of prochlorococcus,
 synechococcus, and picoeukaryote abundances by <a class="reference external" href="https://cmap.readthedocs.io/en/latest/catalog/datasets/SeaFlow.html#seaflow">SeaFlow dataset</a>,
 satellite products (adt, chl, sst), and model estimates (see the
 <code class="docutils literal notranslate"><span class="pre">match_params()</span></code> function below for more details). Please explore the
-<a class="reference external" href="Catalog.ipynb">catalog</a> to find more appropriate target variables.</p>
+<a class="reference external" href="https://simonscmap.com/">catalog</a> to find more appropriate target variables.</p>
 <p>Returns the generated correlation graph object using which one may
 modify the graph properties (see example below).</p>
-<p>Review <a class="reference external" href="MatchCruise.ipynb">Match (colocalize) Cruise Track with Datasets</a>, and <a class="reference external" href="Match.ipynb">Match
+<p>Review <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/data_retrieval/pycmap_match_cruise_track_datasets.html">Match (colocalize) Cruise Track with Datasets</a>, and <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/data_retrieval/pycmap_match_datasets.html">Match
 (colocalize) Datasets</a> pages for more details and tips!</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This method requires a valid <a class="reference external" href="pycmap_api.html">API key</a>. It is not necessary to set the
+<p>This method requires a valid <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html">API key</a>. It is not necessary to set the
 API key every time because the API properties are stored locally after
 being called the first time.</p>
 </div>
@@ -435,7 +435,7 @@ being called the first time.</p>
     <p>
         &copy; Copyright 
       <span class="lastupdated">
-        Last updated on Apr 01, 2020.
+        Last updated on May 04, 2020.
       </span>
 
     </p>

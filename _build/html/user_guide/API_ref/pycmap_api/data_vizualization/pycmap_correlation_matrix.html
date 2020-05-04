@@ -239,37 +239,36 @@
 <code class="sig-name descname">plot_corr_map</code><span class="sig-paren">(</span><em class="sig-param">sourceTable</em>, <em class="sig-param">sourceVar</em>, <em class="sig-param">targetTables</em>, <em class="sig-param">targetVars</em>, <em class="sig-param">dt1</em>, <em class="sig-param">dt2</em>, <em class="sig-param">lat1</em>, <em class="sig-param">lat2</em>, <em class="sig-param">lon1</em>, <em class="sig-param">lon2</em>, <em class="sig-param">depth1</em>, <em class="sig-param">depth2</em>, <em class="sig-param">temporalTolerance</em>, <em class="sig-param">latTolerance</em>, <em class="sig-param">lonTolerance</em>, <em class="sig-param">depthTolerance</em>, <em class="sig-param">method='spearman'</em>, <em class="sig-param">exportDataFlag=False</em>, <em class="sig-param">show=True</em><span class="sig-paren">)</span><a class="headerlink" href="#plot_corr_map" title="Permalink to this definition">¶</a></dt>
 <dd><p>This function computes and plots the pair-correlation coefficient
 between the source and target variables. The results are visualized in
-form of a correlation matrix. To compute the correlations the source and
+form of a correlation matrix. To compute the correlations, the source and
 target variables have to be colocalized first (see <a class="reference internal" href="../data_retrieval/pycmap_match_datasets.html#match"><span class="std std-ref">Match (colocalize) Datasets</span></a>). The colocalization procedure relies on the tolerance
 parameters because they set the matching boundaries between the source
-and target datasets. Notice the source has to be a single
+and target datasets. Note the source has to be a single
 non-climatological variable. In principle, if the source dataset is
 fully covered by the target variable’s spatio-temporal range, there
 should always be matching results if the tolerance parameters are larger
 than half of their corresponding spatial/temporal resolutions. Please
-explore the <a class="reference internal" href="../../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a> to find appropriate target variables. Note that,
-currently, this visualization is only supported by plotly visualization
-library.</p>
-<p>Returns the generated correlation graph object using which one may modify the graph properties (see example below).</p>
+explore the <a class="reference internal" href="../../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a> to find appropriate target variables. Currently, this visualization is only supported by plotly visualization library.</p>
+<p>Returns the generated correlation graph object. One may modify the graph properties (see example below).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This method requires a valid <a class="reference external" href="pycmap_api.html">API key</a>. It is not necessary to set the
+<p>This method requires a valid <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html">API key</a>. It is not necessary to set the
 API key every time because the API properties are stored locally after
 being called the first time.</p>
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
+<dd class="field-odd"><dl>
 <dt><strong>sourceTable: string</strong></dt><dd><p>Table name of the source dataset. A full list of table names can be found in <a class="reference internal" href="../../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
 </dd>
 <dt><strong>sourceVar: string</strong></dt><dd><p>The source variable short name. The target variables are matched (colocalized) with this variable. A full list of variable short names can be found in <a class="reference internal" href="../../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
 </dd>
-<dt><strong>targetTables: list of string</strong></dt><dd><p>Table names of the target datasets to be matched with the source data. Notice source dataset can be matched with multiple target datasets. A full list of table names can be found in <a class="reference internal" href="../../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
+<dt><strong>targetTables: list of string</strong></dt><dd><p>Table names of the target datasets to be matched with the source data. Note source dataset can be matched with multiple target datasets. A full list of table names can be found in <a class="reference internal" href="../../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
 </dd>
 <dt><strong>dt1: string</strong></dt><dd><p>Start date or datetime. Both source and target datasets are filtered before matching. This parameter sets the lower bound of the temporal cut.</p>
+<p>Example values: ‘2016-05-25’ or ‘2017-12-10 17:25:00’.</p>
 </dd>
 <dt><strong>dt2: string</strong></dt><dd><p>End date or datetime. Both source and target datasets are filtered before matching. This parameter sets the upper bound of the temporal cut.</p>
 </dd>
@@ -281,11 +280,11 @@ being called the first time.</p>
 </dd>
 <dt><strong>lon2: float</strong></dt><dd><p>End longitude [degree E]. Both source and target datasets are filtered before matching. This parameter sets the upper bound of the zonal cut. Note longitude ranges from -180 to 180 degrees.</p>
 </dd>
-<dt><strong>depth1: float</strong></dt><dd><p>Start depth [m]. Both source and target datasets are filtered before matching. This parameter sets the lower bound of the vertical cut. Note depth is a positive number (depth is 0 at surface and grows towards ocean floor).</p>
+<dt><strong>depth1: float</strong></dt><dd><p>Start depth [m]. Both source and target datasets are filtered before matching. This parameter sets the lower bound of the vertical cut. Note depth is a positive number (depth is 0 at the surface and increases towards the ocean floor).</p>
 </dd>
-<dt><strong>depth2: float</strong></dt><dd><p>End depth [m]. Both source and target datasets are filtered before matching. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (depth is 0 at surface and grows towards ocean floor).</p>
+<dt><strong>depth2: float</strong></dt><dd><p>End depth [m]. Both source and target datasets are filtered before matching. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (depth is 0 at the surface and increases towards the ocean floor).</p>
 </dd>
-<dt><strong>temporalTolerance: list of int</strong></dt><dd><p>Temporal tolerance values between pairs of source and target datasets. The size and order of values in this list should match those of targetTables. If only a single integer value is given, that would be applied to all target datasets. This parameter is in day units except when the target variable represents monthly climatology data in which case it is in month units. Notice fractional values are not supported in the current version.</p>
+<dt><strong>temporalTolerance: list of int</strong></dt><dd><p>Temporal tolerance values between pairs of source and target datasets. The size and order of values in this list should match those of targetTables. If only a single integer value is given, that would be applied to all target datasets. This parameter is in day units except when the target variable represents monthly climatology data in which case it is in month units. Note fractional values are not supported in the current version.</p>
 </dd>
 <dt><strong>latTolerance: list of float or int</strong></dt><dd><p>Spatial tolerance values in meridional direction [deg] between pairs of source and target datasets. The size and order of values in this list should match those of targetTables. If only a single float value is given, that would be applied to all target datasets. A “safe” value for this parameter can be slightly larger than the half of the target variable’s spatial resolution.</p>
 </dd>
@@ -298,19 +297,19 @@ a metric for monotonic relationships. Other options involve
 <strong>‘pearson’</strong> and <strong>‘kendall’</strong>. <em>‘pearson’</em> is the standard correlation
 coefficient, more favorable for linear correlations. <em>‘kendall’</em> evaluates Kendall Tau correlation coefficient.</p>
 </dd>
-<dt><strong>exportDataFlag: boolean, default: False</strong></dt><dd><p>If True, the graph data points are stored on the local machine. The export path and file format are set by the <a class="reference external" href="pycmap_api.html">APIs parameters</a>.</p>
+<dt><strong>exportDataFlag: boolean, default: False</strong></dt><dd><p>If True, the graph data points are stored on the local machine. The export path and file format are set by the <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html">APIs parameters</a>.</p>
 </dd>
 <dt><strong>show: boolean, default: True</strong></dt><dd><p>If True, the graph object is returned and is displayed. The graph file is saved on the local machine at the figureDir directory.
 If False, the graph object is returned but not displayed.</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns:</dt>
-<dd class="field-even"><p>the graph object
-Below are the graph’s properties and methods.</p>
-<dl class="field-list simple">
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>the graph object</p>
+<p>Below are the graph’s properties and methods.</p>
+<dl class="field-list">
 <dt class="field-odd">Properties</dt>
-<dd class="field-odd"><dl class="simple">
+<dd class="field-odd"><dl>
 <dt><strong>x: list of string</strong></dt><dd><p>Correlation matrix column titles (covariate names).</p>
 </dd>
 <dt><strong>y: list of string</strong></dt><dd><p>Correlation matrix row titles (covariate names).</p>
@@ -318,8 +317,8 @@ Below are the graph’s properties and methods.</p>
 <dt><strong>z: numpy.ndarray</strong></dt><dd><p>Computed pairwise correlation coefficients.</p>
 </dd>
 <dt><strong>cmap: str or cmocean colormap</strong></dt><dd><p>Colormap name. Any matplotlib (e.g. ‘viridis’, ..) or cmocean (e.g. cmocean.cm.thermal, ..) colormaps can be passed to this property. A full list of matplotlib and cmocean color palettes can be found at the following links:
-<a class="reference external" href="https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html">https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html</a>
-<a class="reference external" href="https://matplotlib.org/cmocean/">https://matplotlib.org/cmocean/</a></p>
+<a class="reference external" href="https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html">https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html</a></p>
+<p><a class="reference external" href="https://matplotlib.org/cmocean/">https://matplotlib.org/cmocean/</a></p>
 </dd>
 <dt><strong>vmin: float</strong></dt><dd><p>This parameter defines the lower bound of the colorbar.</p>
 </dd>
@@ -334,6 +333,7 @@ Below are the graph’s properties and methods.</p>
 </dl>
 </dd>
 </dl>
+</p>
 </dd>
 <dt class="field-even">Methods</dt>
 <dd class="field-even"><dl class="simple">
@@ -361,7 +361,7 @@ Atlas</a> monthly climatology dataset</p></li>
 <li><p>‘chl’ from weekly averaged satellite <a class="reference external" href="https://cmap.readthedocs.io/en/latest/catalog/datasets/Chlorophyll_REP.html#chlorophyll-rep">chlorophyll dataset</a></p></li>
 <li><p>‘picoprokaryote’ from 3-day averaged <a class="reference external" href="https://cmap.readthedocs.io/en/latest/catalog/datasets/Darwin_3day.html#darwin-3day">Darwin model</a>. Colocalizing
 this variable will take longer time than others as the 3-day averaged
-Darwin dataset is massive (multi-decades global 3D dataset)!</p></li>
+Darwin dataset is massive (multi-decadal global 3D dataset)!</p></li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -371,9 +371,10 @@ to encompass the entire source dataset ‘tblAMT13_Chisholm’ (see the
 the source dataset has been measured at ‘2003-10-12 12:44:00’. For
 simplicity dt2 has been set to ‘2003-10-13’, but you could also use the
 exact date-time ‘2003-10-12 12:44:00’.</p>
-<p>Please review the <strong>Example 1</strong> at <a class="reference external" href="Match.ipynb">Match (colocalize) Datasets</a> page
+<p>Please review the <strong>Example 1</strong> at <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/data_retrieval/pycmap_match_datasets.html">Match (colocalize) Datasets</a> page
 since all of the mentioned tips directly apply to this example too.</p>
 </div>
+<p>..COMMENT: The above ‘Match (colocalize) Datasets’ link is not working.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!pip install pycmap -q     #uncomment to install pycmap, if necessary</span>
 <span class="c1"># uncomment the lines below if the API key has not been registered on your machine, previously.</span>
 <span class="c1"># import pycmap</span>
@@ -463,7 +464,7 @@ since all of the mentioned tips directly apply to this example too.</p>
     <p>
         &copy; Copyright 
       <span class="lastupdated">
-        Last updated on Apr 01, 2020.
+        Last updated on May 04, 2020.
       </span>
 
     </p>
