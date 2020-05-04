@@ -30,17 +30,19 @@ Correlation Matrix Along Cruise Track
     and visualizes a correlation matrix showing the pairwise correlation
     coefficients between the colocalized variables. The colocalization
     procedure relies on the tolerance parameters because they set the
-    matching boundaries between the cruise track and target datasets. Note
-    that, currently, this graph is only supported by plotly library.
+    matching boundaries between the cruise track and target datasets. Currently, this graph is only supported by plotly library.
 
+..COMMENT: The above 'Match (colocalize) Cruise Track with Datasets' link is not working. 
 
-    Returns the generated correlation graph object using which one may modify the graph properties (see example below).
+    Returns the generated correlation graph object. One may modify the graph properties (see example below).
 
 
     .. note::
       This method requires a valid `API key`_. It is not necessary to set the
       API key every time because the API properties are stored locally after
       being called the first time.
+
+..COMMENT: The above 'API key' link is not working. 
 
     |
 
@@ -49,16 +51,19 @@ Correlation Matrix Along Cruise Track
     :Parameters:
         **cruise: string**
             The official cruise name. If applicable, you may also use cruise "nickname" ('Diel', 'Gradients_1' ...). A full list of cruise names can be retrieved using `cruise`_ method.
+            
+..COMMENT: The above 'cruise' link is not working. 
+
         **targetTables: list of string**
-            Table names of the target datasets to be matched with the source data. Notice source dataset can be matched with multiple target datasets. A full list of table names can be found in :ref:`Catalog`.
+            Table names of the target datasets to be matched with the source data. Note source dataset can be matched with multiple target datasets. A full list of table names can be found in :ref:`Catalog`.
         **targetVars: list of string**
             Variable short names to be matched with the source variable. A full list of variable short names can be found in :ref:`Catalog`.
         **depth1: float**
-            Start depth [m]. This parameter sets the lower bound of the depth cut on the traget datasets. 'depth1' and 'depth2' allow matching a cruise trajectory (which is at the surface, hopefully!) with traget varaiables at lower depth. Note depth is a positive number (depth is 0 at surface and grows towards ocean floor).
+            Start depth [m]. This parameter sets the lower bound of the depth cut on the target datasets. 'depth1' and 'depth2' allow matching a cruise trajectory (which is at the surface, hopefully!) with target varaiables at lower depth. Note depth is a positive number (depth is 0 at the surface and increases towards the ocean floor).
         **depth2: float**
-            End depth [m]. This parameter sets the upper bound of the depth cut on the traget datasets. Note depth is a positive number (depth is 0 at surface and grows towards ocean floor).
+            End depth [m]. This parameter sets the upper bound of the depth cut on the target datasets. Note depth is a positive number (depth is 0 at the surface and increases towards the ocean floor).
         **temporalTolerance: list of int**
-            Temporal tolerance values between pairs of source and target datasets. The size and order of values in this list should match those of targetTables. If only a single integer value is given, that would be applied to all target datasets. This parameter is in day units except when the target variable represents monthly climatology data in which case it is in month units. Notice fractional values are not supported in the current version.
+            Temporal tolerance values between pairs of source and target datasets. The size and order of values in this list should match those of targetTables. If only a single integer value is given, that would be applied to all target datasets. This parameter is in day units except when the target variable represents monthly climatology data in which case it is in month units. Note fractional values are not supported in the current version.
         **latTolerance: list of float or int**
             Spatial tolerance values in meridional direction [deg] between pairs of source and target datasets. The size and order of values in this list should match those of targetTables. If only a single float value is given, that would be applied to all target datasets. A "safe" value for this parameter can be slightly larger than the half of the target variable's spatial resolution.
         **lonTolerance: list of float or int**
@@ -74,6 +79,9 @@ Correlation Matrix Along Cruise Track
 
         **exportDataFlag: boolean, default: False**
           If True, the graph data points are stored on the local machine. The export path and file format are set by the `APIs parameters`_.
+     
+..COMMENT: The above 'APIs parameters' link is not working.
+
         **show: boolean, default: True**
           If True, the graph object is returned and is displayed. The graph file is saved on the local machine at the figureDir directory.
           If False, the graph object is returned but not displayed.
@@ -81,6 +89,7 @@ Correlation Matrix Along Cruise Track
 
 
     :returns\:: the graph object
+    
       Below are the graph's properties and methods.
 
       :Properties:
@@ -94,6 +103,9 @@ Correlation Matrix Along Cruise Track
           Colormap name. Any matplotlib (e.g. 'viridis', ..) or cmocean (e.g. cmocean.cm.thermal, ..) colormaps can be passed to this property. A full list of matplotlib and cmocean color palettes can be found at the following links:
           https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html
           https://matplotlib.org/cmocean/
+
+..COMMENT: Not obvious that there are two links given above in my browser. Add some space. 
+
         **vmin: float**
           This parameter defines the lower bound of the colorbar.
         **vmax: float**
@@ -103,7 +115,7 @@ Correlation Matrix Along Cruise Track
         **width: int**
           Graph's width in pixels.
         **title: str**
-          The graphs's title.
+          Graphs's title.
 
     :Methods:
       **render()**
@@ -121,19 +133,22 @@ satellite products (adt, chl, sst), and model estimates (see the
 ``match_params()`` function below for more details). Please explore the
 `catalog`_ to find more appropriate target variables.
 
-Returns the generated correlation graph object using which one may
+..COMMENT: The above 'catalog' link is not working.
+
+Returns the generated correlation graph object. One may
 modify the graph properties (see example below).
 
 Review `Match (colocalize) Cruise Track with Datasets`_, and `Match
 (colocalize) Datasets`_ pages for more details and tips!
 
+..COMMENT: The two links in the previous sentence are not working. 
 
 .. note::
   This method requires a valid `API key`_. It is not necessary to set the
   API key every time because the API properties are stored locally after
   being called the first time.
 
-
+..COMMENT: The above 'API key' link is not working.
 
 
 
