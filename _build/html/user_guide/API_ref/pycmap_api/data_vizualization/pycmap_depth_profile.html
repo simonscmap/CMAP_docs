@@ -243,20 +243,20 @@ depth1, depth2). By definition, depth profile data points are aggregated
 by depth: at each depth level the mean and standard deviation of the
 variable values within the space-time constraints are computed. The
 sequence of these values construct the depth profile.</p>
-<p>Change the <a class="reference external" href="pycmap_api.html">APIs vizEngine</a> parameter if you wish to use a different
+<p>Change the <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html">APIs vizEngine</a> parameter if you wish to use a different
 visualization library. Returns the generated graph objects in form of a
 python list. One may use the returned objects to modify the graph
 properties.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This method requires a valid <a class="reference external" href="pycmap_api.html">API key</a>. It is not necessary to set the
+<p>This method requires a valid <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html">API key</a>. It is not necessary to set the
 API key every time because the API properties are stored locally after
 being called the first time.</p>
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>tables: list of string</strong></dt><dd><p>Table names (each dataset is stored in a table). A full list of table names can be found in <a class="reference internal" href="../../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
@@ -264,23 +264,23 @@ being called the first time.</p>
 <dt><strong>variable: list of string</strong></dt><dd><p>Variable short name which directly corresponds to a field name in the table. A full list of variable short names can be found in <a class="reference internal" href="../../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
 </dd>
 <dt><strong>dt1: string</strong></dt><dd><p>Start date or datetime. This parameter sets the lower bound of the temporal cut.
-Example values: ‘2016-05-25’ or ‘2017-12-10 17:25:00’</p>
+Example values: ‘2016-05-25’ or ‘2017-12-10 17:25:00’.</p>
 </dd>
-<dt><strong>dt2: string</strong></dt><dd><p>End date or datetime. This parameter sets the upper bound of the temporal cut.</p>
+<dt><strong>dt2: string</strong></dt><dd><p>End date or datetime. This parameter sets the upper bound of the temporal cut. Example values: ‘2016-05-25’ or ‘2017-12-10 17:25:00’.</p>
 </dd>
 <dt><strong>lat1: float</strong></dt><dd><p>Start latitude [degree N]. This parameter sets the lower bound of the meridional cut. Note latitude ranges from -90° to 90°.</p>
 </dd>
 <dt><strong>lat2: float</strong></dt><dd><p>End latitude [degree N]. This parameter sets the upper bound of the meridional cut. Note latitude ranges from -90° to 90°.</p>
 </dd>
-<dt><strong>lon1: float</strong></dt><dd><p>Start longitude [degree E]. This parameter sets the lower bound of the zonal cut. Note latitude ranges from -180° to 180°.</p>
+<dt><strong>lon1: float</strong></dt><dd><p>Start longitude [degree E]. This parameter sets the lower bound of the zonal cut. Note longitude ranges from -180° to 180°.</p>
 </dd>
-<dt><strong>lon2: float</strong></dt><dd><p>End longitude [degree E]. This parameter sets the upper bound of the zonal cut. Note latitude ranges from -180° to 180°.</p>
+<dt><strong>lon2: float</strong></dt><dd><p>End longitude [degree E]. This parameter sets the upper bound of the zonal cut. Note longitude ranges from -180° to 180°.</p>
 </dd>
-<dt><strong>depth1: float</strong></dt><dd><p>Start depth [m]. This parameter sets the lower bound of the vertical cut. Note depth is a positive number (it is 0 at surface and grows towards ocean floor).</p>
+<dt><strong>depth1: float</strong></dt><dd><p>Start depth [m]. This parameter sets the lower bound of the vertical cut. Note depth is a positive number (it is 0 at the surface and increases towards the ocean floor).</p>
 </dd>
-<dt><strong>depth2: float</strong></dt><dd><p>End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at surface and grows towards ocean floor).</p>
+<dt><strong>depth2: float</strong></dt><dd><p>End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at the surface and increases towards the ocean floor).</p>
 </dd>
-<dt><strong>exportDataFlag: boolean, default: False</strong></dt><dd><p>If True, the graph data points are stored on the local machine. The export path and file format are set by the <a class="reference external" href="pycmap_api.html">APIs parameters</a>.</p>
+<dt><strong>exportDataFlag: boolean, default: False</strong></dt><dd><p>If True, the graph data points are stored on the local machine. The export path and file format are set by the <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html">APIs parameters</a>.</p>
 </dd>
 <dt><strong>show: boolean, default: True</strong></dt><dd><p>If True, the graph object is returned and is displayed. The graph file is saved on the local machine at the figureDir directory.
 If False, the graph object is returned but not displayed.</p>
@@ -288,8 +288,8 @@ If False, the graph object is returned but not displayed.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns:</dt>
-<dd class="field-even"><p>list of graph objects
-A list of graph objects. Below are the graph’s properties and methods.</p>
+<dd class="field-even"><p>list of graph objects</p>
+<p>A list of graph objects. Below are the graph’s properties and methods.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Properties</dt>
 <dd class="field-odd"><dl class="simple">
@@ -303,11 +303,11 @@ A list of graph objects. Below are the graph’s properties and methods.</p>
 </dd>
 <dt><strong>width: int</strong></dt><dd><p>Graph’s width in pixels.</p>
 </dd>
-<dt><strong>xlabel: str</strong></dt><dd><p>The graphs’s x-axis label.</p>
+<dt><strong>xlabel: str</strong></dt><dd><p>Graphs’s x-axis label.</p>
 </dd>
-<dt><strong>ylabel: str</strong></dt><dd><p>The graphs’s y-axis label.</p>
+<dt><strong>ylabel: str</strong></dt><dd><p>Graphs’s y-axis label.</p>
 </dd>
-<dt><strong>title: str</strong></dt><dd><p>The graphs’s title.</p>
+<dt><strong>title: str</strong></dt><dd><p>Graphs’s title.</p>
 </dd>
 </dl>
 </dd>
@@ -360,20 +360,7 @@ changed by: <code class="docutils literal notranslate"><span class="pre">pycmap.
 <iframe src="../../../../_static/pycmap_tutorial_viz/html/depth_profile_argo_merge_chl_adj.html"  frameborder = 0  height="450px" width="100%">></iframe><div class="line-block">
 <div class="line"><br /></div>
 </div>
-<iframe src="../../../../_static/pycmap_tutorial_viz/html/depth_profile_CHL.html"  frameborder = 0  height="450px" width="100%">></iframe><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># here is how to modify a graph:</span>
-
-<span class="n">go</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">cmap</span> <span class="o">=</span> <span class="s1">&#39;PRGn&#39;</span>
-<span class="n">go</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">vmin</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">go</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">vmax</span> <span class="o">=</span> <span class="mf">5e-5</span>
-<span class="n">go</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="mi">900</span>
-<span class="n">go</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="mi">700</span>
-<span class="n">go</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
-</pre></div>
-</div>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<iframe src="../../../../_static/pycmap_tutorial_viz/html/depth_profile_modified_argo_merge_chl_adj.html"  frameborder = 0  height="650px" width="100%">></iframe><div class="figure align-default">
+<iframe src="../../../../_static/pycmap_tutorial_viz/html/depth_profile_CHL.html"  frameborder = 0  height="450px" width="100%">></iframe><div class="figure align-default">
 <img alt="../../../../_images/sql.png" src="../../../../_images/sql.png" style="width: 51.2px; height: 51.2px;" />
 </div>
 <p><strong>SQL Statement</strong></p>
@@ -401,7 +388,7 @@ changed by: <code class="docutils literal notranslate"><span class="pre">pycmap.
     <p>
         &copy; Copyright 
       <span class="lastupdated">
-        Last updated on Apr 01, 2020.
+        Last updated on May 04, 2020.
       </span>
 
     </p>
