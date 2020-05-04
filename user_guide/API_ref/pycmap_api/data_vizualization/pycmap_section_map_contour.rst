@@ -7,9 +7,9 @@ Section Map, Section Contour
 ============================
 
 
-.. _API key: pycmap_api.html
-.. _APIs parameters: pycmap_api.html
-.. _APIs vizEngine: pycmap_api.html
+.. _API key: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html
+.. _APIs parameters: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html
+.. _`APIs vizEngine`: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html
 
 
 
@@ -43,8 +43,7 @@ Section Map, Section Contour
     visualization library. Returns the generated graph objects in form of a
     python list. One may use the returned objects to modify the graph
     properties.
-    
-    ..COMMENT: The above 'APIs vizEngine' link is not working. 
+
 
     .. note::
       This method requires a valid `API key`_. It is not necessary to set the
@@ -79,8 +78,7 @@ Section Map, Section Contour
             End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at the surface and increases towards the ocean floor).
         **exportDataFlag: boolean, default: False**
           If True, the graph data points are stored on the local machine. The export path and file format are set by the `APIs parameters`_.
-          
-..Comment: The above 'APIs parameters' link does not work.
+
 
         **show: boolean, default: True**
           If True, the graph object is returned and is displayed. The graph file is saved on the local machine at the figureDir directory.
@@ -91,8 +89,8 @@ Section Map, Section Contour
 
 
 
-    :returns\:: list of graph objects
-    
+    :returns: list of graph objects
+
       A list of graph objects. Below are the graph's properties and methods.
 
       :Properties:
@@ -103,9 +101,9 @@ Section Map, Section Contour
         **cmap: str or cmocean colormap**
           Colormap name. Any matplotlib (e.g. 'viridis', ..) or cmocean (e.g. cmocean.cm.thermal, ..) colormaps can be passed to this property. A full list of matplotlib and cmocean color palettes can be found at the following links:
           https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html
+
           https://matplotlib.org/cmocean/
-          
-..COMMENT: The links above need more seperation since it is hard to tell there are two links given. 
+
 
         **vmin: float**
           This parameter defines the lower bound of the colorbar.
