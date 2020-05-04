@@ -237,15 +237,22 @@
 <dl class="method">
 <dt id="plot_hist">
 <code class="sig-name descname">plot_hist</code><span class="sig-paren">(</span><em class="sig-param">tables</em>, <em class="sig-param">variables</em>, <em class="sig-param">dt1</em>, <em class="sig-param">dt2</em>, <em class="sig-param">lat1</em>, <em class="sig-param">lat2</em>, <em class="sig-param">lon1</em>, <em class="sig-param">lon2</em>, <em class="sig-param">depth1</em>, <em class="sig-param">depth2</em>, <em class="sig-param">exportDataFlag=False</em>, <em class="sig-param">show=True</em><span class="sig-paren">)</span><a class="headerlink" href="#plot_hist" title="Permalink to this definition">¶</a></dt>
-<dd><p>Creates a histogram graph for each variable according to the specified space-time constraints (dt1, dt2, lat1, lat2, lon1, lon2, depth1, depth2). Change the <a class="reference external" href="pycmap_api.html">APIs vizEngine</a> parameter if you wish to use a different visualization library.
+<dd><p>Creates a histogram graph for each variable according to the specified space-time constraints (dt1, dt2, lat1, lat2, lon1, lon2, depth1, depth2). Change the <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html">APIs vizEngine</a> parameter if you wish to use a different visualization library.
 Returns the generated graph objects in form of a python list. One may use the returned objects to modify the graph properties.</p>
-<div class="admonition note">
+</dd></dl>
+
+<p>..COMMENT: The above link ‘APIs vizEngine’ not working.</p>
+<blockquote>
+<div><div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This method requires a valid <a class="reference external" href="pycmap_api.html">API key</a>. It is not necessary to set the
+<p>This method requires a valid <a class="reference external" href="https://simonscmap.com/apikeymanagement">API key</a>. It is not necessary to set the
 API key every time because the API properties are stored locally after
 being called the first time.</p>
 </div>
-<div class="line-block">
+</div></blockquote>
+<p>..COMMENT: The above link ‘API key’ not working.</p>
+<blockquote>
+<div><div class="line-block">
 <div class="line"><br /></div>
 </div>
 <dl class="field-list simple">
@@ -258,30 +265,30 @@ being called the first time.</p>
 <dt><strong>dt1: string</strong></dt><dd><p>Start date or datetime. This parameter sets the lower bound of the temporal cut.
 Example values: ‘2016-05-25’ or ‘2017-12-10 17:25:00’</p>
 </dd>
-<dt><strong>dt2: string</strong></dt><dd><p>End date or datetime. This parameter sets the upper bound of the temporal cut.</p>
+<dt><strong>dt2: string</strong></dt><dd><p>End date or datetime. This parameter sets the upper bound of the temporal cut.
+Example values: ‘2016-05-25’ or ‘2017-12-10 17:25:00’</p>
 </dd>
 <dt><strong>lat1: float</strong></dt><dd><p>Start latitude [degree N]. This parameter sets the lower bound of the meridional cut. Note latitude ranges from -90° to 90°.</p>
 </dd>
 <dt><strong>lat2: float</strong></dt><dd><p>End latitude [degree N]. This parameter sets the upper bound of the meridional cut. Note latitude ranges from -90° to 90°.</p>
 </dd>
-<dt><strong>lon1: float</strong></dt><dd><p>Start longitude [degree E]. This parameter sets the lower bound of the zonal cut. Note latitude ranges from -180° to 180°.</p>
+<dt><strong>lon1: float</strong></dt><dd><p>Start longitude [degree E]. This parameter sets the lower bound of the zonal cut. Note longitude ranges from -180° to 180°.</p>
 </dd>
-<dt><strong>lon2: float</strong></dt><dd><p>End longitude [degree E]. This parameter sets the upper bound of the zonal cut. Note latitude ranges from -180° to 180°.</p>
+<dt><strong>lon2: float</strong></dt><dd><p>End longitude [degree E]. This parameter sets the upper bound of the zonal cut. Note longitude ranges from -180° to 180°.</p>
 </dd>
-<dt><strong>depth1: float</strong></dt><dd><p>Start depth [m]. This parameter sets the lower bound of the vertical cut. Note depth is a positive number (it is 0 at surface and grows towards ocean floor).</p>
+<dt><strong>depth1: float</strong></dt><dd><p>Start depth [m]. This parameter sets the lower bound of the vertical cut. Note depth is a positive number (it is 0 at the surface and increases towards the ocean floor).</p>
 </dd>
-<dt><strong>depth2: float</strong></dt><dd><p>End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at surface and grows towards ocean floor).</p>
+<dt><strong>depth2: float</strong></dt><dd><p>End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at the surface and increases towards the ocean floor).</p>
 </dd>
-<dt><strong>exportDataFlag: boolean, default: False</strong></dt><dd><p>If True, the graph data points are stored on the local machine. The export path and file format are set by the <a class="reference external" href="pycmap_api.html">APIs parameters</a>.</p>
+<dt><strong>exportDataFlag: boolean, default: False</strong></dt><dd><p>If True, the graph data points are stored on the local machine. The export path and file format are set by the <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html">APIs parameters</a>.</p>
 </dd>
 <dt><strong>show: boolean, default: True</strong></dt><dd><p>If True, the graph object is returned and is displayed. The graph file is saved on the local machine at the figureDir directory.
 If False, the graph object is returned but not displayed.</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns:</dt>
-<dd class="field-even"><p>list of graph objects
-A list of graph objects. Below are the graph’s properties and methods.</p>
+<dt class="field-even">returns</dt>
+<dd class="field-even"><p>A list of graph objects. Below are the graph’s properties and methods.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Properties</dt>
 <dd class="field-odd"><dl class="simple">
@@ -295,11 +302,11 @@ A list of graph objects. Below are the graph’s properties and methods.</p>
 </dd>
 <dt><strong>width: int</strong></dt><dd><p>Graph’s width in pixels.</p>
 </dd>
-<dt><strong>xlabel: str</strong></dt><dd><p>The graphs’s x-axis label.</p>
+<dt><strong>xlabel: str</strong></dt><dd><p>Graph’s x-axis label.</p>
 </dd>
-<dt><strong>ylabel: str</strong></dt><dd><p>The graphs’s y-axis label.</p>
+<dt><strong>ylabel: str</strong></dt><dd><p>Graphs’s y-axis label.</p>
 </dd>
-<dt><strong>title: str</strong></dt><dd><p>The graphs’s title.</p>
+<dt><strong>title: str</strong></dt><dd><p>Graphs’s title.</p>
 </dd>
 </dl>
 </dd>
@@ -312,8 +319,7 @@ A list of graph objects. Below are the graph’s properties and methods.</p>
 </dl>
 </dd>
 </dl>
-</dd></dl>
-
+</div></blockquote>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -349,12 +355,12 @@ visualization library (plotly) which may be changed by:
 </div>
 <iframe src="../../../../_static/pycmap_tutorial_viz/html/histogram_CTD_Oxygen.html"  frameborder = 0  height="420px" width="100%">></iframe><iframe src="../../../../_static/pycmap_tutorial_viz/html/histogram_O2_darwin_clim.html"  frameborder = 0  height="420px" width="100%">></iframe><iframe src="../../../../_static/pycmap_tutorial_viz/html/histogram_oxygen_WOA_clim.html"  frameborder = 0  height="420px" width="100%">></iframe><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># here is how to modify a graph:</span>
 
-<span class="n">go</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">pdf</span> <span class="o">=</span> <span class="bp">False</span>
 <span class="n">go</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">bins</span> <span class="o">=</span> <span class="mi">20</span>
-<span class="n">go</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">xlabel</span> <span class="o">=</span> <span class="s2">&quot;new xlable&quot;</span>
-<span class="n">go</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">title</span><span class="o">=</span> <span class="s2">&quot;graph&#39;s title&quot;</span>
-<span class="n">go</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="mi">600</span>
+<span class="n">go</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">pdf</span> <span class="o">=</span> <span class="bp">False</span>
 <span class="n">go</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="mi">600</span>
+<span class="n">go</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="mi">600</span>
+<span class="n">go</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">xlabel</span> <span class="o">=</span> <span class="s2">&quot;new xlabel&quot;</span>
+<span class="n">go</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">title</span><span class="o">=</span> <span class="s2">&quot;graph&#39;s title&quot;</span>
 <span class="n">go</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -373,7 +379,7 @@ visualization library (plotly) which may be changed by:
     <p>
         &copy; Copyright 
       <span class="lastupdated">
-        Last updated on Apr 01, 2020.
+        Last updated on May 04, 2020.
       </span>
 
     </p>

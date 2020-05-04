@@ -14,9 +14,10 @@ Histogram Plot
 .. image:: https://mybinder.org/badge_logo.svg
    :target: https://mybinder.org/v2/gh/simonscmap/pycmap/master?filepath=docs%2FViz_Histogram.ipynb
 
-.. _API key: pycmap_api.html
-.. _APIs vizEngine: pycmap_api.html
-.. _APIs parameters: pycmap_api.html
+.. _API key: https://simonscmap.com/apikeymanagement
+.. _`APIs vizEngine`: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html
+
+.. _APIs parameters: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html
 
 
 .. method:: plot_hist(tables, variables, dt1, dt2, lat1, lat2, lon1, lon2, depth1, depth2, exportDataFlag=False, show=True)
@@ -25,14 +26,12 @@ Histogram Plot
     Creates a histogram graph for each variable according to the specified space-time constraints (dt1, dt2, lat1, lat2, lon1, lon2, depth1, depth2). Change the `APIs vizEngine`_ parameter if you wish to use a different visualization library.
     Returns the generated graph objects in form of a python list. One may use the returned objects to modify the graph properties.
 
-..COMMENT: The above link 'APIs vizEngine' not working. 
 
     .. note::
       This method requires a valid `API key`_. It is not necessary to set the
       API key every time because the API properties are stored locally after
       being called the first time.
 
-..COMMENT: The above link 'API key' not working.
 
     |
 
@@ -61,8 +60,6 @@ Histogram Plot
             End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at the surface and increases towards the ocean floor).
         **exportDataFlag: boolean, default: False**
           If True, the graph data points are stored on the local machine. The export path and file format are set by the `APIs parameters`_.
-        
-..COMMENT: THe above link 'APIs parameters' is not working. 
 
         **show: boolean, default: True**
           If True, the graph object is returned and is displayed. The graph file is saved on the local machine at the figureDir directory.
@@ -72,7 +69,7 @@ Histogram Plot
 
 
 
-    :returns\:: A list of graph objects. Below are the graph's properties and methods.
+    :returns: A list of graph objects. Below are the graph's properties and methods.
 
       :Properties:
         **data: dataframe**
@@ -155,12 +152,10 @@ visualization library (plotly) which may be changed by:
 
   # here is how to modify a graph:
 
-  go[0].pdf = False
   go[0].bins = 20
-  go[0].xlabel = "new xlable"
-  go[0].title= "graph's title"
-  go[0].width = 600
+  go[0].pdf = False
   go[0].height = 600
+  go[0].width = 600
+  go[0].xlabel = "new xlabel"
+  go[0].title= "graph's title"
   go[0].render()
-
-..COMMENT: Have these in the order that they are listed above so that the user can easily compare.

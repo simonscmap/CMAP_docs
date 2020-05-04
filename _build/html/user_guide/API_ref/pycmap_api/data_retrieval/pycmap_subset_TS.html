@@ -287,7 +287,7 @@ Example values: ‘2016-05-25’ or ‘2017-12-10 17:25:00’.</p>
 </dd>
 <dt><strong>depth1: float</strong></dt><dd><p>Start depth [m]. This parameter sets the lower bound of the vertical cut. Note depth is a positive number (it is 0 at the surface and increases towards the ocean floor).</p>
 </dd>
-<dt><strong>depth2: float</strong></dt><dd><p>End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at surface and grows towards ocean floor).</p>
+<dt><strong>depth2: float</strong></dt><dd><p>End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at the surface and increases towards the ocean floor).</p>
 </dd>
 <dt><strong>interval: None or string, default: None</strong></dt><dd><p>The timeseries bin size. If None, the native dataset time resolution is used as the bin size. Below is a list of interval values for other binning options:
 -  <strong>‘w’</strong> or <strong>‘week’</strong> for weekly timeseries.
@@ -329,8 +329,8 @@ Example values: ‘2016-05-25’ or ‘2017-12-10 17:25:00’.</p>
 </div>
 <p><strong>Example 2:</strong></p>
 <p>This example retrieves a 24-year long timeseries of absolute dynamic topography (closely related to sea surface height) measured by satellite.
-Notice, depth1 and depth2 values are automatically ignored because this is a surface dataset. The ‘interval’ parameter (line 24) has to ‘y’ indicating yearly binning (inter-annual timeseres). This example takes a few moments to run as the altimetry dataset is very large (multi-decade daily-global remote sensing).
-The last few lines of code (lines 28-32) makes a simple plot to visualize the retrieved data.</p>
+Note depth1 and depth2 values are automatically ignored because this is a surface dataset. The ‘interval’ parameter (line 24) has ‘y’ indicating yearly binning (inter-annual timeseres). This example takes a few moments to run as the altimetry dataset is very large (multi-decade daily-global remote sensing).
+The last few lines of code (lines 28-32) make a simple plot to visualize the retrieved data.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!pip install pycmap -q     #uncomment to install pycmap, if necessary</span>
 
 <span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
@@ -404,7 +404,7 @@ The last few lines of code (lines 28-32) makes a simple plot to visualize the re
     <p>
         &copy; Copyright 
       <span class="lastupdated">
-        Last updated on Apr 28, 2020.
+        Last updated on May 04, 2020.
       </span>
 
     </p>
