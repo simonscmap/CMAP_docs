@@ -249,13 +249,13 @@ integer number. Note that contour plot is only supported by plotly
 visualization library. Also, <code class="docutils literal notranslate"><span class="pre">plot_section()</span></code> function only applies to
 gridded datasets with depth component (e.g. model outputs) and does not
 apply to sparse datasets.</p>
-<p>Change the <a class="reference external" href="pycmap_api.html">APIs vizEngine</a> parameter if you wish to use a different
+<p>Change the <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html">APIs vizEngine</a> parameter if you wish to use a different
 visualization library. Returns the generated graph objects in form of a
 python list. One may use the returned objects to modify the graph
 properties.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This method requires a valid <a class="reference external" href="pycmap_api.html">API key</a>. It is not necessary to set the
+<p>This method requires a valid <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html">API key</a>. It is not necessary to set the
 API key every time because the API properties are stored locally after
 being called the first time.</p>
 </div>
@@ -270,23 +270,23 @@ being called the first time.</p>
 <dt><strong>variable: list of string</strong></dt><dd><p>Variable short name which directly corresponds to a field name in the table. A full list of variable short names can be found in <a class="reference internal" href="../../../../catalog/catalog.html#catalog"><span class="std std-ref">Data Catalog</span></a>.</p>
 </dd>
 <dt><strong>dt1: string</strong></dt><dd><p>Start date or datetime. This parameter sets the lower bound of the temporal cut.
-Example values: ‘2016-05-25’ or ‘2017-12-10 17:25:00’</p>
+Example values: ‘2016-05-25’ or ‘2017-12-10 17:25:00’.</p>
 </dd>
-<dt><strong>dt2: string</strong></dt><dd><p>End date or datetime. This parameter sets the upper bound of the temporal cut.</p>
+<dt><strong>dt2: string</strong></dt><dd><p>End date or datetime. This parameter sets the upper bound of the temporal cut. Example values: ‘2016-05-25’ or ‘2017-12-10 17:25:00’.</p>
 </dd>
 <dt><strong>lat1: float</strong></dt><dd><p>Start latitude [degree N]. This parameter sets the lower bound of the meridional cut. Note latitude ranges from -90° to 90°.</p>
 </dd>
 <dt><strong>lat2: float</strong></dt><dd><p>End latitude [degree N]. This parameter sets the upper bound of the meridional cut. Note latitude ranges from -90° to 90°.</p>
 </dd>
-<dt><strong>lon1: float</strong></dt><dd><p>Start longitude [degree E]. This parameter sets the lower bound of the zonal cut. Note latitude ranges from -180° to 180°.</p>
+<dt><strong>lon1: float</strong></dt><dd><p>Start longitude [degree E]. This parameter sets the lower bound of the zonal cut. Note longitude ranges from -180° to 180°.</p>
 </dd>
-<dt><strong>lon2: float</strong></dt><dd><p>End longitude [degree E]. This parameter sets the upper bound of the zonal cut. Note latitude ranges from -180° to 180°.</p>
+<dt><strong>lon2: float</strong></dt><dd><p>End longitude [degree E]. This parameter sets the upper bound of the zonal cut. Note longitude ranges from -180° to 180°.</p>
 </dd>
-<dt><strong>depth1: float</strong></dt><dd><p>Start depth [m]. This parameter sets the lower bound of the vertical cut. Note depth is a positive number (it is 0 at surface and grows towards ocean floor).</p>
+<dt><strong>depth1: float</strong></dt><dd><p>Start depth [m]. This parameter sets the lower bound of the vertical cut. Note depth is a positive number (it is 0 at the surface and increases towards the ocean floor).</p>
 </dd>
-<dt><strong>depth2: float</strong></dt><dd><p>End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at surface and grows towards ocean floor).</p>
+<dt><strong>depth2: float</strong></dt><dd><p>End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at the surface and increases towards the ocean floor).</p>
 </dd>
-<dt><strong>exportDataFlag: boolean, default: False</strong></dt><dd><p>If True, the graph data points are stored on the local machine. The export path and file format are set by the <a class="reference external" href="pycmap_api.html">APIs parameters</a>.</p>
+<dt><strong>exportDataFlag: boolean, default: False</strong></dt><dd><p>If True, the graph data points are stored on the local machine. The export path and file format are set by the <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html">APIs parameters</a>.</p>
 </dd>
 <dt><strong>show: boolean, default: True</strong></dt><dd><p>If True, the graph object is returned and is displayed. The graph file is saved on the local machine at the figureDir directory.
 If False, the graph object is returned but not displayed.</p>
@@ -295,19 +295,19 @@ If False, the graph object is returned but not displayed.</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns:</dt>
-<dd class="field-even"><p>list of graph objects
-A list of graph objects. Below are the graph’s properties and methods.</p>
-<dl class="field-list simple">
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>list of graph objects</p>
+<p>A list of graph objects. Below are the graph’s properties and methods.</p>
+<dl class="field-list">
 <dt class="field-odd">Properties</dt>
-<dd class="field-odd"><dl class="simple">
+<dd class="field-odd"><dl>
 <dt><strong>data: dataframe</strong></dt><dd><p>Graph data points to be visualized.</p>
 </dd>
 <dt><strong>level: int, default: 0</strong></dt><dd><p>Number of contour levels. Only applicable to plotly.</p>
 </dd>
 <dt><strong>cmap: str or cmocean colormap</strong></dt><dd><p>Colormap name. Any matplotlib (e.g. ‘viridis’, ..) or cmocean (e.g. cmocean.cm.thermal, ..) colormaps can be passed to this property. A full list of matplotlib and cmocean color palettes can be found at the following links:
-<a class="reference external" href="https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html">https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html</a>
-<a class="reference external" href="https://matplotlib.org/cmocean/">https://matplotlib.org/cmocean/</a></p>
+<a class="reference external" href="https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html">https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html</a></p>
+<p><a class="reference external" href="https://matplotlib.org/cmocean/">https://matplotlib.org/cmocean/</a></p>
 </dd>
 <dt><strong>vmin: float</strong></dt><dd><p>This parameter defines the lower bound of the colorbar.</p>
 </dd>
@@ -317,15 +317,16 @@ A list of graph objects. Below are the graph’s properties and methods.</p>
 </dd>
 <dt><strong>width: int</strong></dt><dd><p>Graph’s width in pixels.</p>
 </dd>
-<dt><strong>xlabel: str</strong></dt><dd><p>The graphs’s x-axis label.</p>
+<dt><strong>xlabel: str</strong></dt><dd><p>Graph’s x-axis label.</p>
 </dd>
-<dt><strong>ylabel: str</strong></dt><dd><p>The graphs’s y-axis label.</p>
+<dt><strong>ylabel: str</strong></dt><dd><p>Graph’s y-axis label.</p>
 </dd>
-<dt><strong>title: str</strong></dt><dd><p>The graphs’s title.</p>
-</dd>
-</dl>
+<dt><strong>title: str</strong></dt><dd><p>Graphs’s title.</p>
 </dd>
 </dl>
+</dd>
+</dl>
+</p>
 </dd>
 <dt class="field-even">Methods</dt>
 <dd class="field-even"><dl class="simple">
@@ -427,7 +428,7 @@ concentration</a> calculated by Darwin model.</p>
     <p>
         &copy; Copyright 
       <span class="lastupdated">
-        Last updated on Apr 01, 2020.
+        Last updated on May 04, 2020.
       </span>
 
     </p>

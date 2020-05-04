@@ -26,14 +26,12 @@ Histogram Plot
     Creates a histogram graph for each variable according to the specified space-time constraints (dt1, dt2, lat1, lat2, lon1, lon2, depth1, depth2). Change the `APIs vizEngine`_ parameter if you wish to use a different visualization library.
     Returns the generated graph objects in form of a python list. One may use the returned objects to modify the graph properties.
 
-..COMMENT: The above link 'APIs vizEngine' not working.
 
     .. note::
       This method requires a valid `API key`_. It is not necessary to set the
       API key every time because the API properties are stored locally after
       being called the first time.
 
-..COMMENT: The above link 'API key' not working.
 
     |
 
