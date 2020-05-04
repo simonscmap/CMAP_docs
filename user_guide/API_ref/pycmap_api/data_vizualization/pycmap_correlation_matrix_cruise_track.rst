@@ -6,12 +6,11 @@
 Correlation Matrix Along Cruise Track
 =====================================
 
-.. _Match (colocalize) Cruise Track with Datasets: MatchCruise.ipynb
-.. _cruise: Cruises.ipynb
-.. _Match (colocalize) Cruise Track with Datasets: MatchCruise.ipynb
-.. _Match (colocalize) Datasets: Match.ipynb
-.. _API key: pycmap_api.html
-.. _APIs parameters: pycmap_api.html
+.. _cruise: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/data_retrieval/pycmap_list_cruises.html
+.. _Match (colocalize) Cruise Track with Datasets: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/data_retrieval/pycmap_match_cruise_track_datasets.html
+.. _Match (colocalize) Datasets: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/data_retrieval/pycmap_match_datasets.html
+.. _`API key`: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html
+.. _`APIs parameters`: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
    :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/Viz_CruiseCorrelationMatrix.ipynb
@@ -21,7 +20,7 @@ Correlation Matrix Along Cruise Track
 
 
 .. _SeaFlow dataset: https://cmap.readthedocs.io/en/latest/catalog/datasets/SeaFlow.html#seaflow
-.. _catalog: Catalog.ipynb
+.. _catalog: https://simonscmap.com/
 
 .. method:: plot_cruise_corr_map(cruise, targetTables, targetVars, depth1, depth2, temporalTolerance, latTolerance, lonTolerance, depthTolerance, method='spearman', exportDataFlag=False, show=True)
 

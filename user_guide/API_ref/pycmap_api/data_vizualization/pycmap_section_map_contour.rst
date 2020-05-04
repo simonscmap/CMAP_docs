@@ -61,6 +61,7 @@ Section Map, Section Contour
             Variable short name which directly corresponds to a field name in the table. A full list of variable short names can be found in :ref:`Catalog`.
         **dt1: string**
             Start date or datetime. This parameter sets the lower bound of the temporal cut.
+
             Example values: '2016-05-25' or '2017-12-10 17:25:00'.
         **dt2: string**
             End date or datetime. This parameter sets the upper bound of the temporal cut. Example values: '2016-05-25' or '2017-12-10 17:25:00'.
