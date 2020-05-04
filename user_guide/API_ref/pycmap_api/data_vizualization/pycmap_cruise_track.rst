@@ -12,18 +12,16 @@ Cruise Track Plot
    :target: https://mybinder.org/v2/gh/simonscmap/pycmap/master?filepath=docs%2FViz_CruiseTrack.ipynb
 
 
-.. _API key: pycmap_api.html
-.. _APIs parameters: pycmap_api.html
-.. _cruises(): pycmap_list_cruises.html
+.. _`API key`: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html
+.. _cruises(): https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/data_retrieval/pycmap_list_cruises.html#list-cruises
 
 .. _cruise: Cruises.ipynb
 
 .. method:: plot_cruise_track(cruise)
 
 
-    Plots the cruise trajectory on a geospatial map.
+    Plots cruise trajectory(s) on a geospatial map.
 
-..COMMENT: From the sentence above it sounds like you can only plot one cruise trajectory at a time. So I was surprised to see two cruise tracks in the example. I mean, it makes sense that you can plot more than one at a time and one should be able to! However, you may want to clarify that more than one can be plotted at one time. 
 
     .. note::
       This method requires a valid `API key`_. It is not necessary to set the
@@ -41,10 +39,10 @@ Cruise Track Plot
             "nickname" ('Diel', 'Gradients_1' ...). A full list of cruise names can
             be retrieved using `cruises()`_ method.
 
-..COMMENT: The above 'cruises()' link is not working. 
+..COMMENT: The above 'cruises()' link is not working.
 
     :returns\:: void
-    
+
         This method has no returns.
 
 |

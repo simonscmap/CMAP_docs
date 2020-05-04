@@ -79,7 +79,7 @@ Depth Profile
 
 
 
-    :returns\:: list of graph objects
+    :returns: list of graph objects
 
       A list of graph objects. Below are the graph's properties and methods.
 
