@@ -43,6 +43,8 @@ Section Map, Section Contour
     visualization library. Returns the generated graph objects in form of a
     python list. One may use the returned objects to modify the graph
     properties.
+    
+    ..COMMENT: The above 'APIs vizEngine' link is not working. 
 
     .. note::
       This method requires a valid `API key`_. It is not necessary to set the
@@ -60,23 +62,26 @@ Section Map, Section Contour
             Variable short name which directly corresponds to a field name in the table. A full list of variable short names can be found in :ref:`Catalog`.
         **dt1: string**
             Start date or datetime. This parameter sets the lower bound of the temporal cut.
-            Example values: '2016-05-25' or '2017-12-10 17:25:00'
+            Example values: '2016-05-25' or '2017-12-10 17:25:00'.
         **dt2: string**
-            End date or datetime. This parameter sets the upper bound of the temporal cut.
+            End date or datetime. This parameter sets the upper bound of the temporal cut. Example values: '2016-05-25' or '2017-12-10 17:25:00'.
         **lat1: float**
             Start latitude [degree N]. This parameter sets the lower bound of the meridional cut. Note latitude ranges from -90° to 90°.
         **lat2: float**
             End latitude [degree N]. This parameter sets the upper bound of the meridional cut. Note latitude ranges from -90° to 90°.
         **lon1: float**
-            Start longitude [degree E]. This parameter sets the lower bound of the zonal cut. Note latitude ranges from -180° to 180°.
+            Start longitude [degree E]. This parameter sets the lower bound of the zonal cut. Note longitude ranges from -180° to 180°.
         **lon2: float**
-            End longitude [degree E]. This parameter sets the upper bound of the zonal cut. Note latitude ranges from -180° to 180°.
+            End longitude [degree E]. This parameter sets the upper bound of the zonal cut. Note longitude ranges from -180° to 180°.
         **depth1: float**
-            Start depth [m]. This parameter sets the lower bound of the vertical cut. Note depth is a positive number (it is 0 at surface and grows towards ocean floor).
+            Start depth [m]. This parameter sets the lower bound of the vertical cut. Note depth is a positive number (it is 0 at the surface and increases towards the ocean floor).
         **depth2: float**
-            End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at surface and grows towards ocean floor).
+            End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at the surface and increases towards the ocean floor).
         **exportDataFlag: boolean, default: False**
           If True, the graph data points are stored on the local machine. The export path and file format are set by the `APIs parameters`_.
+          
+..Comment: The above 'APIs parameters' link does not work.
+
         **show: boolean, default: True**
           If True, the graph object is returned and is displayed. The graph file is saved on the local machine at the figureDir directory.
           If False, the graph object is returned but not displayed.
@@ -87,6 +92,7 @@ Section Map, Section Contour
 
 
     :returns\:: list of graph objects
+    
       A list of graph objects. Below are the graph's properties and methods.
 
       :Properties:
@@ -98,6 +104,9 @@ Section Map, Section Contour
           Colormap name. Any matplotlib (e.g. 'viridis', ..) or cmocean (e.g. cmocean.cm.thermal, ..) colormaps can be passed to this property. A full list of matplotlib and cmocean color palettes can be found at the following links:
           https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html
           https://matplotlib.org/cmocean/
+          
+..COMMENT: The links above need more seperation since it is hard to tell there are two links given. 
+
         **vmin: float**
           This parameter defines the lower bound of the colorbar.
         **vmax: float**
@@ -107,11 +116,11 @@ Section Map, Section Contour
         **width: int**
           Graph's width in pixels.
         **xlabel: str**
-          The graphs's x-axis label.
+          Graph's x-axis label.
         **ylabel: str**
-          The graphs's y-axis label.
+          Graph's y-axis label.
         **title: str**
-          The graphs's title.
+          Graphs's title.
 
     :Methods:
       **render()**
