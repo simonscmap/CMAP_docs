@@ -12,16 +12,15 @@ Cruise Track Plot
    :target: https://mybinder.org/v2/gh/simonscmap/pycmap/master?filepath=docs%2FViz_CruiseTrack.ipynb
 
 
-.. _API key: pycmap_api.html
-.. _APIs parameters: pycmap_api.html
-.. _cruises(): pycmap_list_cruises.html
+.. _`API key`: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html
+.. _cruises(): https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/data_retrieval/pycmap_list_cruises.html#list-cruises
 
 .. _cruise: Cruises.ipynb
 
 .. method:: plot_cruise_track(cruise)
 
 
-    Plots the cruise trajectory on a geospatial map.
+    Plots cruise trajectory(s) on a geospatial map.
 
 
     .. note::
@@ -29,18 +28,21 @@ Cruise Track Plot
       API key every time because the API properties are stored locally after
       being called the first time.
 
+..COMMENT: The above 'API key' link is not working.
 
 
     |
 
     :Parameters:
         **cruiseName: list of string**
-            A list of cruise official names. If applicable, you may also use cruise
+            A list of official cruise names. If applicable, you may also use cruise
             "nickname" ('Diel', 'Gradients_1' ...). A full list of cruise names can
             be retrieved using `cruises()`_ method.
 
+..COMMENT: The above 'cruises()' link is not working.
 
     :returns\:: void
+
         This method has no returns.
 
 |
