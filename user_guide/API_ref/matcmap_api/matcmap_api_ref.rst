@@ -15,7 +15,7 @@ matcmap API
 
 matcmap is the MATLAB client for Simons CMAP project.
 It provides access to the Simons CMAP database where various ocean data sets are hosted.
-These data sets include multi decades of remote sensing observations (satellite),
+These data sets include multi-decadal remote sensing observations (satellite),
 numerical model estimates, and field expeditions.
 
 This package is adopted from pycmap_ which is the python client of Simons CMAP ecosystem.
