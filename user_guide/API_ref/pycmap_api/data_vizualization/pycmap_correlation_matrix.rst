@@ -35,19 +35,17 @@ Correlation Matrix
 
     This function computes and plots the pair-correlation coefficient
     between the source and target variables. The results are visualized in
-    form of a correlation matrix. To compute the correlations the source and
+    form of a correlation matrix. To compute the correlations, the source and
     target variables have to be colocalized first (see :ref:`match`). The colocalization procedure relies on the tolerance
     parameters because they set the matching boundaries between the source
-    and target datasets. Notice the source has to be a single
+    and target datasets. Note the source has to be a single
     non-climatological variable. In principle, if the source dataset is
     fully covered by the target variable's spatio-temporal range, there
     should always be matching results if the tolerance parameters are larger
     than half of their corresponding spatial/temporal resolutions. Please
-    explore the :ref:`Catalog` to find appropriate target variables. Note that,
-    currently, this visualization is only supported by plotly visualization
-    library.
+    explore the :ref:`Catalog` to find appropriate target variables. Currently, this visualization is only supported by plotly visualization library.
 
-    Returns the generated correlation graph object using which one may modify the graph properties (see example below).
+    Returns the generated correlation graph object. One may modify the graph properties (see example below).
 
 
     .. note::
@@ -55,6 +53,7 @@ Correlation Matrix
       API key every time because the API properties are stored locally after
       being called the first time.
 
+..COMMENT: The above 'API key' link is not working. 
 
     |
 
@@ -65,11 +64,17 @@ Correlation Matrix
         **sourceVar: string**
             The source variable short name. The target variables are matched (colocalized) with this variable. A full list of variable short names can be found in :ref:`Catalog`.
         **targetTables: list of string**
-            Table names of the target datasets to be matched with the source data. Notice source dataset can be matched with multiple target datasets. A full list of table names can be found in :ref:`Catalog`.
+            Table names of the target datasets to be matched with the source data. Note source dataset can be matched with multiple target datasets. A full list of table names can be found in :ref:`Catalog`.
         **dt1: string**
-            Start date or datetime. Both source and target datasets are filtered before matching. This parameter sets the lower bound of the temporal cut.
+            Start date or datetime. Both source and target datasets are filtered before matching. This parameter sets the lower bound of the temporal cut. 
+
+..COMMENT: Give an example.
+
         **dt2: string**
             End date or datetime. Both source and target datasets are filtered before matching. This parameter sets the upper bound of the temporal cut.
+            
+..COMMENT: Give an example. 
+
         **lat1: float**
             Start latitude [degree N]. Both source and target datasets are filtered before matching. This parameter sets the lower bound of the meridional cut. Note latitude ranges from -90 to 90 degrees.
         **lat2: float**
@@ -79,11 +84,11 @@ Correlation Matrix
         **lon2: float**
             End longitude [degree E]. Both source and target datasets are filtered before matching. This parameter sets the upper bound of the zonal cut. Note longitude ranges from -180 to 180 degrees.
         **depth1: float**
-            Start depth [m]. Both source and target datasets are filtered before matching. This parameter sets the lower bound of the vertical cut. Note depth is a positive number (depth is 0 at surface and grows towards ocean floor).
+            Start depth [m]. Both source and target datasets are filtered before matching. This parameter sets the lower bound of the vertical cut. Note depth is a positive number (depth is 0 at the surface and increases towards the ocean floor).
         **depth2: float**
-            End depth [m]. Both source and target datasets are filtered before matching. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (depth is 0 at surface and grows towards ocean floor).
+            End depth [m]. Both source and target datasets are filtered before matching. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (depth is 0 at the surface and increases towards the ocean floor).
         **temporalTolerance: list of int**
-            Temporal tolerance values between pairs of source and target datasets. The size and order of values in this list should match those of targetTables. If only a single integer value is given, that would be applied to all target datasets. This parameter is in day units except when the target variable represents monthly climatology data in which case it is in month units. Notice fractional values are not supported in the current version.
+            Temporal tolerance values between pairs of source and target datasets. The size and order of values in this list should match those of targetTables. If only a single integer value is given, that would be applied to all target datasets. This parameter is in day units except when the target variable represents monthly climatology data in which case it is in month units. Note fractional values are not supported in the current version.
         **latTolerance: list of float or int**
             Spatial tolerance values in meridional direction [deg] between pairs of source and target datasets. The size and order of values in this list should match those of targetTables. If only a single float value is given, that would be applied to all target datasets. A "safe" value for this parameter can be slightly larger than the half of the target variable's spatial resolution.
         **lonTolerance: list of float or int**
@@ -99,6 +104,9 @@ Correlation Matrix
 
         **exportDataFlag: boolean, default: False**
           If True, the graph data points are stored on the local machine. The export path and file format are set by the `APIs parameters`_.
+          
+..COMMENT: The above 'APIs parameters' link is not working. 
+
         **show: boolean, default: True**
           If True, the graph object is returned and is displayed. The graph file is saved on the local machine at the figureDir directory.
           If False, the graph object is returned but not displayed.
@@ -106,6 +114,7 @@ Correlation Matrix
 
 
     :returns\:: the graph object
+    
       Below are the graph's properties and methods.
 
       :Properties:
@@ -119,6 +128,9 @@ Correlation Matrix
           Colormap name. Any matplotlib (e.g. 'viridis', ..) or cmocean (e.g. cmocean.cm.thermal, ..) colormaps can be passed to this property. A full list of matplotlib and cmocean color palettes can be found at the following links:
           https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html
           https://matplotlib.org/cmocean/
+        
+..COMMENT: The above links do not have a space in between. Hard to see that there are two links in my browser. 
+
         **vmin: float**
           This parameter defines the lower bound of the colorbar.
         **vmax: float**
@@ -151,7 +163,7 @@ variables (lines 7-8):
 -  'chl' from weekly averaged satellite `chlorophyll dataset`_
 -  'picoprokaryote' from 3-day averaged `Darwin model`_. Colocalizing
    this variable will take longer time than others as the 3-day averaged
-   Darwin dataset is massive (multi-decades global 3D dataset)!
+   Darwin dataset is massive (multi-decadal global 3D dataset)!
 
 .. tip::
   The space-time cut parameters (lines 41-48) have been set in such a way
@@ -164,6 +176,7 @@ variables (lines 7-8):
   Please review the **Example 1** at `Match (colocalize) Datasets`_ page
   since all of the mentioned tips directly apply to this example too.
 
+..COMMENT: The above 'Match (colocalize) Datasets' link is not working. 
 
 
 .. code-block:: python
