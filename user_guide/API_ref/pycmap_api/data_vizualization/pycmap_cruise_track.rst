@@ -15,7 +15,7 @@ Cruise Track Plot
 .. _`API key`: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html
 .. _cruises(): https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/data_retrieval/pycmap_list_cruises.html#list-cruises
 
-.. _cruise: Cruises.ipynb
+.. _cruise: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/data_retrieval/pycmap_list_cruises.html#list-cruises
 
 .. method:: plot_cruise_track(cruise)
 
@@ -40,7 +40,7 @@ Cruise Track Plot
             be retrieved using `cruises()`_ method.
 
 
-    :returns: 
+    :returns:
 
         This method has no returns.
 

@@ -29,7 +29,7 @@ Datasets
     |
 
 
-    :returns\:: Pandas dataframe.
+    :returns: Pandas dataframe.
 
 .. _Datasets: Datasets.ipynb
 

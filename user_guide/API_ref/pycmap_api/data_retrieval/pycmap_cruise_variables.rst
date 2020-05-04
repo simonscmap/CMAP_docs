@@ -26,7 +26,7 @@ Cruise Variables
 
 
 
-    :returns\:: Pandas dataframe.
+    :returns: Pandas dataframe.
 
 
 

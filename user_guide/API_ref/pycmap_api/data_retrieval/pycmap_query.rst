@@ -77,7 +77,7 @@ Query
       **query: string**
         Generic scan SQL statement. A full list of tables can be found in the :ref:`Catalog`.
 
-    :returns\:: Pandas dataframe.
+    :returns: Pandas dataframe.
 
 
 

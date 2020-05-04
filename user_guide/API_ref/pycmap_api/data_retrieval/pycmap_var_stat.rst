@@ -29,7 +29,7 @@ Variable Stat
             Variable short name. A full list of variable short names can be found in the :ref:`Catalog`.
 
 
-    :returns\:: Pandas dataframe.
+    :returns: Pandas dataframe.
 
 
 
