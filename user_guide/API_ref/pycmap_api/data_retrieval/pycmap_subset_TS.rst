@@ -42,7 +42,7 @@ Data Subset: Time Series
         **depth1: float**
                         Start depth [m]. This parameter sets the lower bound of the vertical cut. Note depth is a positive number (it is 0 at the surface and increases towards the ocean floor).
         **depth2: float**
-            End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at surface and grows towards ocean floor).
+            End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at the surface and increases towards the ocean floor).
         **interval: None or string, default: None**
             The timeseries bin size. If None, the native dataset time resolution is used as the bin size. Below is a list of interval values for other binning options:
             -  **'w'** or **'week'** for weekly timeseries.
@@ -85,8 +85,8 @@ This example retrieves the timeseries of SiO4 measurements conducted by HOT team
 
 
 This example retrieves a 24-year long timeseries of absolute dynamic topography (closely related to sea surface height) measured by satellite.
-Notice, depth1 and depth2 values are automatically ignored because this is a surface dataset. The 'interval' parameter (line 24) has to 'y' indicating yearly binning (inter-annual timeseres). This example takes a few moments to run as the altimetry dataset is very large (multi-decade daily-global remote sensing).
-The last few lines of code (lines 28-32) makes a simple plot to visualize the retrieved data.
+Note depth1 and depth2 values are automatically ignored because this is a surface dataset. The 'interval' parameter (line 24) has 'y' indicating yearly binning (inter-annual timeseres). This example takes a few moments to run as the altimetry dataset is very large (multi-decade daily-global remote sensing).
+The last few lines of code (lines 28-32) make a simple plot to visualize the retrieved data.
 
 .. code-block:: python
 
