@@ -35,7 +35,7 @@ The current data submission process is:
 2. Format your data and metadata in the CMAP format.
 3. Submit your dataset via email for feedback and review.
 4. Once OK'ed, register a DOI for your dataset.
-5. Submit dataset via email with DOI for ingestion into CMAP.
+5. Submit finalized DOI via email.
 
 
 Data Template
@@ -69,7 +69,7 @@ Dataset Requirements
 
 To add your dataset to CMAP, please use the following data and metadata conventions.
 
-.. note:: CMAP is not a data repository and we do not archive and version control datasets. We recommend that once your dataset has been approved for submission to CMAP, you register your dataset at a data repository (i.e. Zenodo, Dryad, Figshare, PANGAEA, etc) and obtain a DOI. We will include your DOI when the data is ingested into CMAP.
+.. note:: CMAP is not a data repository and we do not archive and version control datasets. We recommend that once your dataset has been approved for submission to CMAP, you register your dataset at a data repository (Zenodo etc.) and obtain a DOI. We will include your DOI when the data is ingested into CMAP.
 
 1. Data must be in the format:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -164,11 +164,11 @@ Second Sheet: "dataset_meta_data"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-+------------------------------------------+------------------------------------------+-------------------------------+------------------------------------------+---------------------------------------------------------------------------------------+---------------------------------------------+-------------------------------------------------------------+---------------------------------------------+---------------------------------------------------------------+----------------------------------------+--------------------------------+-----------------------------------------------------+-------------------------------------------+
-| dataset_short_name                       |    dataset_long_name                     |       dataset_version         | dataset_release_date                     |      dataset_make                                                                     |  dataset_source                             |    dataset_distributor                                      | dataset_acknowledgement                     |dataset_doi                                                    |  dataset_history                       | dataset_description            |        dataset_references                           | climatology                               |
-+------------------------------------------+------------------------------------------+-------------------------------+------------------------------------------+---------------------------------------------------------------------------------------+---------------------------------------------+-------------------------------------------------------------+---------------------------------------------+---------------------------------------------------------------+----------------------------------------+--------------------------------+-----------------------------------------------------+-------------------------------------------+
-| <short name of your dataset (<50 chars)> | <long name of your dataset (<500 chars)> | <dataset version (<50 chars)> | <Format  %Y-%m-%d,  example: 2018-06-20> | <how dataset is made (fixed options= [assimilation, model, observation]) (<50 chars)> | <name of your lab/institution (<100 chars)> | <the distributor of the data product (optional <100 chars)> |<the acknowledgment listed for the dataset > |<digital object identifier (doi) associated with the dataset>  | <any note about the dataset evolution> | <a descrption of your dataset> | <list of associated docs/publications (<500chars) > | <null if not climatology, 1 climatology>  |
-+------------------------------------------+------------------------------------------+-------------------------------+------------------------------------------+---------------------------------------------------------------------------------------+---------------------------------------------+-------------------------------------------------------------+---------------------------------------------+---------------------------------------------------------------+----------------------------------------+--------------------------------+-----------------------------------------------------+-------------------------------------------+
++------------------------------------------+------------------------------------------+-------------------------------+------------------------------------------+---------------------------------------------------------------------------------------+---------------------------------------------+-------------------------------------------------------------+---------------------------------------------+----------------------------------------+--------------------------------+-----------------------------------------------------+-------------------------------------------+
+| dataset_short_name                       |    dataset_long_name                     |       dataset_version         | dataset_release_date                     |      dataset_make                                                                     |  dataset_source                             |    dataset_distributor                                      | dataset_acknowledgement                     |  dataset_history                       | dataset_description            |        dataset_references                           | climatology                               |
++------------------------------------------+------------------------------------------+-------------------------------+------------------------------------------+---------------------------------------------------------------------------------------+---------------------------------------------+-------------------------------------------------------------+---------------------------------------------+----------------------------------------+--------------------------------+-----------------------------------------------------+-------------------------------------------+
+| <short name of your dataset (<50 chars)> | <long name of your dataset (<500 chars)> | <dataset version (<50 chars)> | <Format  %Y-%m-%d,  example: 2018-06-20> | <how dataset is made (fixed options= [assimilation, model, observation]) (<50 chars)> | <name of your lab/institution (<100 chars)> | <the distributor of the data product (optional <100 chars)> |<the acknowledgment listed for the dataset > | <any note about the dataset evolution> | <a descrption of your dataset> | <list of associated docs/publications (<500chars) > | <null if not climatology, 1 climatology>  |
++------------------------------------------+------------------------------------------+-------------------------------+------------------------------------------+---------------------------------------------------------------------------------------+---------------------------------------------+-------------------------------------------------------------+---------------------------------------------+----------------------------------------+--------------------------------+-----------------------------------------------------+-------------------------------------------+
 
 
 
@@ -219,24 +219,21 @@ Second Sheet: "dataset_meta_data"
   	- type: string
   	- length: <100 chars
 
-10. **dataset_doi**: digital object identifier (doi) associated with the dataset.
-    - type: string
-    - length: no limit
 
-11. **dataset_history**: notes regarding the evolution of the dataset with respect to the previous versions, if applicable.
+10. **dataset_history**: notes regarding the evolution of the dataset with respect to the previous versions, if applicable.
   	- type: string
   	- length: <100 chars
 
-12. **dataset_description**: A description of your dataset detailing collection and processing methodology.
+11. **dataset_description**: A description of your dataset detailing collection and processing methodology.
   	- type: string
   	- length: no limit
 
-13. **dataset_references**: links/citations associated with the dataset documentations/publications (enter each ref. in a separate row)
+12. **dataset_references**: links/citations associated with the dataset documentations/publications (enter each ref. in a separate row)
     - type: string
     - length: <500 chars per item
 
 
-14. **climatology**: is the dataset a climatology product? (<null if not climatology, 1 climatology>)
+13. **climatology**: is the dataset a climatology product? (<null if not climatology, 1 climatology>)
   	- type: string
   	- length: <10 chars
 
@@ -278,7 +275,7 @@ Third Sheet: "vars_meta_data"
     - length: <50 chars
     - Prefer symbols to descriptions.
     - example: "/" is better than "per"
-    
+
 5. **var_spatial_res**: variable spatial resolution
     - type: string
     - length: <50 chars

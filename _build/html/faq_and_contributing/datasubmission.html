@@ -233,7 +233,7 @@
 <li><p>Format your data and metadata in the CMAP format.</p></li>
 <li><p>Submit your dataset via email for feedback and review.</p></li>
 <li><p>Once OK’ed, register a DOI for your dataset.</p></li>
-<li><p>Submit dataset via email with DOI for ingestion into CMAP.</p></li>
+<li><p>Submit finalized DOI via email.</p></li>
 </ol>
 <div class="section" id="data-template">
 <h2>Data Template<a class="headerlink" href="#data-template" title="Permalink to this headline">¶</a></h2>
@@ -265,7 +265,7 @@
 <p>To add your dataset to CMAP, please use the following data and metadata conventions.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>CMAP is not a data repository and we do not archive and version control datasets. We recommend that once your dataset has been approved for submission to CMAP, you register your dataset at a data repository (i.e. Zenodo, Dryad, Figshare, PANGAEA, etc) and obtain a DOI. We will include your DOI when the data is ingested into CMAP.</p>
+<p>CMAP is not a data repository and we do not archive and version control datasets. We recommend that once your dataset has been approved for submission to CMAP, you register your dataset at a data repository (Zenodo etc.) and obtain a DOI. We will include your DOI when the data is ingested into CMAP.</p>
 </div>
 <div class="section" id="data-must-be-in-the-format">
 <h3>1. Data must be in the format:<a class="headerlink" href="#data-must-be-in-the-format" title="Permalink to this headline">¶</a></h3>
@@ -400,17 +400,16 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <colgroup>
 <col style="width: 7%" />
 <col style="width: 7%" />
-<col style="width: 5%" />
-<col style="width: 7%" />
-<col style="width: 14%" />
-<col style="width: 7%" />
-<col style="width: 10%" />
-<col style="width: 7%" />
-<col style="width: 10%" />
 <col style="width: 6%" />
-<col style="width: 5%" />
+<col style="width: 7%" />
+<col style="width: 15%" />
+<col style="width: 8%" />
+<col style="width: 11%" />
 <col style="width: 8%" />
 <col style="width: 7%" />
+<col style="width: 6%" />
+<col style="width: 9%" />
+<col style="width: 8%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>dataset_short_name</p></td>
@@ -421,7 +420,6 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <td><p>dataset_source</p></td>
 <td><p>dataset_distributor</p></td>
 <td><p>dataset_acknowledgement</p></td>
-<td><p>dataset_doi</p></td>
 <td><p>dataset_history</p></td>
 <td><p>dataset_description</p></td>
 <td><p>dataset_references</p></td>
@@ -435,7 +433,6 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 <td><p>&lt;name of your lab/institution (&lt;100 chars)&gt;</p></td>
 <td><p>&lt;the distributor of the data product (optional &lt;100 chars)&gt;</p></td>
 <td><p>&lt;the acknowledgment listed for the dataset &gt;</p></td>
-<td><p>&lt;digital object identifier (doi) associated with the dataset&gt;</p></td>
 <td><p>&lt;any note about the dataset evolution&gt;</p></td>
 <td><p>&lt;a descrption of your dataset&gt;</p></td>
 <td><p>&lt;list of associated docs/publications (&lt;500chars) &gt;</p></td>
@@ -529,9 +526,6 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
 </dd>
 </dl>
 </li>
-<li><p><strong>dataset_doi</strong>: digital object identifier (doi) associated with the dataset.
-- type: string
-- length: no limit</p></li>
 <li><dl class="simple">
 <dt><strong>dataset_history</strong>: notes regarding the evolution of the dataset with respect to the previous versions, if applicable.</dt><dd><ul class="simple">
 <li><p>type: string</p></li>
@@ -728,7 +722,7 @@ Example: seaflow_2018-05-25_v1.0.xlxs</p>
     <p>
         &copy; Copyright 
       <span class="lastupdated">
-        Last updated on Apr 28, 2020.
+        Last updated on May 05, 2020.
       </span>
 
     </p>
