@@ -27,7 +27,7 @@
 Data Submission
 ===============
 
-If you wish to suggest a dataset be added to the database or have some data that you would like added, please email us (cmap-data-submission@uw.edu).
+If you wish to suggest a dataset be added to the database or have data that you would like added, please email us (cmap-data-submission@uw.edu).
 
 The current data submission process is:
 
@@ -49,7 +49,7 @@ Data Template
     | `Download Data Template`_   |
     +-----------------------------+
 
-
+..COMMENT: The icon above seems too big for my preference. And do you mean for the icon to be a hyperlink to a GitHub page about data submission or to download the excel template? I thought it was to download the excel template. 
 
 Dataset Examples
 ----------------
@@ -90,11 +90,10 @@ For other scientists to find and use your data, we need metadata and the variabl
 Data Template and File Structure
 --------------------------------
 
-The CMAP data template consists of three sections: data, dataset metadata and variable metadata. Data is stored in the first sheet and the sheet title is "data". The second sheet stores the dataset meta-data and is called "dataset_meta_data". Meta-data associated with the variables in the dataset are kept in the third sheet, "vars_meta_data".
+The CMAP data template consists of three sections: data, dataset metadata, and variable metadata. Data is stored in the first sheet and the sheet title is "data". The second sheet stores the dataset meta-data and is called "dataset_meta_data". Meta-data associated with the variables in the dataset are kept in the third sheet, "vars_meta_data".
 
 The current data template is an excel spreadsheet. If submitting data in the multi-sheet format does not work for you, the data, dataset_metadata, and vars_metadata .csv's can be submitted individually.
-Note, information from all three sheets is required for a dataset to be added to CMAP.	Please note, information from all three sheets is required for a dataset to be added to CMAP.
-If you are submitting a dataset that is too large to be stored in a tabular format, the preferred format is netcdf for the data and tabular data for the metadata.
+Note, information from all three sheets is required for a dataset to be added to CMAP. If you are submitting a dataset that is too large to be stored in a tabular format, the preferred format is netcdf for the data and tabular data for the metadata.
 
 
 
@@ -102,6 +101,7 @@ Dataset Filename Convention
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Dataset filename: <dataset_short_name>_<dataset_release_data>_v<dataset_version>.xlxs
+
 Example: seaflow_2018-05-25_v1.0.xlxs
 
 **<dataset_short_name>: short name of the dataset**
@@ -133,7 +133,7 @@ First Sheet: "data"
 
 1. **time**: corresponding datetime
     - type: datetime
-    - format: %Y-%m-%dT%H:%M:%S [example: 2018-03-29T18:05:55]
+    - format: %Y-%m-%d %H:%M:%S [example: 2018-03-29 18:05:55]
     - time zone: UTC
     - note: there is a blank space between date and time
     - note: zero padding required
@@ -211,6 +211,8 @@ Second Sheet: "dataset_meta_data"
   	- length: <100 chars
   	- example: Distributed by NASA PODAAC
 
+..COMMENT: The format of #7 is not like the rest. "-type: string" is in bold. "length" and "example" are not in line with "type". 
+
 8. **dataset_acknowledgement**: Any acknowledgement(s) for this dataset
   	- type: string
   	- length: <100 chars
@@ -232,6 +234,7 @@ Second Sheet: "dataset_meta_data"
     - type: string
     - length: <500 chars per item
 
+..COMMENT: The formatting for #12 does not show like the rest in my browser. It is all one line. No bullet points.  
 
 13. **climatology**: is the dataset a climatology product? (<null if not climatology, 1 climatology>)
   	- type: string
@@ -294,7 +297,7 @@ Third Sheet: "vars_meta_data"
 8. **visualize**: Is this variable visualizable? If not, it can be excluded from the Simons CMAP web application.
     - type: int
     - length: <2 chars
-    - examples: [0 is not visualizable, 1 is visualizable]. ex: station # = 0 (non visualize), prochlorococcus abundance = 1 (visualize)
+    - examples: [0 is not visualizable, 1 is visualizable], [station # = 0 (non visualize), prochlorococcus abundance = 1 (visualize)]
 
 9. **var_keywords**: keywords pertinent to the variable (separated by comma).
     - type: string
@@ -302,7 +305,7 @@ Third Sheet: "vars_meta_data"
     - delimiter = ','
     - examples: [field sample, Biology, abundance, synechococcus, ...]
 
-    .. note:: **Keywords are variable-specific and case-insensitive. Please separate each keyword by comma. The suggested format for each variable keyword list is:**
+    .. note:: **Keywords are variable-specific and case-insensitive. Please separate each keyword by a comma. The suggested format for each variable keyword list is:**
 
       - Example keywords related to any official or unofficial variable names:   pro / prochloro / ...
       - Example keywords related to sensor/apparatus:  cruise / satellite / computer (in case of mode) / SeaFlow / ....
