@@ -21,8 +21,8 @@
 
 .. |template_download| image:: /_static/overview_icons/spreadsheet.png
   :align: middle
-  :scale: 35%
-  :target: https://github.com/simonscmap/DBIngest/tree/master/template
+  :scale: 25%
+  :target: https://github.com/simonscmap/DBIngest/raw/master/template/datasetTemplate.xlsx
 
 Data Submission
 ===============
@@ -49,7 +49,6 @@ Data Template
     | `Download Data Template`_   |
     +-----------------------------+
 
-..COMMENT: The icon above seems too big for my preference. And do you mean for the icon to be a hyperlink to a GitHub page about data submission or to download the excel template? I thought it was to download the excel template. 
 
 Dataset Examples
 ----------------
@@ -207,11 +206,11 @@ Second Sheet: "dataset_meta_data"
     - example: Bermuda Institute of Ocean Sciences
 
 7. **dataset_distributor**: name of the distributor of the data product (optional: if the dataset source differs from the distributor)
+
     - type: string
   	- length: <100 chars
   	- example: Distributed by NASA PODAAC
 
-..COMMENT: The format of #7 is not like the rest. "-type: string" is in bold. "length" and "example" are not in line with "type". 
 
 8. **dataset_acknowledgement**: Any acknowledgement(s) for this dataset
   	- type: string
@@ -230,11 +229,11 @@ Second Sheet: "dataset_meta_data"
   	- type: string
   	- length: no limit
 
-12. **dataset_references**: links/citations associated with the dataset documentations/publications (enter each ref. in a separate row)
+12. **dataset_references**: links/citations associated with the dataset documentations/publications (enter each ref. in a separate row). (optional)
+
     - type: string
     - length: <500 chars per item
 
-..COMMENT: The formatting for #12 does not show like the rest in my browser. It is all one line. No bullet points.  
 
 13. **climatology**: is the dataset a climatology product? (<null if not climatology, 1 climatology>)
   	- type: string
