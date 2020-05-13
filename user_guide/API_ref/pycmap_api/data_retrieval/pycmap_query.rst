@@ -23,7 +23,7 @@ Query
 
     ``This is an 'optional' page. If you are not planning and/or not interested in SQL coding, simply ignore this page please!``
 
-    Simons CMAP datasets are hosted in a SQL database and pycmap package provides the user with a number of pre-developed methods to extract and retrieve subsets of the data. The rest of this documentation is dedicated to explore and explain these methods. In addition to the pre-developed methods, we intend to leave the database open to custom scan queries for interested users. This method takes a custom SQL query statement and returns the results in form of a Pandas dataframe. The full list of table names and variable names (fields) can be obtained using the
+    Simons CMAP datasets are hosted in a SQL database and pycmap package provides the user with a number of pre-developed methods to extract and retrieve subsets of the data. The rest of this documentation is dedicated to exploring and explaining these methods. In addition to the pre-developed methods, we intend to leave the database open to custom scan queries for interested users. This method takes a custom SQL query statement and returns the results in form of a Pandas dataframe. The full list of table names and variable names (fields) can be obtained using the
     :ref:`getcatalog` method. In fact, one may use this very method to retrieve the table and field names:
     ``query(‘EXEC uspCatalog’)``. A Dataset is stored in a table and each table field represents a variable. All data tables have the following fields:
 
@@ -38,7 +38,7 @@ Query
 
       Tables which represent a climatological dataset, such as 'tblDarwin_Nutrient_Climatology', will not have a 'time' field.
       Also, if a table represents a surface dataset, such as satellite products, there would be no 'depth' field. 'depth' is a positive number in meters;
-      it is zero at the surface and increasing towards the ocean's floor. 'lat' and 'lon' are in degrees units, ranging from -90° to 90° and -180° to 180°, respectively.
+      it is zero at the surface and increasing towards the ocean floor. 'lat' and 'lon' are in degrees units, ranging from -90° to 90° and -180° to 180°, respectively.
 
 
       Please keep in mind that some of the datasets are massive in size (10s of TB), avoid queries without WHERE clause (``SELECT * FROM TABLENAME``).
