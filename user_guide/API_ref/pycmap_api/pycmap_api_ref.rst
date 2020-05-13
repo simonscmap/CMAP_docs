@@ -39,11 +39,13 @@ pycmap API
 
 Pycmap is the python package of the Simons CMAP project. It provides a simple and unified interface to the hosted datasets in the Simons CMAP database.
 
-The pycmap documentation is written in the Jupyter Notebook format and available on github_.
+The pycmap documentation is written in the Jupyter Notebook format and available on GitHub_. (COMMENT: I don't know if changing the letters to uppercase messes up the hyperlink here. Does the code at the top of the page have to be in the same format?) 
 Each notebook contains one or more example codes.
-You can run the examples on google cloud using the |colab| badge or on Binder using the |binder| badge that appears at the top of each tutorial page.
+You can run the examples on Google cloud using the |colab| badge or on Binder using the |binder| badge that appears at the top of each tutorial page.
 Alternatively, you can run the code locally using a Jupyter Notebook.
+
 Please click here_ to download the pycmap project and associated documentation.
+
 
 +------------------------+------------------------+------------------------+------------------------+
 |      |install_icon|    |    |data_retrieval|    | |data_vizualization|   | |presentation|         |
@@ -52,7 +54,7 @@ Please click here_ to download the pycmap project and associated documentation.
 +------------------------+------------------------+------------------------+------------------------+
 
 
-
+..COMMENT: I would decrease the size of the icons above too. 
 
 
 
