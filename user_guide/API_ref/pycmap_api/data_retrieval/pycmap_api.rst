@@ -28,7 +28,7 @@ API
         **headers: dict, optional, default: None**
             Additional headers to add to the client requests.
         **vizEngine: string, optional, default: 'plotly'**
-            Data visualization library used to render the graphs. The other option for visualization library is 'bokeh'. Notice some of the graphs (such as correlation matrix) are only suported by plotly.
+            Data visualization library used to render the graphs. The other option for visualization library is 'bokeh'. Note some of the graphs (such as correlation matrix) are only supported by plotly. See 'Data Visualization' for more details. (COMMENT: I added this last sentence as a reminder that there is a part of the user guide specifically for data visualization. I would make 'Data Visualization' a hyperlink.)
         **exportDir: string, optional, default: './export/'**
             Path to local directory where the exported data are stored.
         **exportFormat: string, optional, default: '.csv'**
