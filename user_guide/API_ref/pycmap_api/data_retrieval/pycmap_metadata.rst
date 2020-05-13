@@ -18,7 +18,7 @@ Metadata
 
 
 
-    Returns a dataframe containing the associated metadata of a variable (such as data source, distributor, references, and etc..).
+    Returns a dataframe containing the associated metadata of a variable (such as data source, distributor, references, and etc.).
     The inputs can be string literals (if only one table, and variable is passed) or a list of string literals.
 
     |
@@ -52,6 +52,8 @@ Retrieve dataset metadata for the satellite SST and Argo salinity datasets.
  :scale: 10 %
 
 **SQL Statement**
+
+..COMMENT: I would align the SQL icon and "SQL Statement" side by side. 
 
 Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
 
