@@ -397,18 +397,19 @@ Note, information from all three sheets is required for a dataset to be added to
 <h3>Second Sheet: “dataset_meta_data”<a class="headerlink" href="#second-sheet-dataset-meta-data" title="Permalink to this headline">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 7%" />
-<col style="width: 7%" />
 <col style="width: 6%" />
-<col style="width: 7%" />
-<col style="width: 15%" />
-<col style="width: 8%" />
-<col style="width: 11%" />
-<col style="width: 8%" />
-<col style="width: 7%" />
 <col style="width: 6%" />
+<col style="width: 5%" />
+<col style="width: 6%" />
+<col style="width: 13%" />
+<col style="width: 7%" />
 <col style="width: 9%" />
+<col style="width: 7%" />
+<col style="width: 14%" />
+<col style="width: 6%" />
+<col style="width: 5%" />
 <col style="width: 8%" />
+<col style="width: 7%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>dataset_short_name</p></td>
@@ -419,6 +420,7 @@ Note, information from all three sheets is required for a dataset to be added to
 <td><p>dataset_source</p></td>
 <td><p>dataset_distributor</p></td>
 <td><p>dataset_acknowledgement</p></td>
+<td><p>contact_email</p></td>
 <td><p>dataset_history</p></td>
 <td><p>dataset_description</p></td>
 <td><p>dataset_references</p></td>
@@ -432,6 +434,7 @@ Note, information from all three sheets is required for a dataset to be added to
 <td><p>&lt;name of your lab/institution (&lt;100 chars)&gt;</p></td>
 <td><p>&lt;the distributor of the data product (optional &lt;100 chars)&gt;</p></td>
 <td><p>&lt;the acknowledgment listed for the dataset &gt;</p></td>
+<td><p>&lt;Email address of data submitter. Note: This will be public information in the database.&gt;</p></td>
 <td><p>&lt;any note about the dataset evolution&gt;</p></td>
 <td><p>&lt;a descrption of your dataset&gt;</p></td>
 <td><p>&lt;list of associated docs/publications (&lt;500chars) &gt;</p></td>
@@ -491,6 +494,14 @@ Note, information from all three sheets is required for a dataset to be added to
 <li><p>type: string</p></li>
 <li><p>length: &lt;100 chars</p></li>
 <li><p>example: Bermuda Institute of Ocean Sciences</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>offical_cruise_name(s)</strong>: If applicable, list official cruise name associated with your dataset. (enter each ref. in a separate row). (optional).</dt><dd><ul class="simple">
+<li><p>type: string</p></li>
+<li><p>example:  KOK1606</p></li>
 </ul>
 </dd>
 </dl>
@@ -560,37 +571,46 @@ Note, information from all three sheets is required for a dataset to be added to
 <colgroup>
 <col style="width: 6%" />
 <col style="width: 6%" />
-<col style="width: 18%" />
 <col style="width: 5%" />
-<col style="width: 14%" />
-<col style="width: 12%" />
-<col style="width: 19%" />
-<col style="width: 9%" />
 <col style="width: 6%" />
+<col style="width: 13%" />
+<col style="width: 7%" />
+<col style="width: 18%" />
+<col style="width: 9%" />
+<col style="width: 7%" />
+<col style="width: 6%" />
+<col style="width: 5%" />
+<col style="width: 8%" />
 <col style="width: 6%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p>var_short_name</p></td>
-<td><p>var_long_name</p></td>
-<td><p>var_sensor</p></td>
-<td><p>var_unit</p></td>
-<td><p>var_spatial_res</p></td>
-<td><p>var_temporal_res</p></td>
-<td><p>var_discipline</p></td>
-<td><p>visualize</p></td>
-<td><p>var_keywords</p></td>
-<td><p>var_comment</p></td>
+<tr class="row-odd"><td><p>dataset_short_name</p></td>
+<td><p>dataset_long_name</p></td>
+<td><p>dataset_version</p></td>
+<td><p>dataset_release_date</p></td>
+<td><p>dataset_make</p></td>
+<td><p>dataset_source</p></td>
+<td><p>offical_cruise_name(s)</p></td>
+<td><p>dataset_distributor</p></td>
+<td><p>dataset_acknowledgement</p></td>
+<td><p>dataset_history</p></td>
+<td><p>dataset_description</p></td>
+<td><p>dataset_references</p></td>
+<td><p>climatology</p></td>
 </tr>
-<tr class="row-even"><td><p>&lt;variable short name (&lt;50 chars)&gt;</p></td>
-<td><p>&lt;variable long name (&lt;500 chars)&gt;</p></td>
-<td><p>&lt;device by which variable is measured (&lt;50 chars) examples: [satellite, cruise_name, simulation, …]&gt;</p></td>
-<td><p>&lt;variable unit (&lt;50 chars)&gt;</p></td>
-<td><p>&lt;variable spatial resolution (examples: [1/25° X 1/25° , 50km X 50km, Irregular] )&gt;</p></td>
-<td><p>&lt;variable temporal resolution (examples: [Hourly, Daily, Irregular] )&gt;</p></td>
-<td><p>&lt;associated discipline(s) (&lt;100 chars) (examples: [Physics, Chemistry, Biology, BioGeoChemistry, etc..])&gt; ↓</p></td>
-<td><p>&lt;0 is not visualizable, 1 is visualizable &gt;</p></td>
-<td><p>&lt;associated keywords (&lt;500 chars)&gt;</p></td>
-<td><p>&lt;variable comment/description&gt;</p></td>
+<tr class="row-even"><td><p>&lt;short name of your dataset (&lt;50 chars)&gt;</p></td>
+<td><p>&lt;long name of your dataset (&lt;500 chars)&gt;</p></td>
+<td><p>&lt;dataset version (&lt;50 chars)&gt;</p></td>
+<td><p>&lt;Format  %Y-%m-%d,  example: 2018-06-20&gt;</p></td>
+<td><p>&lt;how dataset is made (fixed options= [assimilation, model, observation]) (&lt;50 chars)&gt;</p></td>
+<td><p>&lt;name of your lab/institution (&lt;100 chars)&gt;</p></td>
+<td><p>&lt;If applicable, list official cruise name associated with your dataset.  (enter each ref. in a separate row). (optional)&gt;</p></td>
+<td><p>&lt;the distributor of the data product (optional &lt;100 chars)&gt;</p></td>
+<td><p>&lt;the acknowledgment listed for the dataset &gt;</p></td>
+<td><p>&lt;any note about the dataset evolution&gt;</p></td>
+<td><p>&lt;a descrption of your dataset&gt;</p></td>
+<td><p>&lt;list of associated docs/publications (&lt;500chars) &gt;</p></td>
+<td><p>&lt;null if not climatology, 1 climatology&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -721,7 +741,7 @@ Note, information from all three sheets is required for a dataset to be added to
     <p>
         &copy; Copyright 
       <span class="lastupdated">
-        Last updated on May 07, 2020.
+        Last updated on May 13, 2020.
       </span>
 
     </p>

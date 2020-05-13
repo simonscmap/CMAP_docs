@@ -162,14 +162,11 @@ First Sheet: "data"
 Second Sheet: "dataset_meta_data"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-+------------------------------------------+------------------------------------------+-------------------------------+------------------------------------------+---------------------------------------------------------------------------------------+---------------------------------------------+-------------------------------------------------------------+---------------------------------------------+----------------------------------------+--------------------------------+-----------------------------------------------------+-------------------------------------------+
-| dataset_short_name                       |    dataset_long_name                     |       dataset_version         | dataset_release_date                     |      dataset_make                                                                     |  dataset_source                             |    dataset_distributor                                      | dataset_acknowledgement                     |  dataset_history                       | dataset_description            |        dataset_references                           | climatology                               |
-+------------------------------------------+------------------------------------------+-------------------------------+------------------------------------------+---------------------------------------------------------------------------------------+---------------------------------------------+-------------------------------------------------------------+---------------------------------------------+----------------------------------------+--------------------------------+-----------------------------------------------------+-------------------------------------------+
-| <short name of your dataset (<50 chars)> | <long name of your dataset (<500 chars)> | <dataset version (<50 chars)> | <Format  %Y-%m-%d,  example: 2018-06-20> | <how dataset is made (fixed options= [assimilation, model, observation]) (<50 chars)> | <name of your lab/institution (<100 chars)> | <the distributor of the data product (optional <100 chars)> |<the acknowledgment listed for the dataset > | <any note about the dataset evolution> | <a descrption of your dataset> | <list of associated docs/publications (<500chars) > | <null if not climatology, 1 climatology>  |
-+------------------------------------------+------------------------------------------+-------------------------------+------------------------------------------+---------------------------------------------------------------------------------------+---------------------------------------------+-------------------------------------------------------------+---------------------------------------------+----------------------------------------+--------------------------------+-----------------------------------------------------+-------------------------------------------+
-
-
++------------------------------------------+------------------------------------------+-------------------------------+------------------------------------------+---------------------------------------------------------------------------------------+---------------------------------------------+-------------------------------------------------------------+---------------------------------------------+------------------------------------------------------------------------------------------+----------------------------------------+--------------------------------+-----------------------------------------------------+-------------------------------------------+
+| dataset_short_name                       |    dataset_long_name                     |       dataset_version         | dataset_release_date                     |      dataset_make                                                                     |  dataset_source                             |    dataset_distributor                                      | dataset_acknowledgement                     |                                       contact_email                                      |  dataset_history                       | dataset_description            |        dataset_references                           | climatology                               |
++------------------------------------------+------------------------------------------+-------------------------------+------------------------------------------+---------------------------------------------------------------------------------------+---------------------------------------------+-------------------------------------------------------------+---------------------------------------------+------------------------------------------------------------------------------------------+----------------------------------------+--------------------------------+-----------------------------------------------------+-------------------------------------------+
+| <short name of your dataset (<50 chars)> | <long name of your dataset (<500 chars)> | <dataset version (<50 chars)> | <Format  %Y-%m-%d,  example: 2018-06-20> | <how dataset is made (fixed options= [assimilation, model, observation]) (<50 chars)> | <name of your lab/institution (<100 chars)> | <the distributor of the data product (optional <100 chars)> |<the acknowledgment listed for the dataset > |<Email address of data submitter. Note: This will be public information in the database.> | <any note about the dataset evolution> | <a descrption of your dataset> | <list of associated docs/publications (<500chars) > | <null if not climatology, 1 climatology>  |
++------------------------------------------+------------------------------------------+-------------------------------+------------------------------------------+---------------------------------------------------------------------------------------+---------------------------------------------+-------------------------------------------------------------+---------------------------------------------+------------------------------------------------------------------------------------------+----------------------------------------+--------------------------------+-----------------------------------------------------+-------------------------------------------+
 
 
 **Columns by order**:
@@ -205,33 +202,37 @@ Second Sheet: "dataset_meta_data"
     - length: <100 chars
     - example: Bermuda Institute of Ocean Sciences
 
-7. **dataset_distributor**: name of the distributor of the data product (optional: if the dataset source differs from the distributor).
+7. **offical_cruise_name(s)**: If applicable, list official cruise name associated with your dataset. (enter each ref. in a separate row). (optional).
+    - type: string
+    - example:  KOK1606
+
+8. **dataset_distributor**: name of the distributor of the data product (optional: if the dataset source differs from the distributor).
     - type: string
     - length: <100 chars
     - example:  Distributed by NASA PODAAC
 
-8. **dataset_acknowledgement**: Any acknowledgement(s) for this dataset
+9. **dataset_acknowledgement**: Any acknowledgement(s) for this dataset
   	- type: string
   	- length: <100 chars
 
-9. **contact_email**: Email address of data submitter. Note: This will be public information in the database.
+10. **contact_email**: Email address of data submitter. Note: This will be public information in the database.
   	- type: string
   	- length: <100 chars
 
 
-10. **dataset_history**: notes regarding the evolution of the dataset with respect to the previous versions, if applicable.
+11. **dataset_history**: notes regarding the evolution of the dataset with respect to the previous versions, if applicable.
   	- type: string
   	- length: <100 chars
 
-11. **dataset_description**: A description of your dataset detailing collection and processing methodology.
+12. **dataset_description**: A description of your dataset detailing collection and processing methodology.
   	- type: string
   	- length: no limit
 
-12. **dataset_references**: Links/citations associated with the dataset documentations/publications (enter each ref. in a separate row). (optional).
+13. **dataset_references**: Links/citations associated with the dataset documentations/publications (enter each ref. in a separate row). (optional).
   	- type: string
   	- length: <500 chars per item
 
-13. **climatology**: is the dataset a climatology product? (<null if not climatology, 1 climatology>)
+14. **climatology**: is the dataset a climatology product? (<null if not climatology, 1 climatology>)
   	- type: string
   	- length: <10 chars
 
@@ -240,11 +241,16 @@ Third Sheet: "vars_meta_data"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-+-----------------------------------+-----------------------------------+--------------------------------------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+---------------------------------------------------+-----------------------------------+----------------------------------+
-|var_short_name                     |    var_long_name                  | var_sensor                                                                                             |  var_unit                   | var_spatial_res                                                                     |      var_temporal_res                                                  | var_discipline                                                                                              |       visualize                                   | var_keywords                      |  var_comment                     |
-+-----------------------------------+-----------------------------------+--------------------------------------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+---------------------------------------------------+-----------------------------------+----------------------------------+
-| <variable short name (<50 chars)> | <variable long name (<500 chars)> | <device by which variable is measured (<50 chars) examples: [satellite, cruise_name, simulation, ...]> | <variable unit (<50 chars)> | <variable spatial resolution (examples: [1/25° X 1/25° , 50km X 50km, Irregular] )> | <variable temporal resolution (examples: [Hourly, Daily, Irregular] )> | <associated discipline(s) (<100 chars) (examples: [Physics, Chemistry, Biology, BioGeoChemistry, etc..])> ↓ |  <0 is not visualizable, 1 is visualizable >      |<associated keywords (<500 chars)> | <variable comment/description>   |
-+-----------------------------------+-----------------------------------+--------------------------------------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+---------------------------------------------------+-----------------------------------+----------------------------------+
++------------------------------------------+------------------------------------------+-------------------------------+------------------------------------------+---------------------------------------------------------------------------------------+---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------+---------------------------------------------+----------------------------------------+--------------------------------+-----------------------------------------------------+-------------------------------------------+
+| dataset_short_name                       |    dataset_long_name                     |       dataset_version         | dataset_release_date                     |      dataset_make                                                                     |  dataset_source                             |               offical_cruise_name(s)                                                                                      |    dataset_distributor                                      | dataset_acknowledgement                     |  dataset_history                       | dataset_description            |        dataset_references                           | climatology                               |
++------------------------------------------+------------------------------------------+-------------------------------+------------------------------------------+---------------------------------------------------------------------------------------+---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------+---------------------------------------------+----------------------------------------+--------------------------------+-----------------------------------------------------+-------------------------------------------+
+| <short name of your dataset (<50 chars)> | <long name of your dataset (<500 chars)> | <dataset version (<50 chars)> | <Format  %Y-%m-%d,  example: 2018-06-20> | <how dataset is made (fixed options= [assimilation, model, observation]) (<50 chars)> | <name of your lab/institution (<100 chars)> | <If applicable, list official cruise name associated with your dataset.  (enter each ref. in a separate row). (optional)> | <the distributor of the data product (optional <100 chars)> |<the acknowledgment listed for the dataset > | <any note about the dataset evolution> | <a descrption of your dataset> | <list of associated docs/publications (<500chars) > | <null if not climatology, 1 climatology>  |
++------------------------------------------+------------------------------------------+-------------------------------+------------------------------------------+---------------------------------------------------------------------------------------+---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------+---------------------------------------------+----------------------------------------+--------------------------------+-----------------------------------------------------+-------------------------------------------+
+
+
+
+
+
 
 
 
