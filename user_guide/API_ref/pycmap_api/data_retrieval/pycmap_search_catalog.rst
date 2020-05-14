@@ -25,11 +25,11 @@ Search Catalog
     The passed keywords can provide any 'hint' associated with the target variables. Below are a few examples:
 
     - the exact variable name (e.g. NO3), or its linguistic term (nitrate)
-    - methodology (e.g. model, satellite ...), instrument (e.g. CTD, seaflow), or disciplines (e.g. physics, biology ...)
+    - methodology (e.g. model, satellite ...), instrument (e.g. CTD, SeaFlow), or disciplines (e.g. physics, biology ...)
     - the official cruise name (e.g. KOK1606), or unofficial cruise name (Falkor)
-    - the name of data producer (e.g Penny Chisholm) or institution name (MIT)
+    - the name of data producer (e.g. Penny Chisholm) or institution name (MIT)
 
-    If you searched for a variable with semantically-related-keywords and did not get the correct results, please let us know.
+    If you searched for a variable with semantically related keywords and did not get the correct results, please let us know.
     We can update the keywords at any point.
 
     |
@@ -88,6 +88,7 @@ Returns a list of optical measurements during the Gradients 1 cruise (KOK1606), 
  :scale: 10 %
 
 **SQL Statement**
+
 
 Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
 
