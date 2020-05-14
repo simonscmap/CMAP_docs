@@ -50,7 +50,6 @@ Catalog
 
 **SQL Statement**
 
-..COMMENT: Icon size is ok. I would put the icon and the "SQL Statement" side by side instead of the icon over the text. 
 
 Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
 
