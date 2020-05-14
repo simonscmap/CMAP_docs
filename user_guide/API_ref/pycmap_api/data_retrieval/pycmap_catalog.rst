@@ -45,22 +45,12 @@ Catalog
   api.get_catalog()
 
 
-.. code-block:: python
-
-  #!pip install pycmap -q     #uncomment to install pycmap, if necessary
-
-  import pycmap
-
-  api = pycmap.API(token='<YOUR_API_KEY>')
-  api.search_catalog('optics KOK1606')
-
-
-
-
 .. figure:: /_static/overview_icons/sql.png
  :scale: 10 %
 
 **SQL Statement**
+
+..COMMENT: Icon size is ok. I would put the icon and the "SQL Statement" side by side instead of the icon over the text. 
 
 Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
 
