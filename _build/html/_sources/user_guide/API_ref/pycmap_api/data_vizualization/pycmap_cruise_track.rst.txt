@@ -28,7 +28,6 @@ Cruise Track Plot
       API key every time because the API properties are stored locally after
       being called the first time.
 
-..COMMENT: The above 'API key' link is not working.
 
 
     |
