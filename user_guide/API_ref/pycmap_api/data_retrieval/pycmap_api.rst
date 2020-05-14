@@ -1,5 +1,6 @@
 .. _pycmapAPI:
 
+.. _`Data Visualization`: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_data_vizualization.html
 
 
 
@@ -28,7 +29,7 @@ API
         **headers: dict, optional, default: None**
             Additional headers to add to the client requests.
         **vizEngine: string, optional, default: 'plotly'**
-            Data visualization library used to render the graphs. The other option for visualization library is 'bokeh'. Notice some of the graphs (such as correlation matrix) are only suported by plotly.
+            Data visualization library used to render the graphs. The other option for visualization library is 'bokeh'. Note some of the graphs (such as correlation matrix) are only supported by plotly. See `Data Visualization`_ for more details.
         **exportDir: string, optional, default: './export/'**
             Path to local directory where the exported data are stored.
         **exportFormat: string, optional, default: '.csv'**
