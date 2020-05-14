@@ -16,7 +16,7 @@ Dataset Columns
 .. method:: columns(table)
 
 
-    Returns the column names at a given dataset.
+    Returns the column names of a given dataset.
 
     |
 
@@ -31,6 +31,7 @@ Dataset Columns
 
 **Example**
 
+Column names associated with the AMT 13 Cruise dataset.
 
 .. code-block:: python
 
@@ -50,13 +51,14 @@ Dataset Columns
 
 Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
 
+
 .. code-block:: sql
 
   EXEC uspColumns 'tableName'
 
 **Example:**
 
-Metadata associated with Argo salinity measurement
+Column names associated with the AMT 13 Cruise dataset.
 
 .. code-block:: sql
 
