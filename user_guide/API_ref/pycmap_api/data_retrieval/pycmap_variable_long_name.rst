@@ -38,6 +38,7 @@ Variable Long Name
 
 **Example**
 
+Returns the long name of the short name variable, adt, in the Altimetry Reprocessed dataset.
 
 .. code-block:: python
 
@@ -54,13 +55,17 @@ Variable Long Name
 
 **SQL Statement**
 
+..COMMENT: I would align the SQL icon and "SQL Statement" side by side. 
+
 Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
 
 .. code-block:: sql
 
   EXEC uspVariableLongName 'tableName', 'varName'
 
-**Example:**
+**Example**
+
+Returns the long name of the short name variable, adt, in the Altimetry Reprocessed dataset.
 
 .. code-block:: sql
 
