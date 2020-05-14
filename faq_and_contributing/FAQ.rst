@@ -65,18 +65,20 @@ Please keep this key for future use. All projects developed by Simons CMAP team 
 
 **Please do not share API keys.**
 
-
+..COMMENT: I would put "Please do not share API keys in a blue note box to give it the attention it needs.
 
 What is a DOI and how do I get one for my dataset?
 --------------------------------------------------
 
-A DOI or Digital Object Identifier is a digital identifier for a dataset.
-It allows for users to cite the use of a dataset and properly acknowledge the dataset creators.
-Some DOI providers, such as Zenodo, allow for dataset version controlling.
+A DOI or Digital Object Identifier is a digital identifier for a dataset. See the tutorial video below to learn how to obtain a DOI for your dataset using Zenodo. 
 
-We strongly suggest getting a DOI for your dataset prior to it's submission into CMAP. This will allow users to properly acknowledge your dataset.
+We strongly suggest getting a DOI for your dataset prior to it's submission into CMAP. It allows for users to cite the use of a dataset and properly acknowledge the dataset creators.
 
-Below is an example list of entities that may issue and link your dataset to a unique DOI:
+..COMMENT: You could also put the above sentence in a blue note box to emphasize the importance of getting a DOI before submitting a dataset. 
+
+Some DOI providers, such as Zenodo, allow for dataset version controlling. 
+
+Below is a list of entities that may issue and link your dataset to a unique DOI:
 
   - Zenodo_
   - Dryad_ (only accepts published datsets)
@@ -97,7 +99,7 @@ Below is an example list of entities that may issue and link your dataset to a u
         <iframe src="https://player.vimeo.com/video/407462463" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 80%; height: 100%;"></iframe>
     </div>
 
-
+..COMMENT: Could you make the tutorial video a popup screen? Then you could reduce the size of the video icon so you don't have a bulky video in the middle of the page. Great video though! It wasn't there the first time I read through this page so it was a surprise! 
 
 |
 
