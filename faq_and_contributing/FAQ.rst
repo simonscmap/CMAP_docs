@@ -63,20 +63,21 @@ What is an API Key and how do I get one?
 An API key is a unique identifier required to run all software packages. To obtain an API key, please register_ first and then go to https://simonscmap.com/apikeymanagement.
 Please keep this key for future use. All projects developed by Simons CMAP team are open-source and can be found on Github_.
 
-**Please do not share API keys.**
 
-
+.. note::
+  Please do not share API keys.
 
 What is a DOI and how do I get one for my dataset?
 --------------------------------------------------
 
-A DOI or Digital Object Identifier is a digital identifier for a dataset.
-It allows for users to cite the use of a dataset and properly acknowledge the dataset creators.
+A DOI or Digital Object Identifier is a digital identifier for a dataset. See the tutorial video below to learn how to obtain a DOI for your dataset using Zenodo.
+
+**We require a DOI to be registered for your dataset in the submission process**. It allows for users to cite the use of a dataset and properly acknowledge the dataset creators.
+
+
 Some DOI providers, such as Zenodo, allow for dataset version controlling.
 
-We strongly suggest getting a DOI for your dataset prior to it's submission into CMAP. This will allow users to properly acknowledge your dataset.
-
-Below is an example list of entities that may issue and link your dataset to a unique DOI:
+Below is a list of entities that may issue and link your dataset to a unique DOI:
 
   - Zenodo_
   - Dryad_ (only accepts published datsets)
@@ -96,7 +97,6 @@ Below is an example list of entities that may issue and link your dataset to a u
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
         <iframe src="https://player.vimeo.com/video/407462463" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 80%; height: 100%;"></iframe>
     </div>
-
 
 
 |
