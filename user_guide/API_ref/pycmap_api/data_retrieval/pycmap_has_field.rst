@@ -17,7 +17,7 @@ If Column Exists
 .. method:: has_field(tableName, varName)
 
 
-    Returns True if the specified column (field) exists in the table
+    Returns True if the specified column (field) exists in the table.
     Returns False if either table or variable does not exist (also see :ref:`columns`).
 
     |
@@ -37,6 +37,7 @@ If Column Exists
 
 **Example**
 
+Check for the presence of the variable short name, sla, in the Altimetry Reprocessed dataset. 
 
 .. code-block:: python
 
@@ -46,3 +47,6 @@ If Column Exists
 
   api = pycmap.API(token='<YOUR_API_KEY>')
   api.has_field('tblAltimetry_REP', 'sla')
+
+
+..COMMENT: Is there suppose to be SQL example next? Not sure. Just going with what the previous documents show.
