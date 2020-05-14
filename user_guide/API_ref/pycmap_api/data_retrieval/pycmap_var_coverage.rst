@@ -38,6 +38,7 @@ Variable Coverage
 
 **Example**
 
+Returns the spatial and temporal coverage of the short name variable, chl, in the Chlorophyll Reprocessed dataset. 
 
 .. code-block:: python
 
@@ -54,13 +55,17 @@ Variable Coverage
 
 **SQL Statement**
 
+..COMMENT: I would align the SQL icon and "SQL Statement" side by side. 
+
 Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
 
 .. code-block:: sql
 
   EXEC uspVariableCoverage 'tableName', 'varName'
 
-**Example:**
+**Example**
+
+Returns the spatial and temporal coverage of the short name variable, chl, in the Chlorophyll Reprocessed dataset. 
 
 .. code-block:: sql
 
