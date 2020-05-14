@@ -17,7 +17,7 @@ Is Gridded Product
 
 
 
-Returns True if the specified variable represents a gridded product; otherwise returns False. For instance, model outputs or satellite products in form of structured arrays are considered gridded products, while underway cruise measurements with irregular spatial or temporal resolutions are considered "sparse" products.
+Returns True if the specified variable represents a gridded product; otherwise returns False. For instance, model outputs or satellite products in the form of structured arrays are considered gridded products, while underway cruise measurements with irregular spatial or temporal resolutions are considered "sparse" products.
 
     :Parameters:
         **tableName: string**
@@ -34,6 +34,7 @@ Returns True if the specified variable represents a gridded product; otherwise r
 
 **Example**
 
+Checking if the snort name variable, argo_merge_salinity_adj, is a gridded product in the Argo dataset. 
 
 .. code-block:: python
 
@@ -43,3 +44,5 @@ Returns True if the specified variable represents a gridded product; otherwise r
 
   api = pycmap.API(token='<YOUR_API_KEY>')
   api.is_grid('tblArgoMerge_REP', 'argo_merge_salinity_adj')
+
+..COMMENT: Is there suppose to be a SQL example next? Not sure. Just checking. 
