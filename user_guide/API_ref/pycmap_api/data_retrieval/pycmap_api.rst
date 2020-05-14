@@ -1,12 +1,12 @@
 .. _pycmapAPI:
 
-.. _`Data Visualization`: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_data_vizualization.html
 
 
 
 API
 ===
 
+.. _`Data Visualization`: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_data_vizualization.html
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
    :target: https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/API.ipynb

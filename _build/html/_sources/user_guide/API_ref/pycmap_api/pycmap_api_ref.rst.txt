@@ -54,7 +54,6 @@ Please click here_ to download the pycmap project and associated documentation.
 +------------------------+------------------------+------------------------+------------------------+
 
 
-..COMMENT: I would decrease the size of the icons above too.
 
 
 

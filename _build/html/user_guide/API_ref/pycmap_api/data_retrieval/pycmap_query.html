@@ -265,7 +265,7 @@
 <dt>
 <code class="sig-name descname">query</code><span class="sig-paren">(</span><em class="sig-param">query</em><span class="sig-paren">)</span></dt>
 <dd><p><code class="docutils literal notranslate"><span class="pre">This</span> <span class="pre">is</span> <span class="pre">an</span> <span class="pre">'optional'</span> <span class="pre">page.</span> <span class="pre">If</span> <span class="pre">you</span> <span class="pre">are</span> <span class="pre">not</span> <span class="pre">planning</span> <span class="pre">and/or</span> <span class="pre">not</span> <span class="pre">interested</span> <span class="pre">in</span> <span class="pre">SQL</span> <span class="pre">coding,</span> <span class="pre">simply</span> <span class="pre">ignore</span> <span class="pre">this</span> <span class="pre">page</span> <span class="pre">please!</span></code></p>
-<p>Simons CMAP datasets are hosted in a SQL database and pycmap package provides the user with a number of pre-developed methods to extract and retrieve subsets of the data. The rest of this documentation is dedicated to explore and explain these methods. In addition to the pre-developed methods, we intend to leave the database open to custom scan queries for interested users. This method takes a custom SQL query statement and returns the results in form of a Pandas dataframe. The full list of table names and variable names (fields) can be obtained using the
+<p>Simons CMAP datasets are hosted in a SQL database and pycmap package provides the user with a number of pre-developed methods to extract and retrieve subsets of the data. The rest of this documentation is dedicated to exploring and explaining these methods. In addition to the pre-developed methods, we intend to leave the database open to custom scan queries for interested users. This method takes a custom SQL query statement and returns the results in form of a Pandas dataframe. The full list of table names and variable names (fields) can be obtained using the
 <a class="reference internal" href="pycmap_catalog.html#getcatalog"><span class="std std-ref">Catalog</span></a> method. In fact, one may use this very method to retrieve the table and field names:
 <code class="docutils literal notranslate"><span class="pre">query(‘EXEC</span> <span class="pre">uspCatalog’)</span></code>. A Dataset is stored in a table and each table field represents a variable. All data tables have the following fields:</p>
 <ul class="simple">
@@ -278,7 +278,7 @@
 <p class="admonition-title">Note</p>
 <p>Tables which represent a climatological dataset, such as ‘tblDarwin_Nutrient_Climatology’, will not have a ‘time’ field.
 Also, if a table represents a surface dataset, such as satellite products, there would be no ‘depth’ field. ‘depth’ is a positive number in meters;
-it is zero at the surface and increasing towards the ocean’s floor. ‘lat’ and ‘lon’ are in degrees units, ranging from -90° to 90° and -180° to 180°, respectively.</p>
+it is zero at the surface and increasing towards the ocean floor. ‘lat’ and ‘lon’ are in degrees units, ranging from -90° to 90° and -180° to 180°, respectively.</p>
 <p>Please keep in mind that some of the datasets are massive in size (10s of TB), avoid queries without WHERE clause (<code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">*</span> <span class="pre">FROM</span> <span class="pre">TABLENAME</span></code>).
 Always try to add some constraints on time, lat, lon, and depth fields (see the basic examples below).</p>
 <p>Moreover, the database hosts a wide range of predefined stored procedures and functions to streamline nearly all CMAP data services.
@@ -396,7 +396,7 @@ Below is a selected list of stored procedures and functions, their arguments wil
     <p>
         &copy; Copyright 
       <span class="lastupdated">
-        Last updated on May 04, 2020.
+        Last updated on May 14, 2020.
       </span>
 
     </p>
