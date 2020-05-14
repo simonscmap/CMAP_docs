@@ -51,7 +51,6 @@ Column names associated with the AMT 13 Cruise dataset.
 
 Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
 
-..COMMENT: I would align the SQL icon and "SQL Statement" side by side. 
 
 .. code-block:: sql
 
@@ -59,7 +58,7 @@ Here is how to achieve the same results using a direct SQL statement. Please ref
 
 **Example:**
 
-Column names associated with the AMT 13 Cruise dataset. 
+Column names associated with the AMT 13 Cruise dataset.
 
 .. code-block:: sql
 
