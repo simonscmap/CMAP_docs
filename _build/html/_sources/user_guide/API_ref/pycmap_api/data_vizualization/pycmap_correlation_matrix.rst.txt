@@ -172,7 +172,6 @@ variables (lines 7-8):
   Please review the **Example 1** at `Match (colocalize) Datasets`_ page
   since all of the mentioned tips directly apply to this example too.
 
-..COMMENT: The above 'Match (colocalize) Datasets' link is not working.
 
 
 .. code-block:: python
