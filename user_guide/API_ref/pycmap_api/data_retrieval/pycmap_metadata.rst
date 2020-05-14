@@ -53,7 +53,6 @@ Retrieve dataset metadata for the satellite SST and Argo salinity datasets.
 
 **SQL Statement**
 
-..COMMENT: I would align the SQL icon and "SQL Statement" side by side. 
 
 Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
 
