@@ -37,6 +37,7 @@ Variable Unit
 
 **Example**
 
+Returns the unit of the short name variable, silica_hot, in the HOT Particle Flux dataset. 
 
 .. code-block:: python
 
@@ -52,13 +53,17 @@ Variable Unit
 
 **SQL Statement**
 
+..COMMENT: I would align the SQL icon and "SQL Statement" side by side. 
+
 Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
 
 .. code-block:: sql
 
   EXEC uspVariableUnit 'tableName', 'varName'
 
-**Example:**
+**Example**
+
+Returns the unit of the short name variable, silica_hot, in the HOT Particle Flux dataset. 
 
 .. code-block:: sql
 
