@@ -21,8 +21,9 @@ numerical model estimates, and field expeditions.
 This package is adopted from pycmap_ which is the python client of Simons CMAP ecosystem.
 
 
-Usage
-*****
+.. raw:: html
+
+  <h2>Usage</h2>
 
 Clone or download the repository. The source code is in the src directory.
 The CMAP.m file abstracts the Simons CMAP API and provides the user with several
@@ -35,8 +36,10 @@ to store the API key on your local machine:
 
     CMAP.set_api_key('your api key');
 
-Documentation
-*************
+.. raw:: html
+
+  <h2>Documentation</h2>
+
 
 In the MATLAB Command Window run the following command to see the docs:
 
@@ -44,8 +47,9 @@ In the MATLAB Command Window run the following command to see the docs:
 
     doc CMAP
 
-Examples
-********
+.. raw:: html
+
+  <h2>Examples</h2>
 
 1. Get the list of data sets:
 

@@ -96,12 +96,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../api_ref.html">Software Packages</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../pycmap_api/pycmap_api_ref.html">pycmap API</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../cmap4r_api/cmap4r_api.html">cmap4r API</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">matcmap API</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#documentation">Documentation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
-</ul>
-</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">matcmap API</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../juliacmap_api/juliacmap_api_ref.html">juliacmap API</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../opedia_tutorials/opedia_tutorials.html">opedia (depreciated)</a></li>
 </ul>
@@ -229,9 +224,7 @@ It provides access to the Simons CMAP database where various ocean data sets are
 These data sets include multi-decadal remote sensing observations (satellite),
 numerical model estimates, and field expeditions.</p>
 <p>This package is adopted from <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/pycmap_api_ref.html">pycmap</a> which is the python client of Simons CMAP ecosystem.</p>
-<div class="section" id="usage">
-<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
-<p>Clone or download the repository. The source code is in the src directory.
+<h2>Usage</h2><p>Clone or download the repository. The source code is in the src directory.
 The CMAP.m file abstracts the Simons CMAP API and provides the user with several
 methods to query the database and extract subsets of data.
 In order to make API requests, you need to get an API key from <a class="reference external" href="https://simonscmap.com/register">Simons CMAP website</a>.
@@ -240,17 +233,11 @@ to store the API key on your local machine:</p>
 <div class="highlight-MATLAB notranslate"><div class="highlight"><pre><span></span><span class="n">CMAP</span><span class="p">.</span><span class="n">set_api_key</span><span class="p">(</span><span class="s">&#39;your api key&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="documentation">
-<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
-<p>In the MATLAB Command Window run the following command to see the docs:</p>
+<h2>Documentation</h2><p>In the MATLAB Command Window run the following command to see the docs:</p>
 <div class="highlight-MATLAB notranslate"><div class="highlight"><pre><span></span><span class="n">doc</span> <span class="n">CMAP</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="examples">
-<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic simple">
+<h2>Examples</h2><ol class="arabic simple">
 <li><p>Get the list of data sets:</p></li>
 </ol>
 <div class="highlight-MATLAB notranslate"><div class="highlight"><pre><span></span><span class="n">CMAP</span><span class="p">.</span><span class="n">datasets</span><span class="p">()</span>
@@ -281,7 +268,6 @@ to store the API key on your local machine:</p>
 </pre></div>
 </div>
 </div>
-</div>
 
 
            </div>
@@ -296,7 +282,7 @@ to store the API key on your local machine:</p>
     <p>
         &copy; Copyright 
       <span class="lastupdated">
-        Last updated on May 04, 2020.
+        Last updated on May 26, 2020.
       </span>
 
     </p>
