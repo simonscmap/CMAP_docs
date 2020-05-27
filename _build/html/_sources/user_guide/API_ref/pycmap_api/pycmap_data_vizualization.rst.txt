@@ -2,8 +2,8 @@
 
 
 
-Data Visualization
-==================
+Data Visualization Methods
+==========================
 
 .. _plotly: https://plot.ly/
 .. _bokeh: https://bokeh.pydata.org/en/latest/index.html
