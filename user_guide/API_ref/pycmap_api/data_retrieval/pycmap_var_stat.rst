@@ -53,8 +53,6 @@ Returns summary statistics for the short name variable, Prochlorococcus, in the 
 
 **SQL Statement**
 
-..COMMENT: I would align the SQL icon and "SQL Statement" side by side. 
-
 Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
 
 .. code-block:: sql
