@@ -38,6 +38,7 @@ Variable Coverage
 
 **Example**
 
+Returns the spatial and temporal coverage of the short name variable, chl, in the Chlorophyll Reprocessed dataset. 
 
 .. code-block:: python
 
@@ -60,7 +61,9 @@ Here is how to achieve the same results using a direct SQL statement. Please ref
 
   EXEC uspVariableCoverage 'tableName', 'varName'
 
-**Example:**
+**Example**
+
+Returns the spatial and temporal coverage of the short name variable, chl, in the Chlorophyll Reprocessed dataset. 
 
 .. code-block:: sql
 
