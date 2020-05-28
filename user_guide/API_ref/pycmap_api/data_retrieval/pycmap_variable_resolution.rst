@@ -36,6 +36,7 @@ Variable Resolution
 
 **Example**
 
+Returns the spatial and temporal resolution of the short name variable, AOD, in the MODIS Aerosol Optical Depth dataset. 
 
 .. code-block:: python
 
@@ -58,7 +59,9 @@ Here is how to achieve the same results using a direct SQL statement. Please ref
   EXEC uspVariableResolution 'tableName', 'varName'
 
 
-**Example:**
+**Example**
+
+Returns the spatial and temporal resolution of the short name variable, AOD, in the MODIS Aerosol Optical Depth dataset. 
 
 .. code-block:: sql
 
