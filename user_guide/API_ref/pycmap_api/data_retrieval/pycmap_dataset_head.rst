@@ -38,7 +38,7 @@ Dataset Head
 
 **Example**
 
-Retrieves the top five rows of dataset.
+Retrieves the top five rows of the Falkor 2018 cruise dataset.
 
 .. code-block:: python
 
@@ -61,9 +61,9 @@ Here is how to achieve the same results using a direct SQL statement. Please ref
 
   EXEC uspHead 'tableName', 'rows'
 
-**Example:**
+**Example**
 
-Top 5 rows from Falkor data set:
+Retrieves the top five rows of the Falkor 2018 cruise dataset.
 
 .. code-block:: sql
 
