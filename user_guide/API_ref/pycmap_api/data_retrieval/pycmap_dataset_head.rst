@@ -55,8 +55,6 @@ Retrieves the top five rows of the Falkor 2018 cruise dataset.
 
 **SQL Statement**
 
-..COMMENT: I would align the SQL icon and "SQL Statement" side by side.
-
 Here is how to achieve the same results using a direct SQL statement. Please refer to :ref:`query` for more information.
 
 .. code-block:: sql
