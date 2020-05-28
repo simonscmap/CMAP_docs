@@ -34,7 +34,7 @@ Returns True if the specified variable represents a gridded product; otherwise r
 
 **Example**
 
-Checking if the snort name variable, argo_merge_salinity_adj, is a gridded product in the Argo dataset. 
+Checking if the short name variable, argo_merge_salinity_adj, is a gridded product in the Argo dataset. 
 
 .. code-block:: python
 
