@@ -44,5 +44,3 @@ Checking if the short name variable, argo_merge_salinity_adj, is a gridded produ
 
   api = pycmap.API(token='<YOUR_API_KEY>')
   api.is_grid('tblArgoMerge_REP', 'argo_merge_salinity_adj')
-
-..COMMENT: Is there suppose to be a SQL example next? Not sure. Just checking. 
