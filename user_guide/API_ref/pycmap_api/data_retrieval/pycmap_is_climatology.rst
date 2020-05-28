@@ -44,4 +44,3 @@ Checking if the table, tblDarwin_Plankton_Climatology, is a climatological produ
   api = pycmap.API(token='<YOUR_API_KEY>')
   api.is_climatology('tblDarwin_Plankton_Climatology')
 
-..COMMENT: Is there suppose to be a SQL example next? Not sure. Just checking. 
