@@ -30,7 +30,22 @@ pycmap can be installed using pip:
 
   pip install pycmap
 
+You may find the above command installs pycmap to python2. Since pycmap requires python3, this causes issues. If this happens to you, try the following commands:
 
+.. code-block:: shell
+
+  python3 -m pip install pycmap
+  python3 -m pip install IPython
+   
+To test your installation, one easy way is to go into a python interactive shell and try importing the module:
+
+.. code-block:: shell
+
+  $ python3
+  >>> import pycmap
+  >>> 
+  #if you get no errors after importing (as above), then you are good to go!
+  
 
 In order to use pycmap, you will need to obtain an API key from https://simonscmap.com/apikeymanagement.
 
