@@ -38,6 +38,7 @@ Variable Long Name
 
 **Example**
 
+Returns the long name of the short name variable, adt, in the Altimetry Reprocessed dataset.
 
 .. code-block:: python
 
@@ -60,7 +61,9 @@ Here is how to achieve the same results using a direct SQL statement. Please ref
 
   EXEC uspVariableLongName 'tableName', 'varName'
 
-**Example:**
+**Example**
+
+Returns the long name of the short name variable, adt, in the Altimetry Reprocessed dataset.
 
 .. code-block:: sql
 

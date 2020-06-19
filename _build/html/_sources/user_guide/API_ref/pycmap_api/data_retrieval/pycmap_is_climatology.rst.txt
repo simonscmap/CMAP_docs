@@ -33,6 +33,7 @@ Is Climatology Product
 
 **Example**
 
+Checking if the table, tblDarwin_Plankton_Climatology, is a climatological product in the Darwin Climatology dataset. 
 
 .. code-block:: python
 
@@ -42,3 +43,4 @@ Is Climatology Product
 
   api = pycmap.API(token='<YOUR_API_KEY>')
   api.is_climatology('tblDarwin_Plankton_Climatology')
+

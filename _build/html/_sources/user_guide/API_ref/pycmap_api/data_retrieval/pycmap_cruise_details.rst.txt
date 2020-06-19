@@ -1,9 +1,10 @@
 .. _cruise_details:
 
 
-
 Cruise Details by Name
 ======================
+
+.. _`cruises()`: https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/data_retrieval/pycmap_list_cruises.html
 
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
@@ -24,7 +25,7 @@ Cruise Details by Name
 
     :Parameters:
         **cruiseName: string**
-          The official cruise name. If applicable, you may also use cruise "nickname" ('Diel', 'Gradients_1' ...). A full list of cruise names can be retrieved using cruise method.
+          The official cruise name. If applicable, you may also use cruise "nickname" ('Diel', 'Gradients_1' ...). A full list of cruise names can be retrieved using `cruises()`_ method.
 
 
 

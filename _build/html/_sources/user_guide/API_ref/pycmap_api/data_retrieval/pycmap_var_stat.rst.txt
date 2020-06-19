@@ -37,6 +37,7 @@ Variable Stat
 
 **Example**
 
+Returns summary statistics for the short name variable, Prochlorococcus, in the HOT LAVA Cruise dataset. 
 
 .. code-block:: python
 
@@ -58,9 +59,9 @@ Here is how to achieve the same results using a direct SQL statement. Please ref
 
   EXEC uspVariableStat 'tableName', 'varName'
 
-**Example:**
+**Example**
 
-List of satellite Chlorophyll products:
+Returns summary statistics for the short name variable, Prochlorococcus, in the HOT LAVA Cruise dataset. 
 
 .. code-block:: sql
 

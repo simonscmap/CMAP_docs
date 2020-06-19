@@ -141,6 +141,7 @@
 <p class="caption"><span class="caption-text">FAQ and Contributing</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../faq_and_contributing/datasubmission.html">Data Submission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../faq_and_contributing/datasubmission.html#data-template-structure">Data Template Structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../faq_and_contributing/FAQ.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../faq_and_contributing/contact.html">Contact and Contribute</a></li>
 </ul>
@@ -266,7 +267,7 @@
 <code class="sig-name descname">is_grid</code><span class="sig-paren">(</span><em class="sig-param">tableName</em>, <em class="sig-param">varName</em><span class="sig-paren">)</span><a class="headerlink" href="#is_grid" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<p>Returns True if the specified variable represents a gridded product; otherwise returns False. For instance, model outputs or satellite products in form of structured arrays are considered gridded products, while underway cruise measurements with irregular spatial or temporal resolutions are considered “sparse” products.</p>
+<p>Returns True if the specified variable represents a gridded product; otherwise returns False. For instance, model outputs or satellite products in the form of structured arrays are considered gridded products, while underway cruise measurements with irregular spatial or temporal resolutions are considered “sparse” products.</p>
 <blockquote>
 <div><dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -286,6 +287,7 @@
 <div class="line"><br /></div>
 </div>
 <p><strong>Example</strong></p>
+<p>Checking if the short name variable, argo_merge_salinity_adj, is a gridded product in the Argo dataset.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!pip install pycmap -q     #uncomment to install pycmap, if necessary</span>
 
 <span class="kn">import</span> <span class="nn">pycmap</span>
@@ -309,7 +311,7 @@
     <p>
         &copy; Copyright 
       <span class="lastupdated">
-        Last updated on May 27, 2020.
+        Last updated on Jun 19, 2020.
       </span>
 
     </p>
