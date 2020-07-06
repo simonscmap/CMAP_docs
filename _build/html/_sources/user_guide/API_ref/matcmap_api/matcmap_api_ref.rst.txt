@@ -29,7 +29,7 @@ Clone or download the repository. The source code is in the src directory.
 The CMAP.m file abstracts the Simons CMAP API and provides the user with several
 methods to query the database and extract subsets of data.
 In order to make API requests, you need to get an API key from `Simons CMAP website`_.
-Once you got your API key run the following command (in the MATLAB Command Window)
+Once you got your API key, run the following command (in the MATLAB Command Window)
 to store the API key on your local machine:
 
 .. code-block:: MATLAB
