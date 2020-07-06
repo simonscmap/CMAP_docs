@@ -1,4 +1,4 @@
-# File Structure <br/> 
+# File Structure <br/>
 
 <a id="toc"></a>
 ## Table of Contents
@@ -155,12 +155,12 @@ This name is meant to be used in programming codes and scripts. It should only c
 <br/><br/>    
 
 <figure>
-  <img id="fig_dataset_long_name_cat" src="./pics/dataset_long_name_cat.png" alt="Dataset Long_name in Catalog">
+  <img id="fig_dataset_long_name_cat" src="../_static/data_submission_pics/dataset_long_name_cat.png" alt="Dataset Long_name in Catalog">
   <figcaption>Figure 1. A sample dataset shown in the Simons CMAP catalog. The "dataset_long_name" is enclosed in the red rectangle.</figcaption>
 </figure>
 
 <figure>
-  <img id="fig_dataset_long_name_viz" src="./pics/dataset_long_name_viz_search.png" alt="Dataset Long_name in Visualization Page">
+  <img id="fig_dataset_long_name_viz" src="../_static/data_submission_pics/dataset_long_name_viz_search.png" alt="Dataset Long_name in Visualization Page">
   <figcaption>Figure 2. The "dataset_long_name" appears in the visualization page search dialog.</figcaption>
 </figure>
 
@@ -211,12 +211,12 @@ Specifies the group and/or the institute name of the data owner(s). It can also
 <br/><br/>  
 
 <figure>
-  <img id="fig_dataset_source_cat" src="./pics/dataset_source_cat.png" alt="Dataset Source in Catalog">
+  <img id="fig_dataset_source_cat" src="../_static/data_submission_pics/dataset_source_cat.png" alt="Dataset Source in Catalog">
   <figcaption>Figure 3. A sample dataset shown in the Simons CMAP catalog. The "dataset_source" is enclosed in the red rectangle.</figcaption>
 </figure>
 
 <figure>
-  <img id="fig_dataset_source_viz" src="./pics/dataset_source_viz.png" alt="Dataset Source in Visualizations">
+  <img id="fig_dataset_source_viz" src="../_static/data_submission_pics/dataset_source_viz.png" alt="Dataset Source in Visualizations">
   <figcaption>Figure 4. The "dataset_source" appears in visualizations made using the corresponding dataset (enclosed in the red rectangle).</figcaption>
 </figure>
 
@@ -243,7 +243,7 @@ Specify how your dataset should be acknowleged. You may mention your funding age
 <br/><br/>  
 
 <figure>
-  <img id="fig_dataset_ack_cat" src="./pics/dataset_ack_cat.png" alt="Dataset Acknowledgment in Catalog">
+  <img id="fig_dataset_ack_cat" src="../_static/data_submission_pics/dataset_ack_cat.png" alt="Dataset Acknowledgment in Catalog">
   <figcaption>Figure 5. A sample dataset shown in the Simons CMAP catalog. The "dataset_acknowledgement" is enclosed in the red rectangle.</figcaption>
 </figure>
 
@@ -266,7 +266,7 @@ Include any description that you think will help a reader  better understand you
 <br/><br/>    
 
 <figure>
-  <img id="fig_dataset_description_cat" src="./pics/dataset_description_cat.png" alt="Dataset description in Catalog">
+  <img id="fig_dataset_description_cat" src="../_static/data_submission_pics/dataset_description_cat.png" alt="Dataset description in Catalog">
   <figcaption>Figure 6. A sample dataset shown in the Simons CMAP catalog. The "dataset_description" is accessible using the "Dataset Details" button, enclosed in the red rectangle.</figcaption>
 </figure>
 
@@ -321,13 +321,13 @@ This name is meant to be used in programming codes and scripts. It should only c
 <br/><br/>    
 
 <figure>
-  <img id="fig_var_short_name_cat" src="./pics/var_short_name_cat.png" alt="Variable short name in catalog">
+  <img id="fig_var_short_name_cat" src="../_static/data_submission_pics/var_short_name_cat.png" alt="Variable short name in catalog">
   <figcaption>Figure 7. A sample dataset shown in the Simons CMAP catalog. The "var_short_name" is highlighted in the red rectangle.</figcaption>
 </figure>
 
 
 <figure>
-  <img id="fig_var_short_name_viz" src="./pics/viz_short_name.png" alt="Variable short name in a figure">
+  <img id="fig_var_short_name_viz" src="../_static/data_submission_pics/viz_short_name.png" alt="Variable short name in a figure">
   <figcaption>Figure 8. A sample figure generated in the Simons CMAP catalog. The "var_short_name" appears as the figure title and is highlighted in the red rectangle.</figcaption>
 </figure>
 
@@ -344,12 +344,12 @@ This name is meant to be used in programming codes and scripts. It should only c
 <br/><br/>    
 
 <figure>
-  <img id="fig_var_long_name_cat" src="./pics/var_long_name_cat.png" alt="Variable long name in catalog">
+  <img id="fig_var_long_name_cat" src="../_static/data_submission_pics/var_long_name_cat.png" alt="Variable long name in catalog">
   <figcaption>Figure 9. A sample dataset shown in the Simons CMAP catalog. The "var_long_name" is highlighted in the red rectangle.</figcaption>
 </figure>
 
 <figure>
-  <img id="fig_var_long_name_search_viz" src="./pics/var_long_name_viz_search.png" alt="var long name in visualization page">
+  <img id="fig_var_long_name_search_viz" src="../_static/data_submission_pics/var_long_name_viz_search.png" alt="var long name in visualization page">
   <figcaption>Figure 10. The "var_long_name" appears in the visualization page search dialog.</figcaption>
 </figure>
 
@@ -447,7 +447,7 @@ Use this field to communicate any detailed information about this particular var
 <br/><br/>    
 
 <figure>
-  <img id="fig_var_comment_cat" src="./pics/var_comment_cat.png" alt="Variable description in Catalog">
+  <img id="fig_var_comment_cat" src="../_static/data_submission_pics/var_comment_cat.png" alt="Variable description in Catalog">
   <figcaption>Figure 11. A sample dataset shown in the Simons CMAP catalog. The "var_commentn" is accessible using the "Comment" button, highlighted in the red rectangle.</figcaption>
 </figure>
 
