@@ -1,4 +1,4 @@
-# Simons CMAP Data Submission: <br/> File Structure
+# File Structure <br/> 
 
 <a id="toc"></a>
 ## Table of Contents
