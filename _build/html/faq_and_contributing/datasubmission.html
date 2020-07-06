@@ -2,8 +2,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -15,6 +14,11 @@
 
 
   
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/style.css" type="text/css" />
+
+  
   
     <link rel="shortcut icon" href="../_static/CMAP_logo.png"/>
   
@@ -22,29 +26,26 @@
   
 
   
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/style.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="FAQ" href="FAQ.html" />
+    <link rel="next" title="Simons CMAP Data Submission: File Structure" href="file_structure.html" />
     <link rel="prev" title="SQL Queries" href="../user_guide/API_ref/opedia_tutorials/opedia_sql.html" /> 
 </head>
 
@@ -59,7 +60,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> Simons CMAP
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Simons CMAP
           
 
           
@@ -82,6 +83,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
     
@@ -102,21 +104,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#dataset-examples">Dataset Examples</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#data-template-structure">Data Template Structure</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#dataset-requirements">Dataset Requirements</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#data-must-be-in-the-format">1. Data must be in the format:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#data-must-have-supporting-meta-data-ie-data-about-your-data">2. Data must have supporting meta-data, ie. data about your data.</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#data-template-and-file-structure">Data Template and File Structure</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#dataset-filename-convention">Dataset Filename Convention</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#first-sheet-data">First Sheet: “data”</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#second-sheet-dataset-meta-data">Second Sheet: “dataset_meta_data”</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#third-sheet-vars-meta-data">Third Sheet: “vars_meta_data”</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="file_structure.html">Simons CMAP Data Submission: <br/> File Structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="FAQ.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contact.html">Contact and Contribute</a></li>
 </ul>
@@ -146,6 +134,7 @@
     
 
         </div>
+        
       </div>
     </nav>
 
@@ -184,7 +173,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>Data Submission</li>
     
@@ -257,474 +246,11 @@
 <div class="section" id="dataset-examples">
 <h2>Dataset Examples<a class="headerlink" href="#dataset-examples" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/simonscmap/DBIngest/raw/master/template/SeaFlow_example.xlsx">Download SeaFlow Example</a></p></li>
-<li><p><a class="reference external" href="https://github.com/simonscmap/DBIngest/raw/master/template/Gradients1-KOK1606-FluorometricChlorophyll_2020-03-03_V1.1_example.xlsx">Download Gradients 1 Fluormetric Chl Example</a></p></li>
-<li><p><a class="reference external" href="https://github.com/simonscmap/DBIngest/raw/master/template/KOK1606_Gradients1_Cobalamin_example.xlsx">Download Gradients 1 Cobalamin Example</a></p></li>
+<li><p><a class="reference external" href="https://github.com/simonscmap/DBIngest/raw/master/template/SeaFlow_2020_06_25_example.xlsx">Download SeaFlow Example</a></p></li>
+<li><p><a class="reference external" href="https://github.com/simonscmap/DBIngest/raw/master/template/Gradients1-KOK1606-FluorometricChlorophyll_2020_06_25_example.xlsx">Download Gradients 1 Fluormetric Chl Example</a></p></li>
+<li><p><a class="reference external" href="https://github.com/simonscmap/DBIngest/raw/master/template/KOK1606_Gradients1_Cobalamin_example_2020_06_26.xlsx">Download Gradients 1 Cobalamin Example</a></p></li>
 <li><p><a class="reference external" href="https://github.com/simonscmap/DBIngest/raw/master/template/KM1906_Gradients3_uwayCTD_example.xlsx">Download Gradients 3 Underway CTD Example</a></p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="data-template-structure">
-<h1>Data Template Structure<a class="headerlink" href="#data-template-structure" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="dataset-requirements">
-<h2>Dataset Requirements<a class="headerlink" href="#dataset-requirements" title="Permalink to this headline">¶</a></h2>
-<p>To add your dataset to CMAP, please use the following data and metadata conventions.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>CMAP is not a data repository and we do not archive and version control datasets. We recommend that once your dataset has been approved for submission to CMAP, you register your dataset at a data repository (Zenodo etc.) and obtain a DOI. We will include your DOI when the data is ingested into CMAP.</p>
-</div>
-<div class="section" id="data-must-be-in-the-format">
-<h3>1. Data must be in the format:<a class="headerlink" href="#data-must-be-in-the-format" title="Permalink to this headline">¶</a></h3>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 8%" />
-<col style="width: 7%" />
-<col style="width: 7%" />
-<col style="width: 26%" />
-<col style="width: 23%" />
-<col style="width: 7%" />
-<col style="width: 23%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>time</p></td>
-<td><p>lat</p></td>
-<td><p>lon</p></td>
-<td><p>depth {if exists}</p></td>
-<td><p>&lt;<span class="math notranslate nohighlight">\(var_1\)</span>&gt;</p></td>
-<td><p>…</p></td>
-<td><p>&lt;<span class="math notranslate nohighlight">\(var_n\)</span>&gt;</p></td>
-</tr>
-</tbody>
-</table>
-<p>Data in CMAP is indexed on space and time. To enable data to be co-localized, it must be in this format.</p>
-</div>
-<div class="section" id="data-must-have-supporting-meta-data-ie-data-about-your-data">
-<h3>2. Data must have supporting meta-data, ie. data about your data.<a class="headerlink" href="#data-must-have-supporting-meta-data-ie-data-about-your-data" title="Permalink to this headline">¶</a></h3>
-<p>For other scientists to find and use your data, we need metadata and the variables within the dataset.</p>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-</div>
-</div>
-<div class="section" id="data-template-and-file-structure">
-<h2>Data Template and File Structure<a class="headerlink" href="#data-template-and-file-structure" title="Permalink to this headline">¶</a></h2>
-<p>The CMAP data template consists of three sections: data, dataset metadata, and variable metadata. Data is stored in the first sheet and the sheet title is “data”. The second sheet stores the dataset meta-data and is called “dataset_meta_data”. Meta-data associated with the variables in the dataset are kept in the third sheet, “vars_meta_data”.</p>
-<p>The current data template is an excel spreadsheet. If submitting data in the multi-sheet format does not work for you, the data, dataset_metadata, and vars_metadata .csv’s can be submitted individually.
-Note, information from all three sheets is required for a dataset to be added to CMAP. If you are submitting a dataset that is too large to be stored in a tabular format, the preferred format is netcdf for the data and tabular data for the metadata.</p>
-<div class="section" id="dataset-filename-convention">
-<h3>Dataset Filename Convention<a class="headerlink" href="#dataset-filename-convention" title="Permalink to this headline">¶</a></h3>
-<p>Dataset filename: &lt;dataset_short_name&gt;_&lt;dataset_release_data&gt;_v&lt;dataset_version&gt;.xlxs</p>
-<p>Example: seaflow_2018-05-25_v1.0.xlxs</p>
-<p><strong>&lt;dataset_short_name&gt;: short name of the dataset</strong>
-- length: less than 50 characters</p>
-<p><strong>&lt;dataset_release_data&gt;: date of dataset release</strong>
-- format: %Y-%m-%d
-- note: zero padding required</p>
-<p><strong>&lt;dataset_version&gt;: associated dataset version</strong>
-- length: less than 50 characters</p>
-</div>
-<div class="section" id="first-sheet-data">
-<h3>First Sheet: “data”<a class="headerlink" href="#first-sheet-data" title="Permalink to this headline">¶</a></h3>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 36%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 15%" />
-<col style="width: 28%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>time</p></td>
-<td><p>lat</p></td>
-<td><p>lon</p></td>
-<td><p>depth</p></td>
-<td><p>&lt;v_1&gt;</p></td>
-</tr>
-<tr class="row-even"><td><p>&lt;corresponding datetime&gt; (%Y-%m-%dT%H:%M:%S)</p></td>
-<td><p>&lt;latitude&gt;</p></td>
-<td><p>&lt;longitude&gt;</p></td>
-<td><p>depth (if exists)</p></td>
-<td><p>&lt;first variable&gt; (var_short_name)</p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Columns by order</strong>:</p>
-<ol class="arabic simple">
-<li><dl class="simple">
-<dt><strong>time</strong>: corresponding datetime</dt><dd><ul class="simple">
-<li><p>type: datetime</p></li>
-<li><p>format: %Y-%m-%d %H:%M:%S [example: 2018-03-29 18:05:55]</p></li>
-<li><p>time zone: UTC</p></li>
-<li><p>note: there is a blank space between date and time</p></li>
-<li><p>note: zero padding required</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>lat</strong>: latitude</dt><dd><ul class="simple">
-<li><p>type: float</p></li>
-<li><p>format: Decimal (not military grid system)</p></li>
-<li><p>unit: degree north</p></li>
-<li><p>range: [-90, 90]</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>lon</strong>: longitude</dt><dd><ul class="simple">
-<li><p>type: float</p></li>
-<li><p>format: Decimal (not military grid system)</p></li>
-<li><p>unit: degree east</p></li>
-<li><p>range: [-180, 180]</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>depth</strong>: depth</dt><dd><ul class="simple">
-<li><p>type: float</p></li>
-<li><p>unit: meters</p></li>
-<li><p>range: [0, ∞]</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>&lt;v_1&gt;</strong>: first variable (short name)</dt><dd><ul class="simple">
-<li><p>Add more columns similar to the last column, if dataset has more than one variable.</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-</ol>
-</div>
-<div class="section" id="second-sheet-dataset-meta-data">
-<h3>Second Sheet: “dataset_meta_data”<a class="headerlink" href="#second-sheet-dataset-meta-data" title="Permalink to this headline">¶</a></h3>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 4%" />
-<col style="width: 5%" />
-<col style="width: 11%" />
-<col style="width: 17%" />
-<col style="width: 6%" />
-<col style="width: 8%" />
-<col style="width: 6%" />
-<col style="width: 11%" />
-<col style="width: 5%" />
-<col style="width: 4%" />
-<col style="width: 7%" />
-<col style="width: 5%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>dataset_short_name</p></td>
-<td><p>dataset_long_name</p></td>
-<td><p>dataset_version</p></td>
-<td><p>dataset_release_date</p></td>
-<td><p>dataset_make</p></td>
-<td><p>official_cruise_name(s)</p></td>
-<td><p>dataset_source</p></td>
-<td><p>dataset_distributor</p></td>
-<td><p>dataset_acknowledgement</p></td>
-<td><p>contact_email</p></td>
-<td><p>dataset_history</p></td>
-<td><p>dataset_description</p></td>
-<td><p>dataset_references</p></td>
-<td><p>climatology</p></td>
-</tr>
-<tr class="row-even"><td><p>&lt;short name of your dataset (&lt;50 chars)&gt;</p></td>
-<td><p>&lt;long name of your dataset (&lt;500 chars)&gt;</p></td>
-<td><p>&lt;dataset version (&lt;50 chars)&gt;</p></td>
-<td><p>&lt;Format  %Y-%m-%d,  example: 2018-06-20&gt;</p></td>
-<td><p>&lt;how dataset is made (fixed options= [assimilation, model, observation]) (&lt;50 chars)&gt;</p></td>
-<td><p>&lt;If applicable, list official cruise name associated with your dataset. ex. KOK1606 (enter each ref. in a separate row) (optional)&gt;</p></td>
-<td><p>&lt;name of your lab/institution (&lt;100 chars)&gt;</p></td>
-<td><p>&lt;the distributor of the data product (optional &lt;100 chars)&gt;</p></td>
-<td><p>&lt;the acknowledgment listed for the dataset &gt;</p></td>
-<td><p>&lt;Email address of data submitter. Note: This will be public information in the database.&gt;</p></td>
-<td><p>&lt;any note about the dataset evolution&gt;</p></td>
-<td><p>&lt;a descrption of your dataset&gt;</p></td>
-<td><p>&lt;list of associated docs/publications (&lt;500chars) &gt;</p></td>
-<td><p>&lt;null if not climatology, 1 climatology&gt;</p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Columns by order</strong>:</p>
-<ol class="arabic simple">
-<li><dl class="simple">
-<dt><strong>dataset_short_name</strong>: dataset short name</dt><dd><ul class="simple">
-<li><p>type: string</p></li>
-<li><p>length: &lt;50 chars</p></li>
-<li><p>short, human readable name of your dataset.</p></li>
-<li><p>example: BATS Bacteria Production</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>dataset_long_name</strong>: descriptive dataset name</dt><dd><ul class="simple">
-<li><p>type: string</p></li>
-<li><p>length: &lt;500 chars</p></li>
-<li><p>Descriptive human readable name of your dataset</p></li>
-<li><p>example: Bermuda Atlantic Time-series Study (BATS) Bacteria Production</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>dataset_version</strong>: dataset version</dt><dd><ul class="simple">
-<li><p>type: string</p></li>
-<li><p>length: &lt;50 chars</p></li>
-<li><p>examples: V1, Version 3.5</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>dataset_release_date</strong>: dataset release date</dt><dd><ul class="simple">
-<li><p>type: date</p></li>
-<li><p>format: %Y-%m-%d (zero padding required)</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>dataset_make</strong>: how dataset is made (fixed options= [assimilation, model, observation])</dt><dd><ul class="simple">
-<li><p>type: string</p></li>
-<li><p>length: &lt;50 chars</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>dataset_source</strong>: name of your lab and/or institution</dt><dd><ul class="simple">
-<li><p>type: string</p></li>
-<li><p>length: &lt;100 chars</p></li>
-<li><p>example: Bermuda Institute of Ocean Sciences</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>official_cruise_name(s)</strong>: If applicable, list official cruise name associated with your dataset. (enter each ref. in a separate row). (optional).</dt><dd><ul class="simple">
-<li><p>type: string</p></li>
-<li><p>example:  KOK1606</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>dataset_distributor</strong>: name of the distributor of the data product (optional: if the dataset source differs from the distributor).</dt><dd><ul class="simple">
-<li><p>type: string</p></li>
-<li><p>length: &lt;100 chars</p></li>
-<li><p>example:  Distributed by NASA PODAAC</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>dataset_acknowledgement</strong>: Any acknowledgement(s) for this dataset</dt><dd><ul class="simple">
-<li><p>type: string</p></li>
-<li><p>length: &lt;100 chars</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>contact_email</strong>: Email address of data submitter. Note: This will be public information in the database.</dt><dd><ul class="simple">
-<li><p>type: string</p></li>
-<li><p>length: &lt;100 chars</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>dataset_history</strong>: notes regarding the evolution of the dataset with respect to the previous versions, if applicable.</dt><dd><ul class="simple">
-<li><p>type: string</p></li>
-<li><p>length: &lt;100 chars</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>dataset_description</strong>: A description of your dataset detailing collection and processing methodology.</dt><dd><ul class="simple">
-<li><p>type: string</p></li>
-<li><p>length: no limit</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>dataset_references</strong>: Links/citations associated with the dataset documentations/publications (enter each ref. in a separate row). (optional).</dt><dd><ul class="simple">
-<li><p>type: string</p></li>
-<li><p>length: &lt;500 chars per item</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>climatology</strong>: is the dataset a climatology product? (&lt;null if not climatology, 1 climatology&gt;)</dt><dd><ul class="simple">
-<li><p>type: string</p></li>
-<li><p>length: &lt;10 chars</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-</ol>
-</div>
-<div class="section" id="third-sheet-vars-meta-data">
-<h3>Third Sheet: “vars_meta_data”<a class="headerlink" href="#third-sheet-vars-meta-data" title="Permalink to this headline">¶</a></h3>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 6%" />
-<col style="width: 6%" />
-<col style="width: 18%" />
-<col style="width: 5%" />
-<col style="width: 14%" />
-<col style="width: 12%" />
-<col style="width: 19%" />
-<col style="width: 9%" />
-<col style="width: 6%" />
-<col style="width: 6%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>var_short_name</p></td>
-<td><p>var_long_name</p></td>
-<td><p>var_sensor</p></td>
-<td><p>var_unit</p></td>
-<td><p>var_spatial_res</p></td>
-<td><p>var_temporal_res</p></td>
-<td><p>var_discipline</p></td>
-<td><p>visualize</p></td>
-<td><p>var_keywords</p></td>
-<td><p>var_comment</p></td>
-</tr>
-<tr class="row-even"><td><p>&lt;variable short name (&lt;50 chars)&gt;</p></td>
-<td><p>&lt;variable long name (&lt;500 chars)&gt;</p></td>
-<td><p>&lt;device by which variable is measured (&lt;50 chars) examples: [satellite, cruise_name, simulation, …]&gt;</p></td>
-<td><p>&lt;variable unit (&lt;50 chars)&gt;</p></td>
-<td><p>&lt;variable spatial resolution (examples: [1/25° X 1/25° , 50km X 50km, Irregular] )&gt;</p></td>
-<td><p>&lt;variable temporal resolution (examples: [Hourly, Daily, Irregular] )&gt;</p></td>
-<td><p>&lt;associated discipline(s) (&lt;100 chars) (examples: [Physics, Chemistry, Biology, BioGeoChemistry, etc..])&gt; ↓</p></td>
-<td><p>&lt;0 is not visualizable, 1 is visualizable &gt;</p></td>
-<td><p>&lt;associated keywords (&lt;500 chars)&gt;</p></td>
-<td><p>&lt;variable comment/description&gt;</p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Columns by order</strong>:</p>
-<ol class="arabic">
-<li><dl class="simple">
-<dt><strong>var_short_name</strong>: variable short name</dt><dd><ul class="simple">
-<li><p>type: string</p></li>
-<li><p>length: &lt;50 chars</p></li>
-<li><p>Computer-readable short name. Should not contain any leading numbers, special characters (ex: ‘&amp;’) or spaces.</p></li>
-<li><p>example: SST</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>var_long_name</strong>: descriptive variable name</dt><dd><ul class="simple">
-<li><p>type: string</p></li>
-<li><p>length: &lt;500 chars</p></li>
-<li><p>Human readable variable name. Think of this as a common name for the variable.</p></li>
-<li><p>example: Sea Surface Temperature</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>var_sensor</strong>: device by which variable is measured</dt><dd><ul class="simple">
-<li><p>type: string</p></li>
-<li><p>length: &lt;50 chars</p></li>
-<li><p>examples: [satellite, in-situ, blen, flow cytometry, CTD, underway CTD, Optical, Float, Drifter, AUV etc..]</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>var_unit</strong>: variable unit</dt><dd><ul class="simple">
-<li><p>type: string</p></li>
-<li><p>length: &lt;50 chars</p></li>
-<li><p>Prefer symbols to descriptions.</p></li>
-<li><p>example: “/” is better than “per”</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>var_spatial_res</strong>: variable spatial resolution</dt><dd><ul class="simple">
-<li><p>type: string</p></li>
-<li><p>length: &lt;50 chars</p></li>
-<li><p>examples: [1/25° X 1/25° , 50km X 50km, Irregular, …]</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>var_temporal_res</strong>: variable temporal resolution</dt><dd><ul class="simple">
-<li><p>type: string</p></li>
-<li><p>length: &lt;50 chars</p></li>
-<li><p>examples: [Hourly, Daily, Irregular, …]</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>var_discipline</strong>: the closest discipline(s) associated with the variable</dt><dd><ul class="simple">
-<li><p>type: string</p></li>
-<li><p>length: &lt;100 chars</p></li>
-<li><p>examples: [Physics, Chemistry, Biology, BioGeoChemistry, …]</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>visualize</strong>: Is this variable visualizable? If not, it can be excluded from the Simons CMAP web application.</dt><dd><ul class="simple">
-<li><p>type: int</p></li>
-<li><p>length: &lt;2 chars</p></li>
-<li><p>examples: [0 is not visualizable, 1 is visualizable], [station # = 0 (non visualize), prochlorococcus abundance = 1 (visualize)]</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl>
-<dt><strong>var_keywords</strong>: keywords pertinent to the variable (separated by comma).</dt><dd><ul class="simple">
-<li><p>type: string</p></li>
-<li><p>length: &lt;500 chars</p></li>
-<li><p>delimiter = ‘,’</p></li>
-<li><p>examples: [field sample, Biology, abundance, synechococcus, …]</p></li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>Keywords are variable-specific and case-insensitive. Please separate each keyword by a comma. The suggested format for each variable keyword list is:</strong></p>
-<ul class="simple">
-<li><p>Example keywords related to any official or unofficial variable names:   pro / prochloro / …</p></li>
-<li><p>Example keywords related to sensor/apparatus:  cruise / satellite / computer (in case of mode) / SeaFlow / ….</p></li>
-<li><p>Example keywords related to official or unofficial cruise names (if applicable): KM1427 / Gradients 2.0 / ….</p></li>
-<li><p>Example keywords related to data owners institution:  UW / University of Washington / …</p></li>
-<li><p>Example keywords related to data production techniques: cytometry / flow cytometry / …</p></li>
-<li><p>Example keywords related to the research context: omics / 16s / …</p></li>
-<li><p>Example keywords related to the associated discipline(s): chemistry / biology / physics / biogeochemical / biogeography …</p></li>
-<li><p>Any other keywords you think are relevant</p></li>
-</ul>
-</div>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>var_comment</strong>: any other comment about the variable.</dt><dd><ul class="simple">
-<li><p>type: string</p></li>
-<li><p>length: no limit</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-</ol>
-</div>
 </div>
 </div>
 
@@ -739,14 +265,22 @@ Note, information from all three sheets is required for a dataset to be added to
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 
       <span class="lastupdated">
-        Last updated on Jun 19, 2020.
+        Last updated on Jul 06, 2020.
       </span>
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -757,7 +291,6 @@ Note, information from all three sheets is required for a dataset to be added to
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

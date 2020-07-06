@@ -32,7 +32,7 @@ Oceans Melting Greenland AXCTD
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/Oceans_Melting_Greenland_desc.md
+.. include:: ../dataset_descriptions/Oceans_Melting_Greenland_desc.md
     :start-line: 0
 
 

@@ -22,7 +22,7 @@ KM1709 Mesoscope 'Omics - Dyhrman Lab
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/KM1709_mesoscope_Dyhrman_Omics_desc.md
+.. include:: ../dataset_descriptions/KM1709_mesoscope_Dyhrman_Omics_desc.md
     :start-line: 0
 
 Table of Variables

@@ -24,7 +24,7 @@ KM1906 Gradients 3 Cruise
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/km1906_gradients3_desc.md
+.. include:: ../dataset_descriptions/km1906_gradients3_desc.md
     :start-line: 0
 
 

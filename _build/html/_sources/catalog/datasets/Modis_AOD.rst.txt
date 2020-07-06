@@ -28,7 +28,7 @@ MODIS Aerosol Optical Depth
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/Modis_AOD_desc.md
+.. include:: ../dataset_descriptions/Modis_AOD_desc.md
     :start-line: 0
 
 

@@ -27,7 +27,7 @@ Dataset Description
 *******************
 
 
-.. mdinclude:: ../dataset_descriptions/CPR_phytoplankton_desc.md
+.. include:: ../dataset_descriptions/CPR_phytoplankton_desc.md
     :start-line: 0
 
 

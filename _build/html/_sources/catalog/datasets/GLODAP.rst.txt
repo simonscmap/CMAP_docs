@@ -22,7 +22,7 @@ Global Ocean Data Analysis Project
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/GLODAP_desc.md
+.. include:: ../dataset_descriptions/GLODAP_desc.md
     :start-line: 0
 
 

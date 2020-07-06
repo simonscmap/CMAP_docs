@@ -24,7 +24,7 @@ Dataset Description
 *******************
 
 
-.. mdinclude:: ../dataset_descriptions/HOT_Bottle_ALOHA_desc.md
+.. include:: ../dataset_descriptions/HOT_Bottle_ALOHA_desc.md
     :start-line: 0
 
 

@@ -24,7 +24,7 @@ HOE Legacy 3 Metagenoimics - Caron Lab
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/HOE_legacy_3_Caron_Omics_desc.md
+.. include:: ../dataset_descriptions/HOE_legacy_3_Caron_Omics_desc.md
     :start-line: 0
 
 

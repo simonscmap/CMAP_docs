@@ -27,7 +27,7 @@ Global Distributions of Picophytoplankton Abundance and Biomass
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/Picoeuk_desc.md
+.. include:: ../dataset_descriptions/Picoeuk_desc.md
     :start-line: 0
 
 

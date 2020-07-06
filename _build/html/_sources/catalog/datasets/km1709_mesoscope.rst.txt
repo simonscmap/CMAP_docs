@@ -24,7 +24,7 @@ KM1709 Mesoscope Cruise
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/KM1709_mesoscope_desc.md
+.. include:: ../dataset_descriptions/KM1709_mesoscope_desc.md
     :start-line: 0
 
 

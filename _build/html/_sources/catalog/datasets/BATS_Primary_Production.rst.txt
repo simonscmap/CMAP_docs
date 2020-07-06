@@ -25,7 +25,7 @@ Dataset Description
 *******************
 
 
-.. mdinclude:: ../dataset_descriptions/BATS_Primary_Production_desc.md
+.. include:: ../dataset_descriptions/BATS_Primary_Production_desc.md
     :start-line: 0
 
 

@@ -29,7 +29,7 @@ Combined Cruise Temperature
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/CCT.md
+.. include:: ../dataset_descriptions/CCT.md
     :start-line: 0
 
 

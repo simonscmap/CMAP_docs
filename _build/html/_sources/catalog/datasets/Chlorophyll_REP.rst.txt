@@ -35,7 +35,7 @@ Chlorophyll Reprocessed
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/Chlorophyll_REP_desc.md
+.. include:: ../dataset_descriptions/Chlorophyll_REP_desc.md
     :start-line: 0
 
 

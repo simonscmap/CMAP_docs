@@ -29,7 +29,7 @@ DeLong HOT Metagenomics
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/DeLong_HOT_metagenomics_desc.md
+.. include:: ../dataset_descriptions/DeLong_HOT_metagenomics_desc.md
     :start-line: 0
 
 

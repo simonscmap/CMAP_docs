@@ -27,7 +27,7 @@ Dataset Description
 *******************
 
 
-.. mdinclude:: ../dataset_descriptions/SeaFlow_desc.md
+.. include:: ../dataset_descriptions/SeaFlow_desc.md
     :start-line: 0
 
 Table of Variables

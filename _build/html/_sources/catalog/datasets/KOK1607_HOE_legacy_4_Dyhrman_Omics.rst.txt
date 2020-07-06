@@ -23,7 +23,7 @@ Dataset Description
 *******************
 
 
-.. mdinclude:: ../dataset_descriptions/KOK1607_HOE_legacy_4_Dyhrman_Omics_desc.md
+.. include:: ../dataset_descriptions/KOK1607_HOE_legacy_4_Dyhrman_Omics_desc.md
     :start-line: 0
 
 

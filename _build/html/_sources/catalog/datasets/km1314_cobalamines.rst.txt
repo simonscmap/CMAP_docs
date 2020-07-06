@@ -22,7 +22,7 @@ Particulate Cobalamins for the KM1314 Cruise
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/km1314_cobalamines_desc.md
+.. include:: ../dataset_descriptions/km1314_cobalamines_desc.md
     :start-line: 0
 
 

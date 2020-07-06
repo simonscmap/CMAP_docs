@@ -32,7 +32,7 @@ Global Drifter Program
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/GlobalDrifterProgram_desc.md
+.. include:: ../dataset_descriptions/GlobalDrifterProgram_desc.md
     :start-line: 0
 
 

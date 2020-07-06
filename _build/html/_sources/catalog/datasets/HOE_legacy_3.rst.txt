@@ -24,7 +24,7 @@ HOE Legacy 3 Cruise
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/HOE_legacy_3_desc.md
+.. include:: ../dataset_descriptions/HOE_legacy_3_desc.md
     :start-line: 0
 
 Table of Variables

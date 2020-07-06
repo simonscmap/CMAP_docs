@@ -28,7 +28,7 @@ Dataset Description
 
 
 
-.. mdinclude:: ../dataset_descriptions/LCS_desc.md
+.. include:: ../dataset_descriptions/LCS_desc.md
     :start-line: 0
     :end-line: 12
 
@@ -40,7 +40,7 @@ Dataset Description
 
 such that :math:`\Lambda` is the Lyapunov exponent, and :math:`\delta x(t)`, :math:`\delta x(0)` represent the separation between the tracers at times :math:`t` and :math:`t_0`, receptively.
 
-.. mdinclude:: ../dataset_descriptions/LCS_desc.md
+.. include:: ../dataset_descriptions/LCS_desc.md
     :start-line: 20
 
 

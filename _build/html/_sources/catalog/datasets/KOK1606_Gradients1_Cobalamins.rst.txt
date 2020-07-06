@@ -23,7 +23,7 @@ Particulate Cobalamins for the KOK1606 Cruise
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/KOK1606_Gradients1_Cobalamine_desc.md
+.. include:: ../dataset_descriptions/KOK1606_Gradients1_Cobalamine_desc.md
     :start-line: 0
 
 Table of Variables

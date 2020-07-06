@@ -24,7 +24,7 @@ KM1906 Gradients 3 Underway CTD
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/KM1906_Gradients3_uwayCTD_desc.md
+.. include:: ../dataset_descriptions/KM1906_Gradients3_uwayCTD_desc.md
     :start-line: 0
 
 Table of Variables

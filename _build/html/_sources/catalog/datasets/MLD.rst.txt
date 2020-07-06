@@ -24,7 +24,7 @@ Mixed-Layer-Depth NRT
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/MLD_desc.md
+.. include:: ../dataset_descriptions/MLD_desc.md
     :start-line: 0
 
 Table of Variables

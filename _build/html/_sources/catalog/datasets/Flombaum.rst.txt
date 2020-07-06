@@ -22,7 +22,7 @@ Global Cyanobacteria (Flombaum)
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/Flombaum_desc.md
+.. include:: ../dataset_descriptions/Flombaum_desc.md
     :start-line: 0
 
 

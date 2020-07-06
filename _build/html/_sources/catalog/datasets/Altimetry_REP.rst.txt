@@ -28,7 +28,7 @@ Altimetry Reprocessed
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/Altimetry_REP_desc.md
+.. include:: ../dataset_descriptions/Altimetry_REP_desc.md
     :start-line: 0
 
 

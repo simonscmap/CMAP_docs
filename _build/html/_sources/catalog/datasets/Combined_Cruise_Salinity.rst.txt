@@ -29,7 +29,7 @@ Combined Cruise Salinity
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/CCS.md
+.. include:: ../dataset_descriptions/CCS.md
     :start-line: 0
 
 

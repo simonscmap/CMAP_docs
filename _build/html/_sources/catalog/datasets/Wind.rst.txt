@@ -28,7 +28,7 @@ Wind
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/Wind_desc.md
+.. include:: ../dataset_descriptions/Wind_desc.md
     :start-line: 0
 
 

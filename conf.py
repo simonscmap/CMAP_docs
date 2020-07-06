@@ -43,7 +43,6 @@ release = '0.0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'm2r',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.coverage',
@@ -52,9 +51,15 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.extlinks',
     "sphinx.ext.intersphinx",
-    "nbsphinx"
-    # 'sphinx_gallery.gen_gallery',
+    "nbsphinx",
+    "recommonmark",
+    'sphinx_markdown_tables'
 ]
+
+
+
+source_suffix = ['.rst', '.md']
+
 nbsphinx_allow_errors = True
 nbsphinx_timeout = 1200
 html_scaled_image_link = False
@@ -67,7 +72,7 @@ plot_formats = ['png']
 # Sphinx project configuration
 templates_path = ['_templates']
 exclude_patterns = ['_build', '**.ipynb_checkpoints']
-source_suffix = ['.rst','.md']
+
 # The encoding of source files.
 source_encoding = 'utf-8-sig'
 master_doc = 'index'
@@ -76,8 +81,7 @@ master_doc = 'index'
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
-# source_suffix = ['.rst', '.md']
-source_suffix = '.rst'
+source_suffix = ['.rst', '.md']
 
 # The master toctree document.
 master_doc = 'index'

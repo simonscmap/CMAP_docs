@@ -26,7 +26,7 @@ SCOPE HOT Metagenomics
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/scope_hot_metagenomics_desc.md
+.. include:: ../dataset_descriptions/scope_hot_metagenomics_desc.md
     :start-line: 0
 
 Table of Variables

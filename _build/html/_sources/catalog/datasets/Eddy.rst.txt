@@ -31,7 +31,7 @@ Eddy
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/Eddy_desc.md
+.. include:: ../dataset_descriptions/Eddy_desc.md
     :start-line: 0
 
 Table of Variables

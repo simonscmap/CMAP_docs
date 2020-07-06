@@ -27,7 +27,7 @@ HOE Legacy 2A Metagenoimics - Caron Lab
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/HOE_legacy_2A_Caron_Omics_desc.md
+.. include:: ../dataset_descriptions/HOE_legacy_2A_Caron_Omics_desc.md
     :start-line: 0
 
 Table of Variables

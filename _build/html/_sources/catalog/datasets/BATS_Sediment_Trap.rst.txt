@@ -25,7 +25,7 @@ Dataset Description
 *******************
 
 
-.. mdinclude:: ../dataset_descriptions/BATS_Sediment_Trap_desc.md
+.. include:: ../dataset_descriptions/BATS_Sediment_Trap_desc.md
     :start-line: 0
 
 

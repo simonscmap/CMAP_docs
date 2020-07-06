@@ -28,7 +28,7 @@ MODIS Photosynthetically Active Radiation
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/Modis_PAR_desc.md
+.. include:: ../dataset_descriptions/Modis_PAR_desc.md
     :start-line: 0
 
 

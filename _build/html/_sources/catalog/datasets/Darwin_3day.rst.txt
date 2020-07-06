@@ -28,7 +28,7 @@ Darwin 3 Day Averaged Model
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/Darwin_3day_desc.md
+.. include:: ../dataset_descriptions/Darwin_3day_desc.md
     :start-line: 0
 
 

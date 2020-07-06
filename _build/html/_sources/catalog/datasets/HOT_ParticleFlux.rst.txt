@@ -25,7 +25,7 @@ Dataset Description
 *******************
 
 
-.. mdinclude:: ../dataset_descriptions/HOT_ParticleFlux_desc.md
+.. include:: ../dataset_descriptions/HOT_ParticleFlux_desc.md
     :start-line: 0
 
 

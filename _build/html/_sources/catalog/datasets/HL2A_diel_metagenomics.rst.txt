@@ -20,7 +20,7 @@ HL2A Cruise Metagenomics
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/HL2A_diel_metagenomics_desc.md
+.. include:: ../dataset_descriptions/HL2A_diel_metagenomics_desc.md
     :start-line: 0
 
 Table of Variables

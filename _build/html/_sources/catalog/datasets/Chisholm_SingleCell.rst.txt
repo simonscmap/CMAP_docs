@@ -26,7 +26,7 @@ Single Cell Genomes
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/Chisholm_SingleCell_desc.md
+.. include:: ../dataset_descriptions/Chisholm_SingleCell_desc.md
     :start-line: 0
 
 

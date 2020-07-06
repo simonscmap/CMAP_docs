@@ -22,7 +22,7 @@ Exact Amplicon Sequence Variant Abundances from the ANT28-5 Latitudinal Transect
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/ESV_desc.md
+.. include:: ../dataset_descriptions/ESV_desc.md
     :start-line: 0
 
 

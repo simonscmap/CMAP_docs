@@ -24,7 +24,7 @@ HOT 273 Metagenoimics - Caron Lab
 Dataset Description
 *******************
 
-.. mdinclude:: ../dataset_descriptions/HOT273_Caron_Omics_desc.md
+.. include:: ../dataset_descriptions/HOT273_Caron_Omics_desc.md
     :start-line: 0
 
 Table of Variables
