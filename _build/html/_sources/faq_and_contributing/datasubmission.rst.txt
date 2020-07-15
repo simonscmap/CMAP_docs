@@ -12,7 +12,7 @@
 
 .. _Download Gradients 1 Fluormetric Chl Example: https://github.com/simonscmap/DBIngest/raw/master/template/Gradients1-KOK1606-FluorometricChlorophyll_2020_06_25_example.xlsx
 
-.. _Download Gradients 1 Cobalamin Example: https://github.com/simonscmap/DBIngest/raw/master/template/KOK1606_Gradients1_Cobalamin_example_2020_06_26.xlsx
+.. _Download Gradients 1 Cobalamin Example: https://github.com/simonscmap/DBIngest/raw/master/template/KOK1606_Gradients1_Cobalamin_example_2020_07_15.xlsx
 
 .. _Download Gradients 3 Underway CTD Example: https://github.com/simonscmap/DBIngest/raw/master/template/KM1906_Gradients3_uwayCTD_example.xlsx
 
