@@ -54,10 +54,10 @@ This document describes the specifications of the data and metadata fields requ
 
 The CMAP data template consists of three sheets: data, dataset metadata, and variable metadata. Data is stored in the first sheet called “data”. Metadata that describes the dataset is entered in the second sheet called “dataset_meta_data”. Metadata associated with the variables in the dataset are entered in the third sheet called “vars_meta_data”. Information must be provided for all columns except those specifcally noted as optional. For those datasets that use the Excel template, a web-based tool is available through <a href="https://simonscmap.com/datasubmission">Simons CMAP</a> to validate and modify a given  dataset  to ensure it conforms to structure requirements for dataset submission. Below are a few example datasets that have been prepared using the specifications described in this document:
 
-* [SeaFlow](https://github.com/simonscmap/DBIngest/raw/master/template/SeaFlow_2020_06_25_example.xlsx)
-* [Gradients 1 Fluormetric Chl](https://github.com/simonscmap/DBIngest/raw/master/template/Gradients1-KOK1606-FluorometricChlorophyll_2020_06_25_example.xlsx)
-* [Gradients 1 Cobalamin](https://github.com/simonscmap/DBIngest/raw/master/template/KOK1606_Gradients1_Cobalamin_example_2020_06_26.xlsx)
-* [Gradients 3 Underway CTD](https://github.com/simonscmap/DBIngest/raw/master/template/KM1906_Gradients3_uwayCTD_example.xlsx)
+* [Gradients 1 Cobalamin](https://github.com/simonscmap/DBIngest/raw/master/template/KOK1606_Gradients1_Cobalamin_example_2020_07_15.xlsx)
+
+* [AMT01 Extracted Chlorophyll](https://github.com/simonscmap/DBIngest/raw/master/template/amt01_extracted_cholorphyll_2020_07_25.xls)
+
 ------------------------------------------
 
 <br/><br/>

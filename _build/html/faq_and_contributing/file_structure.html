@@ -288,10 +288,8 @@
 <div style="text-align: right"><a href="#toc" title="Table of Contents">Table of Contents</a></div>   
 This document describes the specifications of the data and metadata fields required for submitting datasets to the Simons CMAP database. The submitted data can be in any file format such as netCDF, parquet, plain text, CSV, or Excel files. The only requirement is that information for all required fields (specified by <sup>*</sup> ) is provided. For simplicity, we have created an empty dataset template in Excel format that can be found <a href="https://github.com/simonscmap/DBIngest/raw/master/template/datasetTemplate.xlsx">here</a>. You can use this template to load and submit your dataset. The data and metadata field names (e.g. time, lat, lon, short_name, long_name, ...) used in the template file are based on the CF and COARDS naming conventions [<a href="#ref1">1</a>, <a href="#ref1">2</a>, <a href="#ref1">3</a>].<p>The CMAP data template consists of three sheets: data, dataset metadata, and variable metadata. Data is stored in the first sheet called “data”. Metadata that describes the dataset is entered in the second sheet called “dataset_meta_data”. Metadata associated with the variables in the dataset are entered in the third sheet called “vars_meta_data”. Information must be provided for all columns except those specifcally noted as optional. For those datasets that use the Excel template, a web-based tool is available through <a href="https://simonscmap.com/datasubmission">Simons CMAP</a> to validate and modify a given  dataset  to ensure it conforms to structure requirements for dataset submission. Below are a few example datasets that have been prepared using the specifications described in this document:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/simonscmap/DBIngest/raw/master/template/SeaFlow_2020_06_25_example.xlsx">SeaFlow</a></p></li>
-<li><p><a class="reference external" href="https://github.com/simonscmap/DBIngest/raw/master/template/Gradients1-KOK1606-FluorometricChlorophyll_2020_06_25_example.xlsx">Gradients 1 Fluormetric Chl</a></p></li>
-<li><p><a class="reference external" href="https://github.com/simonscmap/DBIngest/raw/master/template/KOK1606_Gradients1_Cobalamin_example_2020_06_26.xlsx">Gradients 1 Cobalamin</a></p></li>
-<li><p><a class="reference external" href="https://github.com/simonscmap/DBIngest/raw/master/template/KM1906_Gradients3_uwayCTD_example.xlsx">Gradients 3 Underway CTD</a></p></li>
+<li><p><a class="reference external" href="https://github.com/simonscmap/DBIngest/raw/master/template/KOK1606_Gradients1_Cobalamin_example_2020_07_15.xlsx">Gradients 1 Cobalamin</a></p></li>
+<li><p><a class="reference external" href="https://github.com/simonscmap/DBIngest/raw/master/template/amt01_extracted_cholorphyll_2020_07_25.xls">AMT01 Extracted Chlorophyll</a></p></li>
 </ul>
 <hr class="docutils" />
 <p><br/><br/>
@@ -728,7 +726,7 @@ Use this field to communicate any detailed information about this particular var
         
         &copy; Copyright 
       <span class="lastupdated">
-        Last updated on Jul 06, 2020.
+        Last updated on Jul 15, 2020.
       </span>
 
     </p>

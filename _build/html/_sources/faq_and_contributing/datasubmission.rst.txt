@@ -8,14 +8,9 @@
 ..
 .. _Download Data Template: https://github.com/simonscmap/DBIngest/raw/master/template/datasetTemplate.xlsx
 
-.. _Download SeaFlow Example: https://github.com/simonscmap/DBIngest/raw/master/template/SeaFlow_2020_06_25_example.xlsx
-
-.. _Download Gradients 1 Fluormetric Chl Example: https://github.com/simonscmap/DBIngest/raw/master/template/Gradients1-KOK1606-FluorometricChlorophyll_2020_06_25_example.xlsx
-
 .. _Download Gradients 1 Cobalamin Example: https://github.com/simonscmap/DBIngest/raw/master/template/KOK1606_Gradients1_Cobalamin_example_2020_07_15.xlsx
 
-.. _Download Gradients 3 Underway CTD Example: https://github.com/simonscmap/DBIngest/raw/master/template/KM1906_Gradients3_uwayCTD_example.xlsx
-
+.. _Download AMT01 Extracted Chlorophyll Example: https://github.com/simonscmap/DBIngest/raw/master/template/amt01_extracted_cholorphyll_2020_07_25.xlsx
 
 
 
@@ -55,10 +50,8 @@ Dataset Examples
 
 
 
-* `Download SeaFlow Example`_
-* `Download Gradients 1 Fluormetric Chl Example`_
 * `Download Gradients 1 Cobalamin Example`_
-* `Download Gradients 3 Underway CTD Example`_
+* `Download AMT01 Extracted Chlorophyll Example`_
 
 ..
 ..
