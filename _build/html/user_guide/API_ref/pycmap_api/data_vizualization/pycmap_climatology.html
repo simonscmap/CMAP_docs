@@ -1,0 +1,424 @@
+
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    
+        <title>Climatology &mdash; CMAP</title>
+    
+
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/style.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../../../_static/CMAP_logo.png"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/language_data.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Presentations" href="../pycmap_presentations.html" />
+    <link rel="prev" title="Correlation Matrix Along Cruise Track" href="pycmap_correlation_matrix_cruise_track.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home" alt="Documentation Home"> Simons CMAP
+          
+
+          
+            
+            <img src="../../../../_static/CMAP_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+    
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../catalog/catalog.html">Data Catalog</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../api_ref.html">Software Packages</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../pycmap_api_ref.html">pycmap API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../pycmap_install.html">Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pycmap_data_retrieval.html">Data Retrieval Methods</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../pycmap_data_vizualization.html">Data Visualization Methods</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="../pycmap_data_vizualization.html#id1">Data Visualization Methods</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pycmap_presentations.html">Presentations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../cmap4r_api/cmap4r_api.html">cmap4r API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../matcmap_api/matcmap_api_ref.html">matcmap API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../juliacmap_api/juliacmap_api_ref.html">juliacmap API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../opedia_tutorials/opedia_tutorials.html">opedia (depreciated)</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">FAQ and Contributing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../faq_and_contributing/datasubmission.html">Data Submission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../faq_and_contributing/file_structure.html">File Structure <br/></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../faq_and_contributing/FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../faq_and_contributing/contact.html">Contact and Contribute</a></li>
+</ul>
+
+            
+          
+
+    
+        <p class="caption">
+            <span class="caption-text">
+            
+                Outside Resources
+            
+            </span>
+        </p>
+        <ul>
+            
+                <li class="toctree-l1"><a href="https://simonscmap.com/"><i class="fa fa-globe fa-fw"></i> Simons CMAP Web Application</a></li>
+            
+                <li class="toctree-l1"><a href="https://simonscmap.com/catalog"><i class="fa fa-archive fa-fw"></i> Interactive Data Catalog</a></li>
+            
+                <li class="toctree-l1"><a href="https://github.com/simonscmap"><i class="fa fa-github fa-fw"></i> Project Source Code</a></li>
+            
+                <li class="toctree-l1"><a href="https://join.slack.com/t/simons-cmap/shared_invite/enQtNjQzMTkzMjg0NjQ2LTdlOGRhZjNhMDY3MjRlNjg2OTY5NzE3ZWZhNWE0OWZhYmQzMTJjNDkyNDQ1MjNkZDg0N2MzMzhlZDliNGYxYzQ"><i class="fa fa-slack fa-fw"></i> Slack</a></li>
+            
+        </ul>
+    
+
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Simons CMAP</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../api_ref.html">Software Packages</a> &raquo;</li>
+        
+          <li><a href="../pycmap_api_ref.html">pycmap API</a> &raquo;</li>
+        
+          <li><a href="../pycmap_data_vizualization.html">Data Visualization Methods</a> &raquo;</li>
+        
+      <li>Climatology</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="climatology">
+<span id="id1"></span><h1>Climatology<a class="headerlink" href="#climatology" title="Permalink to this headline">¶</a></h1>
+<a class="reference external image-reference" href="https://colab.research.google.com/github/simonscmap/pycmap/blob/master/docs/Climatology.ipynb"><img alt="https://colab.research.google.com/assets/colab-badge.svg" src="https://colab.research.google.com/assets/colab-badge.svg" /></a>
+<a class="reference external image-reference" href="https://mybinder.org/v2/gh/simonscmap/pycmap/master?filepath=docs%2FClimatology.ipynb"><img alt="https://mybinder.org/badge_logo.svg" src="https://mybinder.org/badge_logo.svg" /></a>
+<dl class="method">
+<dt>
+<code class="sig-name descname">climatology</code><span class="sig-paren">(</span><em class="sig-param">table</em>, <em class="sig-param">variable</em>, <em class="sig-param">period</em>, <em class="sig-param">periodVal</em>, <em class="sig-param">lat1</em>, <em class="sig-param">lat2</em>, <em class="sig-param">lon1</em>, <em class="sig-param">lon2</em>, <em class="sig-param">depth1</em>, <em class="sig-param">depth2</em><span class="sig-paren">)</span></dt>
+<dd><p>Computes the climatology of a gridded dataset over a spatial domain delimited by (lat1, lat2, lon1, lon2, depth1, depth2). Note this method does not apply to sparse datasets. The parameter period specifies the climatology interval (e.g weekly, monthly…) and periodVal sets the interval value. For example, to compute the climatology of a variable for the month of October, period is set to ‘month’ and periodVal is set to 10. Please avoid using periods that are finner than the temporal resolution of the underlying dataset. For instance, if the dataset is a weekly-averaged product, do not set the period to ‘dayofyear’.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The output of this method is a Pandas DataFrame ordered by time, lat, lon, and depth (if exists), respectively.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>table: string</strong></dt><dd><p>Table name (each dataset is stored in a table). A full list of table names can be found in <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/data_retrieval/pycmap_catalog.html">catalog</a>.</p>
+</dd>
+<dt><strong>variable: string</strong></dt><dd><p>Variable short name which directly corresponds to a field name in the table. A subset of this variable’s climatology is returned by this method according to the spatio cut parameters (below). A full list of variable short names can be found in <a class="reference external" href="https://cmap.readthedocs.io/en/latest/user_guide/API_ref/pycmap_api/data_retrieval/pycmap_catalog.html">catalog</a>.</p>
+</dd>
+<dt><strong>period: string</strong></dt><dd><p>Specifies the aggregation period and can be either one of the following values:
+‘d’ or ‘dayofyear’ for day-of-year climatology
+‘w’ or ‘week’ or ‘weekly’ for weekly climatology
+‘m’ or ‘month’ or ‘monthly’ for monthly climatology
+‘a’ or ‘y’ or ‘yearly’ for interannual averaging</p>
+</dd>
+<dt><strong>periodVal: string</strong></dt><dd><p>Sets the value of the climatology interval. For instance, to retrieve the chlorophyll climatology for the month of March period is set to ‘month’ and periodVal is set to 3 (see example below).</p>
+</dd>
+<dt><strong>lat1: float</strong></dt><dd><p>Start latitude [degree N]. This parameter sets the lower bound of the meridional cut. Note latitude ranges from -90° to 90°.</p>
+</dd>
+<dt><strong>lat2: float</strong></dt><dd><p>End latitude [degree N]. This parameter sets the upper bound of the meridional cut. Note latitude ranges from -90° to 90°.</p>
+</dd>
+<dt><strong>lon1: float</strong></dt><dd><p>Start longitude [degree E]. This parameter sets the lower bound of the zonal cut. Note longitue ranges from -180° to 180°.</p>
+</dd>
+<dt><strong>lon2: float</strong></dt><dd><p>End longitude [degree E]. This parameter sets the upper bound of the zonal cut. Note longitue ranges from -180° to 180°.</p>
+</dd>
+<dt><strong>depth1: float</strong></dt><dd><p>Start depth [m]. This parameter sets the lower bound of the vertical cut. Note depth is a positive number (it is 0 at surface and grows towards ocean floor).</p>
+</dd>
+<dt><strong>depth2: float</strong></dt><dd><p>End depth [m]. This parameter sets the upper bound of the vertical cut. Note depth is a positive number (it is 0 at surface and grows towards ocean floor).</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Pandas dataframe.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="example-1">
+<h2>Example 1:<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
+<p>This example computes and retrieves a subset of <a class="reference external" href="https://cmap.readthedocs.io/en/latest/catalog/datasets/SSS.html#SSS">sea surface salinity</a> weekly climatology for the week of 46.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!pip install pycmap -q     #uncomment to install pycmap, if necessary</span>
+
+<span class="kn">import</span> <span class="nn">pycmap</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">pycmap</span><span class="o">.</span><span class="n">API</span><span class="p">(</span><span class="n">token</span><span class="o">=</span><span class="s1">&#39;&lt;YOUR_API_KEY&gt;&#39;</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">climatology</span><span class="p">(</span>
+                <span class="n">table</span><span class="o">=</span><span class="s1">&#39;tblSSS_NRT&#39;</span><span class="p">,</span>
+                <span class="n">variable</span><span class="o">=</span><span class="s1">&#39;sss&#39;</span><span class="p">,</span>
+                <span class="n">period</span><span class="o">=</span><span class="s1">&#39;week&#39;</span><span class="p">,</span>
+                <span class="n">periodVal</span><span class="o">=</span><span class="mi">46</span><span class="p">,</span>
+                <span class="n">lat1</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+                <span class="n">lat2</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>
+                <span class="n">lon1</span><span class="o">=-</span><span class="mi">170</span><span class="p">,</span>
+                <span class="n">lon2</span><span class="o">=-</span><span class="mi">120</span><span class="p">,</span>
+                <span class="n">depth1</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                <span class="n">depth2</span><span class="o">=</span><span class="mi">0</span>
+                <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-2">
+<h2>Example 2:<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
+<p>This example computes and retrieves a subset of <a class="reference external" href="https://cmap.readthedocs.io/en/latest/catalog/datasets/Chlorophyll_REP.html#chlorophyll-rep">chlorophyll</a> climatology for the month of March.
+Notice, depth1 and depth2 values are automatically ignored because this is a surface dataset.
+A simple plot is made to visualize the retrieved data.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!pip install pycmap -q     #uncomment to install pycmap, if necessary</span>
+
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pycmap</span>
+
+
+
+<span class="k">def</span> <span class="nf">plot</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="n">lat</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">lat</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+    <span class="n">lon</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">lon</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+    <span class="n">shape</span> <span class="o">=</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lat</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">lon</span><span class="p">))</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">chl</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">shape</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">extent</span><span class="o">=</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">lon</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">lon</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">lat</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">lat</span><span class="p">)],</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;viridis&#39;</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="s1">&#39;lower&#39;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Sea Surface Chlorophyll [mg/m^3]&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Longitude&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Latitude&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">pycmap</span><span class="o">.</span><span class="n">API</span><span class="p">(</span><span class="n">token</span><span class="o">=</span><span class="s1">&#39;&lt;YOUR_API_KEY&gt;&#39;</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">climatology</span><span class="p">(</span>
+                     <span class="n">table</span><span class="o">=</span><span class="s1">&#39;tblCHL_REP&#39;</span><span class="p">,</span>
+                     <span class="n">variable</span><span class="o">=</span><span class="s1">&#39;chl&#39;</span><span class="p">,</span>
+                     <span class="n">period</span><span class="o">=</span><span class="s1">&#39;month&#39;</span><span class="p">,</span>
+                     <span class="n">periodVal</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+                     <span class="n">lat1</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+                     <span class="n">lat2</span><span class="o">=</span><span class="mi">70</span><span class="p">,</span>
+                     <span class="n">lon1</span><span class="o">=-</span><span class="mi">180</span><span class="p">,</span>
+                     <span class="n">lon2</span><span class="o">=-</span><span class="mi">100</span><span class="p">,</span>
+                     <span class="n">depth1</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                     <span class="n">depth2</span><span class="o">=</span><span class="mi">0</span>
+                     <span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+<iframe src="../../../../_static/pycmap_tutorial_viz/static/climatology.png"  frameborder = 0  height="550px" width="100%">></iframe><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="figure align-default">
+<img alt="../../../../_images/sql.png" src="../../../../_images/sql.png" style="width: 51.2px; height: 51.2px;" />
+</div>
+<p><strong>SQL Statement</strong></p>
+<p>Here is how to achieve the same results using a direct SQL statement. Please refer to <a class="reference internal" href="../data_retrieval/pycmap_query.html#query"><span class="std std-ref">Query</span></a> for more information.</p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">EXEC</span> <span class="n">uspAggregate</span> <span class="s1">&#39;tableName&#39;</span><span class="p">,</span> <span class="s1">&#39;variable&#39;</span><span class="p">,</span> <span class="s1">&#39;period&#39;</span><span class="p">,</span> <span class="s1">&#39;periodVal&#39;</span><span class="p">,</span> <span class="s1">&#39;lat1&#39;</span><span class="p">,</span> <span class="s1">&#39;lat2&#39;</span><span class="p">,</span> <span class="s1">&#39;lon1&#39;</span><span class="p">,</span> <span class="s1">&#39;lon2&#39;</span><span class="p">,</span> <span class="s1">&#39;depth1&#39;</span><span class="p">,</span> <span class="s1">&#39;depth2&#39;</span>
+</pre></div>
+</div>
+<p><strong>Example:</strong></p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">EXEC</span> <span class="n">uspAggregate</span> <span class="s1">&#39;tblCHL_REP&#39;</span><span class="p">,</span> <span class="s1">&#39;chl&#39;</span><span class="p">,</span> <span class="s1">&#39;month&#39;</span><span class="p">,</span> <span class="s1">&#39;3&#39;</span><span class="p">,</span> <span class="s1">&#39;10&#39;</span><span class="p">,</span> <span class="s1">&#39;70&#39;</span><span class="p">,</span> <span class="s1">&#39;-180&#39;</span><span class="p">,</span> <span class="s1">&#39;100&#39;</span><span class="p">,</span> <span class="s1">&#39;0&#39;</span><span class="p">,</span> <span class="s1">&#39;0&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 
+      <span class="lastupdated">
+        Last updated on Jul 23, 2020.
+      </span>
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

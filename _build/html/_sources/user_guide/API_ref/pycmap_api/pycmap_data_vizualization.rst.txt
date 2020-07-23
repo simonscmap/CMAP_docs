@@ -82,6 +82,10 @@ Data Visualization Methods
 +-------------------------------+--------------------------------------------------------------+
 | :ref:`corrMatrixCruise`       | Correlation Matrix Along Cruise Track                        |
 +-------------------------------+--------------------------------------------------------------+
+| :ref:`climatology`            | Climatology                                                  |
++-------------------------------+--------------------------------------------------------------+
+
+
 
 
 
@@ -97,3 +101,4 @@ Data Visualization Methods
   data_vizualization/pycmap_cruise_track
   data_vizualization/pycmap_correlation_matrix
   data_vizualization/pycmap_correlation_matrix_cruise_track
+  data_vizualization/pycmap_climatology
