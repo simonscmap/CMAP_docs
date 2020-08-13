@@ -12,7 +12,9 @@
 
 .. _Download AMT01 Extracted Chlorophyll Example: https://github.com/simonscmap/DBIngest/raw/master/template/amt01_extracted_cholorphyll_2020_07_25.xlsx
 
+.. _Download Gradients 1 Influx Flow Cytometry Example: https://github.com/simonscmap/DBIngest/raw/master/template/Influx_Stations_Gradients_2016_example_2020_08_13.xlsx
 
+.. _Download SCOPE HOT Metagenomics Example: https://github.com/simonscmap/DBIngest/raw/master/template/SCOPE_HOT224-238_omics_cmap_example_2020_08_13.xlsx
 
 .. |template_download| image:: /_static/overview_icons/spreadsheet.png
   :align: middle
@@ -52,6 +54,8 @@ Dataset Examples
 
 * `Download Gradients 1 Cobalamin Example`_
 * `Download AMT01 Extracted Chlorophyll Example`_
+* `Download Gradients 1 Influx Flow Cytometry Example`_
+* `Download SCOPE HOT Metagenomics Example`_
 
 ..
 ..
