@@ -43,4 +43,4 @@ Retrieve Dataset
   import pycmap
 
   api = pycmap.API(token='<YOUR_API_KEY>')
-  api.get_dataset('tblKM1906_Gradients3_uway_optics')
+  api.get_dataset('tblMGL1704_Gradients2_IFCB_Abundance')
